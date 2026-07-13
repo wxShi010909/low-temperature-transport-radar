@@ -54,6 +54,19 @@ function PaperTags({ paper, limit = 4 }: { paper: Paper; limit?: number }) {
   return <div className="tag-row">{paper.methods.slice(0, limit).map((method) => <span key={method}>{method}</span>)}</div>;
 }
 
+function PaperClassification({ paper }: { paper: Paper }) {
+  return (
+    <div className={`classification track-${paper.track.toLowerCase()}`}>
+      <span className="primary-classification">主分类 {paper.track} · {tracks[paper.track as TrackKey].label}</span>
+      {paper.secondaryTracks.length > 0 && (
+        <span className="secondary-classification">
+          兼具 {paper.secondaryTracks.map((track) => `${track} ${tracks[track as TrackKey].short}`).join(" · ")}
+        </span>
+      )}
+    </div>
+  );
+}
+
 export default function Home() {
   const [query, setQuery] = useState("");
   const [activeTrack, setActiveTrack] = useState<"ALL" | TrackKey>("ALL");
@@ -155,7 +168,7 @@ export default function Home() {
         <div className="featured-grid">
           {featured.map((paper) => (
             <article className={`paper-card track-${paper.track.toLowerCase()}`} key={paper.id}>
-              <div className="paper-meta"><span>{paper.track} · {tracks[paper.track as TrackKey].label}</span><span>{paper.published}</span></div>
+              <div className="paper-meta"><PaperClassification paper={paper} /><span>{paper.published}</span></div>
               <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p><PaperTags paper={paper} limit={3} /><p className="summary">{paper.summary}</p>
               <div className="paper-footer"><span className="read-badge">★ 建议精读</span><span className="score"><b>{paper.score.toFixed(1)}</b> / 10</span></div>
               <a className="card-link" href={paper.url} target="_blank" rel="noreferrer" aria-label={`打开 ${paper.title}`} />
@@ -181,7 +194,7 @@ export default function Home() {
           {filteredPapers.map((paper) => (
             <article className={`library-item track-${paper.track.toLowerCase()}`} key={paper.id}>
               <div className="library-main">
-                <div className="paper-meta"><span>{paper.track} · {tracks[paper.track as TrackKey].label}</span><span>{paper.venue} · {paper.published}</span></div>
+                <div className="paper-meta"><PaperClassification paper={paper} /><span>{paper.venue} · {paper.published}</span></div>
                 <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p>
                 <p className="authors">{paper.authors}</p><PaperTags paper={paper} />
                 <div className="evidence-grid"><div><b>核心结果</b><p>{paper.summary}</p></div><div><b>与研究主线的关系</b><p>{paper.relevance}</p></div></div>
