@@ -188,8 +188,15 @@ export default function Home() {
       </section>
 
       <section className="history-section">
-        <div><p>历史日报</p><h2>2026年7月13日</h2><span>初始化精选 · {report.papers.length} 项已核验内容</span></div>
-        <div className="coverage"><b>本期覆盖</b><span>A {counts.A ?? 0}</span><span>B {counts.B ?? 0}</span><span>C {counts.C ?? 0}</span><span>D {counts.D ?? 0}</span><span>E {counts.E ?? 0}</span></div>
+        <div className="history-heading"><p>DAILY ARCHIVE</p><h2>历史日报</h2><span>每日更新后自动保留日期、分类数量和文献记录</span></div>
+        <div className="history-list">
+          {report.history.map((entry) => (
+            <article key={entry.date}>
+              <div><b>{entry.date}</b><small>{entry.label} · {entry.total} 项已核验内容</small></div>
+              <div className="coverage"><span>A {entry.counts.A}</span><span>B {entry.counts.B}</span><span>C {entry.counts.C}</span><span>D {entry.counts.D}</span><span>E {entry.counts.E}</span></div>
+            </article>
+          ))}
+        </div>
       </section>
 
       <footer><div><span className="brand-mark">LT</span><b>低温输运研究雷达</b></div><p>每日更新 · 来源核验 · 材料中立 · 研究链条关联</p><small>最近更新：2026-07-13 08:00（America/Los_Angeles）</small></footer>

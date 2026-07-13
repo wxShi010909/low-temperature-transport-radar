@@ -475,17 +475,21 @@ h1 {
   max-width: 1256px;
   margin: 0 auto 70px;
   padding: 25px 28px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-items: start;
   gap: 24px;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: white;
 }
-.history-section p { margin: 0 0 6px; color: var(--blue); font-size: 10px; font-weight: 760; letter-spacing: .1em; }
-.history-section h2 { margin: 0; font-size: 22px; }
-.history-section > div > span { display: block; margin-top: 6px; color: var(--muted); font-size: 11px; }
+.history-heading p { margin: 0 0 6px; color: var(--blue); font-size: 10px; font-weight: 760; letter-spacing: .1em; }
+.history-heading h2 { margin: 0; font-size: 22px; }
+.history-heading > span { display: block; margin-top: 6px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.history-list { display: grid; gap: 8px; }
+.history-list article { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 12px 14px; border: 1px solid #e0e7f0; border-radius: 9px; background: #f9fbfe; }
+.history-list b { display: block; font-size: 12px; }
+.history-list small { display: block; margin-top: 4px; color: var(--muted); font-size: 9px; }
 .coverage { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
 .coverage b { margin-right: 5px; color: #566982; font-size: 11px; }
 .coverage span { min-width: 38px; padding: 6px 8px; border-radius: 6px; background: #f1f5fb; color: var(--ink) !important; text-align: center; font-size: 10px !important; font-weight: 760; }
@@ -531,7 +535,8 @@ footer small { grid-column: 2; font-size: 9px; }
   .compact-search input { width: 100%; }
   .opportunity-grid, .atomic-grid, .method-cards { grid-template-columns: 1fr; }
   .method-feature ul { grid-template-columns: 1fr; }
-  .history-section { align-items: flex-start; flex-direction: column; }
+  .history-section { grid-template-columns: 1fr; }
+  .history-list article { align-items: flex-start; flex-direction: column; }
   footer { grid-template-columns: 1fr; }
   footer small { grid-column: 1; }
 }
