@@ -170,8 +170,8 @@ export default function Home() {
             <article className={`paper-card track-${paper.track.toLowerCase()}`} key={paper.id}>
               <div className="paper-meta"><PaperClassification paper={paper} /><span>{paper.published}</span></div>
               <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p><PaperTags paper={paper} limit={3} /><p className="summary">{paper.summary}</p>
-              <div className="paper-footer"><span className="read-badge">★ 建议精读</span><span className="score"><b>{paper.score.toFixed(1)}</b> / 10</span></div>
-              <a className="card-link" href={paper.url} target="_blank" rel="noreferrer" aria-label={`打开 ${paper.title}`} />
+              <div className="paper-footer"><span className="read-badge">点击查看通俗详解</span><span className="score"><b>{paper.score.toFixed(1)}</b> / 10</span></div>
+              <a className="card-link" href={`/paper?id=${encodeURIComponent(paper.id)}`} aria-label={`查看 ${paper.title} 的通俗详解`} />
             </article>
           ))}
         </div>
@@ -202,7 +202,10 @@ export default function Home() {
               <aside className="library-aside">
                 <div className="score-panel"><strong>{paper.score.toFixed(1)}</strong><span>/ 10</span><em>{paper.priority} 级</em></div>
                 <dl><div><dt>体系</dt><dd>{paper.system}</dd></div><div><dt>条件 / 工艺</dt><dd>{paper.conditions}</dd></div><div><dt>局限</dt><dd>{paper.limitation}</dd></div></dl>
-                <a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>
+                <div className="library-actions">
+                  <a className="detail-action" href={`/paper?id=${encodeURIComponent(paper.id)}`}>查看通俗详解 →</a>
+                  <a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>
+                </div>
               </aside>
             </article>
           ))}
