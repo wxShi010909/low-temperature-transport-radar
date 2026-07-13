@@ -67,6 +67,27 @@ function PaperClassification({ paper }: { paper: Paper }) {
   );
 }
 
+function LibraryPaper({ paper }: { paper: Paper }) {
+  return (
+    <article className={`library-item track-${paper.track.toLowerCase()}`}>
+      <div className="library-main">
+        <div className="paper-meta"><PaperClassification paper={paper} /><span>{paper.venue} · {paper.published}</span></div>
+        <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p>
+        <p className="authors">{paper.authors}</p><PaperTags paper={paper} />
+        <div className="evidence-grid"><div><b>核心结果</b><p>{paper.summary}</p></div><div><b>与研究主线的关系</b><p>{paper.relevance}</p></div></div>
+      </div>
+      <aside className="library-aside">
+        <div className="score-panel"><strong>{paper.score.toFixed(1)}</strong><span>/ 10</span><em>{paper.priority} 级</em></div>
+        <dl><div><dt>体系</dt><dd>{paper.system}</dd></div><div><dt>条件 / 工艺</dt><dd>{paper.conditions}</dd></div><div><dt>局限</dt><dd>{paper.limitation}</dd></div></dl>
+        <div className="library-actions">
+          <a className="detail-action" href={`/paper?id=${encodeURIComponent(paper.id)}`}>查看通俗详解 →</a>
+          <a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>
+        </div>
+      </aside>
+    </article>
+  );
+}
+
 export default function Home() {
   const [query, setQuery] = useState("");
   const [activeTrack, setActiveTrack] = useState<"ALL" | TrackKey>("ALL");
@@ -98,14 +119,24 @@ export default function Home() {
   const filteredPapers = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase("zh-CN");
     const papers = report.papers.filter((paper) => {
-      const inTrack = activeTrack === "ALL" || paper.track === activeTrack;
+      const inTrack = activeTrack === "ALL" || paper.track === activeTrack || paper.secondaryTracks.includes(activeTrack);
       if (!inTrack) return false;
       if (!normalized) return true;
       const haystack = [paper.title, paper.titleZh, paper.authors, paper.system, paper.summary, paper.relevance, paper.doi, paper.arxiv, ...paper.methods].join(" ").toLocaleLowerCase("zh-CN");
       return haystack.includes(normalized);
     });
-    return [...papers].sort((a, b) => sortBy === "score" ? b.score - a.score : b.published.localeCompare(a.published));
+    return [...papers].sort((a, b) => {
+      if (activeTrack !== "ALL") {
+        const aIsPrimary = a.track === activeTrack;
+        const bIsPrimary = b.track === activeTrack;
+        if (aIsPrimary !== bIsPrimary) return aIsPrimary ? -1 : 1;
+      }
+      return sortBy === "score" ? b.score - a.score : b.published.localeCompare(a.published);
+    });
   }, [activeTrack, query, sortBy]);
+
+  const primaryPapers = activeTrack === "ALL" ? filteredPapers : filteredPapers.filter((paper) => paper.track === activeTrack);
+  const relatedPapers = activeTrack === "ALL" ? [] : filteredPapers.filter((paper) => paper.track !== activeTrack);
 
   function submitSearch(event: FormEvent) {
     event.preventDefault();
@@ -189,26 +220,30 @@ export default function Home() {
             <label className="sort-select"><span>排序</span><select value={sortBy} onChange={(event) => setSortBy(event.target.value as "score" | "date")}><option value="score">综合评分</option><option value="date">发表时间</option></select></label>
           </div>
         </div>
-        <p className="result-count">当前显示 {filteredPapers.length} 项</p>
+        <p className="result-count">
+          {activeTrack === "ALL"
+            ? `当前显示 ${filteredPapers.length} 项`
+            : `当前显示 ${filteredPapers.length} 项 · 主分类 ${activeTrack}：${primaryPapers.length} 项 · 兼具 ${activeTrack}：${relatedPapers.length} 项`}
+        </p>
         <div className="library-list">
-          {filteredPapers.map((paper) => (
-            <article className={`library-item track-${paper.track.toLowerCase()}`} key={paper.id}>
-              <div className="library-main">
-                <div className="paper-meta"><PaperClassification paper={paper} /><span>{paper.venue} · {paper.published}</span></div>
-                <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p>
-                <p className="authors">{paper.authors}</p><PaperTags paper={paper} />
-                <div className="evidence-grid"><div><b>核心结果</b><p>{paper.summary}</p></div><div><b>与研究主线的关系</b><p>{paper.relevance}</p></div></div>
+          {activeTrack === "ALL" ? (
+            filteredPapers.map((paper) => <LibraryPaper paper={paper} key={paper.id} />)
+          ) : (
+            <>
+              <div className="result-group-heading primary-group">
+                <div><span>{activeTrack}</span><b>主分类为 {activeTrack} · {tracks[activeTrack].label}</b></div>
+                <small>{primaryPapers.length} 项 · 优先显示</small>
               </div>
-              <aside className="library-aside">
-                <div className="score-panel"><strong>{paper.score.toFixed(1)}</strong><span>/ 10</span><em>{paper.priority} 级</em></div>
-                <dl><div><dt>体系</dt><dd>{paper.system}</dd></div><div><dt>条件 / 工艺</dt><dd>{paper.conditions}</dd></div><div><dt>局限</dt><dd>{paper.limitation}</dd></div></dl>
-                <div className="library-actions">
-                  <a className="detail-action" href={`/paper?id=${encodeURIComponent(paper.id)}`}>查看通俗详解 →</a>
-                  <a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>
+              {primaryPapers.map((paper) => <LibraryPaper paper={paper} key={paper.id} />)}
+              {relatedPapers.length > 0 && (
+                <div className="result-group-heading related-group">
+                  <div><span>+</span><b>兼具 {activeTrack} 的交叉文献</b></div>
+                  <small>{relatedPapers.length} 项 · 主分类属于其他方向，仍与 {tracks[activeTrack].label} 相关</small>
                 </div>
-              </aside>
-            </article>
-          ))}
+              )}
+              {relatedPapers.map((paper) => <LibraryPaper paper={paper} key={paper.id} />)}
+            </>
+          )}
         </div>
         {filteredPapers.length === 0 && <div className="empty-state"><b>没有找到匹配内容</b><span>请更换关键词或切换研究主线。</span></div>}
       </section>
