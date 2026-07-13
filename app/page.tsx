@@ -58,11 +58,11 @@ function PaperClassification({ paper }: { paper: Paper }) {
   return (
     <div className={`classification track-${paper.track.toLowerCase()}`}>
       <span className="primary-classification">主分类 {paper.track} · {tracks[paper.track as TrackKey].label}</span>
-      {paper.secondaryTracks.length > 0 && (
-        <span className="secondary-classification">
-          兼具 {paper.secondaryTracks.map((track) => `${track} ${tracks[track as TrackKey].short}`).join(" · ")}
+      {paper.secondaryTracks.map((track) => (
+        <span className="secondary-classification" key={track}>
+          兼具 {track} · {tracks[track as TrackKey].short}
         </span>
-      )}
+      ))}
     </div>
   );
 }
