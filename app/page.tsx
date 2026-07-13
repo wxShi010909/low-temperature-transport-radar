@@ -1,9 +1,10 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import report from "@/data/reports.json";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
+type SectionKey = "today" | "library" | "opportunities" | "methods" | "atomic";
 type Paper = (typeof report.papers)[number];
 
 const tracks: Record<TrackKey, { label: string; short: string }> = {
@@ -15,6 +16,14 @@ const tracks: Record<TrackKey, { label: string; short: string }> = {
 };
 
 const trackKeys = Object.keys(tracks) as TrackKey[];
+
+const navigation: { id: SectionKey; label: string }[] = [
+  { id: "today", label: "今日日报" },
+  { id: "library", label: "文献库" },
+  { id: "opportunities", label: "研究机会" },
+  { id: "methods", label: "方法与设备" },
+  { id: "atomic", label: "原子制造" },
+];
 
 const counts = report.papers.reduce<Record<string, number>>((acc, paper) => {
   acc[paper.track] = (acc[paper.track] ?? 0) + 1;
@@ -49,11 +58,34 @@ export default function Home() {
   const [query, setQuery] = useState("");
   const [activeTrack, setActiveTrack] = useState<"ALL" | TrackKey>("ALL");
   const [sortBy, setSortBy] = useState<"score" | "date">("score");
+  const [activeSection, setActiveSection] = useState<SectionKey>("today");
+
+  useEffect(() => {
+    const updateActiveSection = () => {
+      const marker = window.scrollY + 120;
+      let current: SectionKey = "today";
+
+      for (const item of navigation) {
+        const section = document.getElementById(item.id);
+        if (section && section.offsetTop <= marker) current = item.id;
+      }
+
+      setActiveSection(current);
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
+  }, []);
 
   const filteredPapers = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase("zh-CN");
     const papers = report.papers.filter((paper) => {
-      const inTrack = activeTrack === "ALL" || paper.track === activeTrack || paper.secondaryTracks.includes(activeTrack);
+      const inTrack = activeTrack === "ALL" || paper.track === activeTrack;
       if (!inTrack) return false;
       if (!normalized) return true;
       const haystack = [paper.title, paper.titleZh, paper.authors, paper.system, paper.summary, paper.relevance, paper.doi, paper.arxiv, ...paper.methods].join(" ").toLocaleLowerCase("zh-CN");
@@ -64,12 +96,18 @@ export default function Home() {
 
   function submitSearch(event: FormEvent) {
     event.preventDefault();
+    setActiveSection("library");
     document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
   }
 
   function selectTrack(track: TrackKey) {
     setActiveTrack(track);
+    setActiveSection("library");
     document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function selectSection(section: SectionKey) {
+    setActiveSection(section);
   }
 
   return (
@@ -77,7 +115,16 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="返回首页"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></a>
         <nav aria-label="主导航">
-          <a className="active" href="#today">今日日报</a><a href="#library">文献库</a><a href="#opportunities">研究机会</a><a href="#methods">方法与设备</a><a href="#atomic">原子制造</a>
+          {navigation.map((item) => (
+            <a
+              className={activeSection === item.id ? "active" : ""}
+              href={`#${item.id}`}
+              key={item.id}
+              onClick={() => selectSection(item.id)}
+            >
+              {item.label}
+            </a>
+          ))}
         </nav>
       </header>
 
