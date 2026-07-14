@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import report from "@/data/reports.json";
 import details from "@/data/paper-details.json";
+import { FavoriteButton, NoteEditor } from "@/app/reader-tools";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 
@@ -18,7 +20,8 @@ export default function PaperDetailPage() {
   const [paperId, setPaperId] = useState<string | null | undefined>(undefined);
 
   useEffect(() => {
-    setPaperId(new URLSearchParams(window.location.search).get("id"));
+    const frame = window.requestAnimationFrame(() => setPaperId(new URLSearchParams(window.location.search).get("id")));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   if (paperId === undefined) {
@@ -32,7 +35,7 @@ export default function PaperDetailPage() {
     return (
       <main className="detail-loading">
         <b>暂时没有找到这篇文章的详解。</b>
-        <a href="/#library">返回文献库</a>
+        <Link href="/#library">返回文献库</Link>
       </main>
     );
   }
@@ -40,12 +43,12 @@ export default function PaperDetailPage() {
   return (
     <main className={`paper-detail-page track-${paper.track.toLowerCase()}`}>
       <header className="detail-header">
-        <a className="brand" href="/"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></a>
-        <a className="back-link" href="/#library">← 返回文献库</a>
+        <Link className="brand" href="/"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></Link>
+        <Link className="back-link" href="/#library">← 返回文献库</Link>
       </header>
 
       <article className="detail-article">
-        <div className="detail-breadcrumb"><a href="/">首页</a><span>/</span><a href="/#library">文献库</a><span>/</span><b>文章详解</b></div>
+        <div className="detail-breadcrumb"><Link href="/">首页</Link><span>/</span><Link href="/#library">文献库</Link><span>/</span><b>文章详解</b></div>
 
         <section className="detail-hero">
           <div className="detail-classification">
@@ -58,7 +61,10 @@ export default function PaperDetailPage() {
           <p className="detail-authors">{paper.authors}</p>
           <div className="detail-hero-footer">
             <div><strong>{paper.score.toFixed(1)}</strong><span>/ 10 · {paper.priority} 级</span></div>
-            <a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>
+            <div className="detail-hero-actions">
+              <FavoriteButton id={paper.id} />
+              <a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>
+            </div>
           </div>
         </section>
 
@@ -124,6 +130,12 @@ export default function PaperDetailPage() {
               <span>读完只记住这一点</span>
               <p>{detail.takeaway}</p>
             </section>
+
+            <NoteEditor
+              id={paper.id}
+              title="这篇文章的阅读笔记"
+              suggested={`【一句话理解】\n${detail.oneSentence}\n\n【作者做了什么】\n${detail.workflow.join("\n")}\n\n【最重要的结果】\n${detail.findings.join("\n")}\n\n【与当前研究的关系】\n${detail.researchConnection}\n\n【证据边界】\n${detail.limitationsDetailed}\n\n【我的理解 / 下一步想法】\n`}
+            />
           </div>
 
           <aside className="detail-aside">

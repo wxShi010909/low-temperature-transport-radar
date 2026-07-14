@@ -1,0 +1,77 @@
+{
+  "date": "2026-07-14",
+  "review": {
+    "id": "review-s41563-020-00840-0",
+    "kind": "每日综述",
+    "track": "A",
+    "secondaryTracks": ["B", "C"],
+    "title": "Graphene bilayers with a twist",
+    "titleZh": "扭转双层石墨烯综述",
+    "authors": "Eva Y. Andrei, Allan H. MacDonald",
+    "venue": "Nature Materials · Review Article",
+    "published": "2020-11-18",
+    "doi": "10.1038/s41563-020-00840-0",
+    "url": "https://www.nature.com/articles/s41563-020-00840-0",
+    "assistantSummary": "这篇综述适合作为扭转双层石墨烯的总入口：先解释魔角为什么会产生窄带和强关联，再把关联绝缘态、超导、磁性、电子向列性、线性温变电阻和量子反常霍尔态放到同一框架中。它不会替代最新进展，但能帮助建立阅读新论文所需的概念地图。",
+    "whySelected": "与你过去的石墨烯低温输运经验直接相连，同时能够帮助区分“器件可调参数”“直接输运现象”和“理论机制解释”。",
+    "readingGuide": [
+      "先看扭角、莫尔周期与平带之间的关系，不必一开始推导全部连续模型。",
+      "再看载流子填充、栅极环境和扭角不均匀如何改变关联相。",
+      "最后比较超导、磁性和量子反常霍尔证据分别来自哪些测量，避免把所有异常都统称为强关联。"
+    ],
+    "notNew": true
+  },
+  "classics": [
+    {
+      "id": "classic-nature04233",
+      "kind": "经典实验",
+      "track": "A",
+      "secondaryTracks": ["C"],
+      "title": "Two-dimensional gas of massless Dirac fermions in graphene",
+      "titleZh": "石墨烯中的二维无质量狄拉克费米子",
+      "authors": "K. S. Novoselov et al.",
+      "venue": "Nature",
+      "published": "2005-11-10",
+      "doi": "10.1038/nature04233",
+      "url": "https://www.nature.com/articles/nature04233",
+      "assistantSummary": "文章通过最低电导、半整数型量子霍尔效应和回旋质量等输运证据，建立石墨烯载流子服从无质量狄拉克方程的实验图像。",
+      "whySelected": "它把栅控、磁输运和能带物理连接得非常清楚，是理解后续单层、多层和莫尔石墨烯实验的坐标原点。",
+      "readingGuide": ["先看电场效应与载流子类型切换。", "重点理解半整数型量子霍尔序列为何不同于普通二维电子气。", "把观测结果与狄拉克能谱联系起来，而不是只记结论。"],
+      "notNew": true
+    },
+    {
+      "id": "classic-nature26160",
+      "kind": "经典实验",
+      "track": "A",
+      "secondaryTracks": ["B", "C"],
+      "title": "Unconventional superconductivity in magic-angle graphene superlattices",
+      "titleZh": "魔角石墨烯超晶格中的非常规超导",
+      "authors": "Yuan Cao et al.",
+      "venue": "Nature",
+      "published": "2018-03-05",
+      "doi": "10.1038/nature26160",
+      "url": "https://www.nature.com/articles/nature26160",
+      "assistantSummary": "这项工作在魔角双层石墨烯中观察到邻近关联绝缘态的超导输运特征，推动二维莫尔体系成为可栅控强关联研究平台。",
+      "whySelected": "适合用来学习怎样从电阻—温度、载流子密度和磁场依赖逐步建立超导证据，同时保留对配对机制的证据边界。",
+      "readingGuide": ["先找清楚扭角和载流子填充的定义。", "区分零电阻或转变特征与非常规配对机制本身。", "留意器件不均匀、临界场和关联绝缘态之间的关系。"],
+      "notNew": true
+    },
+    {
+      "id": "classic-344524a0",
+      "kind": "原子制造经典",
+      "track": "E",
+      "secondaryTracks": ["D"],
+      "title": "Positioning single atoms with a scanning tunnelling microscope",
+      "titleZh": "利用扫描隧道显微镜定位单个原子",
+      "authors": "D. M. Eigler, E. K. Schweizer",
+      "venue": "Nature",
+      "published": "1990-04-05",
+      "doi": "10.1038/344524a0",
+      "url": "https://www.nature.com/articles/344524a0",
+      "assistantSummary": "作者利用扫描隧道显微镜探针操控单个吸附原子，展示了原子尺度确定性定位的早期代表性能力。文章的价值不只在图案本身，而在于把原子识别、操控和再次成像验证组成闭环。",
+      "whySelected": "与你现在关注的原子制造直接相关，可作为判断现代原子制造工作是否真正实现“可定位、可操控、可验证”的基础参照。",
+      "readingGuide": ["先分清STM成像与STM操控是两个步骤。", "关注低温、真空、探针状态和表面扩散对稳定性的作用。", "思考怎样从单原子演示扩展到器件功能、互联与重复性。"],
+      "notNew": true
+    }
+  ]
+}
