@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-13T08:00:00-07:00",
-  "reportDate": "2026-07-13",
-  "scope": "初始化精选：近半年低温输运与原子制造相关工作",
+  "updatedAt": "2026-07-14T09:00:00+08:00",
+  "reportDate": "2026-07-14",
+  "scope": "过去24小时新收录与近7天延迟收录；含1篇补充 Perspective",
   "history": [
     {
       "date": "2026-07-13",
@@ -9,6 +9,13 @@
       "total": 10,
       "counts": { "A": 2, "B": 2, "C": 1, "D": 2, "E": 3 },
       "paperIds": ["2607.01439", "2603.21159", "2606.18449", "2606.07848", "2602.20369", "2604.18736", "2604.12549", "2601.20025", "2601.21154", "2509.21525"]
+    },
+    {
+      "date": "2026-07-14",
+      "label": "工作日报",
+      "total": 8,
+      "counts": { "A": 3, "B": 1, "C": 2, "D": 2, "E": 0 },
+      "paperIds": ["2607.09256", "2607.06304", "2607.09437", "2607.08929", "2607.08822", "2607.08868", "2607.08890", "2607.01691"]
     }
   ],
   "papers": [
@@ -32,7 +39,7 @@
       "arxiv": "2607.01439",
       "doi": "10.48550/arXiv.2607.01439",
       "url": "https://arxiv.org/abs/2607.01439",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2603.21159",
@@ -54,7 +61,7 @@
       "arxiv": "2603.21159",
       "doi": "10.48550/arXiv.2603.21159",
       "url": "https://arxiv.org/abs/2603.21159",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2606.18449",
@@ -76,7 +83,7 @@
       "arxiv": "2606.18449",
       "doi": "10.48550/arXiv.2606.18449",
       "url": "https://arxiv.org/abs/2606.18449",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2606.07848",
@@ -98,7 +105,7 @@
       "arxiv": "2606.07848",
       "doi": "10.48550/arXiv.2606.07848",
       "url": "https://arxiv.org/abs/2606.07848",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2602.20369",
@@ -120,7 +127,7 @@
       "arxiv": "2602.20369",
       "doi": "10.48550/arXiv.2602.20369",
       "url": "https://arxiv.org/abs/2602.20369",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2604.18736",
@@ -230,6 +237,182 @@
       "arxiv": "2509.21525",
       "doi": "10.48550/arXiv.2509.21525",
       "url": "https://arxiv.org/abs/2509.21525",
+      "featured": false
+    },
+    {
+      "id": "2607.09256",
+      "track": "A",
+      "secondaryTracks": ["B", "C"],
+      "title": "Terahertz field-driven nonlinear Hall effect and other second order transport phenomena in two-dimensional tellurene",
+      "titleZh": "二维碲烯中的太赫兹驱动非线性霍尔与二阶输运",
+      "authors": "M. D. Moldavskaya, L. E. Golub, E. Mönch, Chang Niu, Peide D. Ye, J. Wunderlich, S. D. Ganichev",
+      "venue": "arXiv",
+      "published": "2026-07-10",
+      "system": "二维碲烯 Hall bar",
+      "conditions": "室温至 4.2 K；栅压与太赫兹频率可调",
+      "methods": ["太赫兹输运", "非线性霍尔", "栅控", "4.2 K"],
+      "summary": "实测线偏振太赫兹辐照下横向、纵向和对角二阶电流；电流随面内电场平方变化，电子与空穴区符号相反，降温至 4.2 K 后显著增强。作者以斜散射、侧跳和 Berry 曲率偶极共同解释。",
+      "relevance": "把低温输运、二维器件和高频非线性响应结合起来，可直接启发栅控、温变与频率依赖的联合测量。",
+      "limitation": "目前为预印本；多种微观机制同时存在，单凭总电流尚不能唯一分离每一项贡献。",
+      "score": 9.4,
+      "priority": "S",
+      "arxiv": "2607.09256",
+      "doi": "10.48550/arXiv.2607.09256",
+      "url": "https://arxiv.org/abs/2607.09256",
+      "featured": true
+    },
+    {
+      "id": "2607.06304",
+      "track": "A",
+      "secondaryTracks": ["B", "E"],
+      "title": "Decoupling Josephson Coupling and Supercurrent Nonreciprocity in Twisted NbSe2/NbSe2 van der Waals Junctions",
+      "titleZh": "扭转 NbSe₂/NbSe₂ 结中约瑟夫森耦合与超电流非互易性的解耦",
+      "authors": "Seung-Gi Lee, Kwon-Neong Jung, Jae-Kuen Kim, Jae-Chun Jeon, Jiho Yoon, Stuart S. P. Parkin, Kun-Rok Jeon",
+      "venue": "arXiv · v2 延迟收录",
+      "published": "2026-07-10",
+      "system": "干法转移扭转 NbSe₂/NbSe₂ 垂直约瑟夫森结",
+      "conditions": "低温超导输运；磁场、扭角与界面质量对照",
+      "methods": ["约瑟夫森结", "超电流二极管", "HRTEM", "界面退化对照"],
+      "summary": "实测显示约瑟夫森耦合强度随扭角明显变化，但二极管效率没有系统扭角依赖；弱耦合、界面无序器件及人为退化界面反而出现更强非互易响应。作者据此认为界面无序是主要来源。",
+      "relevance": "给二维超导异质结提供了很重要的反例式基准：结构角度、界面透明度和无序必须分别控制，不能把二极管效应直接归因于扭角。",
+      "limitation": "界面无序的具体微观类型仍未逐一确定；接近 30% 的效率来自人为退化样品，不能代表洁净结的本征上限。",
+      "score": 9.3,
+      "priority": "S",
+      "arxiv": "2607.06304",
+      "doi": "10.48550/arXiv.2607.06304",
+      "url": "https://arxiv.org/abs/2607.06304",
+      "featured": true
+    },
+    {
+      "id": "2607.08822",
+      "track": "C",
+      "secondaryTracks": ["A"],
+      "title": "Energetics of fractional anomalous Hall crystals in rhombohedral graphene",
+      "titleZh": "菱方五层石墨烯中分数量子反常霍尔晶体的能量学",
+      "authors": "Félix Desrochers, Ashvin Vishwanath",
+      "venue": "arXiv",
+      "published": "2026-07-09",
+      "system": "菱方五层石墨烯（R5G）",
+      "conditions": "真实能带色散与屏蔽库仑相互作用；无外磁场",
+      "methods": ["变分波函数", "Monte Carlo", "分数反常霍尔", "相图预测"],
+      "summary": "计算表明分数反常霍尔晶体在现实 R5G 模型中可与整数反常霍尔晶体和费米液体竞争，并预测扭角、位移场和弱周期势如何改变稳定窗口。",
+      "relevance": "为石墨烯低温输运中的分数态辨认提供可检验参数趋势，但结论仍是理论候选态的能量比较。",
+      "limitation": "没有新的实验输运曲线；能量接近时，样品无序、应变和有限温度可能改变相序。",
+      "score": 9.2,
+      "priority": "S",
+      "arxiv": "2607.08822",
+      "doi": "10.48550/arXiv.2607.08822",
+      "url": "https://arxiv.org/abs/2607.08822",
+      "featured": true
+    },
+    {
+      "id": "2607.08890",
+      "track": "D",
+      "secondaryTracks": ["C", "E"],
+      "title": "Hybrid DiffractGPT-Rietveld Refinement Framework for Automated X-ray Diffraction Analysis",
+      "titleZh": "融合 DiffractGPT 与 Rietveld 精修的自动 XRD 分析框架",
+      "authors": "Charles Rhys Campbell, Justin Ely, Jaehyung Lee, Frank M. Abel, Kamal Choudhary",
+      "venue": "arXiv",
+      "published": "2026-07-09",
+      "system": "粉末 XRD 自动结构解析流程",
+      "conditions": "RRUFF 与 Alexandria 数据集基准测试",
+      "methods": ["DiffractGPT", "Rietveld 精修", "数据库匹配", "自动化分析"],
+      "summary": "AGAPI-XRD 把生成式结构候选、数据库谱匹配、自动 Rietveld 精修和力场弛豫接成统一流程；基准测试给出候选结构与有效晶格参数的量化成功率。",
+      "relevance": "适合作为原子制造后结构表征的自动分析入口，但仍应保留人工检查、残差图和不确定度审查。",
+      "limitation": "基准集与真实多相、织构、缺陷和仪器展宽样品仍有差距；生成候选不等同于结构被唯一证实。",
+      "score": 9.0,
+      "priority": "S",
+      "arxiv": "2607.08890",
+      "doi": "10.48550/arXiv.2607.08890",
+      "url": "https://arxiv.org/abs/2607.08890",
+      "featured": true
+    },
+    {
+      "id": "2607.01691",
+      "track": "D",
+      "secondaryTracks": ["A", "E"],
+      "title": "Quantum Heat Under the Microscope: A Perspective on Cryogenic Scanning Thermal Microscopy",
+      "titleZh": "显微镜下的量子热：低温扫描热显微术展望",
+      "authors": "Valentin Fonck, Jean Spiece, Pascal Gehring",
+      "venue": "Nano Futures · Perspective（补充综述）",
+      "published": "2026-07-02",
+      "system": "低温局域热输运与扫描热显微平台",
+      "conditions": "补充综述；近90天窗口，非当天新论文",
+      "methods": ["补充综述", "Perspective", "低温 SThM", "局域热输运"],
+      "summary": "文章综述低温局域热输运表征的现有方法与局限，并用五个案例说明低温扫描热显微术可能解决的量子热输运问题。核心判断是：目前仍缺少可在低温纳米尺度直接成像局域热流的成熟通用方法。",
+      "relevance": "对低温设备建设很有价值，可帮助先定义温度传感、热接触、空间分辨率和样品扰动之间的工程权衡。",
+      "limitation": "这是 Perspective，不是已经完成全部能力验证的设备论文；部分应用场景属于作者提出的未来方向。",
+      "score": 9.1,
+      "priority": "S",
+      "arxiv": "2607.01691",
+      "doi": "10.1088/2399-1984/adef25",
+      "url": "https://arxiv.org/abs/2607.01691",
+      "featured": true
+    },
+    {
+      "id": "2607.09437",
+      "track": "A",
+      "secondaryTracks": ["B"],
+      "title": "Anisotropic Superconductivity with Enhanced Critical Field in Strained RuO2",
+      "titleZh": "应变 RuO₂ 中的各向异性超导与增强临界场",
+      "authors": "Younes Ghorbani, Samuel Poage, Xuehsi Gao, Luka Mitrovic, Neha Wadehra, Benjamin Gregory, Suchismita Sarker, Betul Pamuk, Andrej Singer, Darrell G. Schlom, Chun Ning Lau, Kaveh Ahadi",
+      "venue": "arXiv",
+      "published": "2026-07-10",
+      "system": "TiO₂(100)/(110) 上外延应变 RuO₂ 薄膜",
+      "conditions": "沿不同晶向的低温输运与面内磁场",
+      "methods": ["外延薄膜", "低温输运", "各向异性超导", "临界场"],
+      "summary": "实测超导转变随生长取向和输运晶向显著变化，并观察到面内临界场强烈超过 Pauli 顺磁极限；作者将后者归因于强自旋轨道散射。",
+      "relevance": "展示了用外延应变和晶向工程联动调节超导，适合扩展为厚度、应变、取向与临界场的系统相图。",
+      "limitation": "超过 Pauli 极限并不能单独证明非常规配对；自旋轨道散射解释还需更多谱学或厚度依赖证据。",
+      "score": 9.0,
+      "priority": "S",
+      "arxiv": "2607.09437",
+      "doi": "10.48550/arXiv.2607.09437",
+      "url": "https://arxiv.org/abs/2607.09437",
+      "featured": false
+    },
+    {
+      "id": "2607.08929",
+      "track": "B",
+      "secondaryTracks": ["E"],
+      "title": "Fast Homoepitaxy on (100) beta-Ga2O3 Substrates with Large Grown-In Offcut",
+      "titleZh": "大内生偏切角 (100) β-Ga₂O₃ 衬底上的快速同质外延",
+      "authors": "M. Brooks Tellekamp, Drew Haven, David Joyce, John Mangum, Henry Garland, Robert Lavelle, Kevin Schulte, Anna Sacchi, Matt Young, Andriy Zakutayev",
+      "venue": "arXiv",
+      "published": "2026-07-09",
+      "system": "(100) β-Ga₂O₃ 衬底与 MBE 同质外延层",
+      "conditions": "最高 13.4° 内生偏切；台阶流生长",
+      "methods": ["MBE", "偏切衬底", "台阶流", "肖特基二极管"],
+      "summary": "通过直接生长大内生偏切角衬底，使通常生长较慢的 (100) 取向达到快速取向相当的 MBE 速率；外延层保持低非故意 n 型掺杂，并用肖特基器件验证电学性能。",
+      "relevance": "把衬底晶面设计、抛光、台阶流和器件验收连成制造链，对外延设备与工艺窗口优化很有参考价值。",
+      "limitation": "器件未做边缘终端，且长期均匀性、缺陷统计和大面积量产稳定性仍需验证。",
+      "score": 8.8,
+      "priority": "A",
+      "arxiv": "2607.08929",
+      "doi": "10.48550/arXiv.2607.08929",
+      "url": "https://arxiv.org/abs/2607.08929",
+      "featured": false
+    },
+    {
+      "id": "2607.08868",
+      "track": "C",
+      "secondaryTracks": ["B", "E"],
+      "title": "Grain-boundary-mediated kinetic arrest in graphite-to-diamond transformation",
+      "titleZh": "石墨向金刚石转变中的晶界介导动力学阻滞",
+      "authors": "Zuzanna Malinowska-Trzmielak, Vilmos Neuman, Mark Wilson",
+      "venue": "arXiv",
+      "published": "2026-07-09",
+      "system": "多晶石墨到金刚石的高压高温转变",
+      "conditions": "大规模分子动力学；晶粒尺寸与取向可控",
+      "methods": ["分子动力学", "高压高温", "晶界", "sp²/sp³ 转变"],
+      "summary": "模拟表明晶界会促进局部 sp³ 成核，却会在晶粒取向不匹配处阻止金刚石继续传播，因此多晶前驱体容易形成动力学冻结的 sp²/sp³ 混合结构。",
+      "relevance": "对极端条件材料制造提供了可操作变量：除了压力和温度，还应系统控制前驱体晶粒结构与取向分布。",
+      "limitation": "全部结果来自分子动力学模拟；势函数、时间尺度和尺寸限制都需要实验对照。",
+      "score": 8.7,
+      "priority": "A",
+      "arxiv": "2607.08868",
+      "doi": "10.48550/arXiv.2607.08868",
+      "url": "https://arxiv.org/abs/2607.08868",
       "featured": false
     }
   ]

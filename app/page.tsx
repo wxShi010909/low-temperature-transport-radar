@@ -30,7 +30,24 @@ const counts = report.papers.reduce<Record<string, number>>((acc, paper) => {
   return acc;
 }, {});
 
-const featured = report.papers.filter((paper) => paper.featured).slice(0, 3);
+const featured = report.papers.filter((paper) => paper.featured).slice(0, 5);
+
+const reportDateLabel = new Intl.DateTimeFormat("zh-CN", {
+  timeZone: "Asia/Shanghai",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+}).format(new Date(`${report.reportDate}T00:00:00+08:00`));
+
+const updatedAtLabel = new Intl.DateTimeFormat("zh-CN", {
+  timeZone: "Asia/Shanghai",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: false,
+}).format(new Date(report.updatedAt));
 
 function TransportPlot() {
   return (
@@ -174,7 +191,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="date-line">2026年7月13日 · 初始化精选</p>
+          <p className="date-line">{reportDateLabel} · 工作日报</p>
           <h1>跨材料追踪低温输运研究全链条</h1>
           <p className="hero-kicker">实验 <b>·</b> 制备 <b>·</b> 理论 <b>·</b> 设备 <b>·</b> 原子制造</p>
           <p className="hero-description">每日检索、核验并关联从材料生长到低温测量的关键进展，让论文、工艺、设备和可验证的研究机会出现在同一条线上。</p>
@@ -251,9 +268,9 @@ export default function Home() {
       <section className="opportunity-section" id="opportunities">
         <div className="section-heading"><div><p>CROSS-TRACK IDEAS</p><h2>跨主线研究机会</h2></div><span>从论文中提取可执行的实验连接</span></div>
         <div className="opportunity-grid">
-          <article><span>E → A</span><h3>原子层刻蚀 × 低温量子输运</h3><p>将金刚石自限原子层刻蚀用于低损伤纳米通道和量子传感器结构，比较刻蚀循环数、表面态与低温载流子散射之间的关系。</p><b>建议测量：R–T、Hall、弱局域、低频噪声</b></article>
-          <article><span>B → D</span><h3>空气敏感材料 × 真空转移测量链</h3><p>把室温微加工、惰性环境封装和低温探针装样整合为可追溯流程，建立热预算、暴露时间和器件成功率数据库。</p><b>建议建设：真空转移盒、标准样品座、接触质控</b></article>
-          <article><span>C → E</span><h3>自主优化 × 原子结制造闭环</h3><p>将反馈电迁移、电导量子判据与自动参数搜索结合，以实时输运信号决定加工动作，形成原子尺度“制造—测量—决策”闭环。</p><b>建议指标：成结率、平台稳定性、原子构型可重复性</b></article>
+          <article><span>B → A</span><h3>界面无序 × 超电流非互易性</h3><p>把扭角、界面透明度和无序做成正交变量，以同一器件的 TEM 与低温输运关联，判断二极管效应究竟来自结构设计还是加工缺陷。</p><b>建议测量：I<sub>c</sub><sup>+</sup>/I<sub>c</sub><sup>−</sup>、正常态电阻、磁场图样、界面统计</b></article>
+          <article><span>D → A</span><h3>低温热成像 × 输运同步测量</h3><p>在标准微加热器上先标定低温扫描热探针，再与四端输运同步，区分整体相变、局域热点和接触耗散。</p><b>建议建设：探针热阻校准、磁场兼容、扰动评估、标准样品</b></article>
+          <article><span>D → E</span><h3>自动 XRD × 制造参数闭环</h3><p>让自动结构候选与 Rietveld 精修进入每批生长记录，但保留残差图、人工审核和 TEM/XPS 交叉验证，再反馈下一轮温度与通量。</p><b>建议指标：候选排序、精修残差、误报率、跨表征一致性</b></article>
         </div>
       </section>
 
@@ -261,8 +278,8 @@ export default function Home() {
         <div className="section-heading"><div><p>METHODS & INFRASTRUCTURE</p><h2>方法与设备建设</h2></div><span>优先提取能在实验室复用的方案</span></div>
         <div className="method-layout">
           <div className="method-feature">
-            <p className="eyebrow">本期设备启发</p><h3>脉冲管低温系统的精密电学测量</h3><p>不要只关注最低温度。需要同时测量振动谱、电磁扰动谱、磁场依赖噪声，并避开仪器工作频率与系统扰动频率的重合区。</p>
-            <ul><li>同轴低温探针与屏蔽连续性</li><li>量子 Hall 电阻或标准电阻验证链</li><li>不同磁场和压缩机状态下的噪声谱</li><li>测量频率、时间常数与采样策略联调</li></ul>
+            <p className="eyebrow">本期设备启发</p><h3>低温扫描热显微：先做可追溯校准</h3><p>不要只追求最低温度和最高空间分辨率。探针灵敏度、探针—样品热阻、样品扰动与磁场兼容必须在同一套标准样品上验收。</p>
+            <ul><li>已知功率微加热器与热导标准样品</li><li>探针温度计与热接触电阻校准</li><li>扫描振动、热漂移与空间分辨率评估</li><li>局域温度图与四端电输运同步记录</li></ul>
           </div>
           <div className="method-cards">
             <article><span>01</span><div><h3>低温系统</h3><p>制冷、磁体、温控、样品空间与振动隔离。</p></div></article>
@@ -297,7 +314,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><div><span className="brand-mark">LT</span><b>低温输运研究雷达</b></div><p>每日更新 · 来源核验 · 材料中立 · 研究链条关联</p><small>最近更新：2026-07-13 08:00（America/Los_Angeles）</small></footer>
+      <footer><div><span className="brand-mark">LT</span><b>低温输运研究雷达</b></div><p>每日更新 · 来源核验 · 材料中立 · 研究链条关联</p><small>最近更新：{updatedAtLabel}（北京时间）</small></footer>
     </main>
   );
 }
