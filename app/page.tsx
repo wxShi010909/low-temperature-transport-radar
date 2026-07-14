@@ -3,12 +3,13 @@
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import report from "@/data/reports.json";
 import dailyReading from "@/data/daily-reading.json";
+import curatedReading from "@/data/curated-reading.json";
 import { ExportAllNotesButton, FavoriteButton, getFavoriteIds, getSavedNote, NoteEditor, READER_EVENT } from "@/app/reader-tools";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 type SectionKey = "today" | "reading" | "my-reading" | "library" | "opportunities" | "methods" | "atomic";
 type Paper = (typeof report.papers)[number];
-type ReadingItem = typeof dailyReading.review | (typeof dailyReading.classics)[number];
+type ReadingItem = (typeof curatedReading.items)[number];
 
 const tracks: Record<TrackKey, { label: string; short: string }> = {
   A: { label: "低温输运实验", short: "输运实验" },
@@ -30,13 +31,9 @@ const navigation: { id: SectionKey; label: string }[] = [
   { id: "atomic", label: "原子制造" },
 ];
 
-const counts = report.papers.reduce<Record<string, number>>((acc, paper) => {
-  acc[paper.track] = (acc[paper.track] ?? 0) + 1;
-  return acc;
-}, {});
-
 const featured = report.papers.filter((paper) => paper.featured).slice(0, 5);
-const readingItems: ReadingItem[] = [dailyReading.review, ...dailyReading.classics];
+const readingItems: ReadingItem[] = curatedReading.items;
+const reportDates = [...report.history].reverse().map((entry) => entry.date);
 
 const reportDateLabel = new Intl.DateTimeFormat("zh-CN", {
   timeZone: "Asia/Shanghai",
@@ -114,6 +111,7 @@ function LibraryPaper({ paper }: { paper: Paper }) {
 export default function Home() {
   const [query, setQuery] = useState("");
   const [activeTrack, setActiveTrack] = useState<"ALL" | TrackKey>("ALL");
+  const [activeDate, setActiveDate] = useState<"ALL" | string>("ALL");
   const [sortBy, setSortBy] = useState<"score" | "date">("score");
   const [activeSection, setActiveSection] = useState<SectionKey>("today");
   const [favoriteIds, setFavoriteIds] = useState<string[]>([]);
@@ -159,9 +157,12 @@ export default function Home() {
 
   const filteredPapers = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase("zh-CN");
+    const selectedHistory = activeDate === "ALL" ? null : report.history.find((entry) => entry.date === activeDate);
+    const datePaperIds = selectedHistory ? new Set(selectedHistory.paperIds) : null;
     const papers = report.papers.filter((paper) => {
       const inTrack = activeTrack === "ALL" || paper.track === activeTrack || paper.secondaryTracks.includes(activeTrack);
       if (!inTrack) return false;
+      if (datePaperIds && !datePaperIds.has(paper.id)) return false;
       if (!normalized) return true;
       const haystack = [paper.title, paper.titleZh, paper.authors, paper.system, paper.summary, paper.relevance, paper.doi, paper.arxiv, ...paper.methods].join(" ").toLocaleLowerCase("zh-CN");
       return haystack.includes(normalized);
@@ -174,12 +175,18 @@ export default function Home() {
       }
       return sortBy === "score" ? b.score - a.score : b.published.localeCompare(a.published);
     });
-  }, [activeTrack, query, sortBy]);
+  }, [activeDate, activeTrack, query, sortBy]);
 
   const primaryPapers = activeTrack === "ALL" ? filteredPapers : filteredPapers.filter((paper) => paper.track === activeTrack);
   const relatedPapers = activeTrack === "ALL" ? [] : filteredPapers.filter((paper) => paper.track !== activeTrack);
   const favoritePapers = report.papers.filter((paper) => favoriteIds.includes(paper.id));
   const favoriteReadings = readingItems.filter((item) => favoriteIds.includes(item.id));
+  const countPaperIds = activeDate === "ALL" ? null : new Set(report.history.find((entry) => entry.date === activeDate)?.paperIds ?? []);
+  const counts = report.papers.reduce<Record<string, number>>((acc, paper) => {
+    if (countPaperIds && !countPaperIds.has(paper.id)) return acc;
+    acc[paper.track] = (acc[paper.track] ?? 0) + 1;
+    return acc;
+  }, {});
 
   function submitSearch(event: FormEvent) {
     event.preventDefault();
@@ -189,6 +196,12 @@ export default function Home() {
 
   function selectTrack(track: TrackKey) {
     setActiveTrack(track);
+    setActiveSection("library");
+    document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function selectDate(date: string) {
+    setActiveDate(date);
     setActiveSection("library");
     document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
   }
@@ -236,6 +249,11 @@ export default function Home() {
           </button>
         ))}
       </section>
+      <section className="date-filter-bar" aria-label="按日报日期筛选">
+        <div><span>DATE FILTER</span><div><b>选择日报日期</b><small>可与 A—E 分类同时使用</small></div></div>
+        <label><span>日报日期</span><select value={activeDate} onChange={(event) => selectDate(event.target.value)}><option value="ALL">全部日期</option>{reportDates.map((date) => <option value={date} key={date}>{date}{date === report.reportDate ? "（今天）" : ""}</option>)}</select></label>
+        {activeDate !== "ALL" && <button type="button" onClick={() => selectDate("ALL")}>清除日期筛选</button>}
+      </section>
 
       <section className="today" id="today">
         <div className="section-heading"><div><p>DAILY SIGNAL</p><h2>今日最值得关注</h2></div><span>{report.scope}</span></div>
@@ -269,6 +287,7 @@ export default function Home() {
             <aside>
               <b>为什么今天推荐</b><p>{dailyReading.review.whySelected}</p>
               <b>建议阅读顺序</b><ol>{dailyReading.review.readingGuide.map((item) => <li key={item}>{item}</li>)}</ol>
+              <a className="curated-detail-link" href={`/reading?id=${encodeURIComponent(dailyReading.review.id)}`}>查看通俗详解 →</a>
               <a href={dailyReading.review.url} target="_blank" rel="noreferrer">查看出版社页面 ↗</a>
             </aside>
           </div>
@@ -283,9 +302,26 @@ export default function Home() {
               <h3>{item.titleZh}</h3><p className="reading-title-en">{item.title}</p>
               <p className="assistant-summary">{item.assistantSummary}</p>
               <div className="classic-why"><b>为什么值得重读</b><p>{item.whySelected}</p></div>
-              <a href={item.url} target="_blank" rel="noreferrer">出版社原文 · DOI {item.doi} ↗</a>
+              <div className="classic-actions"><a className="curated-detail-link" href={`/reading?id=${encodeURIComponent(item.id)}`}>查看通俗详解 →</a><a href={item.url} target="_blank" rel="noreferrer">出版社原文 ↗</a></div>
             </article>
           ))}
+        </div>
+        <div className="curated-archive">
+          <div className="classic-heading"><div><h3>往期综述与经典文献库</h3><p>每日推荐只负责当天展示；所有条目和详解都会永久追加保留。</p></div><span>{curatedReading.items.length} 篇已归档</span></div>
+          <div className="curated-history-list">
+            {[...curatedReading.history].reverse().map((entry) => (
+              <article key={entry.date}>
+                <div className="curated-history-date"><b>{entry.date}</b><span>1 篇综述 · {entry.classicIds.length} 篇经典文章</span></div>
+                <div className="curated-history-papers">
+                  {[entry.reviewId, ...entry.classicIds].map((id) => {
+                    const item = curatedReading.items.find((candidate) => candidate.id === id);
+                    if (!item) return null;
+                    return <a href={`/reading?id=${encodeURIComponent(item.id)}`} key={item.id}><span>{item.kind}</span><b>{item.titleZh}</b><em>查看详解 →</em></a>;
+                  })}
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -319,13 +355,14 @@ export default function Home() {
           </div>
           <div className="toolbar-right">
             <label className="compact-search"><span>搜索</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="题目、材料、方法、DOI" /></label>
+            <label className="sort-select date-select"><span>日报日期</span><select value={activeDate} onChange={(event) => setActiveDate(event.target.value)}><option value="ALL">全部日期</option>{reportDates.map((date) => <option value={date} key={date}>{date}</option>)}</select></label>
             <label className="sort-select"><span>排序</span><select value={sortBy} onChange={(event) => setSortBy(event.target.value as "score" | "date")}><option value="score">综合评分</option><option value="date">发表时间</option></select></label>
           </div>
         </div>
         <p className="result-count">
           {activeTrack === "ALL"
-            ? `当前显示 ${filteredPapers.length} 项`
-            : `当前显示 ${filteredPapers.length} 项 · 主分类 ${activeTrack}：${primaryPapers.length} 项 · 兼具 ${activeTrack}：${relatedPapers.length} 项`}
+            ? `当前显示 ${filteredPapers.length} 项${activeDate === "ALL" ? " · 全部日报日期" : ` · ${activeDate} 日报`}`
+            : `当前显示 ${filteredPapers.length} 项 · ${activeDate === "ALL" ? "全部日报日期" : `${activeDate} 日报`} · 主分类 ${activeTrack}：${primaryPapers.length} 项 · 兼具 ${activeTrack}：${relatedPapers.length} 项`}
         </p>
         <div className="library-list">
           {activeTrack === "ALL" ? (
