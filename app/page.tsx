@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import report from "@/data/reports.json";
 import dailyReading from "@/data/daily-reading.json";
-import { FavoriteButton, getFavoriteIds, getSavedNote, NoteEditor, READER_EVENT } from "@/app/reader-tools";
+import { ExportAllNotesButton, FavoriteButton, getFavoriteIds, getSavedNote, NoteEditor, READER_EVENT } from "@/app/reader-tools";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 type SectionKey = "today" | "reading" | "my-reading" | "library" | "opportunities" | "methods" | "atomic";
@@ -103,9 +103,8 @@ function LibraryPaper({ paper }: { paper: Paper }) {
         <div className="score-panel"><strong>{paper.score.toFixed(1)}</strong><span>/ 10</span><em>{paper.priority} 级</em></div>
         <dl><div><dt>体系</dt><dd>{paper.system}</dd></div><div><dt>条件 / 工艺</dt><dd>{paper.conditions}</dd></div><div><dt>局限</dt><dd>{paper.limitation}</dd></div></dl>
         <div className="library-actions">
-          <FavoriteButton id={paper.id} />
           <a className="detail-action" href={`/paper?id=${encodeURIComponent(paper.id)}`}>查看通俗详解 →</a>
-          <a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>
+          <div className="library-secondary-actions"><FavoriteButton id={paper.id} /><a href={paper.url} target="_blank" rel="noreferrer">原始文献 ↗</a></div>
         </div>
       </aside>
     </article>
@@ -243,8 +242,7 @@ export default function Home() {
         <div className="featured-grid">
           {featured.map((paper) => (
             <article className={`paper-card track-${paper.track.toLowerCase()}`} key={paper.id}>
-              <FavoriteButton id={paper.id} compact />
-              <div className="paper-meta"><PaperClassification paper={paper} /><span>{paper.published}</span></div>
+              <div className="paper-meta"><PaperClassification paper={paper} /><div className="paper-meta-tools"><span>{paper.published}</span><FavoriteButton id={paper.id} compact /></div></div>
               <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p><PaperTags paper={paper} limit={3} /><p className="summary">{paper.summary}</p>
               <div className="paper-footer"><span className="read-badge">点击查看通俗详解</span><span className="score"><b>{paper.score.toFixed(1)}</b> / 10</span></div>
               <a className="card-link" href={`/paper?id=${encodeURIComponent(paper.id)}`} aria-label={`查看 ${paper.title} 的通俗详解`} />
@@ -294,7 +292,7 @@ export default function Home() {
       <section className="my-reading-section" id="my-reading">
         <div className="section-heading wide"><div><p>MY READING</p><h2>我的收藏与阅读整理</h2></div><span>{favoriteIds.length} 篇收藏 · {savedNoteIds.length} 条已保存笔记</span></div>
         <div className="saved-reading-panel">
-          <div className="saved-reading-heading"><div><h3>红心收藏</h3><p>收藏后可从这里继续阅读；再次点击红心即可取消。</p></div><span>保存在当前浏览器</span></div>
+          <div className="saved-reading-heading"><div><h3>红心收藏</h3><p>收藏后可从这里继续阅读；再次点击红心即可取消。</p></div><div className="saved-reading-tools"><span>保存在当前浏览器</span><ExportAllNotesButton entries={[...report.papers.map((paper) => ({ id: paper.id, title: paper.titleZh })), ...readingItems.map((item) => ({ id: item.id, title: item.titleZh })), { id: `daily-${report.reportDate}`, title: `${reportDateLabel}阅读整理` }]} /></div></div>
           {favoritePapers.length + favoriteReadings.length === 0 ? (
             <div className="saved-empty"><span>♡</span><div><b>还没有收藏文章</b><p>点击文章卡片上的红心，这里就会形成你的待读清单。</p></div></div>
           ) : (
