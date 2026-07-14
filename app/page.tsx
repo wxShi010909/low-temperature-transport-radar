@@ -4,12 +4,14 @@ import { FormEvent, useEffect, useMemo, useState } from "react";
 import report from "@/data/reports.json";
 import dailyReading from "@/data/daily-reading.json";
 import curatedReading from "@/data/curated-reading.json";
+import insightArchive from "@/data/insight-archive.json";
 import { ExportAllNotesButton, FavoriteButton, getFavoriteIds, getSavedNote, NoteEditor, READER_EVENT } from "@/app/reader-tools";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 type SectionKey = "today" | "reading" | "my-reading" | "library" | "opportunities" | "methods" | "atomic";
 type Paper = (typeof report.papers)[number];
 type ReadingItem = (typeof curatedReading.items)[number];
+type InsightItem = (typeof insightArchive.items)[number];
 
 const tracks: Record<TrackKey, { label: string; short: string }> = {
   A: { label: "低温输运实验", short: "输运实验" },
@@ -34,6 +36,12 @@ const navigation: { id: SectionKey; label: string }[] = [
 const featured = report.papers.filter((paper) => paper.featured).slice(0, 5);
 const readingItems: ReadingItem[] = curatedReading.items;
 const reportDates = [...report.history].reverse().map((entry) => entry.date);
+const insightItems: InsightItem[] = insightArchive.items;
+const currentInsightHistory = insightArchive.history.find((entry) => entry.date === report.reportDate) ?? insightArchive.history.at(-1);
+const findInsight = (id: string) => insightItems.find((item) => item.id === id);
+const currentOpportunityItems = currentInsightHistory?.opportunityIds.map(findInsight).filter((item): item is InsightItem => Boolean(item)) ?? [];
+const currentMethodItems = currentInsightHistory?.methodIds.map(findInsight).filter((item): item is InsightItem => Boolean(item)) ?? [];
+const currentAtomicItems = currentInsightHistory?.atomicIds.map(findInsight).filter((item): item is InsightItem => Boolean(item)) ?? [];
 
 const reportDateLabel = new Intl.DateTimeFormat("zh-CN", {
   timeZone: "Asia/Shanghai",
@@ -143,7 +151,7 @@ export default function Home() {
   useEffect(() => {
     const syncReaderState = () => {
       setFavoriteIds(getFavoriteIds());
-      const allIds = [...report.papers.map((paper) => paper.id), ...readingItems.map((item) => item.id), `daily-${report.reportDate}`];
+      const allIds = [...report.papers.map((paper) => paper.id), ...readingItems.map((item) => item.id), ...insightItems.map((item) => item.id), `daily-${report.reportDate}`];
       setSavedNoteIds(allIds.filter((id) => Boolean(getSavedNote(id).trim())));
     };
     syncReaderState();
@@ -181,6 +189,7 @@ export default function Home() {
   const relatedPapers = activeTrack === "ALL" ? [] : filteredPapers.filter((paper) => paper.track !== activeTrack);
   const favoritePapers = report.papers.filter((paper) => favoriteIds.includes(paper.id));
   const favoriteReadings = readingItems.filter((item) => favoriteIds.includes(item.id));
+  const favoriteInsights = insightItems.filter((item) => favoriteIds.includes(item.id));
   const countPaperIds = activeDate === "ALL" ? null : new Set(report.history.find((entry) => entry.date === activeDate)?.paperIds ?? []);
   const counts = report.papers.reduce<Record<string, number>>((acc, paper) => {
     if (countPaperIds && !countPaperIds.has(paper.id)) return acc;
@@ -326,15 +335,16 @@ export default function Home() {
       </section>
 
       <section className="my-reading-section" id="my-reading">
-        <div className="section-heading wide"><div><p>MY READING</p><h2>我的收藏与阅读整理</h2></div><span>{favoriteIds.length} 篇收藏 · {savedNoteIds.length} 条已保存笔记</span></div>
+        <div className="section-heading wide"><div><p>MY READING</p><h2>我的收藏与阅读整理</h2></div><span>{favoriteIds.length} 项收藏 · {savedNoteIds.length} 条已保存笔记</span></div>
         <div className="saved-reading-panel">
-          <div className="saved-reading-heading"><div><h3>红心收藏</h3><p>收藏后可从这里继续阅读；再次点击红心即可取消。</p></div><div className="saved-reading-tools"><span>保存在当前浏览器</span><ExportAllNotesButton entries={[...report.papers.map((paper) => ({ id: paper.id, title: paper.titleZh })), ...readingItems.map((item) => ({ id: item.id, title: item.titleZh })), { id: `daily-${report.reportDate}`, title: `${reportDateLabel}阅读整理` }]} /></div></div>
-          {favoritePapers.length + favoriteReadings.length === 0 ? (
+          <div className="saved-reading-heading"><div><h3>红心收藏</h3><p>文章、研究机会和设备方案都能收藏；再次点击红心即可取消。</p></div><div className="saved-reading-tools"><span>保存在当前浏览器</span><ExportAllNotesButton entries={[...report.papers.map((paper) => ({ id: paper.id, title: paper.titleZh })), ...readingItems.map((item) => ({ id: item.id, title: item.titleZh })), ...insightItems.map((item) => ({ id: item.id, title: item.title })), { id: `daily-${report.reportDate}`, title: `${reportDateLabel}阅读整理` }]} /></div></div>
+          {favoritePapers.length + favoriteReadings.length + favoriteInsights.length === 0 ? (
             <div className="saved-empty"><span>♡</span><div><b>还没有收藏文章</b><p>点击文章卡片上的红心，这里就会形成你的待读清单。</p></div></div>
           ) : (
             <div className="saved-reading-list">
               {favoritePapers.map((paper) => <article key={paper.id}><FavoriteButton id={paper.id} compact /><div><span>{paper.track} · {tracks[paper.track as TrackKey].short}</span><b>{paper.titleZh}</b><small>{savedNoteIds.includes(paper.id) ? "已有笔记" : "尚未记笔记"}</small></div><a href={`/paper?id=${encodeURIComponent(paper.id)}`}>继续阅读 →</a></article>)}
-              {favoriteReadings.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><div><span>{item.kind}</span><b>{item.titleZh}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "旧文精选"}</small></div><a href={item.url} target="_blank" rel="noreferrer">打开原文 ↗</a></article>)}
+              {favoriteReadings.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><div><span>{item.kind}</span><b>{item.titleZh}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "旧文精选"}</small></div><a href={`/reading?id=${encodeURIComponent(item.id)}`}>继续阅读 →</a></article>)}
+              {favoriteInsights.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><div><span>{item.typeZh} · {item.trackLabel}</span><b>{item.title}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "方案详解"}</small></div><a href={`/insight?id=${encodeURIComponent(item.id)}`}>继续查看 →</a></article>)}
             </div>
           )}
         </div>
@@ -388,39 +398,68 @@ export default function Home() {
       </section>
 
       <section className="opportunity-section" id="opportunities">
-        <div className="section-heading"><div><p>CROSS-TRACK IDEAS</p><h2>跨主线研究机会</h2></div><span>从论文中提取可执行的实验连接</span></div>
+        <div className="section-heading"><div><p>CROSS-TRACK IDEAS</p><h2>跨主线研究机会</h2></div><span>首页看摘要 · 点击进入完整实施方案</span></div>
         <div className="opportunity-grid">
-          <article><span>B → A</span><h3>界面无序 × 超电流非互易性</h3><p>把扭角、界面透明度和无序做成正交变量，以同一器件的 TEM 与低温输运关联，判断二极管效应究竟来自结构设计还是加工缺陷。</p><b>建议测量：I<sub>c</sub><sup>+</sup>/I<sub>c</sub><sup>−</sup>、正常态电阻、磁场图样、界面统计</b></article>
-          <article><span>D → A</span><h3>低温热成像 × 输运同步测量</h3><p>在标准微加热器上先标定低温扫描热探针，再与四端输运同步，区分整体相变、局域热点和接触耗散。</p><b>建议建设：探针热阻校准、磁场兼容、扰动评估、标准样品</b></article>
-          <article><span>D → E</span><h3>自动 XRD × 制造参数闭环</h3><p>让自动结构候选与 Rietveld 精修进入每批生长记录，但保留残差图、人工审核和 TEM/XPS 交叉验证，再反馈下一轮温度与通量。</p><b>建议指标：候选排序、精修残差、误报率、跨表征一致性</b></article>
+          {currentOpportunityItems.map((item) => (
+            <article className="insight-summary-card" key={item.id}>
+              <div className="insight-card-top"><span>{item.trackLabel}</span><FavoriteButton id={item.id} compact /></div>
+              <h3>{item.title}</h3><p>{item.summary}</p>
+              <b>{item.subtitle}</b>
+              <a className="insight-detail-link" href={`/insight?id=${encodeURIComponent(item.id)}`}>查看问题、步骤、设备与验收指标 →</a>
+            </article>
+          ))}
         </div>
       </section>
 
       <section className="methods-section" id="methods">
-        <div className="section-heading"><div><p>METHODS & INFRASTRUCTURE</p><h2>方法与设备建设</h2></div><span>优先提取能在实验室复用的方案</span></div>
+        <div className="section-heading"><div><p>METHODS & INFRASTRUCTURE</p><h2>方法与设备建设</h2></div><span>每项都有分阶段建设与验收页面</span></div>
         <div className="method-layout">
-          <div className="method-feature">
-            <p className="eyebrow">本期设备启发</p><h3>低温扫描热显微：先做可追溯校准</h3><p>不要只追求最低温度和最高空间分辨率。探针灵敏度、探针—样品热阻、样品扰动与磁场兼容必须在同一套标准样品上验收。</p>
-            <ul><li>已知功率微加热器与热导标准样品</li><li>探针温度计与热接触电阻校准</li><li>扫描振动、热漂移与空间分辨率评估</li><li>局域温度图与四端电输运同步记录</li></ul>
-          </div>
+          {currentMethodItems[0] && <div className="method-feature insight-method-feature">
+            <div className="insight-card-top"><p className="eyebrow">本期设备启发</p><FavoriteButton id={currentMethodItems[0].id} compact /></div>
+            <h3>{currentMethodItems[0].title}</h3><p>{currentMethodItems[0].summary}</p>
+            <ul>{currentMethodItems[0].metrics.map((metric) => <li key={metric}>{metric}</li>)}</ul>
+            <a className="insight-detail-link on-dark" href={`/insight?id=${encodeURIComponent(currentMethodItems[0].id)}`}>查看完整建设、校准与验收路线 →</a>
+          </div>}
           <div className="method-cards">
-            <article><span>01</span><div><h3>低温系统</h3><p>制冷、磁体、温控、样品空间与振动隔离。</p></div></article>
-            <article><span>02</span><div><h3>电学链路</h3><p>滤波、屏蔽、接地、低噪声放大与标准样品。</p></div></article>
-            <article><span>03</span><div><h3>自动化采集</h3><p>状态机、阈值守护、异常回退与元数据记录。</p></div></article>
-            <article><span>04</span><div><h3>分析与 AI</h3><p>质量评分、相图识别、可追溯结论与实验建议。</p></div></article>
+            {currentMethodItems.slice(1).map((item, index) => (
+              <article className="method-link-card" key={item.id}>
+                <span>{String(index + 2).padStart(2, "0")}</span><div><h3>{item.title}</h3><p>{item.summary}</p><a href={`/insight?id=${encodeURIComponent(item.id)}`}>查看设备方案 →</a></div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="atomic-section" id="atomic">
-        <div className="section-heading"><div><p>ATOMIC & EXTREME MANUFACTURING</p><h2>原子制造与极端制造</h2></div><span>新增 E 类独立追踪方向</span></div>
+        <div className="section-heading"><div><p>ATOMIC & EXTREME MANUFACTURING</p><h2>原子制造与极端制造</h2></div><span>设备、工艺和表征分别给出完整路线</span></div>
         <div className="atomic-grid">
-          <article><span>设备搭建</span><h3>制造—表征一体化平台</h3><p>MBE、PLD、磁控溅射、IBE/EBE、原子层沉积/刻蚀、真空互联与原位转移，以及设备稳定性、污染控制和校准方法。</p><small>重点指标：真空度、漂移、通量、温度均匀性、颗粒与损伤</small></article>
-          <article><span>器件制备</span><h3>从原子操控到量子器件</h3><p>原子结、原子级缺陷、超薄膜、异质界面、微纳图形化、接触工程、封装与面向低温测量的完整器件流程。</p><small>重点指标：良率、重复性、界面洁净度、接触电阻、热预算</small></article>
-          <article><span>表征测试</span><h3>结构—成分—输运闭环</h3><p>STM/STS、AFM、TEM/STEM、XPS、Raman、XRD 与电学/磁学/低温输运联合表征，用实测反馈下一步制造动作。</p><small>重点指标：原子识别准确率、空间分辨率、关联性与可追溯性</small></article>
+          {currentAtomicItems.map((item) => (
+            <article className="insight-summary-card" key={item.id}>
+              <div className="insight-card-top"><span>{item.trackLabel.replace("E · ", "")}</span><FavoriteButton id={item.id} compact /></div>
+              <h3>{item.title}</h3><p>{item.summary}</p><small>{item.subtitle}</small>
+              <a className="insight-detail-link atomic-link" href={`/insight?id=${encodeURIComponent(item.id)}`}>查看完整设备 / 工艺 / 表征路线 →</a>
+            </article>
+          ))}
         </div>
         <div className="atomic-paper-strip">
-          {report.papers.filter((paper) => paper.track === "E").map((paper) => <a href={paper.url} target="_blank" rel="noreferrer" key={paper.id}><span>{paper.score.toFixed(1)}</span><div><b>{paper.titleZh}</b><small>{paper.methods.slice(0, 3).join(" · ")}</small></div><em>↗</em></a>)}
+          {report.papers.filter((paper) => paper.track === "E").map((paper) => <a href={`/paper?id=${encodeURIComponent(paper.id)}`} key={paper.id}><span>{paper.score.toFixed(1)}</span><div><b>{paper.titleZh}</b><small>{paper.methods.slice(0, 3).join(" · ")}</small></div><em>详解 →</em></a>)}
+        </div>
+      </section>
+
+      <section className="insight-archive-section">
+        <div className="history-heading"><p>IDEA & PLATFORM ARCHIVE</p><h2>研究机会与方案档案</h2><span>每天更新只新增，不覆盖；往日研究机会、设备方案和原子制造路线都保留在这里。</span></div>
+        <div className="insight-history-list">
+          {[...insightArchive.history].reverse().map((entry) => {
+            const ids = [...entry.opportunityIds, ...entry.methodIds, ...entry.atomicIds];
+            return <article key={entry.date}>
+              <div className="insight-history-date"><b>{entry.date}</b><span>{entry.opportunityIds.length} 条研究机会 · {entry.methodIds.length} 条设备方案 · {entry.atomicIds.length} 条原子制造路线</span></div>
+              <div className="insight-history-links">{ids.map((id) => {
+                const item = findInsight(id);
+                if (!item) return null;
+                return <a href={`/insight?id=${encodeURIComponent(item.id)}`} key={item.id}><span>{item.typeZh}</span><b>{item.title}</b><em>查看详解 →</em></a>;
+              })}</div>
+            </article>;
+          })}
         </div>
       </section>
 
