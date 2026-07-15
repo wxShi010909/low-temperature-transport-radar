@@ -370,7 +370,7 @@ export default function Home() {
       <section className="my-reading-section" id="my-reading">
         <div className="section-heading wide"><div><p>MY READING</p><h2>我的收藏与阅读整理</h2></div><span>{favoriteIds.length} 项收藏 · {savedNoteIds.length} 条已保存笔记</span></div>
         <div className="saved-reading-panel">
-          <div className="saved-reading-heading"><div><h3>红心收藏</h3><p>文章、研究机会和设备方案都能收藏；再次点击红心即可取消。</p></div><div className="saved-reading-tools"><span>保存在当前浏览器</span><ExportAllNotesButton entries={[...report.papers.map((paper) => ({ id: paper.id, title: paper.titleZh })), ...readingItems.map((item) => ({ id: item.id, title: item.titleZh })), ...insightItems.map((item) => ({ id: item.id, title: item.title })), { id: `daily-${report.reportDate}`, title: `${reportDateLabel}阅读整理` }]} /></div></div>
+          <div className="saved-reading-heading"><div><h3>红心收藏</h3><p>文章、研究机会和设备方案都能收藏；再次点击红心即可取消。</p></div><div className="saved-reading-tools"><span>保存在当前浏览器</span><ExportAllNotesButton entries={[...report.papers.map((paper) => ({ id: paper.id, title: paper.titleZh })), ...readingItems.map((item) => ({ id: item.id, title: item.titleZh })), ...insightItems.map((item) => ({ id: item.id, title: item.title })), { id: `daily-${activeDate}`, title: `${selectedDateLabel}阅读整理` }]} /></div></div>
           {favoritePapers.length + favoriteReadings.length + favoriteInsights.length === 0 ? (
             <div className="saved-empty"><span>♡</span><div><b>还没有收藏文章</b><p>点击文章卡片上的红心，这里就会形成你的待读清单。</p></div></div>
           ) : (
