@@ -49,11 +49,12 @@ export default function PaperDetailPage() {
 
   return (
     <main className={`paper-detail-page track-${paper.track.toLowerCase()}`}>
-      <div className={`detail-site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
-      <header className="detail-header">
+      <header className={`detail-header ${readingDockOpen ? "with-reading-dock" : ""}`}>
         <Link className="brand" href="/"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></Link>
         <Link className="back-link" href="/#library">← 返回文献库</Link>
       </header>
+
+      <div className={`detail-site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
 
       <article className="detail-article">
         <div className="detail-breadcrumb"><Link href="/">首页</Link><span>/</span><Link href="/#library">文献库</Link><span>/</span><b>文章详解</b></div>

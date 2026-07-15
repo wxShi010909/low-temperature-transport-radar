@@ -42,11 +42,12 @@ export default function InsightDetailPage() {
 
   return (
     <main className={`paper-detail-page insight-detail-page ${className}`}>
-      <div className={`detail-site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
-      <header className="detail-header">
+      <header className={`detail-header ${readingDockOpen ? "with-reading-dock" : ""}`}>
         <Link className="brand" href="/"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></Link>
         <Link className="back-link" href={`/#${backAnchor}`}>← 返回{item.typeZh}</Link>
       </header>
+
+      <div className={`detail-site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
 
       <article className="detail-article">
         <div className="detail-breadcrumb"><Link href="/">首页</Link><span>/</span><Link href={`/#${backAnchor}`}>{item.typeZh}</Link><span>/</span><b>方案详解</b></div>

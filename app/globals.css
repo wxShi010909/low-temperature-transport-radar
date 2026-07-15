@@ -1058,6 +1058,10 @@ button,
   border-bottom: 1px solid rgba(188, 203, 226, .78);
   background: rgba(255, 255, 255, .94);
   backdrop-filter: blur(16px);
+  transition: padding-right var(--motion-slow) var(--motion-ease);
+}
+@media (min-width: 1280px) {
+  .detail-header.with-reading-dock { padding-right: calc(clamp(24px, 4vw, 68px) + clamp(300px, 22vw, 340px) + 28px); }
 }
 .back-link { padding: 9px 13px; border: 1px solid #d2dceb; border-radius: 8px; color: #405674; font-size: 13px; font-weight: 720; }
 .back-link:hover { border-color: var(--blue); color: var(--blue); }
