@@ -114,20 +114,25 @@ function OriginalSourceLink({ paper, label = "原始文献 ↗" }: { paper: Pape
 function LibraryPaper({ paper }: { paper: Paper }) {
   return (
     <article className={`library-item track-${paper.track.toLowerCase()}`}>
-      <div className="library-main">
-        <div className="paper-meta"><PaperClassification paper={paper} /><span>{paper.venue} · {paper.published}</span></div>
-        <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p>
-        <p className="authors">{paper.authors}</p><PaperTags paper={paper} />
-        <div className="evidence-grid"><div><b>核心结果</b><p>{paper.summary}</p></div><div><b>与研究主线的关系</b><p>{paper.relevance}</p></div></div>
+      <header className="library-card-top">
+        <div><PaperClassification paper={paper} /><span className="library-source-meta">{paper.venue} · {paper.published}</span></div>
+        <div className="library-compact-score"><strong>{paper.score.toFixed(1)}</strong><span>/ 10</span><em>{paper.priority} 级</em></div>
+      </header>
+      <div className="library-card-content">
+        <div className="library-paper-identity">
+          <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p>
+          <p className="authors">{paper.authors}</p><PaperTags paper={paper} />
+        </div>
+        <div className="evidence-grid"><div><b>核心结果</b><p>{paper.summary}</p></div><div><b>为什么与你相关</b><p>{paper.relevance}</p></div></div>
       </div>
-      <aside className="library-aside">
-        <div className="score-panel"><strong>{paper.score.toFixed(1)}</strong><span>/ 10</span><em>{paper.priority} 级</em></div>
-        <dl><div><dt>体系</dt><dd>{paper.system}</dd></div><div><dt>条件 / 工艺</dt><dd>{paper.conditions}</dd></div><div><dt>局限</dt><dd>{paper.limitation}</dd></div></dl>
+      <dl className="library-facts"><div><dt>研究体系</dt><dd>{paper.system}</dd></div><div><dt>条件 / 工艺</dt><dd>{paper.conditions}</dd></div><div><dt>证据边界 / 局限</dt><dd>{paper.limitation}</dd></div></dl>
+      <footer className="library-card-footer">
+        <span className="library-reading-hint">建议：先看核心结果，再进详解核对实验、解释与证据边界</span>
         <div className="library-actions">
           <a className="detail-action" href={`/paper?id=${encodeURIComponent(paper.id)}`}>查看通俗详解 →</a>
-          <div className="library-secondary-actions"><FavoriteButton id={paper.id} /><OriginalSourceLink paper={paper} /></div>
+          <FavoriteButton id={paper.id} /><OriginalSourceLink paper={paper} />
         </div>
-      </aside>
+      </footer>
     </article>
   );
 }
