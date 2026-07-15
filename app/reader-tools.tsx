@@ -82,13 +82,20 @@ export function FavoriteButton({ id, compact = false }: { id: string; compact?: 
   );
 }
 
-export function NoteEditor({ id, title, suggested, daily = false }: { id: string; title: string; suggested: string; daily?: boolean }) {
+export function NoteEditor({ id, title, suggested, daily = false, compact = false }: { id: string; title: string; suggested: string; daily?: boolean; compact?: boolean }) {
   const [note, setNote] = useState("");
   const [status, setStatus] = useState<"saved" | "copied" | "exported" | null>(null);
 
   useEffect(() => {
-    const frame = window.requestAnimationFrame(() => setNote(getSavedNote(id)));
-    return () => window.cancelAnimationFrame(frame);
+    const sync = () => setNote(getSavedNote(id));
+    const frame = window.requestAnimationFrame(sync);
+    window.addEventListener("storage", sync);
+    window.addEventListener(READER_EVENT, sync);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("storage", sync);
+      window.removeEventListener(READER_EVENT, sync);
+    };
   }, [id]);
 
   function save() {
@@ -124,7 +131,7 @@ export function NoteEditor({ id, title, suggested, daily = false }: { id: string
   }
 
   return (
-    <section className={`note-editor ${daily ? "daily-note-editor" : ""}`}>
+    <section className={`note-editor ${daily ? "daily-note-editor" : ""} ${compact ? "compact-note-editor" : ""}`}>
       <div className="note-editor-heading">
         <div><span>{daily ? "DAILY NOTES" : "MY NOTES"}</span><h2>{title}</h2></div>
         <button type="button" className="organize-button" onClick={useSuggested}>帮我先整理</button>
@@ -133,7 +140,7 @@ export function NoteEditor({ id, title, suggested, daily = false }: { id: string
         value={note}
         onChange={(event) => { setNote(event.target.value); setStatus(null); }}
         placeholder="可以记录：我理解了什么、还有什么没懂、和当前实验有什么关系、下一步想验证什么……"
-        rows={daily ? 11 : 9}
+        rows={compact ? 7 : daily ? 11 : 9}
       />
       <div className="note-editor-footer">
         <span>保存在当前浏览器；更换设备或清理浏览器数据后不会自动同步。</span>

@@ -8,6 +8,7 @@ import { ExportAllNotesButton, FavoriteButton, getFavoriteIds, getSavedNote, Not
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 type SectionKey = "today" | "reading" | "my-reading" | "library" | "opportunities" | "methods" | "atomic";
+type DockTab = "notes" | "favorites";
 type Paper = (typeof report.papers)[number];
 type ReadingItem = (typeof curatedReading.items)[number];
 type InsightItem = (typeof insightArchive.items)[number];
@@ -147,6 +148,13 @@ export default function Home() {
   const [savedNoteIds, setSavedNoteIds] = useState<string[]>([]);
   const [expandedHistory, setExpandedHistory] = useState<string | null>(null);
   const [libraryExpanded, setLibraryExpanded] = useState(false);
+  const [readingDockOpen, setReadingDockOpen] = useState(false);
+  const [dockTab, setDockTab] = useState<DockTab>("notes");
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem("lt-radar:reading-dock:v1");
+    setReadingDockOpen(stored ? stored === "open" : window.matchMedia("(min-width: 1280px)").matches);
+  }, []);
 
   useEffect(() => {
     const updateActiveSection = () => {
@@ -242,6 +250,14 @@ export default function Home() {
     acc[paper.track] = (acc[paper.track] ?? 0) + 1;
     return acc;
   }, {});
+  const totalFavorites = favoritePapers.length + favoriteReadings.length + favoriteInsights.length;
+  const allNoteEntries = [...report.papers.map((paper) => ({ id: paper.id, title: paper.titleZh })), ...readingItems.map((item) => ({ id: item.id, title: item.titleZh })), ...insightItems.map((item) => ({ id: item.id, title: item.title })), { id: `daily-${activeDate}`, title: `${selectedDateLabel}阅读整理` }];
+  const dailyNoteSuggestion = `【本期先看】\n${featuredForDate.map((paper, index) => `${index + 1}. ${paper.titleZh}：${paper.summary}`).join("\n")}\n\n【本期综述】\n${selectedReview ? `${selectedReview.titleZh}：${selectedReview.assistantSummary}` : "本期未归档综述"}\n\n【共同线索】\n本期内容可从“材料与界面如何影响可测输运”“理论候选如何转化为实验判据”“表征与设备怎样进入制造反馈闭环”三条线整理。\n\n【我已经理解】\n\n【我还没理解】\n\n【与当前实验/设备的关系】\n\n【下一步要查或要做】\n`;
+
+  function setDockOpen(open: boolean) {
+    setReadingDockOpen(open);
+    window.localStorage.setItem("lt-radar:reading-dock:v1", open ? "open" : "closed");
+  }
 
   function submitSearch(event: FormEvent) {
     event.preventDefault();
@@ -280,6 +296,8 @@ export default function Home() {
           ))}
         </nav>
       </header>
+
+      <div className={`site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
 
       <section className="hero" id="top">
         <div className="hero-copy">
@@ -395,7 +413,7 @@ export default function Home() {
       <section className="my-reading-section" id="my-reading">
         <div className="section-heading wide"><div><p>MY READING</p><h2>我的收藏与阅读整理</h2></div><span>{favoriteIds.length} 项收藏 · {savedNoteIds.length} 条已保存笔记</span></div>
         <div className="saved-reading-panel">
-          <div className="saved-reading-heading"><div><h3>红心收藏</h3><p>文章、研究机会和设备方案都能收藏；再次点击红心即可取消。</p></div><div className="saved-reading-tools"><span>保存在当前浏览器</span><ExportAllNotesButton entries={[...report.papers.map((paper) => ({ id: paper.id, title: paper.titleZh })), ...readingItems.map((item) => ({ id: item.id, title: item.titleZh })), ...insightItems.map((item) => ({ id: item.id, title: item.title })), { id: `daily-${activeDate}`, title: `${selectedDateLabel}阅读整理` }]} /></div></div>
+          <div className="saved-reading-heading"><div><h3>红心收藏</h3><p>文章、研究机会和设备方案都能收藏；再次点击红心即可取消。</p></div><div className="saved-reading-tools"><span>保存在当前浏览器</span><ExportAllNotesButton entries={allNoteEntries} /></div></div>
           {favoritePapers.length + favoriteReadings.length + favoriteInsights.length === 0 ? (
             <div className="saved-empty"><span>♡</span><div><b>还没有收藏文章</b><p>点击文章卡片上的红心，这里就会形成你的待读清单。</p></div></div>
           ) : (
@@ -410,7 +428,7 @@ export default function Home() {
           id={`daily-${activeDate}`}
           title={`${selectedDateLabel}阅读整理`}
           daily
-          suggested={`【本期先看】\n${featuredForDate.map((paper, index) => `${index + 1}. ${paper.titleZh}：${paper.summary}`).join("\n")}\n\n【本期综述】\n${selectedReview ? `${selectedReview.titleZh}：${selectedReview.assistantSummary}` : "本期未归档综述"}\n\n【共同线索】\n本期内容可从“材料与界面如何影响可测输运”“理论候选如何转化为实验判据”“表征与设备怎样进入制造反馈闭环”三条线整理。\n\n【我已经理解】\n\n【我还没理解】\n\n【与当前实验/设备的关系】\n\n【下一步要查或要做】\n`}
+          suggested={dailyNoteSuggestion}
         />
       </section>
 
@@ -550,6 +568,31 @@ export default function Home() {
       </section>
 
       <footer><div><span className="brand-mark">LT</span><b>低温输运研究雷达</b></div><p>每日更新 · 来源核验 · 材料中立 · 研究链条关联</p><small>最近更新：{updatedAtLabel}（北京时间）</small></footer>
+      </div>
+
+      {readingDockOpen ? (
+        <aside className="reading-dock" aria-label="固定阅读助手">
+          <div className="reading-dock-header"><div><span>READING DESK</span><b>阅读助手</b><small>{activeDate} · {totalFavorites} 项收藏</small></div><button type="button" onClick={() => setDockOpen(false)} aria-label="收起阅读助手">×</button></div>
+          <div className="reading-dock-tabs" role="tablist" aria-label="阅读助手内容">
+            <button className={dockTab === "notes" ? "active" : ""} type="button" role="tab" aria-selected={dockTab === "notes"} onClick={() => setDockTab("notes")}>快速笔记</button>
+            <button className={dockTab === "favorites" ? "active" : ""} type="button" role="tab" aria-selected={dockTab === "favorites"} onClick={() => setDockTab("favorites")}>收藏 {totalFavorites}</button>
+          </div>
+          <div className="reading-dock-content">
+            {dockTab === "notes" ? (
+              <NoteEditor id={`daily-${activeDate}`} title={`${selectedDateLabel}快速笔记`} daily compact suggested={dailyNoteSuggestion} />
+            ) : (
+              <div className="dock-favorites-panel">
+                {totalFavorites === 0 ? <div className="dock-empty"><span>♡</span><b>还没有收藏</b><p>点击文章或方案上的红心，这里会立即出现。</p></div> : <div className="dock-favorites-list">
+                  {favoritePapers.map((paper) => <article key={paper.id}><FavoriteButton id={paper.id} compact /><a href={`/paper?id=${encodeURIComponent(paper.id)}`}><span>{paper.track} · 论文</span><b>{paper.titleZh}</b><small>{savedNoteIds.includes(paper.id) ? "已有笔记" : "打开详解"}</small></a></article>)}
+                  {favoriteReadings.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><a href={`/reading?id=${encodeURIComponent(item.id)}`}><span>{item.kind}</span><b>{item.titleZh}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "打开详解"}</small></a></article>)}
+                  {favoriteInsights.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><a href={`/insight?id=${encodeURIComponent(item.id)}`}><span>{item.typeZh}</span><b>{item.title}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "打开方案"}</small></a></article>)}
+                </div>}
+                <div className="dock-export"><span>{savedNoteIds.length} 条已保存笔记</span><ExportAllNotesButton entries={allNoteEntries} /></div>
+              </div>
+            )}
+          </div>
+        </aside>
+      ) : <button className="reading-dock-launcher" type="button" onClick={() => setDockOpen(true)} aria-label="打开阅读助手"><span>♡</span><b>笔记与收藏</b><em>{totalFavorites}</em></button>}
     </main>
   );
 }
