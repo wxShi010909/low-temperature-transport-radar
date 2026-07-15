@@ -16,6 +16,8 @@ const tracks: Record<TrackKey, { label: string; short: string }> = {
   E: { label: "原子与极端制造", short: "原子制造" },
 };
 
+const unavailableSourceIds = new Set(["2607.12740", "2607.12394", "2607.12754"]);
+
 export default function PaperDetailPage() {
   const [paperId, setPaperId] = useState<string | null | undefined>(undefined);
 
@@ -63,7 +65,9 @@ export default function PaperDetailPage() {
             <div><strong>{paper.score.toFixed(1)}</strong><span>/ 10 · {paper.priority} 级</span></div>
             <div className="detail-hero-actions">
               <FavoriteButton id={paper.id} />
-              <a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>
+              {unavailableSourceIds.has(paper.id)
+                ? <span className="source-unavailable">原始入口暂不可用 · 已标记复核</span>
+                : <a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>}
             </div>
           </div>
         </section>
@@ -158,7 +162,7 @@ export default function PaperDetailPage() {
                 <div><dt>DOI</dt><dd>{paper.doi}</dd></div>
               </dl>
             </div>
-            <p className="detail-note">通俗解读依据论文公开摘要和可核验信息整理；涉及定量参数时请以原文为准。</p>
+            <p className="detail-note">通俗解读依据论文公开摘要和可核验信息整理；涉及定量参数时请以原文为准。原始入口若在复核时不可打开，会明确标记而不会继续伪装成可用链接。</p>
           </aside>
         </div>
       </article>

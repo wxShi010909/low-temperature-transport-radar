@@ -2,7 +2,6 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import report from "@/data/reports.json";
-import dailyReading from "@/data/daily-reading.json";
 import curatedReading from "@/data/curated-reading.json";
 import insightArchive from "@/data/insight-archive.json";
 import { ExportAllNotesButton, FavoriteButton, getFavoriteIds, getSavedNote, NoteEditor, READER_EVENT } from "@/app/reader-tools";
@@ -33,22 +32,24 @@ const navigation: { id: SectionKey; label: string }[] = [
   { id: "atomic", label: "原子制造" },
 ];
 
-const featured = report.papers.filter((paper) => paper.featured).slice(0, 5);
 const readingItems: ReadingItem[] = curatedReading.items;
-const reportDates = [...report.history].reverse().map((entry) => entry.date);
+const reportDates = Array.from(new Set([
+  ...report.history.map((entry) => entry.date),
+  ...curatedReading.history.map((entry) => entry.date),
+  ...insightArchive.history.map((entry) => entry.date),
+])).sort((a, b) => b.localeCompare(a));
 const insightItems: InsightItem[] = insightArchive.items;
-const currentInsightHistory = insightArchive.history.find((entry) => entry.date === report.reportDate) ?? insightArchive.history.at(-1);
 const findInsight = (id: string) => insightItems.find((item) => item.id === id);
-const currentOpportunityItems = currentInsightHistory?.opportunityIds.map(findInsight).filter((item): item is InsightItem => Boolean(item)) ?? [];
-const currentMethodItems = currentInsightHistory?.methodIds.map(findInsight).filter((item): item is InsightItem => Boolean(item)) ?? [];
-const currentAtomicItems = currentInsightHistory?.atomicIds.map(findInsight).filter((item): item is InsightItem => Boolean(item)) ?? [];
+const unavailableSourceIds = new Set(["2607.12740", "2607.12394", "2607.12754"]);
 
-const reportDateLabel = new Intl.DateTimeFormat("zh-CN", {
+const reportDateFormatter = new Intl.DateTimeFormat("zh-CN", {
   timeZone: "Asia/Shanghai",
   year: "numeric",
   month: "long",
   day: "numeric",
-}).format(new Date(`${report.reportDate}T00:00:00+08:00`));
+});
+
+const formatReportDate = (date: string) => reportDateFormatter.format(new Date(`${date}T00:00:00+08:00`));
 
 const updatedAtLabel = new Intl.DateTimeFormat("zh-CN", {
   timeZone: "Asia/Shanghai",
@@ -95,6 +96,13 @@ function PaperClassification({ paper }: { paper: Paper }) {
   );
 }
 
+function OriginalSourceLink({ paper, label = "原始文献 ↗" }: { paper: Paper; label?: string }) {
+  if (unavailableSourceIds.has(paper.id)) {
+    return <span className="source-unavailable" title="本站复核时该原始页面返回不可用状态">原始入口暂不可用</span>;
+  }
+  return <a href={paper.url} target="_blank" rel="noreferrer">{label}</a>;
+}
+
 function LibraryPaper({ paper }: { paper: Paper }) {
   return (
     <article className={`library-item track-${paper.track.toLowerCase()}`}>
@@ -109,7 +117,7 @@ function LibraryPaper({ paper }: { paper: Paper }) {
         <dl><div><dt>体系</dt><dd>{paper.system}</dd></div><div><dt>条件 / 工艺</dt><dd>{paper.conditions}</dd></div><div><dt>局限</dt><dd>{paper.limitation}</dd></div></dl>
         <div className="library-actions">
           <a className="detail-action" href={`/paper?id=${encodeURIComponent(paper.id)}`}>查看通俗详解 →</a>
-          <div className="library-secondary-actions"><FavoriteButton id={paper.id} /><a href={paper.url} target="_blank" rel="noreferrer">原始文献 ↗</a></div>
+          <div className="library-secondary-actions"><FavoriteButton id={paper.id} /><OriginalSourceLink paper={paper} /></div>
         </div>
       </aside>
     </article>
@@ -119,7 +127,7 @@ function LibraryPaper({ paper }: { paper: Paper }) {
 export default function Home() {
   const [query, setQuery] = useState("");
   const [activeTrack, setActiveTrack] = useState<"ALL" | TrackKey>("ALL");
-  const [activeDate, setActiveDate] = useState<"ALL" | string>("ALL");
+  const [activeDate, setActiveDate] = useState<string>(report.reportDate);
   const [sortBy, setSortBy] = useState<"score" | "date">("score");
   const [activeSection, setActiveSection] = useState<SectionKey>("today");
   const [favoriteIds, setFavoriteIds] = useState<string[]>([]);
@@ -163,14 +171,18 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    setExpandedHistory(activeDate);
+  }, [activeDate]);
+
   const filteredPapers = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase("zh-CN");
-    const selectedHistory = activeDate === "ALL" ? null : report.history.find((entry) => entry.date === activeDate);
-    const datePaperIds = selectedHistory ? new Set(selectedHistory.paperIds) : null;
+    const selectedHistory = report.history.find((entry) => entry.date === activeDate);
+    const datePaperIds = new Set(selectedHistory?.paperIds ?? []);
     const papers = report.papers.filter((paper) => {
       const inTrack = activeTrack === "ALL" || paper.track === activeTrack || paper.secondaryTracks.includes(activeTrack);
       if (!inTrack) return false;
-      if (datePaperIds && !datePaperIds.has(paper.id)) return false;
+      if (!datePaperIds.has(paper.id)) return false;
       if (!normalized) return true;
       const haystack = [paper.title, paper.titleZh, paper.authors, paper.system, paper.summary, paper.relevance, paper.doi, paper.arxiv, ...paper.methods].join(" ").toLocaleLowerCase("zh-CN");
       return haystack.includes(normalized);
@@ -190,9 +202,21 @@ export default function Home() {
   const favoritePapers = report.papers.filter((paper) => favoriteIds.includes(paper.id));
   const favoriteReadings = readingItems.filter((item) => favoriteIds.includes(item.id));
   const favoriteInsights = insightItems.filter((item) => favoriteIds.includes(item.id));
-  const countPaperIds = activeDate === "ALL" ? null : new Set(report.history.find((entry) => entry.date === activeDate)?.paperIds ?? []);
+  const selectedReportHistory = report.history.find((entry) => entry.date === activeDate);
+  const selectedPaperIds = new Set(selectedReportHistory?.paperIds ?? []);
+  const selectedPapers = report.papers.filter((paper) => selectedPaperIds.has(paper.id));
+  const selectedFeatured = selectedPapers.filter((paper) => paper.featured).sort((a, b) => b.score - a.score).slice(0, 5);
+  const featuredForDate = selectedFeatured.length > 0 ? selectedFeatured : [...selectedPapers].sort((a, b) => b.score - a.score).slice(0, 5);
+  const selectedReadingHistory = curatedReading.history.find((entry) => entry.date === activeDate);
+  const selectedReview = selectedReadingHistory ? readingItems.find((item) => item.id === selectedReadingHistory.reviewId) : undefined;
+  const selectedClassics = selectedReadingHistory?.classicIds.map((id) => readingItems.find((item) => item.id === id)).filter((item): item is ReadingItem => Boolean(item)) ?? [];
+  const selectedInsightHistory = insightArchive.history.find((entry) => entry.date === activeDate);
+  const selectedOpportunityItems = selectedInsightHistory?.opportunityIds.map(findInsight).filter((item): item is InsightItem => Boolean(item)) ?? [];
+  const selectedMethodItems = selectedInsightHistory?.methodIds.map(findInsight).filter((item): item is InsightItem => Boolean(item)) ?? [];
+  const selectedAtomicItems = selectedInsightHistory?.atomicIds.map(findInsight).filter((item): item is InsightItem => Boolean(item)) ?? [];
+  const selectedDateLabel = formatReportDate(activeDate);
   const counts = report.papers.reduce<Record<string, number>>((acc, paper) => {
-    if (countPaperIds && !countPaperIds.has(paper.id)) return acc;
+    if (!selectedPaperIds.has(paper.id)) return acc;
     acc[paper.track] = (acc[paper.track] ?? 0) + 1;
     return acc;
   }, {});
@@ -211,8 +235,6 @@ export default function Home() {
 
   function selectDate(date: string) {
     setActiveDate(date);
-    setActiveSection("library");
-    document.getElementById("library")?.scrollIntoView({ behavior: "smooth" });
   }
 
   function selectSection(section: SectionKey) {
@@ -239,16 +261,26 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="date-line">{reportDateLabel} · 工作日报</p>
+          <p className="date-line">{selectedDateLabel} · 已归档日报</p>
           <h1>跨材料追踪低温输运研究全链条</h1>
           <p className="hero-kicker">实验 <b>·</b> 制备 <b>·</b> 理论 <b>·</b> 设备 <b>·</b> 原子制造</p>
-          <p className="hero-description">每日检索、核验并关联从材料生长到低温测量的关键进展，让论文、工艺、设备和可验证的研究机会出现在同一条线上。</p>
+          <p className="hero-description">以你当前的原子级制造、MTJ器件与存储器工作为核心，追踪界面控制、器件制备、低温输运、可靠性和规模集成；石墨烯作为可迁移方法与重要背景保留，不再占据默认中心。</p>
           <form className="hero-actions" onSubmit={submitSearch}>
             <label className="search-shell"><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索材料、现象、方法或 DOI" aria-label="搜索文献" /></label>
             <button className="primary-action" type="submit">搜索文献 <span aria-hidden="true">→</span></button>
           </form>
         </div>
         <TransportPlot />
+      </section>
+
+      <section className="research-focus-strip" aria-label="当前研究优先级">
+        <div><span>CURRENT FOCUS</span><b>当前选文优先级</b></div>
+        <ol>
+          <li><strong>01</strong><span>原子级制造与界面控制</span></li>
+          <li><strong>02</strong><span>MTJ · STT/SOT/VCMA存储器</span></li>
+          <li><strong>03</strong><span>器件工艺 · 可靠性 · 晶圆级集成</span></li>
+          <li><strong>04</strong><span>可产业化的低温输运与设备平台</span></li>
+        </ol>
       </section>
 
       <section className="track-grid" aria-label="五条研究主线">
@@ -259,15 +291,15 @@ export default function Home() {
         ))}
       </section>
       <section className="date-filter-bar" aria-label="按日报日期筛选">
-        <div><span>DATE FILTER</span><div><b>选择日报日期</b><small>可与 A—E 分类同时使用</small></div></div>
-        <label><span>日报日期</span><select value={activeDate} onChange={(event) => selectDate(event.target.value)}><option value="ALL">全部日期</option>{reportDates.map((date) => <option value={date} key={date}>{date}{date === report.reportDate ? "（今天）" : ""}</option>)}</select></label>
-        {activeDate !== "ALL" && <button type="button" onClick={() => selectDate("ALL")}>清除日期筛选</button>}
+        <div><span>GLOBAL DATE</span><div><b>选择一个日报日期</b><small>论文、综述、经典文章、研究机会、设备与原子制造将一起切换</small></div></div>
+        <label><span>当前显示日期</span><select value={activeDate} onChange={(event) => selectDate(event.target.value)}>{reportDates.map((date) => <option value={date} key={date}>{date}{date === report.reportDate ? "（最新）" : ""}</option>)}</select></label>
+        <span className="date-sync-badge">全站同步</span>
       </section>
 
       <section className="today" id="today">
-        <div className="section-heading"><div><p>DAILY SIGNAL</p><h2>今日最值得关注</h2></div><span>{report.scope}</span></div>
+        <div className="section-heading"><div><p>DAILY SIGNAL · {activeDate}</p><h2>本期最值得关注</h2></div><span>{selectedReportHistory ? `${selectedReportHistory.total} 项已核验内容` : "本日没有论文记录"}</span></div>
         <div className="featured-grid">
-          {featured.map((paper) => (
+          {featuredForDate.map((paper) => (
             <article className={`paper-card track-${paper.track.toLowerCase()}`} key={paper.id}>
               <div className="paper-meta"><PaperClassification paper={paper} /><div className="paper-meta-tools"><span>{paper.published}</span><FavoriteButton id={paper.id} compact /></div></div>
               <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p><PaperTags paper={paper} limit={3} /><p className="summary">{paper.summary}</p>
@@ -276,35 +308,36 @@ export default function Home() {
             </article>
           ))}
         </div>
+        {featuredForDate.length === 0 && <div className="empty-state"><b>这个日期没有精选论文</b><span>可切换上方日期查看其他日报。</span></div>}
       </section>
 
       <section className="reading-section" id="reading">
-        <div className="section-heading wide"><div><p>CURATED READING</p><h2>每日综述与经典文章</h2></div><span>与当天新增分开 · 只选已发表的高质量旧文献</span></div>
-        <article className="daily-review-card track-a">
+        <div className="section-heading wide"><div><p>CURATED READING · {activeDate}</p><h2>本期综述与经典文章</h2></div><span>跟随上方日期切换 · 历史内容永久保留</span></div>
+        {selectedReview ? <article className={`daily-review-card track-${selectedReview.track.toLowerCase()}`}>
           <div className="reading-card-top">
-            <div><span className="reading-kind">{dailyReading.review.kind}</span><span className="old-paper-badge">非当天新增 · {dailyReading.review.published}</span></div>
-            <FavoriteButton id={dailyReading.review.id} />
+            <div><span className="reading-kind">{selectedReview.kind}</span><span className="old-paper-badge">非当天新增 · {selectedReview.published}</span></div>
+            <FavoriteButton id={selectedReview.id} />
           </div>
           <div className="reading-review-layout">
             <div>
-              <p className="reading-track">主线 {dailyReading.review.track} · {tracks[dailyReading.review.track as TrackKey].label}</p>
-              <h3>{dailyReading.review.titleZh}</h3>
-              <p className="reading-title-en">{dailyReading.review.title}</p>
-              <p className="reading-authors">{dailyReading.review.authors} · {dailyReading.review.venue}</p>
-              <p className="assistant-summary">{dailyReading.review.assistantSummary}</p>
+              <p className="reading-track">主线 {selectedReview.track} · {tracks[selectedReview.track as TrackKey].label}</p>
+              <h3>{selectedReview.titleZh}</h3>
+              <p className="reading-title-en">{selectedReview.title}</p>
+              <p className="reading-authors">{selectedReview.authors} · {selectedReview.venue}</p>
+              <p className="assistant-summary">{selectedReview.assistantSummary}</p>
             </div>
             <aside>
-              <b>为什么今天推荐</b><p>{dailyReading.review.whySelected}</p>
-              <b>建议阅读顺序</b><ol>{dailyReading.review.readingGuide.map((item) => <li key={item}>{item}</li>)}</ol>
-              <a className="curated-detail-link" href={`/reading?id=${encodeURIComponent(dailyReading.review.id)}`}>查看通俗详解 →</a>
-              <a href={dailyReading.review.url} target="_blank" rel="noreferrer">查看出版社页面 ↗</a>
+              <b>为什么本期推荐</b><p>{selectedReview.whySelected}</p>
+              <b>建议阅读顺序</b><ol>{selectedReview.readingGuide.map((item) => <li key={item}>{item}</li>)}</ol>
+              <a className="curated-detail-link" href={`/reading?id=${encodeURIComponent(selectedReview.id)}`}>查看通俗详解 →</a>
+              <a href={selectedReview.url} target="_blank" rel="noreferrer">查看出版社页面 ↗</a>
             </aside>
           </div>
-        </article>
+        </article> : <div className="empty-state"><b>这个日期没有综述记录</b><span>切换上方日期即可查看其他已归档综述。</span></div>}
 
-        <div className="classic-heading"><div><h3>经典文章回看</h3><p>不按日期追新，只看对实验思路和研究框架仍有价值的工作。</p></div><span>{dailyReading.classics.length} 篇</span></div>
+        <div className="classic-heading"><div><h3>经典文章回看</h3><p>按推荐日期归档，文章本身可以来自近期或近几年。</p></div><span>{selectedClassics.length} 篇</span></div>
         <div className="classic-grid">
-          {dailyReading.classics.map((item) => (
+          {selectedClassics.map((item) => (
             <article className={`classic-card track-${item.track.toLowerCase()}`} key={item.id}>
               <div className="reading-card-top"><div><span className="reading-kind">{item.kind}</span><span className="old-paper-badge">{item.published}</span></div><FavoriteButton id={item.id} compact /></div>
               <p className="reading-track">主线 {item.track} · {tracks[item.track as TrackKey].label}</p>
@@ -316,20 +349,20 @@ export default function Home() {
           ))}
         </div>
         <div className="curated-archive">
-          <div className="classic-heading"><div><h3>往期综述与经典文献库</h3><p>每日推荐只负责当天展示；所有条目和详解都会永久追加保留。</p></div><span>{curatedReading.items.length} 篇已归档</span></div>
+          <div className="classic-heading"><div><h3>{activeDate} 综述与经典文献档案</h3><p>切换上方日期查看往期；页面只展开当前日期，避免列表无限增长。</p></div><span>{curatedReading.items.length} 篇永久归档</span></div>
           <div className="curated-history-list">
-            {[...curatedReading.history].reverse().map((entry) => (
-              <article key={entry.date}>
-                <div className="curated-history-date"><b>{entry.date}</b><span>1 篇综述 · {entry.classicIds.length} 篇经典文章</span></div>
+            {selectedReadingHistory && (
+              <article key={selectedReadingHistory.date}>
+                <div className="curated-history-date"><b>{selectedReadingHistory.date}</b><span>1 篇综述 · {selectedReadingHistory.classicIds.length} 篇经典文章</span></div>
                 <div className="curated-history-papers">
-                  {[entry.reviewId, ...entry.classicIds].map((id) => {
+                  {[selectedReadingHistory.reviewId, ...selectedReadingHistory.classicIds].map((id) => {
                     const item = curatedReading.items.find((candidate) => candidate.id === id);
                     if (!item) return null;
                     return <a href={`/reading?id=${encodeURIComponent(item.id)}`} key={item.id}><span>{item.kind}</span><b>{item.titleZh}</b><em>查看详解 →</em></a>;
                   })}
                 </div>
               </article>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -349,10 +382,10 @@ export default function Home() {
           )}
         </div>
         <NoteEditor
-          id={`daily-${report.reportDate}`}
-          title={`${reportDateLabel}阅读整理`}
+          id={`daily-${activeDate}`}
+          title={`${selectedDateLabel}阅读整理`}
           daily
-          suggested={`【今日先看】\n${featured.map((paper, index) => `${index + 1}. ${paper.titleZh}：${paper.summary}`).join("\n")}\n\n【今日综述】\n${dailyReading.review.titleZh}：${dailyReading.review.assistantSummary}\n\n【共同线索】\n今天的内容可以从“材料与界面如何影响可测输运”“理论候选如何转化为实验判据”“自动表征怎样进入制造反馈闭环”三条线整理。\n\n【我已经理解】\n\n【我还没理解】\n\n【与当前实验/设备的关系】\n\n【下一步要查或要做】\n`}
+          suggested={`【本期先看】\n${featuredForDate.map((paper, index) => `${index + 1}. ${paper.titleZh}：${paper.summary}`).join("\n")}\n\n【本期综述】\n${selectedReview ? `${selectedReview.titleZh}：${selectedReview.assistantSummary}` : "本期未归档综述"}\n\n【共同线索】\n本期内容可从“材料与界面如何影响可测输运”“理论候选如何转化为实验判据”“表征与设备怎样进入制造反馈闭环”三条线整理。\n\n【我已经理解】\n\n【我还没理解】\n\n【与当前实验/设备的关系】\n\n【下一步要查或要做】\n`}
         />
       </section>
 
@@ -365,14 +398,14 @@ export default function Home() {
           </div>
           <div className="toolbar-right">
             <label className="compact-search"><span>搜索</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="题目、材料、方法、DOI" /></label>
-            <label className="sort-select date-select"><span>日报日期</span><select value={activeDate} onChange={(event) => setActiveDate(event.target.value)}><option value="ALL">全部日期</option>{reportDates.map((date) => <option value={date} key={date}>{date}</option>)}</select></label>
+            <label className="sort-select date-select"><span>全站日期</span><select value={activeDate} onChange={(event) => setActiveDate(event.target.value)}>{reportDates.map((date) => <option value={date} key={date}>{date}</option>)}</select></label>
             <label className="sort-select"><span>排序</span><select value={sortBy} onChange={(event) => setSortBy(event.target.value as "score" | "date")}><option value="score">综合评分</option><option value="date">发表时间</option></select></label>
           </div>
         </div>
         <p className="result-count">
           {activeTrack === "ALL"
-            ? `当前显示 ${filteredPapers.length} 项${activeDate === "ALL" ? " · 全部日报日期" : ` · ${activeDate} 日报`}`
-            : `当前显示 ${filteredPapers.length} 项 · ${activeDate === "ALL" ? "全部日报日期" : `${activeDate} 日报`} · 主分类 ${activeTrack}：${primaryPapers.length} 项 · 兼具 ${activeTrack}：${relatedPapers.length} 项`}
+            ? `当前显示 ${filteredPapers.length} 项 · ${activeDate} 日报`
+            : `当前显示 ${filteredPapers.length} 项 · ${activeDate} 日报 · 主分类 ${activeTrack}：${primaryPapers.length} 项 · 兼具 ${activeTrack}：${relatedPapers.length} 项`}
         </p>
         <div className="library-list">
           {activeTrack === "ALL" ? (
@@ -398,9 +431,9 @@ export default function Home() {
       </section>
 
       <section className="opportunity-section" id="opportunities">
-        <div className="section-heading"><div><p>CROSS-TRACK IDEAS</p><h2>跨主线研究机会</h2></div><span>首页看摘要 · 点击进入完整实施方案</span></div>
+        <div className="section-heading"><div><p>CROSS-TRACK IDEAS · {activeDate}</p><h2>本期跨主线研究机会</h2></div><span>跟随全站日期 · 点击进入完整实施方案</span></div>
         <div className="opportunity-grid">
-          {currentOpportunityItems.map((item) => (
+          {selectedOpportunityItems.map((item) => (
             <article className="insight-summary-card" key={item.id}>
               <div className="insight-card-top"><span>{item.trackLabel}</span><FavoriteButton id={item.id} compact /></div>
               <h3>{item.title}</h3><p>{item.summary}</p>
@@ -409,31 +442,34 @@ export default function Home() {
             </article>
           ))}
         </div>
+        {selectedOpportunityItems.length === 0 && <div className="empty-state"><b>这个日期没有研究机会记录</b><span>可切换上方日期查看往期方案。</span></div>}
       </section>
 
       <section className="methods-section" id="methods">
-        <div className="section-heading"><div><p>METHODS & INFRASTRUCTURE</p><h2>方法与设备建设</h2></div><span>每项都有分阶段建设与验收页面</span></div>
+        <div className="section-heading"><div><p>METHODS & INFRASTRUCTURE · {activeDate}</p><h2>本期方法与设备建设</h2></div><span>重点生态：ICEoxford · Oxford Instruments · Quantum Design · 多场科技 · 飞斯科</span></div>
+        <div className="equipment-focus-note"><b>设备资料如何进入日报</b><span>优先跟踪正式技术文档、应用案例、升级公告和系统集成方案；厂商材料单独标注来源类型，不作为科研结论。</span></div>
         <div className="method-layout">
-          {currentMethodItems[0] && <div className="method-feature insight-method-feature">
-            <div className="insight-card-top"><p className="eyebrow">本期设备启发</p><FavoriteButton id={currentMethodItems[0].id} compact /></div>
-            <h3>{currentMethodItems[0].title}</h3><p>{currentMethodItems[0].summary}</p>
-            <ul>{currentMethodItems[0].metrics.map((metric) => <li key={metric}>{metric}</li>)}</ul>
-            <a className="insight-detail-link on-dark" href={`/insight?id=${encodeURIComponent(currentMethodItems[0].id)}`}>查看完整建设、校准与验收路线 →</a>
+          {selectedMethodItems[0] && <div className="method-feature insight-method-feature">
+            <div className="insight-card-top"><p className="eyebrow">本期设备启发</p><FavoriteButton id={selectedMethodItems[0].id} compact /></div>
+            <h3>{selectedMethodItems[0].title}</h3><p>{selectedMethodItems[0].summary}</p>
+            <ul>{selectedMethodItems[0].metrics.map((metric) => <li key={metric}>{metric}</li>)}</ul>
+            <a className="insight-detail-link on-dark" href={`/insight?id=${encodeURIComponent(selectedMethodItems[0].id)}`}>查看完整建设、校准与验收路线 →</a>
           </div>}
           <div className="method-cards">
-            {currentMethodItems.slice(1).map((item, index) => (
+            {selectedMethodItems.slice(1).map((item, index) => (
               <article className="method-link-card" key={item.id}>
                 <span>{String(index + 2).padStart(2, "0")}</span><div><h3>{item.title}</h3><p>{item.summary}</p><a href={`/insight?id=${encodeURIComponent(item.id)}`}>查看设备方案 →</a></div>
               </article>
             ))}
           </div>
         </div>
+        {selectedMethodItems.length === 0 && <div className="empty-state"><b>这个日期没有设备方案记录</b><span>可切换上方日期查看往期平台建设内容。</span></div>}
       </section>
 
       <section className="atomic-section" id="atomic">
-        <div className="section-heading"><div><p>ATOMIC & EXTREME MANUFACTURING</p><h2>原子制造与极端制造</h2></div><span>设备、工艺和表征分别给出完整路线</span></div>
+        <div className="section-heading"><div><p>ATOMIC & EXTREME MANUFACTURING · {activeDate}</p><h2>本期原子制造与极端制造</h2></div><span>设备、工艺和表征分别给出完整路线</span></div>
         <div className="atomic-grid">
-          {currentAtomicItems.map((item) => (
+          {selectedAtomicItems.map((item) => (
             <article className="insight-summary-card" key={item.id}>
               <div className="insight-card-top"><span>{item.trackLabel.replace("E · ", "")}</span><FavoriteButton id={item.id} compact /></div>
               <h3>{item.title}</h3><p>{item.summary}</p><small>{item.subtitle}</small>
@@ -442,39 +478,40 @@ export default function Home() {
           ))}
         </div>
         <div className="atomic-paper-strip">
-          {report.papers.filter((paper) => paper.track === "E").map((paper) => <a href={`/paper?id=${encodeURIComponent(paper.id)}`} key={paper.id}><span>{paper.score.toFixed(1)}</span><div><b>{paper.titleZh}</b><small>{paper.methods.slice(0, 3).join(" · ")}</small></div><em>详解 →</em></a>)}
+          {selectedPapers.filter((paper) => paper.track === "E" || paper.secondaryTracks.includes("E")).map((paper) => <a href={`/paper?id=${encodeURIComponent(paper.id)}`} key={paper.id}><span>{paper.score.toFixed(1)}</span><div><b>{paper.titleZh}</b><small>{paper.methods.slice(0, 3).join(" · ")}</small></div><em>详解 →</em></a>)}
         </div>
+        {selectedAtomicItems.length === 0 && <div className="empty-state"><b>这个日期没有原子制造方案记录</b><span>相关论文仍会按兼具E标签显示在文献库。</span></div>}
       </section>
 
       <section className="insight-archive-section">
-        <div className="history-heading"><p>IDEA & PLATFORM ARCHIVE</p><h2>研究机会与方案档案</h2><span>每天更新只新增，不覆盖；往日研究机会、设备方案和原子制造路线都保留在这里。</span></div>
+        <div className="history-heading"><p>IDEA & PLATFORM ARCHIVE</p><h2>{activeDate} 研究机会与方案档案</h2><span>只展开当前所选日期；切换上方日期即可查看往期，历史数据不删除。</span></div>
         <div className="insight-history-list">
-          {[...insightArchive.history].reverse().map((entry) => {
-            const ids = [...entry.opportunityIds, ...entry.methodIds, ...entry.atomicIds];
-            return <article key={entry.date}>
-              <div className="insight-history-date"><b>{entry.date}</b><span>{entry.opportunityIds.length} 条研究机会 · {entry.methodIds.length} 条设备方案 · {entry.atomicIds.length} 条原子制造路线</span></div>
+          {selectedInsightHistory && (() => {
+            const ids = [...selectedInsightHistory.opportunityIds, ...selectedInsightHistory.methodIds, ...selectedInsightHistory.atomicIds];
+            return <article key={selectedInsightHistory.date}>
+              <div className="insight-history-date"><b>{selectedInsightHistory.date}</b><span>{selectedInsightHistory.opportunityIds.length} 条研究机会 · {selectedInsightHistory.methodIds.length} 条设备方案 · {selectedInsightHistory.atomicIds.length} 条原子制造路线</span></div>
               <div className="insight-history-links">{ids.map((id) => {
                 const item = findInsight(id);
                 if (!item) return null;
                 return <a href={`/insight?id=${encodeURIComponent(item.id)}`} key={item.id}><span>{item.typeZh}</span><b>{item.title}</b><em>查看详解 →</em></a>;
               })}</div>
             </article>;
-          })}
+          })()}
         </div>
       </section>
 
       <section className="history-section">
-        <div className="history-heading"><p>DAILY ARCHIVE</p><h2>历史日报</h2><span>每日更新后自动保留日期、分类数量和文献记录</span></div>
+        <div className="history-heading"><p>DAILY ARCHIVE</p><h2>{activeDate} 日报档案</h2><span>所有历史记录仍永久保存；此处只显示上方选中的日期，避免页面无限变长。</span></div>
         <div className="history-list">
-          {[...report.history].reverse().map((entry) => (
-            <article className={expandedHistory === entry.date ? "is-open" : ""} key={entry.date}>
-              <button className="history-summary" type="button" onClick={() => setExpandedHistory(expandedHistory === entry.date ? null : entry.date)} aria-expanded={expandedHistory === entry.date}>
-                <div><b>{entry.date}</b><small>{entry.label} · {entry.total} 项已核验内容</small></div>
-                <div className="coverage"><span>A {entry.counts.A}</span><span>B {entry.counts.B}</span><span>C {entry.counts.C}</span><span>D {entry.counts.D}</span><span>E {entry.counts.E}</span><em>{expandedHistory === entry.date ? "收起 ↑" : "展开 ↓"}</em></div>
+          {selectedReportHistory && (
+            <article className={expandedHistory === selectedReportHistory.date ? "is-open" : ""} key={selectedReportHistory.date}>
+              <button className="history-summary" type="button" onClick={() => setExpandedHistory(expandedHistory === selectedReportHistory.date ? null : selectedReportHistory.date)} aria-expanded={expandedHistory === selectedReportHistory.date}>
+                <div><b>{selectedReportHistory.date}</b><small>{selectedReportHistory.label} · {selectedReportHistory.total} 项已核验内容</small></div>
+                <div className="coverage"><span>A {selectedReportHistory.counts.A}</span><span>B {selectedReportHistory.counts.B}</span><span>C {selectedReportHistory.counts.C}</span><span>D {selectedReportHistory.counts.D}</span><span>E {selectedReportHistory.counts.E}</span><em>{expandedHistory === selectedReportHistory.date ? "收起 ↑" : "展开 ↓"}</em></div>
               </button>
-              {expandedHistory === entry.date && (
+              {expandedHistory === selectedReportHistory.date && (
                 <div className="history-papers">
-                  {entry.paperIds.map((id, index) => {
+                  {selectedReportHistory.paperIds.map((id, index) => {
                     const paper = report.papers.find((item) => item.id === id);
                     if (!paper) return null;
                     return <a href={`/paper?id=${encodeURIComponent(paper.id)}`} key={paper.id}><span>{String(index + 1).padStart(2, "0")}</span><div><b>{paper.titleZh}</b><small>主分类 {paper.track} · {paper.venue}</small></div><em>查看详解 →</em></a>;
@@ -482,7 +519,7 @@ export default function Home() {
                 </div>
               )}
             </article>
-          ))}
+          )}
         </div>
       </section>
 
