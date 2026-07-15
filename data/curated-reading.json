@@ -4,6 +4,11 @@
       "date": "2026-07-14",
       "reviewId": "review-s41563-020-00840-0",
       "classicIds": ["classic-nature04233", "classic-nature26160", "classic-344524a0"]
+    },
+    {
+      "date": "2026-07-15",
+      "reviewId": "review-aps-75-20251330",
+      "classicIds": ["classic-prb-63-054416", "classic-nmat1256", "classic-nmat2804"]
     }
   ],
   "items": [
@@ -77,6 +82,78 @@
       "assistantSummary": "作者利用扫描隧道显微镜探针操控单个吸附原子，展示原子尺度确定性定位的早期代表性能力，并把原子识别、操控和再次成像验证组成闭环。",
       "whySelected": "可作为判断现代原子制造工作是否真正实现可定位、可操控、可验证的基础参照。",
       "readingGuide": ["先分清STM成像与STM操控。", "关注低温、真空、探针状态和表面扩散。", "思考怎样扩展到器件功能、互联与重复性。"],
+      "notNew": true
+    },
+    {
+      "id": "review-aps-75-20251330",
+      "kind": "每日综述",
+      "track": "D",
+      "secondaryTracks": ["A", "C", "E"],
+      "title": "Research on topological materials using ultrafast spectroscopy",
+      "titleZh": "拓扑材料的超快光谱研究",
+      "authors": "刘豪, 孟建桥",
+      "venue": "物理学报 · 综述",
+      "published": "2026-02-20",
+      "recommendedOn": "2026-07-15",
+      "doi": "10.7498/aps.75.20251330",
+      "url": "https://wulixb.iphy.ac.cn/en/article/cstr/32037.14.aps.75.20251330",
+      "assistantSummary": "按拓扑绝缘体、半金属和磁性拓扑材料梳理超快载流子、集体模、太赫兹发射与光诱导相变。",
+      "whySelected": "中文正式综述，可为太赫兹调控、非平衡动力学和低温同步测量建立框架。",
+      "readingGuide": ["先看时间尺度与能带总图。", "区分泵浦作用、探测量和机制解释。", "最后看太赫兹与光诱导相变。"],
+      "notNew": true
+    },
+    {
+      "id": "classic-prb-63-054416",
+      "kind": "经典理论",
+      "track": "C",
+      "secondaryTracks": ["A", "B", "E"],
+      "title": "Spin-dependent tunneling conductance of Fe|MgO|Fe sandwiches",
+      "titleZh": "Fe|MgO|Fe三明治结构的自旋相关隧穿电导",
+      "authors": "W. H. Butler et al.",
+      "venue": "Physical Review B",
+      "published": "2001-01-18",
+      "recommendedOn": "2026-07-15",
+      "doi": "10.1103/PhysRevB.63.054416",
+      "url": "https://link.aps.org/doi/10.1103/PhysRevB.63.054416",
+      "assistantSummary": "第一性原理计算提出MgO复能带的Δ1对称性过滤可产生很大TMR。",
+      "whySelected": "是理解MgO磁隧道结和原子界面质量的理论基准。",
+      "readingGuide": ["先看平行/反平行电导。", "重点看Δ1对称性过滤。", "再思考无序和氧空位。"],
+      "notNew": true
+    },
+    {
+      "id": "classic-nmat1256",
+      "kind": "经典实验",
+      "track": "A",
+      "secondaryTracks": ["B", "E"],
+      "title": "Giant tunnelling magnetoresistance at room temperature with MgO (100) tunnel barriers",
+      "titleZh": "采用MgO(100)隧穿势垒实现室温巨隧穿磁阻",
+      "authors": "Stuart S. P. Parkin et al.",
+      "venue": "Nature Materials",
+      "published": "2004-10-31",
+      "recommendedOn": "2026-07-15",
+      "doi": "10.1038/nmat1256",
+      "url": "https://www.nature.com/articles/nmat1256",
+      "assistantSummary": "高度取向MgO(100)势垒把对称性过滤推进到室温大TMR实验。",
+      "whySelected": "与Butler理论成对阅读，可看清理想机制怎样转化为器件。",
+      "readingGuide": ["看材料栈与取向。", "看TMR的温度、偏压和退火依赖。", "找制造非理想。"],
+      "notNew": true
+    },
+    {
+      "id": "classic-nmat2804",
+      "kind": "经典器件",
+      "track": "B",
+      "secondaryTracks": ["A", "E"],
+      "title": "A perpendicular-anisotropy CoFeB-MgO magnetic tunnel junction",
+      "titleZh": "垂直磁各向异性CoFeB–MgO磁隧道结",
+      "authors": "S. Ikeda et al.",
+      "venue": "Nature Materials",
+      "published": "2010-07-25",
+      "recommendedOn": "2026-07-15",
+      "doi": "10.1038/nmat2804",
+      "url": "https://www.nature.com/articles/nmat2804",
+      "assistantSummary": "CoFeB/MgO界面垂直各向异性同时支持较大TMR、热稳定和低开关电流。",
+      "whySelected": "把磁隧道结读出、写入、缩放和界面制造放在同一指标框架。",
+      "readingGuide": ["看垂直各向异性的缩放优势。", "比较TMR、稳定性和写入电流。", "关注界面与退火。"],
       "notNew": true
     }
   ]
