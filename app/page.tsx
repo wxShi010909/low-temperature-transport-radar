@@ -446,7 +446,7 @@ export default function Home() {
       </section>
 
       <section className="methods-section" id="methods">
-        <div className="section-heading"><div><p>METHODS & INFRASTRUCTURE · {activeDate}</p><h2>本期方法与设备建设</h2></div><span>重点生态：ICEoxford · Oxford Instruments · Quantum Design · 多场科技 · 飞斯科</span></div>
+        <div className="section-heading"><div><p>METHODS & INFRASTRUCTURE · {activeDate}</p><h2>本期方法与设备建设</h2></div><span>重点生态：Cryogenic Ltd（英国低温公司）· Oxford Instruments · Quantum Design · 多场科技 · 飞斯科</span></div>
         <div className="equipment-focus-note"><b>设备资料如何进入日报</b><span>优先跟踪正式技术文档、应用案例、升级公告和系统集成方案；厂商材料单独标注来源类型，不作为科研结论。</span></div>
         <div className="method-layout">
           {selectedMethodItems[0] && <div className="method-feature insight-method-feature">
