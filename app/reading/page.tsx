@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import curated from "@/data/curated-reading.json";
 import details from "@/data/curated-details.json";
-import { FavoriteButton, NoteEditor } from "@/app/reader-tools";
+import { FavoriteButton } from "@/app/reader-tools";
+import { ReadingDock, useReadingDockState } from "@/app/reading-dock";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 
@@ -18,6 +19,7 @@ const tracks: Record<TrackKey, { label: string; short: string }> = {
 
 export default function CuratedReadingDetailPage() {
   const [readingId, setReadingId] = useState<string | null | undefined>(undefined);
+  const { open: readingDockOpen, setOpen: setReadingDockOpen } = useReadingDockState();
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => setReadingId(new URLSearchParams(window.location.search).get("id")));
@@ -33,8 +35,11 @@ export default function CuratedReadingDetailPage() {
     return <main className="detail-loading"><b>暂时没有找到这篇文章的详解。</b><Link href="/#reading">返回综述与经典文献库</Link></main>;
   }
 
+  const noteSuggestion = `【一句话理解】\n${detail.oneSentence}\n\n【研究组织/实验流程】\n${detail.workflow.join("\n")}\n\n【关键结果】\n${detail.findings.join("\n")}\n\n【与当前研究的关系】\n${detail.researchConnection}\n\n【证据边界】\n${detail.limitationsDetailed}\n\n【我的理解 / 下一步想法】\n`;
+
   return (
     <main className={`paper-detail-page track-${item.track.toLowerCase()}`}>
+      <div className={`detail-site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
       <header className="detail-header">
         <Link className="brand" href="/"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></Link>
         <Link className="back-link" href="/#reading">← 返回综述与经典文献库</Link>
@@ -73,7 +78,6 @@ export default function CuratedReadingDetailPage() {
             <section id="limitations" className="detail-section limitation-section"><div className="detail-section-title"><span>08</span><div><p>EVIDENCE BOUNDARY</p><h2>应该保留哪些证据边界？</h2></div></div><p>{detail.limitationsDetailed}</p></section>
             <section id="terms" className="detail-section"><div className="detail-section-title"><span>09</span><div><p>TERMS</p><h2>需要先懂的术语</h2></div></div><dl className="term-grid">{detail.terms.map((term) => <div key={term.name}><dt>{term.name}</dt><dd>{term.meaning}</dd></div>)}</dl></section>
             <section className="takeaway-section"><span>读完只记住这一点</span><p>{detail.takeaway}</p></section>
-            <NoteEditor id={item.id} title={`${item.titleZh}｜阅读笔记`} suggested={`【一句话理解】\n${detail.oneSentence}\n\n【研究组织/实验流程】\n${detail.workflow.join("\n")}\n\n【关键结果】\n${detail.findings.join("\n")}\n\n【与当前研究的关系】\n${detail.researchConnection}\n\n【证据边界】\n${detail.limitationsDetailed}\n\n【我的理解 / 下一步想法】\n`} />
           </div>
 
           <aside className="detail-aside">
@@ -83,6 +87,12 @@ export default function CuratedReadingDetailPage() {
           </aside>
         </div>
       </article>
+      </div>
+      <ReadingDock
+        context={{ id: item.id, title: `${item.titleZh}｜阅读笔记`, suggested: noteSuggestion, label: item.kind }}
+        open={readingDockOpen}
+        onOpenChange={setReadingDockOpen}
+      />
     </main>
   );
 }

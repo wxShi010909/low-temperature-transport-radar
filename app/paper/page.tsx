@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import report from "@/data/reports.json";
 import details from "@/data/paper-details.json";
-import { FavoriteButton, NoteEditor } from "@/app/reader-tools";
+import { FavoriteButton } from "@/app/reader-tools";
+import { ReadingDock, useReadingDockState } from "@/app/reading-dock";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 
@@ -20,6 +21,7 @@ const unavailableSourceIds = new Set(["2607.12740", "2607.12394", "2607.12754"])
 
 export default function PaperDetailPage() {
   const [paperId, setPaperId] = useState<string | null | undefined>(undefined);
+  const { open: readingDockOpen, setOpen: setReadingDockOpen } = useReadingDockState();
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => setPaperId(new URLSearchParams(window.location.search).get("id")));
@@ -43,9 +45,11 @@ export default function PaperDetailPage() {
   }
 
   const backupUrl = (paper as { backupUrl?: string }).backupUrl;
+  const noteSuggestion = `【一句话理解】\n${detail.oneSentence}\n\n【作者做了什么】\n${detail.workflow.join("\n")}\n\n【最重要的结果】\n${detail.findings.join("\n")}\n\n【与当前研究的关系】\n${detail.researchConnection}\n\n【证据边界】\n${detail.limitationsDetailed}\n\n【我的理解 / 下一步想法】\n`;
 
   return (
     <main className={`paper-detail-page track-${paper.track.toLowerCase()}`}>
+      <div className={`detail-site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
       <header className="detail-header">
         <Link className="brand" href="/"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></Link>
         <Link className="back-link" href="/#library">← 返回文献库</Link>
@@ -137,11 +141,6 @@ export default function PaperDetailPage() {
               <p>{detail.takeaway}</p>
             </section>
 
-            <NoteEditor
-              id={paper.id}
-              title="这篇文章的阅读笔记"
-              suggested={`【一句话理解】\n${detail.oneSentence}\n\n【作者做了什么】\n${detail.workflow.join("\n")}\n\n【最重要的结果】\n${detail.findings.join("\n")}\n\n【与当前研究的关系】\n${detail.researchConnection}\n\n【证据边界】\n${detail.limitationsDetailed}\n\n【我的理解 / 下一步想法】\n`}
-            />
           </div>
 
           <aside className="detail-aside">
@@ -168,6 +167,12 @@ export default function PaperDetailPage() {
           </aside>
         </div>
       </article>
+      </div>
+      <ReadingDock
+        context={{ id: paper.id, title: "这篇文章的阅读笔记", suggested: noteSuggestion, label: "当前论文" }}
+        open={readingDockOpen}
+        onOpenChange={setReadingDockOpen}
+      />
     </main>
   );
 }

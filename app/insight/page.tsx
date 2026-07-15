@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import archive from "@/data/insight-archive.json";
 import report from "@/data/reports.json";
-import { FavoriteButton, NoteEditor } from "@/app/reader-tools";
+import { FavoriteButton } from "@/app/reader-tools";
+import { ReadingDock, useReadingDockState } from "@/app/reading-dock";
 
 const typeAnchors: Record<string, string> = {
   "research-opportunity": "opportunities",
@@ -20,6 +21,7 @@ const typeColors: Record<string, string> = {
 
 export default function InsightDetailPage() {
   const [insightId, setInsightId] = useState<string | null | undefined>(undefined);
+  const { open: readingDockOpen, setOpen: setReadingDockOpen } = useReadingDockState();
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => setInsightId(new URLSearchParams(window.location.search).get("id")));
@@ -36,9 +38,11 @@ export default function InsightDetailPage() {
   const backAnchor = typeAnchors[item.type] ?? "opportunities";
   const relatedPapers = item.relatedPaperIds.map((id) => report.papers.find((paper) => paper.id === id)).filter((paper) => Boolean(paper));
   const className = typeColors[item.type] ?? "track-d";
+  const noteSuggestion = `【核心问题】\n${item.question}\n\n【为什么值得做】\n${item.rationale}\n\n【建议实施步骤】\n${item.workflow.map((step, index) => `${index + 1}. ${step}`).join("\n")}\n\n【关键验收指标】\n${item.metrics.join("\n")}\n\n【证据边界】\n${item.evidenceBoundary}\n\n【我准备先做】\n${item.firstSteps.join("\n")}\n\n【我的补充】\n`;
 
   return (
     <main className={`paper-detail-page insight-detail-page ${className}`}>
+      <div className={`detail-site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
       <header className="detail-header">
         <Link className="brand" href="/"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></Link>
         <Link className="back-link" href={`/#${backAnchor}`}>← 返回{item.typeZh}</Link>
@@ -116,11 +120,6 @@ export default function InsightDetailPage() {
 
             <section className="takeaway-section"><span>看完只记住这一点</span><p>{item.takeaway}</p></section>
 
-            <NoteEditor
-              id={item.id}
-              title={`${item.title}｜方案笔记`}
-              suggested={`【核心问题】\n${item.question}\n\n【为什么值得做】\n${item.rationale}\n\n【建议实施步骤】\n${item.workflow.map((step, index) => `${index + 1}. ${step}`).join("\n")}\n\n【关键验收指标】\n${item.metrics.join("\n")}\n\n【证据边界】\n${item.evidenceBoundary}\n\n【我准备先做】\n${item.firstSteps.join("\n")}\n\n【我的补充】\n`}
-            />
           </div>
 
           <aside className="detail-aside">
@@ -130,6 +129,12 @@ export default function InsightDetailPage() {
           </aside>
         </div>
       </article>
+      </div>
+      <ReadingDock
+        context={{ id: item.id, title: `${item.title}｜方案笔记`, suggested: noteSuggestion, label: item.typeZh }}
+        open={readingDockOpen}
+        onOpenChange={setReadingDockOpen}
+      />
     </main>
   );
 }

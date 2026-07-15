@@ -4,11 +4,11 @@ import { FormEvent, useEffect, useMemo, useState } from "react";
 import report from "@/data/reports.json";
 import curatedReading from "@/data/curated-reading.json";
 import insightArchive from "@/data/insight-archive.json";
-import { ExportAllNotesButton, FavoriteButton, getFavoriteIds, getSavedNote, NoteEditor, READER_EVENT } from "@/app/reader-tools";
+import { FavoriteButton } from "@/app/reader-tools";
+import { ReadingDock, useReadingDockState } from "@/app/reading-dock";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 type SectionKey = "today" | "reading" | "library" | "opportunities" | "methods" | "atomic";
-type DockTab = "notes" | "favorites";
 type Paper = (typeof report.papers)[number];
 type ReadingItem = (typeof curatedReading.items)[number];
 type InsightItem = (typeof insightArchive.items)[number];
@@ -143,17 +143,9 @@ export default function Home() {
   const [activeDate, setActiveDate] = useState<string>(report.reportDate);
   const [sortBy, setSortBy] = useState<"score" | "date">("score");
   const [activeSection, setActiveSection] = useState<SectionKey>("today");
-  const [favoriteIds, setFavoriteIds] = useState<string[]>([]);
-  const [savedNoteIds, setSavedNoteIds] = useState<string[]>([]);
   const [expandedHistory, setExpandedHistory] = useState<string | null>(null);
   const [libraryExpanded, setLibraryExpanded] = useState(false);
-  const [readingDockOpen, setReadingDockOpen] = useState(false);
-  const [dockTab, setDockTab] = useState<DockTab>("notes");
-
-  useEffect(() => {
-    const stored = window.localStorage.getItem("lt-radar:reading-dock:v1");
-    setReadingDockOpen(stored ? stored === "open" : window.matchMedia("(min-width: 1280px)").matches);
-  }, []);
+  const { open: readingDockOpen, setOpen: setReadingDockOpen } = useReadingDockState();
 
   useEffect(() => {
     const updateActiveSection = () => {
@@ -174,21 +166,6 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", updateActiveSection);
       window.removeEventListener("resize", updateActiveSection);
-    };
-  }, []);
-
-  useEffect(() => {
-    const syncReaderState = () => {
-      setFavoriteIds(getFavoriteIds());
-      const allIds = [...report.papers.map((paper) => paper.id), ...readingItems.map((item) => item.id), ...insightItems.map((item) => item.id), `daily-${report.reportDate}`];
-      setSavedNoteIds(allIds.filter((id) => Boolean(getSavedNote(id).trim())));
-    };
-    syncReaderState();
-    window.addEventListener("storage", syncReaderState);
-    window.addEventListener(READER_EVENT, syncReaderState);
-    return () => {
-      window.removeEventListener("storage", syncReaderState);
-      window.removeEventListener(READER_EVENT, syncReaderState);
     };
   }, []);
 
@@ -228,9 +205,6 @@ export default function Home() {
   const visibleLibraryPapers = libraryExpanded ? filteredPapers : filteredPapers.slice(0, 4);
   const visiblePrimaryPapers = activeTrack === "ALL" ? visibleLibraryPapers : visibleLibraryPapers.filter((paper) => paper.track === activeTrack);
   const visibleRelatedPapers = activeTrack === "ALL" ? [] : visibleLibraryPapers.filter((paper) => paper.track !== activeTrack);
-  const favoritePapers = report.papers.filter((paper) => favoriteIds.includes(paper.id));
-  const favoriteReadings = readingItems.filter((item) => favoriteIds.includes(item.id));
-  const favoriteInsights = insightItems.filter((item) => favoriteIds.includes(item.id));
   const selectedReportHistory = report.history.find((entry) => entry.date === activeDate);
   const selectedPaperIds = new Set(selectedReportHistory?.paperIds ?? []);
   const selectedPapers = report.papers.filter((paper) => selectedPaperIds.has(paper.id));
@@ -249,14 +223,7 @@ export default function Home() {
     acc[paper.track] = (acc[paper.track] ?? 0) + 1;
     return acc;
   }, {});
-  const totalFavorites = favoritePapers.length + favoriteReadings.length + favoriteInsights.length;
-  const allNoteEntries = [...report.papers.map((paper) => ({ id: paper.id, title: paper.titleZh })), ...readingItems.map((item) => ({ id: item.id, title: item.titleZh })), ...insightItems.map((item) => ({ id: item.id, title: item.title })), { id: `daily-${activeDate}`, title: `${selectedDateLabel}阅读整理` }];
   const dailyNoteSuggestion = `【本期先看】\n${featuredForDate.map((paper, index) => `${index + 1}. ${paper.titleZh}：${paper.summary}`).join("\n")}\n\n【本期综述】\n${selectedReview ? `${selectedReview.titleZh}：${selectedReview.assistantSummary}` : "本期未归档综述"}\n\n【共同线索】\n本期内容可从“材料与界面如何影响可测输运”“理论候选如何转化为实验判据”“表征与设备怎样进入制造反馈闭环”三条线整理。\n\n【我已经理解】\n\n【我还没理解】\n\n【与当前实验/设备的关系】\n\n【下一步要查或要做】\n`;
-
-  function setDockOpen(open: boolean) {
-    setReadingDockOpen(open);
-    window.localStorage.setItem("lt-radar:reading-dock:v1", open ? "open" : "closed");
-  }
 
   function submitSearch(event: FormEvent) {
     event.preventDefault();
@@ -547,29 +514,11 @@ export default function Home() {
       <footer><div><span className="brand-mark">LT</span><b>低温输运研究雷达</b></div><p>每日更新 · 来源核验 · 材料中立 · 研究链条关联</p><small>最近更新：{updatedAtLabel}（北京时间）</small></footer>
       </div>
 
-      {readingDockOpen ? (
-        <aside className="reading-dock" aria-label="固定阅读助手">
-          <div className="reading-dock-header"><div><span>READING DESK</span><b>阅读助手</b><small>{activeDate} · {totalFavorites} 项收藏</small></div><button type="button" onClick={() => setDockOpen(false)} aria-label="收起阅读助手">×</button></div>
-          <div className="reading-dock-tabs" role="tablist" aria-label="阅读助手内容">
-            <button className={dockTab === "notes" ? "active" : ""} type="button" role="tab" aria-selected={dockTab === "notes"} onClick={() => setDockTab("notes")}>快速笔记</button>
-            <button className={dockTab === "favorites" ? "active" : ""} type="button" role="tab" aria-selected={dockTab === "favorites"} onClick={() => setDockTab("favorites")}>收藏 {totalFavorites}</button>
-          </div>
-          <div className="reading-dock-content">
-            {dockTab === "notes" ? (
-              <NoteEditor id={`daily-${activeDate}`} title={`${selectedDateLabel}快速笔记`} daily compact suggested={dailyNoteSuggestion} />
-            ) : (
-              <div className="dock-favorites-panel">
-                {totalFavorites === 0 ? <div className="dock-empty"><span>♡</span><b>还没有收藏</b><p>点击文章或方案上的红心，这里会立即出现。</p></div> : <div className="dock-favorites-list">
-                  {favoritePapers.map((paper) => <article key={paper.id}><FavoriteButton id={paper.id} compact /><a href={`/paper?id=${encodeURIComponent(paper.id)}`}><span>{paper.track} · 论文</span><b>{paper.titleZh}</b><small>{savedNoteIds.includes(paper.id) ? "已有笔记" : "打开详解"}</small></a></article>)}
-                  {favoriteReadings.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><a href={`/reading?id=${encodeURIComponent(item.id)}`}><span>{item.kind}</span><b>{item.titleZh}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "打开详解"}</small></a></article>)}
-                  {favoriteInsights.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><a href={`/insight?id=${encodeURIComponent(item.id)}`}><span>{item.typeZh}</span><b>{item.title}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "打开方案"}</small></a></article>)}
-                </div>}
-                <div className="dock-export"><span>{savedNoteIds.length} 条已保存笔记</span><ExportAllNotesButton entries={allNoteEntries} /></div>
-              </div>
-            )}
-          </div>
-        </aside>
-      ) : <button className="reading-dock-launcher" type="button" onClick={() => setDockOpen(true)} aria-label="打开阅读助手"><span>♡</span><b>笔记与收藏</b><em>{totalFavorites}</em></button>}
+      <ReadingDock
+        context={{ id: `daily-${activeDate}`, title: `${selectedDateLabel}快速笔记`, suggested: dailyNoteSuggestion, label: activeDate, daily: true }}
+        open={readingDockOpen}
+        onOpenChange={setReadingDockOpen}
+      />
     </main>
   );
 }
