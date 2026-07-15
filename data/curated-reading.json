@@ -7,7 +7,7 @@
     },
     {
       "date": "2026-07-15",
-      "reviewId": "review-aps-75-20251330",
+      "reviewId": "review-s44306-024-00044-1",
       "classicIds": ["classic-prb-63-054416", "classic-nmat1256", "classic-nmat2804"]
     }
   ],
@@ -154,6 +154,24 @@
       "assistantSummary": "CoFeB/MgO界面垂直各向异性同时支持较大TMR、热稳定和低开关电流。",
       "whySelected": "把磁隧道结读出、写入、缩放和界面制造放在同一指标框架。",
       "readingGuide": ["看垂直各向异性的缩放优势。", "比较TMR、稳定性和写入电流。", "关注界面与退火。"],
+      "notNew": true
+    },
+    {
+      "id": "review-s44306-024-00044-1",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": ["A", "D", "E"],
+      "title": "Recent progress in spin-orbit torque magnetic random-access memory",
+      "titleZh": "自旋轨道转矩磁随机存储器的近期进展",
+      "authors": "V. D. Nguyen, S. Rao, K. Wostyn, S. Couet",
+      "venue": "npj Spintronics · Review",
+      "published": "2024-10-01",
+      "recommendedOn": "2026-07-15",
+      "doi": "10.1038/s44306-024-00044-1",
+      "url": "https://www.nature.com/articles/s44306-024-00044-1",
+      "assistantSummary": "从SOT材料、垂直MTJ、无外场写入、300 mm集成、400 °C BEOL热预算、器件缩放、耐久、VCMA和多柱阵列系统梳理SOT-MRAM从物理到制造的完整链条。",
+      "whySelected": "它由imec团队撰写，既讲机制也给出300 mm器件、刻蚀停层、热预算、保持、误码和阵列密度等产业化约束，正适合为今天七篇文章建立总框架。",
+      "readingGuide": ["先看图1–3，理解SOT-MTJ读写路径和刻蚀集成难点。", "再看300 mm器件、400 °C热预算、保持和耐久的数据表。", "最后看无外场方案、超缩放与VGSOT多柱架构，区分实验完成项和路线图。"],
       "notNew": true
     }
   ]

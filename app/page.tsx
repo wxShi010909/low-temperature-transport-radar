@@ -38,6 +38,8 @@ const reportDates = Array.from(new Set([
   ...curatedReading.history.map((entry) => entry.date),
   ...insightArchive.history.map((entry) => entry.date),
 ])).sort((a, b) => b.localeCompare(a));
+const latestReportDate = reportDates[0] ?? report.reportDate;
+const earliestReportDate = reportDates.at(-1) ?? report.reportDate;
 const insightItems: InsightItem[] = insightArchive.items;
 const findInsight = (id: string) => insightItems.find((item) => item.id === id);
 const unavailableSourceIds = new Set(["2607.12740", "2607.12394", "2607.12754"]);
@@ -100,7 +102,13 @@ function OriginalSourceLink({ paper, label = "原始文献 ↗" }: { paper: Pape
   if (unavailableSourceIds.has(paper.id)) {
     return <span className="source-unavailable" title="本站复核时该原始页面返回不可用状态">原始入口暂不可用</span>;
   }
-  return <a href={paper.url} target="_blank" rel="noreferrer">{label}</a>;
+  const backupUrl = (paper as Paper & { backupUrl?: string }).backupUrl;
+  return (
+    <span className="source-link-group">
+      <a href={paper.url} target="_blank" rel="noreferrer">{label}</a>
+      {backupUrl && <a className="backup-source-link" href={backupUrl} target="_blank" rel="noreferrer">备用入口 ↗</a>}
+    </span>
+  );
 }
 
 function LibraryPaper({ paper }: { paper: Paper }) {
@@ -234,7 +242,7 @@ export default function Home() {
   }
 
   function selectDate(date: string) {
-    setActiveDate(date);
+    if (date) setActiveDate(date);
   }
 
   function selectSection(section: SectionKey) {
@@ -292,8 +300,9 @@ export default function Home() {
       </section>
       <section className="date-filter-bar" aria-label="按日报日期筛选">
         <div><span>GLOBAL DATE</span><div><b>选择一个日报日期</b><small>论文、综述、经典文章、研究机会、设备与原子制造将一起切换</small></div></div>
-        <label><span>当前显示日期</span><select value={activeDate} onChange={(event) => selectDate(event.target.value)}>{reportDates.map((date) => <option value={date} key={date}>{date}{date === report.reportDate ? "（最新）" : ""}</option>)}</select></label>
-        <span className="date-sync-badge">全站同步</span>
+        <label className="calendar-picker"><span>当前显示日期</span><input type="date" value={activeDate} min={earliestReportDate} max={latestReportDate} list="report-date-options" onInput={(event) => selectDate(event.currentTarget.value)} onChange={(event) => selectDate(event.target.value)} aria-label="选择日报日期" /></label>
+        <datalist id="report-date-options">{reportDates.map((date) => <option value={date} key={date} />)}</datalist>
+        <span className="date-sync-badge">点日期框打开日历 · 全站同步</span>
       </section>
 
       <section className="today" id="today">
@@ -398,7 +407,7 @@ export default function Home() {
           </div>
           <div className="toolbar-right">
             <label className="compact-search"><span>搜索</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="题目、材料、方法、DOI" /></label>
-            <label className="sort-select date-select"><span>全站日期</span><select value={activeDate} onChange={(event) => setActiveDate(event.target.value)}>{reportDates.map((date) => <option value={date} key={date}>{date}</option>)}</select></label>
+            <label className="sort-select date-select"><span>全站日期</span><input type="date" value={activeDate} min={earliestReportDate} max={latestReportDate} list="report-date-options" onInput={(event) => selectDate(event.currentTarget.value)} onChange={(event) => selectDate(event.target.value)} aria-label="文献库日期" /></label>
             <label className="sort-select"><span>排序</span><select value={sortBy} onChange={(event) => setSortBy(event.target.value as "score" | "date")}><option value="score">综合评分</option><option value="date">发表时间</option></select></label>
           </div>
         </div>

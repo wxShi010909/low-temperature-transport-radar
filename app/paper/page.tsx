@@ -42,6 +42,8 @@ export default function PaperDetailPage() {
     );
   }
 
+  const backupUrl = (paper as { backupUrl?: string }).backupUrl;
+
   return (
     <main className={`paper-detail-page track-${paper.track.toLowerCase()}`}>
       <header className="detail-header">
@@ -67,7 +69,7 @@ export default function PaperDetailPage() {
               <FavoriteButton id={paper.id} />
               {unavailableSourceIds.has(paper.id)
                 ? <span className="source-unavailable">原始入口暂不可用 · 已标记复核</span>
-                : <a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>}
+                : <span className="source-link-group"><a href={paper.url} target="_blank" rel="noreferrer">查看原始文献 ↗</a>{backupUrl && <a className="backup-source-link" href={backupUrl} target="_blank" rel="noreferrer">备用入口 ↗</a>}</span>}
             </div>
           </div>
         </section>
