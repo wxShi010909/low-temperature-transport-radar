@@ -140,7 +140,8 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState<SectionKey>("today");
   const [favoriteIds, setFavoriteIds] = useState<string[]>([]);
   const [savedNoteIds, setSavedNoteIds] = useState<string[]>([]);
-  const [expandedHistory, setExpandedHistory] = useState<string | null>(report.history.at(-1)?.date ?? null);
+  const [expandedHistory, setExpandedHistory] = useState<string | null>(null);
+  const [libraryExpanded, setLibraryExpanded] = useState(false);
 
   useEffect(() => {
     const updateActiveSection = () => {
@@ -180,8 +181,13 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    setExpandedHistory(activeDate);
+    setExpandedHistory(null);
+    setLibraryExpanded(false);
   }, [activeDate]);
+
+  useEffect(() => {
+    setLibraryExpanded(false);
+  }, [activeTrack, query]);
 
   const filteredPapers = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase("zh-CN");
@@ -207,6 +213,9 @@ export default function Home() {
 
   const primaryPapers = activeTrack === "ALL" ? filteredPapers : filteredPapers.filter((paper) => paper.track === activeTrack);
   const relatedPapers = activeTrack === "ALL" ? [] : filteredPapers.filter((paper) => paper.track !== activeTrack);
+  const visibleLibraryPapers = libraryExpanded ? filteredPapers : filteredPapers.slice(0, 4);
+  const visiblePrimaryPapers = activeTrack === "ALL" ? visibleLibraryPapers : visibleLibraryPapers.filter((paper) => paper.track === activeTrack);
+  const visibleRelatedPapers = activeTrack === "ALL" ? [] : visibleLibraryPapers.filter((paper) => paper.track !== activeTrack);
   const favoritePapers = report.papers.filter((paper) => favoriteIds.includes(paper.id));
   const favoriteReadings = readingItems.filter((item) => favoriteIds.includes(item.id));
   const favoriteInsights = insightItems.filter((item) => favoriteIds.includes(item.id));
@@ -281,33 +290,35 @@ export default function Home() {
         <TransportPlot />
       </section>
 
-      <section className="research-focus-strip" aria-label="当前研究优先级">
-        <div><span>CURRENT FOCUS</span><b>当前选文优先级</b></div>
-        <ol>
-          <li><strong>01</strong><span>原子级制造与界面控制</span></li>
-          <li><strong>02</strong><span>MTJ · STT/SOT/VCMA存储器</span></li>
-          <li><strong>03</strong><span>器件工艺 · 可靠性 · 晶圆级集成</span></li>
-          <li><strong>04</strong><span>可产业化的低温输运与设备平台</span></li>
-        </ol>
-      </section>
+      <div className="dashboard-controls">
+        <section className="research-focus-strip" aria-label="当前研究优先级">
+          <div><span>CURRENT FOCUS</span><b>当前选文优先级</b></div>
+          <ol>
+            <li><strong>01</strong><span>原子级制造与界面控制</span></li>
+            <li><strong>02</strong><span>MTJ · STT/SOT/VCMA存储器</span></li>
+            <li><strong>03</strong><span>器件工艺 · 可靠性 · 晶圆级集成</span></li>
+            <li><strong>04</strong><span>可产业化的低温输运与设备平台</span></li>
+          </ol>
+        </section>
 
-      <section className="track-grid" aria-label="五条研究主线">
-        {trackKeys.map((key) => (
-          <button className={`track-card track-${key.toLowerCase()}`} key={key} onClick={() => selectTrack(key)} type="button">
-            <span className="track-letter">{key}</span><span className="track-label">{tracks[key].label}</span><strong>{counts[key] ?? 0}</strong>
-          </button>
-        ))}
-      </section>
-      <section className="date-filter-bar" aria-label="按日报日期筛选">
-        <div><span>GLOBAL DATE</span><div><b>选择一个日报日期</b><small>论文、综述、经典文章、研究机会、设备与原子制造将一起切换</small></div></div>
-        <label className="calendar-picker"><span>当前显示日期</span><input type="date" value={activeDate} min={earliestReportDate} max={latestReportDate} list="report-date-options" onInput={(event) => selectDate(event.currentTarget.value)} onChange={(event) => selectDate(event.target.value)} aria-label="选择日报日期" /></label>
-        <datalist id="report-date-options">{reportDates.map((date) => <option value={date} key={date} />)}</datalist>
-        <span className="date-sync-badge">点日期框打开日历 · 全站同步</span>
-      </section>
+        <section className="track-grid" aria-label="五条研究主线">
+          {trackKeys.map((key) => (
+            <button className={`track-card track-${key.toLowerCase()}`} key={key} onClick={() => selectTrack(key)} type="button">
+              <span className="track-letter">{key}</span><span className="track-label">{tracks[key].label}</span><strong>{counts[key] ?? 0}</strong>
+            </button>
+          ))}
+        </section>
+        <section className="date-filter-bar" aria-label="按日报日期筛选">
+          <div><span>DATE</span><div><b>全站日期</b><small>所有模块一起切换</small></div></div>
+          <label className="calendar-picker"><span>当前显示日期</span><input type="date" value={activeDate} min={earliestReportDate} max={latestReportDate} list="report-date-options" onInput={(event) => selectDate(event.currentTarget.value)} onChange={(event) => selectDate(event.target.value)} aria-label="选择日报日期" /></label>
+          <datalist id="report-date-options">{reportDates.map((date) => <option value={date} key={date} />)}</datalist>
+          <span className="date-sync-badge">日历筛选 · 全站同步</span>
+        </section>
+      </div>
 
       <section className="today" id="today">
         <div className="section-heading"><div><p>DAILY SIGNAL · {activeDate}</p><h2>本期最值得关注</h2></div><span>{selectedReportHistory ? `${selectedReportHistory.total} 项已核验内容` : "本日没有论文记录"}</span></div>
-        <div className="featured-grid">
+        <div className={`featured-grid featured-count-${featuredForDate.length}`}>
           {featuredForDate.map((paper) => (
             <article className={`paper-card track-${paper.track.toLowerCase()}`} key={paper.id}>
               <div className="paper-meta"><PaperClassification paper={paper} /><div className="paper-meta-tools"><span>{paper.published}</span><FavoriteButton id={paper.id} compact /></div></div>
@@ -357,8 +368,8 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <div className="curated-archive">
-          <div className="classic-heading"><div><h3>{activeDate} 综述与经典文献档案</h3><p>切换上方日期查看往期；页面只展开当前日期，避免列表无限增长。</p></div><span>{curatedReading.items.length} 篇永久归档</span></div>
+        <details className="curated-archive archive-disclosure">
+          <summary><div><b>{activeDate} 综述与经典文献档案</b><span>{curatedReading.items.length} 篇永久归档 · 点击展开</span></div><em>展开 ↓</em></summary>
           <div className="curated-history-list">
             {selectedReadingHistory && (
               <article key={selectedReadingHistory.date}>
@@ -373,7 +384,7 @@ export default function Home() {
               </article>
             )}
           </div>
-        </div>
+        </details>
       </section>
 
       <section className="my-reading-section" id="my-reading">
@@ -418,24 +429,25 @@ export default function Home() {
         </p>
         <div className="library-list">
           {activeTrack === "ALL" ? (
-            filteredPapers.map((paper) => <LibraryPaper paper={paper} key={paper.id} />)
+            visibleLibraryPapers.map((paper) => <LibraryPaper paper={paper} key={paper.id} />)
           ) : (
             <>
               <div className="result-group-heading primary-group">
                 <div><span>{activeTrack}</span><b>主分类为 {activeTrack} · {tracks[activeTrack].label}</b></div>
                 <small>{primaryPapers.length} 项 · 优先显示</small>
               </div>
-              {primaryPapers.map((paper) => <LibraryPaper paper={paper} key={paper.id} />)}
-              {relatedPapers.length > 0 && (
+              {visiblePrimaryPapers.map((paper) => <LibraryPaper paper={paper} key={paper.id} />)}
+              {visibleRelatedPapers.length > 0 && (
                 <div className="result-group-heading related-group">
                   <div><span>+</span><b>兼具 {activeTrack} 的交叉文献</b></div>
                   <small>{relatedPapers.length} 项 · 主分类属于其他方向，仍与 {tracks[activeTrack].label} 相关</small>
                 </div>
               )}
-              {relatedPapers.map((paper) => <LibraryPaper paper={paper} key={paper.id} />)}
+              {visibleRelatedPapers.map((paper) => <LibraryPaper paper={paper} key={paper.id} />)}
             </>
           )}
         </div>
+        {filteredPapers.length > 4 && <button className="library-expand-button" type="button" onClick={() => setLibraryExpanded((current) => !current)}>{libraryExpanded ? "收起文献列表 ↑" : `展开其余 ${filteredPapers.length - 4} 篇文献 ↓`}</button>}
         {filteredPapers.length === 0 && <div className="empty-state"><b>没有找到匹配内容</b><span>请更换关键词或切换研究主线。</span></div>}
       </section>
 
@@ -457,20 +469,20 @@ export default function Home() {
       <section className="methods-section" id="methods">
         <div className="section-heading"><div><p>METHODS & INFRASTRUCTURE · {activeDate}</p><h2>本期方法与设备建设</h2></div><span>重点生态：Cryogenic Ltd（英国低温公司）· Oxford Instruments · Quantum Design · 多场科技 · 飞斯科</span></div>
         <div className="equipment-focus-note"><b>设备资料如何进入日报</b><span>优先跟踪正式技术文档、应用案例、升级公告和系统集成方案；厂商材料单独标注来源类型，不作为科研结论。</span></div>
-        <div className="method-layout">
+        <div className={`method-layout ${selectedMethodItems.length === 1 ? "single-method" : ""}`}>
           {selectedMethodItems[0] && <div className="method-feature insight-method-feature">
             <div className="insight-card-top"><p className="eyebrow">本期设备启发</p><FavoriteButton id={selectedMethodItems[0].id} compact /></div>
             <h3>{selectedMethodItems[0].title}</h3><p>{selectedMethodItems[0].summary}</p>
             <ul>{selectedMethodItems[0].metrics.map((metric) => <li key={metric}>{metric}</li>)}</ul>
             <a className="insight-detail-link on-dark" href={`/insight?id=${encodeURIComponent(selectedMethodItems[0].id)}`}>查看完整建设、校准与验收路线 →</a>
           </div>}
-          <div className="method-cards">
+          {selectedMethodItems.length > 1 && <div className="method-cards">
             {selectedMethodItems.slice(1).map((item, index) => (
               <article className="method-link-card" key={item.id}>
                 <span>{String(index + 2).padStart(2, "0")}</span><div><h3>{item.title}</h3><p>{item.summary}</p><a href={`/insight?id=${encodeURIComponent(item.id)}`}>查看设备方案 →</a></div>
               </article>
             ))}
-          </div>
+          </div>}
         </div>
         {selectedMethodItems.length === 0 && <div className="empty-state"><b>这个日期没有设备方案记录</b><span>可切换上方日期查看往期平台建设内容。</span></div>}
       </section>
@@ -492,8 +504,8 @@ export default function Home() {
         {selectedAtomicItems.length === 0 && <div className="empty-state"><b>这个日期没有原子制造方案记录</b><span>相关论文仍会按兼具E标签显示在文献库。</span></div>}
       </section>
 
-      <section className="insight-archive-section">
-        <div className="history-heading"><p>IDEA & PLATFORM ARCHIVE</p><h2>{activeDate} 研究机会与方案档案</h2><span>只展开当前所选日期；切换上方日期即可查看往期，历史数据不删除。</span></div>
+      <details className="insight-archive-section archive-disclosure wide-disclosure">
+        <summary><div><b>{activeDate} 研究机会与方案档案</b><span>研究机会、设备方案和原子制造路线永久保存</span></div><em>展开 ↓</em></summary>
         <div className="insight-history-list">
           {selectedInsightHistory && (() => {
             const ids = [...selectedInsightHistory.opportunityIds, ...selectedInsightHistory.methodIds, ...selectedInsightHistory.atomicIds];
@@ -507,7 +519,7 @@ export default function Home() {
             </article>;
           })()}
         </div>
-      </section>
+      </details>
 
       <section className="history-section">
         <div className="history-heading"><p>DAILY ARCHIVE</p><h2>{activeDate} 日报档案</h2><span>所有历史记录仍永久保存；此处只显示上方选中的日期，避免页面无限变长。</span></div>
