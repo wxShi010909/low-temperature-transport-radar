@@ -7,7 +7,7 @@ import insightArchive from "@/data/insight-archive.json";
 import { ExportAllNotesButton, FavoriteButton, getFavoriteIds, getSavedNote, NoteEditor, READER_EVENT } from "@/app/reader-tools";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
-type SectionKey = "today" | "reading" | "my-reading" | "library" | "opportunities" | "methods" | "atomic";
+type SectionKey = "today" | "reading" | "library" | "opportunities" | "methods" | "atomic";
 type DockTab = "notes" | "favorites";
 type Paper = (typeof report.papers)[number];
 type ReadingItem = (typeof curatedReading.items)[number];
@@ -26,7 +26,6 @@ const trackKeys = Object.keys(tracks) as TrackKey[];
 const navigation: { id: SectionKey; label: string }[] = [
   { id: "today", label: "今日日报" },
   { id: "reading", label: "每日综述" },
-  { id: "my-reading", label: "我的阅读" },
   { id: "library", label: "文献库" },
   { id: "opportunities", label: "研究机会" },
   { id: "methods", label: "方法与设备" },
@@ -408,28 +407,6 @@ export default function Home() {
             )}
           </div>
         </details>
-      </section>
-
-      <section className="my-reading-section" id="my-reading">
-        <div className="section-heading wide"><div><p>MY READING</p><h2>我的收藏与阅读整理</h2></div><span>{favoriteIds.length} 项收藏 · {savedNoteIds.length} 条已保存笔记</span></div>
-        <div className="saved-reading-panel">
-          <div className="saved-reading-heading"><div><h3>红心收藏</h3><p>文章、研究机会和设备方案都能收藏；再次点击红心即可取消。</p></div><div className="saved-reading-tools"><span>保存在当前浏览器</span><ExportAllNotesButton entries={allNoteEntries} /></div></div>
-          {favoritePapers.length + favoriteReadings.length + favoriteInsights.length === 0 ? (
-            <div className="saved-empty"><span>♡</span><div><b>还没有收藏文章</b><p>点击文章卡片上的红心，这里就会形成你的待读清单。</p></div></div>
-          ) : (
-            <div className="saved-reading-list">
-              {favoritePapers.map((paper) => <article key={paper.id}><FavoriteButton id={paper.id} compact /><div><span>{paper.track} · {tracks[paper.track as TrackKey].short}</span><b>{paper.titleZh}</b><small>{savedNoteIds.includes(paper.id) ? "已有笔记" : "尚未记笔记"}</small></div><a href={`/paper?id=${encodeURIComponent(paper.id)}`}>继续阅读 →</a></article>)}
-              {favoriteReadings.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><div><span>{item.kind}</span><b>{item.titleZh}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "旧文精选"}</small></div><a href={`/reading?id=${encodeURIComponent(item.id)}`}>继续阅读 →</a></article>)}
-              {favoriteInsights.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><div><span>{item.typeZh} · {item.trackLabel}</span><b>{item.title}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "方案详解"}</small></div><a href={`/insight?id=${encodeURIComponent(item.id)}`}>继续查看 →</a></article>)}
-            </div>
-          )}
-        </div>
-        <NoteEditor
-          id={`daily-${activeDate}`}
-          title={`${selectedDateLabel}阅读整理`}
-          daily
-          suggested={dailyNoteSuggestion}
-        />
       </section>
 
       <section className="library-section" id="library">

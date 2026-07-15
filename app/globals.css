@@ -389,7 +389,6 @@ h1 {
 
 .library-section,
 .reading-section,
-.my-reading-section,
 .opportunity-section,
 .methods-section,
 .atomic-section {
@@ -776,7 +775,7 @@ nav a { font-size: 13px; }
 .dashboard-controls .date-filter-bar > div > span { width: 34px; height: 34px; border-radius: 7px; }
 
 .today { margin-top: 54px; padding-bottom: 64px; }
-.reading-section, .my-reading-section { padding-top: 62px; }
+.reading-section { padding-top: 62px; }
 .library-section, .opportunity-section, .methods-section, .atomic-section { padding-top: 62px; padding-bottom: 62px; }
 .section-heading { margin-bottom: 18px; }
 .section-heading h2 { font-size: 27px; }
@@ -829,7 +828,7 @@ nav a { font-size: 13px; }
 .history-section { margin-bottom: 54px; padding: 20px 22px; border-radius: 12px; }
 
 /* Fixed reading desk */
-.site-body { min-width: 0; transition: margin-right 220ms ease; }
+.site-body { min-width: 0; }
 .site-body.with-reading-dock { margin-right: 348px; }
 .reading-dock {
   width: 320px;
