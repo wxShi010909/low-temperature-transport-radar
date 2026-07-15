@@ -860,13 +860,13 @@ nav a { font-size: 13px; }
 .compact-note-editor { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
 .compact-note-editor .note-editor-heading { align-items: flex-start; }
 .compact-note-editor .note-editor-heading span { font-size: 8px; }
-.compact-note-editor .note-editor-heading h2 { max-width: 180px; margin-top: 4px; font-size: 15px; line-height: 1.4; }
-.compact-note-editor .organize-button { padding: 7px 8px; font-size: 9px; }
-.compact-note-editor textarea { min-height: 210px; margin-top: 12px; padding: 12px; resize: vertical; font-size: 11px; line-height: 1.7; }
+.compact-note-editor .note-editor-heading h2 { max-width: 190px; margin-top: 4px; font-size: 16px; line-height: 1.4; }
+.compact-note-editor .organize-button { padding: 8px 9px; font-size: 10px; }
+.compact-note-editor textarea { min-height: 280px; max-height: calc(100vh - 290px); margin-top: 12px; padding: 14px; resize: vertical; font-size: 14px; line-height: 1.8; }
 .compact-note-editor .note-editor-footer { display: block; margin-top: 10px; }
-.compact-note-editor .note-editor-footer > span { display: block; margin-bottom: 9px; font-size: 8px; }
+.compact-note-editor .note-editor-footer > span { display: block; margin-bottom: 10px; font-size: 10px; line-height: 1.6; }
 .compact-note-editor .note-actions { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-.compact-note-editor .note-actions button { min-width: 0; min-height: 34px; padding: 7px 6px; font-size: 9px; }
+.compact-note-editor .note-actions button { min-width: 0; min-height: 36px; padding: 8px 6px; font-size: 10px; }
 .compact-note-editor .note-save-button { grid-column: 1 / -1; }
 
 .dock-favorites-panel { min-height: 100%; display: flex; flex-direction: column; }
@@ -1044,7 +1044,7 @@ nav a { font-size: 13px; }
   .reading-dock { width: calc(100% - 16px); top: 74px; right: 8px; bottom: 8px; border-radius: 15px; }
   .reading-dock-header { min-height: 68px; padding: 11px 13px 10px; }
   .reading-dock-content { padding: 12px; }
-  .compact-note-editor textarea { min-height: 180px; }
+  .compact-note-editor textarea { min-height: 230px; max-height: calc(100vh - 300px); }
   .reading-dock-launcher { width: auto; min-height: 46px; top: auto; right: 10px; bottom: 12px; flex-direction: row; gap: 7px; padding: 8px 12px; border-radius: 999px; }
   .reading-dock-launcher b { writing-mode: horizontal-tb; letter-spacing: 0; }
   .reading-dock-launcher > span { font-size: 19px; }

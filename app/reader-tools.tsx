@@ -143,7 +143,7 @@ export function NoteEditor({ id, title, suggested, daily = false, compact = fals
         rows={compact ? 7 : daily ? 11 : 9}
       />
       <div className="note-editor-footer">
-        <span>保存在当前浏览器；更换设备或清理浏览器数据后不会自动同步。</span>
+        <span>拖动输入框右下角可调节高度；内容保存在当前浏览器，更换设备或清理浏览器数据后不会自动同步。</span>
         <div className="note-actions">
           <button className="note-action-secondary" type="button" onClick={copyNote} disabled={!note.trim()}>{status === "copied" ? "已复制 ✓" : "复制"}</button>
           <button className="note-action-secondary" type="button" onClick={exportNote} disabled={!note.trim()}>{status === "exported" ? "已导出 ✓" : "导出 Markdown"}</button>
