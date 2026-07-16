@@ -36,6 +36,7 @@ export default function CuratedReadingDetailPage() {
   }
 
   const noteSuggestion = `【一句话理解】\n${detail.oneSentence}\n\n【研究组织/实验流程】\n${detail.workflow.join("\n")}\n\n【关键结果】\n${detail.findings.join("\n")}\n\n【与当前研究的关系】\n${detail.researchConnection}\n\n【证据边界】\n${detail.limitationsDetailed}\n\n【我的理解 / 下一步想法】\n`;
+  const backupUrl = (item as typeof item & { backupUrl?: string }).backupUrl;
 
   return (
     <main className={`paper-detail-page track-${item.track.toLowerCase()}`}>
@@ -61,7 +62,7 @@ export default function CuratedReadingDetailPage() {
           <p className="detail-authors">{item.authors}</p>
           <div className="detail-hero-footer curated-detail-footer">
             <div><strong>{item.kind}</strong><span>永久保存在经典文献库</span></div>
-            <div className="detail-hero-actions"><FavoriteButton id={item.id} /><a href={item.url} target="_blank" rel="noreferrer">查看出版社原文 ↗</a></div>
+            <div className="detail-hero-actions"><FavoriteButton id={item.id} /><a href={item.url} target="_blank" rel="noreferrer">查看出版社原文 ↗</a>{backupUrl && <a className="backup-source-link" href={backupUrl} target="_blank" rel="noreferrer">备用入口 ↗</a>}</div>
           </div>
         </section>
 

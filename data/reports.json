@@ -1,35 +1,104 @@
 {
-  "updatedAt": "2026-07-15T10:30:00+08:00",
-  "reportDate": "2026-07-15",
-  "scope": "按当前研究优先级跨时间精选：原子级制造、MTJ/存储器、产业化器件与低温输运；发布日期为论文原始发表日期，不是入选门槛",
+  "updatedAt": "2026-07-16T09:55:00+08:00",
+  "reportDate": "2026-07-16",
+  "scope": "跨时间层次精选，优先原子级制造、MTJ/MRAM、产业化器件与低温动态测试；推荐日期与论文真实发表日期分开显示",
   "history": [
     {
       "date": "2026-07-13",
       "label": "初始化精选",
       "total": 10,
-      "counts": { "A": 2, "B": 2, "C": 1, "D": 2, "E": 3 },
-      "paperIds": ["2607.01439", "2603.21159", "2606.18449", "2606.07848", "2602.20369", "2604.18736", "2604.12549", "2601.20025", "2601.21154", "2509.21525"]
+      "counts": {
+        "A": 2,
+        "B": 2,
+        "C": 1,
+        "D": 2,
+        "E": 3
+      },
+      "paperIds": [
+        "2607.01439",
+        "2603.21159",
+        "2606.18449",
+        "2606.07848",
+        "2602.20369",
+        "2604.18736",
+        "2604.12549",
+        "2601.20025",
+        "2601.21154",
+        "2509.21525"
+      ]
     },
     {
       "date": "2026-07-14",
       "label": "工作日报",
       "total": 8,
-      "counts": { "A": 3, "B": 1, "C": 2, "D": 2, "E": 0 },
-      "paperIds": ["2607.09256", "2607.06304", "2607.09437", "2607.08929", "2607.08822", "2607.08868", "2607.08890", "2607.01691"]
+      "counts": {
+        "A": 3,
+        "B": 1,
+        "C": 2,
+        "D": 2,
+        "E": 0
+      },
+      "paperIds": [
+        "2607.09256",
+        "2607.06304",
+        "2607.09437",
+        "2607.08929",
+        "2607.08822",
+        "2607.08868",
+        "2607.08890",
+        "2607.01691"
+      ]
     },
     {
       "date": "2026-07-15",
       "label": "专题精选：MTJ、原子制造与产业化",
       "total": 7,
-      "counts": { "A": 1, "B": 3, "C": 0, "D": 1, "E": 2 },
-      "paperIds": ["s44306-025-00119-7", "acsnano-4c08023", "s41467-024-55437-x", "s44306-024-00016-5", "acsaelm-3c00068", "apl-1-5129553", "acsami-4c05289"]
+      "counts": {
+        "A": 1,
+        "B": 3,
+        "C": 0,
+        "D": 1,
+        "E": 2
+      },
+      "paperIds": [
+        "s44306-025-00119-7",
+        "acsnano-4c08023",
+        "s41467-024-55437-x",
+        "s44306-024-00016-5",
+        "acsaelm-3c00068",
+        "apl-1-5129553",
+        "acsami-4c05289"
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "label": "工作日精选：MTJ原子界面、写入可靠性与低温动态",
+      "total": 6,
+      "counts": {
+        "A": 2,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "E": 2
+      },
+      "paperIds": [
+        "aip-apl-128-122405",
+        "aip-jap-139-193901",
+        "aip-jap-138-203903",
+        "aip-apl-126-232405",
+        "aip-apm-13-121102",
+        "aip-adv-13-025253"
+      ]
     }
   ],
   "papers": [
     {
       "id": "2607.12740",
       "track": "A",
-      "secondaryTracks": ["B", "E"],
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
       "title": "Antiphase boundary-driven large exchange bias and negative magnetoresistance in NiCo2O4",
       "titleZh": "反相畴界驱动 NiCo₂O₄ 的大交换偏置与负磁阻",
       "authors": "Biswanath Pramanik, Pushpesh Pathak, Binoy K. Hazra",
@@ -37,7 +106,12 @@
       "published": "2026-07-14",
       "system": "纳米晶单相 NiCo₂O₄",
       "conditions": "5 K 磁滞与10 K磁输运；HRTEM界面观察",
-      "methods": ["低温磁输运", "交换偏置", "磁阻", "HRTEM"],
+      "methods": [
+        "低温磁输运",
+        "交换偏置",
+        "磁阻",
+        "HRTEM"
+      ],
       "summary": "实测5 K约375 Oe交换偏置和10 K约31.5%负磁阻，并观察低场蝴蝶形、高场近线性磁阻；作者结合HRTEM把共同起源指向反相畴界。",
       "relevance": "提示磁隧道结和氧化物自旋器件中，反相畴界既可能是缺陷，也可能是可工程化的交换与散射通道。",
       "limitation": "偏置和磁阻与反相畴界的因果联系主要由相关性和结构证据支持，尚缺少可控畴界密度系列与局域磁性验证。",
@@ -51,7 +125,10 @@
     {
       "id": "2607.12737",
       "track": "A",
-      "secondaryTracks": ["B", "C"],
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
       "title": "Magnetic field-driven phase switching in the antiferromagnetic Mott insulator Ca3(Ru0.99Ti0.01)2O7",
       "titleZh": "反铁磁莫特绝缘体 Ca₃(Ru₀.₉₉Ti₀.₀₁)₂O₇ 中的磁场驱动相切换",
       "authors": "Ksenia S. Rabinovich et al.",
@@ -59,7 +136,12 @@
       "published": "2026-07-14",
       "system": "1% Ti掺杂双层钌酸盐",
       "conditions": "最高14 T；磁场沿a、b轴；H–T相图",
-      "methods": ["低温电阻", "磁化", "高磁场", "相图"],
+      "methods": [
+        "低温电阻",
+        "磁化",
+        "高磁场",
+        "相图"
+      ],
       "summary": "磁场沿易轴b时，约6 T出现自旋翻转并降阻但仍绝缘，10.5 T以上进入强制铁磁金属；沿a轴至14 T未见对应相。",
       "relevance": "为自动化多轴磁场—温度—输运联合扫描提供一个边界清晰的相切换范例。",
       "limitation": "浅自由能景观来自电子—电子和电子—晶格耦合是作者解释；仅凭宏观相图不能唯一分离各耦合贡献。",
@@ -73,7 +155,10 @@
     {
       "id": "2607.12442",
       "track": "A",
-      "secondaryTracks": ["C", "D"],
+      "secondaryTracks": [
+        "C",
+        "D"
+      ],
       "title": "Magnetothermopower and particle-hole symmetry in a cuprate strange metal",
       "titleZh": "铜氧化物奇异金属中的磁热电势与粒子—空穴对称性",
       "authors": "Yu-Te Hsu et al.",
@@ -81,7 +166,12 @@
       "published": "2026-07-14",
       "system": "过掺杂(Bi,Pb)₂(Sr,La)₂CuO₆+δ单晶",
       "conditions": "最高35 T磁热电测量",
-      "methods": ["Seebeck系数", "高磁场", "霍尔效应", "磁阻"],
+      "methods": [
+        "Seebeck系数",
+        "高磁场",
+        "霍尔效应",
+        "磁阻"
+      ],
       "summary": "零场Seebeck温度依赖可由Boltzmann输运描述，但场依赖出现额外项；与既有霍尔和磁阻合并后，作者提出具有不同粒子—空穴对称性的两个输运扇区。",
       "relevance": "展示如何用热电、霍尔和磁阻互补约束奇异金属模型，而不是用一条电阻曲线判断机制。",
       "limitation": "短程超导序和‘费米液体岛嵌入Dirac液体’是与数据相容的现象学解释，不是显微成像直接证明。",
@@ -95,7 +185,11 @@
     {
       "id": "2607.12394",
       "track": "A",
-      "secondaryTracks": ["B", "D", "E"],
+      "secondaryTracks": [
+        "B",
+        "D",
+        "E"
+      ],
       "title": "Systematic modulation of superconducting gap dynamics in YBCO|BNT|YBCO Josephson Junctions through THz field interaction and BNT ferroelectric barrier",
       "titleZh": "太赫兹场与BNT铁电势垒调控YBCO|BNT|YBCO约瑟夫森结超导能隙动力学",
       "authors": "Sukhanidhan Singh et al.",
@@ -103,7 +197,12 @@
       "published": "2026-07-14",
       "system": "PLD外延YBCO/BNT/YBCO三层结",
       "conditions": "0.5–2.5 THz；30–60 K；40 nm BNT势垒",
-      "methods": ["PLD", "太赫兹", "约瑟夫森输运", "STS"],
+      "methods": [
+        "PLD",
+        "太赫兹",
+        "约瑟夫森输运",
+        "STS"
+      ],
       "summary": "预印本报告太赫兹照射下铁电极化、临界电流和隧穿能隙的协同变化，并给出Fraunhofer图样作为相干耦合证据。",
       "relevance": "把铁电极化、太赫兹驱动和高温超导结连接，可发展为外场可编程低温器件。",
       "limitation": "AFM/XRR不足以排除所有缺陷介导通道；多个结论需独立样品统计、热效应对照和同行评议验证。",
@@ -117,7 +216,10 @@
     {
       "id": "2607.12707",
       "track": "B",
-      "secondaryTracks": ["C", "E"],
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
       "title": "Are gate-all-around 2D CFETs the optimal architecture for the A2 node and beyond?",
       "titleZh": "全环栅二维CFET是否是A2节点及更先进节点的最优架构？",
       "authors": "Fengben Xi et al.",
@@ -125,7 +227,12 @@
       "published": "2026-07-14",
       "system": "原子薄二维半导体垂直互补晶体管",
       "conditions": "36 nm CPP、10 nm栅长；多尺度PPA评估",
-      "methods": ["工艺集成", "量子输运", "寄生提取", "电路基准"],
+      "methods": [
+        "工艺集成",
+        "量子输运",
+        "寄生提取",
+        "电路基准"
+      ],
       "summary": "作者建立A2节点二维CFET流程并演示关键模块，但接触约束仍使最小CPP为36 nm；接触电阻和布局寄生电容限制电路级收益。",
       "relevance": "对原子制造很关键：原子薄沟道本身并不保证系统优势，接触、互联和寄生必须同步设计。",
       "limitation": "多尺度框架含模拟和早期模块演示，不等同于完整A2电路已被实验制造和验证。",
@@ -139,7 +246,9 @@
     {
       "id": "2607.12741",
       "track": "C",
-      "secondaryTracks": ["A"],
+      "secondaryTracks": [
+        "A"
+      ],
       "title": "Dynamical Generation of Rectified Electric Current",
       "titleZh": "整流电流的动力学生成机制",
       "authors": "Jin-Xin Hu, Congjun Wu",
@@ -147,7 +256,12 @@
       "published": "2026-07-14",
       "system": "周期体系与起伏磁性晶格模型",
       "conditions": "有限频率、低于光学带隙的交流驱动",
-      "methods": ["非线性响应", "Boltzmann输运", "混合Berry曲率", "磁电效应"],
+      "methods": [
+        "非线性响应",
+        "Boltzmann输运",
+        "混合Berry曲率",
+        "磁电效应"
+      ],
       "summary": "理论给出任意动力学驱动产生二阶直流的通用框架，分离有限频率散射修正分布和时间域混合Berry曲率异常速度两项。",
       "relevance": "可指导锁相二次谐波/直流整流实验，并把磁序电学读出与低频非线性输运连接。",
       "limitation": "当前是理论预测；具体材料中的参数大小、杂质模型和热效应需实验检验。",
@@ -161,7 +275,10 @@
     {
       "id": "2607.12819",
       "track": "C",
-      "secondaryTracks": ["A", "B"],
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
       "title": "What Is the Real-Time Atomistic Mechanism Behind Chirality-Induced Spin Selectivity in Donor-Chiral Bridge-Acceptor Molecules?",
       "titleZh": "供体—手性桥—受体分子中手性诱导自旋选择性的实时原子机制是什么？",
       "authors": "Shu-Zheng Zhou, Xi Sun, Kai-Yuan Zhang, Hua-Hua Fu",
@@ -169,7 +286,12 @@
       "published": "2026-07-14",
       "system": "轴手性供体—桥—受体分子",
       "conditions": "光激发实时量子动力学",
-      "methods": ["量子动力学", "几何SOC", "CISS", "EPR对照"],
+      "methods": [
+        "量子动力学",
+        "几何SOC",
+        "CISS",
+        "EPR对照"
+      ],
       "summary": "原子级模型提出扭曲传输路径产生几何自旋轨道耦合，计算的手性依赖与30–40%自旋极化量级和既有时间分辨EPR相符。",
       "relevance": "为手性自旋电子器件提供从分子几何到可测自旋极化的设计路径。",
       "limitation": "这是对既有实验的理论解释与匹配，新模型的唯一性仍需结构系列、时间分辨和器件输运交叉检验。",
@@ -183,7 +305,10 @@
     {
       "id": "2607.12638",
       "track": "D",
-      "secondaryTracks": ["B", "E"],
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
       "title": "A critical consideration of X-ray detectors based on Ga2O3: excitation, carrier transport mechanisms and performance standardization",
       "titleZh": "Ga₂O₃ X射线探测器的激发、载流子输运与性能标准化审视",
       "authors": "Alfred Moore et al.",
@@ -191,7 +316,12 @@
       "published": "2026-07-14",
       "system": "外延β-Ga₂O₃:Si平面肖特基探测器",
       "conditions": "同步辐射能量可调单色X射线",
-      "methods": ["同步辐射", "探测器标定", "载流子输运", "标准化"],
+      "methods": [
+        "同步辐射",
+        "探测器标定",
+        "载流子输运",
+        "标准化"
+      ],
       "summary": "用可调单色X射线区分激发和输运过程，并指出既往X射线源与公式使用会造成性能误判，最后提出可迁移的测量分析协议。",
       "relevance": "其核心价值是计量学：设备建设必须保存光子能量、通量、几何与定义，才能跨样品比较。",
       "limitation": "协议在一个Ga₂O₃器件体系上示范，推广到其他材料仍需跨实验室复现和不确定度评估。",
@@ -205,7 +335,10 @@
     {
       "id": "2607.12754",
       "track": "E",
-      "secondaryTracks": ["B", "D"],
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
       "title": "Twist Engineering for Reconfigurable Optical and Optoelectronic Devices",
       "titleZh": "面向可重构光学与光电子器件的扭角工程",
       "authors": "Gang Huang et al.",
@@ -213,7 +346,12 @@
       "published": "2026-07-14",
       "system": "二维层状材料与动态扭角器件",
       "conditions": "转移、生长、AFM/QTM/MEMS动态操控与反馈",
-      "methods": ["扭角计量", "确定性转移", "AFM操控", "MEMS"],
+      "methods": [
+        "扭角计量",
+        "确定性转移",
+        "AFM操控",
+        "MEMS"
+      ],
       "summary": "综述从扭角测量、确定性组装与生长，延伸到AFM、量子扭转显微和MEMS动态调节，并讨论反馈控制和制造可扩展性。",
       "relevance": "把‘找到一个好扭角样品’推进到可测量、可调、可反馈和可制造的设备路线。",
       "limitation": "这是尚未核验正式出版状态的综述预印本；不同动态平台的成熟度和吞吐量差异很大。",
@@ -227,7 +365,10 @@
     {
       "id": "2607.01439",
       "track": "B",
-      "secondaryTracks": ["A", "E"],
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
       "title": "Fabrication of high-quality topological insulator nanodevices from bulk-insulating air-sensitive Sb-Bi₂Se₃",
       "titleZh": "空气敏感 Sb-Bi₂Se₃ 高质量拓扑绝缘体纳米器件制备",
       "authors": "Linh T. Dang, Ayushi Solanki, Yongjian Wang, Oliver Breunig, Yoichi Ando",
@@ -235,7 +376,12 @@
       "published": "2026-07-01",
       "system": "Sb-substituted Bi₂Se₃ Hall bar / nanowire",
       "conditions": "室温微加工；量子干涉与弱反局域输运验证",
-      "methods": ["室温微加工", "Hall bar", "纳米线", "弱反局域"],
+      "methods": [
+        "室温微加工",
+        "Hall bar",
+        "纳米线",
+        "弱反局域"
+      ],
       "summary": "建立避免热加工损伤的室温器件流程，在保持低体载流子浓度的同时获得栅压可调性、量子干涉振荡和清晰弱反局域信号。",
       "relevance": "把空气敏感拓扑材料的加工窗口直接连接到后续低温 Majorana 混合器件研究。",
       "limitation": "目前为预印本；需要进一步比较不同批次器件的一致性。",
@@ -249,7 +395,9 @@
     {
       "id": "2603.21159",
       "track": "E",
-      "secondaryTracks": ["B"],
+      "secondaryTracks": [
+        "B"
+      ],
       "title": "First Plasma Atomic Layer Etching of Diamond via O₂/Kr Chemistry",
       "titleZh": "O₂/Kr 化学体系实现首例金刚石等离子体原子层刻蚀",
       "authors": "Duc Duy Tran, Cedric Mannequin, Aboulaye Traore, Masahiro Sasaki, Etienne Gheeraert",
@@ -257,11 +405,16 @@
       "published": "2026-03-22",
       "system": "Diamond / plasma ALE",
       "conditions": "O₂ 表面改性 + 低能 Kr 离子去除；6.85 Å/cycle",
-      "methods": ["原子层刻蚀", "ICP", "XPS", "表面粗糙度"],
+      "methods": [
+        "原子层刻蚀",
+        "ICP",
+        "XPS",
+        "表面粗糙度"
+      ],
       "summary": "通过自限循环实现原子尺度可控去除，刻蚀后表面粗糙度降低，XPS 显示金刚石键合结构得到保持。",
       "relevance": "兼具设备工艺、原子级加工和表征闭环，适合量子器件与极端制造工艺开发。",
       "limitation": "尚需验证复杂器件图形中的均匀性、选择性和长期重复性。",
-      "score": 9.0,
+      "score": 9,
       "priority": "S",
       "arxiv": "2603.21159",
       "doi": "10.48550/arXiv.2603.21159",
@@ -271,7 +424,9 @@
     {
       "id": "2606.18449",
       "track": "A",
-      "secondaryTracks": ["B"],
+      "secondaryTracks": [
+        "B"
+      ],
       "title": "Magnetotransport Measurements on Isolated Polycrystalline Grains of Type-II Silicon Clathrate",
       "titleZh": "II 型硅笼状化合物孤立多晶颗粒的磁输运测量",
       "authors": "Sam Saiter et al.",
@@ -279,7 +434,12 @@
       "published": "2026-06-16",
       "system": "NaₓSi₁₃₆ isolated grain",
       "conditions": "3.5–290 K；温变电阻、Hall 与栅控电导",
-      "methods": ["微加工隔离", "四端输运", "Hall", "Raman"],
+      "methods": [
+        "微加工隔离",
+        "四端输运",
+        "Hall",
+        "Raman"
+      ],
       "summary": "首次对单个 II 型硅笼状化合物颗粒开展低温输运表征，识别热激活冻结与低激活能跳跃导电区间。",
       "relevance": "展示了对微小非传统晶体颗粒进行器件化和低温磁输运测量的通用路线。",
       "limitation": "多晶颗粒内部晶界贡献仍需与本征输运进一步区分。",
@@ -293,7 +453,10 @@
     {
       "id": "2606.07848",
       "track": "B",
-      "secondaryTracks": ["A", "E"],
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
       "title": "Phase Formation and Thermal Stability of Superconducting Platinum Silicide Thin Films on Silicon",
       "titleZh": "硅基超导 PtSi 薄膜的相形成与热稳定性",
       "authors": "Tharanga R. Nanayakkara, Ananya Chattaraj, Mingzhao Liu, Charles T. Black",
@@ -301,7 +464,12 @@
       "published": "2026-06-05",
       "system": "PtSi thin film on Si",
       "conditions": "300–600 °C 快速热处理；超导转变约 1 K",
-      "methods": ["快速热处理", "GI-XRD", "XRR", "电输运"],
+      "methods": [
+        "快速热处理",
+        "GI-XRD",
+        "XRR",
+        "电输运"
+      ],
       "summary": "给出相纯 PtSi 的稳健工艺窗口，并指出界面粗化主要来自 Pt₂Si 向 PtSi 的转化步骤。",
       "relevance": "将薄膜相形成、界面质量与硅基低温超导器件工艺直接关联。",
       "limitation": "还需要在完整器件流程中验证接触、电流承载和微缩效应。",
@@ -315,7 +483,9 @@
     {
       "id": "2602.20369",
       "track": "D",
-      "secondaryTracks": ["E"],
+      "secondaryTracks": [
+        "E"
+      ],
       "title": "LANTERN: Characterization technology for low threshold cryogenic detectors",
       "titleZh": "LANTERN：低阈值低温探测器表征技术",
       "authors": "Giorgio Del Castello",
@@ -323,7 +493,12 @@
       "published": "2026-02-23",
       "system": "64-channel cryogenic calorimeter calibration",
       "conditions": "UV-Vis LED 矩阵；10 eV–1 keV 低能区间",
-      "methods": ["低温探测器", "光学校准", "多通道电子学", "误差验证"],
+      "methods": [
+        "低温探测器",
+        "光学校准",
+        "多通道电子学",
+        "误差验证"
+      ],
       "summary": "利用快速切换 LED 矩阵和光子统计，对最多 64 个低温量热计进行独立标定，并实现约 2% 的能量重建误差。",
       "relevance": "为低温系统的多通道标定、电子学搭建和误差闭环提供可复用方案。",
       "limitation": "面向量热探测器，迁移到电输运平台时需要重新设计激励与读出链路。",
@@ -337,7 +512,10 @@
     {
       "id": "2604.18736",
       "track": "A",
-      "secondaryTracks": ["B", "E"],
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
       "title": "Proximitized Topological Insulator Charge Island Fabricated via In Situ Multi-Angle Stencil Lithography",
       "titleZh": "原位多角度模板光刻制备近邻化拓扑绝缘体电荷岛",
       "authors": "Benedikt Frohn et al.",
@@ -345,7 +523,12 @@
       "published": "2026-04-20",
       "system": "(Bi,Sb)₂Te₃ / Al hybrid charge island",
       "conditions": "低温电导与磁场；Coulomb blockade",
-      "methods": ["原位模板光刻", "选择区生长", "隧穿势垒", "低温输运"],
+      "methods": [
+        "原位模板光刻",
+        "选择区生长",
+        "隧穿势垒",
+        "低温输运"
+      ],
       "summary": "把选择区纳米带生长、扩散阻挡层、超导 Al 和超薄氧化物势垒集成在无后处理的原位流程中，并观测近邻超导相关低能电导抑制。",
       "relevance": "同时连接极端制造、混合器件制备和低温量子输运验证。",
       "limitation": "器件数量和长期工艺良率尚需扩展。",
@@ -359,7 +542,9 @@
     {
       "id": "2604.12549",
       "track": "C",
-      "secondaryTracks": ["E"],
+      "secondaryTracks": [
+        "E"
+      ],
       "title": "Utility of NISQ devices: optimizing experimental parameters for the fabrication of Au atomic junction using gate-based quantum computers",
       "titleZh": "利用 NISQ 设备优化 Au 原子结制备实验参数",
       "authors": "Takumi Kanezashi, Daisuke Tsukayama, Jun-ichi Shirakashi, Tetsuo Shibuya, Hiroshi Imai",
@@ -367,7 +552,12 @@
       "published": "2026-04-14",
       "system": "Feedback-controlled electromigration of Au atomic junctions",
       "conditions": "NISQ 门模型参数优化",
-      "methods": ["原子结", "反馈电迁移", "量子优化", "自主制造"],
+      "methods": [
+        "原子结",
+        "反馈电迁移",
+        "量子优化",
+        "自主制造"
+      ],
       "summary": "评估门型 NISQ 设备对反馈控制电迁移参数的自主优化能力，并与量子退火方案比较。",
       "relevance": "为原子结自动制备建立算法—实验闭环，可进一步与低温原子尺度输运测量衔接。",
       "limitation": "当前重点是参数优化，尚需更多真实制备批次验证闭环收益。",
@@ -381,7 +571,9 @@
     {
       "id": "2601.20025",
       "track": "E",
-      "secondaryTracks": ["B"],
+      "secondaryTracks": [
+        "B"
+      ],
       "title": "Foundry-Enabled Patterning of Diamond Quantum Microchiplets for Scalable Quantum Photonics",
       "titleZh": "面向规模化量子光子学的晶圆厂兼容金刚石量子微芯粒图形化",
       "authors": "Jawaher Almutlaq et al.",
@@ -389,7 +581,12 @@
       "published": "2026-01-27",
       "system": "Diamond quantum microchiplets",
       "conditions": "Si 高精度掩膜 + 微转印",
-      "methods": ["晶圆厂图形化", "微转印", "金刚石器件", "规模制造"],
+      "methods": [
+        "晶圆厂图形化",
+        "微转印",
+        "金刚石器件",
+        "规模制造"
+      ],
       "summary": "将高精度图形定义转移到商业硅工艺，通过微转印在金刚石上形成数百个量子微芯粒，提高均匀性、良率和吞吐量。",
       "relevance": "体现原子缺陷量子器件从单件加工向可规模制造与异质集成的转变。",
       "limitation": "重点为光子器件，和低温电输运的连接需要后续电极与读出集成。",
@@ -403,7 +600,9 @@
     {
       "id": "2601.21154",
       "track": "E",
-      "secondaryTracks": ["C"],
+      "secondaryTracks": [
+        "C"
+      ],
       "title": "Tunneling probe-based identification of the sp³ dangling bond on the H-C(100):2×1 surface",
       "titleZh": "基于隧穿探针识别 H-C(100):2×1 表面的 sp³ 悬挂键",
       "authors": "Lachlan Oberg, Yi-Ying Sung, Cedric Weber, Marcus W. Doherty, Christopher I. Pakes",
@@ -411,7 +610,12 @@
       "published": "2026-01-29",
       "system": "H-terminated diamond (100) surface",
       "conditions": "STS 表征 + 理论框架",
-      "methods": ["STM/STS", "原子缺陷识别", "金刚石表面", "理论表征"],
+      "methods": [
+        "STM/STS",
+        "原子缺陷识别",
+        "金刚石表面",
+        "理论表征"
+      ],
       "summary": "建立识别金刚石表面 sp³ 悬挂键的实验—理论框架，为隧穿探针确定性修改原子缺陷提供表征基础。",
       "relevance": "属于原子制造中的关键计量问题：在操控前先可靠识别目标原子缺陷。",
       "limitation": "尚未完成可扩展的确定性缺陷写入与器件级功能验证。",
@@ -425,7 +629,9 @@
     {
       "id": "2509.21525",
       "track": "D",
-      "secondaryTracks": ["A"],
+      "secondaryTracks": [
+        "A"
+      ],
       "title": "High-accuracy low-noise electrical measurements in a closed-cycle pulse-tube cryostat",
       "titleZh": "闭循环脉冲管低温系统中的高精度低噪声电学测量",
       "authors": "Mathieu Taupin, Kamel Dougdag, Djamel Ziane, Francois Couedo",
@@ -433,7 +639,12 @@
       "published": "2025-09-25",
       "system": "Closed-cycle cryomagnetic system + coaxial cryoprobe",
       "conditions": "脉冲管振动与电磁扰动；量子 Hall 电阻标准",
-      "methods": ["低噪声线路", "同轴低温探针", "振动表征", "精密电阻"],
+      "methods": [
+        "低噪声线路",
+        "同轴低温探针",
+        "振动表征",
+        "精密电阻"
+      ],
       "summary": "系统评估无液氦脉冲管系统的振动与电磁污染，并展示十亿分之一量级电阻测量不确定度的可行性。",
       "relevance": "对无液氦低温输运平台的滤波、频率选择、振动诊断和精度验证具有直接借鉴价值。",
       "limitation": "结论依赖具体系统频谱，迁移到其他设备时必须重新测量扰动谱。",
@@ -447,7 +658,10 @@
     {
       "id": "2607.09256",
       "track": "A",
-      "secondaryTracks": ["B", "C"],
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
       "title": "Terahertz field-driven nonlinear Hall effect and other second order transport phenomena in two-dimensional tellurene",
       "titleZh": "二维碲烯中的太赫兹驱动非线性霍尔与二阶输运",
       "authors": "M. D. Moldavskaya, L. E. Golub, E. Mönch, Chang Niu, Peide D. Ye, J. Wunderlich, S. D. Ganichev",
@@ -455,7 +669,12 @@
       "published": "2026-07-10",
       "system": "二维碲烯 Hall bar",
       "conditions": "室温至 4.2 K；栅压与太赫兹频率可调",
-      "methods": ["太赫兹输运", "非线性霍尔", "栅控", "4.2 K"],
+      "methods": [
+        "太赫兹输运",
+        "非线性霍尔",
+        "栅控",
+        "4.2 K"
+      ],
       "summary": "实测线偏振太赫兹辐照下横向、纵向和对角二阶电流；电流随面内电场平方变化，电子与空穴区符号相反，降温至 4.2 K 后显著增强。作者以斜散射、侧跳和 Berry 曲率偶极共同解释。",
       "relevance": "把低温输运、二维器件和高频非线性响应结合起来，可直接启发栅控、温变与频率依赖的联合测量。",
       "limitation": "目前为预印本；多种微观机制同时存在，单凭总电流尚不能唯一分离每一项贡献。",
@@ -469,7 +688,10 @@
     {
       "id": "2607.06304",
       "track": "A",
-      "secondaryTracks": ["B", "E"],
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
       "title": "Decoupling Josephson Coupling and Supercurrent Nonreciprocity in Twisted NbSe2/NbSe2 van der Waals Junctions",
       "titleZh": "扭转 NbSe₂/NbSe₂ 结中约瑟夫森耦合与超电流非互易性的解耦",
       "authors": "Seung-Gi Lee, Kwon-Neong Jung, Jae-Kuen Kim, Jae-Chun Jeon, Jiho Yoon, Stuart S. P. Parkin, Kun-Rok Jeon",
@@ -477,7 +699,12 @@
       "published": "2026-07-10",
       "system": "干法转移扭转 NbSe₂/NbSe₂ 垂直约瑟夫森结",
       "conditions": "低温超导输运；磁场、扭角与界面质量对照",
-      "methods": ["约瑟夫森结", "超电流二极管", "HRTEM", "界面退化对照"],
+      "methods": [
+        "约瑟夫森结",
+        "超电流二极管",
+        "HRTEM",
+        "界面退化对照"
+      ],
       "summary": "实测显示约瑟夫森耦合强度随扭角明显变化，但二极管效率没有系统扭角依赖；弱耦合、界面无序器件及人为退化界面反而出现更强非互易响应。作者据此认为界面无序是主要来源。",
       "relevance": "给二维超导异质结提供了很重要的反例式基准：结构角度、界面透明度和无序必须分别控制，不能把二极管效应直接归因于扭角。",
       "limitation": "界面无序的具体微观类型仍未逐一确定；接近 30% 的效率来自人为退化样品，不能代表洁净结的本征上限。",
@@ -491,7 +718,9 @@
     {
       "id": "2607.08822",
       "track": "C",
-      "secondaryTracks": ["A"],
+      "secondaryTracks": [
+        "A"
+      ],
       "title": "Energetics of fractional anomalous Hall crystals in rhombohedral graphene",
       "titleZh": "菱方五层石墨烯中分数量子反常霍尔晶体的能量学",
       "authors": "Félix Desrochers, Ashvin Vishwanath",
@@ -499,7 +728,12 @@
       "published": "2026-07-09",
       "system": "菱方五层石墨烯（R5G）",
       "conditions": "真实能带色散与屏蔽库仑相互作用；无外磁场",
-      "methods": ["变分波函数", "Monte Carlo", "分数反常霍尔", "相图预测"],
+      "methods": [
+        "变分波函数",
+        "Monte Carlo",
+        "分数反常霍尔",
+        "相图预测"
+      ],
       "summary": "计算表明分数反常霍尔晶体在现实 R5G 模型中可与整数反常霍尔晶体和费米液体竞争，并预测扭角、位移场和弱周期势如何改变稳定窗口。",
       "relevance": "为石墨烯低温输运中的分数态辨认提供可检验参数趋势，但结论仍是理论候选态的能量比较。",
       "limitation": "没有新的实验输运曲线；能量接近时，样品无序、应变和有限温度可能改变相序。",
@@ -513,7 +747,10 @@
     {
       "id": "2607.08890",
       "track": "D",
-      "secondaryTracks": ["C", "E"],
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
       "title": "Hybrid DiffractGPT-Rietveld Refinement Framework for Automated X-ray Diffraction Analysis",
       "titleZh": "融合 DiffractGPT 与 Rietveld 精修的自动 XRD 分析框架",
       "authors": "Charles Rhys Campbell, Justin Ely, Jaehyung Lee, Frank M. Abel, Kamal Choudhary",
@@ -521,11 +758,16 @@
       "published": "2026-07-09",
       "system": "粉末 XRD 自动结构解析流程",
       "conditions": "RRUFF 与 Alexandria 数据集基准测试",
-      "methods": ["DiffractGPT", "Rietveld 精修", "数据库匹配", "自动化分析"],
+      "methods": [
+        "DiffractGPT",
+        "Rietveld 精修",
+        "数据库匹配",
+        "自动化分析"
+      ],
       "summary": "AGAPI-XRD 把生成式结构候选、数据库谱匹配、自动 Rietveld 精修和力场弛豫接成统一流程；基准测试给出候选结构与有效晶格参数的量化成功率。",
       "relevance": "适合作为原子制造后结构表征的自动分析入口，但仍应保留人工检查、残差图和不确定度审查。",
       "limitation": "基准集与真实多相、织构、缺陷和仪器展宽样品仍有差距；生成候选不等同于结构被唯一证实。",
-      "score": 9.0,
+      "score": 9,
       "priority": "S",
       "arxiv": "2607.08890",
       "doi": "10.48550/arXiv.2607.08890",
@@ -535,7 +777,10 @@
     {
       "id": "2607.01691",
       "track": "D",
-      "secondaryTracks": ["A", "E"],
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
       "title": "Quantum Heat Under the Microscope: A Perspective on Cryogenic Scanning Thermal Microscopy",
       "titleZh": "显微镜下的量子热：低温扫描热显微术展望",
       "authors": "Valentin Fonck, Jean Spiece, Pascal Gehring",
@@ -543,7 +788,12 @@
       "published": "2026-07-02",
       "system": "低温局域热输运与扫描热显微平台",
       "conditions": "补充综述；近90天窗口，非当天新论文",
-      "methods": ["补充综述", "Perspective", "低温 SThM", "局域热输运"],
+      "methods": [
+        "补充综述",
+        "Perspective",
+        "低温 SThM",
+        "局域热输运"
+      ],
       "summary": "文章综述低温局域热输运表征的现有方法与局限，并用五个案例说明低温扫描热显微术可能解决的量子热输运问题。核心判断是：目前仍缺少可在低温纳米尺度直接成像局域热流的成熟通用方法。",
       "relevance": "对低温设备建设很有价值，可帮助先定义温度传感、热接触、空间分辨率和样品扰动之间的工程权衡。",
       "limitation": "这是 Perspective，不是已经完成全部能力验证的设备论文；部分应用场景属于作者提出的未来方向。",
@@ -557,7 +807,9 @@
     {
       "id": "2607.09437",
       "track": "A",
-      "secondaryTracks": ["B"],
+      "secondaryTracks": [
+        "B"
+      ],
       "title": "Anisotropic Superconductivity with Enhanced Critical Field in Strained RuO2",
       "titleZh": "应变 RuO₂ 中的各向异性超导与增强临界场",
       "authors": "Younes Ghorbani, Samuel Poage, Xuehsi Gao, Luka Mitrovic, Neha Wadehra, Benjamin Gregory, Suchismita Sarker, Betul Pamuk, Andrej Singer, Darrell G. Schlom, Chun Ning Lau, Kaveh Ahadi",
@@ -565,11 +817,16 @@
       "published": "2026-07-10",
       "system": "TiO₂(100)/(110) 上外延应变 RuO₂ 薄膜",
       "conditions": "沿不同晶向的低温输运与面内磁场",
-      "methods": ["外延薄膜", "低温输运", "各向异性超导", "临界场"],
+      "methods": [
+        "外延薄膜",
+        "低温输运",
+        "各向异性超导",
+        "临界场"
+      ],
       "summary": "实测超导转变随生长取向和输运晶向显著变化，并观察到面内临界场强烈超过 Pauli 顺磁极限；作者将后者归因于强自旋轨道散射。",
       "relevance": "展示了用外延应变和晶向工程联动调节超导，适合扩展为厚度、应变、取向与临界场的系统相图。",
       "limitation": "超过 Pauli 极限并不能单独证明非常规配对；自旋轨道散射解释还需更多谱学或厚度依赖证据。",
-      "score": 9.0,
+      "score": 9,
       "priority": "S",
       "arxiv": "2607.09437",
       "doi": "10.48550/arXiv.2607.09437",
@@ -579,7 +836,9 @@
     {
       "id": "2607.08929",
       "track": "B",
-      "secondaryTracks": ["E"],
+      "secondaryTracks": [
+        "E"
+      ],
       "title": "Fast Homoepitaxy on (100) beta-Ga2O3 Substrates with Large Grown-In Offcut",
       "titleZh": "大内生偏切角 (100) β-Ga₂O₃ 衬底上的快速同质外延",
       "authors": "M. Brooks Tellekamp, Drew Haven, David Joyce, John Mangum, Henry Garland, Robert Lavelle, Kevin Schulte, Anna Sacchi, Matt Young, Andriy Zakutayev",
@@ -587,7 +846,12 @@
       "published": "2026-07-09",
       "system": "(100) β-Ga₂O₃ 衬底与 MBE 同质外延层",
       "conditions": "最高 13.4° 内生偏切；台阶流生长",
-      "methods": ["MBE", "偏切衬底", "台阶流", "肖特基二极管"],
+      "methods": [
+        "MBE",
+        "偏切衬底",
+        "台阶流",
+        "肖特基二极管"
+      ],
       "summary": "通过直接生长大内生偏切角衬底，使通常生长较慢的 (100) 取向达到快速取向相当的 MBE 速率；外延层保持低非故意 n 型掺杂，并用肖特基器件验证电学性能。",
       "relevance": "把衬底晶面设计、抛光、台阶流和器件验收连成制造链，对外延设备与工艺窗口优化很有参考价值。",
       "limitation": "器件未做边缘终端，且长期均匀性、缺陷统计和大面积量产稳定性仍需验证。",
@@ -601,7 +865,10 @@
     {
       "id": "2607.08868",
       "track": "C",
-      "secondaryTracks": ["B", "E"],
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
       "title": "Grain-boundary-mediated kinetic arrest in graphite-to-diamond transformation",
       "titleZh": "石墨向金刚石转变中的晶界介导动力学阻滞",
       "authors": "Zuzanna Malinowska-Trzmielak, Vilmos Neuman, Mark Wilson",
@@ -609,7 +876,12 @@
       "published": "2026-07-09",
       "system": "多晶石墨到金刚石的高压高温转变",
       "conditions": "大规模分子动力学；晶粒尺寸与取向可控",
-      "methods": ["分子动力学", "高压高温", "晶界", "sp²/sp³ 转变"],
+      "methods": [
+        "分子动力学",
+        "高压高温",
+        "晶界",
+        "sp²/sp³ 转变"
+      ],
       "summary": "模拟表明晶界会促进局部 sp³ 成核，却会在晶粒取向不匹配处阻止金刚石继续传播，因此多晶前驱体容易形成动力学冻结的 sp²/sp³ 混合结构。",
       "relevance": "对极端条件材料制造提供了可操作变量：除了压力和温度，还应系统控制前驱体晶粒结构与取向分布。",
       "limitation": "全部结果来自分子动力学模拟；势函数、时间尺度和尺寸限制都需要实验对照。",
@@ -623,7 +895,10 @@
     {
       "id": "s44306-025-00119-7",
       "track": "B",
-      "secondaryTracks": ["A", "E"],
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
       "title": "Parallel writing of magnetic tunnel junctions by electrical control of interlayer magnetic coupling",
       "titleZh": "通过电控层间磁耦合实现磁隧道结并行写入",
       "authors": "Meiyin Yang, Lei Zhao, Ruipeng Shi et al.",
@@ -631,7 +906,13 @@
       "published": "2026-01-09",
       "system": "W/CoFeB/MgO/CoFeB/W/SAF 垂直MTJ与5D-4MTJ阵列",
       "conditions": "200 mm BEOL工艺；300–400 K热调控；1 ns脉冲",
-      "methods": ["磁控溅射", "深紫外光刻", "TEM", "VCMA", "并行写入"],
+      "methods": [
+        "磁控溅射",
+        "深紫外光刻",
+        "TEM",
+        "VCMA",
+        "并行写入"
+      ],
       "summary": "实验证明用单极性电流产生的焦耳热调节橙皮耦合，并由VCMA选择不同单元；四个MTJ可在共享通道上并行写入，1 ns脉冲下完成翻转。作者的电路评估给出相对传统结构的速度、面积和能耗优势。",
       "relevance": "把原子级界面粗糙度、磁耦合、器件写入与阵列架构直接连起来，是从MTJ材料栈走向存储系统的完整案例。",
       "limitation": "演示仍需辅助磁场补偿SAF杂散场，阵列规模只有4个MTJ；作者给出的面积和能耗优势包含仿真，尚不是大规模芯片良率结论。",
@@ -645,7 +926,10 @@
     {
       "id": "acsnano-4c08023",
       "track": "E",
-      "secondaryTracks": ["B", "D"],
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
       "title": "Uncovering Atomic Migrations Behind Magnetic Tunnel Junction Breakdown",
       "titleZh": "揭示磁隧道结击穿背后的原子迁移",
       "authors": "Hwanhui Yun, Deyuan Lyu, Yang Lv et al.",
@@ -653,7 +937,12 @@
       "published": "2024-09-17",
       "system": "CoFeB/MgO/CoFeB 垂直磁隧道结",
       "conditions": "原位电偏压；原子分辨STEM；软击穿至完全击穿",
-      "methods": ["原位偏压STEM", "原子分辨成像", "电迁移", "失效分析"],
+      "methods": [
+        "原位偏压STEM",
+        "原子分辨成像",
+        "电迁移",
+        "失效分析"
+      ],
       "summary": "原位原子分辨STEM直接看到两阶段失效：较低电流下电迁移使MgO局部变薄并形成边缘导电通道；更高电流下焦耳热与电迁移共同导致多层结构熔化。",
       "relevance": "这是MTJ可靠性与原子制造最直接的连接之一，可把写入应力后的电学异常对应到具体原子迁移与势垒薄弱位置。",
       "limitation": "原位TEM器件几何、热边界和电子束环境与封装芯片不同；观察到的路径需要用大样本寿命统计和无电子束对照确认普适性。",
@@ -668,7 +957,10 @@
     {
       "id": "s41467-024-55437-x",
       "track": "B",
-      "secondaryTracks": ["A", "E"],
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
       "title": "Harnessing orbital Hall effect in spin-orbit torque MRAM",
       "titleZh": "利用轨道霍尔效应降低SOT-MRAM写入功耗",
       "authors": "Rahul Gupta, Chloé Bouard, Fabian Kammerbauer et al.",
@@ -676,7 +968,12 @@
       "published": "2025-01-02",
       "system": "Ru、Nb、Cr轨道霍尔层/[Co/Ni]₃垂直磁化器件",
       "conditions": "超过250个器件统计；与Pt自旋霍尔基准比较",
-      "methods": ["SOT测量", "器件统计", "磁输运", "功耗评估"],
+      "methods": [
+        "SOT测量",
+        "器件统计",
+        "磁输运",
+        "功耗评估"
+      ],
       "summary": "相对纯Pt基准，Ru轨道霍尔层给出约30%的阻尼型转矩效率提升、约20%的开关电流降低，并在超过250个器件上对应超过60%的开关功率下降。",
       "relevance": "它把新型自旋源的物理优势推进到器件分布统计，是判断材料能否进入工业MTJ堆栈的重要范例。",
       "limitation": "结果证明了器件级功耗改进，但尚未完成大阵列误码率、长期耐久、完整BEOL热预算和量产成本验证。",
@@ -691,7 +988,10 @@
     {
       "id": "s44306-024-00016-5",
       "track": "D",
-      "secondaryTracks": ["B", "E"],
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
       "title": "A quantum sensing metrology for magnetic memories",
       "titleZh": "面向磁存储器的量子传感计量方法",
       "authors": "Vicent J. Borràs, Robert Carpenter, Liza Žaper et al.",
@@ -699,7 +999,12 @@
       "published": "2024-06-03",
       "system": "imec 60/45 nm STT-MRAM阵列",
       "conditions": "扫描NV磁测量；45×45 bit；两种刻蚀工艺比较",
-      "methods": ["扫描NV磁测量", "单bit成像", "统计计量", "刻蚀工艺反馈"],
+      "methods": [
+        "扫描NV磁测量",
+        "单bit成像",
+        "统计计量",
+        "刻蚀工艺反馈"
+      ],
       "summary": "扫描NV磁测量在约1.5小时内读取45×45 bit阵列的单bit杂散场，并区分两种刻蚀工艺的开关分布；优化工艺表现出更好的bit间均匀性，与既有电学表征一致。",
       "relevance": "提供一种非接触、单bit、可映射分布的制造计量路线，适合把刻蚀侧壁、保持特性和器件良率连接起来。",
       "limitation": "当前扫描速度仍不适合作为高速在线量产检测；NV信号与保持时间之间依赖模型和统计推断，不能替代完整电学寿命测试。",
@@ -713,7 +1018,10 @@
     {
       "id": "acsaelm-3c00068",
       "track": "E",
-      "secondaryTracks": ["B", "D"],
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
       "title": "Cryogenic Temperature Deposition of High-Performance CoFeB/MgO/CoFeB Magnetic Tunnel Junctions on ϕ300 mm Wafers",
       "titleZh": "300 mm晶圆上低温沉积高性能CoFeB/MgO/CoFeB磁隧道结",
       "authors": "Tomohiro Ichinose, Tatsuya Yamamoto, Takayuki Nozaki et al.",
@@ -721,7 +1029,13 @@
       "published": "2023-03-28",
       "system": "300 mm Si晶圆上的CoFeB/MgO/CoFeB MTJ薄膜",
       "conditions": "CoFeB在100 K与300 K沉积；量产型溅射平台",
-      "methods": ["100 K磁控溅射", "300 mm晶圆", "STEM/EDX", "TMR", "VCMA"],
+      "methods": [
+        "100 K磁控溅射",
+        "300 mm晶圆",
+        "STEM/EDX",
+        "TMR",
+        "VCMA"
+      ],
       "summary": "将CoFeB沉积温度降到100 K后，PMA和VCMA相对室温沉积分别提高约1.4倍和1.7倍；界面敏感输运与STEM/EDX表明改进与更少的界面混层和更合适的氧化状态有关。",
       "relevance": "这是把低温工程直接引入300 mm MTJ制造的案例，尤其适合评估现有溅射设备增加低温样台、温控和晶圆均匀性模块的价值。",
       "limitation": "论文展示了300 mm兼容和性能提升，但距离标准量产工艺仍需全片均匀性、吞吐量、颗粒、热循环、维护成本和器件级良率验证。",
@@ -736,7 +1050,11 @@
     {
       "id": "apl-1-5129553",
       "track": "A",
-      "secondaryTracks": ["B", "D", "E"],
+      "secondaryTracks": [
+        "B",
+        "D",
+        "E"
+      ],
       "title": "A low temperature functioning CoFeB/MgO-based perpendicular magnetic tunnel junction for cryogenic nonvolatile random access memory",
       "titleZh": "面向低温非易失存储的CoFeB/MgO垂直磁隧道结",
       "authors": "Lili Lang, Yujie Jiang, Fei Lu et al.",
@@ -744,7 +1062,13 @@
       "published": "2020-01-14",
       "system": "CoFeB/MgO垂直磁隧道结",
       "conditions": "低至9 K；2–200 ns脉冲；耐久与误码测试",
-      "methods": ["低温脉冲输运", "写入误码率", "耐久测试", "FMR", "磁化测量"],
+      "methods": [
+        "低温脉冲输运",
+        "写入误码率",
+        "耐久测试",
+        "FMR",
+        "磁化测量"
+      ],
       "summary": "器件在9 K仍保持超过120%的磁阻和低于10⁻⁴的双向写入错误率；10 ns脉冲下耐久超过10¹²次，但低温开关电压相对350 K提高33%–93%。",
       "relevance": "直接回答MTJ在低温计算与控制电子学中能否工作，并揭示低温带来的‘耐久更好、写入更难’权衡。",
       "limitation": "写入电压上升与自由层能垒、磁化和各向异性增强相符，但主要由薄膜FMR/磁化间接支持；更小尺寸和阵列级误码仍需验证。",
@@ -759,7 +1083,10 @@
     {
       "id": "acsami-4c05289",
       "track": "B",
-      "secondaryTracks": ["A", "E"],
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
       "title": "Synthesis of Few-Layer Hexagonal Boron Nitride for Magnetic Tunnel Junction Application",
       "titleZh": "面向磁隧道结的少层六方氮化硼生长与应用",
       "authors": "Satoru Emoto, Hiroki Kusunose, Yung-Chang Lin et al.",
@@ -767,16 +1094,241 @@
       "published": "2024-06-19",
       "system": "Ni–Fe/少层hBN/铁磁电极MTJ",
       "conditions": "1200 °C CVD原位生长；2–3层hBN；约10 K输运",
-      "methods": ["CVD", "少层hBN", "AFM/STEM", "低温TMR", "原位界面保护"],
+      "methods": [
+        "CVD",
+        "少层hBN",
+        "AFM/STEM",
+        "低温TMR",
+        "原位界面保护"
+      ],
       "summary": "在Ni–Fe薄膜上大面积生长主要为2–3层的hBN，并直接把Ni–Fe作为下电极以避免转移污染和氧化；三层hBN器件的TMR高于双层，约10 K最高达到10%。",
       "relevance": "提供原子级平整隧穿势垒与无转移集成路线，可作为MgO之外的界面制造对照平台。",
       "limitation": "1200 °C生长温度与主流BEOL不兼容，10%低温TMR仍远低于成熟MgO体系；大面积缺陷密度、室温性能和晶圆级集成尚待突破。",
-      "score": 9.0,
+      "score": 9,
       "priority": "A",
       "arxiv": "",
       "doi": "10.1021/acsami.4c05289",
       "url": "https://pubs.acs.org/doi/10.1021/acsami.4c05289",
       "backupUrl": "https://figshare.com/collections/Synthesis_of_Few-Layer_Hexagonal_Boron_Nitride_for_Magnetic_Tunnel_Junction_Application/7274843",
+      "featured": false
+    },
+    {
+      "id": "aip-apl-128-122405",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "D",
+        "E"
+      ],
+      "title": "Investigation of backward switching and write margin optimization of SOT-MTJ devices",
+      "titleZh": "SOT-MTJ反向翻转机制与写入窗口优化",
+      "authors": "Yi Xu et al.",
+      "venue": "Applied Physics Letters",
+      "published": "2026-03-25",
+      "recommendedOn": "2026-07-16",
+      "timeTier": "近期正式发表",
+      "system": "300 mm晶圆上的完整SOT-MTJ器件",
+      "conditions": "纳秒脉冲写入；实验与数值模拟；SOT层厚度、脉宽和杂散场优化",
+      "methods": [
+        "300 mm集成",
+        "SOT-MTJ",
+        "脉冲写入",
+        "热-磁模拟"
+      ],
+      "summary": "作者在300 mm晶圆器件上复现会压缩写入窗口的反向翻转，并用实验与模拟指出焦耳热和场型转矩是主导因素；随后通过SOT层厚度、脉宽和杂散场优化扩大写入窗口。",
+      "relevance": "直接对应SOT-MRAM量产中的写入裕量、热管理和晶圆级工艺窗口，不再停留于单个薄膜的转矩效率。",
+      "limitation": "摘要证明的是器件级现象和优化方向；尚不能据此判断全片分布、阵列误码率、耐久和BEOL热预算都已达量产要求。",
+      "industrialization": "最接近300 mm SOT-MRAM器件整合与写入窗口设计；仍缺全片统计、PVT角、阵列级WER/BER、耐久和封装热环境验证。",
+      "whyRecommended": "它把反向翻转从异常曲线推进到300 mm器件的可调工艺变量，是今天最贴近产业化的一篇。",
+      "score": 9.5,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1063/5.0314449",
+      "url": "https://pubs.aip.org/aip/apl/article/128/12/122405/3384766/Investigation-of-backward-switching-and-write",
+      "backupUrl": "https://doi.org/10.1063/5.0314449",
+      "accessNote": "已核验AIP题录与摘要；全文可能需要机构权限",
+      "featured": true
+    },
+    {
+      "id": "aip-jap-139-193901",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "title": "Structural and magnetic properties of quad-interface ferromagnetic multilayers for magnetic tunnel junction free layers",
+      "titleZh": "用于MTJ自由层的四界面铁磁多层结构与磁性",
+      "authors": "Yiwen Li et al.",
+      "venue": "Journal of Applied Physics",
+      "published": "2026-05-15",
+      "recommendedOn": "2026-07-16",
+      "timeTier": "近期正式发表",
+      "system": "MgO/B-FM/W/T-FM重复四界面自由层",
+      "conditions": "系统改变铁磁层与W厚度、退火、成分和界面对称性",
+      "methods": [
+        "磁控溅射",
+        "多界面工程",
+        "退火",
+        "磁性表征"
+      ],
+      "summary": "工作围绕四界面自由层，系统比较层厚、W间隔层、退火、铁磁成分和界面对称性对饱和磁化、磁死层、垂直各向异性与界面各向异性能的影响。",
+      "relevance": "非常贴合原子级制造：自由层性能不是单一材料常数，而是多个原子层界面、扩散和退火共同决定的工艺结果。",
+      "limitation": "公开摘要以薄膜结构和磁性为主，不能代替纳米柱MTJ的TMR、RA、开关电流、热稳定因子和良率验证。",
+      "industrialization": "最接近pMTJ自由层堆栈与退火窗口开发；障碍是堆栈复杂度、厚度漂移累积、晶圆级均匀性及图形化后性能是否保留。",
+      "whyRecommended": "它提供一套可直接转成沉积DOE的多界面变量表，适合你当前的原子级堆栈控制。",
+      "score": 9.3,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1063/5.0326501",
+      "url": "https://pubs.aip.org/aip/jap/article/139/19/193901/3391362/Structural-and-magnetic-properties-of-quad",
+      "backupUrl": "https://doi.org/10.1063/5.0326501",
+      "accessNote": "已核验AIP题录与摘要；全文可能需要机构权限",
+      "featured": true
+    },
+    {
+      "id": "aip-jap-138-203903",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C",
+        "E"
+      ],
+      "title": "Temperature-dependent analysis of retention and write characteristics of STT-MRAM cells",
+      "titleZh": "STT-MRAM保持与写入特性的温度依赖分析",
+      "authors": "Shanmukha Mangadahalli Siddaramu et al.",
+      "venue": "Journal of Applied Physics",
+      "published": "2025-11-26",
+      "recommendedOn": "2026-07-16",
+      "timeTier": "近2年精选",
+      "system": "不同存储层厚度的STT-MRAM单元",
+      "conditions": "跨温区提取热稳定性并比较宏自旋与畴壁反转模型",
+      "methods": [
+        "热稳定因子",
+        "STT写入",
+        "温度扫描",
+        "反转模型"
+      ],
+      "summary": "作者跨温度测量并分别用宏自旋和畴壁模型提取保持与写入指标；两类模型都显示升温会显著降低稳定性，且结果提示高温下反转机制可能向多畴过程过渡。",
+      "relevance": "把保持、写入和温度放进同一评价框架，适合建立从低温测试到工作温区可靠性的自动化测量流程。",
+      "limitation": "反转机制转换是由模型与趋势支持的作者解释，不是对瞬态磁畴的直接成像；还需更多尺寸、批次和循环统计。",
+      "industrialization": "最接近STT-MRAM温度规格与保持/写入联合建模；仍缺阵列级分布、老化后漂移、工艺角和真实使用负载验证。",
+      "whyRecommended": "它提醒器件优化不能只报室温开关电流，保持和写入必须在目标温区共同评估。",
+      "score": 9.2,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1063/5.0299733",
+      "url": "https://pubs.aip.org/aip/jap/article/138/20/203903/3373450/Temperature-dependent-analysis-of-retention-and",
+      "backupUrl": "https://doi.org/10.1063/5.0299733",
+      "accessNote": "已核验AIP开放题录和正文摘要",
+      "featured": true
+    },
+    {
+      "id": "aip-apl-126-232405",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Time-resolved nanosecond magnetization switching induced by spin-transfer torque for cryogenic memories",
+      "titleZh": "面向低温存储的STT纳秒磁化翻转时间分辨测量",
+      "authors": "Fei Xu et al.",
+      "venue": "Applied Physics Letters",
+      "published": "2025-06-11",
+      "recommendedOn": "2026-07-16",
+      "timeTier": "近2年精选",
+      "system": "垂直磁隧道结低温存储单元",
+      "conditions": "室温至10 K；纳秒脉冲与时间分辨电学测量",
+      "methods": [
+        "10 K输运",
+        "时间分辨",
+        "STT翻转",
+        "纳秒脉冲"
+      ],
+      "summary": "作者把垂直MTJ的STT翻转拆分为翻转前的孵化时间和后续转变时间，并从室温测到10 K；两部分都随温度变化，说明热效应不仅影响成核，也影响后续畴壁运动。",
+      "relevance": "直接连接低温输运系统、纳秒电子学和MRAM器件，可作为建设低温脉冲写入与单次波形分析平台的范例。",
+      "limitation": "温度相关性不自动等同于唯一的畴壁微观机制；还需磁成像、器件尺寸系列和更低温/更高循环数验证。",
+      "industrialization": "最接近低温计算配套非易失存储的动态表征；障碍包括阵列外围电路、低温互连、误码分布、功耗和系统级热负载。",
+      "whyRecommended": "它正面回答低温下MTJ究竟怎样变慢或变快，而不是只测静态R-H曲线。",
+      "score": 9.4,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1063/5.0266924",
+      "url": "https://pubs.aip.org/aip/apl/article/126/23/232405/3349466/Time-resolved-nanosecond-magnetization-switching",
+      "backupUrl": "https://doi.org/10.1063/5.0266924",
+      "accessNote": "已核验AIP题录与摘要；全文可能需要机构权限",
+      "featured": true
+    },
+    {
+      "id": "aip-apm-13-121102",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "title": "Improved switching performance of magnetic tunnel junctions with Heusler compounds by insertion of resistive layers",
+      "titleZh": "利用电阻插入层改善Heusler磁隧道结的开关性能",
+      "authors": "Chirag Garg et al.",
+      "venue": "APL Materials",
+      "published": "2025-12-01",
+      "recommendedOn": "2026-07-16",
+      "timeTier": "近2年精选",
+      "system": "Heusler存储层/化学模板层/超薄MgO或ScN插入层",
+      "conditions": "Å级插入层；AFM、P-MOKE与MTJ开关测试",
+      "methods": [
+        "Å级插层",
+        "Heusler合金",
+        "AFM",
+        "磁开关"
+      ],
+      "summary": "作者用超薄MgO或ScN电阻层配合化学模板层，兼顾Heusler有序生长和磁阻尼控制；器件表现出更高开关效率和更低开关电流。",
+      "relevance": "展示原子尺度插入层如何同时改变形貌、模板传递、阻尼和器件写入，是原子制造到MTJ功能的典型链条。",
+      "limitation": "公开结果支持器件性能改善，但尚不能说明长期耐久、全片均匀性、界面缺陷分布和CMOS产线集成成本均已解决。",
+      "industrialization": "最接近低磁化高PMA存储层和低电流STT-MRAM材料栈；主要障碍是Å级层连续性、批间漂移、复杂堆栈可制造性及良率。",
+      "whyRecommended": "它把Å级插入层的结构作用和实际开关电流连接起来，与你的原子级堆栈开发高度一致。",
+      "score": 9.1,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1063/5.0299310",
+      "url": "https://pubs.aip.org/aip/apm/article/13/12/121102/3373550/Improved-switching-performance-of-magnetic-tunnel",
+      "backupUrl": "https://doi.org/10.1063/5.0299310",
+      "accessNote": "已核验AIP开放题录与正文",
+      "featured": true
+    },
+    {
+      "id": "aip-adv-13-025253",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D",
+        "E"
+      ],
+      "title": "Control of interface anisotropy for spin transfer torque in perpendicular magnetic tunnel junctions for cryogenic temperature operation",
+      "titleZh": "面向低温工作的pMTJ界面各向异性与STT控制",
+      "authors": "P. B. Veiga et al.",
+      "venue": "AIP Advances",
+      "published": "2023-02-13",
+      "recommendedOn": "2026-07-16",
+      "timeTier": "关键方法旧文",
+      "system": "20–100 nm垂直MTJ，含Mg、Ru或Py插层的四种堆栈",
+      "conditions": "300–10 K；临界电流、热稳定和100 ns脉冲开关",
+      "methods": [
+        "低温MTJ",
+        "界面各向异性",
+        "热稳定",
+        "开关能量"
+      ],
+      "summary": "作者比较四种自由层堆栈在300–10 K的磁性与电学特性，并用热稳定/临界电流及热稳定/开关能量两个指标评价；Py插层器件在10 K给出更优综合指标，并对20 nm器件补偿参考层杂散场。",
+      "relevance": "这是一条很实用的低温器件设计思路：不是简单把室温MTJ降温，而是按目标工作温度重新设计界面各向异性和稳定性。",
+      "limitation": "结果是器件/堆栈级低温优化，不代表4 K大阵列、控制电子学和封装热负载已经验证；单一FOM也不能覆盖误码与耐久。",
+      "industrialization": "最接近低温HPC/量子控制旁路存储单元；仍缺更低温阵列、外围CMOS、良率、循环寿命和系统能耗验证。",
+      "whyRecommended": "它虽不是新论文，却把低温、界面原子层和写入能量放进同一可操作设计框架。",
+      "score": 9,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/9.0000512",
+      "url": "https://pubs.aip.org/aip/adv/article/13/2/025253/2877638/Control-of-interface-anisotropy-for-spin-transfer",
+      "backupUrl": "https://doi.org/10.1063/9.0000512",
+      "accessNote": "已核验AIP开放题录与正文",
       "featured": false
     }
   ]

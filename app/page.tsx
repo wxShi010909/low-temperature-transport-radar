@@ -112,10 +112,11 @@ function OriginalSourceLink({ paper, label = "原始文献 ↗" }: { paper: Pape
 }
 
 function LibraryPaper({ paper }: { paper: Paper }) {
+  const enriched = paper as Paper & { timeTier?: string; whyRecommended?: string; industrialization?: string; accessNote?: string };
   return (
     <article className={`library-item track-${paper.track.toLowerCase()}`}>
       <header className="library-card-top">
-        <div><PaperClassification paper={paper} /><span className="library-source-meta">{paper.venue} · {paper.published}</span></div>
+        <div><PaperClassification paper={paper} /><span className="library-source-meta">{enriched.timeTier ? `${enriched.timeTier} · ` : ""}{paper.venue} · 原始发表 {paper.published}</span></div>
         <div className="library-compact-score"><strong>{paper.score.toFixed(1)}</strong><span>/ 10</span><em>{paper.priority} 级</em></div>
       </header>
       <div className="library-card-content">
@@ -123,7 +124,12 @@ function LibraryPaper({ paper }: { paper: Paper }) {
           <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p>
           <p className="authors">{paper.authors}</p><PaperTags paper={paper} />
         </div>
-        <div className="evidence-grid"><div><b>核心结果</b><p>{paper.summary}</p></div><div><b>为什么与你相关</b><p>{paper.relevance}</p></div></div>
+        <div className="evidence-grid">
+          <div><b>核心结果</b><p>{paper.summary}</p></div>
+          <div><b>为什么与你相关</b><p>{paper.relevance}</p></div>
+          {enriched.whyRecommended && <div><b>为什么本期推荐</b><p>{enriched.whyRecommended}</p></div>}
+          {enriched.industrialization && <div className="industry-evidence"><b>产业化判断</b><p>{enriched.industrialization}</p></div>}
+        </div>
       </div>
       <dl className="library-facts"><div><dt>研究体系</dt><dd>{paper.system}</dd></div><div><dt>条件 / 工艺</dt><dd>{paper.conditions}</dd></div><div><dt>证据边界 / 局限</dt><dd>{paper.limitation}</dd></div></dl>
       <footer className="library-card-footer">
@@ -311,6 +317,7 @@ export default function Home() {
           {featuredForDate.map((paper) => (
             <article className={`paper-card track-${paper.track.toLowerCase()}`} key={paper.id}>
               <div className="paper-meta"><PaperClassification paper={paper} /><div className="paper-meta-tools"><span>{paper.published}</span><FavoriteButton id={paper.id} compact /></div></div>
+              {(paper as Paper & { timeTier?: string }).timeTier && <span className="time-tier-badge">{(paper as Paper & { timeTier?: string }).timeTier} · 原始发表 {paper.published}</span>}
               <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p><PaperTags paper={paper} limit={3} /><p className="summary">{paper.summary}</p>
               <div className="paper-footer"><span className="read-badge">点击查看通俗详解</span><span className="score"><b>{paper.score.toFixed(1)}</b> / 10</span></div>
               <a className="card-link" href={`/paper?id=${encodeURIComponent(paper.id)}`} aria-label={`查看 ${paper.title} 的通俗详解`} />

@@ -3,12 +3,28 @@
     {
       "date": "2026-07-14",
       "reviewId": "review-s41563-020-00840-0",
-      "classicIds": ["classic-nature04233", "classic-nature26160", "classic-344524a0"]
+      "classicIds": [
+        "classic-nature04233",
+        "classic-nature26160",
+        "classic-344524a0"
+      ]
     },
     {
       "date": "2026-07-15",
       "reviewId": "review-s44306-024-00044-1",
-      "classicIds": ["classic-prb-63-054416", "classic-nmat1256", "classic-nmat2804"]
+      "classicIds": [
+        "classic-prb-63-054416",
+        "classic-nmat1256",
+        "classic-nmat2804"
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "reviewId": "review-s41928-020-0461-5",
+      "classicIds": [
+        "classic-apl-99-042501",
+        "classic-ieee-8502269"
+      ]
     }
   ],
   "items": [
@@ -16,7 +32,10 @@
       "id": "review-s41563-020-00840-0",
       "kind": "每日综述",
       "track": "A",
-      "secondaryTracks": ["B", "C"],
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
       "title": "Graphene bilayers with a twist",
       "titleZh": "扭转双层石墨烯综述",
       "authors": "Eva Y. Andrei, Allan H. MacDonald",
@@ -27,14 +46,20 @@
       "url": "https://www.nature.com/articles/s41563-020-00840-0",
       "assistantSummary": "这篇综述适合作为扭转双层石墨烯的总入口：先解释魔角为什么会产生窄带和强关联，再把关联绝缘态、超导、磁性、电子向列性、线性温变电阻和量子反常霍尔态放到同一框架中。",
       "whySelected": "与你过去的石墨烯低温输运经验直接相连，同时能够帮助区分器件可调参数、直接输运现象和理论机制解释。",
-      "readingGuide": ["先看扭角、莫尔周期与平带之间的关系。", "再看载流子填充、栅极环境和扭角不均匀如何改变关联相。", "最后比较超导、磁性和量子反常霍尔证据分别来自哪些测量。"],
+      "readingGuide": [
+        "先看扭角、莫尔周期与平带之间的关系。",
+        "再看载流子填充、栅极环境和扭角不均匀如何改变关联相。",
+        "最后比较超导、磁性和量子反常霍尔证据分别来自哪些测量。"
+      ],
       "notNew": true
     },
     {
       "id": "classic-nature04233",
       "kind": "经典实验",
       "track": "A",
-      "secondaryTracks": ["C"],
+      "secondaryTracks": [
+        "C"
+      ],
       "title": "Two-dimensional gas of massless Dirac fermions in graphene",
       "titleZh": "石墨烯中的二维无质量狄拉克费米子",
       "authors": "K. S. Novoselov et al.",
@@ -45,14 +70,21 @@
       "url": "https://www.nature.com/articles/nature04233",
       "assistantSummary": "文章通过最低电导、半整数型量子霍尔效应和回旋质量等输运证据，建立石墨烯载流子服从无质量狄拉克方程的实验图像。",
       "whySelected": "它把栅控、磁输运和能带物理连接得非常清楚，是理解后续单层、多层和莫尔石墨烯实验的坐标原点。",
-      "readingGuide": ["先看电场效应与载流子类型切换。", "重点理解半整数型量子霍尔序列。", "把观测结果与狄拉克能谱联系起来。"],
+      "readingGuide": [
+        "先看电场效应与载流子类型切换。",
+        "重点理解半整数型量子霍尔序列。",
+        "把观测结果与狄拉克能谱联系起来。"
+      ],
       "notNew": true
     },
     {
       "id": "classic-nature26160",
       "kind": "经典实验",
       "track": "A",
-      "secondaryTracks": ["B", "C"],
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
       "title": "Unconventional superconductivity in magic-angle graphene superlattices",
       "titleZh": "魔角石墨烯超晶格中的非常规超导",
       "authors": "Yuan Cao et al.",
@@ -63,14 +95,20 @@
       "url": "https://www.nature.com/articles/nature26160",
       "assistantSummary": "这项工作在魔角双层石墨烯中观察到邻近关联绝缘态的超导输运特征，推动二维莫尔体系成为可栅控强关联研究平台。",
       "whySelected": "适合学习怎样从电阻—温度、载流子密度和磁场依赖逐步建立超导证据，同时保留对配对机制的证据边界。",
-      "readingGuide": ["先找清楚扭角和载流子填充的定义。", "区分超导输运证据与配对机制。", "留意器件不均匀、临界场和关联绝缘态的关系。"],
+      "readingGuide": [
+        "先找清楚扭角和载流子填充的定义。",
+        "区分超导输运证据与配对机制。",
+        "留意器件不均匀、临界场和关联绝缘态的关系。"
+      ],
       "notNew": true
     },
     {
       "id": "classic-344524a0",
       "kind": "原子制造经典",
       "track": "E",
-      "secondaryTracks": ["D"],
+      "secondaryTracks": [
+        "D"
+      ],
       "title": "Positioning single atoms with a scanning tunnelling microscope",
       "titleZh": "利用扫描隧道显微镜定位单个原子",
       "authors": "D. M. Eigler, E. K. Schweizer",
@@ -81,14 +119,22 @@
       "url": "https://www.nature.com/articles/344524a0",
       "assistantSummary": "作者利用扫描隧道显微镜探针操控单个吸附原子，展示原子尺度确定性定位的早期代表性能力，并把原子识别、操控和再次成像验证组成闭环。",
       "whySelected": "可作为判断现代原子制造工作是否真正实现可定位、可操控、可验证的基础参照。",
-      "readingGuide": ["先分清STM成像与STM操控。", "关注低温、真空、探针状态和表面扩散。", "思考怎样扩展到器件功能、互联与重复性。"],
+      "readingGuide": [
+        "先分清STM成像与STM操控。",
+        "关注低温、真空、探针状态和表面扩散。",
+        "思考怎样扩展到器件功能、互联与重复性。"
+      ],
       "notNew": true
     },
     {
       "id": "review-aps-75-20251330",
       "kind": "每日综述",
       "track": "D",
-      "secondaryTracks": ["A", "C", "E"],
+      "secondaryTracks": [
+        "A",
+        "C",
+        "E"
+      ],
       "title": "Research on topological materials using ultrafast spectroscopy",
       "titleZh": "拓扑材料的超快光谱研究",
       "authors": "刘豪, 孟建桥",
@@ -99,14 +145,22 @@
       "url": "https://wulixb.iphy.ac.cn/en/article/cstr/32037.14.aps.75.20251330",
       "assistantSummary": "按拓扑绝缘体、半金属和磁性拓扑材料梳理超快载流子、集体模、太赫兹发射与光诱导相变。",
       "whySelected": "中文正式综述，可为太赫兹调控、非平衡动力学和低温同步测量建立框架。",
-      "readingGuide": ["先看时间尺度与能带总图。", "区分泵浦作用、探测量和机制解释。", "最后看太赫兹与光诱导相变。"],
+      "readingGuide": [
+        "先看时间尺度与能带总图。",
+        "区分泵浦作用、探测量和机制解释。",
+        "最后看太赫兹与光诱导相变。"
+      ],
       "notNew": true
     },
     {
       "id": "classic-prb-63-054416",
       "kind": "经典理论",
       "track": "C",
-      "secondaryTracks": ["A", "B", "E"],
+      "secondaryTracks": [
+        "A",
+        "B",
+        "E"
+      ],
       "title": "Spin-dependent tunneling conductance of Fe|MgO|Fe sandwiches",
       "titleZh": "Fe|MgO|Fe三明治结构的自旋相关隧穿电导",
       "authors": "W. H. Butler et al.",
@@ -117,14 +171,21 @@
       "url": "https://link.aps.org/doi/10.1103/PhysRevB.63.054416",
       "assistantSummary": "第一性原理计算提出MgO复能带的Δ1对称性过滤可产生很大TMR。",
       "whySelected": "是理解MgO磁隧道结和原子界面质量的理论基准。",
-      "readingGuide": ["先看平行/反平行电导。", "重点看Δ1对称性过滤。", "再思考无序和氧空位。"],
+      "readingGuide": [
+        "先看平行/反平行电导。",
+        "重点看Δ1对称性过滤。",
+        "再思考无序和氧空位。"
+      ],
       "notNew": true
     },
     {
       "id": "classic-nmat1256",
       "kind": "经典实验",
       "track": "A",
-      "secondaryTracks": ["B", "E"],
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
       "title": "Giant tunnelling magnetoresistance at room temperature with MgO (100) tunnel barriers",
       "titleZh": "采用MgO(100)隧穿势垒实现室温巨隧穿磁阻",
       "authors": "Stuart S. P. Parkin et al.",
@@ -135,14 +196,21 @@
       "url": "https://www.nature.com/articles/nmat1256",
       "assistantSummary": "高度取向MgO(100)势垒把对称性过滤推进到室温大TMR实验。",
       "whySelected": "与Butler理论成对阅读，可看清理想机制怎样转化为器件。",
-      "readingGuide": ["看材料栈与取向。", "看TMR的温度、偏压和退火依赖。", "找制造非理想。"],
+      "readingGuide": [
+        "看材料栈与取向。",
+        "看TMR的温度、偏压和退火依赖。",
+        "找制造非理想。"
+      ],
       "notNew": true
     },
     {
       "id": "classic-nmat2804",
       "kind": "经典器件",
       "track": "B",
-      "secondaryTracks": ["A", "E"],
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
       "title": "A perpendicular-anisotropy CoFeB-MgO magnetic tunnel junction",
       "titleZh": "垂直磁各向异性CoFeB–MgO磁隧道结",
       "authors": "S. Ikeda et al.",
@@ -153,14 +221,22 @@
       "url": "https://www.nature.com/articles/nmat2804",
       "assistantSummary": "CoFeB/MgO界面垂直各向异性同时支持较大TMR、热稳定和低开关电流。",
       "whySelected": "把磁隧道结读出、写入、缩放和界面制造放在同一指标框架。",
-      "readingGuide": ["看垂直各向异性的缩放优势。", "比较TMR、稳定性和写入电流。", "关注界面与退火。"],
+      "readingGuide": [
+        "看垂直各向异性的缩放优势。",
+        "比较TMR、稳定性和写入电流。",
+        "关注界面与退火。"
+      ],
       "notNew": true
     },
     {
       "id": "review-s44306-024-00044-1",
       "kind": "每日综述",
       "track": "B",
-      "secondaryTracks": ["A", "D", "E"],
+      "secondaryTracks": [
+        "A",
+        "D",
+        "E"
+      ],
       "title": "Recent progress in spin-orbit torque magnetic random-access memory",
       "titleZh": "自旋轨道转矩磁随机存储器的近期进展",
       "authors": "V. D. Nguyen, S. Rao, K. Wostyn, S. Couet",
@@ -171,7 +247,89 @@
       "url": "https://www.nature.com/articles/s44306-024-00044-1",
       "assistantSummary": "从SOT材料、垂直MTJ、无外场写入、300 mm集成、400 °C BEOL热预算、器件缩放、耐久、VCMA和多柱阵列系统梳理SOT-MRAM从物理到制造的完整链条。",
       "whySelected": "它由imec团队撰写，既讲机制也给出300 mm器件、刻蚀停层、热预算、保持、误码和阵列密度等产业化约束，正适合为今天七篇文章建立总框架。",
-      "readingGuide": ["先看图1–3，理解SOT-MTJ读写路径和刻蚀集成难点。", "再看300 mm器件、400 °C热预算、保持和耐久的数据表。", "最后看无外场方案、超缩放与VGSOT多柱架构，区分实验完成项和路线图。"],
+      "readingGuide": [
+        "先看图1–3，理解SOT-MTJ读写路径和刻蚀集成难点。",
+        "再看300 mm器件、400 °C热预算、保持和耐久的数据表。",
+        "最后看无外场方案、超缩放与VGSOT多柱架构，区分实验完成项和路线图。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-s41928-020-0461-5",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "title": "Opportunities and challenges for spintronics in the microelectronics industry",
+      "titleZh": "自旋电子学进入微电子产业的机遇与挑战",
+      "authors": "B. Dieny et al.",
+      "venue": "Nature Electronics · Review Article",
+      "published": "2020-08-18",
+      "recommendedOn": "2026-07-16",
+      "doi": "10.1038/s41928-020-0461-5",
+      "url": "https://www.nature.com/articles/s41928-020-0461-5",
+      "assistantSummary": "从磁存储、磁传感、射频/微波和逻辑四个方向，系统连接材料、器件、建模、电路与主流微电子集成；重点不只是物理效应，而是哪些材料、工艺和系统问题阻碍产业采用。",
+      "whySelected": "今天的核心文章横跨Å级插层、300 mm SOT-MTJ、低温写入和保持模型，这篇综述能给出共同的产业化坐标系。",
+      "readingGuide": [
+        "先看图1的非易失磁存储路线与MTJ读写结构。",
+        "再看材料、工艺、电路和系统级障碍怎样相互制约。",
+        "最后用文章提出的产业要求逐项审视今天六篇论文。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-apl-99-042501",
+      "kind": "经典器件",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Junction size effect on switching current and thermal stability in CoFeB/MgO perpendicular magnetic tunnel junctions",
+      "titleZh": "CoFeB/MgO垂直MTJ中尺寸对开关电流与热稳定性的影响",
+      "authors": "H. Sato et al.",
+      "venue": "Applied Physics Letters",
+      "published": "2011-07-26",
+      "recommendedOn": "2026-07-16",
+      "doi": "10.1063/1.3617429",
+      "url": "https://pubs.aip.org/aip/apl/article/99/4/042501/341446/Junction-size-effect-on-switching-current-and",
+      "assistantSummary": "实验比较44–76 nm pMTJ，发现本征临界电流随面积增加，而热稳定因子在该范围近似不变，并用成核型反转解释两者的尺寸趋势。",
+      "whySelected": "它是理解“缩小尺寸为什么不按宏自旋体积简单缩放”的经典起点，与今天的反转模型和四界面自由层直接衔接。",
+      "readingGuide": [
+        "先区分Ic0与热稳定因子。",
+        "再看两者随结面积的不同趋势。",
+        "最后检查成核反转假设的证据边界。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-ieee-8502269",
+      "kind": "经典产业集成",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "SOT-MRAM 300MM Integration for Low Power and Ultrafast Embedded Memories",
+      "titleZh": "面向低功耗超高速嵌入式存储的300 mm SOT-MRAM集成",
+      "authors": "K. Garello et al.",
+      "venue": "2018 IEEE Symposium on VLSI Circuits",
+      "published": "2018-06-19",
+      "recommendedOn": "2026-07-16",
+      "doi": "10.1109/VLSIC.2018.8502269",
+      "url": "https://ieeexplore.ieee.org/document/8502269",
+      "backupUrl": "https://ieeexplore.ieee.org/iel7/8484863/8502213/08502269.pdf",
+      "assistantSummary": "首次报告采用CMOS兼容流程在300 mm晶圆上完成顶钉扎垂直SOT-MTJ单元的全尺度集成，并展示低功耗、亚纳秒写入的产业化方向。",
+      "whySelected": "它是判断今天300 mm反向翻转工作进步到哪一步的历史基线：从“做出来”到“写得可靠且有窗口”。",
+      "readingGuide": [
+        "先看300 mm与CMOS兼容意味着哪些工艺边界。",
+        "再看三端SOT-MTJ单元和写入时间。",
+        "最后列出论文尚未覆盖的阵列、良率和寿命指标。"
+      ],
       "notNew": true
     }
   ]

@@ -45,6 +45,7 @@ export default function PaperDetailPage() {
   }
 
   const backupUrl = (paper as { backupUrl?: string }).backupUrl;
+  const enriched = paper as typeof paper & { recommendedOn?: string; timeTier?: string; whyRecommended?: string; industrialization?: string; accessNote?: string };
   const noteSuggestion = `【一句话理解】\n${detail.oneSentence}\n\n【作者做了什么】\n${detail.workflow.join("\n")}\n\n【最重要的结果】\n${detail.findings.join("\n")}\n\n【与当前研究的关系】\n${detail.researchConnection}\n\n【证据边界】\n${detail.limitationsDetailed}\n\n【我的理解 / 下一步想法】\n`;
 
   return (
@@ -64,7 +65,7 @@ export default function PaperDetailPage() {
             <span className="detail-primary">主分类 {paper.track} · {tracks[paper.track as TrackKey].label}</span>
             {paper.secondaryTracks.map((track) => <span key={track}>兼具 {track} · {tracks[track as TrackKey].short}</span>)}
           </div>
-          <p className="detail-date">{paper.venue} · {paper.published}</p>
+          <p className="detail-date">{enriched.timeTier ? `${enriched.timeTier} · ` : ""}{paper.venue} · 原始发表 {paper.published}{enriched.recommendedOn ? ` · 本站推荐 ${enriched.recommendedOn}` : ""}</p>
           <h1>{paper.titleZh}</h1>
           <p className="detail-title-en">{paper.title}</p>
           <p className="detail-authors">{paper.authors}</p>
@@ -83,6 +84,11 @@ export default function PaperDetailPage() {
           <span>先用一句话理解</span>
           <p>{detail.oneSentence}</p>
         </section>
+
+        {(enriched.whyRecommended || enriched.industrialization) && <section className="paper-context-strip">
+          {enriched.whyRecommended && <div><span>为什么本期推荐</span><p>{enriched.whyRecommended}</p></div>}
+          {enriched.industrialization && <div><span>产业化判断</span><p>{enriched.industrialization}</p></div>}
+        </section>}
 
         <div className="detail-layout">
           <div className="detail-content">
@@ -164,7 +170,7 @@ export default function PaperDetailPage() {
                 <div><dt>DOI</dt><dd>{paper.doi}</dd></div>
               </dl>
             </div>
-            <p className="detail-note">通俗解读依据论文公开摘要和可核验信息整理；涉及定量参数时请以原文为准。原始入口若在复核时不可打开，会明确标记而不会继续伪装成可用链接。</p>
+            <p className="detail-note">{enriched.accessNote ? `${enriched.accessNote}。` : ""}通俗解读依据论文公开摘要和可核验信息整理；涉及定量参数时请以原文为准。原始入口若在复核时不可打开，会明确标记而不会继续伪装成可用链接。</p>
           </aside>
         </div>
       </article>
