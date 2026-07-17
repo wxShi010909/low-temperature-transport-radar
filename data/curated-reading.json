@@ -25,6 +25,14 @@
         "classic-apl-99-042501",
         "classic-ieee-8502269"
       ]
+    },
+    {
+      "date": "2026-07-17",
+      "reviewId": "review-s44287-024-00111-z",
+      "classicIds": [
+        "classic-nmat1257",
+        "classic-apl-89-142507"
+      ]
     }
   ],
   "items": [
@@ -329,6 +337,87 @@
         "先看300 mm与CMOS兼容意味着哪些工艺边界。",
         "再看三端SOT-MTJ单元和写入时间。",
         "最后列出论文尚未覆盖的阵列、良率和寿命指标。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-s44287-024-00111-z",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "title": "Spin-transfer torque magnetoresistive random access memory technology status and future directions",
+      "titleZh": "STT-MRAM技术现状与未来方向",
+      "authors": "Daniel C. Worledge, Guohan Hu",
+      "venue": "Nature Reviews Electrical Engineering · Review Article",
+      "published": "2024-11-06",
+      "recommendedOn": "2026-07-17",
+      "doi": "10.1038/s44287-024-00111-z",
+      "url": "https://www.nature.com/articles/s44287-024-00111-z",
+      "backupUrl": "https://doi.org/10.1038/s44287-024-00111-z",
+      "assistantSummary": "从MTJ工作原理和产业发展史出发，按独立存储、嵌入式非易失存储、非易失工作存储和末级缓存四种应用拆解速度、耐久、密度、写入电流与制造要求，并比较SOT和VCMA路线。",
+      "whySelected": "今天的六篇分别讨论写入波形、WER、刻蚀、钝化、噪声和实时动态；这篇综述能把它们放回真实产品场景，判断“改善一个指标”距离可量产还有多远。",
+      "readingGuide": [
+        "先看四类应用对速度、密度、耐久和写入电流的不同要求。",
+        "再看MTJ单元与阵列结构，理解器件指标如何传到芯片。",
+        "最后用文中的产品坐标系审视今天六篇文章尚缺的良率、误码和集成证据。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-nmat1257",
+      "kind": "经典实验",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C",
+        "E"
+      ],
+      "title": "Giant room-temperature magnetoresistance in single-crystal Fe/MgO/Fe magnetic tunnel junctions",
+      "titleZh": "单晶Fe/MgO/Fe磁隧道结的室温巨磁阻",
+      "authors": "Shinji Yuasa et al.",
+      "venue": "Nature Materials",
+      "published": "2004-10-31",
+      "recommendedOn": "2026-07-17",
+      "doi": "10.1038/nmat1257",
+      "url": "https://www.nature.com/articles/nmat1257",
+      "backupUrl": "https://doi.org/10.1038/nmat1257",
+      "assistantSummary": "单晶Fe/MgO/Fe器件在室温实现最高180%磁阻，并观察TMR随MgO厚度振荡，为“波函数对称性过滤和相干隧穿”提供关键实验证据。",
+      "whySelected": "与已归档的Butler理论和Parkin实验组成完整链条，也能解释为什么今天刻蚀损伤、界面非晶化和氧化会严重破坏TMR。",
+      "readingGuide": [
+        "先看Fe(001)/MgO(001)/Fe(001)结构与180% TMR。",
+        "再看MgO厚度振荡为何支持相干隧穿。",
+        "最后反推侧壁非晶化和界面缺陷会破坏哪些条件。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-apl-89-142507",
+      "kind": "经典理论",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Atomic and electronic structure of the CoFeB/MgO interface from first principles",
+      "titleZh": "CoFeB/MgO界面的原子与电子结构第一性原理研究",
+      "authors": "J. D. Burton, S. S. Jaswal, E. Y. Tsymbal, O. N. Mryasov, O. G. Heinonen",
+      "venue": "Applied Physics Letters",
+      "published": "2006-10-06",
+      "recommendedOn": "2026-07-17",
+      "doi": "10.1063/1.2360189",
+      "url": "https://pubs.aip.org/aip/apl/article/89/14/142507/332142/Atomic-and-electronic-structure-of-the-CoFeB-MgO",
+      "backupUrl": "https://doi.org/10.1063/1.2360189",
+      "assistantSummary": "第一性原理计算预测B更倾向偏聚到结晶CoFeB/MgO界面，并会抑制多数自旋Δ1对称通道的电导，从而降低TMR；因此退火与吸硼层设计必须防止B停留在功能界面。",
+      "whySelected": "它把“退火时B扩散”从经验现象连接到原子位置、轨道对称性和TMR，与你们的原子级界面控制直接相关。",
+      "readingGuide": [
+        "先看B在体内与界面的能量偏好。",
+        "再看B如何改变Δ1多数自旋通道。",
+        "最后把理论预测转换成退火、吸硼层和深度剖析实验。"
       ],
       "notNew": true
     }

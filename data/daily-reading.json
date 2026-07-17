@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-16",
+  "date": "2026-07-17",
   "review": {
-    "id": "review-s41928-020-0461-5",
+    "id": "review-s44287-024-00111-z",
     "kind": "每日综述",
     "track": "B",
     "secondaryTracks": [
@@ -10,72 +10,75 @@
       "D",
       "E"
     ],
-    "title": "Opportunities and challenges for spintronics in the microelectronics industry",
-    "titleZh": "自旋电子学进入微电子产业的机遇与挑战",
-    "authors": "B. Dieny et al.",
-    "venue": "Nature Electronics · Review Article",
-    "published": "2020-08-18",
-    "recommendedOn": "2026-07-16",
-    "doi": "10.1038/s41928-020-0461-5",
-    "url": "https://www.nature.com/articles/s41928-020-0461-5",
-    "assistantSummary": "从磁存储、磁传感、射频/微波和逻辑四个方向，系统连接材料、器件、建模、电路与主流微电子集成；重点不只是物理效应，而是哪些材料、工艺和系统问题阻碍产业采用。",
-    "whySelected": "今天的核心文章横跨Å级插层、300 mm SOT-MTJ、低温写入和保持模型，这篇综述能给出共同的产业化坐标系。",
+    "title": "Spin-transfer torque magnetoresistive random access memory technology status and future directions",
+    "titleZh": "STT-MRAM技术现状与未来方向",
+    "authors": "Daniel C. Worledge, Guohan Hu",
+    "venue": "Nature Reviews Electrical Engineering · Review Article",
+    "published": "2024-11-06",
+    "recommendedOn": "2026-07-17",
+    "doi": "10.1038/s44287-024-00111-z",
+    "url": "https://www.nature.com/articles/s44287-024-00111-z",
+    "backupUrl": "https://doi.org/10.1038/s44287-024-00111-z",
+    "assistantSummary": "从MTJ工作原理和产业发展史出发，按独立存储、嵌入式非易失存储、非易失工作存储和末级缓存四种应用拆解速度、耐久、密度、写入电流与制造要求，并比较SOT和VCMA路线。",
+    "whySelected": "今天的六篇分别讨论写入波形、WER、刻蚀、钝化、噪声和实时动态；这篇综述能把它们放回真实产品场景，判断“改善一个指标”距离可量产还有多远。",
     "readingGuide": [
-      "先看图1的非易失磁存储路线与MTJ读写结构。",
-      "再看材料、工艺、电路和系统级障碍怎样相互制约。",
-      "最后用文章提出的产业要求逐项审视今天六篇论文。"
+      "先看四类应用对速度、密度、耐久和写入电流的不同要求。",
+      "再看MTJ单元与阵列结构，理解器件指标如何传到芯片。",
+      "最后用文中的产品坐标系审视今天六篇文章尚缺的良率、误码和集成证据。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-apl-99-042501",
-      "kind": "经典器件",
-      "track": "B",
+      "id": "classic-nmat1257",
+      "kind": "经典实验",
+      "track": "A",
       "secondaryTracks": [
-        "A",
+        "B",
+        "C",
         "E"
       ],
-      "title": "Junction size effect on switching current and thermal stability in CoFeB/MgO perpendicular magnetic tunnel junctions",
-      "titleZh": "CoFeB/MgO垂直MTJ中尺寸对开关电流与热稳定性的影响",
-      "authors": "H. Sato et al.",
-      "venue": "Applied Physics Letters",
-      "published": "2011-07-26",
-      "recommendedOn": "2026-07-16",
-      "doi": "10.1063/1.3617429",
-      "url": "https://pubs.aip.org/aip/apl/article/99/4/042501/341446/Junction-size-effect-on-switching-current-and",
-      "assistantSummary": "实验比较44–76 nm pMTJ，发现本征临界电流随面积增加，而热稳定因子在该范围近似不变，并用成核型反转解释两者的尺寸趋势。",
-      "whySelected": "它是理解“缩小尺寸为什么不按宏自旋体积简单缩放”的经典起点，与今天的反转模型和四界面自由层直接衔接。",
+      "title": "Giant room-temperature magnetoresistance in single-crystal Fe/MgO/Fe magnetic tunnel junctions",
+      "titleZh": "单晶Fe/MgO/Fe磁隧道结的室温巨磁阻",
+      "authors": "Shinji Yuasa et al.",
+      "venue": "Nature Materials",
+      "published": "2004-10-31",
+      "recommendedOn": "2026-07-17",
+      "doi": "10.1038/nmat1257",
+      "url": "https://www.nature.com/articles/nmat1257",
+      "backupUrl": "https://doi.org/10.1038/nmat1257",
+      "assistantSummary": "单晶Fe/MgO/Fe器件在室温实现最高180%磁阻，并观察TMR随MgO厚度振荡，为“波函数对称性过滤和相干隧穿”提供关键实验证据。",
+      "whySelected": "与已归档的Butler理论和Parkin实验组成完整链条，也能解释为什么今天刻蚀损伤、界面非晶化和氧化会严重破坏TMR。",
       "readingGuide": [
-        "先区分Ic0与热稳定因子。",
-        "再看两者随结面积的不同趋势。",
-        "最后检查成核反转假设的证据边界。"
+        "先看Fe(001)/MgO(001)/Fe(001)结构与180% TMR。",
+        "再看MgO厚度振荡为何支持相干隧穿。",
+        "最后反推侧壁非晶化和界面缺陷会破坏哪些条件。"
       ],
       "notNew": true
     },
     {
-      "id": "classic-ieee-8502269",
-      "kind": "经典产业集成",
-      "track": "E",
+      "id": "classic-apl-89-142507",
+      "kind": "经典理论",
+      "track": "C",
       "secondaryTracks": [
-        "A",
-        "B"
+        "B",
+        "E"
       ],
-      "title": "SOT-MRAM 300MM Integration for Low Power and Ultrafast Embedded Memories",
-      "titleZh": "面向低功耗超高速嵌入式存储的300 mm SOT-MRAM集成",
-      "authors": "K. Garello et al.",
-      "venue": "2018 IEEE Symposium on VLSI Circuits",
-      "published": "2018-06-19",
-      "recommendedOn": "2026-07-16",
-      "doi": "10.1109/VLSIC.2018.8502269",
-      "url": "https://ieeexplore.ieee.org/document/8502269",
-      "backupUrl": "https://ieeexplore.ieee.org/iel7/8484863/8502213/08502269.pdf",
-      "assistantSummary": "首次报告采用CMOS兼容流程在300 mm晶圆上完成顶钉扎垂直SOT-MTJ单元的全尺度集成，并展示低功耗、亚纳秒写入的产业化方向。",
-      "whySelected": "它是判断今天300 mm反向翻转工作进步到哪一步的历史基线：从“做出来”到“写得可靠且有窗口”。",
+      "title": "Atomic and electronic structure of the CoFeB/MgO interface from first principles",
+      "titleZh": "CoFeB/MgO界面的原子与电子结构第一性原理研究",
+      "authors": "J. D. Burton, S. S. Jaswal, E. Y. Tsymbal, O. N. Mryasov, O. G. Heinonen",
+      "venue": "Applied Physics Letters",
+      "published": "2006-10-06",
+      "recommendedOn": "2026-07-17",
+      "doi": "10.1063/1.2360189",
+      "url": "https://pubs.aip.org/aip/apl/article/89/14/142507/332142/Atomic-and-electronic-structure-of-the-CoFeB-MgO",
+      "backupUrl": "https://doi.org/10.1063/1.2360189",
+      "assistantSummary": "第一性原理计算预测B更倾向偏聚到结晶CoFeB/MgO界面，并会抑制多数自旋Δ1对称通道的电导，从而降低TMR；因此退火与吸硼层设计必须防止B停留在功能界面。",
+      "whySelected": "它把“退火时B扩散”从经验现象连接到原子位置、轨道对称性和TMR，与你们的原子级界面控制直接相关。",
       "readingGuide": [
-        "先看300 mm与CMOS兼容意味着哪些工艺边界。",
-        "再看三端SOT-MTJ单元和写入时间。",
-        "最后列出论文尚未覆盖的阵列、良率和寿命指标。"
+        "先看B在体内与界面的能量偏好。",
+        "再看B如何改变Δ1多数自旋通道。",
+        "最后把理论预测转换成退火、吸硼层和深度剖析实验。"
       ],
       "notNew": true
     }

@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-16T09:55:00+08:00",
-  "reportDate": "2026-07-16",
-  "scope": "跨时间层次精选，优先原子级制造、MTJ/MRAM、产业化器件与低温动态测试；推荐日期与论文真实发表日期分开显示",
+  "updatedAt": "2026-07-17T09:58:00+08:00",
+  "reportDate": "2026-07-17",
+  "scope": "跨时间层次精选，优先原子级制造、MTJ/MRAM产业化、刻蚀与原位封护、可靠性和低噪声/高速测量；推荐日期与论文真实发表日期分开显示",
   "history": [
     {
       "date": "2026-07-13",
@@ -89,6 +89,26 @@
         "aip-apm-13-121102",
         "aip-adv-13-025253"
       ]
+    },
+    {
+      "date": "2026-07-17",
+      "label": "工作日精选：MTJ刻蚀封护、写入误码与噪声诊断",
+      "total": 6,
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 1,
+        "D": 1,
+        "E": 2
+      },
+      "paperIds": [
+        "s44306-026-00138-y",
+        "aip-apl-126-022401",
+        "jvstb-42-043801",
+        "s41598-024-59675-3",
+        "jvstb-39-052210",
+        "aip-apl-127-162406"
+      ]
     }
   ],
   "papers": [
@@ -120,7 +140,7 @@
       "arxiv": "2607.12740",
       "doi": "10.48550/arXiv.2607.12740",
       "url": "https://arxiv.org/abs/2607.12740",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2607.12737",
@@ -150,7 +170,7 @@
       "arxiv": "2607.12737",
       "doi": "10.48550/arXiv.2607.12737",
       "url": "https://arxiv.org/abs/2607.12737",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2607.12442",
@@ -180,7 +200,7 @@
       "arxiv": "2607.12442",
       "doi": "10.48550/arXiv.2607.12442",
       "url": "https://arxiv.org/abs/2607.12442",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2607.12394",
@@ -241,7 +261,7 @@
       "arxiv": "2607.12707",
       "doi": "10.48550/arXiv.2607.12707",
       "url": "https://arxiv.org/abs/2607.12707",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2607.12741",
@@ -270,7 +290,7 @@
       "arxiv": "2607.12741",
       "doi": "10.48550/arXiv.2607.12741",
       "url": "https://arxiv.org/abs/2607.12741",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2607.12819",
@@ -683,7 +703,7 @@
       "arxiv": "2607.09256",
       "doi": "10.48550/arXiv.2607.09256",
       "url": "https://arxiv.org/abs/2607.09256",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2607.06304",
@@ -713,7 +733,7 @@
       "arxiv": "2607.06304",
       "doi": "10.48550/arXiv.2607.06304",
       "url": "https://arxiv.org/abs/2607.06304",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2607.08822",
@@ -742,7 +762,7 @@
       "arxiv": "2607.08822",
       "doi": "10.48550/arXiv.2607.08822",
       "url": "https://arxiv.org/abs/2607.08822",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2607.08890",
@@ -772,7 +792,7 @@
       "arxiv": "2607.08890",
       "doi": "10.48550/arXiv.2607.08890",
       "url": "https://arxiv.org/abs/2607.08890",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2607.01691",
@@ -802,7 +822,7 @@
       "arxiv": "2607.01691",
       "doi": "10.1088/2399-1984/adef25",
       "url": "https://arxiv.org/abs/2607.01691",
-      "featured": true
+      "featured": false
     },
     {
       "id": "2607.09437",
@@ -921,7 +941,7 @@
       "arxiv": "",
       "doi": "10.1038/s44306-025-00119-7",
       "url": "https://www.nature.com/articles/s44306-025-00119-7",
-      "featured": true
+      "featured": false
     },
     {
       "id": "acsnano-4c08023",
@@ -952,7 +972,7 @@
       "doi": "10.1021/acsnano.4c08023",
       "url": "https://pubs.acs.org/doi/10.1021/acsnano.4c08023",
       "backupUrl": "https://experts.umn.edu/en/publications/uncovering-atomic-migrations-behind-magnetic-tunnel-junction-brea/",
-      "featured": true
+      "featured": false
     },
     {
       "id": "s41467-024-55437-x",
@@ -983,7 +1003,7 @@
       "doi": "10.1038/s41467-024-55437-x",
       "url": "https://www.nature.com/articles/s41467-024-55437-x",
       "backupUrl": "https://arxiv.org/abs/2404.02821",
-      "featured": true
+      "featured": false
     },
     {
       "id": "s44306-024-00016-5",
@@ -1013,7 +1033,7 @@
       "arxiv": "",
       "doi": "10.1038/s44306-024-00016-5",
       "url": "https://www.nature.com/articles/s44306-024-00016-5",
-      "featured": true
+      "featured": false
     },
     {
       "id": "acsaelm-3c00068",
@@ -1045,7 +1065,7 @@
       "doi": "10.1021/acsaelm.3c00068",
       "url": "https://pubs.acs.org/doi/10.1021/acsaelm.3c00068",
       "backupUrl": "https://arxiv.org/abs/2301.04823",
-      "featured": true
+      "featured": false
     },
     {
       "id": "apl-1-5129553",
@@ -1078,7 +1098,7 @@
       "doi": "10.1063/1.5129553",
       "url": "https://pubs.aip.org/aip/apl/article/116/2/022409/280120/A-low-temperature-functioning-CoFeB-MgO-based",
       "backupUrl": "https://arxiv.org/abs/1910.01149",
-      "featured": true
+      "featured": false
     },
     {
       "id": "acsami-4c05289",
@@ -1147,7 +1167,7 @@
       "url": "https://pubs.aip.org/aip/apl/article/128/12/122405/3384766/Investigation-of-backward-switching-and-write",
       "backupUrl": "https://doi.org/10.1063/5.0314449",
       "accessNote": "已核验AIP题录与摘要；全文可能需要机构权限",
-      "featured": true
+      "featured": false
     },
     {
       "id": "aip-jap-139-193901",
@@ -1183,7 +1203,7 @@
       "url": "https://pubs.aip.org/aip/jap/article/139/19/193901/3391362/Structural-and-magnetic-properties-of-quad",
       "backupUrl": "https://doi.org/10.1063/5.0326501",
       "accessNote": "已核验AIP题录与摘要；全文可能需要机构权限",
-      "featured": true
+      "featured": false
     },
     {
       "id": "aip-jap-138-203903",
@@ -1220,7 +1240,7 @@
       "url": "https://pubs.aip.org/aip/jap/article/138/20/203903/3373450/Temperature-dependent-analysis-of-retention-and",
       "backupUrl": "https://doi.org/10.1063/5.0299733",
       "accessNote": "已核验AIP开放题录和正文摘要",
-      "featured": true
+      "featured": false
     },
     {
       "id": "aip-apl-126-232405",
@@ -1256,7 +1276,7 @@
       "url": "https://pubs.aip.org/aip/apl/article/126/23/232405/3349466/Time-resolved-nanosecond-magnetization-switching",
       "backupUrl": "https://doi.org/10.1063/5.0266924",
       "accessNote": "已核验AIP题录与摘要；全文可能需要机构权限",
-      "featured": true
+      "featured": false
     },
     {
       "id": "aip-apm-13-121102",
@@ -1292,7 +1312,7 @@
       "url": "https://pubs.aip.org/aip/apm/article/13/12/121102/3373550/Improved-switching-performance-of-magnetic-tunnel",
       "backupUrl": "https://doi.org/10.1063/5.0299310",
       "accessNote": "已核验AIP开放题录与正文",
-      "featured": true
+      "featured": false
     },
     {
       "id": "aip-adv-13-025253",
@@ -1330,6 +1350,222 @@
       "backupUrl": "https://doi.org/10.1063/9.0000512",
       "accessNote": "已核验AIP开放题录与正文",
       "featured": false
+    },
+    {
+      "id": "s44306-026-00138-y",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Radio-frequency assisted switching in perpendicular magnetic tunnel junctions",
+      "titleZh": "射频辅助垂直磁隧道结写入",
+      "authors": "Mark Hayward et al.",
+      "venue": "npj Spintronics",
+      "published": "2026-05-04",
+      "recommendedOn": "2026-07-17",
+      "timeTier": "近期正式发表",
+      "system": "25–85 nm垂直STT-MTJ",
+      "conditions": "室温、零外场；射频脉冲与直流写入脉冲组合；每组重复10⁵次",
+      "methods": [
+        "STT-MRAM",
+        "射频辅助写入",
+        "开关概率",
+        "微磁模拟"
+      ],
+      "summary": "作者在25–85 nm垂直MTJ上实测：在直流写入脉冲前加入小幅射频脉冲，可提高开关概率并缩短直流脉冲；该趋势在所有尺寸上出现，且随射频频率降低而增强。模型复现实验趋势，但不能完全解释阈值大小。",
+      "relevance": "把写入波形本身变成可优化变量，为降低MgO势垒长期电应力、提高耐久提供器件级路线，也适合用低温脉冲平台继续检验热效应与磁动力学。",
+      "limitation": "当前是单器件室温概率测试，不是阵列级WER、耐久或能耗闭环；作者对耐久改善的判断主要来自更短直流脉冲及既有击穿规律，尚缺同批循环寿命直接对照。",
+      "industrialization": "最接近STT-MRAM写入驱动与可靠性优化；仍需验证阵列级WER、射频外围电路面积/能耗、工艺分布、循环耐久及CMOS时序兼容性。",
+      "whyRecommended": "它把材料栈之外的“脉冲工程”引入写入窗口，能与你们的MTJ器件和高速/低温测试平台直接衔接。",
+      "score": 9.6,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1038/s44306-026-00138-y",
+      "url": "https://www.nature.com/articles/s44306-026-00138-y",
+      "backupUrl": "https://www.nature.com/articles/s44306-026-00138-y.pdf",
+      "accessNote": "已核验Nature官方题录、全文页面和PDF入口；开放获取",
+      "featured": true
+    },
+    {
+      "id": "aip-apl-126-022401",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Write error reduction in magnetic tunnel junctions for voltage-controlled magnetoresistive random access memory by using exchange coupled free layer",
+      "titleZh": "利用交换耦合自由层降低VC-MRAM写入误码",
+      "authors": "Lui Sakai, Yutaka Higo, Masanori Hosomi, Rie Matsumoto, Takayuki Nozaki, Shinji Yuasa, Hiroshi Imamura",
+      "venue": "Applied Physics Letters",
+      "published": "2025-01-13",
+      "recommendedOn": "2026-07-17",
+      "timeTier": "近2年精选",
+      "system": "含VCMA进动层与锚定层的交换耦合自由层MTJ",
+      "conditions": "80 nm器件参数；宏自旋随机动力学计算",
+      "methods": [
+        "VC-MRAM",
+        "交换耦合自由层",
+        "宏自旋模型",
+        "写入误码率"
+      ],
+      "summary": "作者提出把具有VCMA效应的进动层与不具VCMA效应的锚定层交换耦合；模型中锚定层抑制磁化回到初态，使写入对超短电压脉宽不再过度敏感，优化参数下80 nm器件的计算WER约为10⁻⁶。",
+      "relevance": "提供“结构设计—脉宽容差—WER”的明确联系，可作为多层自由层原子级沉积DOE和动态测试的理论起点。",
+      "limitation": "这是宏自旋模型预测，不是实测WER；模型未完整覆盖颗粒性、边缘损伤、器件间分布、实际驱动波形及击穿。",
+      "industrialization": "最接近VC-MRAM自由层架构和写入容差设计；距离可制造器件还缺真实堆栈、纳米图形化、阵列分布、耐久、保持及外围驱动验证。",
+      "whyRecommended": "今天把它与射频写入和实时VCMA动力学放在一起读，可清楚区分“理想设计”“真实动态”和“系统写入波形”。",
+      "score": 9.1,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0241713",
+      "url": "https://pubs.aip.org/aip/apl/article/126/2/022401/3330612/Write-error-reduction-in-magnetic-tunnel-junctions",
+      "backupUrl": "https://pubs.aip.org/aip/apl/article-pdf/doi/10.1063/5.0241713/20345127/022401_1_5.0241713.pdf",
+      "accessNote": "已核验AIP官方题录、摘要和PDF入口；全文可能需要机构权限",
+      "featured": true
+    },
+    {
+      "id": "jvstb-42-043801",
+      "track": "E",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Performance enhancement in spin transfer torque magnetic tunnel junctions by optimizing the in situ protective cap layer",
+      "titleZh": "通过优化原位保护帽层提升STT-MTJ性能",
+      "authors": "Zhenghui Ji, Yongzhao Peng, Guoxiu Qiu, Guchang Han, Qijun Guo",
+      "venue": "Journal of Vacuum Science & Technology B",
+      "published": "2024-06-25",
+      "recommendedOn": "2026-07-17",
+      "timeTier": "近2年精选",
+      "system": "刻蚀后MTJ柱与原位SiNₓ保护帽层",
+      "conditions": "改变PECVD气体配比并加入氮等离子后处理",
+      "methods": [
+        "MTJ刻蚀",
+        "原位钝化",
+        "PECVD",
+        "氮等离子体"
+      ],
+      "summary": "实验显示，SiNₓ沉积中的富氮活性物种会使MTJ表面过度钝化，而氢可渗入柱体并降低性能。作者通过气体配比和沉积后氮等离子处理减少氢残留，使相对毯膜的TMR损失从25%降至8%，矫顽力最高提高33%。",
+      "relevance": "直接对应MTJ刻蚀后的“原位保护”环节，说明保护层本身也会引入氮/氢化学损伤，适合纳入刻蚀—真空互联—钝化一体化设备设计。",
+      "limitation": "改进来自特定堆栈与设备窗口；公开结果没有证明对所有尺寸、全片位置、热预算和长期可靠性都成立。",
+      "industrialization": "最接近MTJ刻蚀后原位封护与良率保持；仍缺300 mm均匀性、跨腔体污染、BEOL热循环、侧壁泄漏、长期耐久和批间稳定性。",
+      "whyRecommended": "它把常被当作“后处理”的帽层变成关键工艺变量，与你们的原子制造和器件图形化最直接相关。",
+      "score": 9.5,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1116/6.0003661",
+      "url": "https://pubs.aip.org/avs/jvb/article/42/4/043801/3299374/Performance-enhancement-in-spin-transfer-torque",
+      "backupUrl": "https://doi.org/10.1116/6.0003661",
+      "accessNote": "已核验AVS/AIP官方题录与摘要；全文可能需要机构权限",
+      "featured": true
+    },
+    {
+      "id": "s41598-024-59675-3",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "E"
+      ],
+      "title": "Bias polarity dependent low-frequency noise in ultra-thin AlOx-based magnetic tunnel junctions",
+      "titleZh": "超薄AlOₓ磁隧道结中的偏压极性依赖低频噪声",
+      "authors": "Chun-Yen Chen et al.",
+      "venue": "Scientific Reports",
+      "published": "2024-06-13",
+      "recommendedOn": "2026-07-17",
+      "timeTier": "近2年精选",
+      "system": "约1.5 nm AlOₓ势垒MTJ及双极阻变",
+      "conditions": "全偏压范围低频噪声与低偏压随机电报噪声",
+      "methods": [
+        "低频噪声谱",
+        "随机电报噪声",
+        "氧空位",
+        "阻变"
+      ],
+      "summary": "作者测得噪声强度随偏压极性和阻态变化，并观察到两能级随机电报噪声；结合俘获/释放时间和状态差异，作者把信号解释为氧空位相关陷阱位置与分布在SET/RESET过程中重排。",
+      "relevance": "展示一种非破坏、可批量化的缺陷诊断思路：把1/f噪声和RTN当作超薄势垒/界面缺陷的电学指纹，可迁移到MgO MTJ工艺反馈。",
+      "limitation": "样品是AlOₓ阻变MTJ，不能直接把氧空位位置结论移植到MgO/CoFeB；陷阱空间位置是由噪声模型推断，不是原位原子成像。",
+      "industrialization": "最接近晶圆级电学失效筛查与工艺监控；仍需建立噪声指标同TEM/EELS、击穿、WER、良率和寿命的统计映射，并压缩测试时间。",
+      "whyRecommended": "它提供从低噪声输运反推原子缺陷的具体范例，能把你们的测量平台直接接到制造反馈。",
+      "score": 9,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s41598-024-59675-3",
+      "url": "https://www.nature.com/articles/s41598-024-59675-3",
+      "backupUrl": "https://www.nature.com/articles/s41598-024-59675-3.pdf",
+      "accessNote": "已核验Nature官方全文页面和PDF入口；开放获取",
+      "featured": false
+    },
+    {
+      "id": "jvstb-39-052210",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Etching damage induced performance degradation in spin transfer torque magnetic tunnel junctions",
+      "titleZh": "离子束刻蚀损伤导致STT-MTJ性能退化",
+      "authors": "Shuguang Wang, Zhenghu Zuo, Zhenghui Ji, Xiaorui Chen, Hui Ye, Guchang Han",
+      "venue": "Journal of Vacuum Science & Technology B",
+      "published": "2021-09-16",
+      "recommendedOn": "2026-07-17",
+      "timeTier": "关键方法旧文",
+      "system": "不同尺寸和IBE入射角的STT-MTJ柱",
+      "conditions": "IBE角度/尺寸系列；结构表征、输运与模型联合",
+      "methods": [
+        "离子束刻蚀",
+        "侧壁损伤",
+        "非晶壳层",
+        "TMR恢复"
+      ],
+      "summary": "作者把IBE损伤定位为MTJ柱外缘的低导电、低TMR非晶壳层，其来源包括MgO晶格损伤和自由层/参考层部分氧化；优化后，同一堆栈相对毯膜的TMR损失由约18%降至7%，矫顽力由1490 Oe提高到2280 Oe。",
+      "relevance": "这篇把“刻蚀后TMR下降”拆成可观察的侧壁结构、具体损伤机制和可优化工艺参数，是MTJ原子制造与图形化衔接的关键方法文。",
+      "limitation": "结果针对特定IBE设备、堆栈与尺寸；局部结构观察不能自动代表全片，且没有覆盖阵列级短路、再沉积、耐久和良率尾部。",
+      "industrialization": "最接近MTJ纳米柱IBE工艺窗口与失效分析；仍缺更小尺寸、300 mm均匀性、端点控制、侧壁钝化、批间重复及阵列可靠性。",
+      "whyRecommended": "它能为你们建立“刻蚀参数—侧壁损伤厚度—TMR/Hc”的最小工艺数据库提供直接模板。",
+      "score": 9.4,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1116/6.0001256",
+      "url": "https://pubs.aip.org/avs/jvb/article/39/5/052210/591302/Etching-damage-induced-performance-degradation-in",
+      "backupUrl": "https://pubs.aip.org/avs/jvb/article-pdf/doi/10.1116/6.0001256/15596427/052210_1_online.pdf",
+      "accessNote": "已核验AVS/AIP官方题录、摘要和PDF入口；全文可能需要机构权限",
+      "featured": true
+    },
+    {
+      "id": "aip-apl-127-162406",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Real-time dynamics of VCMA-assisted switching of magnetic tunnel junctions",
+      "titleZh": "VCMA辅助磁隧道结翻转的实时动力学",
+      "authors": "Marco Hoffmann et al.",
+      "venue": "Applied Physics Letters",
+      "published": "2025-10-21",
+      "recommendedOn": "2026-07-17",
+      "timeTier": "近2年精选",
+      "system": "VCMA辅助翻转磁隧道结",
+      "conditions": "实时电学测量；电压与磁场扫描；含充电时间和颗粒性的微磁模拟",
+      "methods": [
+        "VCMA",
+        "实时开关",
+        "孵化延迟",
+        "微磁模拟"
+      ],
+      "summary": "作者实测VCMA辅助松弛翻转的实时过程：接近阈值时，器件充电时间和自由层磁性颗粒性限制速度；提高电压或外场可把孵化延迟和总翻转时间压到数纳秒以下。加入有限充电时间与颗粒性的模拟能复现实验。",
+      "relevance": "说明材料界面VCMA系数之外，结电容、线路和磁性不均匀也会进入写入时间；适合把器件制造与高速测量链路联合优化。",
+      "limitation": "实验采用磁场辅助松弛方案，不能直接等同于产品阵列的无场低误码写入；模型解释仍依赖参数与颗粒性假设。",
+      "industrialization": "最接近VCMA器件瞬态与驱动协同设计；仍缺无外场阵列、低WER、保持、耐久、PVT分布和CMOS驱动寄生验证。",
+      "whyRecommended": "它给今天的宏自旋WER方案补上了真实器件中的充电延迟和颗粒性，避免把VCMA简单理解为“瞬时改变各向异性”。",
+      "score": 9.3,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1063/5.0287555",
+      "url": "https://pubs.aip.org/aip/apl/article/127/16/162406/3368777/Real-time-dynamics-of-VCMA-assisted-switching-of",
+      "backupUrl": "https://doi.org/10.1063/5.0287555",
+      "accessNote": "已核验AIP官方题录与摘要；全文可能需要机构权限",
+      "featured": true
     }
   ]
 }
