@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-17T09:58:00+08:00",
-  "reportDate": "2026-07-17",
-  "scope": "跨时间层次精选，优先原子级制造、MTJ/MRAM产业化、刻蚀与原位封护、可靠性和低噪声/高速测量；推荐日期与论文真实发表日期分开显示",
+  "updatedAt": "2026-07-20T09:58:00+08:00",
+  "reportDate": "2026-07-20",
+  "scope": "跨时间层次精选，优先原子级制造、MTJ/MRAM、低温溅射、原子级沉积设备、低热预算退火、MgO势垒与单纳米器件产业化验证；推荐日期与真实发表日期分开",
   "history": [
     {
       "date": "2026-07-13",
@@ -108,6 +108,26 @@
         "s41598-024-59675-3",
         "jvstb-39-052210",
         "aip-apl-127-162406"
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "label": "工作日精选：低温成核、原子级沉积、快速退火与单纳米MTJ",
+      "total": 6,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 0,
+        "D": 1,
+        "E": 2
+      },
+      "paperIds": [
+        "s41427-025-00622-7",
+        "rsi-96-103905",
+        "s44306-026-00145-z",
+        "s44306-023-00003-2",
+        "s41427-025-00585-9",
+        "s41598-026-53080-8"
       ]
     }
   ],
@@ -1566,6 +1586,222 @@
       "backupUrl": "https://doi.org/10.1063/5.0287555",
       "accessNote": "已核验AIP官方题录与摘要；全文可能需要机构权限",
       "featured": true
+    },
+    {
+      "id": "s41427-025-00622-7",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "title": "Cryogenic-temperature grain-to-grain epitaxial growth of high-quality ultrathin CoFe layer on MgFeO tunnel barrier for high-performance magnetic tunnel junctions",
+      "titleZh": "100 K低温溅射实现MgFeO势垒上超薄CoFe逐晶粒外延",
+      "authors": "Tomohiro Ichinose, Tatsuya Yamamoto, Takayuki Nozaki, Kay Yakushiji, Shingo Tamaru et al.",
+      "venue": "NPG Asia Materials",
+      "published": "2025-10-17",
+      "recommendedOn": "2026-07-20",
+      "timeTier": "近2年精选",
+      "system": "300 mm Si晶圆上的多晶MgO/MgFeO与亚纳米CoFe",
+      "conditions": "100 K磁控溅射；晶粒对晶粒外延；结构、磁性、阻尼和VCMA写入联合表征",
+      "methods": [
+        "低温磁控溅射",
+        "300 mm晶圆",
+        "超薄CoFe",
+        "MgFeO势垒"
+      ],
+      "summary": "作者在300 mm Si晶圆上以100 K溅射CoFe，抑制MgO表面的岛状初始生长，同时保留逐晶粒外延。0.8 nm CoFe/MgFeO结构的阻尼低至0.008，并演示0.3 ns脉冲下低于10⁻⁶的写错误率；1.5 ns时约为10⁻³。",
+      "relevance": "这是把低温环境直接用于原子级成核控制的代表工作，连接了设备温控、势垒掺杂、亚纳米连续膜和最终写入误码。",
+      "limitation": "低WER对应特定VCMA器件、脉冲和样本；公开结果尚不足以说明全片尾部、批间重复、长循环和完整CMOS阵列性能。",
+      "industrialization": "最接近300 mm沉积模块和VC-MRAM自由层制造；仍需低温夹持吞吐量、颗粒污染、片内温差、应力、产能与成本验证。",
+      "whyRecommended": "它最符合你们“原子制造设备—界面连续性—MTJ写入性能”一体化方向，且不是单纯材料现象。",
+      "score": 9.7,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1038/s41427-025-00622-7",
+      "url": "https://www.nature.com/articles/s41427-025-00622-7",
+      "backupUrl": "https://doi.org/10.1038/s41427-025-00622-7",
+      "accessNote": "已核验Springer Nature官方全文与DOI；开放获取",
+      "featured": true
+    },
+    {
+      "id": "rsi-96-103905",
+      "track": "D",
+      "secondaryTracks": [
+        "E",
+        "B"
+      ],
+      "title": "Development of atomic-scale thin-film deposition system for perpendicular magnetic tunnel junctions with high tunneling magnetoresistance",
+      "titleZh": "面向高TMR垂直磁隧道结的原子级薄膜沉积系统",
+      "authors": "Siyuan Cheng, Houyi Cheng, Yuxuan Yao, Sylvain Eimer, Boyu Zhang et al.",
+      "venue": "Review of Scientific Instruments",
+      "published": "2025-10-28",
+      "recommendedOn": "2026-07-20",
+      "timeTier": "近2年精选",
+      "system": "集成磁控溅射、自动控制、样品操纵和独立退火腔的p-MTJ沉积平台",
+      "conditions": "CoFeB厚度0.7–1.1 nm、0.1 nm步进；AFM/磁性/TMR验证",
+      "methods": [
+        "设备搭建",
+        "自动化沉积",
+        "原位/独立退火",
+        "界面粗糙度控制"
+      ],
+      "summary": "作者优化阴极、样品操纵机构与自动沉积软件，并设置独立后退火工艺腔。MgO平均粗糙度低于0.35 nm、其他材料低于0.25 nm；在0.7–1.1 nm CoFeB范围以0.1 nm步进获得PMA窗口，完整p-MTJ最高TMR为135%。",
+      "relevance": "它不是只展示一台机器，而是给出“设备部件—自动化—薄膜指标—完整MTJ”的验收链，适合作为你们自建原子制造平台的基准。",
+      "limitation": "135% TMR证明研究平台可用，不代表量产能力；仍缺晶圆级均匀性、靶材寿命漂移、批间重现、颗粒和长期维护数据。",
+      "industrialization": "最接近研发型p-MTJ沉积设备；距离量产还缺多腔真空互联、在线计量、故障恢复、OEE、耗材与全片SPC。",
+      "whyRecommended": "你们正在做原子级制造和MTJ，这篇可以直接转化为设备功能清单和验收表。",
+      "score": 9.6,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1063/5.0273533",
+      "url": "https://pubs.aip.org/aip/rsi/article/96/10/103905/3369899/Development-of-atomic-scale-thin-film-deposition",
+      "backupUrl": "https://doi.org/10.1063/5.0273533",
+      "accessNote": "已核验AIP官方题录和摘要；全文可能需要机构权限",
+      "featured": true
+    },
+    {
+      "id": "s44306-026-00145-z",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Ultrafast flash lamp annealing of magnetic tunnel junctions",
+      "titleZh": "磁隧道结的超快速闪光灯退火",
+      "authors": "Akiko Imai, Shinya Ota, Jun Yamasaki, Teppei Araki, Yasushi Kanai et al.",
+      "venue": "npj Spintronics",
+      "published": "2026-05-12",
+      "recommendedOn": "2026-07-20",
+      "timeTier": "近期正式发表",
+      "system": "CoFeB/MgO磁隧道结与氙灯毫秒脉冲退火",
+      "conditions": "闪光灯脉冲、常规炉退火对照、MR与结构/成分分析",
+      "methods": [
+        "闪光灯退火",
+        "低热预算",
+        "B扩散",
+        "CoFeB结晶"
+      ],
+      "summary": "闪光灯退火用毫秒级氙灯脉冲快速加热器件表面，在总照射约1.7 s内得到约100% TMR；常规退火需要数小时。结构和成分分析显示两种退火的原子扩散与铁磁层结晶过程并不相同。",
+      "relevance": "这为控制CoFeB结晶同时限制B和金属互扩散提供了新的时间维度，适合与你们的原子层界面和热预算研究结合。",
+      "limitation": "当前结果主要证明小样品工艺可行；瞬态峰值温度依赖模拟，且尚未覆盖全片温度均匀性、应力、封装后兼容和循环可靠性。",
+      "industrialization": "最接近MTJ后退火节拍和BEOL热预算优化；仍需300 mm光场均匀性、设备安全、翘曲、片内TMR分布和产能经济性。",
+      "whyRecommended": "它给“退火温度”之外增加了“极短时间”这一可控轴，有机会减少有害扩散并大幅缩短工艺节拍。",
+      "score": 9.6,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1038/s44306-026-00145-z",
+      "url": "https://www.nature.com/articles/s44306-026-00145-z",
+      "backupUrl": "https://doi.org/10.1038/s44306-026-00145-z",
+      "accessNote": "已核验Springer Nature官方全文与DOI；开放获取",
+      "featured": true
+    },
+    {
+      "id": "s44306-023-00003-2",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Single-nanometer CoFeB/MgO magnetic tunnel junctions with high-retention and high-speed capabilities",
+      "titleZh": "兼顾保持与高速的单纳米CoFeB/MgO磁隧道结",
+      "authors": "Junta Igarashi, Butsurin Jinnai, Kyota Watanabe, Takanobu Shinoda, Takuya Funatsu et al.",
+      "venue": "npj Spintronics",
+      "published": "2024-01-04",
+      "recommendedOn": "2026-07-20",
+      "timeTier": "近2年精选",
+      "system": "2.0 nm起的[CoFeB/MgO]多界面自由层MTJ",
+      "conditions": "自由层厚度/重复次数调节；保持和纳秒STT翻转",
+      "methods": [
+        "单纳米MTJ",
+        "多界面自由层",
+        "形状各向异性",
+        "STT写入"
+      ],
+      "summary": "作者通过改变[CoFeB/MgO]重复次数和各层厚度，分别调节界面各向异性与形状各向异性；制备到2.0 nm尺寸，并在不同堆栈中分别展示超过10年的保持能力和10 ns以内的高速翻转。",
+      "relevance": "它把原子层堆栈设计与最终的尺寸缩放、保持和速度直接连接，是判断“原子制造是否真正贡献器件指标”的好范例。",
+      "limitation": "保持与高速是针对不同优化堆栈分别展示，不应误读为同一个2 nm器件同时达到全部指标；阵列良率和工艺容差仍是关键。",
+      "industrialization": "最接近单数字纳米STT-MRAM器件架构；尚缺大规模阵列、端到端误码、图形化损伤、读裕量、批量统计和集成成本。",
+      "whyRecommended": "它给今天的沉积、低温成核与退火文章提供最终器件目标：不仅要得到好薄膜，还要在极小尺寸下兑现保持和速度。",
+      "score": 9.5,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1038/s44306-023-00003-2",
+      "url": "https://www.nature.com/articles/s44306-023-00003-2",
+      "backupUrl": "https://doi.org/10.1038/s44306-023-00003-2",
+      "accessNote": "已核验Springer Nature官方全文与DOI；开放获取",
+      "featured": true
+    },
+    {
+      "id": "s41427-025-00585-9",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C",
+        "E"
+      ],
+      "title": "Dielectric constant of MgO tunnel barrier with epitaxial strain",
+      "titleZh": "外延应变调控MgO隧穿势垒介电常数与VCMA",
+      "authors": "Tomohiro Nozaki, Hiroshige Onoda, Shingo Tamaru, Hiroyasu Nakayama, Makoto Konoto et al.",
+      "venue": "NPG Asia Materials",
+      "published": "2025-02-14",
+      "recommendedOn": "2026-07-20",
+      "timeTier": "近2年精选",
+      "system": "外延与多晶MgO势垒MTJ对照",
+      "conditions": "MBE/磁控溅射；阻抗、XRD、MOKE、VSM和TMR联合测量",
+      "methods": [
+        "MgO介电常数",
+        "外延应变",
+        "阻抗谱",
+        "VCMA"
+      ],
+      "summary": "作者测得外延MgO承受约1.5%压缩应变，2–3 nm势垒的相对介电常数约17，显著高于体相约10和多晶样品约11.8；介电常数增大与VCMA系数增强同步。",
+      "relevance": "说明MgO不只是“固定参数”的绝缘层，晶格应变、厚度和界面会改变电容及VCMA响应，适合纳入原子级势垒DOE。",
+      "limitation": "外延样品与量产多晶CoFeB/MgO堆栈差异较大；作者提出的声子软化解释与数据一致，但超薄极限和器件缩放仍需进一步验证。",
+      "industrialization": "最接近VCMA势垒和电容建模；尚缺300 mm多晶堆栈上的应变计量、片内分布、漏电/击穿、低RA与CMOS驱动联合验证。",
+      "whyRecommended": "它把结构表征、阻抗和磁性连在一起，为MgO厚度、应变与写入电压的联合设计提供直接方法。",
+      "score": 9.3,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s41427-025-00585-9",
+      "url": "https://www.nature.com/articles/s41427-025-00585-9",
+      "backupUrl": "https://doi.org/10.1038/s41427-025-00585-9",
+      "accessNote": "已核验Springer Nature官方全文与DOI；开放获取",
+      "featured": false
+    },
+    {
+      "id": "s41598-026-53080-8",
+      "track": "B",
+      "secondaryTracks": [
+        "E"
+      ],
+      "title": "Enhanced tunneling magnetoresistance and thermal stability in magnetic tunnel junctions with multiple CoFeB/Ta interfaces",
+      "titleZh": "多CoFeB/Ta界面提高MTJ隧穿磁阻与退火稳定性",
+      "authors": "S. Amara, W. Al Saidi, F. Al Ma’Mari, G. Setti et al.",
+      "venue": "Scientific Reports",
+      "published": "2026-05-14",
+      "recommendedOn": "2026-07-20",
+      "timeTier": "近期正式发表",
+      "system": "单CoFeB与CoFeB/Ta/CoFeB复合自由层p-MTJ",
+      "conditions": "1.2 nm CoFeB/0.3 nm Ta/1.2 nm CoFeB；退火系列、PMA和TMR",
+      "methods": [
+        "复合自由层",
+        "Ta间隔层",
+        "退火窗口",
+        "TMR"
+      ],
+      "summary": "0.3 nm Ta分隔的双CoFeB自由层在增加磁性厚度后仍保持PMA；320 ℃退火后，相比单CoFeB自由层TMR提高约50%，且在更高退火温度下保持更高TMR，说明工艺窗口得到拓宽。",
+      "relevance": "适合转化为亚纳米Ta连续性、吸硼/死层与退火窗口的原子级DOE，并与前述四界面自由层工作互补。",
+      "limitation": "复合结构会增加死磁层和RA风险；论文没有完成产品级写入、保持、WER、耐久与全片统计。",
+      "industrialization": "最接近自由层堆栈与BEOL热稳定优化；仍缺更小器件、Ta亚单层连续性、片内一致性、低RA和阵列验证。",
+      "whyRecommended": "它展示了原子级间隔层能扩大退火容差，但也提醒必须把TMR、PMA、RA和死层一起评价。",
+      "score": 9.1,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s41598-026-53080-8",
+      "url": "https://www.nature.com/articles/s41598-026-53080-8",
+      "backupUrl": "https://doi.org/10.1038/s41598-026-53080-8",
+      "accessNote": "已核验Springer Nature官方全文与DOI；开放获取",
+      "featured": false
     }
   ]
 }

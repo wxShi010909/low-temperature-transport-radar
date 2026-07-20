@@ -1,36 +1,36 @@
 {
-  "date": "2026-07-17",
+  "date": "2026-07-20",
   "review": {
-    "id": "review-s44287-024-00111-z",
+    "id": "review-ijem-ad87cb",
     "kind": "每日综述",
-    "track": "B",
+    "track": "E",
     "secondaryTracks": [
+      "B",
       "A",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "title": "Spin-transfer torque magnetoresistive random access memory technology status and future directions",
-    "titleZh": "STT-MRAM技术现状与未来方向",
-    "authors": "Daniel C. Worledge, Guohan Hu",
-    "venue": "Nature Reviews Electrical Engineering · Review Article",
-    "published": "2024-11-06",
-    "recommendedOn": "2026-07-17",
-    "doi": "10.1038/s44287-024-00111-z",
-    "url": "https://www.nature.com/articles/s44287-024-00111-z",
-    "backupUrl": "https://doi.org/10.1038/s44287-024-00111-z",
-    "assistantSummary": "从MTJ工作原理和产业发展史出发，按独立存储、嵌入式非易失存储、非易失工作存储和末级缓存四种应用拆解速度、耐久、密度、写入电流与制造要求，并比较SOT和VCMA路线。",
-    "whySelected": "今天的六篇分别讨论写入波形、WER、刻蚀、钝化、噪声和实时动态；这篇综述能把它们放回真实产品场景，判断“改善一个指标”距离可量产还有多远。",
+    "title": "Materials, processes, devices and applications of magnetoresistive random access memory",
+    "titleZh": "磁阻随机存取存储器的材料、工艺、器件与应用",
+    "authors": "Meiyin Yang, Yan Cui, Jingsheng Chen, Jun Luo",
+    "venue": "International Journal of Extreme Manufacturing",
+    "published": "2024-11-21",
+    "recommendedOn": "2026-07-20",
+    "doi": "10.1088/2631-7990/ad87cb",
+    "url": "https://www.sciopen.com/article/10.1088/2631-7990/ad87cb",
+    "backupUrl": "https://doi.org/10.1088/2631-7990/ad87cb",
+    "assistantSummary": "从STT/SOT工作机理出发，系统串联MTJ材料堆栈、晶圆制造、刻蚀与互联、器件要求、产业瓶颈和AI硬件应用，是今天六篇制造论文的总框架。",
+    "whySelected": "它与用户当前的原子制造、MTJ器件和极端制造方向高度重合，尤其适合用来判断“实验结果离可制造MRAM还有多远”。",
     "readingGuide": [
-      "先看四类应用对速度、密度、耐久和写入电流的不同要求。",
-      "再看MTJ单元与阵列结构，理解器件指标如何传到芯片。",
-      "最后用文中的产品坐标系审视今天六篇文章尚缺的良率、误码和集成证据。"
+      "先看MRAM材料与完整堆栈，建立各层功能表。",
+      "重点看沉积—光刻—刻蚀—介质/CMP—互联的BEOL流程。",
+      "最后看制造瓶颈、SOT路线和AI硬件应用，不必逐页通读。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-nmat1257",
+      "id": "classic-nnano-2008-406",
       "kind": "经典实验",
       "track": "A",
       "secondaryTracks": [
@@ -38,47 +38,47 @@
         "C",
         "E"
       ],
-      "title": "Giant room-temperature magnetoresistance in single-crystal Fe/MgO/Fe magnetic tunnel junctions",
-      "titleZh": "单晶Fe/MgO/Fe磁隧道结的室温巨磁阻",
-      "authors": "Shinji Yuasa et al.",
-      "venue": "Nature Materials",
-      "published": "2004-10-31",
-      "recommendedOn": "2026-07-17",
-      "doi": "10.1038/nmat1257",
-      "url": "https://www.nature.com/articles/nmat1257",
-      "backupUrl": "https://doi.org/10.1038/nmat1257",
-      "assistantSummary": "单晶Fe/MgO/Fe器件在室温实现最高180%磁阻，并观察TMR随MgO厚度振荡，为“波函数对称性过滤和相干隧穿”提供关键实验证据。",
-      "whySelected": "与已归档的Butler理论和Parkin实验组成完整链条，也能解释为什么今天刻蚀损伤、界面非晶化和氧化会严重破坏TMR。",
+      "title": "Large voltage-induced magnetic anisotropy change in a few atomic layers of iron",
+      "titleZh": "少数原子层铁中的大幅电压诱导磁各向异性变化",
+      "authors": "T. Maruyama et al.",
+      "venue": "Nature Nanotechnology",
+      "published": "2009-01-18",
+      "recommendedOn": "2026-07-20",
+      "doi": "10.1038/nnano.2008.406",
+      "url": "https://www.nature.com/articles/nnano.2008.406",
+      "backupUrl": "https://doi.org/10.1038/nnano.2008.406",
+      "assistantSummary": "在Fe(001)/MgO(001)界面用小于100 mV/nm的电场实现约40%的磁各向异性变化，成为固态VCMA路线的重要起点；轨道占据变化是作者的暂定解释。",
+      "whySelected": "今天的MgO应变—介电常数论文正是在这条经典VCMA主线上继续向材料参数和可制造器件推进。",
       "readingGuide": [
-        "先看Fe(001)/MgO(001)/Fe(001)结构与180% TMR。",
-        "再看MgO厚度振荡为何支持相干隧穿。",
-        "最后反推侧壁非晶化和界面缺陷会破坏哪些条件。"
+        "先看电压下Kerr磁滞变化。",
+        "再看Fe厚度依赖，理解界面效应。",
+        "把轨道解释和宏自旋开关模拟视为机理/预测，不等同于产品器件。"
       ],
       "notNew": true
     },
     {
-      "id": "classic-apl-89-142507",
-      "kind": "经典理论",
-      "track": "C",
+      "id": "classic-s41467-018-03003-7",
+      "kind": "经典器件",
+      "track": "B",
       "secondaryTracks": [
-        "B",
+        "A",
         "E"
       ],
-      "title": "Atomic and electronic structure of the CoFeB/MgO interface from first principles",
-      "titleZh": "CoFeB/MgO界面的原子与电子结构第一性原理研究",
-      "authors": "J. D. Burton, S. S. Jaswal, E. Y. Tsymbal, O. N. Mryasov, O. G. Heinonen",
-      "venue": "Applied Physics Letters",
-      "published": "2006-10-06",
-      "recommendedOn": "2026-07-17",
-      "doi": "10.1063/1.2360189",
-      "url": "https://pubs.aip.org/aip/apl/article/89/14/142507/332142/Atomic-and-electronic-structure-of-the-CoFeB-MgO",
-      "backupUrl": "https://doi.org/10.1063/1.2360189",
-      "assistantSummary": "第一性原理计算预测B更倾向偏聚到结晶CoFeB/MgO界面，并会抑制多数自旋Δ1对称通道的电导，从而降低TMR；因此退火与吸硼层设计必须防止B停留在功能界面。",
-      "whySelected": "它把“退火时B扩散”从经验现象连接到原子位置、轨道对称性和TMR，与你们的原子级界面控制直接相关。",
+      "title": "Shape anisotropy revisited in single-digit nanometer magnetic tunnel junctions",
+      "titleZh": "单数字纳米磁隧道结中的形状各向异性再利用",
+      "authors": "K. Watanabe, B. Jinnai, S. Fukami, H. Sato, H. Ohno",
+      "venue": "Nature Communications",
+      "published": "2018-02-14",
+      "recommendedOn": "2026-07-20",
+      "doi": "10.1038/s41467-018-03003-7",
+      "url": "https://www.nature.com/articles/s41467-018-03003-7",
+      "backupUrl": "https://doi.org/10.1038/s41467-018-03003-7",
+      "assistantSummary": "通过增加超小直径MTJ自由层的纵向厚度，让形状各向异性转而稳定垂直磁化，并在小于10 nm结中实现纯电流STT翻转。",
+      "whySelected": "它是今天“单纳米多界面MTJ”工作的直接概念基础，能帮助理解为什么自由层并非越薄越好。",
       "readingGuide": [
-        "先看B在体内与界面的能量偏好。",
-        "再看B如何改变Δ1多数自旋通道。",
-        "最后把理论预测转换成退火、吸硼层和深度剖析实验。"
+        "先看传统界面各向异性在20 nm以下的限制。",
+        "重点看圆柱几何如何改变形状各向异性方向。",
+        "最后看小于10 nm器件的STT翻转及尚未解决的工艺难点。"
       ],
       "notNew": true
     }
