@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-20T09:58:00+08:00",
-  "reportDate": "2026-07-20",
-  "scope": "跨时间层次精选，优先原子级制造、MTJ/MRAM、低温溅射、原子级沉积设备、低热预算退火、MgO势垒与单纳米器件产业化验证；推荐日期与真实发表日期分开",
+  "updatedAt": "2026-07-21T09:00:00+08:00",
+  "reportDate": "2026-07-21",
+  "scope": "工作日精选：MgO缺陷、自热、写入误码与可靠性计量",
   "history": [
     {
       "date": "2026-07-13",
@@ -128,6 +128,25 @@
         "s44306-023-00003-2",
         "s41427-025-00585-9",
         "s41598-026-53080-8"
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "label": "工作日精选：MgO缺陷、自热、写入误码与可靠性计量",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "s44306-024-00067-8",
+        "acs-nl-4c02571",
+        "s41598-022-19342-x",
+        "pra-19-024016",
+        "pra-15-034088"
       ]
     }
   ],
@@ -1802,6 +1821,190 @@
       "backupUrl": "https://doi.org/10.1038/s41598-026-53080-8",
       "accessNote": "已核验Springer Nature官方全文与DOI；开放获取",
       "featured": false
+    },
+    {
+      "id": "s44306-024-00067-8",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C",
+        "E"
+      ],
+      "title": "Oxygen vacancy-driven spin-transfer torque across MgO magnetic tunnel junctions",
+      "titleZh": "MgO氧空位复合体介导磁隧道结中的自旋转移力矩",
+      "authors": "L. M. Kandpal et al.",
+      "venue": "npj Spintronics",
+      "published": "2025-01-07",
+      "recommendedOn": "2026-07-21",
+      "timeTier": "近两年精选",
+      "system": "两条产线的低RA FeCoB/MgO/FeCoB MTJ",
+      "conditions": "温变输运、偏压谱、ST-FMR、临界电流与第一性原理",
+      "methods": [
+        "输运谱",
+        "ST-FMR",
+        "温变开关",
+        "第一性原理"
+      ],
+      "summary": "低RA器件在P态呈现金属性输运，输运谱和ST-FMR在约0.4 eV处出现一致特征；作者据此把高电导与STT的异常温度依赖归因于MgO中的氧空位复合体，并用跨越势垒的空位链作为一种理论候选。",
+      "relevance": "把原子级缺陷控制直接连接到RA、TMR和写入电流，适合形成氧分压—缺陷谱—器件指标的制造DOE。",
+      "limitation": "氧空位复合体并未被逐个原子直接成像；特定锯齿空位链只是计算候选，不是唯一结构。",
+      "industrialization": "最接近MgO势垒沉积、氧化和缺陷监控；仍缺晶圆级空位密度标定、批间重复、良率尾部与耐久因果验证。",
+      "whyRecommended": "它改变“越少缺陷越好”的简单判断，提示低RA与高STT可能依赖受控缺陷，而产业问题是把有用缺陷与击穿前驱体分开。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s44306-024-00067-8",
+      "url": "https://www.nature.com/articles/s44306-024-00067-8",
+      "backupUrl": "https://doi.org/10.1038/s44306-024-00067-8",
+      "accessNote": "已核验Springer Nature官方开放全文与DOI",
+      "featured": true
+    },
+    {
+      "id": "acs-nl-4c02571",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "E"
+      ],
+      "title": "Thermal Characterization of Ultrathin MgO Tunnel Barriers",
+      "titleZh": "超薄MgO隧穿势垒的热学表征",
+      "authors": "Haotian Su, Heungdong Kwon, Fen Xue et al.",
+      "venue": "Nano Letters",
+      "published": "2024-11-06",
+      "recommendedOn": "2026-07-21",
+      "timeTier": "近两年精选",
+      "system": "CoFeB/MgO超薄多层；MgO厚度1.0、1.3、1.6 nm",
+      "conditions": "TDTR与热传导建模；总膜厚4.4–44 nm",
+      "methods": [
+        "时域热反射",
+        "热模型",
+        "厚度系列",
+        "界面热阻"
+      ],
+      "summary": "作者用TDTR和模型分离出1.0 nm退火MgO的本征与有效热导，约为3.6与0.85 W m⁻¹ K⁻¹；巨大差异说明界面热阻在真实MTJ自热中不可忽略。",
+      "relevance": "可为低温/高速脉冲平台提供热模型参数，并把沉积界面质量与写入自热、耐久连接起来。",
+      "limitation": "测量对象是多层薄膜而不是实际纳米柱开关过程；室温热参数不能直接外推到4 K或纳秒瞬态。",
+      "industrialization": "最接近热设计与可靠性仿真输入；仍缺器件内原位温度、晶圆均匀性、温度依赖参数和自热—耐久关联。",
+      "whyRecommended": "它给出可用于仿真的实测热参数，能避免只凭体相MgO热导低估界面热阻。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1021/acs.nanolett.4c02571",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.nanolett.4c02571",
+      "backupUrl": "https://poplab.stanford.edu/pdfs/SuKwon-ThermalCharactUltrathinMgO-nl24.pdf",
+      "accessNote": "已核验ACS官方题录；备用入口为作者机构公开稿",
+      "featured": true
+    },
+    {
+      "id": "s41598-022-19342-x",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "High-dose X-ray radiation induced MgO degradation and breakdown in spin transfer torque magnetic tunnel junctions",
+      "titleZh": "高剂量X射线诱发STT-MTJ中MgO退化与击穿",
+      "authors": "Qi He, Hui Shi, Yinquan Wang et al.",
+      "venue": "Scientific Reports",
+      "published": "2022-11-03",
+      "recommendedOn": "2026-07-21",
+      "timeTier": "重要旧文",
+      "system": "60×150 nm CoFeB/MgO/CoFeB MTJ",
+      "conditions": "8、9、10 Mrad(Si)分级X射线照射；CIMS、XPS、HRTEM",
+      "methods": [
+        "辐照加速",
+        "电流开关",
+        "深度XPS",
+        "HRTEM"
+      ],
+      "summary": "8 Mrad(Si)后TMR与开关变化很小；9 Mrad时许多结电阻骤降并呈击穿特征，10 Mrad后实验器件全部失效。XPS与HRTEM显示MgO缺氧和局部非晶化，作者认为空位重排形成导电通道。",
+      "relevance": "将原子缺陷、结构表征和失效电学串联，适合建立MTJ加速应力后的根因分析流程。",
+      "limitation": "样本量有限，剂量点较稀；“空位迁移形成通道”是由XPS/HRTEM与电学共同支持的作者解释，并非原位直接观察。",
+      "industrialization": "最接近航天/辐照可靠性资格验证；仍需剂量率、偏压、温度、批次、阵列及单粒子效应的完整矩阵。",
+      "whyRecommended": "它与氧空位STT论文构成一对关键边界：受控缺陷可帮助传输，过量缺陷则走向击穿。",
+      "score": 9.3,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s41598-022-19342-x",
+      "url": "https://www.nature.com/articles/s41598-022-19342-x",
+      "backupUrl": "https://doi.org/10.1038/s41598-022-19342-x",
+      "accessNote": "已核验Springer Nature官方开放全文与DOI",
+      "featured": true
+    },
+    {
+      "id": "pra-19-024016",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Impact of Reference-Layer Stray Field on the Write-Error Rate of Perpendicular Spin-Transfer-Torque Random-Access Memory",
+      "titleZh": "参考层杂散场对垂直STT-RAM写入误码率的影响",
+      "authors": "Arshid Nisar, Tanmoy Pramanik, Brajesh Kumar Kaushik et al.",
+      "venue": "Physical Review Applied",
+      "published": "2023-02-06",
+      "recommendedOn": "2026-07-21",
+      "timeTier": "重要旧文",
+      "system": "含/不含合成反铁磁参考层的pMTJ",
+      "conditions": "有限温度微磁模拟；不同结直径与非均匀杂散场",
+      "methods": [
+        "有限温度微磁",
+        "畴壁动力学",
+        "WER斜率",
+        "尺寸比较"
+      ],
+      "summary": "模拟显示无SAF时畴壁传播模式虽会拖慢翻转，但对WER斜率影响有限；未充分抵消的非均匀参考层杂散场会诱发非相干和亚稳态，导致异常长尾与WER斜率突变。",
+      "relevance": "适合把参考层设计、杂散场映射和百万次写入统计放进同一验收闭环。",
+      "limitation": "核心证据来自微磁模拟，并与既有实验比较；不能替代在目标堆栈和阵列上的直接WER验证。",
+      "industrialization": "最接近参考层堆栈与写入良率尾部优化；仍缺全片杂散场分布、器件统计、温度/老化后稳定性和阵列误码验证。",
+      "whyRecommended": "平均临界电流正常并不代表尾部可靠；这篇解释了参考层微小失衡如何放大成产品级WER问题。",
+      "score": 9.2,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1103/PhysRevApplied.19.024016",
+      "url": "https://link.aps.org/doi/10.1103/PhysRevApplied.19.024016",
+      "backupUrl": "https://doi.org/10.1103/PhysRevApplied.19.024016",
+      "accessNote": "已核验APS官方题录与DOI；全文访问可能受网络策略影响",
+      "featured": true
+    },
+    {
+      "id": "pra-15-034088",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Thermal Effects in Spin-Torque Switching of Perpendicular Magnetic Tunnel Junctions at Cryogenic Temperatures",
+      "titleZh": "低温下垂直MTJ自旋力矩翻转的热效应",
+      "authors": "L. Rehm, G. Wolf, B. Kardasz et al.",
+      "venue": "Physical Review Applied",
+      "published": "2021-03-30",
+      "recommendedOn": "2026-07-21",
+      "timeTier": "重要旧文",
+      "system": "直径40–60 nm的先进pMTJ纳米柱",
+      "conditions": "300 K至4 K；每个条件最高约百万次开关统计",
+      "methods": [
+        "低温脉冲开关",
+        "百万次统计",
+        "热激活模型",
+        "纳米柱热流模型"
+      ],
+      "summary": "从室温降到4 K的开关概率统计显示，低温并未消除随机性；由模型反演的开关时结温在约75 K以下趋于饱和，说明偏压自热在深低温尤其显著。",
+      "relevance": "直接指导PPMS/Teslatron/低温探针台中的脉冲布线、热锚定、温度校准和WER自动采集。",
+      "limitation": "结温来自热激活模型反演而非局域温度计直接测量；结果依赖具体纳米柱和脉冲条件。",
+      "industrialization": "最接近低温存储和特殊环境可靠性验证；仍缺阵列、电路、封装热路径、批次尾部和长期耐久。",
+      "whyRecommended": "它提醒低温平台的台温不等于写入瞬间结温，若忽略自热会错误解释低温WER和临界电流。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "2009.01743",
+      "doi": "10.1103/PhysRevApplied.15.034088",
+      "url": "https://arxiv.org/abs/2009.01743",
+      "backupUrl": "https://link.aps.org/doi/10.1103/PhysRevApplied.15.034088",
+      "accessNote": "已核验arXiv摘要、APS官方题录与DOI",
+      "featured": true
     }
   ]
 }

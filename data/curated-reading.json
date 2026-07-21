@@ -41,6 +41,13 @@
         "classic-nnano-2008-406",
         "classic-s41467-018-03003-7"
       ]
+    },
+    {
+      "date": "2026-07-21",
+      "reviewId": "review-jmmm-169878",
+      "classicIds": [
+        "classic-prl-92-088302"
+      ]
     }
   ],
   "items": [
@@ -507,6 +514,61 @@
         "先看传统界面各向异性在20 nm以下的限制。",
         "重点看圆柱几何如何改变形状各向异性方向。",
         "最后看小于10 nm器件的STT翻转及尚未解决的工艺难点。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-jmmm-169878",
+      "kind": "每日综述",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "title": "Metrology and metrics for spin-transfer-torque switched magnetic tunnel junctions in memory applications",
+      "titleZh": "面向存储应用的STT-MTJ计量方法与评价指标",
+      "authors": "Jonathan Z. Sun, Christopher Safranski",
+      "venue": "Journal of Magnetism and Magnetic Materials",
+      "published": "2022-11-30",
+      "recommendedOn": "2026-07-21",
+      "doi": "10.1016/j.jmmm.2022.169878",
+      "url": "https://research.ibm.com/publications/metrology-and-metrics-for-spin-transfer-torque-switched-magnetic-tunnel-junctions-in-memory-applications",
+      "backupUrl": "https://doi.org/10.1016/j.jmmm.2022.169878",
+      "assistantSummary": "综述如何把材料、磁性、输运、开关概率和器件指标组合成可行动的pMTJ优化计量链。",
+      "whySelected": "今天的缺陷、自热和WER论文如果没有统一计量框架，容易停留在各自独立的现象；这篇正好提供连接方式。",
+      "readingGuide": [
+        "先看作者如何把材料参数映射到实际pMTJ开关。",
+        "重点看写入效率、热稳定、读扰与概率统计的指标定义。",
+        "最后把今天五篇论文分别填入“缺陷—热—磁—电—可靠性”链条。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-prl-92-088302",
+      "kind": "经典实验",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Time-Resolved Reversal of Spin-Transfer Switching in a Nanomagnet",
+      "titleZh": "纳磁体自旋转移翻转的时间分辨测量",
+      "authors": "R. H. Koch, J. A. Katine, J. Z. Sun",
+      "venue": "Physical Review Letters",
+      "published": "2004-02-27",
+      "recommendedOn": "2026-07-21",
+      "doi": "10.1103/PhysRevLett.92.088302",
+      "url": "https://link.aps.org/doi/10.1103/PhysRevLett.92.088302",
+      "backupUrl": "https://pubmed.ncbi.nlm.nih.gov/14995820/",
+      "assistantSummary": "通过脉冲后延时读取，直接统计自旋转移翻转时间分布，确立了热激活等待与快速动力学并存的实验图景。",
+      "whySelected": "它是今天低温百万次统计与WER计量的早期方法基础，帮助理解为什么平均翻转时间不足以描述存储可靠性。",
+      "readingGuide": [
+        "先看脉冲—延时—读出的时间分辨方案。",
+        "再看翻转时间分布而不只是平均值。",
+        "把早期自旋阀结果与今天pMTJ、低温和自热问题区分开。"
       ],
       "notNew": true
     }
