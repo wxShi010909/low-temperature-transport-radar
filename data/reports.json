@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-21T09:00:00+08:00",
-  "reportDate": "2026-07-21",
-  "scope": "工作日精选：MgO缺陷、自热、写入误码与可靠性计量",
+  "updatedAt": "2026-07-22T09:00:00+08:00",
+  "reportDate": "2026-07-22",
+  "scope": "工作日精选：MTJ刻蚀终止、侧壁修复与晶圆级良率",
   "history": [
     {
       "date": "2026-07-13",
@@ -147,6 +147,25 @@
         "s41598-022-19342-x",
         "pra-19-024016",
         "pra-15-034088"
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "label": "工作日精选：MTJ刻蚀终止、侧壁修复与晶圆级良率",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "s41427-025-00616-5",
+        "ieee-led-2024-3454609",
+        "jos-43-102501",
+        "jjap-59-sggb05",
+        "aip-adv-12-125317"
       ]
     }
   ],
@@ -2004,6 +2023,191 @@
       "url": "https://arxiv.org/abs/2009.01743",
       "backupUrl": "https://link.aps.org/doi/10.1103/PhysRevApplied.15.034088",
       "accessNote": "已核验arXiv摘要、APS官方题录与DOI",
+      "featured": true
+    },
+    {
+      "id": "s41427-025-00616-5",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Spin-orbit torque initialization of domain-wall and process damage cure in a domain-wall magnetoresistive device with a synthetic antiferromagnet",
+      "titleZh": "合成反铁磁畴壁MTJ的SOT初始化与IBE损伤退火修复",
+      "authors": "Atsushi Okada, Soichiro Mizusaki, Naoki Hase et al.",
+      "venue": "NPG Asia Materials",
+      "published": "2025-09-05",
+      "recommendedOn": "2026-07-22",
+      "timeTier": "近两年精选",
+      "system": "Pt/Co/Ni/Co/Ru/CoFeB/MgO合成反铁磁自由层DW-MTJ",
+      "conditions": "IBE后退火修复；MOKE、TMR、10万次开关概率与重复写入",
+      "methods": [
+        "IBE",
+        "退火修复",
+        "MOKE",
+        "TMR与脉冲写入"
+      ],
+      "summary": "作者提出可扩展的畴壁初始化方法，并发现IBE后退火能恢复垂直磁各向异性和顺畅畴壁运动；在完整DW-MTJ中实现重复写入，实测畴壁速度约73.2 m/s，TMR为50%–100%。",
+      "relevance": "把“刻蚀造成损伤”推进到“修复后器件是否真正恢复运动与读出”，适合设计IBE—退火—磁性—输运的闭环。",
+      "limitation": "器件仍为250 nm MTJ与数百纳米导线，TMR低于目标值；100 nm、1 ns性能是缩放估算而非实测。",
+      "industrialization": "最接近刻蚀后原位/近原位修复与三端存储器工艺；仍缺100 nm以下、零外场大样本、晶圆均匀性、耐久与BEOL热预算。",
+      "whyRecommended": "它不仅观察侧壁损伤，还给出修复动作并用实际写入验证，是今天最可直接转化为工艺实验的一篇。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s41427-025-00616-5",
+      "url": "https://www.nature.com/articles/s41427-025-00616-5",
+      "backupUrl": "https://doi.org/10.1038/s41427-025-00616-5",
+      "accessNote": "已核验Springer Nature官方开放全文与DOI",
+      "featured": true
+    },
+    {
+      "id": "ieee-led-2024-3454609",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "D",
+        "E"
+      ],
+      "title": "Achieving High Yield of Perpendicular SOT-MTJ Manufactured on 300 mm Wafers",
+      "titleZh": "300 mm晶圆垂直SOT-MTJ的高良率制造",
+      "authors": "Wenlong Yang, Zhenghui Ji, Yang Gao et al.",
+      "venue": "IEEE Electron Device Letters",
+      "published": "2024-09-04",
+      "recommendedOn": "2026-07-22",
+      "timeTier": "近两年精选",
+      "system": "300 mm CMOS兼容三端垂直SOT-MTJ",
+      "conditions": "约80 nm柱；专用MTJ刻蚀与SOT层终止；全片统计和可靠性",
+      "methods": [
+        "300 mm集成",
+        "IBE终点控制",
+        "全片统计",
+        "高速写入"
+      ],
+      "summary": "文章报告最高99.6%器件良率、119% TMR、2 ns下680/880 μA量级开关电流和超过10^12次耐久，并展示全片Rp、RSOT、TMR和磁场指标分布。",
+      "relevance": "直接对应你关心的精确刻蚀终止、再沉积短路、晶圆级一致性和产业验收，是专利与工艺路线的重要对标。",
+      "limitation": "论文的“良率”需结合测试结构、判废阈值和阵列规模理解；尚不足以证明大容量芯片量产。",
+      "industrialization": "五篇中距离晶圆制造最近；仍缺阵列级WER、批间/设备间重复、封装后可靠性、成本和产品级测试覆盖。",
+      "whyRecommended": "它把刻蚀工艺问题用全片良率和耐久回答，而不是只展示少数最佳器件。",
+      "score": 9.8,
+      "priority": "A",
+      "arxiv": "2404.09125",
+      "doi": "10.1109/LED.2024.3454609",
+      "url": "https://ieeexplore.ieee.org/document/10666092",
+      "backupUrl": "https://arxiv.org/abs/2404.09125",
+      "accessNote": "已核验IEEE官方题录；arXiv摘要/PDF为可打开备用入口",
+      "featured": true
+    },
+    {
+      "id": "jos-43-102501",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D",
+        "E"
+      ],
+      "title": "Integration of high-performance spin-orbit torque MRAM devices by 200-mm-wafer manufacturing platform",
+      "titleZh": "200 mm晶圆平台上的高性能SOT-MRAM器件集成",
+      "authors": "Hongchao Zhang, Xiangyue Ma, Chuanpeng Jiang et al.",
+      "venue": "Journal of Semiconductors",
+      "published": "2022-10-01",
+      "recommendedOn": "2026-07-22",
+      "timeTier": "重要旧文",
+      "system": "200 mm晶圆无外场面内SOT-MTJ",
+      "conditions": "磁性、开关、耐久、保持与晶圆均匀性联合表征",
+      "methods": [
+        "200 mm制造",
+        "无外场SOT",
+        "耐久测试",
+        "保持评估"
+      ],
+      "summary": "作者在200 mm平台集成无外场SOT-MTJ，并系统评价磁性、开关、耐久、保持和均匀性，说明材料与器件流程已从单颗演示走向晶圆级验证。",
+      "relevance": "适合与300 mm工作对照，学习哪些指标必须随晶圆尺寸扩大而进入固定验收表。",
+      "limitation": "公开摘要没有给出所有分布尾部与阵列容量；“可产业化途径”是作者判断，不等于产品已成熟。",
+      "industrialization": "最接近工艺平台和可靠性联合验证；仍需先进节点CD、阵列误码、批次良率、BEOL/CMOS热预算和封装数据。",
+      "whyRecommended": "它是国内研究/产业团队将SOT-MTJ放到200 mm平台的完整案例，有助于建立本土设备与工艺评价坐标。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1088/1674-4926/43/10/102501",
+      "url": "https://www.jos.ac.cn/article/doi/10.1088/1674-4926/43/10/102501",
+      "backupUrl": "https://doi.org/10.1088/1674-4926/43/10/102501",
+      "accessNote": "已核验期刊官方全文、作者、日期与DOI",
+      "featured": true
+    },
+    {
+      "id": "jjap-59-sggb05",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "E"
+      ],
+      "title": "High reliability CoFeB/MgO/CoFeB magnetic tunnel junction fabrication using low-damage ion beam etching",
+      "titleZh": "利用低损伤离子束刻蚀制造高可靠CoFeB/MgO/CoFeB磁隧道结",
+      "authors": "Hyeonwoo Park, Akinobu Teramoto, Jun-ichi Tsuchimoto et al.",
+      "venue": "Japanese Journal of Applied Physics",
+      "published": "2020-02-19",
+      "recommendedOn": "2026-07-22",
+      "timeTier": "重要旧文",
+      "system": "8英寸CoFeB/MgO/CoFeB/W可靠性测试结构",
+      "conditions": "MgO-stop与完全分离；边长32–320 μm；I–V、VBD、TDDB和OES终点监测",
+      "methods": [
+        "低能IBE",
+        "OES终点",
+        "TDDB",
+        "Weibull统计"
+      ],
+      "summary": "当IBE穿过底部CoFeB形成侧壁时，边长增加会显著提高漏电并降低击穿电压和寿命；63% TDDB寿命从约1440 s降至2 s。调整IBE入射角及角度发散可减轻边缘损伤。",
+      "relevance": "与精确刻蚀终止专利方向直接相关：把“停在哪里、以什么角度刻”连接到可量化的击穿寿命。",
+      "limitation": "使用2 nm MgO的大尺寸可靠性测试结构，不是现代纳米pMTJ完整堆栈；数值不能直接作为产品规格。",
+      "industrialization": "最接近IBE设备参数、终点监控和TDDB计量；仍需纳米柱、真实堆栈、全片角度均匀性、在线端点漂移和批次验证。",
+      "whyRecommended": "它给出了可复现的边缘长度—漏电—TDDB关系，可直接用于刻蚀终点控制方案的技术交底与验收设计。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.35848/1347-4065/ab6cb5",
+      "url": "https://doi.org/10.35848/1347-4065/ab6cb5",
+      "backupUrl": "https://www.academia.edu/120134160/High_reliability_CoFeB_MgO_CoFeB_magnetic_tunnel_junction_fabrication_using_low_damage_ion_beam_etching",
+      "accessNote": "已核验DOI和完整公开稿；出版社页面可能受网络策略限制",
+      "featured": true
+    },
+    {
+      "id": "aip-adv-12-125317",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "D",
+        "E"
+      ],
+      "title": "Influence of sidewall damage on thermal stability in quad-CoFeB/MgO interfaces by micromagnetic simulation",
+      "titleZh": "侧壁损伤对四CoFeB/MgO界面MTJ热稳定性的影响",
+      "authors": "Hiroshi Naganuma, Hiroaki Honjo, Chioko Kaneta et al.",
+      "venue": "AIP Advances",
+      "published": "2022-12-21",
+      "recommendedOn": "2026-07-22",
+      "timeTier": "重要旧文",
+      "system": "18–26 nm四界面CoFeB/MgO自由层MTJ",
+      "conditions": "实验磁参数和约4–5 nm侧壁损伤输入；string/climbing微磁能垒计算",
+      "methods": [
+        "微磁模拟",
+        "最小能量路径",
+        "侧壁损伤模型",
+        "热稳定因子"
+      ],
+      "summary": "模拟显示四界面自由层的两层磁化可能分步翻转并使能垒分裂；侧壁损伤降低Ki后反而可能让能垒合并，因此Δ并非简单随损伤单调下降。示例中无损与损伤模型Δ约134与127。",
+      "relevance": "提醒刻蚀后只比较Δ或矫顽场可能误判，必须同时理解翻转路径、耦合和损伤空间分布。",
+      "limitation": "反直觉结果来自特定参数的微磁模拟，不表示侧壁损伤“有益”；模型把复杂氧化区简化为参数降低。",
+      "industrialization": "最接近失效机理仿真与DOE解释；仍缺同一器件上的三维成分、磁参数反演、WER和保持实测闭环。",
+      "whyRecommended": "它能防止把“指标变化不大”误认为“侧壁没损伤”，对多界面MTJ尤其重要。",
+      "score": 9.2,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0112741",
+      "url": "https://pubs.aip.org/aip/adv/article/12/12/125317/2820215/Influence-of-sidewall-damage-on-thermal-stability",
+      "backupUrl": "https://doi.org/10.1063/5.0112741",
+      "accessNote": "已核验AIP官方开放全文与DOI",
       "featured": true
     }
   ]
