@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-22T09:00:00+08:00",
-  "reportDate": "2026-07-22",
-  "scope": "工作日精选：MTJ刻蚀终止、侧壁修复与晶圆级良率",
+  "updatedAt": "2026-07-23T09:00:00+08:00",
+  "reportDate": "2026-07-23",
+  "scope": "工作日精选：SOT写入可靠性、晶圆级磁场免疫与ALD自旋电极；发布日期仅作信息字段。",
   "history": [
     {
       "date": "2026-07-13",
@@ -166,6 +166,25 @@
         "jos-43-102501",
         "jjap-59-sggb05",
         "aip-adv-12-125317"
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "label": "工作日精选：写入误码、磁场免疫与ALD自旋电极",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "pra-24-064038",
+        "pra-15-064015",
+        "apl-121-112406",
+        "aip-adv-16-025312",
+        "apl-120-213503"
       ]
     }
   ],
@@ -2208,6 +2227,191 @@
       "url": "https://pubs.aip.org/aip/adv/article/12/12/125317/2820215/Influence-of-sidewall-damage-on-thermal-stability",
       "backupUrl": "https://doi.org/10.1063/5.0112741",
       "accessNote": "已核验AIP官方开放全文与DOI",
+      "featured": true
+    },
+    {
+      "id": "pra-24-064038",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Intrinsic back-switching phenomenon in SOT-MRAM devices",
+      "titleZh": "SOT-MRAM器件中的本征反向回写现象",
+      "authors": "Kuldeep Ray, Jérémie Vigier, Perrine Usé et al.",
+      "venue": "Physical Review Applied",
+      "published": "2025-12",
+      "recommendedOn": "2026-07-23",
+      "timeTier": "近两年精选",
+      "system": "亚100 nm CoFeB柱/β-W霍尔十字与完整SOT-MRAM单元",
+      "conditions": "脉冲幅度、面内/垂直磁场和波形统计；宏自旋模拟",
+      "methods": [
+        "概率写入",
+        "脉冲波形工程",
+        "宏自旋模拟",
+        "单元WER"
+      ],
+      "summary": "高写入电流下写概率会下降甚至振荡，并非随机噪声；作者用统计实验和宏自旋模拟归因为SOT驱动的本征反向回写。优化脉冲形状后，完整单元WER低于2×10^-6。",
+      "relevance": "直接回答为何“电流更大”反而写得更差，可转化为波形—器件—WER联合验收。",
+      "limitation": "低于2×10^-6来自单单元统计，不代表大阵列产品级尾部；外场辅助和器件结构仍限制迁移。",
+      "industrialization": "最接近写入窗口和脉冲驱动优化；仍缺300 mm全片、温度范围、批间分布、长期耐久和阵列误码。",
+      "whyRecommended": "它给出一个非常实用的警告：扩大电流裕量可能触发反向回写，必须用概率曲线而非单次翻转判定。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "2503.19840",
+      "doi": "10.1103/vlhq-tf18",
+      "url": "https://arxiv.org/abs/2503.19840",
+      "backupUrl": "https://doi.org/10.1103/vlhq-tf18",
+      "accessNote": "已核验arXiv摘要/PDF、期刊卷页和正式DOI",
+      "featured": true
+    },
+    {
+      "id": "pra-15-064015",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C",
+        "E"
+      ],
+      "title": "Voltage-Gate-Assisted Spin-Orbit-Torque Magnetic Random-Access Memory for High-Density and Low-Power Embedded Applications",
+      "titleZh": "面向高密度低功耗嵌入式应用的栅压辅助SOT-MRAM",
+      "authors": "Y. C. Wu, K. Garello, W. Kim et al.",
+      "venue": "Physical Review Applied",
+      "published": "2021-06",
+      "recommendedOn": "2026-07-23",
+      "timeTier": "重要旧文",
+      "system": "80–150 nm垂直MTJ三端VGSOT器件",
+      "conditions": "最短400 ps脉冲；栅压、速度和尺寸依赖",
+      "methods": [
+        "VGSOT脉冲",
+        "VCMA提取",
+        "尺寸缩放",
+        "能耗分析"
+      ],
+      "summary": "栅压线性调节SOT开关电流；1 V栅压使写电流下降25%，总能耗下降45%，80 nm器件在400 ps下约30 fJ/bit。提取的VCMA系数约15 fJ/Vm。",
+      "relevance": "把原子级界面各向异性、三端器件和写入电路放到同一性能链中。",
+      "limitation": "结果来自特定尺寸和材料的单器件；栅介质寿命、阵列布线与工艺窗口尚未充分覆盖。",
+      "industrialization": "最接近低功耗嵌入式写入方案；仍缺栅压TDDB、阵列面积、互连寄生、WER尾部和批次良率。",
+      "whyRecommended": "它能帮助判断VCMA是否只是材料指标，还是能真正减少写电流与系统能耗。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "2104.09599",
+      "doi": "10.1103/PhysRevApplied.15.064015",
+      "url": "https://arxiv.org/abs/2104.09599",
+      "backupUrl": "https://doi.org/10.1103/PhysRevApplied.15.064015",
+      "accessNote": "已核验arXiv摘要/PDF、期刊卷页和正式DOI",
+      "featured": true
+    },
+    {
+      "id": "apl-121-112406",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Benchmarking of spin–orbit torque vs spin-transfer torque devices",
+      "titleZh": "SOT与STT存储器件的写入性能基准比较",
+      "authors": "Piyush Kumar, Azad Naeemi",
+      "venue": "Applied Physics Letters",
+      "published": "2022-09-16",
+      "recommendedOn": "2026-07-23",
+      "timeTier": "重要旧文",
+      "system": "面内/垂直STT与多种SOT写入机制",
+      "conditions": "实验校准微磁模型与稀有事件增强；比较WER、时间和电流",
+      "methods": [
+        "微磁模拟",
+        "稀有事件增强",
+        "WER基准",
+        "器件—阵列权衡"
+      ],
+      "summary": "用实验校准模型比较STT、场辅助SOT、STT辅助SOT和面外自旋转矩方案，显示写电流、写时间与极低WER之间不存在单一最优点。",
+      "relevance": "为材料选择和器件架构提供统一坐标，避免只凭自旋霍尔角或单次临界电流判断路线。",
+      "limitation": "核心结果是模型预测；阵列外设、制造离散、热路径和实际脉冲寄生仍需硬件验证。",
+      "industrialization": "最接近技术路线筛选和规格分解；仍缺同工艺节点的实测阵列功耗、面积、良率和可靠性对照。",
+      "whyRecommended": "今天的实验文章分别优化波形、栅压和材料，这篇提供统一的WER—时间—电流判断框架。",
+      "score": 9.3,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0101265",
+      "url": "https://pubs.aip.org/aip/apl/article/121/11/112406/2834245/Benchmarking-of-spin-orbit-torque-vs-spin-transfer",
+      "backupUrl": "https://doi.org/10.1063/5.0101265",
+      "accessNote": "已核验AIP官方题录、摘要、作者、日期与DOI",
+      "featured": true
+    },
+    {
+      "id": "aip-adv-16-025312",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Standby magnetic immunity calculator for STT-MRAM",
+      "titleZh": "STT-MRAM待机磁场免疫计算器",
+      "authors": "A. Talapatra, F. Schlaphof, P. Scharf et al.",
+      "venue": "AIP Advances",
+      "published": "2026-02-06",
+      "recommendedOn": "2026-07-23",
+      "timeTier": "近期正式发表",
+      "system": "未封装未屏蔽MRAM晶圆与3D矢量磁场",
+      "conditions": "场强、方向、温度、暴露时间；解析模型、微磁和机器学习",
+      "methods": [
+        "晶圆级矢量磁场",
+        "硬件验证",
+        "物理模型",
+        "机器学习计算器"
+      ],
+      "summary": "作者用3D矢量磁体测量未封装晶圆，并以硬件和微磁验证长期待机安全场模型；机器学习计算器可对复杂任务剖面快速估计磁场免疫。",
+      "relevance": "把低温/变温磁场平台、自动化和产品环境可靠性直接连接起来。",
+      "limitation": "计算器依赖训练与标定范围；待机免疫不代表读写状态免疫，且未封装晶圆不等于最终产品。",
+      "industrialization": "最接近汽车与安全关键环境资格验证；仍需封装、主动读写、跨批次、复杂瞬态场和AEC-Q100流程整合。",
+      "whyRecommended": "它展示低温强磁场平台如何从物性测量转向制造与产品可靠性工具。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/9.0001036",
+      "url": "https://pubs.aip.org/aip/adv/article/16/2/025312/3378789/Standby-magnetic-immunity-calculator-for-STT-MRAM",
+      "backupUrl": "https://doi.org/10.1063/9.0001036",
+      "accessNote": "已核验AIP官方开放全文、硬件方法、日期与DOI",
+      "featured": true
+    },
+    {
+      "id": "apl-120-213503",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "A ferromagnetic spin source grown by atomic layer deposition",
+      "titleZh": "原子层沉积生长的铁磁自旋源及其MTJ验证",
+      "authors": "Alexandre Masseboeuf, Victor Lopez-Dominguez, Bruno Dlubak et al.",
+      "venue": "Applied Physics Letters",
+      "published": "2022-05-24",
+      "recommendedOn": "2026-07-23",
+      "timeTier": "重要旧文",
+      "system": "ALD Co/原位Al2O3/Co完整MTJ自旋阀",
+      "conditions": "200 °C、300个热ALD循环；XPS、SQUID、AFM/c-AFM和4 K磁输运",
+      "methods": [
+        "热ALD",
+        "真空转移",
+        "XPS/SQUID",
+        "导电AFM与4 K TMR"
+      ],
+      "summary": "等离子体自由ALD得到金属铁磁Co，表面粗糙度约0.2 nm RMS且导电均匀；原位Al2O3保护后集成完整MTJ，在4 K观察到隧穿I–V和清晰磁阻信号。",
+      "relevance": "展示ALD、真空互联、原位封护和低温输运如何组成原子制造闭环。",
+      "limitation": "器件约1 μm²、Al2O3势垒且未报告现代pMTJ级TMR/RA、开关和晶圆统计；不能直接替代成熟CoFeB/MgO溅射线。",
+      "industrialization": "最接近三维/高深宽比结构的共形铁磁电极；仍缺合金成分控制、厚度缩放、300 mm均匀性、吞吐、前驱体残留和BEOL兼容。",
+      "whyRecommended": "它不是把ALD停留在薄膜表征，而是做到完整MTJ并用低温输运验证自旋极化。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0087869",
+      "url": "https://pubs.aip.org/aip/apl/article/120/21/213503/2833656/A-ferromagnetic-spin-source-grown-by-atomic-layer",
+      "backupUrl": "https://doi.org/10.1063/5.0087869",
+      "accessNote": "已核验AIP官方全文、工艺参数、4 K输运和DOI",
       "featured": true
     }
   ]

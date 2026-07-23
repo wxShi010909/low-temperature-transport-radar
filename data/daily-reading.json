@@ -1,57 +1,57 @@
 {
-  "date": "2026-07-22",
+  "date": "2026-07-23",
   "review": {
-    "id": "review-ma9010041",
+    "id": "review-jap-133-040902",
     "kind": "每日综述",
-    "track": "E",
+    "track": "B",
     "secondaryTracks": [
       "A",
-      "B",
       "C",
-      "D"
+      "D",
+      "E"
     ],
-    "title": "Failure Analysis in Magnetic Tunnel Junction Nanopillar with Interfacial Perpendicular Magnetic Anisotropy",
-    "titleZh": "界面垂直磁各向异性MTJ纳米柱的失效分析",
-    "authors": "Weisheng Zhao, Xiaoxuan Zhao, Boyu Zhang et al.",
-    "venue": "Materials",
-    "published": "2016-01-12",
-    "recommendedOn": "2026-07-22",
-    "doi": "10.3390/ma9010041",
-    "url": "https://www.mdpi.com/1996-1944/9/1/41",
-    "backupUrl": "https://doi.org/10.3390/ma9010041",
-    "assistantSummary": "从沉积、退火、纳米柱刻蚀、工艺波动和MgO TDDB一直讲到电路与系统容错，适合作为今天“侧壁—良率—可靠性”主线的总框架。",
-    "whySelected": "虽然发表较早，但它能帮助基础较弱读者把原子级厚度波动、刻蚀损伤和产品失效放进同一逻辑链。",
+    "title": "Perspectives on field-free spin–orbit torque devices for memory and computing applications",
+    "titleZh": "无外场SOT器件用于存储与计算的路线透视",
+    "authors": "Victor Lopez-Dominguez, Yixin Shao, Pedram Khalili Amiri",
+    "venue": "Journal of Applied Physics",
+    "published": "2023-01-26",
+    "recommendedOn": "2026-07-23",
+    "doi": "10.1063/5.0135185",
+    "url": "https://pubs.aip.org/aip/jap/article/133/4/040902/2866371/Perspectives-on-field-free-spin-orbit-torque",
+    "backupUrl": "https://doi.org/10.1063/5.0135185",
+    "assistantSummary": "系统比较结构倾斜、交换偏置、反铁磁、DMI、低对称材料和面外自旋等无外场SOT路线，并把材料对称性、器件集成和计算应用放在一起。",
+    "whySelected": "今天5篇涉及反向回写、VGSOT和可靠性，这篇Perspective能帮助判断各种“破缺对称性”方案是否真正适合制造。",
     "readingGuide": [
-      "先看典型MTJ制造流程和三类工艺波动。",
-      "重点看刻蚀侧壁与MgO TDDB章节。",
-      "最后看电路容错，但注意它不能替代材料/工艺根因修复。"
+      "先看无外场为什么是SOT-MRAM硬门槛。",
+      "比较各路线的额外材料/工艺代价。",
+      "最后看存储与计算应用，并区分实验事实和前景判断。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-tmag-2015-2512588",
+      "id": "classic-apl-101-142406",
       "kind": "经典方法",
-      "track": "E",
+      "track": "D",
       "secondaryTracks": [
-        "B",
-        "D"
+        "A",
+        "B"
       ],
-      "title": "Precise Damage Observation in Ion-Beam Etched MTJ",
-      "titleZh": "离子束刻蚀MTJ侧壁损伤的精确观察",
-      "authors": "Yuichi Ohsawa, Naoharu Shimomura, Tadaomi Daibou et al.",
-      "venue": "IEEE Transactions on Magnetics",
-      "published": "2016-07-01",
-      "recommendedOn": "2026-07-22",
-      "doi": "10.1109/TMAG.2015.2512588",
-      "url": "https://ieeexplore.ieee.org/document/7377109/",
-      "backupUrl": "https://samurai.nims.go.jp/articles/8c086f80-392d-4929-af82-5ef29a912665?locale=en",
-      "assistantSummary": "通过把传统圆柱改成更容易辨认晶格退化的矩形MTJ，再用截面TEM直接观察约1.3 nm深的MgO侧壁晶化损伤，是后续侧壁模型的重要实验依据。",
-      "whySelected": "它提供一种很有价值的科研思路：为了看清微小损伤，可以专门设计“可观察测试结构”，而不是只对最终器件做模糊失效分析。",
+      "title": "Bit error rate investigation of spin-transfer-switched magnetic tunnel junctions",
+      "titleZh": "自旋转移MTJ的高速误码率测试方法",
+      "authors": "Zihui Wang, Yuchen Zhou, Jing Zhang, Yiming Huai",
+      "venue": "Applied Physics Letters",
+      "published": "2012-10-03",
+      "recommendedOn": "2026-07-23",
+      "doi": "10.1063/1.4756787",
+      "url": "https://pubs.aip.org/aip/apl/article/101/14/142406/127970/Bit-error-rate-investigation-of-spin-transfer",
+      "backupUrl": "https://doi.org/10.1063/1.4756787",
+      "assistantSummary": "利用反射信号在无CMOS集成条件下实现每秒超过10^6次写入事件，并在时域观察翻转过程；优化面内MTJ展示到10^-8的无错误运行。",
+      "whySelected": "它是把实验室单器件测试升级为统计可靠性测试的典型方法，与你已有自动化平台经验高度契合。",
       "readingGuide": [
-        "先看为什么选择矩形MTJ。",
-        "重点看截面制样方向和亮场TEM损伤判据。",
-        "把1.3 nm视为该工艺条件结果，不要当成所有IBE的固定损伤宽度。"
+        "先看反射信号如何判断状态。",
+        "重点看高速事件计数和时域诊断。",
+        "注意10^-8是特定器件与测试条件，不是现代pMTJ通用指标。"
       ],
       "notNew": true
     }

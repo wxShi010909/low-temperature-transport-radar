@@ -92,6 +92,18 @@
       "atomicIds": [
         "2026-07-22-etch-stop-closed-loop"
       ]
+    },
+    {
+      "date": "2026-07-23",
+      "opportunityIds": [
+        "2026-07-23-waveform-wer-map"
+      ],
+      "methodIds": [
+        "2026-07-23-vector-field-qualification"
+      ],
+      "atomicIds": [
+        "2026-07-23-ald-spin-source-loop"
+      ]
     }
   ],
   "items": [
@@ -1922,6 +1934,163 @@
       ],
       "researchConnection": "可复用用户已有自动测量、数据处理和AI辅助分析经验，并迁移到当前MTJ产业化方向。",
       "takeaway": "产业化思维从“每片固定测多少个、坏点是否保留”开始。"
+    },
+    {
+      "id": "2026-07-23-waveform-wer-map",
+      "date": "2026-07-23",
+      "type": "research-opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/C → B",
+      "title": "SOT脉冲波形—反向回写—WER双边界图",
+      "subtitle": "同时寻找最低写入电流与最高安全电流",
+      "summary": "扫描脉冲幅值、上升沿、平台时间和下降沿，建立正常翻转与反向回写的二维概率窗口。",
+      "status": "文献启发的待验证方案",
+      "relatedPaperIds": [
+        "pra-24-064038",
+        "apl-121-112406"
+      ],
+      "question": "怎样避免扩大写电流时反而进入回写区？",
+      "rationale": "实验已证明高电流回写，基准研究说明必须用WER—时间—电流共同评价。",
+      "workflow": [
+        "固定器件与温度，扫描幅值和脉宽。",
+        "加入上升/下降沿与两段式脉冲。",
+        "每点采集足够事件并给置信区间。",
+        "用宏自旋/微磁拟合边界。",
+        "跨尺寸和批次验证。"
+      ],
+      "equipment": [
+        "高速脉冲源",
+        "偏置T和宽带探针",
+        "示波器/比较器",
+        "自动事件计数",
+        "微磁仿真"
+      ],
+      "measurements": [
+        "写概率",
+        "回写概率",
+        "瞬态阻态",
+        "结温估计",
+        "波形失真"
+      ],
+      "metrics": [
+        "WER下限",
+        "安全电流上限",
+        "窗口宽度",
+        "跨器件3σ",
+        "批次复现"
+      ],
+      "evidenceBoundary": "高电流回写和波形缓解有文献证据；目标堆栈的安全窗口必须重新实测。",
+      "firstSteps": [
+        "先做一个器件的幅值×脉宽网格。",
+        "保留全部失败事件波形。",
+        "确认是否存在非单调概率再扩展波形DOE。"
+      ],
+      "researchConnection": "直接服务MTJ器件测试、驱动电路和产业写入裕量。",
+      "takeaway": "可靠写入窗口有上下两条边界，而不是电流越大越好。"
+    },
+    {
+      "id": "2026-07-23-vector-field-qualification",
+      "date": "2026-07-23",
+      "type": "method-platform",
+      "typeZh": "方法与设备",
+      "trackLabel": "D/A → B",
+      "title": "矢量磁场—温度—任务剖面MRAM资格平台",
+      "subtitle": "把低温磁场设备升级为产品环境可靠性工具",
+      "summary": "在Cryogenic、Oxford或Quantum Design平台上，用旋转台/矢量磁场重放待机、读写和温度任务谱。",
+      "status": "本站分析建议",
+      "relatedPaperIds": [
+        "aip-adv-16-025312"
+      ],
+      "question": "现有低温强磁场平台怎样服务汽车、航天和工业MRAM验证？",
+      "rationale": "文献证明晶圆级3D矢量场与模型可预测待机安全边界，但主动读写和封装仍需扩展。",
+      "workflow": [
+        "定义目标应用场强—方向—温度—时间谱。",
+        "标定三轴场、温度和样品角度。",
+        "分别测待机、读和写错误。",
+        "建立物理模型并用硬件校准。",
+        "加入封装/屏蔽样品比较。"
+      ],
+      "equipment": [
+        "Cryogenic/Oxford/Quantum Design磁场平台",
+        "三轴/旋转样品杆",
+        "低噪声读写链",
+        "温控与自动化软件",
+        "封装测试板"
+      ],
+      "measurements": [
+        "数据保持",
+        "读扰",
+        "写裕量",
+        "温度依赖",
+        "瞬态恢复"
+      ],
+      "metrics": [
+        "安全场",
+        "BER/WER",
+        "角度最坏点",
+        "模型误差",
+        "封装屏蔽效率"
+      ],
+      "evidenceBoundary": "文献直接支持待机晶圆测量；主动读写、低温和具体设备实现是扩展方案。",
+      "firstSteps": [
+        "先做室温三个方向静态场。",
+        "选待机与写入两种状态比较。",
+        "记录原始事件并建立最简能垒模型。"
+      ],
+      "researchConnection": "充分利用用户已有低温自动化、磁体状态机和数据分析经验。",
+      "takeaway": "低温输运平台可以从“测曲线”升级为“重放真实应用环境”。"
+    },
+    {
+      "id": "2026-07-23-ald-spin-source-loop",
+      "date": "2026-07-23",
+      "type": "atomic-route",
+      "typeZh": "原子制造路线",
+      "trackLabel": "E → B/A",
+      "title": "ALD铁磁电极—原位封护—自旋输运闭环",
+      "subtitle": "把共形原子制造从薄膜表征推进到器件验证",
+      "summary": "以真空转移保护最后几个埃的界面，用XPS/c-AFM筛选，再以4 K/室温MTJ输运验证自旋极化。",
+      "status": "文献启发的待验证方案",
+      "relatedPaperIds": [
+        "apl-120-213503"
+      ],
+      "question": "ALD金属铁磁层如何在离开反应腔后仍保持可用自旋极化？",
+      "rationale": "文献表明充分还原、真空转移和原位势垒是关键，但尚未达到现代CoFeB/MgO pMTJ规格。",
+      "workflow": [
+        "建立ALD前驱体/温度/循环DOE。",
+        "真空互联或手提箱转移并立即封护。",
+        "用XPS、AFM/c-AFM和磁性筛选。",
+        "制造同版图ALD与溅射对照MTJ。",
+        "比较4 K/室温TMR、RA和可靠性。"
+      ],
+      "equipment": [
+        "热ALD",
+        "真空互联/手提箱",
+        "磁控溅射",
+        "XPS与AFM/c-AFM",
+        "低温输运"
+      ],
+      "measurements": [
+        "还原态",
+        "粗糙度",
+        "RA均匀性",
+        "磁化",
+        "TMR/温变"
+      ],
+      "metrics": [
+        "0.2 nm级粗糙度复现",
+        "热点密度",
+        "片内RA分布",
+        "TMR与溅射比值",
+        "批次稳定"
+      ],
+      "evidenceBoundary": "ALD Co作为自旋源已有器件证据；迁移到纳米pMTJ、CoFeB/MgO和量产结构尚未证明。",
+      "firstSteps": [
+        "先复现Co/Ru薄膜和原位保护。",
+        "用c-AFM做快速均匀性门槛。",
+        "只对通过薄膜门槛的样品做器件。"
+      ],
+      "researchConnection": "直接结合原子级制造、真空互联、表征和低温输运。",
+      "takeaway": "原子层制造的真正验收点是界面进入器件后仍能输出自旋极化电流。"
     }
   ]
 }
