@@ -62,6 +62,13 @@
       "classicIds": [
         "classic-apl-101-142406"
       ]
+    },
+    {
+      "date": "2026-07-24",
+      "reviewId": "review-jvstb-42-041501",
+      "classicIds": [
+        "classic-apl-87-072503"
+      ]
     }
   ],
   "items": [
@@ -691,6 +698,59 @@
         "先看反射信号如何判断状态。",
         "重点看高速事件计数和时域诊断。",
         "注意10^-8是特定器件与测试条件，不是现代pMTJ通用指标。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-jvstb-42-041501",
+      "kind": "每日综述",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Future of plasma etching for microelectronics: Challenges and opportunities",
+      "titleZh": "面向未来微电子制造的等离子体刻蚀：挑战与机会",
+      "authors": "G. S. Oehrlein, S. Hamaguchi, D. B. Graves et al.",
+      "venue": "Journal of Vacuum Science & Technology B 42, 041501 (2024)",
+      "published": "2024-06-14",
+      "recommendedOn": "2026-07-24",
+      "doi": "10.1116/6.0003579",
+      "url": "https://pubs.aip.org/avs/jvb/article/42/4/041501/3297248/Future-of-plasma-etching-for-microelectronics",
+      "backupUrl": "https://doi.org/10.1116/6.0003579",
+      "assistantSummary": "由学界、IBM、Samsung、Kioxia及多家设备企业专家共同梳理原子层刻蚀、低温刻蚀、新材料挥发性、原位计量、腔室数字孪生、AI控制与可持续制造。",
+      "whySelected": "今天器件文章同时涉及自对准刻蚀、TiN模板和离子注入；这篇综述提供从表面反应到量产良率的统一工艺框架。",
+      "readingGuide": [
+        "先看原子层刻蚀与低温刻蚀章节。",
+        "再看原位诊断、机器学习和数字孪生。",
+        "最后看新材料、不可挥发副产物、设备与可持续性；约90–120分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-apl-87-072503",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Giant tunneling magnetoresistance effect in low-resistance CoFeB/MgO(001)/CoFeB magnetic tunnel junctions for read-head applications",
+      "titleZh": "低RA CoFeB/MgO/CoFeB结中的室温巨隧穿磁阻",
+      "authors": "Koji Tsunekawa, David D. Djayaprawira, Mitsuru Nagai et al.",
+      "venue": "Applied Physics Letters 87, 072503 (2005)",
+      "published": "2005-08-08",
+      "recommendedOn": "2026-07-24",
+      "doi": "10.1063/1.2012525",
+      "url": "https://pubs.aip.org/aip/apl/article/87/7/072503/117521/Giant-tunneling-magnetoresistance-effect-in-low",
+      "backupUrl": "https://doi.org/10.1063/1.2012525",
+      "assistantSummary": "通过在底部CoFeB与MgO之间插入4 Å Mg并控制不完全氧化，在室温低RA条件下获得最高138%磁阻，说明最后几个埃的成核/氧化状态可以同时决定织构、RA和TMR。",
+      "whySelected": "它与今天TiN纹理和VCMA界面文章组成同一条线：底层模板与亚纳米插层如何跨界面决定最终输运。",
+      "readingGuide": [
+        "先看4 Å Mg插层的工艺动机。",
+        "再比较不同MgO厚度下MR变化。",
+        "注意该器件面向读头而非现代pMTJ存储；约20–30分钟。"
       ],
       "notNew": true
     }

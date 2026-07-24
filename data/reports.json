@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-23T09:00:00+08:00",
-  "reportDate": "2026-07-23",
-  "scope": "工作日精选：SOT写入可靠性、晶圆级磁场免疫与ALD自旋电极；发布日期仅作信息字段。",
+  "updatedAt": "2026-07-24T09:06:00+08:00",
+  "reportDate": "2026-07-24",
+  "scope": "跨时间层次精选，优先原子级制造、MTJ/MRAM、产业化验证与低温可靠性；日期表示本站推荐日，不代表论文发表日。",
   "history": [
     {
       "date": "2026-07-13",
@@ -185,6 +185,25 @@
         "apl-121-112406",
         "aip-adv-16-025312",
         "apl-120-213503"
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "label": "工作日精选：自对准SOT、界面织构、VCMA与自热可靠性",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "ieee-led-2025-3581997",
+        "irps-2025-10982942",
+        "apl-128-042401",
+        "apl-128-202401",
+        "apl-128-142403"
       ]
     }
   ],
@@ -2412,6 +2431,191 @@
       "url": "https://pubs.aip.org/aip/apl/article/120/21/213503/2833656/A-ferromagnetic-spin-source-grown-by-atomic-layer",
       "backupUrl": "https://doi.org/10.1063/5.0087869",
       "accessNote": "已核验AIP官方全文、工艺参数、4 K输运和DOI",
+      "featured": true
+    },
+    {
+      "id": "ieee-led-2025-3581997",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "D",
+        "E"
+      ],
+      "title": "Manufacturing-Friendly SOT-MTJ Device With High Reliability and Switching Efficiency",
+      "titleZh": "面向制造的自对准圆角矩形SOT-MTJ：速度、耐久与工艺窗口",
+      "authors": "Lei Zhao, Shasha Wang, Hengan Zhou et al.",
+      "venue": "IEEE Electron Device Letters 46, 1345 (2025)",
+      "published": "2025-06-23",
+      "recommendedOn": "2026-07-24",
+      "timeTier": "近两年精选",
+      "system": "自对准圆角矩形SOT-MTJ、双通孔底电极",
+      "conditions": "单次刻蚀定义MTJ柱与SOT沟道；电学开关、耐久与热稳定测试",
+      "methods": [
+        "自对准图形化",
+        "单步刻蚀",
+        "纳秒脉冲",
+        "耐久统计"
+      ],
+      "summary": "作者把圆角矩形MTJ柱和SOT沟道放在一次刻蚀中定义，并用两端通孔底电极减少精确停刻依赖；实测TMR最高125%、2 ns开关和超过10^12次写入循环，短边与圆形器件直径相同时，Δ/Ic0约提高1.5倍。",
+      "relevance": "把版图、刻蚀容差、磁热稳定和写入效率放进同一器件结构，直接对应SOT-MRAM制造。",
+      "limitation": "公开结果仍不是完整阵列产品数据；尚缺全片尾部分布、跨批次、读写误码、BEOL热预算、封装后磁场/温度可靠性。",
+      "industrialization": "最接近器件集成与量产图形化环节；下一门槛是300 mm全片良率、阵列级ppm/ppb错误率、批间稳定、后段互联和封装可靠性。",
+      "whyRecommended": "今天推荐它，是因为它不只追求低电流，而是用结构设计消除一个真实的刻蚀工艺窗口问题。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1109/LED.2025.3581997",
+      "url": "https://ieeexplore.ieee.org/document/11045959/",
+      "backupUrl": "https://doi.org/10.1109/LED.2025.3581997",
+      "accessNote": "已核验IEEE题录页、作者、在线日期、摘要指标和DOI；全文可能需要机构权限",
+      "featured": true
+    },
+    {
+      "id": "irps-2025-10982942",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Observation of Self-heating Process in STT-MRAM and Its Implication in Device Operations",
+      "titleZh": "STT-MRAM自热过程的直接观测及其对器件操作的影响",
+      "authors": "Zhangsheng Lan, Yiming Qu, Shifan Gao et al.",
+      "venue": "2025 IEEE International Reliability Physics Symposium (IRPS)",
+      "published": "2025-03-30",
+      "recommendedOn": "2026-07-24",
+      "timeTier": "近两年精选",
+      "system": "STT-MRAM器件自热与操作窗口",
+      "conditions": "电写入过程中温升观测、热—电—磁关联分析",
+      "methods": [
+        "器件脉冲测试",
+        "温度表征",
+        "自热建模",
+        "操作影响分析"
+      ],
+      "summary": "作者在STT-MRAM操作中观测到自热过程，并报告结区温升可超过75 K；这说明台温或环境温度并不等于写入瞬间的MTJ真实温度，保持、击穿和误码模型必须加入瞬态自热。",
+      "relevance": "直接连接低温输运平台、脉冲写入、MgO可靠性和器件热反馈。",
+      "limitation": "公开题录与摘要不足以覆盖全部器件堆栈、温度提取误差和阵列空间分布；不能把75 K直接外推到其他尺寸或脉冲。",
+      "industrialization": "最接近可靠性资格认证和写入窗口校准；仍缺不同堆栈/尺寸/封装的温升统计、热循环、TDDB耦合和产品任务谱验证。",
+      "whyRecommended": "今天推荐它，是因为低温测试最容易把冷台温度误当结温，自热会系统性误判写入机制和寿命。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1109/IRPS48204.2025.10982942",
+      "url": "https://ieeexplore.ieee.org/document/10982942/",
+      "backupUrl": "https://doi.org/10.1109/IRPS48204.2025.10982942",
+      "accessNote": "已核验IEEE题录、OpenAIRE题录、日期、作者和DOI；全文可能需要机构权限",
+      "featured": true
+    },
+    {
+      "id": "apl-128-042401",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "E"
+      ],
+      "title": "Role of Rashba spin–orbit coupling for voltage-controlled magnetic anisotropy of Fe/MgO magnetic tunnel junctions",
+      "titleZh": "Rashba自旋轨道耦合如何控制Fe/MgO界面的VCMA",
+      "authors": "Y.-N. Apriati, M. Tsuchida, K. Nawa, K. Nakamura",
+      "venue": "Applied Physics Letters 128, 042401 (2026)",
+      "published": "2026-01-26",
+      "recommendedOn": "2026-07-24",
+      "timeTier": "近期正式发表",
+      "system": "Fe/MgO及AlN/MgO、LiF/MgO界面模型",
+      "conditions": "第一性原理电子结构与VCMA计算",
+      "methods": [
+        "第一性原理",
+        "Rashba劈裂",
+        "轨道杂化分析",
+        "界面材料筛选"
+      ],
+      "summary": "计算把Fe/MgO的VCMA归因于界面反演对称破缺产生的Rashba耦合及Fe-d/O-p轨道杂化；理想Fe/MgO模型给出29.1 fJ/Vm，AlN/MgO候选提高到46.9 fJ/Vm，LiF/MgO降到24.7 fJ/Vm。",
+      "relevance": "为原子级界面成分控制提供可验证方向：不是只调MgO厚度，而是调最邻近阴离子轨道能级。",
+      "limitation": "数值来自理想化模型；未包含真实CoFeB无序、氧空位、B扩散、粗糙度、应变和有限温度，也没有器件实验。",
+      "industrialization": "最接近材料筛选与界面设计；距离器件尚缺可沉积的亚纳米复合势垒、RA/TMR/TDDB、退火稳定性和300 mm均匀性验证。",
+      "whyRecommended": "今天推荐它，是因为它把VCMA从经验参数拆成可由界面元素和轨道工程控制的原子制造问题。",
+      "score": 9.3,
+      "priority": "B",
+      "arxiv": "",
+      "doi": "10.1063/5.0304651",
+      "url": "https://pubs.aip.org/aip/apl/article/128/4/042401/3378092/Role-of-Rashba-spin-orbit-coupling-for-voltage",
+      "backupUrl": "https://doi.org/10.1063/5.0304651",
+      "accessNote": "已核验AIP官方页面、作者、日期、DOI与全部摘要数值",
+      "featured": true
+    },
+    {
+      "id": "apl-128-202401",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Improved TMR on CoFeB/MgO/CoFeB p-MTJ on textured TiN seed layer",
+      "titleZh": "纹理化TiN种子层提升CoFeB/MgO/CoFeB垂直MTJ性能",
+      "authors": "Hannah Tran, W. Kim, R. Carpenter, C. Merckling et al.",
+      "venue": "Applied Physics Letters 128, 202401 (2026)",
+      "published": "2026-05-18",
+      "recommendedOn": "2026-07-24",
+      "timeTier": "近期正式发表",
+      "system": "TiN/W/CoFeB/MgO/CoFeB垂直MTJ",
+      "conditions": "工业标准Si晶圆；结构、磁性、阻尼与TMR对比",
+      "methods": [
+        "纹理种子层",
+        "薄膜结构表征",
+        "FMR/磁性",
+        "TMR"
+      ],
+      "summary": "纹理化TiN通过W缓冲层改善CoFeB/MgO织构和界面平整度；实测TMR达91%，约为半非晶参考的3倍，自由层矫顽场从7.32 mT降至0.25 mT，Gilbert阻尼降低约11%。",
+      "relevance": "展示了底层织构如何跨越多个原子界面传递并最终改变隧穿、阻尼和PMA。",
+      "limitation": "薄膜/结级结果尚未展示纳米柱写入、RA尾部、WER、保持、耐久和晶圆级统计；91%也不是现有最高TMR。",
+      "industrialization": "最接近种子层—缓冲层—自由层堆栈工程；仍需证明与BEOL TiN、CMP表面、全片纹理分布、刻蚀和高温退火兼容。",
+      "whyRecommended": "今天推荐它，是因为TiN本就是集成常见材料，这条路线有机会把晶体织构工程嵌入CMOS兼容流程。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0325380",
+      "url": "https://pubs.aip.org/aip/apl/article/128/20/202401/3391472/Improved-TMR-on-CoFeB-MgO-CoFeB-p-MTJ-on-textured",
+      "backupUrl": "https://doi.org/10.1063/5.0325380",
+      "accessNote": "已核验AIP官方页面、作者、日期、DOI和摘要数据",
+      "featured": true
+    },
+    {
+      "id": "apl-128-142403",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C",
+        "E"
+      ],
+      "title": "Sub-100-nm multistate spin–orbit torque magnetic tunnel junction devices",
+      "titleZh": "亚100 nm多状态SOT-MTJ：用离子注入各向异性梯度控制分段翻转",
+      "authors": "Peiyue Yu, Shuo Xu, Yanru Li et al.",
+      "venue": "Applied Physics Letters 128, 142403 (2026)",
+      "published": "2026-04-07",
+      "recommendedOn": "2026-07-24",
+      "timeTier": "近期正式发表",
+      "system": "70 nm级W/CoFeB/MgO SOT-MTJ与合成反铁磁参考层",
+      "conditions": "离子注入形成纳米PMA梯度；SOT电流驱动多状态翻转",
+      "methods": [
+        "离子注入",
+        "纳米图形化",
+        "SOT开关",
+        "多状态输运"
+      ],
+      "summary": "作者用离子注入在器件内制造PMA梯度，使SOT驱动的翻转区域随电流逐步扩展，并在70 nm级MTJ中实现无外场、可保持的多状态磁化。",
+      "relevance": "把原子/离子级局域改性、纳米器件制备和输运读出连接起来，可用于多比特存储或类脑权重。",
+      "limitation": "多状态数量、状态间距和稳定性依赖局域损伤/梯度；尚缺大样本状态分布、循环漂移、温度保持和阵列写入选择性。",
+      "industrialization": "最接近多级单元与神经形态器件；仍需离子注入剂量全片均匀性、状态误码、读干扰、耐久、校准开销和CMOS驱动验证。",
+      "whyRecommended": "今天推荐它，是因为它把离子注入从单纯损伤源变成可设计的器件功能梯度。",
+      "score": 9.2,
+      "priority": "B",
+      "arxiv": "",
+      "doi": "10.1063/5.0321512",
+      "url": "https://pubs.aip.org/aip/apl/article/128/14/142403/3386389/Sub-100-nm-multistate-spin-orbit-torque-magnetic",
+      "backupUrl": "https://doi.org/10.1063/5.0321512",
+      "accessNote": "已核验AIP官方页面、作者、日期、器件堆栈、摘要和DOI",
       "featured": true
     }
   ]

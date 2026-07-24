@@ -104,6 +104,18 @@
       "atomicIds": [
         "2026-07-23-ald-spin-source-loop"
       ]
+    },
+    {
+      "date": "2026-07-24",
+      "opportunityIds": [
+        "2026-07-24-self-aligned-sot-process-window"
+      ],
+      "methodIds": [
+        "2026-07-24-junction-temperature-platform"
+      ],
+      "atomicIds": [
+        "2026-07-24-interface-template-loop"
+      ]
     }
   ],
   "items": [
@@ -2091,6 +2103,164 @@
       ],
       "researchConnection": "直接结合原子级制造、真空互联、表征和低温输运。",
       "takeaway": "原子层制造的真正验收点是界面进入器件后仍能输出自旋极化电流。"
+    },
+    {
+      "id": "2026-07-24-self-aligned-sot-process-window",
+      "date": "2026-07-24",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/E → A/D",
+      "title": "自对准SOT-MTJ的工艺窗口—误码联合DOE",
+      "subtitle": "验证结构容差是否真正转化为尾部良率",
+      "summary": "将圆角矩形尺寸、刻蚀偏差、侧壁损伤与低温/室温WER放进同一统计设计。",
+      "status": "文献启发的待验证方案",
+      "relatedPaperIds": [
+        "ieee-led-2025-3581997",
+        "irps-2025-10982942"
+      ],
+      "question": "自对准结构扩大了几何窗口后，是否也能压低器件尾部误码和热漂移？",
+      "rationale": "论文给出速度、耐久和效率优势，但产品相关的全片尾部与温度任务谱仍缺失。",
+      "workflow": [
+        "设计短边、长宽比和通孔覆盖DOE。",
+        "叠加IBE角度/过刻量与封护条件。",
+        "做全片TMR/RA/Hc/Δ快速映射。",
+        "抽取尾部器件做低温至高温纳秒WER和自热校准。",
+        "建立工艺参数到ppm错误的模型。"
+      ],
+      "equipment": [
+        "磁控溅射与退火",
+        "电子束/光刻",
+        "IBE/RIE与原位封护",
+        "晶圆探针台",
+        "低温磁输运与高速脉冲"
+      ],
+      "measurements": [
+        "CD/侧壁角",
+        "TMR/RA",
+        "Δ/Ic0",
+        "WER",
+        "结温与耐久"
+      ],
+      "metrics": [
+        "全片合格率",
+        "3σ/尾部RA",
+        "2 ns WER",
+        "自热温升",
+        "跨批次漂移"
+      ],
+      "evidenceBoundary": "单器件结构优势已有实验；全片尾部和产品级错误率是本站提出的待验证扩展。",
+      "firstSteps": [
+        "先用3个长宽比和2个过刻量做最小DOE。",
+        "优先保存每颗器件坐标与原始波形。",
+        "先测中心与边缘各20颗验证空间趋势。"
+      ],
+      "researchConnection": "直接结合用户的MTJ制造、低温输运和产业化评价。",
+      "takeaway": "结构所谓“制造友好”必须由尾部良率和误码证明，而不是只看平均TMR。"
+    },
+    {
+      "id": "2026-07-24-junction-temperature-platform",
+      "date": "2026-07-24",
+      "type": "method",
+      "typeZh": "设备与测量方案",
+      "trackLabel": "D → A/B",
+      "title": "低温MTJ冷台温度—结温双温标平台",
+      "subtitle": "把自热从误差源变成可测工艺反馈",
+      "summary": "在Cryogenic/Oxford/Quantum Design平台上加入高速脉冲、R(T)标定和占空比控制，报告瞬态结温而非只报冷台温。",
+      "status": "文献启发的待验证方案",
+      "relatedPaperIds": [
+        "irps-2025-10982942"
+      ],
+      "question": "在4–300 K测试中，如何定量分离环境温度、平均温升和纳秒结温？",
+      "rationale": "文献报告操作温升可超过75 K，足以改变磁热激活和MgO寿命。",
+      "workflow": [
+        "建立低偏压R(T)温度计曲线。",
+        "校准线缆损耗和实际到结脉冲。",
+        "扫描幅度、宽度和占空比。",
+        "用脉冲后电阻或独立热学方法反演结温。",
+        "把结温加入WER/TDDB模型。"
+      ],
+      "equipment": [
+        "Cryogenic/Oxford/Quantum Design低温系统",
+        "高速脉冲源与示波器",
+        "偏置T/射频探针",
+        "低噪声电桥",
+        "自动化温控磁控接口"
+      ],
+      "measurements": [
+        "冷台温",
+        "结电阻",
+        "脉冲波形",
+        "WER",
+        "击穿/保持"
+      ],
+      "metrics": [
+        "结温不确定度",
+        "幅度/脉宽温升图",
+        "重复性",
+        "热恢复时间",
+        "模型残差"
+      ],
+      "evidenceBoundary": "自热存在有实验依据；具体反演方法与验收阈值需在用户堆栈上校准。",
+      "firstSteps": [
+        "选3种RA器件做低偏压R(T)。",
+        "在同一冷台温度扫描单脉冲能量。",
+        "先验证温升排序而非追求绝对精度。"
+      ],
+      "researchConnection": "可直接升级现有低温输运平台，并服务器件可靠性与工艺反馈。",
+      "takeaway": "低温MTJ测试的第二支温度计必须放在器件物理里，而不只是冷台上。"
+    },
+    {
+      "id": "2026-07-24-interface-template-loop",
+      "date": "2026-07-24",
+      "type": "atomic-route",
+      "typeZh": "原子制造路线",
+      "trackLabel": "E/C → B/A",
+      "title": "TiN纹理—亚纳米插层—VCMA/TMR界面闭环",
+      "subtitle": "从最底层模板追踪到最后几个埃的输运",
+      "summary": "组合TiN/W纹理、亚纳米Mg/AlN候选和界面化学表征，建立取向—轨道—TMR/VCMA/TDDB关联。",
+      "status": "本站分析建议",
+      "relatedPaperIds": [
+        "apl-128-202401",
+        "apl-128-042401"
+      ],
+      "question": "底层纹理与界面阴离子工程能否协同提高TMR和VCMA，而不恶化RA及可靠性？",
+      "rationale": "一篇实验证明底层纹理跨层传递，另一篇理论预测界面阴离子轨道控制VCMA；协同关系尚未实验。",
+      "workflow": [
+        "制备TiN纹理×W厚度基线。",
+        "加入0–数Å Mg或AlN类界面插层。",
+        "用XRD/TEM/EELS/XPS确认取向和化学态。",
+        "测TMR/RA/FMR/VCMA。",
+        "对优选组合做TDDB、退火和全片均匀性。"
+      ],
+      "equipment": [
+        "PVD/ALD原子级沉积",
+        "真空互联",
+        "XRD与截面TEM/EELS",
+        "XPS",
+        "FMR与输运/VCMA测试"
+      ],
+      "measurements": [
+        "纹理度",
+        "界面氧化/元素分布",
+        "TMR/RA",
+        "阻尼/PMA/VCMA",
+        "TDDB"
+      ],
+      "metrics": [
+        "TMR与VCMA协同增益",
+        "RA分布",
+        "0.1 nm级厚度重复",
+        "退火后界面保持",
+        "击穿寿命"
+      ],
+      "evidenceBoundary": "TiN纹理的TMR改善是实验事实；AlN/MgO的VCMA增强是理论预测；两者协同是本站待验证方案。",
+      "firstSteps": [
+        "先只做TiN纹理×W厚度二维矩阵。",
+        "用薄膜样品筛掉粗糙/高阻尼组合。",
+        "再在最佳模板上加入一个插层变量。"
+      ],
+      "researchConnection": "高度契合原子级制造、MTJ界面控制、表征和器件产业化。",
+      "takeaway": "原子制造DOE要一次只增加一个界面变量，并用可靠性指标防止“高TMR但不可制造”。"
     }
   ]
 }
