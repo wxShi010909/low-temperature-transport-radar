@@ -69,6 +69,13 @@
       "classicIds": [
         "classic-apl-87-072503"
       ]
+    },
+    {
+      "date": "2026-07-27",
+      "reviewId": "review-jap-135-220701",
+      "classicIds": [
+        "classic-apl-93-082508"
+      ]
     }
   ],
   "items": [
@@ -751,6 +758,59 @@
         "先看4 Å Mg插层的工艺动机。",
         "再比较不同MgO厚度下MR变化。",
         "注意该器件面向读头而非现代pMTJ存储；约20–30分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-jap-135-220701",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C",
+        "E"
+      ],
+      "title": "Voltage-controlled magnetic anisotropy-based spintronic devices for magnetic memory applications: Challenges and perspectives",
+      "titleZh": "VCMA磁存储器件：挑战与发展视角",
+      "authors": "Pinkesh Kumar Mishra, Meenakshi Sravani, Arnab Bose, Swapnil Bhuktare",
+      "venue": "Journal of Applied Physics 135, 220701 (2024)",
+      "published": "2024-06-14",
+      "recommendedOn": "2026-07-27",
+      "doi": "10.1063/5.0201648",
+      "url": "https://pubs.aip.org/aip/jap/article/135/22/220701/3298369/Voltage-controlled-magnetic-anisotropy-based",
+      "backupUrl": "https://doi.org/10.1063/5.0201648",
+      "assistantSummary": "系统梳理VCMA物理机制、无外场翻转、WER、操作窗口、VCMA系数、读干扰和快速读取，并强调低能耗演示与可制造存储之间仍有明显差距。",
+      "whySelected": "今天核心文章用RA分离VCMA、STT与自热；这篇综述提供器件级评价框架，避免把高VCMA系数直接等同于低误码存储。",
+      "readingGuide": [
+        "先看VCMA机制与界面材料部分。",
+        "再看无外场翻转、WER和操作窗口。",
+        "最后看读干扰、器件缩放和产业障碍；约75–100分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-apl-93-082508",
+      "kind": "经典文章",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Tunnel magnetoresistance of 604% at 300 K by suppression of Ta diffusion in CoFeB/MgO/CoFeB pseudo-spin-valves annealed at high temperature",
+      "titleZh": "抑制Ta扩散，在高温退火CoFeB/MgO/CoFeB中获得604%室温TMR",
+      "authors": "S. Ikeda, J. Hayakawa, Y. Ashizawa et al.",
+      "venue": "Applied Physics Letters 93, 082508 (2008)",
+      "published": "2008-08-29",
+      "recommendedOn": "2026-07-27",
+      "doi": "10.1063/1.2976435",
+      "url": "https://pubs.aip.org/aip/apl/article/93/8/082508/923250/Tunnel-magnetoresistance-of-604-at-300K-by",
+      "backupUrl": "https://doi.org/10.1063/1.2976435",
+      "assistantSummary": "通过抑制高温退火时Ta向CoFeB/MgO界面扩散，作者在525°C退火后获得604%室温TMR和1144%低温TMR，凸显扩散阻挡与热预算的决定作用。",
+      "whySelected": "它为今天的顶部SOT、CoFeB刻蚀和VCMA研究提供经典基准：原子级界面一旦在热处理中被污染，后端结构优化很难补救。",
+      "readingGuide": [
+        "先看堆栈与Ta扩散控制。",
+        "再比较退火温度和TMR。",
+        "最后注意5 K与300 K差异及其现代pMTJ迁移边界；约20–30分钟。"
       ],
       "notNew": true
     }

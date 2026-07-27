@@ -1,56 +1,56 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-27",
   "review": {
-    "id": "review-jvstb-42-041501",
+    "id": "review-jap-135-220701",
     "kind": "每日综述",
-    "track": "E",
+    "track": "B",
     "secondaryTracks": [
-      "B",
+      "A",
       "C",
-      "D"
+      "E"
     ],
-    "title": "Future of plasma etching for microelectronics: Challenges and opportunities",
-    "titleZh": "面向未来微电子制造的等离子体刻蚀：挑战与机会",
-    "authors": "G. S. Oehrlein, S. Hamaguchi, D. B. Graves et al.",
-    "venue": "Journal of Vacuum Science & Technology B 42, 041501 (2024)",
+    "title": "Voltage-controlled magnetic anisotropy-based spintronic devices for magnetic memory applications: Challenges and perspectives",
+    "titleZh": "VCMA磁存储器件：挑战与发展视角",
+    "authors": "Pinkesh Kumar Mishra, Meenakshi Sravani, Arnab Bose, Swapnil Bhuktare",
+    "venue": "Journal of Applied Physics 135, 220701 (2024)",
     "published": "2024-06-14",
-    "recommendedOn": "2026-07-24",
-    "doi": "10.1116/6.0003579",
-    "url": "https://pubs.aip.org/avs/jvb/article/42/4/041501/3297248/Future-of-plasma-etching-for-microelectronics",
-    "backupUrl": "https://doi.org/10.1116/6.0003579",
-    "assistantSummary": "由学界、IBM、Samsung、Kioxia及多家设备企业专家共同梳理原子层刻蚀、低温刻蚀、新材料挥发性、原位计量、腔室数字孪生、AI控制与可持续制造。",
-    "whySelected": "今天器件文章同时涉及自对准刻蚀、TiN模板和离子注入；这篇综述提供从表面反应到量产良率的统一工艺框架。",
+    "recommendedOn": "2026-07-27",
+    "doi": "10.1063/5.0201648",
+    "url": "https://pubs.aip.org/aip/jap/article/135/22/220701/3298369/Voltage-controlled-magnetic-anisotropy-based",
+    "backupUrl": "https://doi.org/10.1063/5.0201648",
+    "assistantSummary": "系统梳理VCMA物理机制、无外场翻转、WER、操作窗口、VCMA系数、读干扰和快速读取，并强调低能耗演示与可制造存储之间仍有明显差距。",
+    "whySelected": "今天核心文章用RA分离VCMA、STT与自热；这篇综述提供器件级评价框架，避免把高VCMA系数直接等同于低误码存储。",
     "readingGuide": [
-      "先看原子层刻蚀与低温刻蚀章节。",
-      "再看原位诊断、机器学习和数字孪生。",
-      "最后看新材料、不可挥发副产物、设备与可持续性；约90–120分钟。"
+      "先看VCMA机制与界面材料部分。",
+      "再看无外场翻转、WER和操作窗口。",
+      "最后看读干扰、器件缩放和产业障碍；约75–100分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-apl-87-072503",
+      "id": "classic-apl-93-082508",
       "kind": "经典文章",
-      "track": "B",
+      "track": "E",
       "secondaryTracks": [
         "A",
-        "E"
+        "B"
       ],
-      "title": "Giant tunneling magnetoresistance effect in low-resistance CoFeB/MgO(001)/CoFeB magnetic tunnel junctions for read-head applications",
-      "titleZh": "低RA CoFeB/MgO/CoFeB结中的室温巨隧穿磁阻",
-      "authors": "Koji Tsunekawa, David D. Djayaprawira, Mitsuru Nagai et al.",
-      "venue": "Applied Physics Letters 87, 072503 (2005)",
-      "published": "2005-08-08",
-      "recommendedOn": "2026-07-24",
-      "doi": "10.1063/1.2012525",
-      "url": "https://pubs.aip.org/aip/apl/article/87/7/072503/117521/Giant-tunneling-magnetoresistance-effect-in-low",
-      "backupUrl": "https://doi.org/10.1063/1.2012525",
-      "assistantSummary": "通过在底部CoFeB与MgO之间插入4 Å Mg并控制不完全氧化，在室温低RA条件下获得最高138%磁阻，说明最后几个埃的成核/氧化状态可以同时决定织构、RA和TMR。",
-      "whySelected": "它与今天TiN纹理和VCMA界面文章组成同一条线：底层模板与亚纳米插层如何跨界面决定最终输运。",
+      "title": "Tunnel magnetoresistance of 604% at 300 K by suppression of Ta diffusion in CoFeB/MgO/CoFeB pseudo-spin-valves annealed at high temperature",
+      "titleZh": "抑制Ta扩散，在高温退火CoFeB/MgO/CoFeB中获得604%室温TMR",
+      "authors": "S. Ikeda, J. Hayakawa, Y. Ashizawa et al.",
+      "venue": "Applied Physics Letters 93, 082508 (2008)",
+      "published": "2008-08-29",
+      "recommendedOn": "2026-07-27",
+      "doi": "10.1063/1.2976435",
+      "url": "https://pubs.aip.org/aip/apl/article/93/8/082508/923250/Tunnel-magnetoresistance-of-604-at-300K-by",
+      "backupUrl": "https://doi.org/10.1063/1.2976435",
+      "assistantSummary": "通过抑制高温退火时Ta向CoFeB/MgO界面扩散，作者在525°C退火后获得604%室温TMR和1144%低温TMR，凸显扩散阻挡与热预算的决定作用。",
+      "whySelected": "它为今天的顶部SOT、CoFeB刻蚀和VCMA研究提供经典基准：原子级界面一旦在热处理中被污染，后端结构优化很难补救。",
       "readingGuide": [
-        "先看4 Å Mg插层的工艺动机。",
-        "再比较不同MgO厚度下MR变化。",
-        "注意该器件面向读头而非现代pMTJ存储；约20–30分钟。"
+        "先看堆栈与Ta扩散控制。",
+        "再比较退火温度和TMR。",
+        "最后注意5 K与300 K差异及其现代pMTJ迁移边界；约20–30分钟。"
       ],
       "notNew": true
     }

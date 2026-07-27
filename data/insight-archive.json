@@ -116,6 +116,18 @@
       "atomicIds": [
         "2026-07-24-interface-template-loop"
       ]
+    },
+    {
+      "date": "2026-07-27",
+      "opportunityIds": [
+        "2026-07-27-ra-vcma-thermal-map"
+      ],
+      "methodIds": [
+        "2026-07-27-cryo-noise-mtj-platform"
+      ],
+      "atomicIds": [
+        "2026-07-27-cofeb-etch-top-sot-loop"
+      ]
     }
   ],
   "items": [
@@ -2261,6 +2273,165 @@
       ],
       "researchConnection": "高度契合原子级制造、MTJ界面控制、表征和器件产业化。",
       "takeaway": "原子制造DOE要一次只增加一个界面变量，并用可靠性指标防止“高TMR但不可制造”。"
+    },
+    {
+      "id": "2026-07-27-ra-vcma-thermal-map",
+      "date": "2026-07-27",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/C → B/E",
+      "title": "RA—VCMA—STT—自热四维分离图",
+      "subtitle": "用同一批pMTJ识别真正的电压增益",
+      "summary": "在RA、温度与脉冲宽度矩阵中同时测翻转场、WER和结温，分离VCMA、STT与焦耳热。",
+      "status": "本站分析建议",
+      "relatedPaperIds": [
+        "apl-128-082406",
+        "pra-22-034052"
+      ],
+      "question": "降低RA后观察到的写入改善，究竟来自VCMA、STT还是可重复性较差的自热？",
+      "rationale": "SAF-pMTJ文章已用RA分离三种贡献，脉冲整形文章说明温升还随波形变化；二者尚未在同一低温/结温平台合并。",
+      "workflow": [
+        "制备3–5档MgO厚度/RA器件。",
+        "在10 K至300 K扫描方波与三阶段脉冲。",
+        "同步记录翻转场、TMR、动态结温与WER。",
+        "用物理模型拟合VCMA、STT和热项。",
+        "对优选窗口做TDDB与耐久。"
+      ],
+      "equipment": [
+        "pMTJ制备与退火",
+        "低温磁输运系统",
+        "纳秒脉冲源与示波器",
+        "结温/噪声读出",
+        "自动化DOE与拟合软件"
+      ],
+      "measurements": [
+        "RA/TMR",
+        "翻转场",
+        "动态结温",
+        "WER",
+        "TDDB/耐久"
+      ],
+      "metrics": [
+        "三种贡献的可辨识度",
+        "WER长尾",
+        "单位写入能耗",
+        "跨温度最优窗口漂移",
+        "介质寿命"
+      ],
+      "evidenceBoundary": "RA相关贡献分离和脉冲整形节能是文献实测；把两者合并到低温结温—WER平台是本站待验证方案。",
+      "firstSteps": [
+        "先用两档RA和室温/77 K做最小矩阵。",
+        "校准电流探头和结温代理量。",
+        "确认模型能解释正反向翻转差异后再扩大样本。"
+      ],
+      "researchConnection": "直接服务MgO原子厚度控制、VCMA器件、低温输运和产业化可靠性。",
+      "takeaway": "先证明电压收益来自可控制的物理项，再谈更低能耗和更低RA。"
+    },
+    {
+      "id": "2026-07-27-cryo-noise-mtj-platform",
+      "date": "2026-07-27",
+      "type": "method",
+      "typeZh": "方法与设备",
+      "trackLabel": "D/A → B/E",
+      "title": "高RA MTJ低温噪声—电子温度联合平台",
+      "subtitle": "从冷台温度升级到局域电子温度",
+      "summary": "借鉴noise-STM的超导LC与低温HEMT，为高RA MTJ建立shot noise、RTN和电子温度联合测量。",
+      "status": "本站分析建议",
+      "relatedPaperIds": [
+        "rsi-97-023701",
+        "apl-128-082406"
+      ],
+      "question": "低温写入和栅压扫描中，MTJ电子温度、陷阱噪声与冷台温度偏离多少？",
+      "rationale": "noise-STM已证明MHz谐振低温放大器可分辨极弱隧穿噪声并反演电子温度；迁移到MTJ需要重新匹配阻抗和脉冲保护。",
+      "workflow": [
+        "按目标MTJ阻抗设计LC谐振与低温HEMT。",
+        "加入写入脉冲旁路、限幅和可切换读出。",
+        "用标准电阻/隧穿结校准增益与背景噪声。",
+        "测shot noise、RTN与电子温度。",
+        "与RA、栅压、磁态和失效前后对照。"
+      ],
+      "equipment": [
+        "PPMS/DynaCool、Teslatron或等效低温磁体",
+        "低温HEMT",
+        "超导/低损耗LC",
+        "频谱仪或锁相放大器",
+        "脉冲保护与射频开关"
+      ],
+      "measurements": [
+        "噪声谱密度",
+        "Fano因子/有效电荷",
+        "RTN时间常数",
+        "电子温度",
+        "P/AP态差异"
+      ],
+      "metrics": [
+        "输入等效电流噪声",
+        "Q值与带宽",
+        "电子温度不确定度",
+        "脉冲后恢复时间",
+        "跨温区校准漂移"
+      ],
+      "evidenceBoundary": "20倍分辨率和0.01e是STM系统实测；MTJ阻抗和脉冲环境不同，迁移收益尚未证明。",
+      "firstSteps": [
+        "先选高RA大面积MTJ而非最小器件。",
+        "在4.2 K用热噪声完成绝对校准。",
+        "确认保护电路不改变TMR/RA后再接写入脉冲。"
+      ],
+      "researchConnection": "连接低温设备建设、势垒缺陷、结温、原子界面和可靠性失效分析。",
+      "takeaway": "平台第一目标不是追求最高带宽，而是得到可追溯的噪声与电子温度。"
+    },
+    {
+      "id": "2026-07-27-cofeb-etch-top-sot-loop",
+      "date": "2026-07-27",
+      "type": "atomic-route",
+      "typeZh": "原子制造路线",
+      "trackLabel": "E → B/A",
+      "title": "CoFeB刻蚀再沉积—顶部SOT界面闭环",
+      "subtitle": "把CD、侧壁与后沉积自旋源放到同一真空链",
+      "summary": "用ICP-RIE气体/偏压DOE控制再沉积，再在真空互联中沉积顶部Pt并用器件内SOT效率验收界面。",
+      "status": "本站分析建议",
+      "relatedPaperIds": [
+        "jvstb-44-042203",
+        "ieee-led-2025-3582335"
+      ],
+      "question": "刻蚀产生的CoFeB再沉积和侧壁污染，会怎样影响后沉积顶部Pt的SOT效率、TMR和可靠性？",
+      "rationale": "刻蚀文章证明Ar会造成再沉积与CD放大；顶部SOT文章证明后沉积Pt可工作，但二者之间的界面工艺依赖尚未被系统验证。",
+      "workflow": [
+        "建立Ar/CO-Ar/SF6-Ar与偏压/压力矩阵。",
+        "测CD、侧壁再沉积和残留化学。",
+        "在不破真空条件下清洗并沉积顶部Pt。",
+        "测TMR、RA、SOT效率和临界电流。",
+        "对优选条件做WER、耐久和全片统计。"
+      ],
+      "equipment": [
+        "ICP-RIE",
+        "真空互联与原位清洗",
+        "磁控溅射Pt",
+        "截面TEM/EELS与XPS",
+        "SOT器件电学测试"
+      ],
+      "measurements": [
+        "刻蚀速率/选择比",
+        "CD偏移",
+        "侧壁成分",
+        "TMR/RA",
+        "SOT效率/临界电流"
+      ],
+      "metrics": [
+        "再沉积壳层厚度",
+        "CD 3σ",
+        "界面氧/卤素残留",
+        "器件内SOT效率分布",
+        "WER与耐久"
+      ],
+      "evidenceBoundary": "Ar再沉积与顶部Pt驱动MTJ分别是文献实测；把二者做成同一真空工艺闭环是本站建议。",
+      "firstSteps": [
+        "先固定一个CoFeB厚度和掩膜。",
+        "用截面TEM筛选两种最干净刻蚀条件。",
+        "只在这两组上比较真空转移与空气暴露后的顶部Pt。"
+      ],
+      "researchConnection": "高度契合IBE/RIE、真空互联、原子界面、MTJ器件和制造良率。",
+      "takeaway": "顶部SOT是否可制造，取决于前一道刻蚀留下的原子级表面，而不只是Pt本身的自旋霍尔角。"
     }
   ]
 }

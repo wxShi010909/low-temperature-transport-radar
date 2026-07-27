@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-24T09:06:00+08:00",
-  "reportDate": "2026-07-24",
-  "scope": "跨时间层次精选，优先原子级制造、MTJ/MRAM、产业化验证与低温可靠性；日期表示本站推荐日，不代表论文发表日。",
+  "updatedAt": "2026-07-27T09:27:00+08:00",
+  "reportDate": "2026-07-27",
+  "scope": "工作日精选：从界面与刻蚀控制到VCMA/SOT写入、低温噪声和可制造性验证",
   "history": [
     {
       "date": "2026-07-13",
@@ -204,6 +204,25 @@
         "apl-128-042401",
         "apl-128-202401",
         "apl-128-142403"
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "label": "工作日精选：RA/VCMA、自热波形、顶部SOT、低温噪声与CoFeB刻蚀",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "apl-128-082406",
+        "ieee-led-2025-3582335",
+        "pra-22-034052",
+        "rsi-97-023701",
+        "jvstb-44-042203"
       ]
     }
   ],
@@ -2616,6 +2635,188 @@
       "url": "https://pubs.aip.org/aip/apl/article/128/14/142403/3386389/Sub-100-nm-multistate-spin-orbit-torque-magnetic",
       "backupUrl": "https://doi.org/10.1063/5.0321512",
       "accessNote": "已核验AIP官方页面、作者、日期、器件堆栈、摘要和DOI",
+      "featured": true
+    },
+    {
+      "id": "apl-128-082406",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C",
+        "E"
+      ],
+      "title": "Impact of gate voltage on switching field of perpendicular magnetic tunnel junctions with a synthetic antiferromagnetic free layer",
+      "titleZh": "栅压如何改变合成反铁磁自由层pMTJ的翻转场",
+      "authors": "Kaiquan Fan, Simon Van Beek, Giacomo Talmelli et al.",
+      "venue": "Applied Physics Letters 128, 082406 (2026)",
+      "published": "2026-02-26",
+      "recommendedOn": "2026-07-27",
+      "timeTier": "近期正式发表",
+      "system": "不同MgO厚度与RA的合成反铁磁自由层垂直MTJ",
+      "conditions": "栅压扫描、临界尺寸比较、实验与微磁模拟联合",
+      "methods": [
+        "栅压辅助翻转",
+        "pMTJ输运",
+        "RA系列",
+        "微磁模拟"
+      ],
+      "summary": "作者通过改变MgO厚度调节RA，在同一类SAF自由层pMTJ中分离VCMA、STT与焦耳热：高RA时VCMA主导，低RA时STT和自热使栅压响应出现非线性。",
+      "relevance": "直接给出原子级势垒厚度、RA、写入机制和尺寸缩放之间的关系，可转化为MgO厚度—脉冲—温度联合DOE。",
+      "limitation": "临界尺寸上的有效场变化较小是有利信号，但仍缺阵列WER、长期保持、TDDB、全片RA分布和批间统计。",
+      "industrialization": "最接近VCMA辅助写入和pMTJ堆栈优化；制造器件前还需证明低RA下栅压增益不会被自热、漏电和介质寿命抵消。",
+      "whyRecommended": "今天推荐它，是因为它用可制造参数RA把VCMA、STT和自热三个常被混淆的贡献拆开。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0289550",
+      "url": "https://pubs.aip.org/aip/apl/article/128/8/082406/3381396/Impact-of-gate-voltage-on-switching-field-of",
+      "backupUrl": "https://doi.org/10.1063/5.0289550",
+      "accessNote": "已核验AIP官方页面、题目、作者、发表日期、摘要、器件结构和DOI",
+      "featured": true
+    },
+    {
+      "id": "ieee-led-2025-3582335",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Top Spin-Orbit-Torque Switching of Magnetic Tunnel Junction With In-Situ Efficiency Quantification",
+      "titleZh": "顶部SOT驱动MTJ及器件内原位效率定量",
+      "authors": "Yan Huang, Kun Zhang, Chen Xiao et al.",
+      "venue": "IEEE Electron Device Letters 46, 1409–1412 (2025)",
+      "published": "2025-06-26",
+      "recommendedOn": "2026-07-27",
+      "timeTier": "近2年精选",
+      "system": "底部钉扎参考层pMTJ与后沉积顶部Pt自旋源",
+      "conditions": "完整器件内SOT效率定量；10 μs脉冲",
+      "methods": [
+        "顶部SOT",
+        "底部钉扎MTJ",
+        "原位效率测量",
+        "电流翻转"
+      ],
+      "summary": "作者把Pt自旋源放在已形成的MTJ顶部，并在完整器件中直接量化SOT效率；报道10 μs条件下约40 MA/cm²的临界电流密度。",
+      "relevance": "顶部SOT结构可绕开部分传统堆栈/刻蚀约束，并把材料自旋转换效率直接带入器件级验收。",
+      "limitation": "器件级演示尚未覆盖纳秒写入、阵列WER、顶部Pt全片均匀性、界面污染、BEOL热预算和长期耐久。",
+      "industrialization": "最接近SOT-MRAM堆栈集成；仍需证明后沉积顶部重金属在量产真空互联、套刻、互联电阻和封装应力下稳定。",
+      "whyRecommended": "今天推荐它，是因为它把SOT效率从薄膜代理量移到完整MTJ中原位测量，减少材料—器件之间的换算误差。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1109/LED.2025.3582335",
+      "url": "https://ieeexplore.ieee.org/document/11052775/",
+      "backupUrl": "https://doi.org/10.1109/LED.2025.3582335",
+      "accessNote": "已核验IEEE官方题录页及PDF入口、作者、发表日期、页码、摘要和DOI",
+      "featured": true
+    },
+    {
+      "id": "pra-22-034052",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Pulse Shaping Strategies for Efficient Switching of Magnetic Tunnel Junctions by Spin-Orbit Torque",
+      "titleZh": "用脉冲整形降低SOT-MTJ写入能耗",
+      "authors": "Marco Hoffmann, Viola Krizakova, Vaishnavi Kateel et al.",
+      "venue": "Physical Review Applied 22, 034052 (2024)",
+      "published": "2024-09-24",
+      "recommendedOn": "2026-07-27",
+      "timeTier": "近2年精选",
+      "system": "垂直SOT-MTJ与时间分辨隧穿磁阻",
+      "conditions": "多种脉冲形状、温升分析、实验与微磁模拟",
+      "methods": [
+        "脉冲整形",
+        "时间分辨TMR",
+        "SOT翻转",
+        "微磁模拟"
+      ],
+      "summary": "实测表明，预热—峰值成核—较低幅度畴壁推进的分段脉冲，相比方波可将写入能耗降低最高约50%，同时不牺牲翻转概率和速度。",
+      "relevance": "无需先改材料堆栈即可把纳秒脉冲源、温升和磁化反转机制纳入自动化优化，适合与低温结温测量联动。",
+      "limitation": "50%是特定器件与波形的上限结果；尚缺大阵列WER、驱动电路开销、PVT角落和耐久收益。",
+      "industrialization": "最接近写入电路和测试算法；真正量产价值取决于波形发生电路面积、寄生失真、单元分布和能耗是否仍优于简单方波。",
+      "whyRecommended": "今天推荐它，是因为它把自热从纯粹副作用变成可控的写入阶段，但也明确需要器件级温度校准。",
+      "score": 9.3,
+      "priority": "B",
+      "arxiv": "2409.16454",
+      "doi": "10.1103/PhysRevApplied.22.034052",
+      "url": "https://arxiv.org/abs/2409.16454",
+      "backupUrl": "https://doi.org/10.1103/PhysRevApplied.22.034052",
+      "accessNote": "已核验可打开的arXiv摘要/全文入口、正式期刊引用、作者、结果与DOI；APS落地页作为备用",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-023701",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Cryogenic amplifier with high sensitivity and stability for noise-STM",
+      "titleZh": "面向噪声STM的高灵敏稳定低温放大器",
+      "authors": "Maialen Ortego Larrazabal, Jiasen Niu, Jian-Feng Ge et al.",
+      "venue": "Review of Scientific Instruments 97, 023701 (2026)",
+      "published": "2026-02-03",
+      "recommendedOn": "2026-07-27",
+      "timeTier": "近期正式发表",
+      "system": "4.2 MHz超导LC谐振器、低温HEMT与三套STM平台",
+      "conditions": "4.2 K、2.2 K/8 T、340 mK矢量磁场环境",
+      "methods": [
+        "低温HEMT",
+        "谐振噪声测量",
+        "shot noise",
+        "电子温度标定"
+      ],
+      "summary": "新放大器相对上一代将噪声分辨率提高20倍以上，可分辨约0.01e的有效电荷变化，并能从隧穿噪声提取局域电子温度。",
+      "relevance": "虽然原始对象是高阻STM结，其低温谐振、热锚定、低功耗和电子温度反演方法可迁移到高RA MTJ、势垒陷阱和结温计量。",
+      "limitation": "对STM的MΩ–GΩ阻抗优化不能直接用于低RA纳米MTJ；需重新匹配谐振频率、输入阻抗、带宽和脉冲保护。",
+      "industrialization": "最接近失效分析与低温计量平台，而非量产测试机；还需证明多通道、自动校准、样品吞吐和器件保护能力。",
+      "whyRecommended": "今天推荐它，是因为它提供了区分冷台温度与真实电子温度的硬件路径，可补足MTJ自热和陷阱研究。",
+      "score": 9.4,
+      "priority": "B",
+      "arxiv": "",
+      "doi": "10.1063/5.0300260",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/2/023701/3378492/Cryogenic-amplifier-with-high-sensitivity-and",
+      "backupUrl": "https://doi.org/10.1063/5.0300260",
+      "accessNote": "已核验AIP开放全文、完整作者、发表日期、三套低温平台、设计参数和DOI",
+      "featured": true
+    },
+    {
+      "id": "jvstb-44-042203",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Etching of CoFeB nanometer thin films using inductively coupled plasma reactive ion etching",
+      "titleZh": "ICP-RIE刻蚀纳米CoFeB薄膜：速率、形貌与再沉积",
+      "authors": "Chen Yang, Yu Yu, Zuowei Shi et al.",
+      "venue": "Journal of Vacuum Science & Technology B 44, 042203 (2026)",
+      "published": "2026-05-29",
+      "recommendedOn": "2026-07-27",
+      "timeTier": "近期正式发表",
+      "system": "纳米CoFeB薄膜及不同覆盖层/衬底组合",
+      "conditions": "Ar、CO/Ar、SF₆/Ar；ICP功率、RF偏压和压力扫描",
+      "methods": [
+        "ICP-RIE",
+        "反应离子刻蚀",
+        "形貌分析",
+        "选择比测试"
+      ],
+      "summary": "作者系统比较Ar、CO/Ar和SF₆/Ar刻蚀CoFeB。纯Ar刻蚀有效，但明显再沉积并放大纳米柱直径；反应气体降低速率，覆盖层与衬底也改变形貌和选择性。",
+      "relevance": "直接对应MTJ图形化中的CD漂移、侧壁再沉积和材料组合效应，可与TMR/RA及截面分析形成工艺闭环。",
+      "limitation": "薄膜刻蚀形貌尚未完整证明对pMTJ电学、侧壁氧化、WER、TDDB和阵列良率的影响。",
+      "industrialization": "最接近MTJ刻蚀模块开发；仍需全片均匀性、终点检测、腔体漂移、颗粒、批间重复和与封护/CMP集成验证。",
+      "whyRecommended": "今天推荐它，是因为它明确显示CoFeB刻蚀不能只看速率，必须把再沉积和最终CD一起作为验收指标。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1116/6.0005457",
+      "url": "https://pubs.aip.org/avs/jvb/article/44/4/042203/3393105/Etching-of-CoFeB-nanometer-thin-films-using",
+      "backupUrl": "https://doi.org/10.1116/6.0005457",
+      "accessNote": "已核验AIP/AVS官方页面、作者、发表日期、摘要、气体体系和DOI",
       "featured": true
     }
   ]
