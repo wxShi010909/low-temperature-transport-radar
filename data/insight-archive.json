@@ -128,6 +128,18 @@
       "atomicIds": [
         "2026-07-27-cofeb-etch-top-sot-loop"
       ]
+    },
+    {
+      "date": "2026-07-28",
+      "opportunityIds": [
+        "2026-07-28-boron-ir-window-map"
+      ],
+      "methodIds": [
+        "2026-07-28-scribe-line-saf-metrology"
+      ],
+      "atomicIds": [
+        "2026-07-28-crystallization-ion-migration"
+      ]
     }
   ],
   "items": [
@@ -2432,6 +2444,154 @@
       ],
       "researchConnection": "高度契合IBE/RIE、真空互联、原子界面、MTJ器件和制造良率。",
       "takeaway": "顶部SOT是否可制造，取决于前一道刻蚀留下的原子级表面，而不只是Pt本身的自旋霍尔角。"
+    },
+    {
+      "id": "2026-07-28-boron-ir-window-map",
+      "date": "2026-07-28",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/E · 自由层界面",
+      "title": "B保留—Ir阻挡—PMA/VCMA联合工艺图",
+      "subtitle": "把两篇论文中的扩散变量合并为可执行DOE",
+      "summary": "本站方案：同时扫描初始B含量、Mo/MgAl₂O₄吸阻B配置、MgFeO覆盖量、Ir剂量和退火温时，寻找PMA、VCMA、磁矩与TMR的共同窗口。",
+      "status": "待实验验证",
+      "relatedPaperIds": [
+        "apl-127-232403",
+        "apm-13-101102"
+      ],
+      "question": "B残余量和Ir界面浓度是否存在同时提高PMA与VCMA、又不恶化RA和阻尼的窗口？",
+      "rationale": "文献分别证明B保留和Ir扩散阻挡可改变磁性/VCMA，但尚未在同一堆栈中联合优化。",
+      "workflow": [
+        "建立B含量×MgFeO平均厚度×Ir剂量×退火温时DOE。",
+        "先用片上膜测PMA、Ms、阻尼和VCMA。",
+        "对极值点做STEM-EELS/SIMS/APT成分闭合。",
+        "制作纳米MTJ验证TMR、RA、WER和TDDB。"
+      ],
+      "equipment": [
+        "多靶磁控溅射与独立退火腔",
+        "XRR/TEM/STEM-EELS或APT",
+        "VSM/FMR/VCMA测试",
+        "纳米MTJ脉冲与可靠性平台"
+      ],
+      "measurements": [
+        "B/Ir/Mg/Fe/O深度分布",
+        "PMA、Ms、阻尼、VCMA",
+        "TMR、RA、WER、TDDB",
+        "全片与批间分布"
+      ],
+      "metrics": [
+        "VCMA≥目标基线且PMA不下降",
+        "界面覆盖率/成分可重复",
+        "RA与TMR无显著退化",
+        "WER和TDDB长尾改善"
+      ],
+      "evidenceBoundary": "联合最优窗口是本站推断；两篇论文未在同一堆栈、同一器件或同一晶圆上完成交叉验证。",
+      "firstSteps": [
+        "先用5×5小DOE做片上磁性与成分筛选。",
+        "定义亚单层覆盖率的直接验收方法。",
+        "只把成分闭合的点推进到纳米器件。"
+      ],
+      "researchConnection": "直接服务原子级界面/成分控制、退火与300 mm MTJ材料开发。",
+      "takeaway": "把平均厚度升级为真实成分与覆盖率闭环，才能判断亚单层插层是否可制造。"
+    },
+    {
+      "id": "2026-07-28-scribe-line-saf-metrology",
+      "date": "2026-07-28",
+      "type": "method",
+      "typeZh": "方法与设备",
+      "trackLabel": "C/D · 晶圆计量",
+      "title": "多比特划片道结构—SAF相图—高温保持计量链",
+      "subtitle": "用可制造测试结构验证微磁预测",
+      "summary": "本站方案：用头对头/尾对尾多比特MTJ提取偏置场和分布，再以微磁相图反演SAF不对称与耦合，最后用温度保持验证能垒预测。",
+      "status": "待实验验证",
+      "relatedPaperIds": [
+        "ieee-ted-2025-3571706",
+        "arxiv-2605-09201"
+      ],
+      "question": "晶圆偏置场分布能否识别微磁模型预测的SAF不对称、非共线态和保持长尾？",
+      "rationale": "一篇提供可量产计量结构，一篇提供物理相图；二者组合可把理论参数转成晶圆反馈。",
+      "workflow": [
+        "在划片道布置不同串联数和方向的多比特MTJ。",
+        "室温及多温点提取偏置场与翻转分布。",
+        "用相图拟合SAF耦合、不对称和杂散场。",
+        "以回流焊后保持、WER和失效解析做盲验证。"
+      ],
+      "equipment": [
+        "晶圆探针台与自动开关矩阵",
+        "可控温/矢量磁场平台",
+        "低噪声源表与高速脉冲系统",
+        "微磁计算与参数反演软件"
+      ],
+      "measurements": [
+        "偏置场中心与长尾",
+        "温度依赖翻转分布",
+        "回流焊前后保持/失效",
+        "版图位置与晶圆位置相关性"
+      ],
+      "metrics": [
+        "测试重复性优于单比特结构",
+        "模型对盲测晶圆有预测力",
+        "偏置场能预警保持长尾",
+        "测试时间与划片道面积可接受"
+      ],
+      "evidenceBoundary": "偏置场到SAF参数的反演和对保持长尾的预测属于本站方案，原文尚未联合证明。",
+      "firstSteps": [
+        "先复现单比特读电流偏置。",
+        "用两种串联数比较统计增益。",
+        "选一片晶圆做温度盲测验证。"
+      ],
+      "researchConnection": "适用于MRAM晶圆级均匀性、可靠性预测及低温/高温磁输运自动化。",
+      "takeaway": "让微磁模型进入制造的关键，是配套能在划片道里稳定读取其参数的结构。"
+    },
+    {
+      "id": "2026-07-28-crystallization-ion-migration",
+      "date": "2026-07-28",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "A/E · 氧迁移",
+      "title": "退火结晶—氧迁移—VCMA漂移分离路线",
+      "subtitle": "把有用电压调控与可靠性漂移拆开测",
+      "summary": "本站方案：在同一CoFeB/MgO晶圆上设置退火梯度，以脉冲时间尺度、撤压保持、温度激活和氧分布四类证据分离静电VCMA与磁离子效应。",
+      "status": "待实验验证",
+      "relatedPaperIds": [
+        "jap-139-023901",
+        "apm-13-101102",
+        "apl-127-232403"
+      ],
+      "question": "哪些退火/界面条件让氧迁移成为可控功能，哪些条件会形成慢漂移和可靠性风险？",
+      "rationale": "结晶论文显示机制会随退火改变；扩散阻挡和B管理论文说明邻层化学也会改变迁移通道。",
+      "workflow": [
+        "制备退火温度/时间梯度与界面插层对照。",
+        "测ns–s跨时间尺度电压响应和撤压保持。",
+        "做温度加速并提取激活能。",
+        "在关键状态冻结样品做XPS/STEM-EELS氧分布。"
+      ],
+      "equipment": [
+        "真空互联沉积—退火平台",
+        "高速脉冲与准静态栅控",
+        "低温/变温磁输运",
+        "原位或准原位XPS/STEM-EELS"
+      ],
+      "measurements": [
+        "VCMA幅度与响应时间",
+        "撤压后PMA/电阻保持",
+        "循环漂移与温度激活能",
+        "O/B/Ir界面分布"
+      ],
+      "metrics": [
+        "快慢机制可量化分离",
+        "离子漂移循环无不可逆累积",
+        "温度模型能预测保持",
+        "成分变化与磁响应一一对应"
+      ],
+      "evidenceBoundary": "把退火、B/Ir扩散与氧迁移统一到同一机制图是本站分析，需原位成分证据和完整MTJ验证。",
+      "firstSteps": [
+        "先用三档退火温度做脉冲时间谱。",
+        "设置撤压24 h保持和温度加速。",
+        "只对出现非易失分量的样品做成分冻结分析。"
+      ],
+      "researchConnection": "直接连接真空互联、退火、原位表征、VCMA和低温可靠性平台。",
+      "takeaway": "同一非易失响应既可能是功能，也可能是漂移；必须用时间、温度和成分三重证据判定。"
     }
   ]
 }

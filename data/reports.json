@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-27T09:27:00+08:00",
-  "reportDate": "2026-07-27",
-  "scope": "工作日精选：从界面与刻蚀控制到VCMA/SOT写入、低温噪声和可制造性验证",
+  "updatedAt": "2026-07-28",
+  "reportDate": "2026-07-28",
+  "scope": "原子级制造、MTJ/MRAM、低温输运与产业化验证；2026-07-28聚焦退火结晶、离子迁移、B/Ir扩散控制、SAF稳定性和晶圆计量",
   "history": [
     {
       "date": "2026-07-13",
@@ -223,6 +223,25 @@
         "pra-22-034052",
         "rsi-97-023701",
         "jvstb-44-042203"
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "label": "工作日精选：结晶磁离子、B/Ir扩散、SAF相图与晶圆偏置场计量",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "jap-139-023901",
+        "apl-127-232403",
+        "arxiv-2605-09201",
+        "ieee-ted-2025-3571706",
+        "apm-13-101102"
       ]
     }
   ],
@@ -2817,6 +2836,189 @@
       "url": "https://pubs.aip.org/avs/jvb/article/44/4/042203/3393105/Etching-of-CoFeB-nanometer-thin-films-using",
       "backupUrl": "https://doi.org/10.1116/6.0005457",
       "accessNote": "已核验AIP/AVS官方页面、作者、发表日期、摘要、气体体系和DOI",
+      "featured": true
+    },
+    {
+      "id": "jap-139-023901",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C",
+        "E"
+      ],
+      "title": "Reversible magneto-ionics in crystallized W–Co20Fe60B20–MgO–HfO2 ultra-thin films with perpendicular magnetic anisotropy",
+      "titleZh": "结晶W/CoFeB/MgO/HfO₂中的可逆磁离子效应",
+      "authors": "Song Chen, Elmer Monteblanco, Benjamin Borie, Shimpei Ono, Dafiné Ravelosona",
+      "venue": "Journal of Applied Physics 139, 023901 (2026)",
+      "published": "2026-01-12",
+      "recommendedOn": "2026-07-28",
+      "timeTier": "近期正式发表",
+      "system": "W(4 nm)/CoFeB(1 nm)/MgO(2 nm)/HfO₂(1 nm)超薄膜",
+      "conditions": "370°C真空退火1 h；离子液体栅压；非晶态与结晶态对比",
+      "methods": [
+        "磁控溅射",
+        "离子液体栅控",
+        "PMA测量",
+        "退火结晶对照"
+      ],
+      "summary": "实测显示，非晶态主要呈现易失、可逆的静电调制；370°C退火后的结晶态同时出现非易失、可逆的PMA变化与静电响应。作者将前者解释为结晶界面氧迁移率提高所引起的磁离子效应。",
+      "relevance": "把CoFeB/MgO退火结晶、氧迁移和电压调控放入同一实验，可用于设计VCMA器件中的“快速电子响应—慢速离子漂移”分离测试。",
+      "limitation": "作者未直接获得工作状态下的氧分布或原子尺度迁移路径；样品是毫米级薄膜而非完整MTJ，速度、循环、保持和器件误码均未验证。",
+      "industrialization": "最接近VCMA自由层界面与栅介质开发。走向可制造器件仍需全固态栅、纳秒级响应分离、离子漂移耐久、温度保持、TDDB和纳米MTJ阵列验证。",
+      "whyRecommended": "今天推荐它，是因为它提醒我们：同一CoFeB/MgO界面在退火前后可能从静电VCMA转入磁离子机制，必须把结晶状态纳入可靠性判定。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0313594",
+      "url": "https://pubs.aip.org/aip/jap/article/139/2/023901/3377228/Reversible-magneto-ionics-in-crystallized-W",
+      "backupUrl": "https://doi.org/10.1063/5.0313594",
+      "accessNote": "已核验AIP官方页面、完整作者、JAP卷页、摘要、370°C退火条件与DOI",
+      "featured": true
+    },
+    {
+      "id": "apl-127-232403",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Giant perpendicular magnetic anisotropy in Mo/Boron-rich CoFeB/MgAl2O4 structure",
+      "titleZh": "Mo/富B CoFeB/MgAl₂O₄结构中的巨型垂直磁各向异性",
+      "authors": "Ruixian Zhang, Sho Kagami, Daiki Ito et al.",
+      "venue": "Applied Physics Letters 127, 232403 (2025)",
+      "published": "2025-12-10",
+      "recommendedOn": "2026-07-28",
+      "timeTier": "近期正式发表",
+      "system": "Mo(2 nm)/Co19Fe56B25/MgAl₂O₄(4 nm)/Ta",
+      "conditions": "富B CoFeB；Mo阻B与MgAl₂O₄吸B协同；退火后深度成分分析",
+      "methods": [
+        "薄膜沉积",
+        "磁性测量",
+        "俄歇深度剖析",
+        "成分—PMA关联"
+      ],
+      "summary": "实测获得17.5–19.5 kOe各向异性场和6.9×10⁶–9.4×10⁶ erg/cm³有效各向异性能；俄歇深度剖析显示，Mo阻挡与MgAl₂O₄吸收之间的平衡使CoFeB保留约20%的初始B。",
+      "relevance": "直接服务亚纳米自由层的B预算设计：不是简单追求“完全排B”，而是控制B保留、磁矩与PMA之间的窗口。",
+      "limitation": "当前是磁性薄膜结构，尚未给出完整MTJ的TMR、RA、写入、保持、噪声或晶圆级分布；深度剖析也不足以确定每个界面的原子占位。",
+      "industrialization": "最接近自由层材料与退火配方。仍需与MgO隧穿势垒整合、验证BEOL热预算、全片B分布、批次稳定、纳米器件WER和长期可靠性。",
+      "whyRecommended": "今天推荐它，是因为它把B从“应被排出的杂质”改写为需要精确管理的工艺变量，可与Ir扩散阻挡形成联合DOE。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0301346",
+      "url": "https://pubs.aip.org/aip/apl/article/127/23/232403/3374598/Giant-perpendicular-magnetic-anisotropy-in-Mo",
+      "backupUrl": "https://doi.org/10.1063/5.0301346",
+      "accessNote": "已核验AIP官方页面、题目、期刊卷页、接受日期、核心磁性与成分结果及DOI",
+      "featured": true
+    },
+    {
+      "id": "arxiv-2605-09201",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Magnetization alignment in spin-transfer-torque magnetic random-access memory",
+      "titleZh": "STT-MRAM中多层磁化排列、亚稳态与能垒的微磁研究",
+      "authors": "Afan Terko, George Lertzman-Lepofsky, Dieter Suess, Claas Abert, Erol Girt",
+      "venue": "arXiv:2605.09201 (2026)",
+      "published": "2026-05-09",
+      "recommendedOn": "2026-07-28",
+      "timeTier": "近期预印本",
+      "system": "30 nm三磁层p-STT-MRAM纳米柱及非对称SAF",
+      "conditions": "双线性/双二次交换、Ms/各向异性/厚度不对称、杂散场参数扫描",
+      "methods": [
+        "微磁模拟",
+        "相图",
+        "最小能量路径",
+        "4374组公开配置数据"
+      ],
+      "summary": "理论计算给出磁化排列相图，并预测SAF不对称可降低获得反平行态所需的层间耦合、压制竞争态；非共线反平行态下，不对称会提高SAF翻转能垒、降低自由层能垒，杂散场进一步改变两者。",
+      "relevance": "可直接转化为参考层设计与量测判据：用偏置场、多比特结构和温度依赖数据检验模型预测的非共线态与能垒长尾。",
+      "limitation": "全部结论属于微磁预测；材料参数、边缘粗糙、真实热涨落、层间扩散和加工损伤的代表性尚需器件实验验证。",
+      "industrialization": "最接近pMTJ参考层/SAF设计与失效建模。距离量产仍缺晶圆实测校准、参数离散、阵列保持/误码、温度循环和跨尺寸模型验证。",
+      "whyRecommended": "今天推荐它，是因为它为“SAF做成反平行就够了”这一简化假设补上了亚稳态、能垒和杂散场三项器件风险。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "2605.09201",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2605.09201",
+      "backupUrl": "https://arxiv.org/pdf/2605.09201",
+      "accessNote": "已核验arXiv摘要页、完整作者、v1提交日期、摘要、PDF入口及公开数据说明",
+      "featured": true
+    },
+    {
+      "id": "ieee-ted-2025-3571706",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Offset Field Extraction With Multi-Bit Magnetic Tunnel Junction Structures",
+      "titleZh": "利用多比特MTJ结构提取偏置场并诊断晶圆工艺不均匀",
+      "authors": "Meike Hindenberg, Abhishek Talapatra, Benjamin Lilienthal-Uhlig et al.",
+      "venue": "IEEE Transactions on Electron Devices 72(7), 3565–3572 (2025)",
+      "published": "2025-06-02",
+      "recommendedOn": "2026-07-28",
+      "timeTier": "近2年精选",
+      "system": "工业级单比特MTJ与划片道串联多比特MTJ测试结构",
+      "conditions": "恒定读电流；头对头/尾对尾串联结构；温度相关偏置场提取",
+      "methods": [
+        "晶圆划片道测试结构",
+        "多比特串联统计",
+        "偏置场提取",
+        "高温外推"
+      ],
+      "summary": "实测发现恒定读电流会使单比特器件翻转场非对称移动；头对头/尾对尾多比特串联结构可平均偏置效应、扩大样本量并识别晶圆工艺不均匀，温度依赖偏置场还能用于估计回流焊温度下的阵列能垒平衡。",
+      "relevance": "这是把MTJ物理量转成晶圆级可重复计量的范例，可直接服务参考层杂散场、SAF不对称和工艺漂移反馈。",
+      "limitation": "方法对具体堆栈、器件分布和模型假设的适用范围仍需跨产品验证；偏置场只是可靠性代理量，不能替代真实WER、保持和耐久。",
+      "industrialization": "最接近量产在线计量与划片道PCM。仍需验证测试时间、探针接触、跨晶圆相关性、与阵列良率的预测能力以及先进节点版图开销。",
+      "whyRecommended": "今天推荐它，是因为它不仅测单器件，还提出可嵌入晶圆流程的多比特测试结构，能把材料/参考层问题变成工艺反馈信号。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1109/TED.2025.3571706",
+      "url": "https://ieeexplore.ieee.org/document/11021244/",
+      "backupUrl": "https://doi.org/10.1109/TED.2025.3571706",
+      "accessNote": "已核验IEEE官方题录页/官方PDF入口、作者、卷期页码、摘要、发布日期与DOI",
+      "featured": true
+    },
+    {
+      "id": "apm-13-101102",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Improvement in the voltage-controlled magnetic anisotropy effect by introducing an iridium diffusion-blocking layer",
+      "titleZh": "用Ir扩散阻挡层提升VCMA：0.15 nm MgFeO界面层的作用",
+      "authors": "Takayuki Nozaki, Tomohiro Ichinose, Tatsuya Yamamoto, Kay Yakushiji, Shinji Yuasa",
+      "venue": "APL Materials 13, 101102 (2025)",
+      "published": "2025-10-01",
+      "recommendedOn": "2026-07-28",
+      "timeTier": "近期正式发表",
+      "system": "300 mm晶圆多晶MTJ；超薄CoFeB/Ir与MgFeO扩散阻挡界面",
+      "conditions": "MgFeO 0.1–0.2 nm；Ir 0.05–0.15 nm；200–350°C退火",
+      "methods": [
+        "300 mm磁控溅射",
+        "亚纳米插层",
+        "光刻与Ar离子铣",
+        "VCMA测量"
+      ],
+      "summary": "实测表明，在超薄CoFeB与Ir掺杂区域之间引入0.15 nm MgFeO后，VCMA系数最高达到−167 fJ/Vm；磁矩增加支持其抑制Ir向CoFeB深处扩散的解释。",
+      "relevance": "直接连接原子级插层、扩散阻挡与VCMA器件，可与富B CoFeB文章组成“B保留—Ir阻挡—退火”联合工艺图。",
+      "limitation": "0.15 nm MgFeO很可能并非连续膜；扩散抑制主要由磁性/VCMA间接推断，缺少原子分辨成分图和纳米器件写入可靠性。",
+      "industrialization": "最接近300 mm VCMA-MTJ材料模块。仍需全片覆盖率与VCMA分布、批次重复、纳米器件WER/TDDB/耐久、BEOL热预算和靶材漂移补偿。",
+      "whyRecommended": "今天推荐它，是因为它用量产兼容溅射和亚单层插入，把“元素扩散”转化为可调VCMA工艺旋钮，同时也暴露连续性验证难题。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0287949",
+      "url": "https://pubs.aip.org/aip/apm/article/13/10/101102/3365393/Improvement-in-the-voltage-controlled-magnetic",
+      "backupUrl": "https://doi.org/10.1063/5.0287949",
+      "accessNote": "已核验AIP官方页面、完整作者、卷页、材料厚度、300 mm工艺、接受日期与DOI",
       "featured": true
     }
   ]

@@ -76,6 +76,13 @@
       "classicIds": [
         "classic-apl-93-082508"
       ]
+    },
+    {
+      "date": "2026-07-28",
+      "reviewId": "perspective-apm-9-040904",
+      "classicIds": [
+        "classic-apl-96-262501"
+      ]
     }
   ],
   "items": [
@@ -811,6 +818,60 @@
         "先看堆栈与Ta扩散控制。",
         "再比较退火温度和TMR。",
         "最后注意5 K与300 K差异及其现代pMTJ迁移边界；约20–30分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "perspective-apm-9-040904",
+      "kind": "每日Perspective",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C",
+        "E"
+      ],
+      "title": "Emerging opportunities for voltage-driven magneto-ionic control of magnetism",
+      "titleZh": "电压驱动磁离子调控磁性的机会、机制与器件障碍",
+      "authors": "Youdi Gu, Cheng Song, Qian Wang et al.",
+      "venue": "APL Materials 9, 040904 (2021)",
+      "published": "2021-04-15",
+      "recommendedOn": "2026-07-28",
+      "doi": "10.1063/5.0045820",
+      "url": "https://pubs.aip.org/aip/apm/article/9/4/040904/1061865/Emerging-opportunities-for-voltage-driven-magneto",
+      "backupUrl": "https://doi.org/10.1063/5.0045820",
+      "assistantSummary": "正式Perspective系统比较离子液体、固态离子导体、铁性氧化物和磁性金属异质结构，区分静电与电化学机制，并明确速度、调制幅度和循环性的三方权衡。",
+      "whySelected": "今天的结晶CoFeB/MgO论文出现静电与磁离子效应并存；这篇Perspective提供判断框架，并明确指出磁离子速度通常仍受氧化还原和迁移限制。",
+      "readingGuide": [
+        "先看机制分类和典型可移动离子。",
+        "重点看磁性金属异质结构与MgO/CoFeB相关部分。",
+        "最后看速度、循环和电压权衡；约70–90分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-apl-96-262501",
+      "kind": "经典文章",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Boron diffusion in magnetic tunnel junctions with MgO (001) barriers and CoFeB electrodes",
+      "titleZh": "MgO(001)/CoFeB磁隧道结中的B扩散路径",
+      "authors": "H. Kurt, K. Rode, K. Oguz, M. Boese, C. C. Faulkner, J. M. D. Coey",
+      "venue": "Applied Physics Letters 96, 262501 (2010)",
+      "published": "2010-06-28",
+      "recommendedOn": "2026-07-28",
+      "doi": "10.1063/1.3457475",
+      "url": "https://pubs.aip.org/aip/apl/article/96/26/262501/921115/Boron-diffusion-in-magnetic-tunnel-junctions-with",
+      "backupUrl": "https://doi.org/10.1063/1.3457475",
+      "assistantSummary": "作者用逐层离子铣/XPS与EELS检查退火后的MgO/CoFeB模型结构和MTJ；即使CoFeB较厚并经400°C退火，也未在MgO或MgO/CoFe界面检测到B。",
+      "whySelected": "它为今天的富B CoFeB工作提供经典证据边界：B会离开CoFeB，但不能未经测量就假定它进入MgO势垒。",
+      "readingGuide": [
+        "先看射频溅射与电子束蒸发MgO的样品设计。",
+        "再看XPS深度剖析和EELS的B检测结果。",
+        "最后关注检测限、离子铣扰动和模型堆栈边界；约25–35分钟。"
       ],
       "notNew": true
     }
