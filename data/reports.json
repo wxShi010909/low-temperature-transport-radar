@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-28",
-  "reportDate": "2026-07-28",
-  "scope": "原子级制造、MTJ/MRAM、低温输运与产业化验证；2026-07-28聚焦退火结晶、离子迁移、B/Ir扩散控制、SAF稳定性和晶圆计量",
+  "updatedAt": "2026-07-29T09:20:00+08:00",
+  "reportDate": "2026-07-29",
+  "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
       "date": "2026-07-13",
@@ -242,6 +242,25 @@
         "arxiv-2605-09201",
         "ieee-ted-2025-3571706",
         "apm-13-101102"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "label": "工作日精选：MgO势垒良率、侧壁能垒、低温写入与击穿模型",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "apl-116-022409",
+        "jos-47-042302",
+        "aipadv-12-125317",
+        "ieee-edl-2025-3581530",
+        "ieee-tmag-2012-2200243"
       ]
     }
   ],
@@ -3019,6 +3038,188 @@
       "url": "https://pubs.aip.org/aip/apm/article/13/10/101102/3365393/Improvement-in-the-voltage-controlled-magnetic",
       "backupUrl": "https://doi.org/10.1063/5.0287949",
       "accessNote": "已核验AIP官方页面、完整作者、卷页、材料厚度、300 mm工艺、接受日期与DOI",
+      "featured": true
+    },
+    {
+      "id": "apl-116-022409",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "A low temperature functioning CoFeB/MgO-based perpendicular magnetic tunnel junction for cryogenic nonvolatile random access memory",
+      "titleZh": "9 K工作的CoFeB/MgO垂直MTJ：低温写入、电压与耐久",
+      "authors": "Lili Lang, Yujie Jiang, Fei Lu, Cailu Wang, Yizhang Chen, Andrew D. Kent, Li Ye",
+      "venue": "Applied Physics Letters 116, 022409 (2020)",
+      "published": "2020-01-14",
+      "recommendedOn": "2026-07-29",
+      "timeTier": "经典/重要旧文",
+      "system": "CoFeB/MgO垂直MTJ；面向低温非易失存储",
+      "conditions": "9–350 K；2–200 ns脉冲；9 K下10 ns耐久测试",
+      "methods": [
+        "低温脉冲写入",
+        "写错误率统计",
+        "耐久测试",
+        "FMR与磁化测量"
+      ],
+      "summary": "实测到9 K时TMR仍高于120%，2–200 ns双向写入错误率低于10⁻⁴；9 K、10 ns条件下耐久超过10¹²次，但临界写电压相对350 K提高33%–93%。",
+      "relevance": "把低温磁性变化、写入电压、误码与耐久放在同一器件上测量，是建设低温MTJ动态可靠性平台的直接基准。",
+      "limitation": "误码统计只到10⁻⁴量级，且主要是器件级结果；未覆盖阵列尾部、低温CMOS驱动、自热结温和封装热阻。",
+      "industrialization": "最接近低温/航天MRAM器件验证。仍需低至ppm/ppb的阵列WER、晶圆分布、驱动电路协同、温度循环、保持与封装可靠性。",
+      "whyRecommended": "今天推荐它，是因为本期从MgO势垒可靠性出发，需要一个真实低温写入基准来判断材料和模型最终是否转化为可用器件。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "1910.01149",
+      "doi": "10.1063/1.5129553",
+      "url": "https://pubs.aip.org/aip/apl/article/116/2/022409/280120/A-low-temperature-functioning-CoFeB-MgO-based",
+      "backupUrl": "https://arxiv.org/abs/1910.01149",
+      "accessNote": "已核验AIP官方题录/摘要、作者、发表日期、卷页和DOI；arXiv摘要可打开",
+      "featured": true
+    },
+    {
+      "id": "jos-47-042302",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "D",
+        "E"
+      ],
+      "title": "Realizing high-performance, enhanced write endurance of low-RA STT-MRAM through MgO tunnel barrier engineering",
+      "titleZh": "MgO势垒工程实现低RA、高写入裕量与亚ppm阵列误码",
+      "authors": "Kunkun Li, Xiaolei Yang, Junlu Gong, Shikun He",
+      "venue": "Journal of Semiconductors 47, 042302 (2026)",
+      "published": "2026-04-21",
+      "recommendedOn": "2026-07-29",
+      "timeTier": "近期正式发表",
+      "system": "低RA CoFeB/MgO STT-MRAM阵列",
+      "conditions": "RA = 7 Ω·μm²；MgO势垒与工艺优化",
+      "methods": [
+        "MgO势垒工程",
+        "阵列电学测试",
+        "写入裕量与BER统计",
+        "MOS驱动协同评估"
+      ],
+      "summary": "作者通过MgO势垒与工艺优化，在RA = 7 Ω·μm²时降低所需MOS驱动电压并扩大写入裕量，报告85%阵列良率达到亚ppm BER。",
+      "relevance": "这是本期最接近产品指标的论文，把原子级MgO调控直接连接到RA、驱动电压、写入窗口和阵列良率。",
+      "limitation": "85%阵列良率仍非量产终点；公开结果不足以覆盖批间分布、高温保持、TDDB、ECC、工艺节点和成本。",
+      "industrialization": "最接近嵌入式STT-MRAM阵列与写驱动联合优化。还需提升全片/批次良率并证明高温保持、10¹²级耐久、长尾BER、BEOL和测试成本。",
+      "whyRecommended": "今天推荐它，是因为它提供了判断MgO势垒工程是否真正进入制造端的硬指标，而不只展示单器件TMR。",
+      "score": 9.8,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1088/1674-4926/25080016",
+      "url": "https://www.jos.ac.cn/en/article/doi/10.1088/1674-4926/25080016",
+      "backupUrl": "https://doi.org/10.1088/1674-4926/25080016",
+      "accessNote": "已核验期刊官方页面、作者、卷页、在线/正式发表历史、RA、阵列良率和DOI",
+      "featured": true
+    },
+    {
+      "id": "aipadv-12-125317",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Influence of sidewall damage on thermal stability in quad-CoFeB/MgO interfaces by micromagnetic simulation",
+      "titleZh": "四界面CoFeB/MgO MTJ侧壁损伤如何重塑能垒",
+      "authors": "Hiroshi Naganuma, Hiroaki Honjo, Chioko Kaneta et al.",
+      "venue": "AIP Advances 12, 125317 (2022)",
+      "published": "2022-12-21",
+      "recommendedOn": "2026-07-29",
+      "timeTier": "经典/重要旧文",
+      "system": "18 nm四界面CoFeB/MgO垂直MTJ",
+      "conditions": "约4 nm氧化侧壁损伤；损伤区约占18 nm器件体积33%",
+      "methods": [
+        "实验参数约束的微磁模拟",
+        "string method",
+        "climbing method",
+        "最小能量路径分析"
+      ],
+      "summary": "理论计算显示，无损伤且界面各向异性较高时，两自由层可能经反铁磁中间态分步翻转并形成分裂能垒；侧壁损伤降低局部各向异性，反而可能消除该中间态并统一能垒。",
+      "relevance": "它警告不能把‘损伤越少、Ki越高’机械等同于能垒越高；四界面自由层需要用完整堆栈和翻转路径判断。",
+      "limitation": "这是用实验参数约束的理论预测，不是目标器件的直接能垒测量；损伤层均匀性、化学组成和参数仍被简化。",
+      "industrialization": "最接近纳米MTJ工艺损伤模型与保持设计。仍需用TEM/EELS、温变WER/保持和尺寸统计对模型反演，形成可供工艺窗口使用的校准模型。",
+      "whyRecommended": "今天推荐它，是因为它把侧壁氧化从显微图像转成能垒路径问题，可直接指导IBE、封护和保持测试如何闭环。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0112741",
+      "url": "https://pubs.aip.org/aip/adv/article/12/12/125317/2820215/Influence-of-sidewall-damage-on-thermal-stability",
+      "backupUrl": "https://doi.org/10.1063/5.0112741",
+      "accessNote": "已核验AIP开放全文、作者、发表日期、18 nm模型、损伤厚度、方法和DOI",
+      "featured": true
+    },
+    {
+      "id": "ieee-edl-2025-3581530",
+      "track": "D",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Modeling of Endurance Degradation and Hard Breakdown for MRAM-OTP Demonstration",
+      "titleZh": "用耐久退化与硬击穿双模型实现4 Mb MRAM-OTP",
+      "authors": "Jiongzhe Su, Quanhai Zhu, Yaoru Hou, Qiming Shao, Bo Liu, Hao Cai",
+      "venue": "IEEE Electron Device Letters 46, 1333–1336 (2025)",
+      "published": "2025-08-01",
+      "recommendedOn": "2026-07-29",
+      "timeTier": "近2年精选",
+      "system": "STT-MRAM及4 Mb MRAM-OTP子系统",
+      "conditions": "基于MTJ TDDB、硬击穿与正常写入退化数据",
+      "methods": [
+        "耐久退化模型",
+        "击穿时间分布模型",
+        "TDDB测量",
+        "4 Mb子系统验证"
+      ],
+      "summary": "作者提出两套渐进模型：一套评估耐久与WER的权衡，另一套修正MTJ硬击穿概率，并用TDDB/击穿测量数据支持4 Mb STT-MRAM子系统的可靠性感知设计。",
+      "relevance": "把器件级击穿数据转化为阵列设计与一次性编程决策，是低温/高场测试平台向可制造可靠性模型迈进的关键一步。",
+      "limitation": "模型依赖特定工艺与分布；公开摘要不能证明跨节点、跨温度、跨供应商的普适性，也未替代实测长尾统计。",
+      "industrialization": "最接近MRAM设计可靠性与OTP功能。仍需工艺角、温度角、ECC/冗余、晶圆批次、量产测试时间和编程失败安全性验证。",
+      "whyRecommended": "今天推荐它，是因为势垒工程只有进入TDDB、硬击穿概率和阵列决策模型，才能真正服务产品可靠性。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1109/LED.2025.3581530",
+      "url": "https://ieeexplore.ieee.org/document/11045797/",
+      "backupUrl": "https://doi.org/10.1109/LED.2025.3581530",
+      "accessNote": "已打开IEEE官方题录页，并核验DOI、作者、卷页及4 Mb/TDDB摘要信息",
+      "featured": true
+    },
+    {
+      "id": "ieee-tmag-2012-2200243",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Barrier Breakdown Mechanisms in MgO-Based Magnetic Tunnel Junctions and Correlation With Low-Frequency Noise",
+      "titleZh": "MgO MTJ脉冲间隔、陷阱逃逸与低频噪声指示的击穿机制",
+      "authors": "Selma Amara, Ricardo C. Sousa, Hélène Béa, C. Baraduc, Bernard Dieny",
+      "venue": "IEEE Transactions on Magnetics 48, 4340–4343 (2012)",
+      "published": "2012-11-01",
+      "recommendedOn": "2026-07-29",
+      "timeTier": "经典/重要旧文",
+      "system": "MgO磁隧道结势垒陷阱与脉冲电应力",
+      "conditions": "扫描连续应力脉冲之间的延迟；同步观察低频噪声",
+      "methods": [
+        "脉冲电应力",
+        "耐久统计",
+        "低频噪声",
+        "陷阱俘获—释放模型"
+      ],
+      "summary": "实测发现MTJ耐久随脉冲间隔出现明显最优值，作者将其对应于势垒陷阱中电子的逃逸时间；平均陷阱电荷与其时间调制可导致不同击穿路径，低频噪声提供陷阱信息。",
+      "relevance": "把脉冲波形、陷阱动力学、噪声和击穿统一起来，可直接迁移到现代MgO势垒的低温/高频可靠性诊断。",
+      "limitation": "样品和尺寸属于较早一代MTJ，陷阱时间常数与现代超薄MgO、pMTJ和低温条件不能直接照搬。",
+      "industrialization": "最接近MgO势垒筛选和写脉冲可靠性规则。仍需现代纳米pMTJ、温度/自热分离、阵列长尾、批次漂移与预测误报率验证。",
+      "whyRecommended": "今天推荐它，是因为它提供一条低成本电学路径，把不可见的势垒陷阱转成可测的脉冲间隔和噪声指纹。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1109/TMAG.2012.2200243",
+      "url": "https://ieeexplore.ieee.org/document/6332636/",
+      "backupUrl": "https://doi.org/10.1109/TMAG.2012.2200243",
+      "accessNote": "已打开IEEE官方题录页，并核验作者、卷页、DOI、脉冲延迟和低频噪声摘要",
       "featured": true
     }
   ]

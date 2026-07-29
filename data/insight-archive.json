@@ -140,6 +140,18 @@
       "atomicIds": [
         "2026-07-28-crystallization-ion-migration"
       ]
+    },
+    {
+      "date": "2026-07-29",
+      "opportunityIds": [
+        "2026-07-29-ra-endurance-yield-map"
+      ],
+      "methodIds": [
+        "2026-07-29-cryo-pulse-trap-platform"
+      ],
+      "atomicIds": [
+        "2026-07-29-sidewall-barrier-damage-loop"
+      ]
     }
   ],
   "items": [
@@ -2592,6 +2604,154 @@
       ],
       "researchConnection": "直接连接真空互联、退火、原位表征、VCMA和低温可靠性平台。",
       "takeaway": "同一非易失响应既可能是功能，也可能是漂移；必须用时间、温度和成分三重证据判定。"
+    },
+    {
+      "id": "2026-07-29-ra-endurance-yield-map",
+      "date": "2026-07-29",
+      "type": "research-opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/D · 阵列可靠性",
+      "title": "RA—写入裕量—TDDB—阵列良率联合图",
+      "subtitle": "让MgO势垒DOE以产品长尾收口",
+      "summary": "本站方案：在同批晶圆上把MgO势垒厚度/氧化工艺与RA、TMR、写入裕量、TDDB、亚ppm BER和阵列良率逐位置关联。",
+      "status": "由当日论文启发的待验证方案",
+      "relatedPaperIds": [
+        "jos-47-042302",
+        "ieee-edl-2025-3581530"
+      ],
+      "question": "低RA带来的驱动收益在哪个势垒窗口开始被读裕量、击穿和长尾BER抵消？",
+      "rationale": "正式论文已给出RA=7 Ω·μm²、85%阵列良率和亚ppm BER；另一篇把TDDB与4 Mb子系统模型连接。二者尚未公开形成同一晶圆的联合因果图。",
+      "workflow": [
+        "设计MgO厚度、氧化剂量与退火正交DOE。",
+        "做晶圆级RA/TMR/噪声映射。",
+        "抽样做脉冲WER、TDDB与硬击穿。",
+        "用分层统计模型关联阵列良率和工艺变量。"
+      ],
+      "equipment": [
+        "300 mm或小片可追溯溅射平台",
+        "晶圆级MTJ探针与高速脉冲",
+        "TDDB/噪声自动化矩阵",
+        "工艺与电测数据库"
+      ],
+      "measurements": [
+        "RA/TMR/偏置依赖",
+        "写入窗口与亚ppm BER",
+        "TDDB与击穿分布",
+        "全片/批次良率"
+      ],
+      "metrics": [
+        "RA=7 Ω·μm²附近仍保持目标读裕量",
+        "亚ppm BER置信区间可报告",
+        "TDDB模型跨批次预测误差",
+        "全片与批次良率提升"
+      ],
+      "evidenceBoundary": "RA=7和85%良率是文献事实；把工艺、TDDB与良率统一建模是本站建议，需目标产线数据验证。",
+      "firstSteps": [
+        "先汇总现有RA/TMR/WER样本。",
+        "增加三档MgO工艺而非连续大扫描。",
+        "在每档选中心与边缘位置做TDDB。"
+      ],
+      "researchConnection": "直接连接原子级MgO工艺、阵列误码和产业化验收。",
+      "takeaway": "势垒窗口必须由长尾BER、TDDB和良率共同定义。"
+    },
+    {
+      "id": "2026-07-29-cryo-pulse-trap-platform",
+      "date": "2026-07-29",
+      "type": "method",
+      "typeZh": "方法与设备",
+      "trackLabel": "A/D · 低温脉冲噪声",
+      "title": "9–300 K脉冲间隔—陷阱噪声—WER联合平台",
+      "subtitle": "把冷台温度、结温与陷阱时间常数拆开",
+      "summary": "本站方案：在变温环境中扫描脉冲幅度、宽度和间隔，同步采集低频噪声、结温代理量、WER和耐久，提取MgO陷阱时间常数谱。",
+      "status": "待实验验证",
+      "relatedPaperIds": [
+        "apl-116-022409",
+        "ieee-tmag-2012-2200243"
+      ],
+      "question": "低温下写电压升高究竟有多少来自磁性能垒，有多少来自陷阱动力学和自热变化？",
+      "rationale": "9 K论文给出写电压与耐久变化；经典脉冲论文显示间隔与陷阱逃逸控制耐久。把两者合并是本站推断。",
+      "workflow": [
+        "在9/20/77/150/300 K校准线路和结温代理量。",
+        "扫描ns–ms脉冲间隔与2–200 ns脉宽。",
+        "脉冲块之间采集1/f与RTN噪声。",
+        "联合拟合WER、耐久和陷阱时间常数。"
+      ],
+      "equipment": [
+        "低温磁体/探针台或PPMS接口",
+        "高速脉冲源与示波器",
+        "低噪声前置放大器与滤波",
+        "自动化时序和温度校准"
+      ],
+      "measurements": [
+        "TMR与写电压",
+        "WER/耐久",
+        "1/f与RTN噪声",
+        "冷台温度和结温代理量"
+      ],
+      "metrics": [
+        "温度与脉冲参数可追溯",
+        "陷阱时间常数重复性",
+        "WER与噪声预测关联",
+        "结温修正后的模型残差"
+      ],
+      "evidenceBoundary": "文献分别证明低温写入和脉冲间隔效应；两者在同一现代pMTJ中的耦合尚未验证。",
+      "firstSteps": [
+        "先在300/77/9 K做三档间隔扫描。",
+        "验证仪器死区和电缆反射。",
+        "只对出现耐久最优点的条件做完整噪声谱。"
+      ],
+      "researchConnection": "适合现有低温输运平台升级为MTJ可靠性设备，而非只测R–T和磁滞。",
+      "takeaway": "低温写入窗口需要同时标注脉冲间隔、结温与陷阱状态。"
+    },
+    {
+      "id": "2026-07-29-sidewall-barrier-damage-loop",
+      "date": "2026-07-29",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "C/E · 侧壁化学",
+      "title": "侧壁氧化—MgO陷阱—能垒路径闭环",
+      "subtitle": "把TEM损伤壳层变成可验收的器件模型",
+      "summary": "本站方案：通过可控IBE/封护条件生成侧壁损伤梯度，以STEM-EELS、低频噪声、温变WER和微磁反演建立侧壁化学—陷阱—能垒映射。",
+      "status": "待实验验证",
+      "relatedPaperIds": [
+        "aipadv-12-125317",
+        "ieee-tmag-2012-2200243",
+        "jos-47-042302"
+      ],
+      "question": "侧壁氧化主要通过削弱磁性、增加势垒陷阱，还是改变多自由层耦合路径导致失效？",
+      "rationale": "微磁论文预测侧壁会重写能垒；噪声论文提供陷阱指纹；低RA阵列论文提供最终良率指标。统一闭环是本站建议。",
+      "workflow": [
+        "设计离子能量/角度/过刻与封护延迟DOE。",
+        "对牺牲器件做截面STEM-EELS/EDS。",
+        "对同批器件测噪声、温变WER和保持。",
+        "用实测损伤厚度约束微磁/统计模型。"
+      ],
+      "equipment": [
+        "IBE与真空互联封护",
+        "截面FIB与STEM-EELS",
+        "低温噪声和高速WER平台",
+        "微磁与统计计算环境"
+      ],
+      "measurements": [
+        "损伤厚度与Co/Fe/O分布",
+        "TMR/RA/低频噪声",
+        "Δ、WER与保持",
+        "尺寸/全片分布"
+      ],
+      "metrics": [
+        "损伤厚度测量不确定度",
+        "模型对Δ/保持的预测误差",
+        "噪声对异常器件的检出率",
+        "工艺优化后的良率提升"
+      ],
+      "evidenceBoundary": "约4 nm损伤和能垒效应来自特定文献结构；向目标堆栈迁移必须重新测化学和参数。",
+      "firstSteps": [
+        "先选两档IBE过刻和一档基准。",
+        "每档保留结构牺牲样品。",
+        "用同一器件先做噪声再做加速失效。"
+      ],
+      "researchConnection": "直接覆盖IBE、真空封护、原位/截面表征、低温输运与工艺反馈。",
+      "takeaway": "侧壁损伤不是一张TEM图，而应成为能预测保持、噪声和良率的定量变量。"
     }
   ]
 }

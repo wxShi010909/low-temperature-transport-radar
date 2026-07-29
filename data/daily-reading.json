@@ -1,57 +1,56 @@
 {
-  "date": "2026-07-28",
+  "date": "2026-07-29",
   "review": {
-    "id": "perspective-apm-9-040904",
-    "kind": "每日Perspective",
+    "id": "review-ieee-access-2020-3033023",
+    "kind": "每日综述",
     "track": "B",
     "secondaryTracks": [
       "A",
       "C",
-      "E"
+      "D"
     ],
-    "title": "Emerging opportunities for voltage-driven magneto-ionic control of magnetism",
-    "titleZh": "电压驱动磁离子调控磁性的机会、机制与器件障碍",
-    "authors": "Youdi Gu, Cheng Song, Qian Wang et al.",
-    "venue": "APL Materials 9, 040904 (2021)",
-    "published": "2021-04-15",
-    "recommendedOn": "2026-07-28",
-    "doi": "10.1063/5.0045820",
-    "url": "https://pubs.aip.org/aip/apm/article/9/4/040904/1061865/Emerging-opportunities-for-voltage-driven-magneto",
-    "backupUrl": "https://doi.org/10.1063/5.0045820",
-    "assistantSummary": "正式Perspective系统比较离子液体、固态离子导体、铁性氧化物和磁性金属异质结构，区分静电与电化学机制，并明确速度、调制幅度和循环性的三方权衡。",
-    "whySelected": "今天的结晶CoFeB/MgO论文出现静电与磁离子效应并存；这篇Perspective提供判断框架，并明确指出磁离子速度通常仍受氧化还原和迁移限制。",
+    "title": "From MTJ Device to Hybrid CMOS/MTJ Circuits: A Review",
+    "titleZh": "从MTJ器件到CMOS/MTJ混合电路：模型、可靠性与集成综述",
+    "authors": "Vinod Kumar Joshi, Prashanth Barla, Somashekara Bhat, Brajesh Kumar Kaushik",
+    "venue": "IEEE Access 8, 194105–194146 (2020)",
+    "published": "2020-10-22",
+    "recommendedOn": "2026-07-29",
+    "doi": "10.1109/ACCESS.2020.3033023",
+    "url": "https://ieeexplore.ieee.org/document/9235579/",
+    "backupUrl": "https://doi.org/10.1109/ACCESS.2020.3033023",
+    "assistantSummary": "正式综述从MTJ物理和紧凑模型出发，覆盖TDDB、针孔/击穿等可靠性，再进入CMOS/MTJ读写、逻辑和EDA集成。",
+    "whySelected": "今天五篇横跨势垒、侧壁、低温写入和阵列模型；这篇综述提供把这些证据放入电路设计与模型验证的统一框架。",
     "readingGuide": [
-      "先看机制分类和典型可移动离子。",
-      "重点看磁性金属异质结构与MgO/CoFeB相关部分。",
-      "最后看速度、循环和电压权衡；约70–90分钟。"
+      "先看MTJ器件参数与紧凑模型。",
+      "重点看可靠性、TDDB与针孔增长。",
+      "最后看读写电路、混合逻辑和模型缺口；约75–100分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-apl-96-262501",
+      "id": "classic-apl-94-123110",
       "kind": "经典文章",
       "track": "E",
       "secondaryTracks": [
-        "A",
         "B",
         "D"
       ],
-      "title": "Boron diffusion in magnetic tunnel junctions with MgO (001) barriers and CoFeB electrodes",
-      "titleZh": "MgO(001)/CoFeB磁隧道结中的B扩散路径",
-      "authors": "H. Kurt, K. Rode, K. Oguz, M. Boese, C. C. Faulkner, J. M. D. Coey",
-      "venue": "Applied Physics Letters 96, 262501 (2010)",
-      "published": "2010-06-28",
-      "recommendedOn": "2026-07-28",
-      "doi": "10.1063/1.3457475",
-      "url": "https://pubs.aip.org/aip/apl/article/96/26/262501/921115/Boron-diffusion-in-magnetic-tunnel-junctions-with",
-      "backupUrl": "https://doi.org/10.1063/1.3457475",
-      "assistantSummary": "作者用逐层离子铣/XPS与EELS检查退火后的MgO/CoFeB模型结构和MTJ；即使CoFeB较厚并经400°C退火，也未在MgO或MgO/CoFe界面检测到B。",
-      "whySelected": "它为今天的富B CoFeB工作提供经典证据边界：B会离开CoFeB，但不能未经测量就假定它进入MgO势垒。",
+      "title": "Dielectric breakdown of MgO magnetic tunnel junctions",
+      "titleZh": "MgO磁隧道结的软击穿与硬击穿经典实验",
+      "authors": "D. V. Dimitrov, Zheng Gao, Xiaobin Wang, Wonjoon Jung, Xiaohua Lou, Olle G. Heinonen",
+      "venue": "Applied Physics Letters 94, 123110 (2009)",
+      "published": "2009-03-26",
+      "recommendedOn": "2026-07-29",
+      "doi": "10.1063/1.3109792",
+      "url": "https://pubs.aip.org/aip/apl/article/94/12/123110/151739/Dielectric-breakdown-of-MgO-magnetic-tunnel",
+      "backupUrl": "https://doi.org/10.1063/1.3109792",
+      "assistantSummary": "作者比较不同MgO厚度，区分少数缺陷器件中的软击穿和达到临界电场后的硬击穿，并排除热扩散或俘获电荷作为该组硬击穿数据的主因。",
+      "whySelected": "它为今天的低RA势垒和陷阱论文提供经典边界：不同器件可由不同失效机制主导，不能用单一模型解释所有击穿。",
       "readingGuide": [
-        "先看射频溅射与电子束蒸发MgO的样品设计。",
-        "再看XPS深度剖析和EELS的B检测结果。",
-        "最后关注检测限、离子铣扰动和模型堆栈边界；约25–35分钟。"
+        "先看不同势垒厚度和击穿分布。",
+        "区分软击穿与硬击穿的证据。",
+        "最后比较被排除机制的适用边界；约20–30分钟。"
       ],
       "notNew": true
     }
