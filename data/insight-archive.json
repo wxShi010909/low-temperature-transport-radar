@@ -152,6 +152,18 @@
       "atomicIds": [
         "2026-07-29-sidewall-barrier-damage-loop"
       ]
+    },
+    {
+      "date": "2026-07-30",
+      "opportunityIds": [
+        "2026-07-30-ale-yield-bridge"
+      ],
+      "methodIds": [
+        "2026-07-30-cryo-rf-probe"
+      ],
+      "atomicIds": [
+        "2026-07-30-mtj-digital-thread"
+      ]
     }
   ],
   "items": [
@@ -2752,6 +2764,154 @@
       ],
       "researchConnection": "直接覆盖IBE、真空封护、原位/截面表征、低温输运与工艺反馈。",
       "takeaway": "侧壁损伤不是一张TEM图，而应成为能预测保持、噪声和良率的定量变量。"
+    },
+    {
+      "id": "2026-07-30-ale-yield-bridge",
+      "date": "2026-07-30",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/E · 图形化与良率",
+      "title": "CoFeB热ALE—侧壁化学—亚ppm阵列良率桥接",
+      "subtitle": "把MgO停止层优势转成可制造器件证据",
+      "summary": "本站方案：用IBE粗刻+热ALE精修形成图形化DOE，以原位/截面化学、TMR/RA、噪声和子阵列WER验证MgO选择性是否真正改善阵列尾部。",
+      "status": "待实验验证",
+      "relatedPaperIds": [
+        "apsusc-575-151751",
+        "jos-46-032301"
+      ],
+      "question": "热ALE的低损伤和MgO停止作用能否降低侧壁异常并提高亚ppm阵列良率？",
+      "rationale": "ALE论文证明化学选择性，4 Mb论文证明最终良率目标；两者之间的器件闭环尚无直接证据。",
+      "workflow": [
+        "IBE粗刻至距MgO不同余量。",
+        "以热ALE完成最后0.3–1.0 nm。",
+        "原位XPS/ToF-SIMS和截面EELS查Cl/C/O。",
+        "测全片TMR/RA、噪声和子阵列WER。"
+      ],
+      "equipment": [
+        "IBE与ALE真空互联",
+        "原位XPS/残气分析",
+        "FIB-STEM-EELS",
+        "阵列WER和低噪声平台"
+      ],
+      "measurements": [
+        "刻蚀深度/CD",
+        "Cl/C/O残留",
+        "TMR/RA与PMA",
+        "子阵列WER/良率"
+      ],
+      "metrics": [
+        "停止层选择比",
+        "片内CD 3σ",
+        "异常噪声检出率",
+        "亚ppm合格芯片比例"
+      ],
+      "evidenceBoundary": "文献未证明热ALE可直接改善现代pMTJ阵列良率；这是本站提出的待验证桥接。",
+      "firstSteps": [
+        "先在毯膜确认每循环刻蚀量与残留。",
+        "再做大尺寸柱验证MgO停止。",
+        "最后进入小阵列，不直接跳到全芯片。"
+      ],
+      "researchConnection": "覆盖ALE、IBE、真空互联、原位表征、MTJ图形化和产业良率。",
+      "takeaway": "ALE价值要用器件尾部良率证明，而非只用平均刻蚀量证明。"
+    },
+    {
+      "id": "2026-07-30-cryo-rf-probe",
+      "date": "2026-07-30",
+      "type": "method",
+      "typeZh": "方法与设备",
+      "trackLabel": "A/D · 低温高频噪声",
+      "title": "4–300 K MTJ散粒噪声—电子温度—WER联合探针",
+      "subtitle": "从50 Ω标定到势垒失效指纹",
+      "summary": "本站方案：复刻模块化同轴探针并升级4 K放大器，在脉冲写入前后测散粒/Johnson/1/f噪声，联合标定电子温度、陷阱和WER。",
+      "status": "待实验验证",
+      "relatedPaperIds": [
+        "rsi-93-103902",
+        "jos-46-032301"
+      ],
+      "question": "阵列写入长尾中有多少来自势垒陷阱和真实结温，而非冷台温度？",
+      "rationale": "探针论文给出77 K MTJ噪声测量能力，阵列论文给出亚ppm目标；把噪声变成良率预测量是本站建议。",
+      "workflow": [
+        "标定4.2/20/77/300 K S参数与热负载。",
+        "替换可在4 K工作的低噪声前置。",
+        "测不同RA器件散粒/Johnson/1/f噪声。",
+        "与脉冲WER和加速失效关联。"
+      ],
+      "equipment": [
+        "非磁低温探针",
+        "VNA与同轴校准件",
+        "4 K低噪声放大器",
+        "高速脉冲源/示波器"
+      ],
+      "measurements": [
+        "S11/S21",
+        "电子温度",
+        "散粒与1/f/RTN噪声",
+        "WER/TDDB"
+      ],
+      "metrics": [
+        "50 Ω偏差",
+        "噪声温度与校准不确定度",
+        "4 K可用带宽",
+        "噪声对异常单元预测AUC"
+      ],
+      "evidenceBoundary": "原论文在77 K演示散粒噪声，4.2 K受放大器限制；阵列预测能力尚未证明。",
+      "firstSteps": [
+        "先复刻单通道并做through标定。",
+        "以标准电阻验证Johnson温标。",
+        "再测MTJ，不先扩多通道。"
+      ],
+      "researchConnection": "可把低温输运平台升级为MTJ势垒、结温与可靠性诊断工具。",
+      "takeaway": "先把探针本身的带宽和噪声温度标清，才有资格解释MTJ噪声。"
+    },
+    {
+      "id": "2026-07-30-mtj-digital-thread",
+      "date": "2026-07-30",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "D/E · 设备数字线程",
+      "title": "PVD设备状态—楔形片—低温各向异性—阵列良率数字线程",
+      "subtitle": "把原子层参数从设备一路追到产品KPI",
+      "summary": "本站方案：统一采集PVD设备参数、楔形片MOKE、低温外推、器件TMR/RA与阵列良率，建立漂移侦测和配方放行模型。",
+      "status": "待实验验证",
+      "relatedPaperIds": [
+        "ieee-asmc-2024-10545528",
+        "prapplied-24-024016",
+        "jos-46-032301"
+      ],
+      "question": "哪些设备漂移会首先改变低温各向异性窗口，并最终推高阵列WER长尾？",
+      "rationale": "设备监控、低温外推和阵列良率分别已被文献证明；三层联合归因仍是本站分析。",
+      "workflow": [
+        "建立靶次/晶圆/器件唯一ID。",
+        "同步设备参数与楔形MOKE。",
+        "抽样做低温验证并校正外推。",
+        "用阵列良率反向更新控制限。"
+      ],
+      "equipment": [
+        "磁控PVD数据接口",
+        "自动MOKE/膜厚计",
+        "低温器件测试",
+        "SPC与数据版本管理"
+      ],
+      "measurements": [
+        "功率/压强/速率/温度",
+        "PMA与重取向边界",
+        "TMR/RA/偏置场",
+        "阵列WER/良率"
+      ],
+      "metrics": [
+        "数据完整率",
+        "MOKE到低温预测误差",
+        "异常提前量",
+        "误报/漏报与良率提升"
+      ],
+      "evidenceBoundary": "文献未给出跨平台统一模型；数据因果性必须通过受控DOE和批次复现建立。",
+      "firstSteps": [
+        "先选三个设备变量和两个楔形响应。",
+        "回溯10批历史数据。",
+        "只在模型能提前预警后扩大变量。"
+      ],
+      "researchConnection": "直接服务原子级沉积设备、工艺反馈、低温器件和可制造性验证。",
+      "takeaway": "设备监控的终点不是报警，而是能预测低温器件和阵列良率。"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-29T09:20:00+08:00",
-  "reportDate": "2026-07-29",
+  "updatedAt": "2026-07-30T09:45:00+08:00",
+  "reportDate": "2026-07-30",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -261,6 +261,25 @@
         "aipadv-12-125317",
         "ieee-edl-2025-3581530",
         "ieee-tmag-2012-2200243"
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "label": "工作日精选：汽车级阵列良率、MTJ设备监控、CoFeB热ALE与低温高频计量",
+      "total": 5,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 2
+      },
+      "paperIds": [
+        "jos-46-032301",
+        "ieee-asmc-2024-10545528",
+        "apsusc-575-151751",
+        "prapplied-24-024016",
+        "rsi-93-103902"
       ]
     }
   ],
@@ -3220,6 +3239,194 @@
       "url": "https://ieeexplore.ieee.org/document/6332636/",
       "backupUrl": "https://doi.org/10.1109/TMAG.2012.2200243",
       "accessNote": "已打开IEEE官方题录页，并核验作者、卷页、DOI、脉冲延迟和低频噪声摘要",
+      "featured": true
+    },
+    {
+      "id": "jos-46-032301",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "D",
+        "E"
+      ],
+      "title": "Achieving over 95% yield of sub-1 ppm BER with retention over 10 years at 125 °C and endurance of 1 × 10^12 cycles towards automotive non-volatile RAM applications",
+      "titleZh": "4 Mb汽车级STT-MRAM：95%芯片达到亚ppm阵列良率",
+      "authors": "Dinggui Zeng, Fantao Meng, Ruofei Chen, Yang Gao, Yihui Sun, Junlu Gong, Yongzhao Peng, Qijun Guo, Zhixiao Deng, Weiming He, Baoyu Xiong, Jia Hou, Jichao Li, Wei Fang, Qiang Dai, Yaohua Wang, Shikun He",
+      "venue": "Journal of Semiconductors 46, 032301 (2025)",
+      "published": "2025-03-14",
+      "recommendedOn": "2026-07-30",
+      "timeTier": "近2年精选",
+      "system": "300 mm平台4 Mb nvRAM型STT-MRAM",
+      "conditions": "−40–125 °C；20 ns写入；无ECC与修复的亚ppm阵列良率统计",
+      "methods": [
+        "300 mm工艺",
+        "4 Mb阵列",
+        "WER与良率",
+        "高温保持",
+        "耐久与磁场免疫"
+      ],
+      "summary": "实测4 Mb芯片在−40至125 °C实现20 ns读写、10^12次耐久和125 °C超过10年保持；经MTJ材料、工艺与设计协同优化，无ECC/修复条件下达到亚ppm错误率的阵列良率由0提升到95%以上。",
+      "relevance": "把MTJ薄膜和器件指标真正推进到阵列尾部、温度范围与汽车级可靠性，是评判实验室MTJ能否进入产品的强标尺。",
+      "limitation": "结果来自4 Mb和特定工艺平台；摘要与公开数据不足以证明更大容量、跨批次、跨厂迁移、封装场失效率和完整AEC-Q100资格。",
+      "industrialization": "最接近汽车级nvRAM产品验证。仍需更大容量、批间/机台间分布、封装后FIT、AEC-Q100/JEDEC全套资格、成本与供应链验证。",
+      "whyRecommended": "今天推荐它，是因为它把昨天讨论的低RA、TDDB和侧壁问题压缩成最关键的制造终点：亚ppm阵列良率与高温长期可靠性。",
+      "score": 9.9,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1088/1674-4926/24090037",
+      "url": "https://www.jos.ac.cn/en/article/doi/10.1088/1674-4926/24090037",
+      "backupUrl": "https://doi.org/10.1088/1674-4926/24090037",
+      "accessNote": "已打开期刊官方HTML全文，核验题目、作者、卷期、DOI、4 Mb阵列、温度、速度、耐久、保持和良率数据",
+      "featured": true
+    },
+    {
+      "id": "ieee-asmc-2024-10545528",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Process and Tool Monitoring Strategy for Advanced Magnetic Tunnel Junction Stack Deposition",
+      "titleZh": "先进MTJ堆栈沉积的设备与工艺监控策略",
+      "authors": "Gabriel Rodriguez, Oscar Van Der Straten, Virat Mehta, J. M. Slaughter, Christian Kaiser, Chien-Fu Huang, Dan Frye, Ryan Carr",
+      "venue": "2024 35th Annual SEMI Advanced Semiconductor Manufacturing Conference (ASMC)",
+      "published": "2024-05-13",
+      "recommendedOn": "2026-07-30",
+      "timeTier": "近2年精选",
+      "system": "研发/原型线磁控PVD MTJ堆栈沉积",
+      "conditions": "沉积设备关键参数、晶圆监控与异常事件检测/围堵",
+      "methods": [
+        "磁控PVD",
+        "设备健康监控",
+        "晶圆计量",
+        "异常侦测与围堵",
+        "过程控制"
+      ],
+      "summary": "论文把MTJ层结构与沉积设备关键参数、晶圆监控策略对应起来，并用案例说明如何发现和围堵潜在工艺漂移事件。",
+      "relevance": "直接连接原子级层厚控制、设备状态和晶圆输出，适合建立靶材寿命、腔体状态、沉积速率与TMR/RA/良率的数字线程。",
+      "limitation": "IBM公开摘要不披露完整SPC阈值、全部传感器、样本量和失效案例细节，不能据此复刻生产控制限。",
+      "industrialization": "最接近MTJ核心膜沉积设备的生产控制。仍缺公开的跨靶寿命漂移、颗粒、机台匹配、量测GR&R和器件良率闭环数据。",
+      "whyRecommended": "今天推荐它，是因为高性能单片不能替代可控设备；这篇把制造问题前移到异常侦测、围堵与追溯。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1109/ASMC61125.2024.10545528",
+      "url": "https://research.ibm.com/publications/process-and-tool-monitoring-strategy-for-advanced-magnetic-tunnel-junction-stack-deposition",
+      "backupUrl": "https://doi.org/10.1109/ASMC61125.2024.10545528",
+      "accessNote": "已打开IBM Research官方题录页，核验题目、作者、会议、日期、DOI及设备参数—晶圆监控—异常围堵主线",
+      "featured": true
+    },
+    {
+      "id": "apsusc-575-151751",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Selectivity in atomically precise etching: Thermal atomic layer etching of a CoFeB alloy and its protection by MgO",
+      "titleZh": "CoFeB热原子层刻蚀及MgO选择性停止",
+      "authors": "Mahsa Konh, Yang Wang, Hang Chen, Subhash Bhatt, J. Q. Xiao, Andrew V. Teplyakov",
+      "venue": "Applied Surface Science 575, 151751 (2022)",
+      "published": "2022-02-01",
+      "recommendedOn": "2026-07-30",
+      "timeTier": "经典/重要旧文",
+      "system": "CoFeB/MgO磁隧道结材料的热ALE",
+      "conditions": "Cl2与乙酰丙酮顺序暴露；验证合金成分保持与MgO保护",
+      "methods": [
+        "热ALE",
+        "Cl2活化",
+        "乙酰丙酮配体反应",
+        "XPS",
+        "MgO选择性"
+      ],
+      "summary": "作者用Cl2和乙酰丙酮的顺序热反应刻蚀CoFeB，目标是在纳米尺度维持合金组成，并证明MgO可作为保护层/停止层；公开资料给出的刻蚀量约0.15 nm/循环。",
+      "relevance": "为IBE/RIE之外的低损伤、层级选择性MTJ图形化提供直接化学路线，可与真空互联、原位XPS和侧壁修复联合。",
+      "limitation": "材料薄膜与图形样品的选择性不等于纳米柱量产；尚缺高深宽比侧壁、残Cl/C、磁性/TMR、CD均匀性、吞吐和腔体记忆效应。",
+      "industrialization": "最接近MTJ图形化和停止层工程。主要障碍是反应时间、前驱体残留与安全、图形负载、全片均匀性、磁性保持及与BEOL节拍兼容。",
+      "whyRecommended": "今天推荐它，是因为它把‘少损伤刻蚀’从降低离子能量推进为可以利用MgO化学选择性的原子级停止问题。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1016/j.apsusc.2021.151751",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0169433221027951",
+      "backupUrl": "https://doi.org/10.1016/j.apsusc.2021.151751",
+      "accessNote": "已打开出版社直接题录/摘要入口并以NSF公开全文核对作者、期刊、DOI、顺序反应、合金保持和MgO保护结论",
+      "featured": true
+    },
+    {
+      "id": "prapplied-24-024016",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "E"
+      ],
+      "title": "Optimizing effective anisotropy in magnetic tunnel junctions for operation at cryogenic temperatures",
+      "titleZh": "用室温楔形片计量外推低温MTJ有效各向异性",
+      "authors": "Sergi Martín Rio, Kintali Subham Senapati, L. Farcis, L. Soumah, P. B. Veiga, K. Garello, Ricardo C. Sousa",
+      "venue": "Physical Review Applied 24, 024016 (2025)",
+      "published": "2025-08-07",
+      "recommendedOn": "2026-07-30",
+      "timeTier": "近2年精选",
+      "system": "FeCoB/MgO垂直MTJ的低温有效各向异性设计",
+      "conditions": "楔形FeCoB/MgO氧化条件；室温MOKE外推低温并与器件开关电压比较",
+      "methods": [
+        "楔形沉积",
+        "MOKE",
+        "Bloch定律",
+        "Callen–Callen定律",
+        "低温开关"
+      ],
+      "summary": "作者建立从室温薄膜MOKE到低温器件有效各向异性的外推方法；实验显示增厚FeCoB降低有效各向异性和开关电压，并据Bloch/Callen–Callen关系筛选低温适用堆栈。",
+      "relevance": "把昂贵的逐器件低温筛选前移到晶圆级楔形片与室温磁性计量，适合原子级厚度/氧化DOE和低温器件开发。",
+      "limitation": "外推依赖材料体系、磁化模型和界面稳定性；不能替代目标尺寸器件的低温WER、保持、杂散场、自热与批次验证。",
+      "industrialization": "最接近低温MRAM堆栈筛选。仍缺全片/批次预测误差、纳米尺寸效应、老化后模型稳定性、阵列WER和低温控制电路协同。",
+      "whyRecommended": "今天推荐它，是因为它把低温材料优化变成可扩展的室温工艺筛选流程，而非每个配方都先做低温纳米器件。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1103/62tn-vnzb",
+      "url": "https://www.spintec.fr/controlling-effective-anisotropy-for-efficient-switching-at-cryogenic-temperature/",
+      "backupUrl": "https://doi.org/10.1103/62tn-vnzb",
+      "accessNote": "APS入口受限；已打开作者所属SPINTEC官方研究页，核验完整题录、方法、实测趋势、发表日期与DOI，并提供DOI备用",
+      "featured": true
+    },
+    {
+      "id": "rsi-93-103902",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Cryogenic probe for low-noise, high-frequency electronic measurements",
+      "titleZh": "用于MTJ散粒噪声的低温低噪声高频探针",
+      "authors": "E. Garcia, C. Bales, W. Patterson, A. Zaslavsky, V. F. Mitrović",
+      "venue": "Review of Scientific Instruments 93, 103902 (2022)",
+      "published": "2022-10-05",
+      "recommendedOn": "2026-07-30",
+      "timeTier": "经典/重要旧文",
+      "system": "4.2–295 K、最高1.5 GHz的模块化低温电子探针",
+      "conditions": "50 Ω同轴、可换样品座与低温放大器；77 K MTJ散粒噪声演示",
+      "methods": [
+        "低温同轴",
+        "S参数",
+        "散粒噪声",
+        "Johnson噪声",
+        "MTJ",
+        "模块化样品杆"
+      ],
+      "summary": "探针在4.2–295 K和300 kHz–1.5 GHz范围表征，样品座连接时−3 dB点约400–550 MHz，短接同轴时超过1 GHz；作者在77 K测得约9 kΩ MTJ的散粒噪声与预期相符。",
+      "relevance": "提供可复刻的50 Ω、热锚、低磁材料、可换低温放大器架构，可直接用于MTJ结温、陷阱、噪声和高速写入诊断。",
+      "limitation": "4.2 K时所用HBT放大器低频噪声上升，散粒噪声测量受限；液氦系统结果也不能直接代表闭循环制冷机的微振动环境。",
+      "industrialization": "最接近器件研发与失效分析平台。仍需闭循环微振动、线缆热负载、校准溯源、通道串扰、连接寿命和自动化GR&R验证。",
+      "whyRecommended": "今天推荐它，是因为阵列良率最终需要可定位界面与势垒异常的高带宽低温噪声计量，而非只测静态R–H。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0106239",
+      "url": "https://pubs.aip.org/aip/rsi/article/93/10/103902/2845023/Cryogenic-probe-for-low-noise-high-frequency",
+      "backupUrl": "https://doi.org/10.1063/5.0106239",
+      "accessNote": "已打开AIP官方开放全文，核验题目、作者、日期、DOI、频带、S参数、77 K MTJ散粒噪声与4.2 K限制",
       "featured": true
     }
   ]
