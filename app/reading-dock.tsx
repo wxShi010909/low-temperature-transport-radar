@@ -5,6 +5,7 @@ import report from "@/data/reports.json";
 import curatedReading from "@/data/curated-reading.json";
 import insightArchive from "@/data/insight-archive.json";
 import { ExportAllNotesButton, FavoriteButton, getFavoriteIds, getSavedNote, NoteEditor, READER_EVENT } from "@/app/reader-tools";
+import { CalendarDatePicker } from "@/app/calendar-date-picker";
 
 type DockTab = "notes" | "favorites";
 
@@ -14,7 +15,14 @@ export type ReadingDockContext = {
   suggested: string;
   label: string;
   daily?: boolean;
+  date?: string;
 };
+
+const readingDates = Array.from(new Set([
+  ...report.history.map((entry) => entry.date),
+  ...curatedReading.history.map((entry) => entry.date),
+  ...insightArchive.history.map((entry) => entry.date),
+])).sort((a, b) => b.localeCompare(a));
 
 export function useReadingDockState() {
   const [open, setOpenState] = useState(false);
@@ -112,6 +120,7 @@ export function ReadingDock({ context, open, onOpenChange }: { context: ReadingD
       <button className={`reading-dock-backdrop ${closing ? "is-closing" : ""}`} type="button" onClick={closeDock} aria-label="关闭阅读助手遮罩" />
       <aside className={`reading-dock ${closing ? "is-closing" : ""}`} aria-label="固定阅读助手">
         <div className="reading-dock-header"><div><span>READING DESK</span><b>阅读助手</b><small>{context.label} · {totalFavorites} 项收藏</small></div><button type="button" onClick={closeDock} aria-label="收起阅读助手">×</button></div>
+        <div className="reading-dock-date"><CalendarDatePicker compact label="阅读整理日期" value={context.date ?? report.reportDate} availableDates={readingDates} /></div>
         <div className="reading-dock-tabs" role="tablist" aria-label="阅读助手内容">
           <button className={tab === "notes" ? "active" : ""} type="button" role="tab" aria-selected={tab === "notes"} onClick={() => setTab("notes")}>快速笔记</button>
           <button className={tab === "favorites" ? "active" : ""} type="button" role="tab" aria-selected={tab === "favorites"} onClick={() => setTab("favorites")}>收藏 {totalFavorites}</button>

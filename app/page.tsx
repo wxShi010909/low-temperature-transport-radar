@@ -6,6 +6,7 @@ import curatedReading from "@/data/curated-reading.json";
 import insightArchive from "@/data/insight-archive.json";
 import { FavoriteButton } from "@/app/reader-tools";
 import { ReadingDock, useReadingDockState } from "@/app/reading-dock";
+import { CalendarDatePicker } from "@/app/calendar-date-picker";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 type SectionKey = "today" | "reading" | "library" | "opportunities" | "methods" | "atomic";
@@ -154,6 +155,11 @@ export default function Home() {
   const { open: readingDockOpen, setOpen: setReadingDockOpen } = useReadingDockState();
 
   useEffect(() => {
+    const requestedDate = new URLSearchParams(window.location.search).get("date");
+    if (requestedDate && requestedDate >= earliestReportDate && requestedDate <= latestReportDate) setActiveDate(requestedDate);
+  }, []);
+
+  useEffect(() => {
     const updateActiveSection = () => {
       const marker = window.scrollY + 120;
       let current: SectionKey = "today";
@@ -244,8 +250,14 @@ export default function Home() {
   }
 
   function selectDate(date: string) {
-    if (date) setActiveDate(date);
+    if (!date) return;
+    setActiveDate(date);
+    const url = new URL(window.location.href);
+    url.searchParams.set("date", date);
+    window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
   }
+
+  const sectionCalendar = (label: string) => <CalendarDatePicker compact label={label} value={activeDate} availableDates={reportDates} onChange={selectDate} />;
 
   function selectSection(section: SectionKey) {
     setActiveSection(section);
@@ -305,14 +317,13 @@ export default function Home() {
         </section>
         <section className="date-filter-bar" aria-label="按日报日期筛选">
           <div><span>DATE</span><div><b>全站日期</b><small>所有模块一起切换</small></div></div>
-          <label className="calendar-picker"><span>当前显示日期</span><input type="date" value={activeDate} min={earliestReportDate} max={latestReportDate} list="report-date-options" onInput={(event) => selectDate(event.currentTarget.value)} onChange={(event) => selectDate(event.target.value)} aria-label="选择日报日期" /></label>
-          <datalist id="report-date-options">{reportDates.map((date) => <option value={date} key={date} />)}</datalist>
+          <CalendarDatePicker label="当前显示日期" value={activeDate} availableDates={reportDates} onChange={selectDate} className="calendar-picker" />
           <span className="date-sync-badge">日历筛选 · 全站同步</span>
         </section>
       </div>
 
       <section className="today" id="today">
-        <div className="section-heading"><div><p>DAILY SIGNAL · {activeDate}</p><h2>本期最值得关注</h2></div><span>{selectedReportHistory ? `${selectedReportHistory.total} 项已核验内容` : "本日没有论文记录"}</span></div>
+        <div className="section-heading"><div><p>DAILY SIGNAL · {activeDate}</p><h2>本期最值得关注</h2></div><div className="heading-tools"><span>{selectedReportHistory ? `${selectedReportHistory.total} 项已核验内容` : "本日没有论文记录"}</span>{sectionCalendar("日报日期")}</div></div>
         <div className={`featured-grid featured-count-${featuredForDate.length}`}>
           {featuredForDate.map((paper) => (
             <article className={`paper-card track-${paper.track.toLowerCase()}`} key={paper.id}>
@@ -324,11 +335,11 @@ export default function Home() {
             </article>
           ))}
         </div>
-        {featuredForDate.length === 0 && <div className="empty-state"><b>这个日期没有精选论文</b><span>可切换上方日期查看其他日报。</span></div>}
+        {featuredForDate.length === 0 && <div className="empty-state verified-empty"><b>无新增但已完成核查</b><span>{activeDate} 已完成来源检索、去重与质量核查；当天没有达到入选标准的核心文章。</span></div>}
       </section>
 
       <section className="reading-section" id="reading">
-        <div className="section-heading wide"><div><p>CURATED READING · {activeDate}</p><h2>本期综述与经典文章</h2></div><span>跟随上方日期切换 · 历史内容永久保留</span></div>
+        <div className="section-heading wide"><div><p>CURATED READING · {activeDate}</p><h2>本期综述与经典文章</h2></div><div className="heading-tools"><span>历史内容永久保留</span>{sectionCalendar("综述与经典日期")}</div></div>
         {selectedReview ? <article className={`daily-review-card track-${selectedReview.track.toLowerCase()}`}>
           <div className="reading-card-top">
             <div><span className="reading-kind">{selectedReview.kind}</span><span className="old-paper-badge">非当天新增 · {selectedReview.published}</span></div>
@@ -384,7 +395,7 @@ export default function Home() {
       </section>
 
       <section className="library-section" id="library">
-        <div className="section-heading wide"><div><p>RESEARCH LIBRARY</p><h2>文献库</h2></div><span>已核验 {report.papers.length} 项 · 按 DOI / arXiv / 标题去重</span></div>
+        <div className="section-heading wide"><div><p>RESEARCH LIBRARY</p><h2>文献库</h2></div><div className="heading-tools"><span>已核验 {report.papers.length} 项 · 按 DOI / arXiv / 标题去重</span>{sectionCalendar("文献库日期")}</div></div>
         <div className="library-toolbar">
           <div className="filter-chips" aria-label="按研究主线筛选">
             <button className={activeTrack === "ALL" ? "selected" : ""} onClick={() => setActiveTrack("ALL")} type="button">全部</button>
@@ -392,7 +403,7 @@ export default function Home() {
           </div>
           <div className="toolbar-right">
             <label className="compact-search"><span>搜索</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="题目、材料、方法、DOI" /></label>
-            <label className="sort-select date-select"><span>全站日期</span><input type="date" value={activeDate} min={earliestReportDate} max={latestReportDate} list="report-date-options" onInput={(event) => selectDate(event.currentTarget.value)} onChange={(event) => selectDate(event.target.value)} aria-label="文献库日期" /></label>
+            <CalendarDatePicker compact label="筛选日期" value={activeDate} availableDates={reportDates} onChange={selectDate} className="sort-select date-select" />
             <label className="sort-select"><span>排序</span><select value={sortBy} onChange={(event) => setSortBy(event.target.value as "score" | "date")}><option value="score">综合评分</option><option value="date">发表时间</option></select></label>
           </div>
         </div>
@@ -426,7 +437,7 @@ export default function Home() {
       </section>
 
       <section className="opportunity-section" id="opportunities">
-        <div className="section-heading"><div><p>CROSS-TRACK IDEAS · {activeDate}</p><h2>本期跨主线研究机会</h2></div><span>跟随全站日期 · 点击进入完整实施方案</span></div>
+        <div className="section-heading"><div><p>CROSS-TRACK IDEAS · {activeDate}</p><h2>本期跨主线研究机会</h2></div><div className="heading-tools"><span>点击进入完整实施方案</span>{sectionCalendar("研究机会日期")}</div></div>
         <div className="opportunity-grid">
           {selectedOpportunityItems.map((item) => (
             <article className="insight-summary-card" key={item.id}>
@@ -441,7 +452,7 @@ export default function Home() {
       </section>
 
       <section className="methods-section" id="methods">
-        <div className="section-heading"><div><p>METHODS & INFRASTRUCTURE · {activeDate}</p><h2>本期方法与设备建设</h2></div><span>重点生态：Cryogenic Ltd（英国低温公司）· Oxford Instruments · Quantum Design · 多场科技 · 飞斯科</span></div>
+        <div className="section-heading"><div><p>METHODS & INFRASTRUCTURE · {activeDate}</p><h2>本期方法与设备建设</h2></div><div className="heading-tools"><span>重点生态：Cryogenic Ltd · Oxford Instruments · Quantum Design · 多场科技 · 飞斯科</span>{sectionCalendar("设备方案日期")}</div></div>
         <div className="equipment-focus-note"><b>设备资料如何进入日报</b><span>优先跟踪正式技术文档、应用案例、升级公告和系统集成方案；厂商材料单独标注来源类型，不作为科研结论。</span></div>
         <div className={`method-layout ${selectedMethodItems.length === 1 ? "single-method" : ""}`}>
           {selectedMethodItems[0] && <div className="method-feature insight-method-feature">
@@ -462,7 +473,7 @@ export default function Home() {
       </section>
 
       <section className="atomic-section" id="atomic">
-        <div className="section-heading"><div><p>ATOMIC & EXTREME MANUFACTURING · {activeDate}</p><h2>本期原子制造与极端制造</h2></div><span>设备、工艺和表征分别给出完整路线</span></div>
+        <div className="section-heading"><div><p>ATOMIC & EXTREME MANUFACTURING · {activeDate}</p><h2>本期原子制造与极端制造</h2></div><div className="heading-tools"><span>设备、工艺和表征分别给出完整路线</span>{sectionCalendar("原子制造日期")}</div></div>
         <div className="atomic-grid">
           {selectedAtomicItems.map((item) => (
             <article className="insight-summary-card" key={item.id}>
@@ -496,7 +507,7 @@ export default function Home() {
       </details>
 
       <section className="history-section">
-        <div className="history-heading"><p>DAILY ARCHIVE</p><h2>{activeDate} 日报档案</h2><span>所有历史记录仍永久保存；此处只显示上方选中的日期，避免页面无限变长。</span></div>
+        <div className="history-heading"><p>DAILY ARCHIVE</p><h2>{activeDate} 日报档案</h2><span>所有历史记录仍永久保存；此处只显示选中日期。</span>{sectionCalendar("历史日报日期")}</div>
         <div className="history-list">
           {selectedReportHistory && (
             <article className={expandedHistory === selectedReportHistory.date ? "is-open" : ""} key={selectedReportHistory.date}>
@@ -522,7 +533,7 @@ export default function Home() {
       </div>
 
       <ReadingDock
-        context={{ id: `daily-${activeDate}`, title: `${selectedDateLabel}快速笔记`, suggested: dailyNoteSuggestion, label: activeDate, daily: true }}
+        context={{ id: `daily-${activeDate}`, title: `${selectedDateLabel}快速笔记`, suggested: dailyNoteSuggestion, label: activeDate, daily: true, date: activeDate }}
         open={readingDockOpen}
         onOpenChange={setReadingDockOpen}
       />

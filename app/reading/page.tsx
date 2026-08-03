@@ -6,6 +6,8 @@ import curated from "@/data/curated-reading.json";
 import details from "@/data/curated-details.json";
 import { FavoriteButton } from "@/app/reader-tools";
 import { ReadingDock, useReadingDockState } from "@/app/reading-dock";
+import { CalendarDatePicker } from "@/app/calendar-date-picker";
+import report from "@/data/reports.json";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 
@@ -16,6 +18,7 @@ const tracks: Record<TrackKey, { label: string; short: string }> = {
   D: { label: "设备与测量平台", short: "设备平台" },
   E: { label: "原子与极端制造", short: "原子制造" },
 };
+const reportDates = Array.from(new Set([...report.history.map((entry) => entry.date), ...curated.history.map((entry) => entry.date)])).sort((a, b) => b.localeCompare(a));
 
 export default function CuratedReadingDetailPage() {
   const [readingId, setReadingId] = useState<string | null | undefined>(undefined);
@@ -42,7 +45,7 @@ export default function CuratedReadingDetailPage() {
     <main className={`paper-detail-page track-${item.track.toLowerCase()}`}>
       <header className={`detail-header ${readingDockOpen ? "with-reading-dock" : ""}`}>
         <Link className="brand" href="/"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></Link>
-        <Link className="back-link" href="/#reading">← 返回综述与经典文献库</Link>
+        <div className="detail-header-tools"><CalendarDatePicker compact label="推荐日期" value={item.recommendedOn} availableDates={reportDates} /><Link className="back-link" href={`/?date=${encodeURIComponent(item.recommendedOn)}#reading`}>← 返回综述与经典文献库</Link></div>
       </header>
 
       <div className={`detail-site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
@@ -91,7 +94,7 @@ export default function CuratedReadingDetailPage() {
       </article>
       </div>
       <ReadingDock
-        context={{ id: item.id, title: `${item.titleZh}｜阅读笔记`, suggested: noteSuggestion, label: item.kind }}
+        context={{ id: item.id, title: `${item.titleZh}｜阅读笔记`, suggested: noteSuggestion, label: item.kind, date: item.recommendedOn }}
         open={readingDockOpen}
         onOpenChange={setReadingDockOpen}
       />

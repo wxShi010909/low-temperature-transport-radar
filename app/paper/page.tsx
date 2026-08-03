@@ -6,6 +6,7 @@ import report from "@/data/reports.json";
 import details from "@/data/paper-details.json";
 import { FavoriteButton } from "@/app/reader-tools";
 import { ReadingDock, useReadingDockState } from "@/app/reading-dock";
+import { CalendarDatePicker } from "@/app/calendar-date-picker";
 
 type TrackKey = "A" | "B" | "C" | "D" | "E";
 
@@ -18,6 +19,7 @@ const tracks: Record<TrackKey, { label: string; short: string }> = {
 };
 
 const unavailableSourceIds = new Set(["2607.12740", "2607.12394", "2607.12754"]);
+const reportDates = report.history.map((entry) => entry.date).sort((a, b) => b.localeCompare(a));
 
 export default function PaperDetailPage() {
   const [paperId, setPaperId] = useState<string | null | undefined>(undefined);
@@ -52,7 +54,7 @@ export default function PaperDetailPage() {
     <main className={`paper-detail-page track-${paper.track.toLowerCase()}`}>
       <header className={`detail-header ${readingDockOpen ? "with-reading-dock" : ""}`}>
         <Link className="brand" href="/"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></Link>
-        <Link className="back-link" href="/#library">← 返回文献库</Link>
+        <div className="detail-header-tools"><CalendarDatePicker compact label="推荐日期" value={enriched.recommendedOn ?? report.reportDate} availableDates={reportDates} /><Link className="back-link" href={`/?date=${encodeURIComponent(enriched.recommendedOn ?? report.reportDate)}#library`}>← 返回文献库</Link></div>
       </header>
 
       <div className={`detail-site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
@@ -176,7 +178,7 @@ export default function PaperDetailPage() {
       </article>
       </div>
       <ReadingDock
-        context={{ id: paper.id, title: "这篇文章的阅读笔记", suggested: noteSuggestion, label: "当前论文" }}
+        context={{ id: paper.id, title: "这篇文章的阅读笔记", suggested: noteSuggestion, label: "当前论文", date: enriched.recommendedOn ?? report.reportDate }}
         open={readingDockOpen}
         onOpenChange={setReadingDockOpen}
       />

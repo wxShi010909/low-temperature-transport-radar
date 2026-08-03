@@ -6,6 +6,7 @@ import archive from "@/data/insight-archive.json";
 import report from "@/data/reports.json";
 import { FavoriteButton } from "@/app/reader-tools";
 import { ReadingDock, useReadingDockState } from "@/app/reading-dock";
+import { CalendarDatePicker } from "@/app/calendar-date-picker";
 
 const typeAnchors: Record<string, string> = {
   "research-opportunity": "opportunities",
@@ -18,6 +19,7 @@ const typeColors: Record<string, string> = {
   "method-platform": "track-d",
   "atomic-manufacturing": "track-e",
 };
+const reportDates = Array.from(new Set([...report.history.map((entry) => entry.date), ...archive.history.map((entry) => entry.date)])).sort((a, b) => b.localeCompare(a));
 
 export default function InsightDetailPage() {
   const [insightId, setInsightId] = useState<string | null | undefined>(undefined);
@@ -44,7 +46,7 @@ export default function InsightDetailPage() {
     <main className={`paper-detail-page insight-detail-page ${className}`}>
       <header className={`detail-header ${readingDockOpen ? "with-reading-dock" : ""}`}>
         <Link className="brand" href="/"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></Link>
-        <Link className="back-link" href={`/#${backAnchor}`}>← 返回{item.typeZh}</Link>
+        <div className="detail-header-tools"><CalendarDatePicker compact label="归档日期" value={item.date} availableDates={reportDates} /><Link className="back-link" href={`/?date=${encodeURIComponent(item.date)}#${backAnchor}`}>← 返回{item.typeZh}</Link></div>
       </header>
 
       <div className={`detail-site-body ${readingDockOpen ? "with-reading-dock" : ""}`}>
@@ -132,7 +134,7 @@ export default function InsightDetailPage() {
       </article>
       </div>
       <ReadingDock
-        context={{ id: item.id, title: `${item.title}｜方案笔记`, suggested: noteSuggestion, label: item.typeZh }}
+        context={{ id: item.id, title: `${item.title}｜方案笔记`, suggested: noteSuggestion, label: item.typeZh, date: item.date }}
         open={readingDockOpen}
         onOpenChange={setReadingDockOpen}
       />
