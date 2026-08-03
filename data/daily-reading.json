@@ -1,56 +1,56 @@
 {
-  "date": "2026-07-30",
+  "date": "2026-08-03",
   "review": {
-    "id": "review-npjspin-2025-00094",
+    "id": "review-apr-12-031330",
     "kind": "每日综述",
-    "track": "C",
+    "track": "B",
     "secondaryTracks": [
-      "B",
+      "A",
+      "C",
       "E"
     ],
-    "title": "Machine learning for the development of new materials for a magnetic tunnel junction",
-    "titleZh": "面向MTJ新材料开发的机器学习—第一性原理—实验闭环",
-    "authors": "Atsufumi Hirohata, Hiroki Koizumi, Tufan Roy, Masahito Tsujikawa, Shigemi Mizukami, Kenji Nawa, Masafumi Shirai",
-    "venue": "npj Spintronics 3, 32 (2025)",
-    "published": "2025-07-30",
-    "recommendedOn": "2026-07-30",
-    "doi": "10.1038/s44306-025-00094-z",
-    "url": "https://www.nature.com/articles/s44306-025-00094-z",
-    "backupUrl": "https://doi.org/10.1038/s44306-025-00094-z",
-    "assistantSummary": "正式Review提出机器学习筛选、第一性原理复核和薄膜实验确认的标准流程，并用Heusler电极与尖晶石势垒说明组合空间、无序和界面验证问题。",
-    "whySelected": "今天的设备监控、楔形片和阵列良率都需要更好的数据闭环；这篇可作为把材料搜索扩展成制造数据工程的框架。",
+    "title": "All two-dimensional van der Waals magnetic tunneling junctions",
+    "titleZh": "全二维范德华磁隧道结：材料、构型与调控综述",
+    "authors": "Zijing Zhao, Lin Ma, Meijiao Men, Wei Li, Xiaolei Wang",
+    "venue": "Applied Physics Reviews 12, 031330 (2025)",
+    "published": "2025-09-11",
+    "recommendedOn": "2026-08-03",
+    "doi": "10.1063/5.0279573",
+    "url": "https://pubs.aip.org/aip/apr/article/12/3/031330/3362835/All-two-dimensional-van-der-Waals-magnetic",
+    "backupUrl": "https://doi.org/10.1063/5.0279573",
+    "assistantSummary": "正式Review按自旋阀与自旋过滤构型系统梳理全二维vdW磁隧道结，并比较磁性材料类别、偏压/电流、势垒厚度和自旋夹角等调控手段。",
+    "whySelected": "今天的核心文章同时出现扭转CrSBr、CrSb理论结和石墨烯/NiFe界面；这篇综述提供统一分类框架，避免把GMR自旋阀、spin-filter和真正隧穿MTJ混为一谈。",
     "readingGuide": [
-      "先看标准化ML—计算—实验流程。",
-      "重点看Heusler/MgO界面与尖晶石无序案例。",
-      "最后看训练数据稀疏、真实相稳定和实验反馈的限制；约60–80分钟。"
+      "先看spin-valve与spin-filter两类构型。",
+      "再看二维磁体类别和典型TMR证据。",
+      "最后看偏压、厚度、夹角调控及制造障碍；约70–90分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-jvsta-36-051401",
+      "id": "classic-pla-54-225",
       "kind": "经典文章",
-      "track": "E",
+      "track": "C",
       "secondaryTracks": [
-        "B",
-        "C",
-        "D"
+        "A",
+        "B"
       ],
-      "title": "In situ XPS study on atomic layer etching of Fe thin film using Cl2 and acetylacetone",
-      "titleZh": "Fe薄膜Cl2/乙酰丙酮ALE的原位XPS机制研究",
-      "authors": "Xi Lin, Meixi Chen, Anderson Janotti, Robert Opila",
-      "venue": "Journal of Vacuum Science & Technology A 36, 051401 (2018)",
-      "published": "2018-07-19",
-      "recommendedOn": "2026-07-30",
-      "doi": "10.1116/1.5039517",
-      "url": "https://pubs.aip.org/avs/jva/article/36/5/051401/283/In-situ-XPS-study-on-atomic-layer-etching-of-Fe",
-      "backupUrl": "https://doi.org/10.1116/1.5039517",
-      "assistantSummary": "原位XPS与DFT表明Cl2先形成FeClx，乙酰丙酮在约135 °C以上移除氯化表层；高温氯化并非理想自限，且真实机理比简单配体取代更复杂。",
-      "whySelected": "它是理解今天CoFeB热ALE证据边界的关键化学基础：原子层流程仍可能受氯扩散、粗糙化、碳残留和非自限反应制约。",
+      "title": "Tunneling between ferromagnetic films",
+      "titleZh": "Jullière模型的起点：铁磁薄膜之间的自旋极化隧穿",
+      "authors": "Michel Jullière",
+      "venue": "Physics Letters A 54, 225–226 (1975)",
+      "published": "1975-09-08",
+      "recommendedOn": "2026-08-03",
+      "doi": "10.1016/0375-9601(75)90174-7",
+      "url": "https://www.sciencedirect.com/science/article/pii/0375960175901747",
+      "backupUrl": "https://doi.org/10.1016/0375-9601(75)90174-7",
+      "assistantSummary": "Jullière用Fe/Ge/Co结比较平行和反平行磁化下的电导，把磁阻与两侧电极的自旋极化联系起来，奠定最常用的MTJ直观模型。",
+      "whySelected": "本期跨越二维多态、交变磁理论和常规pMTJ；回到Jullière模型可以分清哪些结论来自简单自旋极化，哪些必须由MgO对称性过滤、动量选择或界面耦合解释。",
       "readingGuide": [
-        "先看原位反应器与XPS流程。",
-        "重点看FeClx厚度、温度和压力依赖。",
-        "最后看DFT为何否定简单取代机理；约35–50分钟。"
+        "先看Fe/Ge/Co结和平行/反平行电导定义。",
+        "再推导TMR与两电极自旋极化的关系。",
+        "最后明确模型不包含相干隧穿与界面缺陷；约15–25分钟。"
       ],
       "notNew": true
     }

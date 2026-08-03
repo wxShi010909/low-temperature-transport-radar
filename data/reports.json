@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:05:00+08:00",
+  "updatedAt": "2026-08-03T13:25:00+08:00",
   "reportDate": "2026-08-03",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
@@ -284,10 +284,22 @@
     },
     {
       "date": "2026-08-03",
-      "label": "每日精选：扭转原子级磁隧道结的多非易失态",
-      "total": 1,
-      "counts": { "A": 0, "B": 1, "C": 0, "D": 0, "E": 0 },
-      "paperIds": ["s41467-026-70239-z"]
+      "label": "完整日报：原子级多态、无Pt/Pd pMTJ、交变磁理论、极端条件计量与真空界面",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "s41467-026-70239-z",
+        "s41598-025-20842-9",
+        "cpl-42-100701",
+        "rsi-96-053909",
+        "s41699-025-00624-7"
+      ]
     }
   ],
   "papers": [
@@ -3438,8 +3450,12 @@
     },
     {
       "id": "s41467-026-70239-z",
-      "track": "B",
-      "secondaryTracks": ["A", "C", "E"],
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C",
+        "E"
+      ],
       "title": "Twisted atomic magnetic tunnel junctions with multiple nonvolatile states",
       "titleZh": "扭转原子级磁隧道结实现多种非易失电阻态",
       "authors": "Yuliang Chen, Kartik Samanta, Alexander J. Healey, Chi Fang, Haojie Zhang, Naafis A. Shahed, David A. Broadway, Arthur Ernst, Evgeny Y. Tsymbal, Stuart S. P. Parkin",
@@ -3449,19 +3465,179 @@
       "timeTier": "近期正式发表",
       "system": "单层/双层CrSBr扭转二维磁隧道结与全反铁磁多界面结构",
       "conditions": "2 K、零磁场与面内磁场扫描；石墨电极；输运实验结合第一性原理和量子输运计算",
-      "methods": ["二维材料堆叠", "扭转界面", "低温磁输运", "TMR", "DFT", "量子输运"],
-      "summary": "单层/双层CrSBr非对称扭转MTJ在2 K零磁场下呈现两种非易失态，TMR最高约700%；加入第二个扭转界面后可访问四种非易失态，三组反铁磁双层构成的全反铁磁MTJ同样出现多态行为。",
-      "relevance": "它把‘原子级界面设计—低温输运—多态存储’连接到同一器件，适合用作原子制造与MTJ研究的前沿标杆，也提示扭角和界面数量可成为新的器件自由度。",
-      "limitation": "结果主要在2 K和外加磁场写入条件下获得；二维材料手工堆叠、器件尺寸、室温保持、电写入、循环耐久、阵列均匀性及CMOS集成尚未解决。",
-      "industrialization": "目前属于原理验证，最接近多态自旋器件和低温存储概念。距离可制造MRAM仍需室温工作、电流/电场写入、晶圆级扭角控制、封装稳定性、长尾误码和阵列良率证明。",
-      "whyRecommended": "今天推荐它，是因为它直接展示了原子层数量和扭转界面如何把传统二态MTJ扩展为多态器件，并同时给出实验与计算证据。",
+      "methods": [
+        "二维材料堆叠",
+        "扭转界面",
+        "低温磁输运",
+        "TMR",
+        "DFT",
+        "量子输运"
+      ],
+      "summary": "单层/双层CrSBr扭转MTJ在2 K零磁场下呈现两种非易失态，最高TMR约700%；加入第二个扭转界面后可访问四种非易失态，全反铁磁多层结构同样出现多态行为。",
+      "relevance": "它把原子层数量、扭转界面、低温输运和多态存储连接到同一器件，可作为原子制造与低温多场状态识别的前沿标杆。",
+      "limitation": "结果主要依赖2 K和磁场路径；手工堆叠、室温保持、电写入、循环耐久、晶圆级扭角控制、封装及阵列良率尚未证明。",
+      "industrialization": "目前属于低温原理验证。要成为多值MRAM，需要室温稳定、电流或电场写入、晶圆级扭角/层数控制和长尾误码数据。",
+      "whyRecommended": "本期以它作为A类起点，因为它直接展示原子级界面自由度如何转化为低温可读出的多个非易失状态。",
       "score": 9.7,
       "priority": "A",
       "arxiv": "",
       "doi": "10.1038/s41467-026-70239-z",
       "url": "https://www.nature.com/articles/s41467-026-70239-z",
       "backupUrl": "https://doi.org/10.1038/s41467-026-70239-z",
-      "accessNote": "已打开Nature Communications开放全文，核验题目、作者、发表日期、DOI、2 K零场TMR、多非易失态及计算方法",
+      "accessNote": "已核验Nature Communications开放全文的题录、2 K多态输运、最高TMR和计算方法",
+      "featured": true
+    },
+    {
+      "id": "s41598-025-20842-9",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Magnetic tunnel junction made of abundant materials for memory and dynamic applications",
+      "titleZh": "用常见元素构建无Pt/Pd垂直MTJ并验证纳秒写入",
+      "authors": "Mariusz Cierpiał, Dawid Maślanka, Kacper Gubała, Jakub Mojsiejuk, Krzysztof Grochot, Jerzy Wrona, Jürgen Langer, Tianxiang Nan, Witold Skowroński",
+      "venue": "Scientific Reports 15, 35227 (2025)",
+      "published": "2025-10-09",
+      "recommendedOn": "2026-08-03",
+      "timeTier": "近2年精选",
+      "system": "Co/Ni超晶格合成反铁磁参考层与FeCoB/W/FeCoB自由层pMTJ",
+      "conditions": "无Pt/Pd堆栈；80 nm纳米柱；1 ms至5 ns电压脉冲；自动探针台R-H和脉冲测量",
+      "methods": [
+        "磁控溅射",
+        "Co/Ni超晶格",
+        "pMTJ",
+        "纳米柱",
+        "脉冲写入",
+        "热稳定性"
+      ],
+      "summary": "作者用Co/Ni超晶格和Ru间隔层替代含Pt/Pd的SAF；80 nm器件获得超过130%的TMR、Δ>50、约0.35 V平均写入电压和2.6 MA/cm²临界电流密度，并完成5 ns脉冲写入。",
+      "relevance": "它把材料可获得性、完整堆栈、纳米图形化和写入指标放在同一实验中，适合评估原子级材料替换是否真正转化为器件性能。",
+      "limitation": "常见元素不等于低成本量产；论文尚未给出大阵列WER、全片/批次分布、耐久、回流焊、BEOL兼容和供应链生命周期评价。",
+      "industrialization": "结构已进入80 nm完整器件和纳秒写入阶段，产业距离主要在晶圆级均匀性、长尾误码、热预算与规模良率。",
+      "whyRecommended": "本期B类用它回答一个很实际的问题：去掉稀缺Pt/Pd后，参考层稳定性、TMR和纳秒写入能否同时保住。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s41598-025-20842-9",
+      "url": "https://www.nature.com/articles/s41598-025-20842-9",
+      "backupUrl": "https://doi.org/10.1038/s41598-025-20842-9",
+      "accessNote": "已核验Scientific Reports开放全文的堆栈、80 nm器件、TMR、Δ、写入电压和脉冲范围",
+      "featured": true
+    },
+    {
+      "id": "cpl-42-100701",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "title": "Tunneling Magnetoresistance Effect in Altermagnetic Tunnel Junctions with g-Wave Splitting",
+      "titleZh": "g波自旋劈裂交变磁CrSb隧道结的第一性原理TMR预测",
+      "authors": "Xinlu Li, Meng Zhu, Jianting Dong, Kun Wu, Fanxing Zheng, Jia Zhang",
+      "venue": "Chinese Physics Letters 42, 100701 (2025)",
+      "published": "2025-10-01",
+      "recommendedOn": "2026-08-03",
+      "timeTier": "近2年理论精选",
+      "system": "CrSb/β-InSe/CrSb全反铁磁隧道结，三单层β-InSe势垒",
+      "conditions": "基于CrSb自旋极化费米面与不同Néel矢量夹角的第一性原理自旋输运计算",
+      "methods": [
+        "第一性原理",
+        "量子输运",
+        "交变磁",
+        "费米面",
+        "Néel矢量",
+        "TMR"
+      ],
+      "summary": "计算预测三单层β-InSe势垒的CrSb全反铁磁结TMR约290%；改变费米能级时可超过850%，并呈现随两侧Néel矢量夹角变化的角度依赖。",
+      "relevance": "它给出从材料自旋劈裂、势垒厚度到可测角度依赖TMR的完整理论链，可直接转化为DFT-NEGF复现和实验判据。",
+      "limitation": "全部关键指标来自理想结构计算；界面终止、缺陷、畴结构、有限温度、接触电阻、材料生长和真实写入尚未实验验证。",
+      "industrialization": "高Néel温度与无净磁矩有潜力，但在稳定薄膜、界面控制、Néel矢量写入和室温器件读出被证明前，仍是候选材料路线。",
+      "whyRecommended": "本期C类把二维多态和常规pMTJ之外的下一代材料自由度纳入比较，并明确区分理论上限与实验可实现值。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1088/0256-307X/42/10/100701",
+      "url": "https://cpl.iphy.ac.cn/article/doi/10.1088/0256-307X/42/10/100701",
+      "backupUrl": "https://doi.org/10.1088/0256-307X/42/10/100701",
+      "accessNote": "已核验Chinese Physics Letters官方全文页的作者、结构、290%与超过850%的计算结果和证据性质",
+      "featured": true
+    },
+    {
+      "id": "rsi-96-053909",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "C"
+      ],
+      "title": "Simultaneous measurements of magnetic susceptibility and electrical transport at extreme conditions",
+      "titleZh": "0.04 K与30 T下同步测磁化率和电输运的极端条件平台",
+      "authors": "Yunong Wang, Ziming Wu, Gang Li, Zhenzhong Shi",
+      "venue": "Review of Scientific Instruments 96, 053909 (2025)",
+      "published": "2025-05-29",
+      "recommendedOn": "2026-08-03",
+      "timeTier": "近2年设备精选",
+      "system": "隧道二极管振荡器磁化率与四端电输运同步测量插件",
+      "conditions": "Oxford TeslatronPT 14 T系统与30 T极端条件装置；最低0.04 K；以层状Ising超导体演示",
+      "methods": [
+        "隧道二极管振荡器",
+        "电输运",
+        "稀释制冷",
+        "30 T磁场",
+        "同步测量",
+        "量子振荡"
+      ],
+      "summary": "作者把TDO磁化率和电输运集成到同一低温高场测量中，在14 T与30 T平台验证，并在最低0.04 K、最高30 T下同步测量(LaSe)1.14(NbSe2)2。",
+      "relevance": "同一样品、同一温度与磁场轨迹的两种信号能减少跨批次和跨升降场误差，适合升级低温输运平台并建立磁性—电阻联合判据。",
+      "limitation": "论文演示对象是量子材料而非MTJ；TDO线圈耦合、绝对磁化率标定、脉冲写入兼容、闭循环微振动和多通道串扰需重新验证。",
+      "industrialization": "最接近科研级极端条件平台模块。若用于器件开发，需要样品吞吐、自动换线、校准溯源、重复性和安全联锁指标。",
+      "whyRecommended": "本期D类提供可落地的设备升级方向：不要只测R-H或R-T，而要让磁响应与输运在同一时间轴上互相验证。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0260173",
+      "url": "https://pubs.aip.org/aip/rsi/article/96/5/053909/3347870/Simultaneous-measurements-of-magnetic",
+      "backupUrl": "https://doi.org/10.1063/5.0260173",
+      "accessNote": "已核验AIP官方页面的系统结构、14 T/30 T集成、0.04 K演示和DOI",
+      "featured": true
+    },
+    {
+      "id": "s41699-025-00624-7",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Unpinning the magnetic interface between 2D materials and NiFe for ultra-low coercivity spin valves",
+      "titleZh": "不中断接触沉积消除NiFe/石墨烯界面氧化钉扎",
+      "authors": "Ting-Chun Huang, Yu-Xin Chen, Chun-Yi Lin, Chi-Feng Pai, Chiashain Chuang, Ya-Ping Hsieh, Mario Hofmann et al.",
+      "venue": "npj 2D Materials and Applications 9, 104 (2025)",
+      "published": "2025-11-27",
+      "recommendedOn": "2026-08-03",
+      "timeTier": "近2年精选",
+      "system": "悬空石墨烯两侧NiFe垂直自旋阀及远端NiO钉扎对照",
+      "conditions": "高真空电子束蒸发中双面连续沉积；300 K MOKE与10 K磁输运/Hanle测量",
+      "methods": [
+        "不中断接触沉积",
+        "悬空石墨烯",
+        "电子束蒸发",
+        "MOKE",
+        "Hanle",
+        "低温磁输运"
+      ],
+      "summary": "连续真空沉积避免界面暴露后，NiFe/石墨烯器件矫顽力降低约25倍并接近NiFe本征极限；室温MOKE低于6 G，10 K输运确认低钉扎，远端NiO对照显示交换偏置会重新主导各向异性。",
+      "relevance": "它把‘真空是否中断’从工艺描述变成可量化的矫顽力和输运差异，直接对应原子级界面制造、真空互联与污染控制。",
+      "limitation": "器件表现为欧姆型CPP-GMR而非MgO型TMR；双面悬空结构、NiFe厚度和手工转移不能直接代表现代pMTJ量产流程。",
+      "industrialization": "核心价值是界面洁净度方法论。迁移到MTJ产线仍需真空互联吞吐、颗粒控制、晶圆级封装、TMR/RA和可靠性验证。",
+      "whyRecommended": "本期E类用它说明：原子级制造的关键不只是层厚，而是界面在形成过程中有没有被空气、残胶和氧化物重新定义。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s41699-025-00624-7",
+      "url": "https://www.nature.com/articles/s41699-025-00624-7",
+      "backupUrl": "https://doi.org/10.1038/s41699-025-00624-7",
+      "accessNote": "已核验npj开放全文的UCD流程、25倍矫顽力降低、MOKE/10 K输运、MR类型和NiO对照",
       "featured": true
     }
   ]
