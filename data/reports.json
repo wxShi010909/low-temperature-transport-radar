@@ -283,25 +283,11 @@
       ]
     },
     {
-      "date": "2026-08-01",
-      "label": "补档：无新增但已完成核查",
-      "total": 0,
-      "counts": { "A": 0, "B": 0, "C": 0, "D": 0, "E": 0 },
-      "paperIds": []
-    },
-    {
-      "date": "2026-08-02",
-      "label": "补档：无新增但已完成核查",
-      "total": 0,
-      "counts": { "A": 0, "B": 0, "C": 0, "D": 0, "E": 0 },
-      "paperIds": []
-    },
-    {
       "date": "2026-08-03",
-      "label": "每日核查：无新增但已完成核查",
-      "total": 0,
-      "counts": { "A": 0, "B": 0, "C": 0, "D": 0, "E": 0 },
-      "paperIds": []
+      "label": "每日精选：扭转原子级磁隧道结的多非易失态",
+      "total": 1,
+      "counts": { "A": 0, "B": 1, "C": 0, "D": 0, "E": 0 },
+      "paperIds": ["s41467-026-70239-z"]
     }
   ],
   "papers": [
@@ -3448,6 +3434,34 @@
       "url": "https://pubs.aip.org/aip/rsi/article/93/10/103902/2845023/Cryogenic-probe-for-low-noise-high-frequency",
       "backupUrl": "https://doi.org/10.1063/5.0106239",
       "accessNote": "已打开AIP官方开放全文，核验题目、作者、日期、DOI、频带、S参数、77 K MTJ散粒噪声与4.2 K限制",
+      "featured": true
+    },
+    {
+      "id": "s41467-026-70239-z",
+      "track": "B",
+      "secondaryTracks": ["A", "C", "E"],
+      "title": "Twisted atomic magnetic tunnel junctions with multiple nonvolatile states",
+      "titleZh": "扭转原子级磁隧道结实现多种非易失电阻态",
+      "authors": "Yuliang Chen, Kartik Samanta, Alexander J. Healey, Chi Fang, Haojie Zhang, Naafis A. Shahed, David A. Broadway, Arthur Ernst, Evgeny Y. Tsymbal, Stuart S. P. Parkin",
+      "venue": "Nature Communications 17, 2439 (2026)",
+      "published": "2026-03-12",
+      "recommendedOn": "2026-08-03",
+      "timeTier": "近期正式发表",
+      "system": "单层/双层CrSBr扭转二维磁隧道结与全反铁磁多界面结构",
+      "conditions": "2 K、零磁场与面内磁场扫描；石墨电极；输运实验结合第一性原理和量子输运计算",
+      "methods": ["二维材料堆叠", "扭转界面", "低温磁输运", "TMR", "DFT", "量子输运"],
+      "summary": "单层/双层CrSBr非对称扭转MTJ在2 K零磁场下呈现两种非易失态，TMR最高约700%；加入第二个扭转界面后可访问四种非易失态，三组反铁磁双层构成的全反铁磁MTJ同样出现多态行为。",
+      "relevance": "它把‘原子级界面设计—低温输运—多态存储’连接到同一器件，适合用作原子制造与MTJ研究的前沿标杆，也提示扭角和界面数量可成为新的器件自由度。",
+      "limitation": "结果主要在2 K和外加磁场写入条件下获得；二维材料手工堆叠、器件尺寸、室温保持、电写入、循环耐久、阵列均匀性及CMOS集成尚未解决。",
+      "industrialization": "目前属于原理验证，最接近多态自旋器件和低温存储概念。距离可制造MRAM仍需室温工作、电流/电场写入、晶圆级扭角控制、封装稳定性、长尾误码和阵列良率证明。",
+      "whyRecommended": "今天推荐它，是因为它直接展示了原子层数量和扭转界面如何把传统二态MTJ扩展为多态器件，并同时给出实验与计算证据。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s41467-026-70239-z",
+      "url": "https://www.nature.com/articles/s41467-026-70239-z",
+      "backupUrl": "https://doi.org/10.1038/s41467-026-70239-z",
+      "accessNote": "已打开Nature Communications开放全文，核验题目、作者、发表日期、DOI、2 K零场TMR、多非易失态及计算方法",
       "featured": true
     }
   ]
