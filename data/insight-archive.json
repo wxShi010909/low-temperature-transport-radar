@@ -176,6 +176,18 @@
       "atomicIds": [
         "2026-08-03-uninterrupted-interface-doe"
       ]
+    },
+    {
+      "date": "2026-08-04",
+      "opportunityIds": [
+        "2026-08-04-dmi-pulse-wer-validation"
+      ],
+      "methodIds": [
+        "2026-08-04-low-noise-tunnel-calibration"
+      ],
+      "atomicIds": [
+        "2026-08-04-cryo-deposition-fla-doe"
+      ]
     }
   ],
   "items": [
@@ -3072,6 +3084,153 @@
       ],
       "researchConnection": "直接覆盖沉积、真空互联、界面表征和MTJ器件反馈。",
       "takeaway": "真空连续性应成为有数值控制限的工艺变量，而不是一句设备描述。"
+    },
+    {
+      "id": "2026-08-04-dmi-pulse-wer-validation",
+      "date": "2026-08-04",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/C · WER可靠性",
+      "title": "DMI—脉宽—WER鼓包的实验闭环",
+      "subtitle": "把微磁预测变成界面可控、可证伪的器件实验",
+      "summary": "本站方案：用重金属/氧处理调DMI，先独立测D，再在20/50 nm pMTJ上扫描5–50 ns脉冲和温度，检验WER鼓包是否随D/Dc出现。",
+      "status": "由当日理论论文启发的待验证方案",
+      "relatedPaperIds": [
+        "s44306-026-00137-z",
+        "apm-14-081102"
+      ],
+      "question": "真实CoFeB/MgO器件中的WER鼓包是否由DMI主导，还是由自热、VCMA或粗糙度造成？",
+      "rationale": "模拟给出D≈Dc和5 ns的明确窗口；低温沉积论文提供调界面与成核的工艺轴。",
+      "workflow": [
+        "两种重金属×三档氧处理，独立测DMI。",
+        "制20/50 nm柱并测TMR/RA/Hk分布。",
+        "做5/10/30/50 ns、250–350 K WER矩阵。",
+        "加入自热/VCMA模型并对失败点做磁纹理诊断。"
+      ],
+      "equipment": [
+        "BLS或畴壁DMI测量",
+        "纳米柱制备",
+        "高速脉冲与误码平台",
+        "温控与热反射/电阻测温"
+      ],
+      "measurements": [
+        "DMI与Dc",
+        "WER—J—脉宽",
+        "结温/VCMA",
+        "TMR/RA/Hk长尾"
+      ],
+      "metrics": [
+        "鼓包起始D/Dc",
+        "最低WER",
+        "安全写入窗口",
+        "工艺—可靠性相关系数"
+      ],
+      "evidenceBoundary": "当前DMI—鼓包关系来自500次/点微磁模拟，尚无同批DMI与WER实测。",
+      "firstSteps": [
+        "先做低DMI与高DMI两组。",
+        "每点10^5次筛选，关键点再10^8次。",
+        "固定自热和偏置场对照。"
+      ],
+      "researchConnection": "直连MTJ界面工程、脉冲写入和低温/变温可靠性。",
+      "takeaway": "先独立测DMI，再谈WER归因。"
+    },
+    {
+      "id": "2026-08-04-low-noise-tunnel-calibration",
+      "date": "2026-08-04",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 低噪声计量",
+      "title": "可切换环境阻抗的低温隧穿校准链",
+      "subtitle": "用标准结把滤波、接地和环境共振量化",
+      "summary": "本站方案：在同一稀释制冷平台加入可切换阻抗/滤波和标准超导结，以I–V、零偏压电导及频谱建立平台底噪基线，再接入MTJ。",
+      "status": "由当日实验与教程启发的设备路线",
+      "relatedPaperIds": [
+        "2607.29636",
+        "rsi-97-071401"
+      ],
+      "question": "平台看到的零偏压、噪声和脉冲异常有多少来自器件，有多少来自环境阻抗与地环路？",
+      "rationale": "mK-STM证明环境主导会随透明度改变；STJ教程给出接地和EMI排查顺序。",
+      "workflow": [
+        "绘制电源/地/屏蔽拓扑。",
+        "输入短路、标准电阻、超导标准结三级校准。",
+        "切换RC/铜粉滤波与外接阻抗。",
+        "记录I–V、1 Hz–100 MHz谱、漂移与热循环。"
+      ],
+      "equipment": [
+        "稀释制冷机",
+        "低噪声前放",
+        "可切换滤波/阻抗盒",
+        "频谱仪与高速示波"
+      ],
+      "measurements": [
+        "零偏压电导",
+        "环境共振",
+        "输入噪声谱",
+        "脉冲边沿/漂移"
+      ],
+      "metrics": [
+        "等效输入噪声",
+        "50/60 Hz抑制",
+        "跨热循环重复性",
+        "器件/平台噪声分离度"
+      ],
+      "evidenceBoundary": "STM的通道物理与STJ教程不能直接给MTJ噪声数值，迁移必须重新标定阻抗和带宽。",
+      "firstSteps": [
+        "先做断线/短路噪声谱。",
+        "逐项开关泵和磁体电源。",
+        "建立每日自动基线。"
+      ],
+      "researchConnection": "为低温MTJ、隧穿谱和高速WER共享同一可信读出底座。",
+      "takeaway": "先证明平台安静且可校准，再解释器件异常。"
+    },
+    {
+      "id": "2026-08-04-cryo-deposition-fla-doe",
+      "date": "2026-08-04",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "B/E · 双热预算",
+      "title": "100 K沉积—1.7 s闪光退火联合DOE",
+      "subtitle": "分离成核连续性与后续结晶/扩散",
+      "summary": "本站方案：用沉积温度控制初始连续性，用FLA脉冲控制结晶和扩散，建立PMA/VCMA/TMR/RA及元素分布的二维窗口。",
+      "status": "由当日两篇制造论文组合的待验证方案",
+      "relatedPaperIds": [
+        "apm-14-081102",
+        "s44306-026-00145-z"
+      ],
+      "question": "低温成核能否扩大FLA窗口，在保持高PMA/VCMA的同时减少B扩散和过曝混层？",
+      "rationale": "100 K沉积改善超薄CoFe/Fe；33次/1.7 s FLA实现约100% TMR但窗口可能很窄。",
+      "workflow": [
+        "300/200/150/100 K沉积温度矩阵。",
+        "20–42次闪光及能量/间隔扫描。",
+        "CTA/RTA等峰温对照。",
+        "片内映射与截面成分冻结样片。"
+      ],
+      "equipment": [
+        "低温溅射台",
+        "可记录能量的FLA",
+        "快速测温",
+        "XRR/AFM/TEM/EELS/SIMS"
+      ],
+      "measurements": [
+        "PMA/VCMA",
+        "TMR/RA",
+        "B/O/Fe/Ta分布",
+        "应力/翘曲/片内均匀性"
+      ],
+      "metrics": [
+        "工艺窗口宽度",
+        "TMR/RA 3σ",
+        "B扩散长度",
+        "节拍与能耗"
+      ],
+      "evidenceBoundary": "两篇论文堆栈和设备不同；联合路线是本站推断，不能直接相加原文峰值。",
+      "firstSteps": [
+        "先做100 K与300 K两温度。",
+        "FLA选25/33/42三档。",
+        "每片至少9点映射并保留截面样品。"
+      ],
+      "researchConnection": "直接覆盖原子级成核、退火扩散、晶圆均匀性和器件可靠性。",
+      "takeaway": "把冷沉积与闪光退火视为两个独立热变量。"
     }
   ]
 }

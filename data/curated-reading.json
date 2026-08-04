@@ -104,6 +104,13 @@
       "classicIds": [
         "classic-pla-54-225"
       ]
+    },
+    {
+      "date": "2026-08-04",
+      "reviewId": "review-apl-128-090501",
+      "classicIds": [
+        "classic-jmmm-159-l1"
+      ]
     }
   ],
   "items": [
@@ -1052,6 +1059,57 @@
         "先看Fe/Ge/Co结和平行/反平行电导定义。",
         "再推导TMR与两电极自旋极化的关系。",
         "最后明确模型不包含相干隧穿与界面缺陷；约15–25分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-apl-128-090501",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Recent progress on electric field control of magnetic tunnel junctions via strain-mediated magnetoelectric coupling",
+      "titleZh": "应变介导磁电耦合控制MTJ的近期进展",
+      "authors": "Weideng Sun, Yonggang Zhao",
+      "venue": "Applied Physics Letters 128, 090501 (2026)",
+      "published": "2026-03-04",
+      "recommendedOn": "2026-08-04",
+      "doi": "10.1063/5.0307967",
+      "url": "https://pubs.aip.org/aip/apl/article/128/9/090501/3382230/Recent-progress-on-electric-field-control-of",
+      "backupUrl": "https://doi.org/10.1063/5.0307967",
+      "assistantSummary": "正式Perspective聚焦压电/铁电层产生应变、再由磁弹耦合改变MTJ自由层各向异性的低功耗路线，并梳理材料组合、器件构型、非易失控制和集成障碍。",
+      "whySelected": "今天B类讨论VCMA、C类讨论界面可靠性、E类讨论退火；这篇综述提供另一种电场—应变写入轴，可比较电荷、应变与热三类界面控制。",
+      "readingGuide": [
+        "先看应变介导磁电耦合的能量传递链。",
+        "再比较压电衬底/薄膜、自由层选择和MTJ读出。",
+        "最后看缩放、疲劳、CMOS/BEOL和阵列一致性；约60–80分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-jmmm-159-l1",
+      "kind": "经典文章",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Current-driven excitation of magnetic multilayers",
+      "titleZh": "Slonczewski自旋转移矩：电流直接驱动磁化的理论起点",
+      "authors": "J. C. Slonczewski",
+      "venue": "Journal of Magnetism and Magnetic Materials 159, L1–L7 (1996)",
+      "published": "1996-05-31",
+      "recommendedOn": "2026-08-04",
+      "doi": "10.1016/0304-8853(96)00062-5",
+      "url": "https://www.sciencedirect.com/science/article/pii/0304885396000625",
+      "backupUrl": "https://doi.org/10.1016/0304-8853(96)00062-5",
+      "assistantSummary": "提出自旋极化电流把角动量转移给磁性层并产生力矩，可激发或翻转磁化，为后来STT-MRAM的写入方程奠定基础。",
+      "whySelected": "今天的WER模拟直接使用Slonczewski力矩；回到原始论文可分清力矩本身、热涨落、DMI和真实器件缺陷各自扮演的角色。",
+      "readingGuide": [
+        "先看两铁磁层和间隔层的几何。",
+        "再看电流产生附加阻尼/反阻尼的力矩项。",
+        "最后对照现代LLG-STT模型的扩展；约25–35分钟。"
       ],
       "notNew": true
     }

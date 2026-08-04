@@ -1,56 +1,54 @@
 {
-  "date": "2026-08-03",
+  "date": "2026-08-04",
   "review": {
-    "id": "review-apr-12-031330",
+    "id": "review-apl-128-090501",
     "kind": "每日综述",
     "track": "B",
     "secondaryTracks": [
-      "A",
       "C",
       "E"
     ],
-    "title": "All two-dimensional van der Waals magnetic tunneling junctions",
-    "titleZh": "全二维范德华磁隧道结：材料、构型与调控综述",
-    "authors": "Zijing Zhao, Lin Ma, Meijiao Men, Wei Li, Xiaolei Wang",
-    "venue": "Applied Physics Reviews 12, 031330 (2025)",
-    "published": "2025-09-11",
-    "recommendedOn": "2026-08-03",
-    "doi": "10.1063/5.0279573",
-    "url": "https://pubs.aip.org/aip/apr/article/12/3/031330/3362835/All-two-dimensional-van-der-Waals-magnetic",
-    "backupUrl": "https://doi.org/10.1063/5.0279573",
-    "assistantSummary": "正式Review按自旋阀与自旋过滤构型系统梳理全二维vdW磁隧道结，并比较磁性材料类别、偏压/电流、势垒厚度和自旋夹角等调控手段。",
-    "whySelected": "今天的核心文章同时出现扭转CrSBr、CrSb理论结和石墨烯/NiFe界面；这篇综述提供统一分类框架，避免把GMR自旋阀、spin-filter和真正隧穿MTJ混为一谈。",
+    "title": "Recent progress on electric field control of magnetic tunnel junctions via strain-mediated magnetoelectric coupling",
+    "titleZh": "应变介导磁电耦合控制MTJ的近期进展",
+    "authors": "Weideng Sun, Yonggang Zhao",
+    "venue": "Applied Physics Letters 128, 090501 (2026)",
+    "published": "2026-03-04",
+    "recommendedOn": "2026-08-04",
+    "doi": "10.1063/5.0307967",
+    "url": "https://pubs.aip.org/aip/apl/article/128/9/090501/3382230/Recent-progress-on-electric-field-control-of",
+    "backupUrl": "https://doi.org/10.1063/5.0307967",
+    "assistantSummary": "正式Perspective聚焦压电/铁电层产生应变、再由磁弹耦合改变MTJ自由层各向异性的低功耗路线，并梳理材料组合、器件构型、非易失控制和集成障碍。",
+    "whySelected": "今天B类讨论VCMA、C类讨论界面可靠性、E类讨论退火；这篇综述提供另一种电场—应变写入轴，可比较电荷、应变与热三类界面控制。",
     "readingGuide": [
-      "先看spin-valve与spin-filter两类构型。",
-      "再看二维磁体类别和典型TMR证据。",
-      "最后看偏压、厚度、夹角调控及制造障碍；约70–90分钟。"
+      "先看应变介导磁电耦合的能量传递链。",
+      "再比较压电衬底/薄膜、自由层选择和MTJ读出。",
+      "最后看缩放、疲劳、CMOS/BEOL和阵列一致性；约60–80分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-pla-54-225",
+      "id": "classic-jmmm-159-l1",
       "kind": "经典文章",
       "track": "C",
       "secondaryTracks": [
-        "A",
         "B"
       ],
-      "title": "Tunneling between ferromagnetic films",
-      "titleZh": "Jullière模型的起点：铁磁薄膜之间的自旋极化隧穿",
-      "authors": "Michel Jullière",
-      "venue": "Physics Letters A 54, 225–226 (1975)",
-      "published": "1975-09-08",
-      "recommendedOn": "2026-08-03",
-      "doi": "10.1016/0375-9601(75)90174-7",
-      "url": "https://www.sciencedirect.com/science/article/pii/0375960175901747",
-      "backupUrl": "https://doi.org/10.1016/0375-9601(75)90174-7",
-      "assistantSummary": "Jullière用Fe/Ge/Co结比较平行和反平行磁化下的电导，把磁阻与两侧电极的自旋极化联系起来，奠定最常用的MTJ直观模型。",
-      "whySelected": "本期跨越二维多态、交变磁理论和常规pMTJ；回到Jullière模型可以分清哪些结论来自简单自旋极化，哪些必须由MgO对称性过滤、动量选择或界面耦合解释。",
+      "title": "Current-driven excitation of magnetic multilayers",
+      "titleZh": "Slonczewski自旋转移矩：电流直接驱动磁化的理论起点",
+      "authors": "J. C. Slonczewski",
+      "venue": "Journal of Magnetism and Magnetic Materials 159, L1–L7 (1996)",
+      "published": "1996-05-31",
+      "recommendedOn": "2026-08-04",
+      "doi": "10.1016/0304-8853(96)00062-5",
+      "url": "https://www.sciencedirect.com/science/article/pii/0304885396000625",
+      "backupUrl": "https://doi.org/10.1016/0304-8853(96)00062-5",
+      "assistantSummary": "提出自旋极化电流把角动量转移给磁性层并产生力矩，可激发或翻转磁化，为后来STT-MRAM的写入方程奠定基础。",
+      "whySelected": "今天的WER模拟直接使用Slonczewski力矩；回到原始论文可分清力矩本身、热涨落、DMI和真实器件缺陷各自扮演的角色。",
       "readingGuide": [
-        "先看Fe/Ge/Co结和平行/反平行电导定义。",
-        "再推导TMR与两电极自旋极化的关系。",
-        "最后明确模型不包含相干隧穿与界面缺陷；约15–25分钟。"
+        "先看两铁磁层和间隔层的几何。",
+        "再看电流产生附加阻尼/反阻尼的力矩项。",
+        "最后对照现代LLG-STT模型的扩展；约25–35分钟。"
       ],
       "notNew": true
     }

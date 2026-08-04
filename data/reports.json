@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-03T13:25:00+08:00",
-  "reportDate": "2026-08-03",
+  "updatedAt": "2026-08-04T09:01:47+08:00",
+  "reportDate": "2026-08-04",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -299,6 +299,25 @@
         "cpl-42-100701",
         "rsi-96-053909",
         "s41699-025-00624-7"
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "label": "详细日报：10 mK隧穿、100 K生长、DMI写错误、STJ低噪声与秒级闪退火",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "2607.29636",
+        "apm-14-081102",
+        "s44306-026-00137-z",
+        "rsi-97-071401",
+        "s44306-026-00145-z"
       ]
     }
   ],
@@ -1828,42 +1847,6 @@
       "url": "https://pubs.aip.org/aip/rsi/article/96/10/103905/3369899/Development-of-atomic-scale-thin-film-deposition",
       "backupUrl": "https://doi.org/10.1063/5.0273533",
       "accessNote": "已核验AIP官方题录和摘要；全文可能需要机构权限",
-      "featured": true
-    },
-    {
-      "id": "s44306-026-00145-z",
-      "track": "E",
-      "secondaryTracks": [
-        "B",
-        "D"
-      ],
-      "title": "Ultrafast flash lamp annealing of magnetic tunnel junctions",
-      "titleZh": "磁隧道结的超快速闪光灯退火",
-      "authors": "Akiko Imai, Shinya Ota, Jun Yamasaki, Teppei Araki, Yasushi Kanai et al.",
-      "venue": "npj Spintronics",
-      "published": "2026-05-12",
-      "recommendedOn": "2026-07-20",
-      "timeTier": "近期正式发表",
-      "system": "CoFeB/MgO磁隧道结与氙灯毫秒脉冲退火",
-      "conditions": "闪光灯脉冲、常规炉退火对照、MR与结构/成分分析",
-      "methods": [
-        "闪光灯退火",
-        "低热预算",
-        "B扩散",
-        "CoFeB结晶"
-      ],
-      "summary": "闪光灯退火用毫秒级氙灯脉冲快速加热器件表面，在总照射约1.7 s内得到约100% TMR；常规退火需要数小时。结构和成分分析显示两种退火的原子扩散与铁磁层结晶过程并不相同。",
-      "relevance": "这为控制CoFeB结晶同时限制B和金属互扩散提供了新的时间维度，适合与你们的原子层界面和热预算研究结合。",
-      "limitation": "当前结果主要证明小样品工艺可行；瞬态峰值温度依赖模拟，且尚未覆盖全片温度均匀性、应力、封装后兼容和循环可靠性。",
-      "industrialization": "最接近MTJ后退火节拍和BEOL热预算优化；仍需300 mm光场均匀性、设备安全、翘曲、片内TMR分布和产能经济性。",
-      "whyRecommended": "它给“退火温度”之外增加了“极短时间”这一可控轴，有机会减少有害扩散并大幅缩短工艺节拍。",
-      "score": 9.6,
-      "priority": "S",
-      "arxiv": "",
-      "doi": "10.1038/s44306-026-00145-z",
-      "url": "https://www.nature.com/articles/s44306-026-00145-z",
-      "backupUrl": "https://doi.org/10.1038/s44306-026-00145-z",
-      "accessNote": "已核验Springer Nature官方全文与DOI；开放获取",
       "featured": true
     },
     {
@@ -3638,6 +3621,196 @@
       "url": "https://www.nature.com/articles/s41699-025-00624-7",
       "backupUrl": "https://doi.org/10.1038/s41699-025-00624-7",
       "accessNote": "已核验npj开放全文的UCD流程、25倍矫顽力降低、MOKE/10 K输运、MR类型和NiO对照",
+      "featured": true
+    },
+    {
+      "id": "2607.29636",
+      "track": "A",
+      "secondaryTracks": [
+        "C",
+        "D"
+      ],
+      "title": "Continuous Tuning of the Charge-Phase Uncertainty in a Josephson Junction",
+      "titleZh": "10 mK STM连续跨越耗散与无耗散约瑟夫森隧穿",
+      "authors": "Irena Padniuk, Xianzhe Zeng, Juan Carlos Cuevas, Joachim Ankerhold, Klaus Kern, Christian R. Ast",
+      "venue": "arXiv:2607.29636v1 (2026，预印本)",
+      "published": "2026-07-31",
+      "recommendedOn": "2026-08-04",
+      "timeTier": "近期预印本",
+      "system": "V针尖/V(100)样品构成的可调超导STM隧道结",
+      "conditions": "稀释制冷机10 mK；GN=0.007–28.5 G0；±20 μV零偏压窗口；UHV原位制样",
+      "methods": [
+        "毫开尔文STM",
+        "I–V谱",
+        "多Andreev反射拟合",
+        "P(E)理论",
+        "qIZ模型",
+        "输运通道反演"
+      ],
+      "summary": "用针尖距离在同一个结中把正常态电导从0.007 G0连续调到28.5 G0，直接观察开关电流从GN平方律跨越到线性律，并重建由近正弦向高次谐波演化的电流—相位关系。",
+      "relevance": "展示了低温隧穿平台怎样把环境阻抗、通道透明度和结本征性质分开；可迁移为MTJ界面态、噪声和偏压依赖的连续诊断思路。",
+      "limitation": "这是V/V超导STM点接触，不是磁性MTJ；稿件为v1预印本，尚未同行评议；TMR、RA、WER、保持和耐久原文未公开。",
+      "industrialization": "属于基础计量与平台方法。进入器件开发还需平面结/阵列复现、长期漂移、跨热循环校准、自动化通道统计和制造兼容验证。",
+      "whyRecommended": "先看图1的0.007–28.5 G0全谱和图2平方到线性跨越，再看图3通道透明度/电流—相位关系；预计45–60分钟。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "2607.29636",
+      "doi": "原文未公开",
+      "url": "https://arxiv.org/abs/2607.29636",
+      "backupUrl": "https://arxiv.org/html/2607.29636v1",
+      "accessNote": "已核验arXiv v1全文、作者、2026-07-31提交日期、10 mK条件和全部主要定量范围",
+      "featured": true
+    },
+    {
+      "id": "apm-14-081102",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "High perpendicular magnetic anisotropy and voltage-controlled magnetic anisotropy coefficients in crystalline CoFe/Fe-based top-free multilayers fabricated using cryogenic temperature deposition",
+      "titleZh": "100 K低温沉积CoFe/Fe自由层兼顾高PMA与高VCMA",
+      "authors": "Tomohiro Ichinose, Tatsuya Yamamoto, Takayuki Nozaki, Kay Yakushiji, Shingo Tamaru, Shinji Yuasa",
+      "venue": "APL Materials 14, 081102 (2026)",
+      "published": "2026-08-03",
+      "recommendedOn": "2026-08-04",
+      "timeTier": "昨日正式发表",
+      "system": "MgO/CoFe/Fe/Ir顶部自由表面多层与MTJ测试结构",
+      "conditions": "100 K低温溅射；CoFe/Fe亚纳米厚度扫描；最高673 K后退火；面内磁场1→0 T测VCMA",
+      "methods": [
+        "100 K低温溅射",
+        "亚纳米厚度DOE",
+        "磁滞回线",
+        "磁输运",
+        "电压控制磁各向异性",
+        "退火"
+      ],
+      "summary": "100 K沉积抑制超薄层岛状成核；调节CoFe/Fe比例及Ir插层后，界面PMA能量密度达到0.78 mJ/m²，673 K退火后VCMA系数达到161 fJ/(V·m)。",
+      "relevance": "直接对应MgO/铁磁层成核、原子级厚度控制、低温沉积和退火扩散，是把材料界面优势转成VCMA-MRAM候选自由层的清晰DOE。",
+      "limitation": "主要是薄膜和测试结结果；原文未公开300 mm全片均匀性、阵列WER、保持、耐久、BEOL良率和量产节拍。",
+      "industrialization": "位于核心膜层工艺开发阶段。仍需证明100 K冷却吞吐、晶圆温差、靶材漂移补偿、673 K热预算兼容、阵列级VCMA写入与可靠性。",
+      "whyRecommended": "先看PMA随CoFe/Fe比例变化、最佳0.8/0.4 nm附近的VCMA结果和退火温度比较；预计35–50分钟。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0326956",
+      "url": "https://pubs.aip.org/aip/apm/article/14/8/081102/3404353/High-perpendicular-magnetic-anisotropy-and-voltage",
+      "backupUrl": "https://doi.org/10.1063/5.0326956",
+      "accessNote": "已核验AIP正式PDF、作者、卷期、DOI、100 K沉积、0.78 mJ/m² PMA和161 fJ/(V·m) VCMA",
+      "featured": true
+    },
+    {
+      "id": "s44306-026-00137-z",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Exploring the role of interfacial Dzyaloshinskii–Moriya interaction in write error rate anomalies of spin-transfer torque magnetic tunnel junctions",
+      "titleZh": "界面DMI如何制造STT-MTJ写错误率“鼓包”异常",
+      "authors": "Prosenjit Das, Md Mahadi Rajib, Jayasimha Atulasimha",
+      "venue": "npj Spintronics 4, 18 (2026)",
+      "published": "2026-05-04",
+      "recommendedOn": "2026-08-04",
+      "timeTier": "近半年正式论文",
+      "system": "20 nm与50 nm圆形p-CoFeB自由层的STT-MTJ微磁模型",
+      "conditions": "1 nm自由层；300 K；D=0–5 mJ/m²；5 ns/50 ns脉冲；每点500次随机试验",
+      "methods": [
+        "MuMax3微磁模拟",
+        "随机热涨落",
+        "STT脉冲扫描",
+        "WER统计",
+        "多畴快照",
+        "DMI参数DOE"
+      ],
+      "summary": "模拟显示DMI接近或超过临界值2.753 mJ/m²后会稳定非均匀多畴中间态，使5 ns脉冲的WER随电流先降后升；50 ns脉冲则让纹理充分弛豫，恢复单调下降。",
+      "relevance": "把界面氧化/重金属选择、DMI、短脉冲WER和器件尺寸连成可验证因果链，适合指导MTJ界面工程与脉冲测试矩阵。",
+      "limitation": "全部结果是MuMax3预测；忽略VCMA、焦耳热、外场、参考层和器件间耦合。D>3.3 mJ/m²超出现有相关体系公开实验上限，不能当作量产器件实测WER。",
+      "industrialization": "属于可靠性机理假设阶段。还缺DMI实测、真实堆栈/粗糙度、百万到十亿次写入统计、阵列长尾、温度范围和电路共设计验证。",
+      "whyRecommended": "先看图3的500次随机WER曲线，再看图4多畴失败路径和图5的5/50 ns对照；预计30–45分钟。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s44306-026-00137-z",
+      "url": "https://www.nature.com/articles/s44306-026-00137-z",
+      "backupUrl": "https://doi.org/10.1038/s44306-026-00137-z",
+      "accessNote": "已核验npj开放全文、作者、发表日期、20/50 nm几何、DMI范围、500次统计和模型假设",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-071401",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "An introduction to superconducting tunnel junction radiation detectors",
+      "titleZh": "超导隧道结探测器的器件、制冷、读出与噪声实用教程",
+      "authors": "Stephan Friedrich",
+      "venue": "Review of Scientific Instruments 97, 071401 (2026)",
+      "published": "2026-07-23",
+      "recommendedOn": "2026-08-04",
+      "timeTier": "近期教程",
+      "system": "两超导电极/绝缘势垒STJ辐射探测器及低温读出链",
+      "conditions": "超导能隙约1 meV；光学能区约0.1 eV分辨；<1 keV X射线为数eV FWHM；数千计数/s",
+      "methods": [
+        "STJ微加工",
+        "低温制冷",
+        "电荷读出",
+        "噪声预算",
+        "单点接地",
+        "谱学标定"
+      ],
+      "summary": "教程把STJ从结结构、准粒子产生/收集一直讲到低温布线和谱学读出，并给出实用噪声治理：低温恒温器与机架/束线电隔离、读出端单点接地、隔离变压器及逐项排查泵和闲置电缆。",
+      "relevance": "对MTJ低噪声输运平台同样适用：接地拓扑、低温线缆、前置放大器和数字化链应作为可测量的系统，而不是装好后再凭经验排噪。",
+      "limitation": "这是教程性综述而非单套新设备的对照实验；数值覆盖STJ辐射探测，不能直接代表MTJ电阻噪声、WER或脉冲读写性能。",
+      "industrialization": "处于成熟探测原理与平台工程总结层。迁移到MRAM需要面向阻抗、带宽、脉冲边沿、并行通道和自动化校准重新设计。",
+      "whyRecommended": "先看器件工作原理与能量分辨来源，再精读接地/电磁干扰排查部分；预计50–70分钟。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0327257",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/7/071401/3399143/An-introduction-to-superconducting-tunnel-junction",
+      "backupUrl": "https://doi.org/10.1063/5.0327257",
+      "accessNote": "已核验AIP教程页面、作者、卷期、DOI以及能量分辨、计数率和接地建议",
+      "featured": true
+    },
+    {
+      "id": "s44306-026-00145-z",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Ultrafast flash lamp annealing of magnetic tunnel junctions",
+      "titleZh": "1.7秒闪光灯退火让CoFeB/MgO MTJ达到约100% TMR",
+      "authors": "Akiko Imai, Shinya Ota, Jun Yamasaki, Teppei Araki, Yasushi Kanai, Tomohiro Koyama, Tsuyoshi Sekitani et al.",
+      "venue": "npj Spintronics 4, 20 (2026)",
+      "published": "2026-05-12",
+      "recommendedOn": "2026-08-04",
+      "timeTier": "近半年正式论文",
+      "system": "CoFeB/MgO/CoFeB磁隧道结与CTA/FLA对照",
+      "conditions": "33次优化闪光、总照射1.7 s；与小时级常规热退火比较；HRTEM/EDX/TMR/RA联合表征",
+      "methods": [
+        "闪光灯退火",
+        "常规热退火对照",
+        "TMR/RA",
+        "HRTEM",
+        "STEM-EDX",
+        "脉冲数DOE"
+      ],
+      "summary": "优化FLA用33次闪光、总照射1.7 s得到约100% TMR，接近常规退火最高118%但大幅缩短热处理时间；元素分析显示较少B长程扩散，过量闪光则引起氧化和Ta/CoFeB混合。",
+      "relevance": "把退火从单一峰值温度扩展成脉冲数、单脉冲能量、总时长和冷却间隔的原子制造变量，可与100 K沉积联合设计双热预算。",
+      "limitation": "公开结果不能证明300 mm全片均匀性、阵列WER、保持、耐久或BEOL热机械可靠性；约100% TMR低于文中CTA最高118%，并非全面性能替代。",
+      "industrialization": "接近高吞吐热处理模块概念验证。仍需灯场均匀性、边缘温差、应力/翘曲、颗粒、批间稳定性和量产节拍验收。",
+      "whyRecommended": "先看TMR/RA随闪光次数的窗口，再看HRTEM/EDX比较和过曝退化；预计30–45分钟。",
+      "score": 9.7,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1038/s44306-026-00145-z",
+      "url": "https://www.nature.com/articles/s44306-026-00145-z",
+      "backupUrl": "https://doi.org/10.1038/s44306-026-00145-z",
+      "accessNote": "已核验npj开放全文、作者、发表日期、33次/1.7 s、约100% TMR、118% CTA对照和显微分析",
       "featured": true
     }
   ]
