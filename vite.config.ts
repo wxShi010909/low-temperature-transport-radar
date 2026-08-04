@@ -13,7 +13,10 @@ const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 
 const localBindingConfig = {
   main: "./worker/index.ts",
-  compatibility_date: "2026-08-03",
+  // Keep this at the newest date supported by the local preview runtime so
+  // every automated update can be rendered and interaction-tested before
+  // deployment. The site does not rely on APIs newer than this date.
+  compatibility_date: "2026-05-22",
   compatibility_flags: ["nodejs_compat"],
   d1_databases: d1
     ? [
