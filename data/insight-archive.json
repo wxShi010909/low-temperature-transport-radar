@@ -188,6 +188,18 @@
       "atomicIds": [
         "2026-08-04-cryo-deposition-fla-doe"
       ]
+    },
+    {
+      "date": "2026-08-05",
+      "opportunityIds": [
+        "2026-08-05-interface-selection-matrix"
+      ],
+      "methodIds": [
+        "2026-08-05-filter-pulse-calibration"
+      ],
+      "atomicIds": [
+        "2026-08-05-ale-ald-mtj-sidewall"
+      ]
     }
   ],
   "items": [
@@ -3231,6 +3243,154 @@
       ],
       "researchConnection": "直接覆盖原子级成核、退火扩散、晶圆均匀性和器件可靠性。",
       "takeaway": "把冷沉积与闪光退火视为两个独立热变量。"
+    },
+    {
+      "id": "2026-08-05-interface-selection-matrix",
+      "date": "2026-08-05",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 界面选择",
+      "title": "从二维p–n到交变磁结的界面选择矩阵",
+      "subtitle": "用同一组可比较指标筛掉不可制造的理论峰值",
+      "summary": "本站方案：把势垒厚度、界面终止、温度和偏置统一映射到RA、TMR、SVE和噪声，连接实测与第一性原理。",
+      "status": "由当日A/C论文组合提出的待验证路线",
+      "relatedPaperIds": [
+        "s41467-025-68043-2",
+        "prb-113-l060410"
+      ],
+      "question": "理想对称性选择在真实界面无序下还能保留多少？",
+      "rationale": "二维结提供实测对照，交变磁结提供理论上限。",
+      "workflow": [
+        "DFT筛三种终止和±2%应变。",
+        "制作厚度梯度与单层间隔对照。",
+        "2–220 K、偏置与磁场联合扫描。",
+        "统一拟合动量选择、RA和噪声。"
+      ],
+      "equipment": [
+        "DFT/NEGF",
+        "低温磁输运",
+        "HRTEM/EELS",
+        "低噪声源表"
+      ],
+      "measurements": [
+        "RA/TMR/SVE",
+        "I-V非线性",
+        "1/f噪声",
+        "界面成分"
+      ],
+      "metrics": [
+        "理论—实测折减比",
+        "片内3σ",
+        "温度稳定范围",
+        "漏电长尾"
+      ],
+      "evidenceBoundary": "组合路线为本站推断，不能把两种不同材料的峰值直接比较。",
+      "firstSteps": [
+        "先做2个厚度和3个温度。",
+        "保留单层间隔对照。",
+        "每个器件记录接触电阻。"
+      ],
+      "researchConnection": "直接服务原子界面筛选与低温验收。",
+      "takeaway": "先比较可制造的稳健窗口，再追逐峰值。"
+    },
+    {
+      "id": "2026-08-05-filter-pulse-calibration",
+      "date": "2026-08-05",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "D/A · 低温带宽",
+      "title": "滤波—电子温度—纳秒脉冲三联校准",
+      "subtitle": "避免把安静与高速误当成同一个目标",
+      "summary": "本站方案：以直通、传统粉末、多层粉末三条线路同时测S参数、电子温度和脉冲保真度。",
+      "status": "由当日D类论文启发的设备路线",
+      "relatedPaperIds": [
+        "rsi-97-024703",
+        "s41467-026-70802-8"
+      ],
+      "question": "GHz噪声抑制与0.4 ns级脉冲传输之间的最优折中在哪里？",
+      "rationale": "低温滤波降低加热，但寄生电容会损失写脉冲边沿。",
+      "workflow": [
+        "室温VNA基线。",
+        "4 K与基温复测S参数。",
+        "噪声温度计标定电子温度。",
+        "输入0.4–10 ns脉冲测过冲/延迟。"
+      ],
+      "equipment": [
+        "VNA",
+        "低温衰减器/粉末滤波器",
+        "高速示波器",
+        "电子温度计"
+      ],
+      "measurements": [
+        "S21/S11",
+        "寄生电容",
+        "电子温度",
+        "脉冲上升沿"
+      ],
+      "metrics": [
+        "GHz衰减",
+        "带宽",
+        "基温升高",
+        "脉冲失真"
+      ],
+      "evidenceBoundary": "滤波器论文公开摘要未给出完整数值，具体指标须在本平台重测。",
+      "firstSteps": [
+        "先校准空线。",
+        "逐级加入滤波。",
+        "记录泵/磁体开关状态。"
+      ],
+      "researchConnection": "支撑低温MTJ噪声与高速WER可信测量。",
+      "takeaway": "用同一套实验同时验收安静和快速。"
+    },
+    {
+      "id": "2026-08-05-ale-ald-mtj-sidewall",
+      "date": "2026-08-05",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 侧壁修复",
+      "title": "MTJ侧壁ALE去损伤—原位ALD封护四组DOE",
+      "subtitle": "把量子器件表面修复迁移成MTJ可靠性实验",
+      "summary": "本站方案：无处理、仅ALE、仅ALD、ALE+ALD四组，分离去损伤与封护贡献。",
+      "status": "跨器件迁移的待验证原子制造路线",
+      "relatedPaperIds": [
+        "2506.17474",
+        "s41467-026-70802-8"
+      ],
+      "question": "能否在不损失CD和MgO完整性的前提下降低侧壁缺陷、漏电和低频噪声？",
+      "rationale": "ALE/ALD在铝量子器件中把TLS损耗减半，但MTJ材料选择性未知。",
+      "workflow": [
+        "用MTJ测试片标定ALE循环数。",
+        "四组处理并保持真空互联。",
+        "TEM/EELS/XPS核验侧壁化学。",
+        "测TMR/RA、漏电、噪声、热循环和保持。"
+      ],
+      "equipment": [
+        "ALE/ALD真空互联",
+        "TEM/EELS",
+        "XPS",
+        "晶圆级MTJ测试"
+      ],
+      "measurements": [
+        "侧壁CD",
+        "元素分布",
+        "TMR/RA",
+        "1/f噪声",
+        "保持/耐久"
+      ],
+      "metrics": [
+        "CD损失",
+        "漏电尾部",
+        "TMR/RA 3σ",
+        "热循环漂移"
+      ],
+      "evidenceBoundary": "超导铝器件结果不能直接证明MTJ收益；先做选择性和MgO损伤验证。",
+      "firstSteps": [
+        "2/5/10个ALE循环。",
+        "ALD厚度1/2/3 nm。",
+        "加入仅真空等待对照。"
+      ],
+      "researchConnection": "直接覆盖图形化损伤、原位封护、可靠性与BEOL兼容。",
+      "takeaway": "必须用四组对照分开“去除”和“封护”。"
     }
   ]
 }

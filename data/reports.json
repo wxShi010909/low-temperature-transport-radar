@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-04T09:01:47+08:00",
-  "reportDate": "2026-08-04",
+  "updatedAt": "2026-08-05T09:02:02+08:00",
+  "reportDate": "2026-08-05",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -318,6 +318,25 @@
         "s44306-026-00137-z",
         "rsi-97-071401",
         "s44306-026-00145-z"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "label": "详细日报：二维低偏置隧穿、交换偏置多态、交变磁对称性、低温滤波与ALE/ALD修复",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "s41467-025-68043-2",
+        "s41467-026-70802-8",
+        "prb-113-l060410",
+        "rsi-97-024703",
+        "2506.17474"
       ]
     }
   ],
@@ -3811,6 +3830,186 @@
       "url": "https://www.nature.com/articles/s44306-026-00145-z",
       "backupUrl": "https://doi.org/10.1038/s44306-026-00145-z",
       "accessNote": "已核验npj开放全文、作者、发表日期、33次/1.7 s、约100% TMR、118% CTA对照和显微分析",
+      "featured": true
+    },
+    {
+      "id": "s41467-025-68043-2",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Two-dimensional magnetic tunnel p-n junctions for low-power electronics",
+      "titleZh": "二维磁性 p–n 隧道结：10 K 下 1100% TMR 与零偏压自旋电压",
+      "authors": "Wenkai Zhu, Ziao Wang, Tiangui Hu et al.",
+      "venue": "Nature Communications 17, 1283 (2026)",
+      "published": "2025-12-30",
+      "recommendedOn": "2026-08-05",
+      "timeTier": "近期正式论文",
+      "system": "FGT/p-GaSe/n-InSe/FGT 垂直范德华磁隧道结",
+      "conditions": "10 K；垂直磁场；1 nA偏置及零外加偏置；p-GaSe/n-InSe总厚约10 nm",
+      "methods": [
+        "低温磁输运",
+        "HRTEM",
+        "偏置/温度扫描",
+        "漂移扩散模型",
+        "DFT"
+      ],
+      "summary": "10 K、1 nA下器件A实测约1100% TMR；零偏压SVE约1930%，−1 nA时达15720%，磁滞可追踪到FGT约220 K居里温度。",
+      "relevance": "把势垒厚度、p–n内建场和界面洁净度同时纳入低温自旋隧穿DOE。",
+      "limitation": "器件数、晶圆均匀性、RA长尾、WER、保持和耐久原文公开页未给出；零偏压电压不等于无能耗发电。",
+      "industrialization": "处于手工堆叠二维器件物理验证，距大面积生长、接触良率和CMOS集成仍远。",
+      "whyRecommended": "先看图1的结构/HRTEM与10 K磁滞，再看图2温度依赖和图3偏置地图；35–50分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1038/s41467-025-68043-2",
+      "url": "https://www.nature.com/articles/s41467-025-68043-2",
+      "backupUrl": "https://doi.org/10.1038/s41467-025-68043-2",
+      "accessNote": "已核验Nature开放全文、发表日期、结构、温度、磁场与公开定量结果",
+      "featured": true
+    },
+    {
+      "id": "s41467-026-70802-8",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Nanoscale exchange-bias magnetic tunnel junctions enabled memristive synapse and leaky-integrate-fire neuron for neuromorphic computing",
+      "titleZh": "约100 nm交换偏置MTJ同时实现多态突触与GHz级LIF神经元",
+      "authors": "Zanhong Chen, Dehang Zhu, Ao Du et al.",
+      "venue": "Nature Communications 17, 4362 (2026)",
+      "published": "2026-03-24",
+      "recommendedOn": "2026-08-05",
+      "timeTier": "近半年正式论文",
+      "system": "纳米尺度交换偏置磁隧道结（EB-MTJ），反铁磁层空间分布提供连续状态",
+      "conditions": "约100 nm器件；0.4 ns编程脉冲；片上突触/神经元协同演示",
+      "methods": [
+        "MTJ微纳加工",
+        "交换偏置调控",
+        "时间分辨脉冲",
+        "STDP",
+        "卷积SNN"
+      ],
+      "summary": "实测稳定连续多态与STDP；0.4 ns脉冲可渐进编程并形成GHz级LIF动力学，系统模拟/演示达到96%手势识别准确率。",
+      "relevance": "将通常被视为不均匀性的反铁磁分布转化为可编程状态变量，直接连接界面缺陷、交换偏置与类脑器件。",
+      "limitation": "公开页未给出阵列级TMR/RA分布、单状态保持、写能耗、误码和耐久长尾；96%包含算法协同，不能等同芯片量产指标。",
+      "industrialization": "已超过单一二态器件，但仍缺晶圆级反铁磁分布控制、阵列校准和温漂/老化验证。",
+      "whyRecommended": "先看器件结构和交换偏置来源，再看0.4 ns脉冲轨迹、STDP及96%识别流程；40–55分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1038/s41467-026-70802-8",
+      "url": "https://www.nature.com/articles/s41467-026-70802-8",
+      "backupUrl": "https://doi.org/10.1038/s41467-026-70802-8",
+      "accessNote": "已核验Nature开放全文、作者、日期、约100 nm、0.4 ns及96%结果",
+      "featured": true
+    },
+    {
+      "id": "prb-113-l060410",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Tunnel-like transport and extremely large magnetoresistance in an all-metal junction incorporating the altermagnet KV2Se2O",
+      "titleZh": "全金属交变磁结的隧穿式输运与1.5×10^12%理论磁阻",
+      "authors": "Jing-Jing He, Ling-Xiao Liu, Yan-Dong Guo, Jia-Ren Yuan, Xiao-Hong Yan, Stefano Sanvito",
+      "venue": "Physical Review B 113, L060410 (2026)",
+      "published": "2026-02-24",
+      "recommendedOn": "2026-08-05",
+      "timeTier": "近半年正式理论论文",
+      "system": "KV₂Se₂O/BaTi₂Bi₂O/KV₂Se₂O 全金属结",
+      "conditions": "第一性原理电子结构与自旋输运；不同磁构型；温度、缺陷与有限偏压原文公开摘要未给出",
+      "methods": [
+        "DFT",
+        "第一性原理输运",
+        "动量分辨自旋选择",
+        "磁构型比较"
+      ],
+      "summary": "理论确认KV₂Se₂O的动量依赖自旋劈裂，并预测全金属结具有隧穿式输运和1.5×10^12%磁阻，机制为对称性驱动的自旋选择。",
+      "relevance": "提供“界面动量匹配”计算筛选轴，可先算界面终止、应变和无序，再决定是否生长。",
+      "limitation": "1.5×10^12%是理想结构理论预测，不是实测；有限温度、声子、界面粗糙、互扩散、接触和器件尺寸的影响原文摘要未公开。",
+      "industrialization": "处于材料/结构理论候选阶段，需先完成可生长性、薄膜稳定性和实结输运验证。",
+      "whyRecommended": "先看能带自旋劈裂，再看P/AP构型的动量分辨透射和磁阻定义；30–45分钟。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1103/dltj-4cff",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/dltj-4cff",
+      "backupUrl": "https://doi.org/10.1103/dltj-4cff",
+      "accessNote": "已核验APS页面、作者、日期、结构和理论磁阻；正文部分需机构权限",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-024703",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "Multilayer cryogenic powder filters with low parasitic capacitance",
+      "titleZh": "兼顾GHz射频衰减与低寄生电容的多层低温粉末滤波器",
+      "authors": "Itishree Pradhan, Hao Li, Alina Rupp et al.",
+      "venue": "Review of Scientific Instruments 97, 024703 (2026)",
+      "published": "2026-02-04",
+      "recommendedOn": "2026-08-05",
+      "timeTier": "近半年正式论文",
+      "system": "多层低温金属粉末滤波器与传输线",
+      "conditions": "低温接线；GHz射频抑制；公开摘要未给出最低温度、完整衰减dB和电容数值",
+      "methods": [
+        "低温射频滤波",
+        "传输测量",
+        "寄生电容比较",
+        "热噪声控制"
+      ],
+      "summary": "实测/演示多层结构同时增强GHz射频衰减并降低对地寄生电容，用于阻止沿线RF加热而不过度牺牲测量带宽。",
+      "relevance": "低温MTJ、弱信号隧穿和误码测试都需把电子温度、RF泄漏和脉冲带宽共同校准。",
+      "limitation": "公开摘要没有完整dB–频率、寄生电容和最低电子温度数字；不能直接把量子器件滤波效果外推到纳秒MTJ写线。",
+      "industrialization": "适合作为低温平台模块；进入多通道量产测试还需热负载、通道串扰、连接器重复性和自动校准。",
+      "whyRecommended": "先看传统粉末滤波器的寄生电容问题，再看多层截面与S参数对比；25–40分钟。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0293088",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/2/024703/3378556/Multilayer-cryogenic-powder-filters-with-low",
+      "backupUrl": "https://doi.org/10.1063/5.0293088",
+      "accessNote": "已核验AIP直接页面、作者、卷页、DOI和公开摘要",
+      "featured": true
+    },
+    {
+      "id": "2506.17474",
+      "track": "E",
+      "secondaryTracks": [
+        "D",
+        "A"
+      ],
+      "title": "Improving the lifetime of aluminum-based superconducting qubits through atomic layer etching and deposition",
+      "titleZh": "ALE去损伤后原位ALD封护使铝基量子器件损耗减半",
+      "authors": "Neha Mahuli, Joaquin Minguzzi, Jiansong Gao et al.",
+      "venue": "arXiv:2506.17474 v2",
+      "published": "2026-06-26",
+      "recommendedOn": "2026-08-05",
+      "timeTier": "近期修订预印本",
+      "system": "Si上铝薄膜谐振器与平面transmon；封装前ALE+原位ALD",
+      "conditions": "最终干法表面处理；ALE去除原生氧化物/残留后不破真空ALD封护；持续数月观察",
+      "methods": [
+        "原子层刻蚀",
+        "原位原子层沉积",
+        "低温谐振器损耗",
+        "transmon T1统计"
+      ],
+      "summary": "TLS相关损耗降低约2倍；紧凑电容transmon中位Q=(3.69±0.42)×10^6、T1=196±22 μs，改善维持数月。",
+      "relevance": "虽非MTJ，但直接示范“去除加工损伤—不破真空封护—低温器件验收”闭环，可迁移到MTJ侧壁封护DOE。",
+      "limitation": "这是预印本且器件为铝超导电路；原文摘要未公开MTJ适用性、300 mm均匀性、ALE选择比、完整厚度与吞吐量，不能直接宣称改善TMR。",
+      "industrialization": "接近封装前后处理模块验证；量产仍需颗粒、选择性、关键尺寸损失、批间稳定和长期封装可靠性。",
+      "whyRecommended": "先看工艺流程图，再看TLS损耗分离、Q/T1统计及多月保持；35–50分钟。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "2506.17474",
+      "doi": "10.48550/arXiv.2506.17474",
+      "url": "https://arxiv.org/abs/2506.17474",
+      "backupUrl": "https://doi.org/10.48550/arXiv.2506.17474",
+      "accessNote": "已核验arXiv v2日期、作者、流程和公开定量结果；标记为预印本",
       "featured": true
     }
   ]

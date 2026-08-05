@@ -111,6 +111,13 @@
       "classicIds": [
         "classic-jmmm-159-l1"
       ]
+    },
+    {
+      "date": "2026-08-05",
+      "reviewId": "review-s44306-024-00014-7",
+      "classicIds": [
+        "classic-pr-102-1413"
+      ]
     }
   ],
   "items": [
@@ -1110,6 +1117,57 @@
         "先看两铁磁层和间隔层的几何。",
         "再看电流产生附加阻尼/反阻尼的力矩项。",
         "最后对照现代LLG-STT模型的扩展；约25–35分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-s44306-024-00014-7",
+      "kind": "每日综述",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "title": "Antiferromagnetic tunnel junctions for spintronics",
+      "titleZh": "反铁磁隧道结自旋电子学综述",
+      "authors": "Ding-Fu Shao, Evgeny Y. Tsymbal",
+      "venue": "npj Spintronics 2, 13 (2024)",
+      "published": "2024-05-08",
+      "recommendedOn": "2026-08-05",
+      "doi": "10.1038/s44306-024-00014-7",
+      "url": "https://www.nature.com/articles/s44306-024-00014-7",
+      "backupUrl": "https://doi.org/10.1038/s44306-024-00014-7",
+      "assistantSummary": "正式综述系统解释共线/非共线AFMTJ中的动量依赖自旋极化、Néel自旋流、TMR和可驱动Néel矢量翻转的自旋力矩。",
+      "whySelected": "为今天C类1.5×10^12%理论预测提供判断框架，也把A/B类的低温实测与交换偏置器件放回反铁磁写读体系。",
+      "readingGuide": [
+        "先读图1与传统MTJ/AFMTJ差异。",
+        "再读动量依赖自旋极化和Néel自旋流。",
+        "最后看自旋力矩、材料/界面条件及未决实验；60–80分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-pr-102-1413",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "C"
+      ],
+      "title": "New Magnetic Anisotropy",
+      "titleZh": "交换偏置的经典起点：新型磁各向异性",
+      "authors": "W. H. Meiklejohn, C. P. Bean",
+      "venue": "Physical Review 102, 1413 (1956)",
+      "published": "1956-06-01",
+      "recommendedOn": "2026-08-05",
+      "doi": "10.1103/PhysRev.102.1413",
+      "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.102.1413",
+      "backupUrl": "https://doi.org/10.1103/PhysRev.102.1413",
+      "assistantSummary": "在铁磁/反铁磁耦合体系中建立交换偏置现象的经典实验基础，为今天EB-MTJ利用磁滞偏移和反铁磁界面提供源头。",
+      "whySelected": "今天B类把交换偏置从二态钉扎扩展为连续多态；回读原文可区分界面交换、矫顽力变化和器件电流调制。",
+      "readingGuide": [
+        "先看磁滞回线偏移的实验事实。",
+        "再看铁磁/反铁磁界面耦合解释。",
+        "最后列出与纳米EB-MTJ相比缺失的尺度、脉冲和可靠性变量；20–30分钟。"
       ],
       "notNew": true
     }
