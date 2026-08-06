@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-05T09:02:02+08:00",
-  "reportDate": "2026-08-05",
+  "updatedAt": "2026-08-06T09:00:00+08:00",
+  "reportDate": "2026-08-06",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -337,6 +337,25 @@
         "prb-113-l060410",
         "rsi-97-024703",
         "2506.17474"
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "label": "详细日报：反铁磁界面奇偶、全外延MgO结、界面键理论、3 K空间诊断与脉冲e-CVD",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "s41467-025-66981-5",
+        "s41467-025-62695-w",
+        "prb-113-174409",
+        "rsi-97-013906",
+        "jvsta-44-033406"
       ]
     }
   ],
@@ -4010,6 +4029,189 @@
       "url": "https://arxiv.org/abs/2506.17474",
       "backupUrl": "https://doi.org/10.48550/arXiv.2506.17474",
       "accessNote": "已核验arXiv v2日期、作者、流程和公开定量结果；标记为预印本",
+      "featured": true
+    },
+    {
+      "id": "s41467-025-66981-5",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Interface-controlled antiferromagnetic tunnel junctions based on a metallic van der Waals A-type antiferromagnet",
+      "titleZh": "界面控制的范德华反铁磁隧道结：10 K 下75% TMR与奇偶层非易失调控",
+      "authors": "Wei-Min Zhao, Yi-Lun Liu, Liu Yang et al.",
+      "venue": "Nature Communications 17, 268 (2026)",
+      "published": "2025-12-05",
+      "recommendedOn": "2026-08-06",
+      "timeTier": "近期正式论文",
+      "system": "FCGT/WSe₂/FCGT垂直AFMTJ；偶-偶、奇-偶、奇-奇三种层数配置",
+      "conditions": "10 K主测；±4 T垂直磁场；20 nA固定电流；D1为6L FCGT/4L WSe₂/6L FCGT（6.0/2.8/5.9 nm）",
+      "methods": [
+        "干法转移",
+        "AFM厚度测量",
+        "低温垂直磁输运",
+        "Hall对照",
+        "第一性原理量子输运"
+      ],
+      "summary": "偶-偶器件在10 K实测最高75% TMR，+0.9 T时61.2 kΩ、+1.5 T时35.0 kΩ；奇-偶层数把挥发信号改成非易失信号，证明读出由未补偿界面而非体相净自旋极化主导。",
+      "relevance": "直接把原子层奇偶、界面终止和干净转移变成可测TMR变量，适合连接界面制造与低温输运。",
+      "limitation": "手工剥离/转移器件；原文未公开RA、纳米尺寸、WER、保持时间、耐久、晶圆均匀性和BEOL热预算，不能直接外推MRAM量产。",
+      "industrialization": "处于低温微米级材料器件验证；还需可规模生长、图形化、阵列写入及温度上限验证。",
+      "whyRecommended": "先看图2的6L/4L/6L结构与10 K回线，再看图4奇偶层非易失行为、图5界面模型；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1038/s41467-025-66981-5",
+      "url": "https://www.nature.com/articles/s41467-025-66981-5",
+      "backupUrl": "https://doi.org/10.1038/s41467-025-66981-5",
+      "accessNote": "已打开Nature开放全文并核验题目、作者、原始在线日期、层厚、温度、磁场、电流与电阻",
+      "featured": true
+    },
+    {
+      "id": "s41467-025-62695-w",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Giant Spin-flop magnetoresistance in a collinear antiferromagnetic tunnel junction",
+      "titleZh": "全外延RuO₂/MgO/RuO₂反铁磁结：室温60%、3 K 73%自旋翻转TAMR",
+      "authors": "Shijie Xu, Zhizhong Zhang, Farzad Mahfouzi et al.",
+      "venue": "Nature Communications 16, 8370 (2025)",
+      "published": "2025-09-24",
+      "recommendedOn": "2026-08-06",
+      "timeTier": "近一年正式论文",
+      "system": "STO上RuO₂(10 nm)/MgO(2 nm)/RuO₂(20 nm)全外延AFM隧道结；3–15 μm圆柱",
+      "conditions": "3–300 K；最高8 T面内场；1 μA直流读出；MgO(110)/RuO₂(100)",
+      "methods": [
+        "外延生长",
+        "TEM/SAED/XRR/AFM",
+        "XMLD/XAS",
+        "角分辨磁输运",
+        "第一性原理输运"
+      ],
+      "summary": "室温自旋翻转TAMR约60%，降至3 K约73%；2 nm MgO实测RA约2.3×10⁴ Ω·μm²，15 μm器件在约6 T发生翻转，结果指向氧掺杂增强的界面共振态。",
+      "relevance": "把MgO界面、氧含量、RA、温度和角度联合起来，是反铁磁结与传统CoFeB/MgO界面DOE的直接参照。",
+      "limitation": "器件仍为3–15 μm且需>5 T场；不同器件差异显著。原文未公开电流写入、WER、保持、耐久、纳米缩放与晶圆良率。",
+      "industrialization": "全外延和室温读出迈过材料演示一步，但高翻转场与器件离散度阻止直接存储应用。",
+      "whyRecommended": "先看图2截面和RA，再看图3的角度/3–300 K TAMR，最后看图4界面态与−0.2 eV计算；45–60分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1038/s41467-025-62695-w",
+      "url": "https://www.nature.com/articles/s41467-025-62695-w",
+      "backupUrl": "https://doi.org/10.1038/s41467-025-62695-w",
+      "accessNote": "已打开Nature开放全文并核验日期、堆栈、尺寸、温度、磁场、RA、TAMR和计算边界",
+      "featured": true
+    },
+    {
+      "id": "prb-113-174409",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Interfacial bond tailored altermagnetic tunnel junctions",
+      "titleZh": "界面键定制交变磁隧道结：第一性原理设计可重构磁阻",
+      "authors": "Chao Mao, Shiqi Liu, Shunfang Li, Jinbo Yang, Jie Yang",
+      "venue": "Physical Review B 113, 174409 (2026)",
+      "published": "2026-05-13",
+      "recommendedOn": "2026-08-06",
+      "timeTier": "近三个月正式理论论文",
+      "system": "以室温交变磁金属RbV₂Te₂O为电极的全交变磁隧道结",
+      "conditions": "第一性原理与量子输运；界面键/终止构型比较；公开APS页面未给出温度、有限偏压、缺陷浓度和器件尺寸",
+      "methods": [
+        "DFT",
+        "界面结构弛豫",
+        "自旋分辨量子输运",
+        "界面键轨道分析"
+      ],
+      "summary": "理论工作把界面成键作为独立设计轴，显示无净磁矩的交变磁电极可通过界面轨道选择形成可重构磁阻；公开APS元数据页未公开完整TMR数值，本站不补写二手峰值。",
+      "relevance": "给原子制造一个清晰前置筛选：先比较终止、键长和轨道耦合，再决定势垒与沉积顺序。",
+      "limitation": "全部为理想界面理论预测；温度、声子、偏压、无序、互扩散、针孔、RA、可生长性和统计良率原文公开页未公开。",
+      "industrialization": "处于计算候选阶段；至少需薄膜相稳定、界面表征、实结TMR/RA和晶圆重复性四级验证。",
+      "whyRecommended": "先读结构与界面键示意，再看轨道分辨透射和不同磁构型；若只有元数据访问，配合机构正文阅读35–50分钟。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1103/xcwv-bvkr",
+      "url": "https://journals.aps.org/prb/accepted/10.1103/xcwv-bvkr",
+      "backupUrl": "https://doi.org/10.1103/xcwv-bvkr",
+      "accessNote": "已打开APS直接页面并核验题目、五位作者、卷页、2026-05-13正式发表与DOI；公开页数值有限",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-013906",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "Cryogenic scanning photocurrent spectroscopy for materials investigations using structured light",
+      "titleZh": "3 K、±14 T结构光扫描光电流平台：把低温磁场与约1 μm空间分辨结合",
+      "authors": "Duxing Hao, Chun-I. Lu, Ziqi Sun et al.",
+      "venue": "Review of Scientific Instruments 97, 013906 (2026)",
+      "published": "2026-01-15",
+      "recommendedOn": "2026-08-06",
+      "timeTier": "近一年正式仪器论文",
+      "system": "结构光扫描光电流谱与单层2H-MoS₂ FET验证样品",
+      "conditions": "3–400 K；±14 T；500–700 nm；35×25 μm²扫描区；约1 μm分辨；f=75 mm物镜",
+      "methods": [
+        "低温扫描光电流",
+        "结构光SAM/OAM控制",
+        "磁场光谱",
+        "空间映射",
+        "MoS₂器件验证"
+      ],
+      "summary": "平台在±14 T下稳定到3 K并保留12 mW冗余制冷功率，可在35×25 μm²区域实现约1 μm分辨；以单层MoS₂观测激子、Zeeman分裂和结构光响应。",
+      "relevance": "可迁移为“局域缺陷/边缘—输运—温度—磁场”联合诊断，帮助定位MTJ阵列或二维结的非均匀区域。",
+      "limitation": "演示是光电流而非MTJ纳秒写入；原文未公开MTJ兼容探针、低频电噪声底、自动换样吞吐量与长期漂移。",
+      "industrialization": "科研级多物理场仪器；量产失效分析还需大视场、自动对焦、晶圆台、通量与校准追溯。",
+      "whyRecommended": "先看整机光路/低温结构，再看3 K制冷预算与扫描标定，最后看MoS₂验证；35–50分钟。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0272829",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/1/013906/3377507/Cryogenic-scanning-photocurrent-spectroscopy-for",
+      "backupUrl": "https://doi.org/10.1063/5.0272829",
+      "accessNote": "已打开AIP直接全文并核验作者、卷页、DOI、温度、磁场、波长、视场、分辨率与演示样品",
+      "featured": true
+    },
+    {
+      "id": "jvsta-44-033406",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Pulsed e-CVD of iron containing films",
+      "titleZh": "脉冲电子CVD低温沉积含铁薄膜：碳由32 at.%降至10 at.%",
+      "authors": "Pentti Niiranen, Nathan J. O’Brien, Peggy Bagherzadeh Tabrizi et al.",
+      "venue": "Journal of Vacuum Science & Technology A 44, 033406 (2026)",
+      "published": "2026-03-30",
+      "recommendedOn": "2026-08-06",
+      "timeTier": "近半年正式论文",
+      "system": "TiN/Si上FeCp₂或Fe(amd)₂前驱体的脉冲电子CVD含铁膜",
+      "conditions": "无主动基片加热；100 W等离子体、+40 V偏压；Ar 100 sccm；35 Pa；FeCp₂脉冲1/35/2/60 s并在后等离子体吹扫用涡轮泵",
+      "methods": [
+        "脉冲e-CVD",
+        "偏压QCM",
+        "HR-XPS",
+        "HAADF-STEM",
+        "前驱体/吹扫/泵速DOE"
+      ],
+      "summary": "连续e-CVD的Fe/C/O/N约27/32/34/7 at.%；脉冲加后吹扫涡轮泵得到37/10/53/0 at.%、Fe/C从0.84升到3.7。碳显著下降但氧仍53 at.%且薄膜非晶，说明距离金属Fe功能膜仍远。",
+      "relevance": "提供可直接迁移的“脉冲时序—副产物驻留时间—成分”原子制造控制框架，适合磁性金属低热预算沉积。",
+      "limitation": "过程未达到自限生长；基片表面温度无法可靠测量；氧含量高、薄膜非晶且磁性/电阻率/晶圆均匀性原文未给出。",
+      "industrialization": "属于反应机理和工艺窗口验证；要进入MTJ需先解决氧/碳、热计量、连续致密性、磁性和300 mm吞吐量。",
+      "whyRecommended": "先看表1成分DOE、图2 QCM时序和图5截面，再读副产物驻留时间讨论；35–50分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1116/6.0005365",
+      "url": "https://pubs.aip.org/avs/jva/article/44/3/033406/3384844/Pulsed-e-CVD-of-iron-containing-films",
+      "backupUrl": "https://doi.org/10.1116/6.0005365",
+      "accessNote": "已打开AIP开放PDF并核验题目、作者、日期、反应器条件、时序、XPS成分、QCM与TEM结果",
       "featured": true
     }
   ]

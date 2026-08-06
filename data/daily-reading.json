@@ -1,54 +1,55 @@
 {
-  "date": "2026-08-05",
+  "date": "2026-08-06",
   "review": {
-    "id": "review-s44306-024-00014-7",
+    "id": "review-apr-10-041313",
     "kind": "每日综述",
-    "track": "C",
+    "track": "E",
     "secondaryTracks": [
       "B",
-      "A"
+      "D"
     ],
-    "title": "Antiferromagnetic tunnel junctions for spintronics",
-    "titleZh": "反铁磁隧道结自旋电子学综述",
-    "authors": "Ding-Fu Shao, Evgeny Y. Tsymbal",
-    "venue": "npj Spintronics 2, 13 (2024)",
-    "published": "2024-05-08",
-    "recommendedOn": "2026-08-05",
-    "doi": "10.1038/s44306-024-00014-7",
-    "url": "https://www.nature.com/articles/s44306-024-00014-7",
-    "backupUrl": "https://doi.org/10.1038/s44306-024-00014-7",
-    "assistantSummary": "正式综述系统解释共线/非共线AFMTJ中的动量依赖自旋极化、Néel自旋流、TMR和可驱动Néel矢量翻转的自旋力矩。",
-    "whySelected": "为今天C类1.5×10^12%理论预测提供判断框架，也把A/B类的低温实测与交换偏置器件放回反铁磁写读体系。",
+    "title": "Atomic layer deposition of magnetic thin films: Basic processes, engineering efforts, and road forward",
+    "titleZh": "磁性薄膜原子层沉积：基础过程、工程进展与前路",
+    "authors": "Topias Jussila, Anish Philip, Tripurari Tripathi, Kornelius Nielsch, Maarit Karppinen",
+    "venue": "Applied Physics Reviews 10, 041313 (2023)",
+    "published": "2023-12-29",
+    "recommendedOn": "2026-08-06",
+    "doi": "10.1063/5.0172732",
+    "url": "https://pubs.aip.org/aip/apr/article/10/4/041313/2932155/Atomic-layer-deposition-of-magnetic-thin-films",
+    "backupUrl": "https://doi.org/10.1063/5.0172732",
+    "assistantSummary": "首篇专门面向ALD磁性薄膜的综合正式综述，按氧化物、金属、合金/金属间化合物和复杂结构梳理前驱体、自限窗口、成核、杂质、磁性和器件集成。",
+    "whySelected": "为今天E类e-CVD提供参照：脉冲不等于自限，低温也不等于低杂质；可用综述建立磁性薄膜的工艺—成分—磁性验收表。",
     "readingGuide": [
-      "先读图1与传统MTJ/AFMTJ差异。",
-      "再读动量依赖自旋极化和Néel自旋流。",
-      "最后看自旋力矩、材料/界面条件及未决实验；60–80分钟。"
+      "先看图1材料家族与发表地图。",
+      "读第III–IV节ALD基础与各材料工艺。",
+      "重点看金属Fe/Co/Ni的还原、岛状成核和杂质挑战。",
+      "最后看第VII节器件化与专利缺口；70–100分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-pr-102-1413",
+      "id": "classic-prl-61-2472",
       "kind": "经典文章",
-      "track": "B",
+      "track": "A",
       "secondaryTracks": [
-        "C"
+        "B"
       ],
-      "title": "New Magnetic Anisotropy",
-      "titleZh": "交换偏置的经典起点：新型磁各向异性",
-      "authors": "W. H. Meiklejohn, C. P. Bean",
-      "venue": "Physical Review 102, 1413 (1956)",
-      "published": "1956-06-01",
-      "recommendedOn": "2026-08-05",
-      "doi": "10.1103/PhysRev.102.1413",
-      "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.102.1413",
-      "backupUrl": "https://doi.org/10.1103/PhysRev.102.1413",
-      "assistantSummary": "在铁磁/反铁磁耦合体系中建立交换偏置现象的经典实验基础，为今天EB-MTJ利用磁滞偏移和反铁磁界面提供源头。",
-      "whySelected": "今天B类把交换偏置从二态钉扎扩展为连续多态；回读原文可区分界面交换、矫顽力变化和器件电流调制。",
+      "title": "Giant Magnetoresistance of (001)Fe/(001)Cr Magnetic Superlattices",
+      "titleZh": "巨磁阻的实验起点：Fe/Cr超晶格在4.2 K电阻近乎减半",
+      "authors": "M. N. Baibich, J. M. Broto, A. Fert et al.",
+      "venue": "Physical Review Letters 61, 2472–2475 (1988)",
+      "published": "1988-11-21",
+      "recommendedOn": "2026-08-06",
+      "doi": "10.1103/PhysRevLett.61.2472",
+      "url": "https://link.aps.org/doi/10.1103/PhysRevLett.61.2472",
+      "backupUrl": "https://doi.org/10.1103/PhysRevLett.61.2472",
+      "assistantSummary": "MBE生长(001)Fe/(001)Cr超晶格，在4.2 K、Cr 9 Å样品中以约2 T把反平行Fe层拉到平行，电阻率降低近一半，奠定自旋相关传输与GMR器件基础。",
+      "whySelected": "今天两篇反铁磁隧道结都在重新设计“相邻磁序如何被电阻读出”；回读GMR原文可看见温度、层厚、界面和场从一开始就是共同变量。",
       "readingGuide": [
-        "先看磁滞回线偏移的实验事实。",
-        "再看铁磁/反铁磁界面耦合解释。",
-        "最后列出与纳米EB-MTJ相比缺失的尺度、脉冲和可靠性变量；20–30分钟。"
+        "看图1的AF耦合和2 T饱和场。",
+        "看图2–3的4.2 K磁阻与Cr 9/12/18 Å厚度。",
+        "读作者对界面粗糙和自旋相关散射的谨慎解释；25–35分钟。"
       ],
       "notNew": true
     }

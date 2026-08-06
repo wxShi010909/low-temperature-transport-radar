@@ -200,6 +200,18 @@
       "atomicIds": [
         "2026-08-05-ale-ald-mtj-sidewall"
       ]
+    },
+    {
+      "date": "2026-08-06",
+      "opportunityIds": [
+        "2026-08-06-af-interface-parity-matrix"
+      ],
+      "methodIds": [
+        "2026-08-06-cryogenic-spatial-calibration"
+      ],
+      "atomicIds": [
+        "2026-08-06-ecvd-residence-doe"
+      ]
     }
   ],
   "items": [
@@ -3391,6 +3403,154 @@
       ],
       "researchConnection": "直接覆盖图形化损伤、原位封护、可靠性与BEOL兼容。",
       "takeaway": "必须用四组对照分开“去除”和“封护”。"
+    },
+    {
+      "id": "2026-08-06-af-interface-parity-matrix",
+      "date": "2026-08-06",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 界面读出",
+      "title": "反铁磁结“层数奇偶—氧界面—终止键”三轴选择矩阵",
+      "subtitle": "把三篇看似不同的AFMTJ统一成可比较界面变量",
+      "summary": "本站方案：用奇偶层、界面氧和原子终止三轴，统一比较RA、TMR/TAMR、温度稳定性和无序折减。",
+      "status": "由当日A/B/C论文组合提出的待验证路线",
+      "relatedPaperIds": [
+        "s41467-025-66981-5",
+        "s41467-025-62695-w",
+        "prb-113-174409"
+      ],
+      "question": "哪一种界面控制在真实粗糙、互扩散和器件离散下仍保留可用读出窗口？",
+      "rationale": "A给原子层奇偶实测，B给MgO/氧界面实测，C给终止键理论筛选。",
+      "workflow": [
+        "DFT比较两种终止、±5%键长和1层混层。",
+        "制作三档势垒厚度与两档氧条件。",
+        "3–300 K角分辨磁输运。",
+        "STEM-EELS/XPS把界面化学与RA/TMR关联。"
+      ],
+      "equipment": [
+        "DFT/NEGF",
+        "外延/干法转移",
+        "8 T旋转低温台",
+        "STEM-EELS/XPS"
+      ],
+      "measurements": [
+        "RA/TMR/TAMR",
+        "温度系数",
+        "角度谐波",
+        "界面成分/粗糙"
+      ],
+      "metrics": [
+        "理论—实测折减比",
+        "器件3σ",
+        "非易失保持",
+        "高场需求"
+      ],
+      "evidenceBoundary": "组合路线为本站推断；三种材料体系不能直接用峰值排序。",
+      "firstSteps": [
+        "先固定器件面积。",
+        "所有组记录空白接触电阻。",
+        "只用一套TMR/RA定义。"
+      ],
+      "researchConnection": "直接连接原子制造、MTJ界面和低温读出。",
+      "takeaway": "先找对无序稳健的界面窗口，再追求峰值。"
+    },
+    {
+      "id": "2026-08-06-cryogenic-spatial-calibration",
+      "date": "2026-08-06",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "D/A · 局域诊断",
+      "title": "3 K空间光电流—局域热效应双通道校准",
+      "subtitle": "在把空间亮斑解释为自旋/缺陷之前先排除热与接触伪影",
+      "summary": "本站方案：均匀器件、边缘缺陷和接触缺陷三组，联测光电流、局域温升与电噪声。",
+      "status": "由当日D类仪器论文启发的设备路线",
+      "relatedPaperIds": [
+        "rsi-97-013906",
+        "s41467-025-66981-5"
+      ],
+      "question": "约1 μm空间信号能否可靠定位二维结/MTJ阵列的界面或边缘非均匀性？",
+      "rationale": "结构光平台有温场和磁场能力，但光热、电接触和真实自旋响应会混在一起。",
+      "workflow": [
+        "校准光斑、功率和温升。",
+        "三类已知缺陷样品扫描。",
+        "改变温度、场、波长和偏振。",
+        "用暗态电噪声与热反射作对照。"
+      ],
+      "equipment": [
+        "3 K/14 T光学低温台",
+        "锁相放大器",
+        "热反射测量",
+        "自动XY台"
+      ],
+      "measurements": [
+        "光电流地图",
+        "局域温升",
+        "1/f噪声",
+        "重复定位漂移"
+      ],
+      "metrics": [
+        "空间分辨率",
+        "信噪比",
+        "热串扰",
+        "跨日漂移"
+      ],
+      "evidenceBoundary": "MTJ用途为本站迁移设想，原论文只用MoS₂验证。",
+      "firstSteps": [
+        "先做功率线性。",
+        "遮光测暗噪声。",
+        "每天用固定标样校准。"
+      ],
+      "researchConnection": "服务低温器件失效定位和阵列均匀性诊断。",
+      "takeaway": "没有热对照的空间亮斑不能直接叫界面缺陷。"
+    },
+    {
+      "id": "2026-08-06-ecvd-residence-doe",
+      "date": "2026-08-06",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 低热预算沉积",
+      "title": "e-CVD副产物驻留—基片自热—C/O杂质闭环",
+      "subtitle": "把“无主动加热”改造成可测量的真实热预算",
+      "summary": "本站方案：泵速、吹扫、偏压和电子功率联合DOE，同时用RGA、QCM与原位温度计追踪C/O来源。",
+      "status": "由当日E类论文提出的原子制造路线",
+      "relatedPaperIds": [
+        "jvsta-44-033406",
+        "prb-113-174409"
+      ],
+      "question": "能否在保留低热预算的同时把碳、氧和孔隙率压到磁性功能膜要求？",
+      "rationale": "原文已把C降至10 at.%但O升到53 at.%且表面温度未知。",
+      "workflow": [
+        "连续/脉冲/脉冲+涡轮泵三组。",
+        "泵速×吹扫×偏压×功率矩阵。",
+        "QCM/RGA/光学温度同步。",
+        "XPS深度、TEM、四探针、XRD/VSM验收。"
+      ],
+      "equipment": [
+        "e-CVD腔",
+        "QCM/RGA",
+        "原位光学温度计",
+        "XPS/TEM/VSM"
+      ],
+      "measurements": [
+        "C/O/Fe深度",
+        "真实表面温度",
+        "孔隙率",
+        "电阻率/Ms"
+      ],
+      "metrics": [
+        "C<目标",
+        "O<目标",
+        "片内3σ",
+        "连续临界厚度"
+      ],
+      "evidenceBoundary": "目标阈值须依据实际MTJ堆栈设定；原文未证明磁性功能。",
+      "firstSteps": [
+        "先校准表面温度。",
+        "空腔做副产物基线。",
+        "每组保留TiN/Si同批对照。"
+      ],
+      "researchConnection": "直接服务磁性金属低热预算沉积和成分控制。",
+      "takeaway": "先证明成分、致密和磁性，再称作可用低温Fe沉积。"
     }
   ]
 }
