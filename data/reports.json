@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-06T09:00:00+08:00",
-  "reportDate": "2026-08-06",
+  "updatedAt": "2026-08-07T09:02:57+08:00",
+  "reportDate": "2026-08-07",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -356,6 +356,25 @@
         "prb-113-174409",
         "rsi-97-013906",
         "jvsta-44-033406"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "label": "详细日报：CrSBr自旋晶体管—RuO₂交变磁读出—多铁理论—低温高压旋转平台—CoFeB刻蚀",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "prl-137-040802",
+        "prl-134-246703",
+        "prb-114-064404",
+        "rsi-97-033901",
+        "jvstb-44-042203"
       ]
     }
   ],
@@ -2881,42 +2900,6 @@
       "featured": true
     },
     {
-      "id": "jvstb-44-042203",
-      "track": "E",
-      "secondaryTracks": [
-        "B",
-        "D"
-      ],
-      "title": "Etching of CoFeB nanometer thin films using inductively coupled plasma reactive ion etching",
-      "titleZh": "ICP-RIE刻蚀纳米CoFeB薄膜：速率、形貌与再沉积",
-      "authors": "Chen Yang, Yu Yu, Zuowei Shi et al.",
-      "venue": "Journal of Vacuum Science & Technology B 44, 042203 (2026)",
-      "published": "2026-05-29",
-      "recommendedOn": "2026-07-27",
-      "timeTier": "近期正式发表",
-      "system": "纳米CoFeB薄膜及不同覆盖层/衬底组合",
-      "conditions": "Ar、CO/Ar、SF₆/Ar；ICP功率、RF偏压和压力扫描",
-      "methods": [
-        "ICP-RIE",
-        "反应离子刻蚀",
-        "形貌分析",
-        "选择比测试"
-      ],
-      "summary": "作者系统比较Ar、CO/Ar和SF₆/Ar刻蚀CoFeB。纯Ar刻蚀有效，但明显再沉积并放大纳米柱直径；反应气体降低速率，覆盖层与衬底也改变形貌和选择性。",
-      "relevance": "直接对应MTJ图形化中的CD漂移、侧壁再沉积和材料组合效应，可与TMR/RA及截面分析形成工艺闭环。",
-      "limitation": "薄膜刻蚀形貌尚未完整证明对pMTJ电学、侧壁氧化、WER、TDDB和阵列良率的影响。",
-      "industrialization": "最接近MTJ刻蚀模块开发；仍需全片均匀性、终点检测、腔体漂移、颗粒、批间重复和与封护/CMP集成验证。",
-      "whyRecommended": "今天推荐它，是因为它明确显示CoFeB刻蚀不能只看速率，必须把再沉积和最终CD一起作为验收指标。",
-      "score": 9.5,
-      "priority": "A",
-      "arxiv": "",
-      "doi": "10.1116/6.0005457",
-      "url": "https://pubs.aip.org/avs/jvb/article/44/4/042203/3393105/Etching-of-CoFeB-nanometer-thin-films-using",
-      "backupUrl": "https://doi.org/10.1116/6.0005457",
-      "accessNote": "已核验AIP/AVS官方页面、作者、发表日期、摘要、气体体系和DOI",
-      "featured": true
-    },
-    {
       "id": "jap-139-023901",
       "track": "A",
       "secondaryTracks": [
@@ -4212,6 +4195,186 @@
       "url": "https://pubs.aip.org/avs/jva/article/44/3/033406/3384844/Pulsed-e-CVD-of-iron-containing-films",
       "backupUrl": "https://doi.org/10.1116/6.0005365",
       "accessNote": "已打开AIP开放PDF并核验题目、作者、日期、反应器条件、时序、XPS成分、QCM与TEM结果",
+      "featured": true
+    },
+    {
+      "id": "prl-137-040802",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Space-Charge-Limited van der Waals Spin Transistor",
+      "titleZh": "空间电荷限制范德华自旋晶体管：CrSBr单层—双层结的栅控巨磁阻与多级记忆",
+      "authors": "Thomas K. M. Graham, Yu-Xuan Wang, Niranjana Renjith Nair et al.",
+      "venue": "Physical Review Letters 137, 040802 (2026)",
+      "published": "2026-07-22",
+      "recommendedOn": "2026-08-07",
+      "timeTier": "近三周正式论文",
+      "system": "hBN封装的CrSBr单层—双层横向/垂直混合结与石墨栅",
+      "conditions": "电输运与扫描NV磁成像；公开APS摘要未公开温度、磁场、通道尺寸和完整偏压范围",
+      "methods": [
+        "干法范德华组装",
+        "栅控低温输运",
+        "扫描NV磁成像",
+        "I–V空间电荷限制分析"
+      ],
+      "summary": "实验证明栅压同时调制空间电荷限制的横向导电和层间交换，磁阻最高约3000%；磁场训练可在自旋翻转处选择相干或畴壁反转并形成多级忆阻态。",
+      "relevance": "把缺陷陷阱、层数、栅压和磁畴直接连接到低温输运，是原子层器件与局域磁成像的联合范例。",
+      "limitation": "手工组装二维器件；APS公开摘要未公开温度、磁场、尺寸、保持时间、循环耐久和统计分布，3000%不能外推到晶圆MRAM。",
+      "industrialization": "逻辑存内计算概念验证；还需可规模生长、室温窗口、低场写入、保持/耐久和阵列互连。",
+      "whyRecommended": "先看器件与I–V机制图，再看NV磁像与训练后的多级回线；45–60分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "arxiv": "2512.03306",
+      "doi": "10.1103/61lp-6slp",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/61lp-6slp",
+      "backupUrl": "https://arxiv.org/abs/2512.03306",
+      "accessNote": "已打开APS正式页面和arXiv作者稿核验题目、作者、日期、DOI、器件概念与公开结果",
+      "featured": true
+    },
+    {
+      "id": "prl-134-246703",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C"
+      ],
+      "title": "Tunneling Magnetoresistance in Altermagnetic RuO2-Based Magnetic Tunnel Junctions",
+      "titleZh": "RuO₂/TiO₂/CoFeB交变磁隧道结：10 K约5%且随Néel矢量反号的TMR",
+      "authors": "Seunghyeon Noh, Gye-Hyeon Kim, J. Lee et al.",
+      "venue": "Physical Review Letters 134, 246703 (2025)",
+      "published": "2025-06-20",
+      "recommendedOn": "2026-08-07",
+      "timeTier": "近两年重要实验",
+      "system": "RuO₂/TiO₂/CoFeB异质磁隧道结；器件直径3–20 μm、10 μm最佳",
+      "conditions": "约10–50 K低温输运；公开补充材料显示器件尺寸与低良率，完整场强/RA范围原文公开页未完整给出",
+      "methods": [
+        "RuO₂外延薄膜",
+        "TiO₂势垒沉积",
+        "微米柱图形化",
+        "Néel矢量训练与低温TMR"
+      ],
+      "summary": "10 K实测TMR约5%，Néel矢量翻转时TMR符号同步反转，50 K以上近乎消失；3–20 μm器件中通常仅约2–3/10获得完好隧道势垒。",
+      "relevance": "同时暴露交变磁读出和真实制造良率问题，适合作为界面粗糙、针孔与RA离散DOE基线。",
+      "limitation": "低温、微米器件且良率低；无电写入、WER、保持、耐久与晶圆均匀性，RuO₂交变磁性本身仍有学术争议。",
+      "industrialization": "材料—器件直接验证阶段；先解决势垒短路、粗糙度和室温信号再谈存储阵列。",
+      "whyRecommended": "先看Néel矢量反号对照，再看补充材料S2的3–20 μm良率与RA离散；35–50分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "arxiv": "2502.13599",
+      "doi": "10.1103/nrk5-5zrj",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/nrk5-5zrj",
+      "backupUrl": "https://arxiv.org/abs/2502.13599",
+      "accessNote": "已核验APS/PRL元数据和官方补充材料；数字来自公开摘要与补充材料",
+      "featured": true
+    },
+    {
+      "id": "prb-114-064404",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Spin-valley matching mechanisms in high-performance multiferroic tunnel junctions",
+      "titleZh": "自旋—谷匹配多铁隧道结理论：六个非易失电阻态与应变增强TMR/TER",
+      "authors": "Zhi Yang, Bao-Fu Ruan, Min Li et al.",
+      "venue": "Physical Review B 114, 064404 (2026)",
+      "published": "2026-07-08",
+      "recommendedOn": "2026-08-07",
+      "timeTier": "近一个月正式理论论文",
+      "system": "室温铁磁双层MoPtGe₂S₆电极/铁电双层Ga₂O₃势垒多铁隧道结",
+      "conditions": "DFT+NEGF零偏/有限偏压与双轴应变；实验温度、实际缺陷浓度和器件尺寸不适用",
+      "methods": [
+        "第一性原理结构弛豫",
+        "自旋/谷能带分析",
+        "NEGF量子输运",
+        "铁电/铁磁构型与应变扫描"
+      ],
+      "summary": "理论预测六个非易失电阻态；最大TMR 137%、TER 1943%，双轴应变下分别增至265%和4210%，来源于电极自旋—谷态与势垒过滤匹配。",
+      "relevance": "给原子制造明确的“极化—终止—应变—缺陷”前置筛选轴，可在生长前评估界面容差。",
+      "limitation": "全为理想界面理论预测；未证明材料堆栈可生长、室温保持、RA、偏置稳健性、缺陷/互扩散容差或阵列写入。",
+      "industrialization": "计算候选阶段；需先完成薄膜相稳定、铁电翻转、界面TEM和实结输运。",
+      "whyRecommended": "先看六态构型表，再看k分辨透射和应变曲线；40–55分钟。",
+      "score": 9.6,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1103/1phs-qpbw",
+      "url": "https://journals.aps.org/prb/accepted/10.1103/1phs-qpbw",
+      "backupUrl": "https://doi.org/10.1103/1phs-qpbw",
+      "accessNote": "已打开APS正式页面核验题目、作者、日期、DOI与公开摘要；理论数值未当作实测",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-033901",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "A versatile platform for angular-dependent magnetotransport measurements under low-temperature and high-pressure conditions",
+      "titleZh": "低温高压角分辨磁输运平台：旋转密封让任意探针与压力胞同步转动",
+      "authors": "Dongdong Yue, Xin Gao, Zhipeng Yu, Kun Zhai, Zhongyuan Liu",
+      "venue": "Review of Scientific Instruments 97, 033901 (2026)",
+      "published": "2026-03-02",
+      "recommendedOn": "2026-08-07",
+      "timeTier": "近半年正式仪器论文",
+      "system": "顶部旋转模块、旋转密封、气体压力腔与可横/竖安装压力胞",
+      "conditions": "低温、高压、磁场与角度联测；公开AIP摘要未公开最低温度、最高压力、磁场、角分辨率和漏率",
+      "methods": [
+        "旋转密封机械设计",
+        "同步旋转探针",
+        "压力胞横/竖配置",
+        "角分辨磁输运验证"
+      ],
+      "summary": "平台无需专用样品托即可让插入探针在磁场中同步转动，并通过压力胞横/竖安装实现面内旋转及面内到面外旋转；定量极限原文公开摘要未公开。",
+      "relevance": "适合把温度—压力—角度三轴加入MTJ/二维磁体输运，并把热收缩机械误差纳入校准链。",
+      "limitation": "公开页面缺少关键规格；未演示纳米MTJ脉冲、低噪声底、长期漂移和自动化吞吐量。",
+      "industrialization": "科研平台工程验证；要成为可靠性设备还需可追溯角度/压力/温度标定和自动保护。",
+      "whyRecommended": "先看旋转密封总图与两种压力胞方向，再看验证曲线和误差预算；30–45分钟。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/5.0311836",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/3/033901/3381939/A-versatile-platform-for-angular-dependent",
+      "backupUrl": "https://doi.org/10.1063/5.0311836",
+      "accessNote": "已打开AIP官方页面核验作者、卷页、DOI、日期和公开摘要；未公开规格明确留空",
+      "featured": true
+    },
+    {
+      "id": "jvstb-44-042203",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Etching of CoFeB nanometer thin films using inductively coupled plasma reactive ion etching",
+      "titleZh": "纳米CoFeB的ICP-RIE刻蚀：纯Ar可刻但重沉积会放大柱径",
+      "authors": "Chen Yang, Yu Yu, Zuowei Shi et al.",
+      "venue": "Journal of Vacuum Science & Technology B 44, 042203 (2026)",
+      "published": "2026-05-29",
+      "recommendedOn": "2026-08-07",
+      "timeTier": "近三个月正式工艺论文",
+      "system": "AR-N光刻胶/CoFeB纳米薄膜与不同覆盖层—衬底组合",
+      "conditions": "Ar、CO/Ar、SF₆/Ar；ICP功率、RF偏压和腔压DOE；公开摘要未公开膜厚、全部功率/压力数值和侧壁损伤深度",
+      "methods": [
+        "ICP-RIE",
+        "刻蚀速率/选择比DOE",
+        "SEM形貌",
+        "覆盖层—衬底组合对照"
+      ],
+      "summary": "纯Ar能有效刻蚀CoFeB且优化功率/压力可提高对光刻胶选择比，但物理溅射重沉积使纳米柱直径增加；加入CO或SF₆反而显著降低CoFeB刻蚀速率。",
+      "relevance": "直接对应MTJ图形化的CD漂移、侧壁再沉积与材料选择性，是从薄膜优势走向器件良率的关键环节。",
+      "limitation": "论文关注速率和形貌；公开页面未给TMR、RA、侧壁化学、磁损伤、纳米器件WER、保持和全片均匀性。",
+      "industrialization": "工艺窗口研究；需与终点检测、原位封护、去重沉积和器件电学闭环后才接近量产。",
+      "whyRecommended": "先看三种气体的速率/选择比，再看柱径重沉积和上下层组合；35–50分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1116/6.0005457",
+      "url": "https://pubs.aip.org/avs/jvb/article/44/4/042203/3393105/Etching-of-CoFeB-nanometer-thin-films-using",
+      "backupUrl": "https://doi.org/10.1116/6.0005457",
+      "accessNote": "已打开AIP直接页面核验题目、作者、日期、DOI、气体体系与摘要结论",
       "featured": true
     }
   ]

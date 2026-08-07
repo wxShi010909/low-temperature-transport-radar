@@ -1,55 +1,56 @@
 {
-  "date": "2026-08-06",
+  "date": "2026-08-07",
   "review": {
-    "id": "review-apr-10-041313",
+    "id": "review-mtj-primer-2026",
     "kind": "每日综述",
-    "track": "E",
+    "track": "B",
     "secondaryTracks": [
-      "B",
-      "D"
+      "A",
+      "D",
+      "E"
     ],
-    "title": "Atomic layer deposition of magnetic thin films: Basic processes, engineering efforts, and road forward",
-    "titleZh": "磁性薄膜原子层沉积：基础过程、工程进展与前路",
-    "authors": "Topias Jussila, Anish Philip, Tripurari Tripathi, Kornelius Nielsch, Maarit Karppinen",
-    "venue": "Applied Physics Reviews 10, 041313 (2023)",
-    "published": "2023-12-29",
-    "recommendedOn": "2026-08-06",
-    "doi": "10.1063/5.0172732",
-    "url": "https://pubs.aip.org/aip/apr/article/10/4/041313/2932155/Atomic-layer-deposition-of-magnetic-thin-films",
-    "backupUrl": "https://doi.org/10.1063/5.0172732",
-    "assistantSummary": "首篇专门面向ALD磁性薄膜的综合正式综述，按氧化物、金属、合金/金属间化合物和复杂结构梳理前驱体、自限窗口、成核、杂质、磁性和器件集成。",
-    "whySelected": "为今天E类e-CVD提供参照：脉冲不等于自限，低温也不等于低杂质；可用综述建立磁性薄膜的工艺—成分—磁性验收表。",
+    "title": "Magnetic tunnel junctions",
+    "titleZh": "磁隧道结方法学Primer：材料、制备、表征、写入与应用的一体化指南",
+    "authors": "Evgeny Y. Tsymbal, Shinji Yuasa, Weigang Wang et al.",
+    "venue": "Nature Reviews Methods Primers 6, 38 (2026)",
+    "published": "2026-05-28",
+    "recommendedOn": "2026-08-07",
+    "doi": "10.1038/s43586-026-00490-7",
+    "url": "https://www.nature.com/articles/s43586-026-00490-7",
+    "backupUrl": "https://doi.org/10.1038/s43586-026-00490-7",
+    "assistantSummary": "正式Primer从MgO相干隧穿出发，贯通溅射/MBE、退火、柱图形化、TEM/XRD/磁性/电学表征及STT、SOT、VCMA和MRAM应用。",
+    "whySelected": "为今日五篇提供共同验收表：材料能带只是起点，最终必须同时过界面、RA/TMR、图形化、写入和可靠性。",
     "readingGuide": [
-      "先看图1材料家族与发表地图。",
-      "读第III–IV节ALD基础与各材料工艺。",
-      "重点看金属Fe/Co/Ni的还原、岛状成核和杂质挑战。",
-      "最后看第VII节器件化与专利缺口；70–100分钟。"
+      "先看图1建立TMR概念。",
+      "看图2–3制造与截面表征。",
+      "看图4–5写入机制。",
+      "最后看图7–8 MRAM与pMTJ；75–110分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-prl-61-2472",
+      "id": "classic-prb-62-570",
       "kind": "经典文章",
-      "track": "A",
+      "track": "C",
       "secondaryTracks": [
         "B"
       ],
-      "title": "Giant Magnetoresistance of (001)Fe/(001)Cr Magnetic Superlattices",
-      "titleZh": "巨磁阻的实验起点：Fe/Cr超晶格在4.2 K电阻近乎减半",
-      "authors": "M. N. Baibich, J. M. Broto, A. Fert et al.",
-      "venue": "Physical Review Letters 61, 2472–2475 (1988)",
-      "published": "1988-11-21",
-      "recommendedOn": "2026-08-06",
-      "doi": "10.1103/PhysRevLett.61.2472",
-      "url": "https://link.aps.org/doi/10.1103/PhysRevLett.61.2472",
-      "backupUrl": "https://doi.org/10.1103/PhysRevLett.61.2472",
-      "assistantSummary": "MBE生长(001)Fe/(001)Cr超晶格，在4.2 K、Cr 9 Å样品中以约2 T把反平行Fe层拉到平行，电阻率降低近一半，奠定自旋相关传输与GMR器件基础。",
-      "whySelected": "今天两篇反铁磁隧道结都在重新设计“相邻磁序如何被电阻读出”；回读GMR原文可看见温度、层厚、界面和场从一开始就是共同变量。",
+      "title": "Spin-current interaction with a monodomain magnetic body: A model study",
+      "titleZh": "单畴磁体的自旋电流作用模型：STT临界电流与动力学经典框架",
+      "authors": "J. Z. Sun",
+      "venue": "Physical Review B 62, 570 (2000)",
+      "published": "2000-07-01",
+      "recommendedOn": "2026-08-07",
+      "doi": "10.1103/PhysRevB.62.570",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.62.570",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.62.570",
+      "assistantSummary": "以宏自旋LLG模型研究自旋电流对单畴磁体的稳定性和动力学，为后来用临界电流、热激活与进动区解释STT写入奠定基础。",
+      "whySelected": "今日理论文章展示多态读出，但工程仍需回到写入电流和稳定性；这篇经典文献提供统一动力学语言。",
       "readingGuide": [
-        "看图1的AF耦合和2 T饱和场。",
-        "看图2–3的4.2 K磁阻与Cr 9/12/18 Å厚度。",
-        "读作者对界面粗糙和自旋相关散射的谨慎解释；25–35分钟。"
+        "先看模型与临界条件。",
+        "再看电流—场稳定图。",
+        "最后对照现代纳米MTJ中非均匀翻转边界；30–45分钟。"
       ],
       "notNew": true
     }

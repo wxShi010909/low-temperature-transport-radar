@@ -125,6 +125,13 @@
       "classicIds": [
         "classic-prl-61-2472"
       ]
+    },
+    {
+      "date": "2026-08-07",
+      "reviewId": "review-mtj-primer-2026",
+      "classicIds": [
+        "classic-prb-62-570"
+      ]
     }
   ],
   "items": [
@@ -1227,6 +1234,59 @@
         "看图1的AF耦合和2 T饱和场。",
         "看图2–3的4.2 K磁阻与Cr 9/12/18 Å厚度。",
         "读作者对界面粗糙和自旋相关散射的谨慎解释；25–35分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-mtj-primer-2026",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "D",
+        "E"
+      ],
+      "title": "Magnetic tunnel junctions",
+      "titleZh": "磁隧道结方法学Primer：材料、制备、表征、写入与应用的一体化指南",
+      "authors": "Evgeny Y. Tsymbal, Shinji Yuasa, Weigang Wang et al.",
+      "venue": "Nature Reviews Methods Primers 6, 38 (2026)",
+      "published": "2026-05-28",
+      "recommendedOn": "2026-08-07",
+      "doi": "10.1038/s43586-026-00490-7",
+      "url": "https://www.nature.com/articles/s43586-026-00490-7",
+      "backupUrl": "https://doi.org/10.1038/s43586-026-00490-7",
+      "assistantSummary": "正式Primer从MgO相干隧穿出发，贯通溅射/MBE、退火、柱图形化、TEM/XRD/磁性/电学表征及STT、SOT、VCMA和MRAM应用。",
+      "whySelected": "为今日五篇提供共同验收表：材料能带只是起点，最终必须同时过界面、RA/TMR、图形化、写入和可靠性。",
+      "readingGuide": [
+        "先看图1建立TMR概念。",
+        "看图2–3制造与截面表征。",
+        "看图4–5写入机制。",
+        "最后看图7–8 MRAM与pMTJ；75–110分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-prb-62-570",
+      "kind": "经典文章",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Spin-current interaction with a monodomain magnetic body: A model study",
+      "titleZh": "单畴磁体的自旋电流作用模型：STT临界电流与动力学经典框架",
+      "authors": "J. Z. Sun",
+      "venue": "Physical Review B 62, 570 (2000)",
+      "published": "2000-07-01",
+      "recommendedOn": "2026-08-07",
+      "doi": "10.1103/PhysRevB.62.570",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.62.570",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.62.570",
+      "assistantSummary": "以宏自旋LLG模型研究自旋电流对单畴磁体的稳定性和动力学，为后来用临界电流、热激活与进动区解释STT写入奠定基础。",
+      "whySelected": "今日理论文章展示多态读出，但工程仍需回到写入电流和稳定性；这篇经典文献提供统一动力学语言。",
+      "readingGuide": [
+        "先看模型与临界条件。",
+        "再看电流—场稳定图。",
+        "最后对照现代纳米MTJ中非均匀翻转边界；30–45分钟。"
       ],
       "notNew": true
     }

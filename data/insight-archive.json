@@ -212,6 +212,18 @@
       "atomicIds": [
         "2026-08-06-ecvd-residence-doe"
       ]
+    },
+    {
+      "date": "2026-08-07",
+      "opportunityIds": [
+        "2026-08-07-multiaxis-state-map"
+      ],
+      "methodIds": [
+        "2026-08-07-pressure-angle-calibration"
+      ],
+      "atomicIds": [
+        "2026-08-07-etch-sidewall-loop"
+      ]
     }
   ],
   "items": [
@@ -3551,6 +3563,154 @@
       ],
       "researchConnection": "直接服务磁性金属低热预算沉积和成分控制。",
       "takeaway": "先证明成分、致密和磁性，再称作可用低温Fe沉积。"
+    },
+    {
+      "id": "2026-08-07-multiaxis-state-map",
+      "date": "2026-08-07",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 多级状态",
+      "title": "栅压—Néel矢量—铁电极化统一多级状态图",
+      "subtitle": "把CrSBr实测、RuO₂读出和多铁理论放进同一可比较框架",
+      "summary": "以状态数、读出裕量、保持、循环和温度窗口统一评价多态器件。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "prl-137-040802",
+        "prl-134-246703",
+        "prb-114-064404"
+      ],
+      "question": "多级电阻态中哪些能在缺陷和温漂下保持可分辨？",
+      "rationale": "三篇分别提供栅控实测、Néel读出实测和六态理论。",
+      "workflow": [
+        "统一电阻态定义",
+        "做温度/偏压/训练历史矩阵",
+        "统计状态间距和漂移",
+        "以噪声反推可用位数"
+      ],
+      "equipment": [
+        "低温磁体",
+        "低噪声源表",
+        "脉冲源",
+        "NV/MOKE"
+      ],
+      "measurements": [
+        "R-Vg-H图",
+        "保持/循环",
+        "1/f噪声",
+        "状态分布"
+      ],
+      "metrics": [
+        "最小状态间距/3σ",
+        "可用位数",
+        "写入能耗",
+        "温度上限"
+      ],
+      "evidenceBoundary": "跨材料组合是本站方案，不能直接比较峰值MR。",
+      "firstSteps": [
+        "固定读出偏压",
+        "先做两态基线",
+        "再增加中间态"
+      ],
+      "researchConnection": "连接原子层磁体、MTJ/MRAM和低温自动化。",
+      "takeaway": "可用多态首先由分布和保持决定，不由峰值态数决定。"
+    },
+    {
+      "id": "2026-08-07-pressure-angle-calibration",
+      "date": "2026-08-07",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "D/A · 多轴标定",
+      "title": "低温—压力—角度三轴可追溯校准链",
+      "subtitle": "把热收缩、密封摩擦和线缆扭矩变成可量化误差",
+      "summary": "加入双编码器、Hall标样、压力标样和往返扫描，输出角度/压力/温度联合不确定度。",
+      "status": "由当日D类论文启发的设备路线",
+      "relatedPaperIds": [
+        "rsi-97-033901",
+        "prl-137-040802"
+      ],
+      "question": "在变温变压时实际样品角度与命令角度偏差多大？",
+      "rationale": "旋转密封解决结构问题，但可靠解释各向异性还需可追溯误差预算。",
+      "workflow": [
+        "室温空载标定",
+        "低温热循环标定",
+        "加压往返标定",
+        "Hall/各向异性标样验证"
+      ],
+      "equipment": [
+        "双编码器",
+        "Hall标样",
+        "压力标样",
+        "泄漏计"
+      ],
+      "measurements": [
+        "角度回差",
+        "漏率",
+        "温漂",
+        "线缆扭矩"
+      ],
+      "metrics": [
+        "角误差",
+        "压力不确定度",
+        "跨日漂移",
+        "失效率"
+      ],
+      "evidenceBoundary": "定量指标需在自有平台测得，原文公开页未给极限。",
+      "firstSteps": [
+        "记录零点",
+        "做正反向扫描",
+        "建立联锁"
+      ],
+      "researchConnection": "直接升级低温输运设备平台的可重复性。",
+      "takeaway": "先知道真实角度，才有资格解释角向磁阻。"
+    },
+    {
+      "id": "2026-08-07-etch-sidewall-loop",
+      "date": "2026-08-07",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 图形化",
+      "title": "CoFeB刻蚀—重沉积—侧壁封护—TMR闭环DOE",
+      "subtitle": "不把高刻蚀速率误当成高器件良率",
+      "summary": "把气体/功率/压力与CD、侧壁化学、RA/TMR和漏电同时关联。",
+      "status": "由当日E类论文提出的原子制造路线",
+      "relatedPaperIds": [
+        "jvstb-44-042203",
+        "prl-134-246703"
+      ],
+      "question": "怎样在保持选择比的同时减少柱径放大、侧壁短路和磁损伤？",
+      "rationale": "纯Ar可刻但重沉积明显，RuO₂结又显示势垒短路是直接良率瓶颈。",
+      "workflow": [
+        "全因子筛选气体/ICP/RF/压力",
+        "连续膜与柱形对照",
+        "原位封护前后表征",
+        "关联RA/TMR/漏电"
+      ],
+      "equipment": [
+        "ICP-RIE",
+        "终点检测",
+        "XPS/TEM",
+        "低温探针台"
+      ],
+      "measurements": [
+        "刻蚀速率",
+        "CD偏差",
+        "侧壁成分",
+        "RA/TMR"
+      ],
+      "metrics": [
+        "选择比",
+        "CD 3σ",
+        "短路率",
+        "TMR保留率"
+      ],
+      "evidenceBoundary": "原文未测完整MTJ电学，闭环属于本站待验证方案。",
+      "firstSteps": [
+        "先做Ar基线",
+        "加无偏压对照",
+        "每组保留未刻蚀片"
+      ],
+      "researchConnection": "直接服务MTJ图形化损伤、良率和原子界面控制。",
+      "takeaway": "工艺优劣以器件保真度验收，不以刻蚀速率单独验收。"
     }
   ]
 }
