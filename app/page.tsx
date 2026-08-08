@@ -268,6 +268,7 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="返回首页"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></a>
         <nav aria-label="主导航">
+          <a href="/weekly">本周精选</a>
           {navigation.map((item) => (
             <a
               className={activeSection === item.id ? "active" : ""}
