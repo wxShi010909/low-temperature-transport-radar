@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-07T09:02:57+08:00",
-  "reportDate": "2026-08-07",
+  "updatedAt": "2026-08-10T09:00:17+08:00",
+  "reportDate": "2026-08-10",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -375,6 +375,25 @@
         "prb-114-064404",
         "rsi-97-033901",
         "jvstb-44-042203"
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "label": "详细日报：MTJ增强MESO—辐照界面—交变磁光子输运—VTI-NV—300°C氧化物保护",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "natcom-17-6838",
+        "aipadv-16-025333",
+        "prb-113-205404",
+        "rsi-97-073202",
+        "apl-128-182403"
       ]
     }
   ],
@@ -4375,6 +4394,186 @@
       "url": "https://pubs.aip.org/avs/jvb/article/44/4/042203/3393105/Etching-of-CoFeB-nanometer-thin-films-using",
       "backupUrl": "https://doi.org/10.1116/6.0005457",
       "accessNote": "已打开AIP直接页面核验题目、作者、日期、DOI、气体体系与摘要结论",
+      "featured": true
+    },
+    {
+      "id": "natcom-17-6838",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Giant spin-orbit magnetic state readout enhanced by a magnetic tunnel junction",
+      "titleZh": "MTJ增强MESO室温磁态读出：输出电压提升到1.5 mV",
+      "authors": "Yan Huang, Kun Zhang, Guo Liu et al.",
+      "venue": "Nature Communications 17, 6838 (2026)",
+      "published": "2026-05-26",
+      "recommendedOn": "2026-08-10",
+      "timeTier": "2026正式开放论文",
+      "system": "共享CoFeB自由层的CoFeB/MgO/CoFeB MTJ—W自旋轨道读出交叉电极",
+      "conditions": "室温；300 mV恒压或40 μA恒流读出；公开正文未给完整层厚、结面积、RA与磁场范围",
+      "methods": [
+        "电子束/紫外光刻与刻蚀",
+        "MTJ垂直注入",
+        "W通道横向电压读出",
+        "电压源/电流源对照与30天循环测试"
+      ],
+      "summary": "室温在300 mV供电下获得约1.5 mV横向输出，比既往微伏级结果高约两个数量级；40 μA恒流下约0.4 mV。",
+      "relevance": "把MgO势垒从存储读出元件变成MESO信号放大器，可直接转化为TMR—RA—供电—输出裕量联合DOE。",
+      "limitation": "1.5 mV仍远低于约100–150 mV磁电写入需求；未公开RA、器件分布、WER、保持和阵列级级联。",
+      "industrialization": "器件级室温原型；还需约两数量级级联裕量、CMOS互连、全片分布和长期可靠性。",
+      "whyRecommended": "先看图1架构、图3自旋过滤、图4电压/电流源对照和30天稳定性；45–60分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1038/s41467-026-73382-9",
+      "url": "https://www.nature.com/articles/s41467-026-73382-9",
+      "backupUrl": "https://doi.org/10.1038/s41467-026-73382-9",
+      "accessNote": "已打开Nature正式全文，核验题目、作者、日期、DOI、器件流程与定量结果",
+      "featured": true
+    },
+    {
+      "id": "aipadv-16-025333",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Enhancing and decoupling magnetic anisotropy and tunnel magnetoresistance in CoFe2O4/MgO bilayers via swift heavy ion irradiation",
+      "titleZh": "重离子辐照调控CoFe₂O₄/MgO：各向异性与隧穿磁阻可分离优化",
+      "authors": "Ritika Charak, Sanjeev Gautam, Shaffy Garg, Younghak Kim, Keun Hwa Chae",
+      "venue": "AIP Advances 16, 025333 (2026)",
+      "published": "2026-02-19",
+      "recommendedOn": "2026-08-10",
+      "timeTier": "近半年正式论文",
+      "system": "CoFe₂O₄/MgO磁性氧化物双层薄膜，辐照前后对照",
+      "conditions": "swift-heavy-ion辐照与角分辨磁/光谱表征；官方公开页面未完整公开离子能量、注量、层厚、温度与TMR绝对值",
+      "methods": [
+        "双层薄膜制备",
+        "重离子辐照剂量对照",
+        "角分辨XMCD/磁滞测量",
+        "以自旋极化估算TMR关联"
+      ],
+      "summary": "作者报告辐照改善结构与界面电子态，并显示磁各向异性和TMR响应并非必须同步变化，可通过辐照窗口分别调节。",
+      "relevance": "把缺陷从被动失效源变成可控变量，适合建立MgO界面缺陷—轨道占据—各向异性—TMR因果链。",
+      "limitation": "公开页面未给足离子能量、注量、厚度、绝对TMR、RA和器件统计；双层光谱推断不能等同完整MTJ实测。",
+      "industrialization": "材料机理阶段；离子辐照的吞吐量、均匀性、损伤尾部、兼容性和真实结电学尚待验证。",
+      "whyRecommended": "先看辐照前后角分辨XMCD，再看作者如何把磁各向异性与TMR代理量解耦；35–50分钟。",
+      "score": 9.4,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1063/9.0001009",
+      "url": "https://pubs.aip.org/aip/adv/article/16/2/025333/3380483/Enhancing-and-decoupling-magnetic-anisotropy-and",
+      "backupUrl": "https://doi.org/10.1063/9.0001009",
+      "accessNote": "已打开AIP直接页面并核验卷页、作者、发表日和DOI；未公开数字明确留空",
+      "featured": true
+    },
+    {
+      "id": "prb-113-205404",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Spin-dependent photon-assisted transport properties in altermagnets",
+      "titleZh": "交变磁体中的自旋依赖光子辅助输运：交流势阱产生可调自旋过滤",
+      "authors": "Yun-Xia Wang, Kai-Yi Lyu, Yu-Xian Li",
+      "venue": "Physical Review B 113, 205404 (2026)",
+      "published": "2026-05-01",
+      "recommendedOn": "2026-08-10",
+      "timeTier": "2026正式理论论文",
+      "system": "交变磁电极与时间周期势阱构成的弹道量子输运模型",
+      "conditions": "Floquet/光子辅助理论计算；不对应特定温度、实际器件尺寸或缺陷浓度",
+      "methods": [
+        "交变磁能带模型",
+        "时间周期势阱",
+        "Floquet散射/透射计算",
+        "频率、振幅、势阱和晶向扫描"
+      ],
+      "summary": "理论显示电子吸收/发射光子形成边带与共振，交变磁自旋劈裂使两自旋通道响应不同，可由驱动频率、振幅和晶向调节极化电流。",
+      "relevance": "为交变磁隧道结增加“交流频率—幅度—晶向”控制轴，也能指导低温锁相与微波布线设计。",
+      "limitation": "全部为理想弹道理论；APS公开摘要未给适用于实材料的温度、散射时间、接触电阻、噪声和功耗。",
+      "industrialization": "概念与参数筛选阶段；需映射到候选材料、微波损耗、热效应、工艺偏差和实测自旋极化。",
+      "whyRecommended": "先看模型和能带，再看光子边带、频率/振幅图及自旋极化窗口；35–45分钟。",
+      "score": 9.5,
+      "priority": "A",
+      "arxiv": "",
+      "doi": "10.1103/zkfz-zh4l",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/zkfz-zh4l",
+      "backupUrl": "https://doi.org/10.1103/zkfz-zh4l",
+      "accessNote": "已核验APS正式题目、作者、卷页、2026-05-01发表日与DOI；理论量未写成实测",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-073202",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Development of a modular optically detected magnetic resonance setup for optical experiments in a variable temperature insert",
+      "titleZh": "面向VTI的模块化ODMR：近2米光路实现低温NV磁测",
+      "authors": "Anh Tong, Andreas Bauer, Markus Kleinhans et al.",
+      "venue": "Review of Scientific Instruments 97, 073202 (2026)",
+      "published": "2026-07-20",
+      "recommendedOn": "2026-08-10",
+      "timeTier": "近一个月正式仪器论文",
+      "system": "商用氦浴低温恒温器、可变温插杆、NV金刚石、外置激光/荧光和微波模块",
+      "conditions": "近2 m往返光路；变温、小磁场和SrRuO₃磁相变演示；公开摘要未给最低温度、最高场、灵敏度和空间分辨率",
+      "methods": [
+        "VTI长光路机械/光学设计",
+        "NV激发与荧光收集",
+        "ODMR频谱随温度/小场标定",
+        "SrRuO₃相变验证"
+      ],
+      "summary": "在不大改商用低温系统的前提下维持近2 m光路对准与光束质量，并以NV共振的温度/小场响应及SrRuO₃磁转变验证。",
+      "relevance": "可把低温输运台升级为局域磁态—电阻同步平台，直接区分MTJ/二维磁体的磁翻转与接触或热伪信号。",
+      "limitation": "公开摘要未给最低温度、磁场上限、灵敏度、漂移和时间分辨率；尚未演示纳米MTJ脉冲同步。",
+      "industrialization": "科研测量模块；要进入晶圆探针与可靠性平台还需自动对焦、多点映射、校准标准和吞吐量。",
+      "whyRecommended": "先看整体光路与VTI接口，再看温度/小场标定及SrRuO₃验证；40–55分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "arxiv": "2512.05181",
+      "doi": "10.1063/5.0337322",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/7/073202/3398841/Development-of-a-modular-optically-detected",
+      "backupUrl": "https://arxiv.org/abs/2512.05181",
+      "accessNote": "已打开AIP正式页和arXiv作者稿入口，核验作者、日期、DOI、近2 m光路及验证对象",
+      "featured": true
+    },
+    {
+      "id": "apl-128-182403",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Large spin Hall effect in 300 °C annealed BiSb topological insulator and perpendicularly magnetized CoFeB using oxide buffer/seed and interfacial layers on Si/SiO2 substrates",
+      "titleZh": "300 °C退火BiSb/CoFeB/MgO：氧化物缓冲/种子/界面层保护巨大自旋霍尔效应",
+      "authors": "Pham Van Thuan, Ho Hoang Huy, Wentao Li et al.",
+      "venue": "Applied Physics Letters 128, 182403 (2026)",
+      "published": "2026-05-05",
+      "recommendedOn": "2026-08-10",
+      "timeTier": "2026正式工艺论文",
+      "system": "非晶Si/SiO₂上的溅射TiOₓ/TaOₓ—BiSb—TaOₓ—CoFeB/MgO异质结",
+      "conditions": "300 °C退火；室温自旋轨道转矩/磁各向异性表征；公开页未完整公开各层厚度、退火时长与晶圆尺寸",
+      "methods": [
+        "氧化物缓冲/种子层工程",
+        "BiSb与CoFeB/MgO溅射",
+        "300 °C退火",
+        "谐波Hall/SOT和PMA表征"
+      ],
+      "summary": "TiOₓ/TaOₓ缓冲/种子层和TaOₓ界面层保护BiSb，300 °C后仍得到有效自旋霍尔角11.1并保持CoFeB/MgO强垂直磁各向异性。",
+      "relevance": "直指SOT-MRAM的BEOL热预算与界面保护，可把氧化物厚度、氧含量和退火扩散纳入原子制造闭环。",
+      "limitation": "公开页未给完整厚度、片内分布、晶圆尺寸、TMR/RA、脉冲WER、保持和耐久；自旋霍尔角提取依赖模型。",
+      "industrialization": "最接近CMOS兼容材料栈，但仍需300 mm均匀性、批间稳定、图形化后SOT开关与阵列可靠性。",
+      "whyRecommended": "先看层结构与300 °C前后材料对照，再看谐波Hall拟合、自旋霍尔角和PMA；35–50分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1063/5.0320146",
+      "url": "https://pubs.aip.org/aip/apl/article/128/18/182403/3388771/Large-spin-Hall-effect-in-300-C-annealed-BiSb",
+      "backupUrl": "https://doi.org/10.1063/5.0320146",
+      "accessNote": "已打开AIP正式页核验题目、作者、日期、DOI、300 °C与11.1；未公开工艺数字留空",
       "featured": true
     }
   ]

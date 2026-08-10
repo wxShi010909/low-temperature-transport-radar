@@ -224,6 +224,18 @@
       "atomicIds": [
         "2026-08-07-etch-sidewall-loop"
       ]
+    },
+    {
+      "date": "2026-08-10",
+      "opportunityIds": [
+        "2026-08-10-meso-margin"
+      ],
+      "methodIds": [
+        "2026-08-10-vti-nv-sync"
+      ],
+      "atomicIds": [
+        "2026-08-10-oxide-thermal-doe"
+      ]
     }
   ],
   "items": [
@@ -3711,6 +3723,154 @@
       ],
       "researchConnection": "直接服务MTJ图形化损伤、良率和原子界面控制。",
       "takeaway": "工艺优劣以器件保真度验收，不以刻蚀速率单独验收。"
+    },
+    {
+      "id": "2026-08-10-meso-margin",
+      "date": "2026-08-10",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/E · 级联裕量",
+      "title": "MTJ增强MESO的信号—写入闭环DOE",
+      "subtitle": "从1.5 mV读出走向100 mV级联，不只追求单点峰值",
+      "summary": "把TMR、RA、供电、W通道和界面热稳定共同映射到输出电压、噪声与可靠性。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "natcom-17-6838",
+        "apl-128-182403"
+      ],
+      "question": "怎样在不触发STT和不过热的条件下扩大MESO级联裕量？",
+      "rationale": "A给出室温放大实测，E给出300 °C兼容高效率自旋源。",
+      "workflow": [
+        "建立无MTJ基线",
+        "扫描TMR/RA/供电",
+        "加入温度与脉冲",
+        "统计跨器件与跨日分布"
+      ],
+      "equipment": [
+        "低噪声源表",
+        "脉冲源",
+        "锁相放大器",
+        "热台/低温台"
+      ],
+      "measurements": [
+        "ΔVxy",
+        "RA/TMR",
+        "噪声谱",
+        "结温/漂移"
+      ],
+      "metrics": [
+        "转换效率",
+        "读写裕量",
+        "3σ分布",
+        "30天漂移"
+      ],
+      "evidenceBoundary": "两篇材料与结构不同，组合路线是本站建议。",
+      "firstSteps": [
+        "先复现恒流/恒压对照",
+        "限制电流密度",
+        "记录偏置扣除"
+      ],
+      "researchConnection": "直连MTJ/MRAM、界面优化与低噪声自动测试。",
+      "takeaway": "级联成功取决于分布最差点的裕量，不是1.5 mV单点纪录。"
+    },
+    {
+      "id": "2026-08-10-vti-nv-sync",
+      "date": "2026-08-10",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "D/A · 同步测量",
+      "title": "VTI-NV—电输运双通道同步校准链",
+      "subtitle": "同时看到磁态、电阻与光功率热升",
+      "summary": "用标准NV片和磁性相变标样建立温度—磁场—光功率三维校准，再接入器件脉冲。",
+      "status": "由当日D类论文启发的设备路线",
+      "relatedPaperIds": [
+        "rsi-97-073202",
+        "natcom-17-6838"
+      ],
+      "question": "电阻跳变来自真实磁翻转还是接触、热漂移和结构偏置？",
+      "rationale": "长光路NV给局域磁证据，MTJ横向输出需要独立排除偏置。",
+      "workflow": [
+        "NV温场标定",
+        "光功率热升标定",
+        "同步触发电输运",
+        "交叉验证磁滞和时间漂移"
+      ],
+      "equipment": [
+        "VTI",
+        "激光/微波",
+        "计数器",
+        "源表/锁相"
+      ],
+      "measurements": [
+        "ODMR频移/线宽",
+        "ΔVxy",
+        "样品温度",
+        "同步延迟"
+      ],
+      "metrics": [
+        "磁场灵敏度",
+        "温度误差",
+        "漂移",
+        "相关系数"
+      ],
+      "evidenceBoundary": "论文未演示纳米MTJ同步，指标需自平台测得。",
+      "firstSteps": [
+        "先用标准NV片",
+        "加入遮光对照",
+        "固定触发时钟"
+      ],
+      "researchConnection": "升级低温输运平台为磁—电双证据系统。",
+      "takeaway": "只有磁信号与电信号同相出现，才能排除多数伪翻转。"
+    },
+    {
+      "id": "2026-08-10-oxide-thermal-doe",
+      "date": "2026-08-10",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 界面热预算",
+      "title": "氧化物保护层—300 °C退火—界面自旋透明度DOE",
+      "subtitle": "把保护、扩散、PMA与SOT效率接成原子尺度闭环",
+      "summary": "扫描TiOₓ/TaOₓ厚度和氧含量，以谱学、磁性和器件电学共同验收。",
+      "status": "由当日B/E论文形成的原子制造路线",
+      "relatedPaperIds": [
+        "apl-128-182403",
+        "aipadv-16-025333"
+      ],
+      "question": "保护层多厚既能抑制BiSb损伤，又不牺牲自旋透明度？",
+      "rationale": "E给出300 °C与θSH=11.1，B提示缺陷/界面可解耦磁性与TMR。",
+      "workflow": [
+        "厚度/氧分压筛选",
+        "退火温时矩阵",
+        "XPS/STEM-EELS截面",
+        "PMA/SOT/TMR联合验收"
+      ],
+      "equipment": [
+        "反应溅射",
+        "退火炉",
+        "XPS",
+        "STEM-EELS",
+        "Hall/MTJ台"
+      ],
+      "measurements": [
+        "成分深度",
+        "粗糙度",
+        "PMA/阻尼",
+        "θSH/TMR/RA"
+      ],
+      "metrics": [
+        "界面扩散宽度",
+        "片内3σ",
+        "PMA保留率",
+        "SOT效率"
+      ],
+      "evidenceBoundary": "真实MTJ和300 mm数据原文未公开，本路线待验证。",
+      "firstSteps": [
+        "未保护层基线",
+        "固定BiSb批次",
+        "至少三片重复"
+      ],
+      "researchConnection": "直接服务原子制造、BEOL兼容和SOT-MRAM良率。",
+      "takeaway": "保护层必须同时通过结构、磁性和器件电学三重验收。"
     }
   ]
 }

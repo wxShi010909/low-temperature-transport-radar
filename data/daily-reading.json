@@ -1,56 +1,56 @@
 {
-  "date": "2026-08-07",
+  "date": "2026-08-10",
   "review": {
-    "id": "review-mtj-primer-2026",
+    "id": "review-flexible-spintronics-2025",
     "kind": "每日综述",
-    "track": "B",
+    "track": "E",
     "secondaryTracks": [
-      "A",
-      "D",
-      "E"
+      "B",
+      "D"
     ],
-    "title": "Magnetic tunnel junctions",
-    "titleZh": "磁隧道结方法学Primer：材料、制备、表征、写入与应用的一体化指南",
-    "authors": "Evgeny Y. Tsymbal, Shinji Yuasa, Weigang Wang et al.",
-    "venue": "Nature Reviews Methods Primers 6, 38 (2026)",
-    "published": "2026-05-28",
-    "recommendedOn": "2026-08-07",
-    "doi": "10.1038/s43586-026-00490-7",
-    "url": "https://www.nature.com/articles/s43586-026-00490-7",
-    "backupUrl": "https://doi.org/10.1038/s43586-026-00490-7",
-    "assistantSummary": "正式Primer从MgO相干隧穿出发，贯通溅射/MBE、退火、柱图形化、TEM/XRD/磁性/电学表征及STT、SOT、VCMA和MRAM应用。",
-    "whySelected": "为今日五篇提供共同验收表：材料能带只是起点，最终必须同时过界面、RA/TMR、图形化、写入和可靠性。",
+    "title": "Flexible magnetic films and spintronic devices",
+    "titleZh": "柔性磁性薄膜与自旋器件：从沉积、应变到卷对卷制造",
+    "authors": "Guohao Bo, Xiaoguang Xu, Kangkang Meng, Yong Wu, Yong Jiang",
+    "venue": "npj Spintronics 3, 48 (2025)",
+    "published": "2025-11-17",
+    "recommendedOn": "2026-08-10",
+    "doi": "10.1038/s44306-025-00113-z",
+    "url": "https://www.nature.com/articles/s44306-025-00113-z",
+    "backupUrl": "https://doi.org/10.1038/s44306-025-00113-z",
+    "assistantSummary": "正式Review梳理柔性磁薄膜、生长/转印、应变磁性、GMR/TMR/SOT器件和规模制造；案例含1000次弯折、0–80%应变稳定及100 m PET卷对卷[Co/Cu]₃₀。",
+    "whySelected": "它把今天的界面、低噪声平台与量产问题扩展到机械自由度，提醒晶圆均匀性之外还要评价弯折和连续制造。",
     "readingGuide": [
-      "先看图1建立TMR概念。",
-      "看图2–3制造与截面表征。",
-      "看图4–5写入机制。",
-      "最后看图7–8 MRAM与pMTJ；75–110分钟。"
+      "先看材料与转印方法。",
+      "再看图16弯折稳定性。",
+      "看100 m卷对卷案例。",
+      "最后看柔性SOT与可靠性；70–95分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-prb-62-570",
+      "id": "classic-hooge-1969",
       "kind": "经典文章",
-      "track": "C",
+      "track": "A",
       "secondaryTracks": [
-        "B"
+        "D",
+        "E"
       ],
-      "title": "Spin-current interaction with a monodomain magnetic body: A model study",
-      "titleZh": "单畴磁体的自旋电流作用模型：STT临界电流与动力学经典框架",
-      "authors": "J. Z. Sun",
-      "venue": "Physical Review B 62, 570 (2000)",
-      "published": "2000-07-01",
-      "recommendedOn": "2026-08-07",
-      "doi": "10.1103/PhysRevB.62.570",
-      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.62.570",
-      "backupUrl": "https://doi.org/10.1103/PhysRevB.62.570",
-      "assistantSummary": "以宏自旋LLG模型研究自旋电流对单畴磁体的稳定性和动力学，为后来用临界电流、热激活与进动区解释STT写入奠定基础。",
-      "whySelected": "今日理论文章展示多态读出，但工程仍需回到写入电流和稳定性；这篇经典文献提供统一动力学语言。",
+      "title": "1/f noise is no surface effect",
+      "titleZh": "1/f噪声并非只来自表面：Hooge经验关系的经典起点",
+      "authors": "F. N. Hooge",
+      "venue": "Physics Letters A 29, 139–140 (1969)",
+      "published": "1969-04-21",
+      "recommendedOn": "2026-08-10",
+      "doi": "10.1016/0375-9601(69)90076-0",
+      "url": "https://doi.org/10.1016/0375-9601(69)90076-0",
+      "backupUrl": "https://www.sciencedirect.com/science/article/pii/0375960169900760",
+      "assistantSummary": "短文提出用归一化1/f噪声刻画体材料涨落的经验框架，后来常写作Sᵥ/V²≈αH/(Nf)，成为比较材料与器件低频噪声的基线。",
+      "whySelected": "今天所有器件都可能用峰值信号掩盖缺陷和漂移；Hooge归一化能把面积、载流子数和频率纳入公平比较。",
       "readingGuide": [
-        "先看模型与临界条件。",
-        "再看电流—场稳定图。",
-        "最后对照现代纳米MTJ中非均匀翻转边界；30–45分钟。"
+        "先读原始两页。",
+        "记录归一化假设。",
+        "再对照现代MTJ中RTN与1/f分解；20–30分钟。"
       ],
       "notNew": true
     }
