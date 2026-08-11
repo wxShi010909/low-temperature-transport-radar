@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-10T09:00:17+08:00",
-  "reportDate": "2026-08-10",
+  "updatedAt": "2026-08-11T08:59:15+08:00",
+  "reportDate": "2026-08-11",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -394,6 +394,25 @@
         "prb-113-205404",
         "rsi-97-073202",
         "apl-128-182403"
+      ]
+    },
+    {
+      "date": "2026-08-11",
+      "label": "详细日报：皮秒SOT—亚10 nm交换偏置—双势垒交变磁共振—脉管噪声计量—原子局域态",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "sciadv-12-aed0607",
+        "natcom-2026-76524",
+        "prb-114-084405",
+        "rsi-97-083902",
+        "acsnano-20-5c21248"
       ]
     }
   ],
@@ -4574,6 +4593,186 @@
       "url": "https://pubs.aip.org/aip/apl/article/128/18/182403/3388771/Large-spin-Hall-effect-in-300-C-annealed-BiSb",
       "backupUrl": "https://doi.org/10.1063/5.0320146",
       "accessNote": "已打开AIP正式页核验题目、作者、日期、DOI、300 °C与11.1；未公开工艺数字留空",
+      "featured": true
+    },
+    {
+      "id": "sciadv-12-aed0607",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Picosecond switching of magnetic tunnel junctions by spin-orbit torque",
+      "titleZh": "皮秒SOT写入MTJ：13.2 ps下重现电压门控增益",
+      "authors": "Chen Xiao, Wenlong Cai, Hongchao Zhang, Dinghao Ma, Kaihua Cao et al.",
+      "venue": "Science Advances 12, ead0607 (2026)",
+      "published": "2026-07-17",
+      "recommendedOn": "2026-08-11",
+      "timeTier": "近一个月正式论文",
+      "system": "三端垂直磁化MTJ，独立SOT写入通道与结上门控端；器件完整层厚、结径、TMR和RA在公开摘要中未公开",
+      "conditions": "无外磁场；脉宽从直流跨到13.2 ps；80 GHz示波器标定电脉冲；公开摘要未给温度、磁场扫描范围与WER样本量",
+      "methods": [
+        "制备三端pMTJ",
+        "宽带电脉冲标定",
+        "SOT与结上门控协同扫描",
+        "微磁模拟区分热激活、非相干和相干进动"
+      ],
+      "summary": "实验把场自由MTJ写入推进到13.2 ps；门控辅助在长脉冲显著、亚纳秒减弱、到13.2 ps再次出现，估算能耗约30 fJ/bit。",
+      "relevance": "直接给出脉宽跨越三个动力学区时VCMA/VG-SOT协同的设计图，适合接入超宽带低温脉冲—WER平台。",
+      "limitation": "13.2 ps与约30 fJ是特定器件/驱动下结果；公开页未给完整层厚、RA、TMR、结径、长期保持、耐久和阵列WER。",
+      "industrialization": "器件级速度纪录；还需CMOS脉冲源、互连色散、片内分布、长尾WER、保持和热预算验证。",
+      "whyRecommended": "先读器件与脉冲标定，再看门控效率随脉宽的非单调曲线和三种动力学模拟；45–60分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1126/sciadv.aed0607",
+      "url": "https://www.science.org/doi/10.1126/sciadv.aed0607",
+      "backupUrl": "https://doi.org/10.1126/sciadv.aed0607",
+      "accessNote": "已打开Science直接页面/全文检索结果，核验题目、作者、期刊、DOI、13.2 ps、30 fJ与80 GHz标定",
+      "featured": true
+    },
+    {
+      "id": "natcom-2026-76524",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Electrical control of exchange bias in sub-10 nm regime enabled by single-nanotube patterning",
+      "titleZh": "单纳米管模板实现亚10 nm交换偏置结构及电流翻转",
+      "authors": "Hexin Li, Ke Zhang, Zhongxiang Zhang, Daming Zhou, Shiqi Wang et al.",
+      "venue": "Nature Communications (2026)",
+      "published": "2026-08-07",
+      "recommendedOn": "2026-08-11",
+      "timeTier": "四天内正式开放论文",
+      "system": "垂直磁化Pt/Co/IrMn交换偏置异质结构，以单根碳纳米管作刻蚀模板；完整层厚、最小CD与电流密度在公开摘要未公开",
+      "conditions": "从数十纳米缩小到个位数纳米；异常Hall测量SOT开关；公开页未给温度、最高场、保持与耐久",
+      "methods": [
+        "将单根碳纳米管作为无光刻刻蚀掩模",
+        "刻蚀Pt/Co/IrMn纳米结构",
+        "异常Hall读出",
+        "比较尺寸缩放下Co与交换偏置翻转形态"
+      ],
+      "summary": "作者在亚10 nm结构中仍观察到稳健交换偏置并实现SOT有效翻转；Co由多畴逐步转为突发单畴反转，而交换偏置保持渐变特征。",
+      "relevance": "将亚10 nm稳定性、图形化损伤与SOT写入放在同一器件中，是MTJ自由层缩放和交换偏置稳定路线的重要对照。",
+      "limitation": "当前为未编辑早期版本；不是完整MgO MTJ，公开页未给TMR、RA、最小CD精确值、WER、保持、耐久和晶圆分布。",
+      "industrialization": "验证了个位数纳米物理可行性；碳纳米管模板的定位、取向、吞吐量与300 mm良率仍待解决。",
+      "whyRecommended": "先看纳米管模板流程与尺寸证据，再看尺寸依赖磁滞/SOT和交换弹簧解释；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1038/s41467-026-76524-1",
+      "url": "https://www.nature.com/articles/s41467-026-76524-1",
+      "backupUrl": "https://doi.org/10.1038/s41467-026-76524-1",
+      "accessNote": "已打开Nature全文页，核验2026-08-07、作者、堆栈、亚10 nm、异常Hall和机制边界",
+      "featured": true
+    },
+    {
+      "id": "prb-114-084405",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Giant tunneling magnetoresistance driven by momentum-selective resonant tunneling in double-barrier altermagnetic tunnel junctions",
+      "titleZh": "双势垒交变磁隧道结的动量选择共振：理论TMR达75094%",
+      "authors": "Fei Zou, Long Zhang, Guoying Gao",
+      "venue": "Physical Review B 114, 084405 (2026)",
+      "published": "2026-08-07",
+      "recommendedOn": "2026-08-11",
+      "timeTier": "四天内正式理论论文",
+      "system": "RuO₂/TiO₂/RuO₂/TiO₂/RuO₂双势垒交变磁隧道结，中央RuO₂形成量子阱",
+      "conditions": "第一性原理结合非平衡格林函数；理想相干、零偏附近输运模型，温度、缺陷、界面粗糙和器件面积未纳入公开摘要",
+      "methods": [
+        "第一性原理电子结构",
+        "NEGF自旋输运",
+        "k∥分辨透射热点",
+        "量子阱与势垒厚度扫描"
+      ],
+      "summary": "理论在优化几何下得到最高75094% TMR，显著高于同体系单势垒200–500%；平行态量子阱能级对准费米能级产生近单位透射，反转Néel矢量后共振被破坏。",
+      "relevance": "给双MgO/双TiO₂类结构提供“势垒—量子阱—对称耦合—TMR”的原子层设计逻辑，也提示缺陷导致的动量去相干是首要实测风险。",
+      "limitation": "75094%完全是理想理论值；RuO₂磁基态仍有争议，未含有限温、缺陷、声子、非弹性散射、RA、偏压和工艺分布。",
+      "industrialization": "材料筛选阶段；需先证明磁序与界面外延，再做有限偏压、有限温度、真实缺陷和器件电学。",
+      "whyRecommended": "先看结构和k∥透射热点，再看量子阱/势垒厚度图与75094%形成条件；35–50分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1103/h13n-whcx",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/h13n-whcx",
+      "backupUrl": "https://doi.org/10.1103/h13n-whcx",
+      "accessNote": "已核验APS正式题目、作者、卷页、2026-08-07、堆栈、方法及75094%理论值",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-083902",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Effects of the vibrations and electromagnetic pollution induced by a closed-cycle pulse-tube cryostat on high-accuracy electrical measurements",
+      "titleZh": "脉管制冷机振动与电磁污染：1.25–300 K、14 T精密电测验收",
+      "authors": "M. Taupin, K. Dougdag, D. Ziane, F. Couëdo",
+      "venue": "Review of Scientific Instruments 97, 083902 (2026)",
+      "published": "2026-08-03",
+      "recommendedOn": "2026-08-11",
+      "timeTier": "八天内正式仪器论文",
+      "system": "Cryogenic Ltd商用脉管低温磁体、Sumitomo SRP-082/RP-082B2S/F-70、定制120 cm同轴插杆与量子Hall电阻标准",
+      "conditions": "1.25–300 K、最高14 T；冷指4 K稳定度1 mK/1000 s，基温色散<0.1 mK；VTI加热控温色散约40 mK",
+      "methods": [
+        "三位置压电加速度计",
+        "Hall传感器和动态信号分析",
+        "定制同轴低漏电插杆",
+        "QHE电阻溯源与SQUID检测器对照"
+      ],
+      "summary": "脉管系统可实现ppb级电阻不确定度；但磁场显著放大电磁噪声，1.7 Hz及其谐波和数百kHz干扰会击中部分SQUID工作频段。",
+      "relevance": "为低温MTJ平台提供可复制的“振动—磁场—频谱—仪器带宽”验收表，避免把脉管周期和电磁耦合误判为器件RTN。",
+      "limitation": "结论针对特定隔振、屏蔽、插杆和QHE测量；不能保证所有脉管机或皮秒线路同样安静。",
+      "industrialization": "科研/计量平台已达ppb级；器件开发还需高频脉冲线、探针卡、自动补偿和多通道吞吐量。",
+      "whyRecommended": "先看图1环境/温稳、图2振动谱，再看磁场增强的EM谱与QHE/SQUID对照；45–65分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "arxiv": "",
+      "doi": "10.1063/5.0305071",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/8/083902/3400086/Effects-of-the-vibrations-and-electromagnetic",
+      "backupUrl": "https://doi.org/10.1063/5.0305071",
+      "accessNote": "已打开AIP正式全文，核验设备型号、1.25–300 K、14 T、温稳、1.7 Hz、数百kHz和ppb级结果",
+      "featured": true
+    },
+    {
+      "id": "acsnano-20-5c21248",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Spin Filtering on Demand via Localized States in an Atomic-Scale Resonant Tunneling Magnetic Tunnel Junction",
+      "titleZh": "原子尺度共振MTJ：用偏压与注入位置按需反转自旋过滤",
+      "authors": "Maciej Bazarnik, Anika Schlenhoff",
+      "venue": "ACS Nano 20, 2026",
+      "published": "2026-06-16",
+      "recommendedOn": "2026-08-11",
+      "timeTier": "近两月正式论文",
+      "system": "SP-STM尖端/真空间隙/单层Fe-W(110)或Co-Ir(111)纳米磁体构成原子尺度RT-MTJ模拟结构",
+      "conditions": "Fe/W在36 K、2 nA、4.9–5.1 V；Co/Ir在6.5 K、±1 T、0.1 nA、4.8–5.0 V附近测量",
+      "methods": [
+        "制备单层纳米磁岛",
+        "自旋极化STM成像和dI/dU谱",
+        "平行/反平行磁化差分",
+        "偏压与中心/边缘注入位置扫描"
+      ],
+      "summary": "Fe边缘共振横向约1 nm；Co边缘约2 nm。Co中心/边缘交叉点4.88/5.00 V，形成约120 meV相反自旋极化窗口，偏压或横向位置都可反转STT符号。",
+      "relevance": "把势垒缺陷/局域态从平均TMR损失拆成单态、单位置、单能量问题，为MgO缺陷工程和双势垒共振提供原子分辨实验模板。",
+      "limitation": "这是SP-STM真空间隙模型，不是固态MgO量产MTJ；高偏压、低温和单纳米磁体结果不能直接外推到阵列TMR/RA/WER。",
+      "industrialization": "原子机理与计量阶段；需把可控共振态转移到固体势垒并验证室温、面积平均、保持和工艺容差。",
+      "whyRecommended": "先看图1等效结构、图2 Fe边缘态、图3 Co的120 meV空间反转，再看STT符号；50–70分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "arxiv": "2510.21416",
+      "doi": "10.1021/acsnano.5c21248",
+      "url": "https://pubs.acs.org/doi/10.1021/acsnano.5c21248",
+      "backupUrl": "https://arxiv.org/abs/2510.21416",
+      "accessNote": "已打开ACS直接页与作者公开稿，核验材料、温度、磁场、偏压、空间尺度和能量窗口",
       "featured": true
     }
   ]

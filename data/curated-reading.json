@@ -139,6 +139,13 @@
       "classicIds": [
         "classic-hooge-1969"
       ]
+    },
+    {
+      "date": "2026-08-11",
+      "reviewId": "review-moire-spintronics-2026",
+      "classicIds": [
+        "classic-moodera-1995"
+      ]
     }
   ],
   "items": [
@@ -1347,6 +1354,60 @@
         "先读原始两页。",
         "记录归一化假设。",
         "再对照现代MTJ中RTN与1/f分解；20–30分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-moire-spintronics-2026",
+      "kind": "每日综述",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Moiré spintronics: Emergent phenomena, material realization and machine learning accelerating discovery",
+      "titleZh": "莫尔自旋电子学：层间磁性、非共线纹理与机器学习发现",
+      "authors": "Fengjun Zhuo, Zhenyu Dai, Kai Chang, Hongxin Yang, Zhenxiang Cheng",
+      "venue": "Applied Physics Reviews 13, 011315 (2026)",
+      "published": "2026-02-10",
+      "recommendedOn": "2026-08-11",
+      "doi": "10.1063/5.0300788",
+      "url": "https://pubs.aip.org/aip/apr/article/13/1/011315/3379069/Moire-spintronics-Emergent-phenomena-material",
+      "backupUrl": "https://doi.org/10.1063/5.0300788",
+      "assistantSummary": "正式Review系统梳理扭转vdW材料中的堆垛依赖层间磁性、非共线自旋纹理、莫尔交换、skyrmion、magnon及机器学习材料发现。",
+      "whySelected": "它为当天原子尺度局域态和交变磁共振输运提供更广的“扭角—堆垛—交换—输运”设计空间。",
+      "readingGuide": [
+        "先读扭角/莫尔术语与材料表。",
+        "再看层间磁性和莫尔交换。",
+        "接着看skyrmion/magnon。",
+        "最后看机器学习与挑战；70–100分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-moodera-1995",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Large Magnetoresistance at Room Temperature in Ferromagnetic Thin Film Tunnel Junctions",
+      "titleZh": "室温大隧穿磁阻：CoFe/Al₂O₃/Co或NiFe经典MTJ",
+      "authors": "J. S. Moodera, Lisa R. Kinder, Terrilyn M. Wong, R. Meservey",
+      "venue": "Physical Review Letters 74, 3273–3276 (1995)",
+      "published": "1995-04-17",
+      "recommendedOn": "2026-08-11",
+      "doi": "10.1103/PhysRevLett.74.3273",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.3273",
+      "backupUrl": "https://doi.org/10.1103/PhysRevLett.74.3273",
+      "assistantSummary": "CoFe/Al₂O₃/Co或NiFe结在295、77、4.2 K分别获得11.8%、20%、24%磁阻变化，并显示偏压超过约0.1 V后显著衰减。",
+      "whySelected": "它把今天的原子局域态、偏压依赖和低温TMR放回室温MTJ起点，提醒任何新结构都必须跨温度与偏压比较。",
+      "readingGuide": [
+        "先读器件结构和三温度结果。",
+        "再看偏压依赖。",
+        "对照Julliere与Slonczewski解释。",
+        "最后比较现代MgO结；20–30分钟。"
       ],
       "notNew": true
     }

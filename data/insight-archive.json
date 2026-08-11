@@ -236,6 +236,18 @@
       "atomicIds": [
         "2026-08-10-oxide-thermal-doe"
       ]
+    },
+    {
+      "date": "2026-08-11",
+      "opportunityIds": [
+        "2026-08-11-ps-sub10nm-wer"
+      ],
+      "methodIds": [
+        "2026-08-11-pulsetube-spectrum"
+      ],
+      "atomicIds": [
+        "2026-08-11-localized-resonance-manufacture"
+      ]
     }
   ],
   "items": [
@@ -3871,6 +3883,156 @@
       ],
       "researchConnection": "直接服务原子制造、BEOL兼容和SOT-MRAM良率。",
       "takeaway": "保护层必须同时通过结构、磁性和器件电学三重验收。"
+    },
+    {
+      "id": "2026-08-11-ps-sub10nm-wer",
+      "date": "2026-08-11",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 缩放与速度",
+      "title": "亚10 nm稳定性—皮秒写入—WER统一窗口",
+      "subtitle": "把交换偏置和13.2 ps驱动放入同一温度—尺寸DOE",
+      "summary": "联合扫描CD、交换偏置、脉宽、幅值与温度，寻找速度、保持和长尾错误的共同窗口。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "sciadv-12-aed0607",
+        "natcom-2026-76524"
+      ],
+      "question": "亚10 nm自由层能否在皮秒速度下仍保持可制造的WER和十年保持？",
+      "rationale": "A给皮秒速度，B给亚10 nm稳定机制；两者尚未在同一MTJ验证。",
+      "workflow": [
+        "制备5–30 nm尺寸梯度",
+        "交换偏置有/无对照",
+        "13 ps–10 ns脉冲扫描",
+        "10–300 K做WER/保持外推"
+      ],
+      "equipment": [
+        "宽带脉冲源",
+        "采样示波器",
+        "低温探针台",
+        "AHE/TMR读出"
+      ],
+      "measurements": [
+        "WER",
+        "临界电流",
+        "热稳定因子",
+        "TMR/RA",
+        "结温"
+      ],
+      "metrics": [
+        "10⁻⁷以下WER趋势",
+        "能耗",
+        "保持外推",
+        "CD 3σ"
+      ],
+      "evidenceBoundary": "两篇器件结构不同，联合窗口是本站研究建议。",
+      "firstSteps": [
+        "先验证脉冲到样品波形",
+        "再做无交换偏置对照",
+        "记录失败分布而非均值"
+      ],
+      "researchConnection": "直接服务MTJ/MRAM缩放、低温输运与可靠性。",
+      "takeaway": "速度纪录只有与尺寸尾部和WER绑定才具产业意义。"
+    },
+    {
+      "id": "2026-08-11-pulsetube-spectrum",
+      "date": "2026-08-11",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "D/A · 噪声计量",
+      "title": "脉管机振动—电磁噪声—磁场联动频谱验收",
+      "subtitle": "把1.7 Hz、谐波和数百kHz污染写进每次低温测量元数据",
+      "summary": "建立脉管开关、磁场、假负载和器件四路同步频谱，自动标记相干伪信号。",
+      "status": "由当日D类实测扩展的设备路线",
+      "relatedPaperIds": [
+        "rsi-97-083902",
+        "sciadv-12-aed0607"
+      ],
+      "question": "低温电阻跳变和RTN中有多少来自制冷机而非器件？",
+      "rationale": "D证明噪声受磁场和仪器频段强烈影响；A要求更宽频带的脉冲链。",
+      "workflow": [
+        "脉管开/关基线",
+        "0/5/10/14 T扫场",
+        "开路/短路/标准电阻/器件对照",
+        "计算跨通道相干函数"
+      ],
+      "equipment": [
+        "三轴加速度计",
+        "拾取线圈",
+        "频谱仪",
+        "锁相/示波器"
+      ],
+      "measurements": [
+        "加速度PSD",
+        "电压PSD",
+        "温度漂移",
+        "脉管相位"
+      ],
+      "metrics": [
+        "相干峰",
+        "噪声底",
+        "屏蔽衰减",
+        "跨日重复性"
+      ],
+      "evidenceBoundary": "原文是特定计量系统，本站需对自己的线缆和带宽重新标定。",
+      "firstSteps": [
+        "先复制1.7 Hz筛查",
+        "磁场每档记录空载谱",
+        "把频谱随数据归档"
+      ],
+      "researchConnection": "升级低温输运、低噪声与自动化平台。",
+      "takeaway": "与脉管相位相干的峰不能当作材料噪声。"
+    },
+    {
+      "id": "2026-08-11-localized-resonance-manufacture",
+      "date": "2026-08-11",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/C/B · 局域态工程",
+      "title": "局域态—双势垒—交换偏置联合原子制造",
+      "subtitle": "把缺陷位置、量子阱厚度和亚10 nm边界接成可测因果链",
+      "summary": "以原子层厚度和缺陷剂量控制共振态，再用动量输运、谱学和器件统计共同验收。",
+      "status": "本站组合路线，待固态器件验证",
+      "relatedPaperIds": [
+        "acsnano-20-5c21248",
+        "prb-114-084405",
+        "natcom-2026-76524"
+      ],
+      "question": "能否把单个局域态的自旋反转窗口转化为固态双势垒MTJ的稳健高TMR？",
+      "rationale": "E给原子分辨实测，C给理想双势垒理论，B给亚10 nm边界制造。",
+      "workflow": [
+        "势垒/量子阱原子层扫描",
+        "受控氧空位或掺杂",
+        "STEM-EELS/STS定位",
+        "低面积结TMR/RTN/WER统计"
+      ],
+      "equipment": [
+        "ALD/MBE或原子层沉积",
+        "STEM-EELS",
+        "低温STM",
+        "纳米结电测"
+      ],
+      "measurements": [
+        "局域态能量",
+        "缺陷密度",
+        "TMR/RA",
+        "RTN",
+        "WER"
+      ],
+      "metrics": [
+        "共振能量3σ",
+        "TMR偏压窗",
+        "短路率",
+        "片内均匀性"
+      ],
+      "evidenceBoundary": "真空间隙模型和理想RuO₂理论不能直接证明固态量产可行。",
+      "firstSteps": [
+        "完整势垒基线",
+        "单一缺陷变量",
+        "至少三片重复和截面盲测"
+      ],
+      "researchConnection": "直连MgO/CoFeB界面、原子制造、缺陷控制与MRAM良率。",
+      "takeaway": "真正可制造的共振态必须对厚度、缺陷和位置偏差都宽容。"
     }
   ]
 }
