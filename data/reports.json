@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-11T08:59:15+08:00",
-  "reportDate": "2026-08-11",
+  "updatedAt": "2026-08-12T09:04:02+08:00",
+  "reportDate": "2026-08-12",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -413,6 +413,25 @@
         "prb-114-084405",
         "rsi-97-083902",
         "acsnano-20-5c21248"
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "label": "详细日报：Bi/Ag界面保护—近零M_eff—单发光写MTJ—RuO₂应变磁序—sub-5 mK电子温度",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "arxiv-2510-25102-v2",
+        "arxiv-2607-26299",
+        "prb-114-084408",
+        "rsi-97-083901",
+        "arxiv-2607-28310"
       ]
     }
   ],
@@ -4773,6 +4792,186 @@
       "url": "https://pubs.acs.org/doi/10.1021/acsnano.5c21248",
       "backupUrl": "https://arxiv.org/abs/2510.21416",
       "accessNote": "已打开ACS直接页与作者公开稿，核验材料、温度、磁场、偏压、空间尺度和能量窗口",
+      "featured": true
+    },
+    {
+      "id": "arxiv-2510-25102-v2",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Single-shot laser-pulse-induced magnetization reversal in CoFeB/MgO-based magnetic tunnel junctions",
+      "titleZh": "CoFeB/MgO完整MTJ的单发激光翻转：光写入、TMR读出与侧壁损伤同台验证",
+      "authors": "Junta Igarashi, Sébastien Geiskopf, Takanobu Shinoda, Butsurin Jinnai, Yann Le Guen et al.",
+      "venue": "arXiv:2510.25102v2 (2026修订预印本)",
+      "published": "2025-10-29",
+      "recommendedOn": "2026-08-12",
+      "timeTier": "2026-07-15更新预印本",
+      "system": "Ta(5)/Pt(5)/[Co(0.4)/Pt(0.6)]₆/Co(0.4)/Ru(0.4)/[Co(0.4)/Pt(0.4)]₂/Co(0.4)/Ta(0.2)/CoFeB(1)/MgO(1.3或2.0)/CoFeB(1.5)/Ta(5)/Ru或Pt帽层，单位nm；300 °C退火1 h",
+      "conditions": "单发35 fs与10 ps激光；1/e²光斑约110 μm；器件以30 mV两端读出；Ru帽层0–5 nm、Pt帽层2.5或5 nm；公开正文未给阵列WER、保持和耐久",
+      "methods": [
+        "磁控溅射完整MTJ并退火",
+        "CIPT测TMR/RA与MOKE测磁滞",
+        "转移矩阵计算各层吸收",
+        "单发激光照射并同步TMR读出"
+      ],
+      "summary": "Ru帽层≥2.0 nm时出现P→AP单发翻转；MgO 1.3 nm未图形化堆栈TMR 158%、RA 30 Ω·μm²，器件化后TMR降至66%，作者把主要损失归因于离子铣侧壁金属再沉积与两端串联电阻。",
+      "relevance": "把超快写入、吸收层设计、MgO结输运和图形化损伤放进同一条证据链，直接对应用户的MTJ侧壁封护与低温脉冲读写平台。",
+      "limitation": "当前是预印本且器件只演示P→AP；翻转可能来自超快自旋输运、偶极耦合或二者，机制尚未定论；光斑远大于器件，未公开阵列WER、保持、耐久与晶圆分布。",
+      "industrialization": "器件级光写入概念验证；还需缩小光斑/光路集成、双向确定性写入、侧壁工艺恢复TMR、片上光源、长尾WER与BEOL热预算。",
+      "whyRecommended": "先看图1堆栈与TMR/RA，再看图3吸收和阈值，最后看图4器件TMR及侧壁损伤；45–65分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "arxiv": "2510.25102",
+      "doi": "10.48550/arXiv.2510.25102",
+      "url": "https://arxiv.org/abs/2510.25102",
+      "backupUrl": "https://arxiv.org/html/2510.25102v2",
+      "accessNote": "已打开arXiv v2全文，核验作者、层厚、退火、脉冲、TMR、RA、光斑和器件损伤解释",
+      "featured": true
+    },
+    {
+      "id": "arxiv-2607-26299",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "D"
+      ],
+      "title": "Near-zero effective magnetization enabling ultra-low threshold currents in spin Hall micro-oscillators",
+      "titleZh": "近零有效磁化的W/CoFeB/MgO微振荡器：脉冲阈值降至2.92×10⁹ A/m²",
+      "authors": "A. Koujok, H. Kurebayashi, K. Yamamoto, B. Heinz, V. K. Kushwaha et al.",
+      "venue": "arXiv:2607.26299v1",
+      "published": "2026-07-28",
+      "recommendedOn": "2026-08-12",
+      "timeTier": "两周内预印本",
+      "system": "热氧化Si/W(4)/Co₂₀Fe₆₀B₂₀(1.7)/MgO(3)/Ta(1.5) nm；室温5 mTorr Ar溅射，300 °C真空退火1 h；1 μm×1.8 μm微条",
+      "conditions": "532 nm微聚焦BLS，光斑约300 nm；外场25 mT；DC与200 ns脉冲；模拟T=0 K、μ₀M_eff=33/10/0/−10 mT",
+      "methods": [
+        "制备W/CoFeB/MgO/Ta并图形化微条",
+        "μBLS测电流诱导自旋波",
+        "反强度外推DC与脉冲阈值",
+        "MuMax3比较宏自旋与空间模式"
+      ],
+      "summary": "DC阈值(1.305±0.153)×10¹⁰ A/m²，200 ns脉冲最低(0.292±0.025)×10¹⁰ A/m²；作者认为近零M_eff减小进动椭圆度、磁振子散射和有效阻尼。",
+      "relevance": "提供CoFeB/MgO界面各向异性—M_eff—脉冲阈值的可量化设计轴，可与STT/SOT-MRAM自由层工程和低温自热校正直接衔接。",
+      "limitation": "这是微振荡器而非MTJ存储单元；脉冲/直流差异含焦耳热，模拟为0 K且未含材料无序；未公开TMR、RA、WER、保持和耐久。",
+      "industrialization": "适合振荡器与概率计算材料筛选；转入MRAM还需纳米结、场自由翻转、驱动电路、频谱线宽、相位噪声、片内M_eff分布和可靠性。",
+      "whyRecommended": "先看图1堆栈/器件，再看图2–4阈值提取，最后看图6不同M_eff下宏自旋失效；40–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "arxiv": "2607.26299",
+      "doi": "10.48550/arXiv.2607.26299",
+      "url": "https://arxiv.org/abs/2607.26299",
+      "backupUrl": "https://arxiv.org/html/2607.26299v1",
+      "accessNote": "已打开arXiv全文，核验作者、堆栈、制备、器件尺寸、BLS、外场、阈值与模拟条件",
+      "featured": true
+    },
+    {
+      "id": "prb-114-084408",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Strain engineering of altermagnetic symmetry in epitaxial RuO2 films",
+      "titleZh": "外延应变调控RuO₂交变磁对称性：12 nm XRD实测与第一性原理相图",
+      "authors": "Johnathas D. S. Forte, Seung Gyo Jeong, Anand Santhosh, Seungjun Lee, Bharat Jalan, Tony Low",
+      "venue": "Physical Review B 114, 084408 (2026)",
+      "published": "2026-08-11",
+      "recommendedOn": "2026-08-12",
+      "timeTier": "昨日正式发表",
+      "system": "混合MBE生长12 nm RuO₂/TiO₂(001)、(100)、(110)；另以<4 nm和2 nm超薄文献结果约束应变区间；不是完整MTJ",
+      "conditions": "(001)面内各向同性+2.2%；(100)/(110)沿[001]约−4.7%、正交方向+2.2%；XRD-RSM实测晶格，DFT扫描应变、Hubbard U和载流子条件",
+      "methods": [
+        "混合MBE制备三种取向薄膜",
+        "XRD倒易空间图量化相干/松弛应变",
+        "DFT构建应变—Néel矢量相图",
+        "对称性和费米面分析并估算隧穿响应"
+      ],
+      "summary": "XRD显示12 nm (100)/(110)沿[001]已各向异性松弛；理论预测完全应变(100)为理想交变磁相，(110)因两类对称性均破缺而有净磁矩，12 nm松弛后Néel矢量消失。",
+      "relevance": "给RuO₂自旋源/电极提供“取向—厚度—应变保持—磁序”的原子制造窗口，并提醒器件输运前必须先做晶格与磁序独立验收。",
+      "limitation": "磁性相图和隧穿为第一性原理预测，本文实验直接量到的是晶格应变而非完整MTJ的TMR；RuO₂磁基态仍有争议，不能把理论相图当作普适磁序证据。",
+      "industrialization": "处于外延材料与器件前验证阶段；还缺磁序直接探测、有限温/缺陷/偏压、晶圆应变均匀性、图形化松弛及CMOS/BEOL兼容。",
+      "whyRecommended": "先看图1三取向XRD，再看图2应变—磁序相图和图3 DOS/U/掺杂；重点核对“实测晶格、理论磁序”的分界；45–70分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "arxiv": "2510.26581",
+      "doi": "10.1103/llqj-z28s",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/llqj-z28s",
+      "backupUrl": "https://arxiv.org/abs/2510.26581",
+      "accessNote": "已打开APS正式条目与arXiv全文，核验2026-08-11、作者、12 nm、三取向应变、XRD和DFT边界",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-083901",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Sub-10 mK “in-cell” magnetic refrigeration for cryogen-free cryostats",
+      "titleZh": "无液氦稀释机的“样品胞内”核磁制冷：有限磁场下低于5 mK保持3–30 h",
+      "authors": "Alexander M. Donald, Nicolas Silva, Christopher J. Ollmann, Roch Schanen, Chao Huan et al.",
+      "venue": "Review of Scientific Instruments 97, 083901 (2026)",
+      "published": "2026-08-03",
+      "recommendedOn": "2026-08-12",
+      "timeTier": "九天内正式仪器论文",
+      "system": "Bluefors LD250+14 T磁体；样品胞含66 g硬脂酸包覆铜粉（约61 m²表面积）、纯液态³He、约13 m²银烧结与三个音叉温度计",
+      "conditions": "13.3 T、约16 mK预冷4天；13.3→5 T以0.2 mT/s、5 T以下0.1 mT/s退磁；最低温≤2 mK（校准不确定度±0.5 mK）；终场最高约1 T内验证低于5 mK",
+      "methods": [
+        "铜粉压制并与³He浸没热化",
+        "铝热开关与银丝预冷",
+        "核绝热退磁",
+        "音叉线宽温度计和1/T升温拟合"
+      ],
+      "summary": "在有限磁场实现<5 mK，保持约3–30 h；终场>500 mT时通常18–30 h，最低温≤2 mK，后退磁热漏为数nW/mol且未观察显著涡流加热。",
+      "relevance": "直接解决低温台温不等于纳米器件电子温度的问题，为MTJ低温WER、RTN和自热实验提供样品旁冷源、温度计与保持时间预算。",
+      "limitation": "音叉温度是液态³He温度并依赖模型外推，最低点±0.5 mK；尚未在MTJ上直接证明电子温度；塑料胞辐射热与低场磁体flux jump仍会缩短保持。",
+      "industrialization": "科研平台级成熟原型；需要安全的³He系统、可更换样品插入件、自动退磁保护、线缆热化、长期重复性与设备维护成本评估。",
+      "whyRecommended": "先看图1胞体/热开关，图3温度计标定，图4–5最低温、热漏和保持时间；50–75分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "arxiv": "2605.20462",
+      "doi": "10.1063/5.0344424",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/8/083901/3400088/Sub-10-mK-in-cell-magnetic-refrigeration-for",
+      "backupUrl": "https://arxiv.org/abs/2605.20462",
+      "accessNote": "已打开AIP正式页与arXiv全文，核验作者、DOI、66 g铜粉、³He、14 T流程、最低温、热漏和保持时间",
+      "featured": true
+    },
+    {
+      "id": "arxiv-2607-28310",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "title": "Charge-to-spin conversion in epitaxial and polycrystalline Bi and Bi/Ag layers",
+      "titleZh": "Bi/Ag原子锐界面保护电荷—自旋转换：结构完整性而非Rashba增强",
+      "authors": "Federica Nasr, Emir Karadža, Santos F. Alvarado, Federico Binda, Tobias Goldenberger et al.",
+      "venue": "arXiv:2607.28310v1",
+      "published": "2026-07-30",
+      "recommendedOn": "2026-08-12",
+      "timeTier": "两周内预印本",
+      "system": "BaF₂(111)/Bi(001)(10)/Ag(5)/Fe₀.₅Co₀.₅(2)或Ni(5)/AlOₓ，单位nm；并比较无Ag、Al/Cu间隔层、氧化及多晶Bi",
+      "conditions": "MBE生长；Ag在液氮温度沉积后室温自退火；室温MOKE-SOT、harmonic Hall、HAADF-STEM、ARPES和AFM/XRR",
+      "methods": [
+        "MBE制备外延/多晶与间隔层对照",
+        "STEM/RHEED/XRR/AFM查结构和粗糙",
+        "ARPES检验Bi/Ag Rashba假说",
+        "MOKE和谐波Hall定量阻尼型SOT"
+      ],
+      "summary": "Ag使Bi(001)/FM的SOT效率提高超过一个数量级，有效自旋Hall电导约2×10⁵(ℏ/2e) S/m；Bi粗糙度约0.3–0.35 nm，STEM见锐界面，ARPES未见可测Rashba增强，氧暴露后仍保留72%效率。",
+      "relevance": "把“原子锐利、抗互扩散、低粗糙”与SOT效率建立直接相关，为MTJ中间隔/封护层选择和原位转移验收提供可复制对照。",
+      "limitation": "这是Bi/Ag/FM Hall条而非MgO MTJ；自旋Hall角约1依赖电流分流和有效参数提取；室温结果未给低温、保持、耐久、WER和晶圆均匀性。",
+      "industrialization": "材料与界面验证阶段；还需热预算、Ag扩散/电迁移、纳米SOT-MTJ、300 mm均匀性、接触电阻、写入电流与长期可靠性。",
+      "whyRecommended": "先看图1 STEM/RHEED/粗糙度，图2 ARPES，图4 SOT效率，再看氧化、Al/Cu和多晶对照；55–80分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "arxiv": "2607.28310",
+      "doi": "10.48550/arXiv.2607.28310",
+      "url": "https://arxiv.org/abs/2607.28310",
+      "backupUrl": "https://arxiv.org/html/2607.28310v1",
+      "accessNote": "已打开arXiv全文，核验作者、堆栈、MBE/ARPES/MOKE、锐界面、粗糙度、SOT电导与氧化对照",
       "featured": true
     }
   ]

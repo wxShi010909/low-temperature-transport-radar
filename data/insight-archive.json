@@ -248,6 +248,18 @@
       "atomicIds": [
         "2026-08-11-localized-resonance-manufacture"
       ]
+    },
+    {
+      "date": "2026-08-12",
+      "opportunityIds": [
+        "2026-08-12-optical-sidewall-doe"
+      ],
+      "methodIds": [
+        "2026-08-12-incell-electron-temp"
+      ],
+      "atomicIds": [
+        "2026-08-12-ag-ruo2-interface"
+      ]
     }
   ],
   "items": [
@@ -4033,6 +4045,157 @@
       ],
       "researchConnection": "直连MgO/CoFeB界面、原子制造、缺陷控制与MRAM良率。",
       "takeaway": "真正可制造的共振态必须对厚度、缺陷和位置偏差都宽容。"
+    },
+    {
+      "id": "2026-08-12-optical-sidewall-doe",
+      "date": "2026-08-12",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 光写与工艺损伤",
+      "title": "光脉冲—M_eff—侧壁封护三变量MTJ因果实验",
+      "subtitle": "同时追踪写入阈值、TMR恢复和温度依赖",
+      "summary": "把完整光写MTJ与近零M_eff工程连接，用未图形化/离子铣/原位封护三组区分材料动力学和加工损伤。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "arxiv-2510-25102-v2",
+        "arxiv-2607-26299"
+      ],
+      "question": "降低M_eff和改善侧壁能否同时降低光/电写入阈值并保持TMR与可靠性？",
+      "rationale": "A给出光写实测及158→66%工艺损失，B给出M_eff降低阈值；两者尚未在同一MTJ闭环。",
+      "workflow": [
+        "制备M_eff梯度",
+        "建立三种侧壁状态",
+        "35 fs/10 ps与电流脉冲对照",
+        "10–300 K做TMR/阈值/WER"
+      ],
+      "equipment": [
+        "超快激光与MOKE",
+        "低温探针台",
+        "CIPT/源表",
+        "TEM-EELS"
+      ],
+      "measurements": [
+        "TMR/RA",
+        "阈值光通量",
+        "Jc",
+        "结温",
+        "WER"
+      ],
+      "metrics": [
+        "TMR保留率",
+        "P↔AP成功率",
+        "阈值3σ",
+        "侧壁缺陷密度"
+      ],
+      "evidenceBoundary": "两篇研究对象和驱动方式不同，联合收益是本站假设。",
+      "firstSteps": [
+        "先复制未图形化基线",
+        "再仅改变侧壁封护",
+        "最后加入M_eff梯度"
+      ],
+      "researchConnection": "直连CoFeB/MgO、刻蚀封护、低温输运和超快器件。",
+      "takeaway": "只有同时守住写入阈值与TMR，超快翻转才是可制造器件进步。"
+    },
+    {
+      "id": "2026-08-12-incell-electron-temp",
+      "date": "2026-08-12",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "D/A · 电子温度",
+      "title": "样品胞内核制冷—噪声温度—MTJ自热联合标定",
+      "subtitle": "把台温、液体温度、电子温度和写入瞬态分成四层",
+      "summary": "在³He浸没样品胞旁加入音叉与电子温度计，对MTJ静态噪声、脉冲自热和保持时间同步标定。",
+      "status": "由D类实测扩展的设备路线",
+      "relatedPaperIds": [
+        "rsi-97-083901",
+        "arxiv-2510-25102-v2"
+      ],
+      "question": "sub-5 mK平台上MTJ电子到底多冷，写入后多久恢复？",
+      "rationale": "D提供长保持冷源，但音叉不直接等于器件电子温度；A显示脉冲能量分配必须局部测量。",
+      "workflow": [
+        "假负载退磁验收",
+        "加噪声/库仑温度计",
+        "MTJ弱读出基线",
+        "脉冲后延迟扫描恢复"
+      ],
+      "equipment": [
+        "铜粉³He样品胞",
+        "音叉温度计",
+        "低噪声放大器",
+        "脉冲源/高速采集"
+      ],
+      "measurements": [
+        "T_cell",
+        "T_e",
+        "噪声PSD",
+        "TMR/RTN",
+        "恢复时间"
+      ],
+      "metrics": [
+        "电子—液体温差",
+        "热漏nW/mol",
+        "<5 mK保持",
+        "脉冲后热弛豫"
+      ],
+      "evidenceBoundary": "论文未在MTJ上直接测电子温度，本站路线需独立校准。",
+      "firstSteps": [
+        "先做开路/标准电阻",
+        "验证磁场不敏感温标",
+        "再接器件并限制读出功率"
+      ],
+      "researchConnection": "升级低温输运、低噪声、WER和设备自动化。",
+      "takeaway": "台温、³He温度和器件电子温度不能互相代替。"
+    },
+    {
+      "id": "2026-08-12-ag-ruo2-interface",
+      "date": "2026-08-12",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/C · 界面与应变",
+      "title": "Ag界面保护—RuO₂应变保持联合原子制造路线",
+      "subtitle": "用锐界面阻止互扩散，同时避免超薄磁序随厚度松弛",
+      "summary": "把间隔层、取向、厚度和退火写成联合DOE，以原子结构、应变和SOT/TMR共同验收。",
+      "status": "本站组合路线，待异质结构验证",
+      "relatedPaperIds": [
+        "arxiv-2607-28310",
+        "prb-114-084408"
+      ],
+      "question": "化学惰性间隔层能否在保护Bi/RuO₂界面的同时保留应变磁序与自旋透明度？",
+      "rationale": "E证明Ag保护结构可恢复SOT，C证明RuO₂磁序对取向/应变极敏感；目前没有同一堆栈实证。",
+      "workflow": [
+        "选取RuO₂三取向和2–12 nm",
+        "Ag 0–5 nm原位沉积",
+        "退火/氧暴露对照",
+        "XRD+STEM+磁序+输运关联"
+      ],
+      "equipment": [
+        "hybrid MBE",
+        "原位转移/Ag蒸发",
+        "XRD-RSM",
+        "STEM-EELS/ARPES/MOKE"
+      ],
+      "measurements": [
+        "应变与粗糙",
+        "互扩散",
+        "磁序",
+        "SOT电导",
+        "界面电阻"
+      ],
+      "metrics": [
+        "应变3σ",
+        "EELS扩散宽度",
+        "SOT保持率",
+        "热预算",
+        "片内均匀性"
+      ],
+      "evidenceBoundary": "Ag/Bi实测与RuO₂应变论文属于不同材料系统，兼容性是本站待证问题。",
+      "firstSteps": [
+        "先做不含磁层的界面结构",
+        "再验证退火前后应变",
+        "最后测SOT与MTJ读出"
+      ],
+      "researchConnection": "直连原位界面、原子层厚度、缺陷/成分控制和SOT-MRAM材料集成。",
+      "takeaway": "原子锐界面必须同时通过化学、应变和自旋透明度三项验收。"
     }
   ]
 }

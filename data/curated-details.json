@@ -2011,5 +2011,57 @@
     "limitationsDetailed": "1995年微米级Al₂O₃结不能直接外推到纳米CoFeB/MgO的相干对称过滤、WER和BEOL可靠性。",
     "terms": [],
     "takeaway": "先读器件结构和三温度结果。 再看偏压依赖。 对照Julliere与Slonczewski解释。 最后比较现代MgO结；20–30分钟。"
+  },
+  {
+    "id": "review-spintronics-memory-2557918",
+    "oneSentence": "36页正式Review从磁阻和STT出发，覆盖MRAM商业状态、SOT/电压门控/轨道电子学/反铁磁自旋电子学，以及振荡器、概率计算和skyrmion应用。",
+    "background": "MRAM以MTJ电阻读磁态，以磁场、STT、SOT或电压辅助写入；不同路线必须在速度、功耗、面积、保持、耐久和工艺上共同权衡。",
+    "question": "自旋电子学从基础磁阻走向商业MRAM经历了哪些材料/器件节点，新兴SOT、VCMA、轨道和反铁磁路线解决什么、又引入什么问题？",
+    "workflow": [
+      "回顾GMR/TMR与STT",
+      "总结MRAM器件与商业化",
+      "比较SOT/电压门控/轨道/反铁磁",
+      "扩展到振荡器和新计算"
+    ],
+    "findings": [
+      "【综述结论】MTJ读出与电流写入已形成产业主线。",
+      "【综述结论】SOT可分离读写路径但面积和集成更复杂。",
+      "【综述结论】电压门控有望降能耗，但保持与变异需共同评估。",
+      "【综述展望】轨道与反铁磁材料仍需可靠器件证据。"
+    ],
+    "explanation": "这是正式综述的跨文献综合，不是单一晶圆或阵列的实测数据。",
+    "whyItMatters": [
+      "为今天的光写MTJ、近零M_eff、RuO₂、Bi/Ag和低温平台提供同一器件评价表：读出、写入、材料、集成、功耗与可靠性必须同时闭环。"
+    ],
+    "researchConnection": "以TMR、RA、Jc、WER、保持、耐久、能耗、BEOL温度和晶圆3σ为固定字段重整全部日报数据；同一指标注明脉宽、温度与尺寸。",
+    "limitationsDetailed": "综述覆盖面广但无法替代每篇原始论文的工艺细节；不同节点、器件尺寸和误码定义不能直接横比。",
+    "terms": [],
+    "takeaway": "先读MR/TMR与STT基础。 再看MRAM商业状态与器件表。 重点读SOT、voltage gating和反铁磁章节。 最后看振荡器/概率计算与挑战；80–120分钟。"
+  },
+  {
+    "id": "classic-diao-2005-stt-mgo",
+    "oneSentence": "早期MgO MTJ报告最高约150% TMR和约2–3×10⁶ A/cm²本征开关电流密度；相似AlOₓ结的开关电流高3–4倍，有限偏压隧穿自旋极化低于零偏TMR推得值。",
+    "background": "STT由穿过势垒的自旋极化电流向自由层传递角动量；MgO的对称性过滤可同时提高TMR和有效自旋极化。",
+    "question": "MgO高TMR是否真的转化为更低的电流驱动开关阈值，有限偏压下的自旋极化与零偏TMR是否一致？",
+    "workflow": [
+      "制备MgO与AlOₓ纳米结",
+      "测零偏TMR",
+      "电流脉冲翻转并提取本征Jc",
+      "比较有限偏压隧穿自旋极化"
+    ],
+    "findings": [
+      "【直接实测】MgO结TMR最高约150%。",
+      "【直接实测】本征Jc约2–3×10⁶ A/cm²。",
+      "【直接实测】AlOₓ结Jc高约3–4倍。",
+      "【作者解释】MgO更高隧穿自旋极化降低Jc；有限偏压TSP低于零偏TMR推断。"
+    ],
+    "explanation": "TMR/Jc/TSP来自原文器件实测；高TSP解释不能单独排除阻尼、尺寸和热激活差异。",
+    "whyItMatters": [
+      "它是今天“界面/势垒质量—自旋极化—驱动阈值”主线的历史基准，提醒不能只用零偏TMR预测实际写入效率。"
+    ],
+    "researchConnection": "对现代CoFeB/MgO结统一记录零偏TMR、工作偏压TMR、脉宽、Jc0、温度和尺寸；AlOₓ或低TMR MgO作对照，避免用一个TMR数值替代写入表征。",
+    "limitationsDetailed": "2005年器件的材料、尺寸和统计不代表先进pMTJ；未提供现代长尾WER、十年保持、BEOL和300 mm分布。",
+    "terms": [],
+    "takeaway": "先看MgO/AlOₓ样品对照。 再看TMR与开关电流。 重点看有限偏压TSP。 最后把单位换算后与今日脉冲/SOT结果比较；25–35分钟。"
   }
 ]

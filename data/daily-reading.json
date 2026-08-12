@@ -1,57 +1,58 @@
 {
-  "date": "2026-08-11",
+  "date": "2026-08-12",
   "review": {
-    "id": "review-moire-spintronics-2026",
+    "id": "review-spintronics-memory-2557918",
     "kind": "每日综述",
-    "track": "E",
+    "track": "B",
     "secondaryTracks": [
-      "B",
-      "C"
+      "A",
+      "C",
+      "E"
     ],
-    "title": "Moiré spintronics: Emergent phenomena, material realization and machine learning accelerating discovery",
-    "titleZh": "莫尔自旋电子学：层间磁性、非共线纹理与机器学习发现",
-    "authors": "Fengjun Zhuo, Zhenyu Dai, Kai Chang, Hongxin Yang, Zhenxiang Cheng",
-    "venue": "Applied Physics Reviews 13, 011315 (2026)",
-    "published": "2026-02-10",
-    "recommendedOn": "2026-08-11",
-    "doi": "10.1063/5.0300788",
-    "url": "https://pubs.aip.org/aip/apr/article/13/1/011315/3379069/Moire-spintronics-Emergent-phenomena-material",
-    "backupUrl": "https://doi.org/10.1063/5.0300788",
-    "assistantSummary": "正式Review系统梳理扭转vdW材料中的堆垛依赖层间磁性、非共线自旋纹理、莫尔交换、skyrmion、magnon及机器学习材料发现。",
-    "whySelected": "它为当天原子尺度局域态和交变磁共振输运提供更广的“扭角—堆垛—交换—输运”设计空间。",
+    "title": "Spintronics and magnetic memory devices",
+    "titleZh": "自旋电子学与磁存储器件：MRAM商业化、SOT、VCMA、轨道与反铁磁路线",
+    "authors": "Gyung-Min Choi, OukJae Lee, Sunjae Chung, Woojin Kim, Taeyoung Lee, Byong-Guk Park, Seungmo Yang",
+    "venue": "Advances in Physics: X 10, 2557918 (2025)",
+    "published": "2025-09-02",
+    "recommendedOn": "2026-08-12",
+    "doi": "10.1080/23746149.2025.2557918",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/23746149.2025.2557918",
+    "backupUrl": "https://doi.org/10.1080/23746149.2025.2557918",
+    "assistantSummary": "36页正式Review从磁阻和STT出发，覆盖MRAM商业状态、SOT/电压门控/轨道电子学/反铁磁自旋电子学，以及振荡器、概率计算和skyrmion应用。",
+    "whySelected": "为今天的光写MTJ、近零M_eff、RuO₂、Bi/Ag和低温平台提供同一器件评价表：读出、写入、材料、集成、功耗与可靠性必须同时闭环。",
     "readingGuide": [
-      "先读扭角/莫尔术语与材料表。",
-      "再看层间磁性和莫尔交换。",
-      "接着看skyrmion/magnon。",
-      "最后看机器学习与挑战；70–100分钟。"
+      "先读MR/TMR与STT基础。",
+      "再看MRAM商业状态与器件表。",
+      "重点读SOT、voltage gating和反铁磁章节。",
+      "最后看振荡器/概率计算与挑战；80–120分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-moodera-1995",
+      "id": "classic-diao-2005-stt-mgo",
       "kind": "经典文章",
       "track": "B",
       "secondaryTracks": [
         "A",
         "E"
       ],
-      "title": "Large Magnetoresistance at Room Temperature in Ferromagnetic Thin Film Tunnel Junctions",
-      "titleZh": "室温大隧穿磁阻：CoFe/Al₂O₃/Co或NiFe经典MTJ",
-      "authors": "J. S. Moodera, Lisa R. Kinder, Terrilyn M. Wong, R. Meservey",
-      "venue": "Physical Review Letters 74, 3273–3276 (1995)",
-      "published": "1995-04-17",
-      "recommendedOn": "2026-08-11",
-      "doi": "10.1103/PhysRevLett.74.3273",
-      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.3273",
-      "backupUrl": "https://doi.org/10.1103/PhysRevLett.74.3273",
-      "assistantSummary": "CoFe/Al₂O₃/Co或NiFe结在295、77、4.2 K分别获得11.8%、20%、24%磁阻变化，并显示偏压超过约0.1 V后显著衰减。",
-      "whySelected": "它把今天的原子局域态、偏压依赖和低温TMR放回室温MTJ起点，提醒任何新结构都必须跨温度与偏压比较。",
+      "title": "Spin Transfer Switching and Spin Polarization in Magnetic Tunnel Junctions with MgO and AlOx Barriers",
+      "titleZh": "MgO与AlOₓ势垒的自旋转移翻转：高TMR如何降低本征开关电流",
+      "authors": "Zhitao Diao, Dmytro Apalkov, Mahendra Pakala, Alex Panchula, Yiming Huai",
+      "venue": "Applied Physics Letters 87 (2005)",
+      "published": "2005-10-08",
+      "recommendedOn": "2026-08-12",
+      "doi": "10.1063/1.2139849",
+      "url": "https://arxiv.org/abs/cond-mat/0510204",
+      "backupUrl": "https://doi.org/10.1063/1.2139849",
+      "assistantSummary": "早期MgO MTJ报告最高约150% TMR和约2–3×10⁶ A/cm²本征开关电流密度；相似AlOₓ结的开关电流高3–4倍，有限偏压隧穿自旋极化低于零偏TMR推得值。",
+      "whySelected": "它是今天“界面/势垒质量—自旋极化—驱动阈值”主线的历史基准，提醒不能只用零偏TMR预测实际写入效率。",
       "readingGuide": [
-        "先读器件结构和三温度结果。",
-        "再看偏压依赖。",
-        "对照Julliere与Slonczewski解释。",
-        "最后比较现代MgO结；20–30分钟。"
+        "先看MgO/AlOₓ样品对照。",
+        "再看TMR与开关电流。",
+        "重点看有限偏压TSP。",
+        "最后把单位换算后与今日脉冲/SOT结果比较；25–35分钟。"
       ],
       "notNew": true
     }
