@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-12T09:04:02+08:00",
-  "reportDate": "2026-08-12",
+  "updatedAt": "2026-08-13T09:00:28+08:00",
+  "reportDate": "2026-08-13",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -432,6 +432,25 @@
         "prb-114-084408",
         "rsi-97-083901",
         "arxiv-2607-28310"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "label": "详细日报：原子台阶低温涡旋—CoFeB/Ta光调自旋—SOT/DMI成核—UHV原位闭环—FIB损伤计量",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "prb-114-055422",
+        "jap-139-063904",
+        "jap-140-063903",
+        "rsi-97-031301",
+        "rsi-97-023904"
       ]
     }
   ],
@@ -4972,6 +4991,181 @@
       "url": "https://arxiv.org/abs/2607.28310",
       "backupUrl": "https://arxiv.org/html/2607.28310v1",
       "accessNote": "已打开arXiv全文，核验作者、堆栈、MBE/ARPES/MOKE、锐界面、粗糙度、SOT电导与氧化对照",
+      "featured": true
+    },
+    {
+      "id": "prb-114-055422",
+      "track": "A",
+      "secondaryTracks": [
+        "D",
+        "E"
+      ],
+      "title": "Anisotropic transport of Josephson vortices in atomic-layer superconductors on vicinal surfaces",
+      "titleZh": "原子台阶上的约瑟夫森涡旋：0.4 K下迁移率各向异性超过10³",
+      "authors": "Wenxuan Qian, Yash Chauhan, Ryohei Nemoto, Keisuke Sagisaka, Shunsuke Yoshizawa, Takashi Uchihashi",
+      "venue": "Physical Review B 114, 055422 (2026)",
+      "published": "2026-08-11",
+      "recommendedOn": "2026-08-13",
+      "timeTier": "两日前正式发表",
+      "system": "Si(111)-(√7×√3)-In原子层超导体；Si(111)邻晶面偏切0.2°，主要单原子台阶高0.31 nm、平均台面宽约89 nm；In原子双层覆盖；四端电流道0.3×1.2 mm²",
+      "conditions": "UHV基压<1×10⁻⁸ Pa；STM与四端输运最低0.4 K，输运0.4–4.2 K；垂直磁场0–0.40 T；STM在0.04 T直接观察涡旋；Tc约3.1 K",
+      "methods": [
+        "UHV清洁邻晶Si并生长In原子双层",
+        "STM/ZBC与dI/dV确认台阶、超导能隙和涡旋",
+        "沿/垂直台阶布置四端电流道",
+        "温度—磁场扫描、Arrhenius与Ullah–Dorsey标度建立B–T相图"
+      ],
+      "summary": "0.4 K、0.16 T时，沿台阶和跨台阶的片电阻/涡旋迁移率之比超过10³；0.10–0.20 T出现一维无钉扎流动；更低温进入量子隧穿区。",
+      "relevance": "把原子级台阶从“形貌缺陷”变成可定量的低温输运变量，提供界面台阶—局域态—宏观电阻的完整范例，可迁移到MTJ势垒台阶和侧壁缺陷诊断。",
+      "limitation": "这是In/Si原子层超导体，不是MgO/CoFeB MTJ；电阻各向异性等同涡旋迁移率各向异性依赖模型；0.4 K是平台下限，最低温量子区仍需排除残余热激活与测量电流效应。",
+      "industrialization": "处于原子层量子器件与低温传感基础阶段；还缺大面积台阶均匀性、封装后稳定性、空气转移、器件阵列分布和与CMOS工艺的兼容验证。",
+      "whyRecommended": "先看图1样品/电流方向，图2 STM直接证据，图3电阻各向异性，图4–5机制与B–T相图；45–65分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "arxiv": "2608.01196",
+      "doi": "10.1103/b2j3-xj19",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/b2j3-xj19",
+      "backupUrl": "https://arxiv.org/html/2608.01196v1",
+      "accessNote": "已打开APS关联DOI与arXiv全文，核验正式卷页、作者、0.4 K、0.40 T、台阶尺寸、能隙和迁移率各向异性",
+      "featured": true
+    },
+    {
+      "id": "jap-139-063904",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Effective modulation of interfacial spin transport at CoFeB/Ta interface through ultrafast laser pulses",
+      "titleZh": "飞秒光脉冲调控CoFeB/Ta界面自旋输运：透明度变化最高85%",
+      "authors": "Pengfei Yan, Yu Yan, Yao Li, Liang He, Jing Wu, Yongbing Xu, Xianyang Lu",
+      "venue": "Journal of Applied Physics 139, 063904 (2026)",
+      "published": "2026-02-12",
+      "recommendedOn": "2026-08-13",
+      "timeTier": "2026正式实验论文",
+      "system": "Si/MgO(10)/Ta(tTa=4、5、6、7、10)/CoFeB(1)/MgO(5) nm；Ta/CoFeB直流溅射，MgO射频溅射；300 °C退火30 min",
+      "conditions": "室温TR-MOKE；800 nm泵浦/400 nm探测；1 kHz、约50 fs；泵浦/探测光斑约450/250 μm；外场相对样品面30°；泵浦通量完整端点在网页公式中未公开显示",
+      "methods": [
+        "磁控溅射Ta厚度系列并退火",
+        "VSM确认易轴随Ta厚度变化",
+        "TR-MOKE泵浦—探测提取进动频率和弛豫",
+        "厚度模型分离本征阻尼、自旋回流、混合电导与透明度"
+      ],
+      "summary": "随泵浦增强，本征Gilbert阻尼下降；Ta自旋扩散长度低通量约2.52 nm；界面自旋透明度调制最高85%，作者归因于热致Ta自旋扩散长度增加和自旋回流增强。",
+      "relevance": "直接给出CoFeB/重金属界面“层厚—热激发—自旋扩散—阻尼/透明度”的联合标定链，可作为SOT-MRAM自由层和脉冲自热模型的材料输入。",
+      "limitation": "室温、宏观光斑、双层薄膜而非完整MTJ；透明度来自模型提取并依赖自旋Hall磁阻参数；原文未公开TMR、RA、临界写入电流、WER、保持、耐久与晶圆分布。",
+      "industrialization": "处于界面材料与动态计量阶段；转入器件需纳米SOT-MTJ、工作偏压、脉冲结温、片内厚度3σ、退火扩散、读写电路和长期可靠性。",
+      "whyRecommended": "先看图1 TR-MOKE与三阶段动力学，再看图2阻尼，图3混合电导，图4自旋扩散长度/透明度；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0296589",
+      "url": "https://pubs.aip.org/aip/jap/article/139/6/063904/3379928/Effective-modulation-of-interfacial-spin-transport",
+      "backupUrl": "https://doi.org/10.1063/5.0296589",
+      "accessNote": "已打开AIP全文，核验作者、DOI、Ta厚度、溅射/退火、50 fs TR-MOKE、光斑、2.52 nm与85%调制",
+      "featured": true
+    },
+    {
+      "id": "jap-140-063903",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Spatially asymmetric switching under spin–orbit torque and Dzyaloshinskii–Moriya interaction",
+      "titleZh": "SOT与DMI共同决定空间非对称翻转：从角落成核到畴壁扩展",
+      "authors": "Zhenhang Kong, Zhengde Xu, Xue Zhang, Boyu Zhao, Yumeng Yang, Lijun Zhu, Zhifeng Zhu",
+      "venue": "Journal of Applied Physics 140, 063903 (2026)",
+      "published": "2026-08-11",
+      "recommendedOn": "2026-08-13",
+      "timeTier": "两日前正式发表",
+      "system": "具有垂直磁各向异性的铁磁/亚铁磁薄膜连续体模型，含阻尼型SOT、可变号/幅值场型SOT、DMI与沿电流方向外场Hx；具体材料堆栈、厚度和横向尺寸在公开摘要中未公开",
+      "conditions": "超快磁化翻转的数值动力学与力矩分析；扫描电流极性、Hx极性及场型SOT的正负和强度；公开摘要未给温度、网格、脉宽、TMR、RA或WER",
+      "methods": [
+        "建立含SOT、DMI与Hx的磁化动力学方程",
+        "跟踪反向磁畴的空间成核位置",
+        "比较场型SOT为零、正值和负值",
+        "用统一力矩符号分析左右/上下不对称"
+      ],
+      "summary": "理论显示翻转先在器件角落成核，再由畴壁扩展；即使场型SOT为零，电流与Hx极性也能造成左右和上下不对称；场型SOT显著改变过程但不是不对称的必要条件。",
+      "relevance": "提醒MTJ写入不能只看宏自旋临界电流；成核角、DMI、边缘粗糙和场型SOT共同决定长尾WER及器件几何容差。",
+      "limitation": "这是理论/数值结果，不是器件实测；公开摘要未给完整参数表，本站不补造；理想边界、材料均匀性和温度噪声与量产侧壁缺陷可能改变成核位置。",
+      "industrialization": "处于器件物理和版图规则前验证阶段；需时间分辨磁成像、不同边缘方向/圆角、纳米MTJ统计、场自由结构、PVT角与10⁻⁹以下WER验证。",
+      "whyRecommended": "先读摘要与力矩符号框架，再看角落成核快照、场型SOT扫描和最终不对称相图；35–50分钟，重点核对理论与实测边界。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1063/5.0326907",
+      "url": "https://pubs.aip.org/aip/jap/article/140/6/063903/3400735/Spatially-asymmetric-switching-under-spin-orbit",
+      "backupUrl": "https://doi.org/10.1063/5.0326907",
+      "accessNote": "已打开AIP正式页，核验2026-08-11、作者、DOI、角落成核、畴壁传播与场型SOT结论；未公开参数均明确标注",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-031301",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "A compact unified sample stage for 2D materials ultra-thin film preparation and in situ optoelectronic transport measurements",
+      "titleZh": "二维超薄膜生长—电阻—光输运一体化UHV样品台",
+      "authors": "Yinuo Zhang, Yanlu Zhao, Yifan Liu, Zhicheng Zhang, Youqi Zhang, Yunan Lin, Yi Pan",
+      "venue": "Review of Scientific Instruments 97, 031301 (2026)",
+      "published": "2026-03-01",
+      "recommendedOn": "2026-08-13",
+      "timeTier": "2026正式仪器论文",
+      "system": "UHV腔体内紧凑统一样品台；旗形样品架带多触点；微型蒸发源可共沉积；集成辐射加热、温度测量、电阻监测和光学窗口",
+      "conditions": "以Au、Cr、Pd金属膜、SnSe半导体和2H-MoTe₂验证；可在生长中与不同加热温度下测电阻，并在UHV内光照；公开摘要未给极限基压、最低温、蒸发速率和噪声底",
+      "methods": [
+        "在绝缘基底预制电极并装入多针旗形架",
+        "微蒸发源原位生长/共沉积",
+        "同步监测膜电阻与温度",
+        "经光窗做原位光电响应并用多材料验证"
+      ],
+      "summary": "同一位置完成UHV蒸发、膜电阻、加热和光输运；验证Au/Cr/Pd成膜、SnSe的UHV光响应，以及2H-MoTe₂随加热诱生Te空位的电阻演化。",
+      "relevance": "把“生长参数—实时电阻—缺陷生成—器件响应”闭环，适合改造成MgO/CoFeB超薄层原位电阻/磁光监控与真空互联平台。",
+      "limitation": "仪器验证以二维/光电材料为主，未直接制备MTJ；公开摘要未给噪声、温度均匀性、膜厚精度、样品更换重复性、磁场或低温能力。",
+      "industrialization": "科研设备原型；走向晶圆级需300 mm兼容、颗粒/交叉污染、蒸发率闭环、全片温差、维护周期、自动配方和SECS/GEM接口。",
+      "whyRecommended": "先看统一台结构与电连接，再看微蒸发源、加热/测温、Au/Cr/Pd电阻验证、SnSe/MoTe₂案例；40–60分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1063/5.0318522",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/3/031301/3383338/A-compact-unified-sample-stage-for-2D-materials",
+      "backupUrl": "https://doi.org/10.1063/5.0318522",
+      "accessNote": "已打开AIP正式页，核验作者、DOI、样品台功能、材料验证与公开数据边界",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-023904",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "D"
+      ],
+      "title": "A practical guide for microdevice fabrication using a focused ion beam equipped with a flip-stage",
+      "titleZh": "翻转台FIB微器件制造指南：30 kV损伤层、三维雕刻与低阻接触",
+      "authors": "Federico Balduini, Luca Laveder, Nathan Drucker, Soujanya Madasu, Steffen Reidt, Marilyne Sousa, Cezar Zota, Bernd Gotsmann, Heinz Schmid",
+      "venue": "Review of Scientific Instruments 97, 023904 (2026)",
+      "published": "2026-02-12",
+      "recommendedOn": "2026-08-13",
+      "timeTier": "2026开放获取方法论文",
+      "system": "SEM–Ga FIB配原位flip-stage；从单晶切片、lift-out、锚定、45°底切、三维图形化，再转移到Hall、热输运、门控或MEMS芯片；IBID/EBID Pt接触",
+      "conditions": "Ga离子典型30 kV；CoSi截面实测损伤层28.4 nm；Pt IBID最优电流密度约0.01 nA/μm²；沉积1 μm厚约3 min；悬浮MEMS需降电流3–5倍；接触面积示例约5 μm²",
+      "methods": [
+        "预先确定晶向并切出lamella",
+        "lift-out至flip-stage后多自由度三维雕刻",
+        "保护Pt、低损伤精修与再沉积控制",
+        "IBID/EBID Pt接触及温变电阻/接触电阻验收"
+      ],
+      "summary": "30 kV Ga在CoSi形成28.4 nm损伤层，说明纳米器件边缘不能视为理想体材料；flip-stage提升三维几何/晶向控制；Pt IBID在约0.01 nA/μm²获得最低电阻。",
+      "relevance": "直接对应MTJ侧壁再沉积、FIB截面、低温微器件和异质芯片集成；可把“离子剂量—损伤宽度—接触电阻—低温输运”设为固定验收链。",
+      "limitation": "这是跨材料的实践指南，不证明相同30 kV条件在CoFeB/MgO形成28.4 nm损伤；Ga注入、热负载和Pt碳含量强依赖材料与几何；未给MTJ TMR/RA/WER。",
+      "industrialization": "适合研发与失效分析，不是高吞吐量晶圆图形化；还需自动对准、剂量数据库、低能清洗、无Ga替代束、统计良率和BEOL污染控制。",
+      "whyRecommended": "先看图1损伤/再沉积与28.4 nm TEM，图2–4完整flip-stage流程，图5 Pt电阻/接触；50–75分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.1063/5.0295819",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/2/023904/3379366/A-practical-guide-for-microdevice-fabrication",
+      "backupUrl": "https://doi.org/10.1063/5.0295819",
+      "accessNote": "已打开AIP全文，核验作者、日期、30 kV/28.4 nm损伤、0.01 nA/μm²、3 min、MEMS降流与flip-stage流程",
       "featured": true
     }
   ]

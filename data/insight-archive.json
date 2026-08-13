@@ -260,6 +260,18 @@
       "atomicIds": [
         "2026-08-12-ag-ruo2-interface"
       ]
+    },
+    {
+      "date": "2026-08-13",
+      "opportunityIds": [
+        "2026-08-13-step-interface-noise"
+      ],
+      "methodIds": [
+        "2026-08-13-in-situ-fib-loop"
+      ],
+      "atomicIds": [
+        "2026-08-13-edge-nucleation-process"
+      ]
     }
   ],
   "items": [
@@ -4196,6 +4208,153 @@
       ],
       "researchConnection": "直连原位界面、原子层厚度、缺陷/成分控制和SOT-MRAM材料集成。",
       "takeaway": "原子锐界面必须同时通过化学、应变和自旋透明度三项验收。"
+    },
+    {
+      "id": "2026-08-13-step-interface-noise",
+      "date": "2026-08-13",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 原子台阶与自旋界面",
+      "title": "原子台阶—界面透明度—低温噪声三联因果实验",
+      "subtitle": "把形貌、动态自旋参数和隧穿缺陷放进同一片样品",
+      "summary": "借A类的台阶方向对照与B类的TR-MOKE模型，检验CoFeB/MgO/Ta中台阶密度是否共同控制SOT透明度和低温RTN。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "prb-114-055422",
+        "jap-139-063904"
+      ],
+      "question": "亚纳米台阶是否同时改变自旋透明度、局域陷阱和低温写入变异？",
+      "rationale": "A证明0.31 nm台阶可造成>10³输运各向异性；B证明Ta厚度/热态可使透明度变化85%，但两者未在MTJ中联测。",
+      "workflow": [
+        "制备低/中/高台阶密度基底",
+        "同片沉积MgO/CoFeB/Ta并做方向性Hall条/MTJ",
+        "TR-MOKE/FMR提透明度",
+        "4–300 K测RTN、TMR、RA与脉冲WER"
+      ],
+      "equipment": [
+        "AFM/STM或截面TEM",
+        "TR-MOKE/FMR",
+        "低温低噪声探针",
+        "脉冲源和高速采集"
+      ],
+      "measurements": [
+        "台阶密度/方向",
+        "Gmix/透明度/阻尼",
+        "TMR/RA",
+        "RTN与WER"
+      ],
+      "metrics": [
+        "透明度3σ",
+        "RTN陷阱密度",
+        "TMR保留",
+        "WER长尾与方向相关"
+      ],
+      "evidenceBoundary": "In/Si超导体与CoFeB/Ta是不同系统，联合因果关系只是本站假设。",
+      "firstSteps": [
+        "先做不含MgO的Ta/CoFeB方向对照",
+        "确认形貌与阻尼可重复",
+        "再加入势垒和低温结输运"
+      ],
+      "researchConnection": "直连原子制造、MgO/CoFeB、低温输运和缺陷计量。",
+      "takeaway": "同一台阶变量必须同时通过结构、自旋和噪声三种读出。"
+    },
+    {
+      "id": "2026-08-13-in-situ-fib-loop",
+      "date": "2026-08-13",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "D/E · 生长—加工—测量闭环",
+      "title": "UHV统一样品台—flip-stage FIB—低温输运闭环平台",
+      "subtitle": "每次加工都保留可追溯见证片与电阻基线",
+      "summary": "先在UHV边生长边监测，再用定向FIB制造微器件并量化损伤，最后回到低温测量，形成可回溯工艺链。",
+      "status": "由D/E实测组合的设备路线",
+      "relatedPaperIds": [
+        "rsi-97-031301",
+        "rsi-97-023904"
+      ],
+      "question": "如何区分材料生长异常与FIB/接触引入的低温输运漂移？",
+      "rationale": "D给出在生长电阻，E量化FIB损伤和接触窗口；二者串联可避免事后猜因。",
+      "workflow": [
+        "UHV样品台记录成核/退火R□",
+        "保留未加工见证区",
+        "FIB按剂量/终抛矩阵图形化",
+        "室温与低温逐级复测并写入统一元数据"
+      ],
+      "equipment": [
+        "UHV微蒸发/溅射与多针台",
+        "QCM/RHEED",
+        "FIB-SEM flip-stage",
+        "TEM-EELS与低温锁相"
+      ],
+      "measurements": [
+        "在生长R□",
+        "加工前后R/噪声",
+        "损伤宽度/成分",
+        "接触电阻与热漂移"
+      ],
+      "metrics": [
+        "成核阈值",
+        "R变化百分比",
+        "Ga/氧扩散nm",
+        "接触电阻3σ"
+      ],
+      "evidenceBoundary": "两个平台尚未在同一设备/同一MTJ上集成。",
+      "firstSteps": [
+        "Au/Cr标准样校准UHV电阻",
+        "CoSi复现28.4 nm损伤量级",
+        "再转入CoFeB/MgO见证片"
+      ],
+      "researchConnection": "升级设备自动化、工艺追溯、低温输运与失效分析。",
+      "takeaway": "生长后、FIB后、接触后各留一个电学检查点，才能定位损失。"
+    },
+    {
+      "id": "2026-08-13-edge-nucleation-process",
+      "date": "2026-08-13",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "C/E · 边缘与成核",
+      "title": "FIB侧壁损伤—SOT角落成核联合版图DOE",
+      "subtitle": "把理论成核角转化为可制造性和WER指标",
+      "summary": "用受控圆角、缺口、束能和保护层改变边界，再比较理论预测的成核位置与真实器件WER。",
+      "status": "理论与方法组合路线，待器件实测",
+      "relatedPaperIds": [
+        "jap-140-063903",
+        "rsi-97-023904"
+      ],
+      "question": "角落成核的不对称有多少来自理想SOT/DMI，有多少来自FIB侧壁与再沉积？",
+      "rationale": "C预测角落与极性规则，E显示30 kV Ga可产生28.4 nm损伤；纳米器件中二者尺度可相当。",
+      "workflow": [
+        "设计尖角/圆角/单缺口/对称缺口",
+        "30/16/5 kV终抛与保护Pt矩阵",
+        "成像首核位置",
+        "统计正反极性Jc、延迟与WER"
+      ],
+      "equipment": [
+        "电子束/FIB图形化",
+        "时间分辨MOKE或XMCD-PEEM",
+        "TEM-EELS",
+        "纳秒脉冲/高速示波"
+      ],
+      "measurements": [
+        "边缘损伤宽度",
+        "首核角概率",
+        "畴壁速度",
+        "Jc/WER/TMR"
+      ],
+      "metrics": [
+        "模型—实测位置一致率",
+        "WER 10⁻⁶预筛",
+        "TMR保留率",
+        "CD与圆角3σ"
+      ],
+      "evidenceBoundary": "C为理论，E的28.4 nm来自CoSi；MTJ上的数值必须重新实测。",
+      "firstSteps": [
+        "先用大尺寸Hall条验证极性规则",
+        "再在同片改变终抛能量",
+        "最后缩到MTJ并增加统计量"
+      ],
+      "researchConnection": "直连图形化损伤、侧壁封护、SOT-MRAM和制造容差。",
+      "takeaway": "成核角应成为与CD、TMR并列的工艺验收指标。"
     }
   ]
 }
