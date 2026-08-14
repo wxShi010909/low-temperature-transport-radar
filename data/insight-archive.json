@@ -272,6 +272,18 @@
       "atomicIds": [
         "2026-08-13-edge-nucleation-process"
       ]
+    },
+    {
+      "date": "2026-08-14",
+      "opportunityIds": [
+        "2026-08-14-electron-temp-spin-interface"
+      ],
+      "methodIds": [
+        "2026-08-14-diffusion-mfm-loop"
+      ],
+      "atomicIds": [
+        "2026-08-14-interface-recovery"
+      ]
     }
   ],
   "items": [
@@ -4355,6 +4367,147 @@
       ],
       "researchConnection": "直连图形化损伤、侧壁封护、SOT-MRAM和制造容差。",
       "takeaway": "成核角应成为与CD、TMR并列的工艺验收指标。"
+    },
+    {
+      "id": "2026-08-14-electron-temp-spin-interface",
+      "date": "2026-08-14",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 结温与自旋界面",
+      "title": "电子温度—界面透明度—WER联合标定",
+      "subtitle": "不要只用台温解释写入；把电子温度和自旋混合电导同时纳入WER模型。",
+      "summary": "不要只用台温解释写入；把电子温度和自旋混合电导同时纳入WER模型。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "arxiv-2608-06708",
+        "jap-140-013901"
+      ],
+      "question": "电子温度和自旋透明度如何共同决定低温写入分布？",
+      "rationale": "由今日直接实测或理论结果组合形成，尚未在同一MTJ平台验证。",
+      "workflow": [
+        "建立电子温度校准",
+        "制备重金属厚度系列",
+        "同步测FMR/TMR/RA",
+        "脉冲写入统计WER与恢复"
+      ],
+      "equipment": [
+        "低温锁相与脉冲源",
+        "FMR/TR-MOKE",
+        "高速示波与热模型"
+      ],
+      "measurements": [
+        "电子温度",
+        "阻尼/混合电导",
+        "TMR/RA/Jc/WER"
+      ],
+      "metrics": [
+        "结温误差<校准不确定度",
+        "混合电导3σ",
+        "WER长尾"
+      ],
+      "evidenceBoundary": "跨材料迁移属于本站推断；所有数值必须在CoFeB/MgO器件上重新测量。",
+      "firstSteps": [
+        "先校准台温—电子温度",
+        "再做3/5 nm材料对照",
+        "最后进入纳米MTJ"
+      ],
+      "researchConnection": "连接原子制造、MTJ/MRAM、低温输运与设备平台。",
+      "takeaway": "不要只用台温解释写入；把电子温度和自旋混合电导同时纳入WER模型。"
+    },
+    {
+      "id": "2026-08-14-diffusion-mfm-loop",
+      "date": "2026-08-14",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "C/D · 模型—成像闭环",
+      "title": "有限温扩散—35 T磁成像—电学联合平台",
+      "subtitle": "用模型预测、MFM实空间图和电阻三路互证磁输运。",
+      "summary": "用模型预测、MFM实空间图和电阻三路互证磁输运。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "prb-whhg-tfv4",
+        "rsi-97-031302"
+      ],
+      "question": "如何让有限温模型接受实空间磁畴和电学的联合校验？",
+      "rationale": "由今日直接实测或理论结果组合形成，尚未在同一MTJ平台验证。",
+      "workflow": [
+        "有限温模型预测磁畴/扩散",
+        "2–300 K电学测量",
+        "低温MFM实空间成像",
+        "比较位置、时间与输运系数"
+      ],
+      "equipment": [
+        "低温矢量磁体",
+        "MFM",
+        "高速电学与模拟服务器"
+      ],
+      "measurements": [
+        "扩散常数",
+        "磁畴位置",
+        "频移噪声",
+        "电阻/磁滞"
+      ],
+      "metrics": [
+        "模型—实测一致率",
+        "60 mHz级噪声基线",
+        "空间/时间分辨率"
+      ],
+      "evidenceBoundary": "跨材料迁移属于本站推断；所有数值必须在CoFeB/MgO器件上重新测量。",
+      "firstSteps": [
+        "标准磁膜验收噪声",
+        "再做大尺寸器件",
+        "最后联测纳米MTJ"
+      ],
+      "researchConnection": "连接原子制造、MTJ/MRAM、低温输运与设备平台。",
+      "takeaway": "用模型预测、MFM实空间图和电阻三路互证磁输运。"
+    },
+    {
+      "id": "2026-08-14-interface-recovery",
+      "date": "2026-08-14",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "B/E · 界面与缺陷恢复",
+      "title": "MgO界面缺陷的脉冲诊断与恢复路线",
+      "subtitle": "借鉴HZO氧空位恢复，但在MgO/CoFeB中重新验证极性、保持和自旋隧穿机制。",
+      "summary": "借鉴HZO氧空位恢复，但在MgO/CoFeB中重新验证极性、保持和自旋隧穿机制。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "jap-140-013901",
+        "apl-128-202901"
+      ],
+      "question": "能否用受控脉冲恢复隧道势垒缺陷而不牺牲保持？",
+      "rationale": "由今日直接实测或理论结果组合形成，尚未在同一MTJ平台验证。",
+      "workflow": [
+        "制造MgO/CoFeB见证片",
+        "电疲劳至可控退化",
+        "正/负恢复脉冲矩阵",
+        "TEM-EELS/RTN/TMR/保持复核"
+      ],
+      "equipment": [
+        "脉冲参数分析仪",
+        "TEM-EELS",
+        "低频噪声与温控探针"
+      ],
+      "measurements": [
+        "TMR/RA",
+        "RTN陷阱",
+        "TDDB",
+        "保持/耐久"
+      ],
+      "metrics": [
+        "恢复率",
+        "TMR保留率",
+        "保持无退化",
+        "循环寿命"
+      ],
+      "evidenceBoundary": "跨材料迁移属于本站推断；所有数值必须在CoFeB/MgO器件上重新测量。",
+      "firstSteps": [
+        "先用见证电容验证极性",
+        "再做MTJ小样本",
+        "通过保持后才扩大统计"
+      ],
+      "researchConnection": "连接原子制造、MTJ/MRAM、低温输运与设备平台。",
+      "takeaway": "借鉴HZO氧空位恢复，但在MgO/CoFeB中重新验证极性、保持和自旋隧穿机制。"
     }
   ]
 }

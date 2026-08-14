@@ -160,6 +160,13 @@
       "classicIds": [
         "classic-werner-2011-lsmo-sto"
       ]
+    },
+    {
+      "date": "2026-08-14",
+      "reviewId": "review-straintronic-computing-2026",
+      "classicIds": [
+        "classic-spin-pumping-2002"
+      ]
     }
   ],
   "items": [
@@ -1533,6 +1540,60 @@
         "再看4 K磁场扫描与1900%窗口。",
         "重点看360°角扫描的四重对称。",
         "最后审视Jullière外推边界；25–40分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-straintronic-computing-2026",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Straintronic nanomagnetic computing",
+      "titleZh": "应变纳磁计算：从约100 aJ/bit写入到缺陷与误差挑战",
+      "authors": "Md Mahadi Rajib, Shouvik Sarker, Dhritiman Bhattacharya, Jayasimha Atulasimha",
+      "venue": "Applied Physics Letters 128, 150501 (2026)",
+      "published": "2026-04-13",
+      "recommendedOn": "2026-08-14",
+      "doi": "10.1063/5.0288178",
+      "url": "https://pubs.aip.org/aip/apl/article/128/15/150501/3386904/Straintronic-nanomagnetic-computing",
+      "backupUrl": "https://doi.org/10.1063/5.0288178",
+      "assistantSummary": "正式Perspective系统梳理压电层把电场转成应变、再通过逆磁致伸缩控制纳磁体和MTJ软层的路线；给出约100 aJ/bit潜力，并覆盖布尔、非布尔和神经形态器件。",
+      "whySelected": "它把今天的界面自旋输运、磁成像、缺陷可靠性与低功耗写入放到共同的“材料耦合—器件误差—计算架构”框架。",
+      "readingGuide": [
+        "先读逆磁致伸缩和应变转移。",
+        "再看MTJ与布尔器件。",
+        "重点看缺陷、热误差和神经形态部分。",
+        "最后审视100 aJ/bit的边界；70–90分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-spin-pumping-2002",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "D"
+      ],
+      "title": "Spin pumping and magnetization dynamics in metallic multilayers",
+      "titleZh": "自旋泵浦与金属多层磁化动力学的经典理论",
+      "authors": "Y. Tserkovnyak, A. Brataas, G. E. W. Bauer",
+      "venue": "Physical Review B 66, 224403 (2002)",
+      "published": "2002-12-18",
+      "recommendedOn": "2026-08-14",
+      "doi": "10.1103/PhysRevB.66.224403",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.66.224403",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.66.224403",
+      "assistantSummary": "该理论奠定了用磁化进动向相邻金属泵出自旋流、并以附加Gilbert阻尼表征界面角动量损失的框架，是今天YIG/WTi混合电导反演的理论根基。",
+      "whySelected": "与B类厚度实验直接成对阅读，能看清“线宽实测—阻尼拟合—混合电导模型”三层证据。",
+      "readingGuide": [
+        "先看自旋泵浦边界条件。",
+        "再看混合电导和反向作用。",
+        "重点看附加阻尼的厚度关系。",
+        "最后与YIG/WTi数值对照；35–50分钟。"
       ],
       "notNew": true
     }

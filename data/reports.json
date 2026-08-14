@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-13T09:00:28+08:00",
-  "reportDate": "2026-08-13",
+  "updatedAt": "2026-08-14T09:01:49+08:00",
+  "reportDate": "2026-08-14",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -451,6 +451,25 @@
         "jap-140-063903",
         "rsi-97-031301",
         "rsi-97-023904"
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "label": "详细日报：电子温度校准—自旋界面厚度—有限温扩散—35 T磁成像—3 nm隧道缺陷恢复",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "arxiv-2608-06708",
+        "jap-140-013901",
+        "prb-whhg-tfv4",
+        "rsi-97-031302",
+        "apl-128-202901"
       ]
     }
   ],
@@ -5166,6 +5185,181 @@
       "url": "https://pubs.aip.org/aip/rsi/article/97/2/023904/3379366/A-practical-guide-for-microdevice-fabrication",
       "backupUrl": "https://doi.org/10.1063/5.0295819",
       "accessNote": "已打开AIP全文，核验作者、日期、30 kV/28.4 nm损伤、0.01 nA/μm²、3 min、MEMS降流与flip-stage流程",
+      "featured": true
+    },
+    {
+      "id": "arxiv-2608-06708",
+      "track": "A",
+      "secondaryTracks": [
+        "D"
+      ],
+      "title": "Electron Temperature and Electron-Electron Scattering Length in GaAs/AlGaAs Using Mesoscopic Multiparallel Aperture Geometries",
+      "titleZh": "用多平行孔弹道磁阻标定电子温度与电子—电子散射长度",
+      "authors": "Arati Thapa, Rishav Khatiwada, Prakash Sharma, Jean J. Heremans, Adbhut Gupta, Kirk W. Baldwin, Loren N. Pfeiffer, Mansour Shayegan",
+      "venue": "arXiv:2608.06708 [cond-mat.mes-hall]（预印本）",
+      "published": "2026-08-07",
+      "recommendedOn": "2026-08-14",
+      "timeTier": "一周内预印本",
+      "system": "超高迁移率GaAs/AlGaAs二维电子气；12个并联孔径，邻孔中心距3 μm；四端局域磁阻结构",
+      "conditions": "4.2–20 K温变与垂直磁场扫描；交流总电流100 nA，即每孔8.33 nA；4.2 K下叠加直流加热电流；论文未给MTJ相关TMR、RA或WER",
+      "methods": [
+        "微纳加工多平行孔屏障",
+        "四端测量对称弹道磁聚焦峰",
+        "由峰幅随温度指数衰减反演电子—电子散射长度",
+        "用温度标定曲线把直流偏置映射为电子温度"
+      ],
+      "summary": "不同回旋轨迹的磁阻峰在8、12和20 K附近先后偏离电子—电子散射主导区；4.2 K下电子温度随直流加热呈近二次关系，并出现超弹道电导迹象。",
+      "relevance": "为低温MTJ脉冲自热提供“台温不等于电子温度”的独立校准范式，可用峰值或其他温敏输运特征替代仅靠热台读数。",
+      "limitation": "预印本尚未同行评议；GaAs二维电子气不是MTJ；电子温度反演依赖电子—电子散射主导假设，高温时电子—声子散射使模型失效。",
+      "industrialization": "属于低温计量方法；转向器件需在真实结偏压、纳秒脉冲、封装热阻和器件分布下建立结温—WER—可靠性校准。",
+      "whyRecommended": "先看图1孔径与回旋轨迹、图2温度衰减、图3偏置加热和图4超弹道区；45–60分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "arxiv": "2608.06708",
+      "url": "https://arxiv.org/html/2608.06708v1",
+      "backupUrl": "https://arxiv.org/abs/2608.06708",
+      "accessNote": "已打开arXiv全文，核验作者、提交日期、12孔、3 μm、4.2–20 K、100 nA及直流加热结论",
+      "featured": true
+    },
+    {
+      "id": "jap-140-013901",
+      "track": "B",
+      "secondaryTracks": [
+        "D",
+        "E"
+      ],
+      "title": "Thickness-dependent spin pumping in YIG/W90Ti10 bilayers",
+      "titleZh": "YIG/WTi双层自旋泵浦：3 nm合金层的有效混合电导达到峰值",
+      "authors": "M. Hachem, Z. Harajli, S. Isber, M. Haidar",
+      "venue": "Journal of Applied Physics 140, 013901 (2026)",
+      "published": "2026-07-01",
+      "recommendedOn": "2026-08-14",
+      "timeTier": "2026正式实验论文",
+      "system": "不同厚度YIG/W90Ti10双层，并以YIG/W作比较；WTi厚度系列至少包含3和5 nm",
+      "conditions": "宽带铁磁共振测量阻尼与线宽；公开摘要未给完整YIG厚度、温度、频率端点、沉积温度和退火条件",
+      "methods": [
+        "制备YIG与WTi厚度系列",
+        "宽带FMR提取Gilbert阻尼",
+        "用裸YIG基线分离自旋泵浦阻尼",
+        "反演有效自旋混合电导并与YIG/W对照"
+      ],
+      "summary": "5 nm WTi使薄YIG阻尼增加，对应有效混合电导3.3×10^18 m^-2；WTi厚度3 nm时峰值4.2×10^18 m^-2，Ti掺杂相对纯W降低界面传输。",
+      "relevance": "给出“合金成分—厚度—结构相—界面自旋透明度”的材料筛选模板，可迁移到SOT-MRAM重金属/自由层界面。",
+      "limitation": "YIG为绝缘铁磁体，不是CoFeB/MgO结；混合电导来自FMR模型反演；原文公开摘要未给TMR、RA、Jc、WER、保持和耐久。",
+      "industrialization": "处于自旋源材料筛选；需在CMOS兼容金属自由层、纳米器件、300 mm均匀性、退火互扩散和脉冲写入下再验证。",
+      "whyRecommended": "先看厚度系列与FMR线宽，再看有效混合电导峰值及结构相解释；35–50分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1063/5.0320132",
+      "url": "https://pubs.aip.org/aip/jap/article/140/1/013901/3397164/Thickness-dependent-spin-pumping-in-YIG-W90Ti10",
+      "backupUrl": "https://doi.org/10.1063/5.0320132",
+      "accessNote": "已打开AIP正式页，核验作者、日期、DOI、3/5 nm与3.3/4.2×10^18 m^-2",
+      "featured": true
+    },
+    {
+      "id": "prb-whhg-tfv4",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "D"
+      ],
+      "title": "Finite-temperature spin diffusion in the two-dimensional XY model",
+      "titleZh": "二维XY模型有限温自旋扩散：高温展开与量子模拟器定量对照",
+      "authors": "Erik Fitzner, Byungjin Lee, Junhyeok Hur, Minseok Kim, Benedikt Schneider, Jae-yoon Choi, Björn Sbierski",
+      "venue": "Physical Review B, accepted (2026)",
+      "published": "2026-08-13",
+      "recommendedOn": "2026-08-14",
+      "timeTier": "昨日接收",
+      "system": "方格晶格量子自旋1/2 XY模型；实验用光晶格硬核玻色子量子模拟器实现",
+      "conditions": "有限温、高温至流体动力学长时标；公开摘要未给晶格尺寸、耦合常数、温度端点和误差条范围",
+      "methods": [
+        "动力学高温展开计算长时间自旋关联",
+        "提取二维自旋扩散常数",
+        "光晶格量子模拟器制备硬核玻色子",
+        "实验与理论逐温度定量比较"
+      ],
+      "summary": "理论与实验的自旋扩散常数高度一致，验证二维有限温自旋输运的定量量子模拟；并预测动态自旋电导和各向异性破坏可积性后的行为。",
+      "relevance": "提供“理论模型—可编程实验—输运系数”闭环，适合用于验证MTJ热涨落和自旋扩散模型的推断层级。",
+      "limitation": "原子量子模拟器不是固态MTJ；结果针对XY哈密顿量和有限温扩散，不能直接给CoFeB自旋扩散长度或写入电流。",
+      "industrialization": "属于基础理论验证；器件化需把无序、声子、界面SOC、有限尺寸、焦耳热和真实材料参数纳入并与电学实验对照。",
+      "whyRecommended": "先读模型映射，再看扩散常数的理论—实验对照和未来动态电导预测；40–55分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "arxiv": "2605.20124",
+      "doi": "10.1103/whhg-tfv4",
+      "url": "https://arxiv.org/abs/2605.20124",
+      "backupUrl": "https://journals.aps.org/prb/accepted/10.1103/whhg-tfv4",
+      "accessNote": "已核验APS接收页元数据和arXiv直接来源；APS全文入口受限，未公开数值明确标注",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-031302",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Cryogenic magnetic force microscopy at 35 T and Sub-3 K in a water-cooled magnet",
+      "titleZh": "35 T、2.7 K低温磁力显微镜：33 T下频移噪声约60 mHz",
+      "authors": "Shuai Dong et al.",
+      "venue": "Review of Scientific Instruments 97, 031302 (2026)",
+      "published": "2026-03-20",
+      "recommendedOn": "2026-08-14",
+      "timeTier": "2026正式仪器论文",
+      "system": "水冷电阻磁体内的非金属MFM头、高Q悬臂、静态交换气氦低温恒温器；以SrRuO3薄膜验证",
+      "conditions": "2.7 K、0–35 T成像；33 T频移噪声约60 mHz，典型磁信号>200 mHz",
+      "methods": [
+        "非金属扫描头抑制涡流与磁力",
+        "静态交换气低温环境降低振动",
+        "高Q探针与频移读出",
+        "磁场爬升中连续成像SrRuO3磁畴"
+      ],
+      "summary": "平台在35 T以下保持亚3 K成像；33 T噪声约60 mHz；SrRuO3磁畴受铁弹畴锁定并在0–35 T范围演化。",
+      "relevance": "可直接观察极端场下磁畴/缺陷，而不是只从电阻反演；适合验证MTJ边缘损伤、钉扎与翻转不均匀性。",
+      "limitation": "MFM探针会扰动软磁层；空间分辨率和扫描速度在公开摘要中未给；SrRuO3薄膜不等于纳米MTJ写入状态。",
+      "industrialization": "科研级极端场平台；量产诊断需自动定位、晶圆兼容、无扰动探针、吞吐量和与电学脉冲同步。",
+      "whyRecommended": "先看非金属头/低振动设计，再看33 T噪声和2.7 K的0–35 T磁畴序列；40–60分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1063/5.0309120",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/3/031302/3384131/Cryogenic-magnetic-force-microscopy-at-35-T-and",
+      "backupUrl": "https://doi.org/10.1063/5.0309120",
+      "accessNote": "已打开AIP正式页，核验作者、DOI、2.7 K、35 T、33 T/60 mHz及>200 mHz信号",
+      "featured": true
+    },
+    {
+      "id": "apl-128-202901",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Recoverable ultrathin Hf0.5Zr0.5O2-based ferroelectric tunnel junctions with significantly prolonged endurance",
+      "titleZh": "3 nm HZO隧道结的缺陷恢复：10 ns写入下耐久达到10^8次",
+      "authors": "Jingchao Xiao, Huiping Wang, Wei Liu, Wei Zhang, Yubao Li",
+      "venue": "Applied Physics Letters 128, 202901 (2026)",
+      "published": "2026-05-19",
+      "recommendedOn": "2026-08-14",
+      "timeTier": "2026正式器件论文",
+      "system": "W/WOx/Hf0.5Zr0.5O2/Pt铁电隧道结；HZO厚3 nm，含溅射高导WOx界面层",
+      "conditions": "10^5与10^6 Hz双极方波循环；10 ns单脉冲编程与单极负恢复脉冲；公开摘要未给器件横向尺寸、沉积温度和完整电压端点",
+      "methods": [
+        "制备3 nm HZO与WOx界面层",
+        "测剩余极化和隧穿电阻窗口",
+        "高频双极循环施加疲劳",
+        "单极负脉冲释放界面钉扎氧空位并恢复"
+      ],
+      "summary": "剩余极化19 μC/cm²；薄膜循环达到3.7×10^9与4.53×10^10次；FTJ隧穿电致电阻比最高5.8×10^5；10 ns写入下恢复后耐久10^8次且窗口>13000。",
+      "relevance": "虽非磁隧道结，但它把原子级氧空位、界面层、记忆窗口和恢复脉冲连成可量化可靠性链，对MgO势垒缺陷治理非常有启发。",
+      "limitation": "FTJ的极化/氧空位机制不能直接等同MTJ自旋隧穿；摘要未给RA、TMR、写入能量、保持时间和晶圆分布。",
+      "industrialization": "接近超薄非易失存储器件，但仍需阵列选通、片内/批间分布、数据保持、工艺热预算、BEOL兼容和恢复策略开销。",
+      "whyRecommended": "先看3 nm堆栈与极化，再看疲劳—恢复循环、10 ns耐久和氧空位机制；35–50分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.1063/5.0313762",
+      "url": "https://pubs.aip.org/aip/apl/article/128/20/202901/3391612/Recoverable-ultrathin-Hf0-5Zr0-5O2-based",
+      "backupUrl": "https://doi.org/10.1063/5.0313762",
+      "accessNote": "已打开AIP正式页，核验作者、DOI、3 nm、19 μC/cm²、循环次数、5.8×10^5、10 ns与>13000",
       "featured": true
     }
   ]
