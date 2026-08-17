@@ -284,6 +284,18 @@
       "atomicIds": [
         "2026-08-14-interface-recovery"
       ]
+    },
+    {
+      "date": "2026-08-17",
+      "opportunityIds": [
+        "2026-08-17-hotspot-stability"
+      ],
+      "methodIds": [
+        "2026-08-17-cadr-symmetry-loop"
+      ],
+      "atomicIds": [
+        "2026-08-17-atomic-barrier"
+      ]
     }
   ],
   "items": [
@@ -4508,6 +4520,144 @@
       ],
       "researchConnection": "连接原子制造、MTJ/MRAM、低温输运与设备平台。",
       "takeaway": "借鉴HZO氧空位恢复，但在MgO/CoFeB中重新验证极性、保持和自旋隧穿机制。"
+    },
+    {
+      "id": "2026-08-17-hotspot-stability",
+      "date": "2026-08-17",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 热点—稳定写态",
+      "title": "热点电子—交换偏置—WER长尾联合实验",
+      "subtitle": "把局域热点图与磁态稳定窗口逐器件关联，找出小场扰动和自热共同造成的尾部失效。",
+      "summary": "把局域热点图与磁态稳定窗口逐器件关联，找出小场扰动和自热共同造成的尾部失效。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "rsi-97-081303",
+        "apl-129-032403"
+      ],
+      "question": "局域电子热点如何放大磁态窗口的长尾误码？",
+      "rationale": "由今日直接实测、理论预测与正式综述组合形成，尚未在同一MTJ平台验证。",
+      "workflow": [
+        "校准金属微加热器热点",
+        "制备有/无交换偏置器件",
+        "温变脉冲写入并成像",
+        "关联热点、磁滞与WER"
+      ],
+      "equipment": [
+        "低温SNoiM",
+        "矢量磁体与脉冲源",
+        "高速示波/锁相"
+      ],
+      "measurements": [
+        "热点宽度与温升",
+        "磁滞/Tc/TMR/RA",
+        "WER与恢复"
+      ],
+      "metrics": [
+        "热点—WER相关系数",
+        "场扰动容限",
+        "3σ器件分布"
+      ],
+      "evidenceBoundary": "跨材料迁移属于本站推断；所有定量性能必须在目标CoFeB/MgO或AFMTJ器件上重新测量。",
+      "firstSteps": [
+        "校准金属微加热器热点",
+        "制备有/无交换偏置器件",
+        "温变脉冲写入并成像"
+      ],
+      "researchConnection": "连接原子制造、MTJ/MRAM、低温输运和设备平台。",
+      "takeaway": "把局域热点图与磁态稳定窗口逐器件关联，找出小场扰动和自热共同造成的尾部失效。"
+    },
+    {
+      "id": "2026-08-17-cadr-symmetry-loop",
+      "date": "2026-08-17",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "C/D · 对称性—低温平台",
+      "title": "连续mK—对称性输运—热预算闭环",
+      "subtitle": "用连续cADR承载极化/滑移AFMTJ温变输运，并把每根线缆与写入脉冲纳入3 μW级热预算。",
+      "summary": "用连续cADR承载极化/滑移AFMTJ温变输运，并把每根线缆与写入脉冲纳入3 μW级热预算。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "prb-x7b4-t1hk",
+        "rsi-97-025214"
+      ],
+      "question": "如何在连续mK平台上把对称性预测转成可复现实验？",
+      "rationale": "由今日直接实测、理论预测与正式综述组合形成，尚未在同一MTJ平台验证。",
+      "workflow": [
+        "建立DC/RF热预算",
+        "加工滑移/极化隧道器件",
+        "20–300 mK连续输运",
+        "对照联合对称性模型"
+      ],
+      "equipment": [
+        "四级cADR或同级平台",
+        "低噪DC/RF线",
+        "脉冲与极化控制"
+      ],
+      "measurements": [
+        "TMR/RA/偏压谱",
+        "极化与保持",
+        "样品级温升"
+      ],
+      "metrics": [
+        "50 mK冷量余度",
+        "模型—实测一致率",
+        "连续运行可用率"
+      ],
+      "evidenceBoundary": "跨材料迁移属于本站推断；所有定量性能必须在目标CoFeB/MgO或AFMTJ器件上重新测量。",
+      "firstSteps": [
+        "建立DC/RF热预算",
+        "加工滑移/极化隧道器件",
+        "20–300 mK连续输运"
+      ],
+      "researchConnection": "连接原子制造、MTJ/MRAM、低温输运和设备平台。",
+      "takeaway": "用连续cADR承载极化/滑移AFMTJ温变输运，并把每根线缆与写入脉冲纳入3 μW级热预算。"
+    },
+    {
+      "id": "2026-08-17-atomic-barrier",
+      "date": "2026-08-17",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "B/E · 原子势垒与极化",
+      "title": "0.8–2.5 nm势垒—滑移极化—缺陷通道DOE",
+      "subtitle": "用ALD厚度梯度和界面堆垛控制区分均匀隧穿、导电丝与对称性选择通道。",
+      "summary": "用ALD厚度梯度和界面堆垛控制区分均匀隧穿、导电丝与对称性选择通道。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "jvb-44-042206",
+        "prb-x7b4-t1hk"
+      ],
+      "question": "原子层势垒和滑移极化能否共同形成低功耗多级隧穿状态？",
+      "rationale": "由今日直接实测、理论预测与正式综述组合形成，尚未在同一MTJ平台验证。",
+      "workflow": [
+        "沉积厚度楔形Al₂O₃/MgO",
+        "设置终止/滑移/退火对照",
+        "做TEM-EELS/XPS",
+        "联测I-V、RTN、TMR与保持"
+      ],
+      "equipment": [
+        "ALD/溅射真空互联",
+        "TEM-EELS/XPS",
+        "低噪声与脉冲参数仪"
+      ],
+      "measurements": [
+        "厚度/氧成分",
+        "I-V/RTN/TMR/RA",
+        "多级态线性/保持/耐久"
+      ],
+      "metrics": [
+        "片内厚度3σ",
+        "无突变模拟更新",
+        "保持与循环达标"
+      ],
+      "evidenceBoundary": "跨材料迁移属于本站推断；所有定量性能必须在目标CoFeB/MgO或AFMTJ器件上重新测量。",
+      "firstSteps": [
+        "沉积厚度楔形Al₂O₃/MgO",
+        "设置终止/滑移/退火对照",
+        "做TEM-EELS/XPS"
+      ],
+      "researchConnection": "连接原子制造、MTJ/MRAM、低温输运和设备平台。",
+      "takeaway": "用ALD厚度梯度和界面堆垛控制区分均匀隧穿、导电丝与对称性选择通道。"
     }
   ]
 }

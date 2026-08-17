@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-14T09:01:49+08:00",
-  "reportDate": "2026-08-14",
+  "updatedAt": "2026-08-17T09:01:15+08:00",
+  "reportDate": "2026-08-17",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -470,6 +470,25 @@
         "prb-whhg-tfv4",
         "rsi-97-031302",
         "apl-128-202901"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "label": "详细日报：热点电子成像—交换偏置自旋阀—AFM滑移隧穿—连续mK制冷—1–2 nm ALD势垒",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "rsi-97-081303",
+        "apl-129-032403",
+        "prb-x7b4-t1hk",
+        "rsi-97-025214",
+        "jvb-44-042206"
       ]
     }
   ],
@@ -5360,6 +5379,179 @@
       "url": "https://pubs.aip.org/aip/apl/article/128/20/202901/3391612/Recoverable-ultrathin-Hf0-5Zr0-5O2-based",
       "backupUrl": "https://doi.org/10.1063/5.0313762",
       "accessNote": "已打开AIP正式页，核验作者、DOI、3 nm、19 μC/cm²、循环次数、5.8×10^5、10 ns与>13000",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-081303",
+      "track": "A",
+      "secondaryTracks": [
+        "D"
+      ],
+      "title": "A cryogen-free terahertz near-field scanning noise microscope for nanoscale hot-electron imaging in devices at 70–300 K",
+      "titleZh": "70–300 K无液氦太赫兹近场噪声显微镜：把器件热点电子直接成像",
+      "authors": "Yinan Wang, Weijie Deng, Likai Sun, Shaowei Wang, Wei Lu, Qianchun Weng",
+      "venue": "Review of Scientific Instruments 97, 081303 (2026)",
+      "published": "2026-08-14",
+      "recommendedOn": "2026-08-17",
+      "timeTier": "三日前正式发表",
+      "system": "太赫兹扫描噪声显微镜（SNoiM）：AFM/样品为一级冷端，太赫兹探测器为二级冷端；无液氮、无液氦运行",
+      "conditions": "样品温度连续可调约70–300 K；探测器约5 K；原文公开页未给空间分辨率、扫描速度、样品器件堆栈、偏压和磁场范围",
+      "methods": [
+        "两级脉冲管分别冷却AFM/样品与太赫兹探测器",
+        "检测电流涨落产生的太赫兹倏逝场",
+        "低温光学链路抑制背景辐射",
+        "在连续温区对非平衡热点电子做实空间成像"
+      ],
+      "summary": "把以往仅300 K与约110 K两个离散温点的低温SNoiM扩展为约70–300 K连续调温，并把探测器维持在约5 K；论文定位是温变非平衡电子输运的空间计量平台。",
+      "relevance": "可用于定位MTJ写入热点、边缘电流拥挤和局域损伤，帮助区分“台温、晶格温度与电子温度”。",
+      "limitation": "这是一篇仪器论文；公开页面没有给MTJ样品、TMR、RA、Jc、WER、保持、耐久或空间分辨率，不能据此宣称已能解析单个先进MTJ结区。",
+      "industrialization": "处于失效分析/研发计量环节；进入晶圆级MRAM需验证磁场兼容、纳秒脉冲同步、自动定位、吞吐量、校准不确定度和洁净室兼容。",
+      "whyRecommended": "先看系统热架构与光路，再看70–300 K连续成像定义及噪声抑制；35–50分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1063/5.0332221",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/8/081303/3401126/A-cryogen-free-terahertz-near-field-scanning-noise",
+      "backupUrl": "https://doi.org/10.1063/5.0332221",
+      "accessNote": "已打开AIP正式页，核验作者、发表日期、DOI、70–300 K连续温区、约5 K探测器及两级脉冲管结构",
+      "featured": true
+    },
+    {
+      "id": "apl-129-032403",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C"
+      ],
+      "title": "Demonstration of exchange biased de Gennes spin valves",
+      "titleZh": "交换偏置de Gennes超导自旋阀：用反铁磁层稳定非易失双稳态",
+      "authors": "Biswajit Dutta, Sonali Baral, Pramod K. Sharma, Pushpak Banerjee, Avradeep Pal",
+      "venue": "Applied Physics Letters 129, 032403 (2026)",
+      "published": "2026-07-21",
+      "recommendedOn": "2026-08-17",
+      "timeTier": "近一月正式实验论文",
+      "system": "薄超导层夹在两层铁磁绝缘体之间，其中一侧铁磁绝缘体再与反铁磁层耦合形成交换偏置；公开页面未给具体材料名称与各层厚度",
+      "conditions": "不同方向场冷后测超导转变温度Tc与磁开关；公开页未给温区、场冷磁场、器件横向尺寸、绝对Tc与矫顽场数值",
+      "methods": [
+        "制备FI/S/FI并在一侧加入AFM交换偏置层",
+        "沿相反方向场冷设定AFM界面态",
+        "测电阻—温度提取Tc",
+        "测磁滞与双稳态并比较对小场波动的敏感性"
+      ],
+      "summary": "实测显示Tc随场冷方向改变；反铁磁层提高矫顽性并使非易失双稳态更稳健，降低小磁场波动导致误切换的敏感性。",
+      "relevance": "交换偏置是把“稳定参考态/自由态窗口”做宽的通用工具，可迁移到低温存储与MTJ钉扎层、训练效应和场历史管理。",
+      "limitation": "不是MgO/CoFeB常温MTJ；公开页没有绝对Tc、矫顽场增量、TMR、RA、写入能量、WER、保持和耐久，不能量化阵列收益。",
+      "industrialization": "处于低温存储单元材料验证；还需图形化器件、反复热循环、训练效应、写入场/电流兼容、阵列误码与CMOS低温外围验证。",
+      "whyRecommended": "先看器件结构与场冷协议，再看Tc双稳态及交换偏置磁滞；30–45分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0327245",
+      "url": "https://pubs.aip.org/aip/apl/article/129/3/032403/3398975/Demonstration-of-exchange-biased-de-Gennes-spin",
+      "backupUrl": "https://doi.org/10.1063/5.0327245",
+      "accessNote": "已打开AIP正式页并核验作者、日期、DOI、场冷方向依赖Tc、双稳态和矫顽性增强",
+      "featured": true
+    },
+    {
+      "id": "prb-x7b4-t1hk",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Mirror-time reversal symmetry controlled antiferromagnetic tunnel junctions",
+      "titleZh": "镜面—时间反演对称性控制的全反铁磁隧道结：滑移极化实现非易失电阻切换",
+      "authors": "Jing Sun, Xiaohong Zheng, Kang Jia, Tengfei Cao et al.",
+      "venue": "Physical Review B 113 (2026), accepted article",
+      "published": "2026-06",
+      "recommendedOn": "2026-08-17",
+      "timeTier": "2026正式接收理论论文",
+      "system": "全反铁磁隧道结；通过层间滑移改变极化与镜面—时间反演联合对称性；公开摘要未给可直接制造的完整电极/势垒厚度和器件尺寸",
+      "conditions": "第一性原理电子结构与量子输运计算；公开摘要报道非易失TMR最高约300%；温度、偏压窗口、k点与势垒厚度完整参数以正文/补充材料为准",
+      "methods": [
+        "筛选具有滑移极化的反铁磁层状结构",
+        "比较滑移前后联合对称性与能带自旋纹理",
+        "计算平行/等效反平行电导",
+        "由电导差得到TMR并验证极化反转不需要改写磁序"
+      ],
+      "summary": "理论提出仅靠层间滑移和极化反转切换电阻，而无需翻转反铁磁序；公开摘要给出最高约300%的非易失TMR预测。",
+      "relevance": "提供“原子位移—界面对称性—隧穿通道—电阻态”的直接设计链，适合指导原子级界面终止与滑移缺陷DOE。",
+      "limitation": "为理论预测；约300%依赖理想晶体、界面和计算参数；没有实测RA、写入电压/电流、WER、保持、耐久、热稳定和晶圆均匀性。",
+      "industrialization": "处于候选材料/结构设计；需要可控外延堆叠、低电压滑移写入、室温保持、重复循环、接触电阻、封装应力和阵列读写验证。",
+      "whyRecommended": "先看对称性操作与滑移路径，再看k分辨输运和TMR；40–60分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1103/x7b4-t1hk",
+      "url": "https://journals.aps.org/prb/accepted/10.1103/x7b4-t1hk",
+      "backupUrl": "https://doi.org/10.1103/x7b4-t1hk",
+      "accessNote": "已打开APS直接来源并核验题目、DOI、滑移极化、联合对称性和约300% TMR；未公开项明确标注",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-025214",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "A compact cryogen-free continuous adiabatic demagnetization refrigeration platform for quantum technology applications",
+      "titleZh": "四级连续绝热去磁制冷：27 mK零负载、50 mK下3 μW的单机架平台",
+      "authors": "P. Schüßler, R. A. Chandavar, S. I. Afroozeh Borjeni, A. Kinast, A. Reinold, F. Galli Geleilate, S. Säubert et al.",
+      "venue": "Review of Scientific Instruments 97, 025214 (2026)",
+      "published": "2026-02-27",
+      "recommendedOn": "2026-08-17",
+      "timeTier": "2026正式仪器论文（厂商关联）",
+      "system": "kiutra GmbH与Delft Circuits参与的四级cADR；机械/超导热开关；16路输入、8路输出RF布线；除压缩机外集成于80×80×207 cm机架",
+      "conditions": "连续工作零负载基温27 mK、低于30 mK；单次ADR最低20 mK；50 mK样品级净制冷量3 μW；支持最多五比特超导QPU布线",
+      "methods": [
+        "两组ADR级交替磁化/退磁形成连续制冷",
+        "机械与超导热开关控制热流",
+        "逐温测样品级净制冷量",
+        "加入完整RF线树后复测热性能与接口容量"
+      ],
+      "summary": "在不使用He-3的条件下实现连续低于30 mK，加入RF布线后50 mK仍有3 μW；系统除压缩机外装入单机架。",
+      "relevance": "为低温MTJ/量子器件的自动化、长期运行、RF热预算和扩展布线提供可量化平台参考。",
+      "limitation": "作者包含设备厂商，需标注为厂商关联科研论文；3 μW与基温是该原型实测，不代表所有cADR；未验证MTJ脉冲热负载、磁场背景和晶圆探针。",
+      "industrialization": "接近科研/小规模量子硬件基础设施；还缺长期可用率、维护周期、磁干扰、更多通道热预算、故障恢复、成本和量产服务数据。",
+      "whyRecommended": "先看图1机架、四级热循环，再看图6制冷量与RF热负载；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0302131",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/2/025214/3381412/A-compact-cryogen-free-continuous-adiabatic",
+      "backupUrl": "https://doi.org/10.1063/5.0302131",
+      "accessNote": "已打开AIP全文，核验27/20 mK、50 mK下3 μW、80×80×207 cm、16入8出RF与五比特容量",
+      "featured": true
+    },
+    {
+      "id": "jvb-44-042206",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Neuromorphic tunnel junctions using atomic-layer-deposited Al2O3 for emulating highly reliable synaptic functions",
+      "titleZh": "1–2 nm ALD Al₂O₃神经形态隧道结：用隧穿主导抑制随机导电丝",
+      "authors": "J. Jyothish Raj, T. Archana, K. B. Jinesh",
+      "venue": "Journal of Vacuum Science & Technology B 44, 042206 (2026)",
+      "published": "2026-06",
+      "recommendedOn": "2026-08-17",
+      "timeTier": "2026正式器件/工艺论文",
+      "system": "FTO/1–2 nm ALD Al₂O₃/Ag神经形态隧道结，并与更厚Al₂O₃器件对照",
+      "conditions": "在高于通常本征击穿相关的电场下测试突触型模拟行为；公开摘要未给ALD温度、前驱体、循环数、电压端点、器件面积和绝对电阻",
+      "methods": [
+        "在FTO上ALD生长1–2 nm Al₂O₃",
+        "沉积Ag顶电极形成隧道结",
+        "与厚势垒的导电丝型器件比较",
+        "施加成对脉冲、时序和脉冲数协议测试突触可塑性"
+      ],
+      "summary": "超薄势垒使隧穿占主导并限制随机导电丝；实测复现成对脉冲促进/抑制、脉冲时序依赖可塑性与脉冲数依赖可塑性。",
+      "relevance": "把原子级势垒厚度、缺陷通道和模拟写入可靠性直接关联，对MgO势垒的均匀性、软击穿与多级态研究有方法迁移价值。",
+      "limitation": "不是磁隧道结，Ag离子与Al₂O₃机制不能直接等同CoFeB/MgO；公开摘要无TMR、RA、WER、保持、耐久循环数和晶圆统计。",
+      "industrialization": "处于超薄忆阻/突触器件验证；还需面积缩放、片内/片间分布、阵列半选扰动、保持、能耗、BEOL热预算和CMOS选通。",
+      "whyRecommended": "先看1–2 nm与厚层对照，再看三类突触协议及导电丝解释；35–50分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1116/6.0005462",
+      "url": "https://pubs.aip.org/avs/jvb/article/44/4/042206/3394463/Neuromorphic-tunnel-junctions-using-atomic-layer",
+      "backupUrl": "https://doi.org/10.1116/6.0005462",
+      "accessNote": "已打开AIP/AVS正式页，核验作者、DOI、1–2 nm ALD Al₂O₃、FTO/Ag结构与三类突触行为",
       "featured": true
     }
   ]
