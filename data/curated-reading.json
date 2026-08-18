@@ -174,6 +174,13 @@
       "classicIds": [
         "classic-slonczewski-1996-stt"
       ]
+    },
+    {
+      "date": "2026-08-18",
+      "reviewId": "review-ald-superconducting-films-2025",
+      "classicIds": [
+        "classic-cofeb-mgo-interface-2006"
+      ]
     }
   ],
   "items": [
@@ -1654,6 +1661,60 @@
         "再看力矩角度依赖。",
         "理解临界条件的理想化假设。",
         "最后与现代TMR/WER指标对照；35–50分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-ald-superconducting-films-2025",
+      "kind": "每日综述",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "D"
+      ],
+      "title": "Recent advances in atomic layer deposition of superconducting thin films: a review",
+      "titleZh": "超导薄膜ALD近期进展：材料、前驱体、原子级控制与器件瓶颈",
+      "authors": "G. K. Deyu et al.",
+      "venue": "Materials Horizons 12, 5594–5626 (2025)",
+      "published": "2025-05-09",
+      "recommendedOn": "2026-08-18",
+      "doi": "10.1039/D5MH00323G",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2025/mh/d5mh00323g",
+      "backupUrl": "https://doi.org/10.1039/D5MH00323G",
+      "assistantSummary": "正式综述系统梳理ALD超导金属、氮化物和氧化物的自限反应、厚度/成分控制及量子器件应用，并强调前驱体纯度、成核、杂质与规模化难点。",
+      "whySelected": "与今天300 mm TaN和原位Al/Ge结互补：一篇给材料/化学总图，两篇给晶圆计量和实际器件。",
+      "readingGuide": [
+        "先读ALD循环与成核。",
+        "再按NbN/TiN/TaN等材料查表。",
+        "重点看杂质、Tc和薄膜连续性。",
+        "最后审视量子器件与规模化；70–90分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-cofeb-mgo-interface-2006",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Atomic and electronic structure of the CoFeB/MgO interface from first principles",
+      "titleZh": "CoFeB/MgO界面原子与电子结构：B位置为何决定隧穿通道",
+      "authors": "J. D. Burton, S. S. Jaswal, E. Y. Tsymbal, O. N. Mryasov, O. G. Heinonen",
+      "venue": "Applied Physics Letters 89, 142507 (2006)",
+      "published": "2006-10-05",
+      "recommendedOn": "2026-08-18",
+      "doi": "10.1063/1.2360189",
+      "url": "https://pubs.aip.org/aip/apl/article/89/14/142507/332142/Atomic-and-electronic-structure-of-the-CoFeB-MgO",
+      "backupUrl": "https://doi.org/10.1063/1.2360189",
+      "assistantSummary": "经典第一性原理工作指出CoFeB/MgO界面附近B的占位和氧配位会改变界面电子结构，为退火驱动B扩散与高TMR形成提供原子尺度解释框架。",
+      "whySelected": "与今日多畴pMTJ形成“界面原子结构—磁畴—电阻态”的跨尺度对照，提醒多态稳定性最终仍受界面化学约束。",
+      "readingGuide": [
+        "先看界面结构模型。",
+        "再比较不同B占位的态密度。",
+        "注意这是理想计算。",
+        "最后与现代TEM/EELS和RF数据对照；30–45分钟。"
       ],
       "notNew": true
     }

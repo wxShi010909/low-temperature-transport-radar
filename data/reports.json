@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-17T09:01:15+08:00",
-  "reportDate": "2026-08-17",
+  "updatedAt": "2026-08-18T09:00:00+08:00",
+  "reportDate": "2026-08-18",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -489,6 +489,25 @@
         "prb-x7b4-t1hk",
         "rsi-97-025214",
         "jvb-44-042206"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "label": "详细日报：原位低温结—RF辅助pMTJ—全电控理论—UHV全流程—300 mm ALD势垒",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "jvb-44-052203",
+        "apl-128-102401",
+        "apl-129-062401",
+        "rsi-97-081304",
+        "jvb-44-042802"
       ]
     }
   ],
@@ -5552,6 +5571,182 @@
       "url": "https://pubs.aip.org/avs/jvb/article/44/4/042206/3394463/Neuromorphic-tunnel-junctions-using-atomic-layer",
       "backupUrl": "https://doi.org/10.1116/6.0005462",
       "accessNote": "已打开AIP/AVS正式页，核验作者、DOI、1–2 nm ALD Al₂O₃、FTO/Ag结构与三类突触行为",
+      "featured": true
+    },
+    {
+      "id": "jvb-44-052203",
+      "track": "A",
+      "secondaryTracks": [
+        "D",
+        "E"
+      ],
+      "title": "Voltage-tunable Josephson junctions on germanium quantum wells with in situ aluminum contacts",
+      "titleZh": "原位Al/Ge量子阱电压可调约瑟夫森结：无氧化界面与深台面集成",
+      "authors": "J. P. Thompson, J. T. Dong, B. Langa Jr., C. K. Gaspe, Riis Card et al.",
+      "venue": "Journal of Vacuum Science & Technology B 44, 052203 (2026)",
+      "published": "2026-08-07",
+      "recommendedOn": "2026-08-18",
+      "timeTier": "11日前正式开放论文",
+      "system": "浮区Si(001)/150 nm Si/1 μm Ge/700 nm反向渐变SiGe/300 nm Si0.2Ge0.8/16 nm Ge量子阱/11 nm Si0.2Ge0.8/1 nm Si帽层；原位10 °C沉积50 nm Al",
+      "conditions": "2 K霍尔输运；栅压调控横向Josephson结；峰值空穴迁移率26800 cm²/Vs、平均自由程482 nm；公开正文未给本文最低测量温度与完整磁场端点",
+      "methods": [
+        "MBE连续生长Ge/SiGe量子阱",
+        "不破真空转移并原位沉积Al",
+        "深台面刻蚀移除结区外有损外延层",
+        "低温霍尔与栅控超电流测量"
+      ],
+      "summary": "实测峰值临界电流超过100 nA、IcRn=8.63 μV，计算界面透明度约4%–9%；25–100 nA可对应约4.25–8.7 GHz的transmon调谐范围。",
+      "relevance": "它把真空互联、界面洁净、侧壁形貌和低温输运放进同一工艺闭环，可迁移到MTJ原位封护与刻蚀后无氧化接触。",
+      "limitation": "这是超导—半导体结而非MTJ；透明度为模型提取；未给TMR、RA、WER、保持、耐久或300 mm统计。",
+      "industrialization": "接近可扩展混合量子器件集成；仍需解决深台面光刻起伏、界面陷阱、批间均匀性、微波损耗和晶圆级良率。",
+      "whyRecommended": "先看图1完整堆栈与2 K输运，再看深台面、Ic栅控和总结；45–60分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1116/6.0005651",
+      "arxiv": "2606.28585",
+      "url": "https://pubs.aip.org/avs/jvb/article/44/5/052203/3400538/Voltage-tunable-Josephson-junctions-on-germanium",
+      "backupUrl": "https://arxiv.org/abs/2606.28585",
+      "accessNote": "已打开AVS/AIP正式全文，核验作者、日期、DOI、完整MBE层厚、2 K输运、>100 nA、8.63 μV与4%–9%透明度",
+      "featured": true
+    },
+    {
+      "id": "apl-128-102401",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "D"
+      ],
+      "title": "Thermally stable multistate characteristics in multidomain-driven magnetic tunnel junctions",
+      "titleZh": "多畴pMTJ的六个稳定电阻态：5.4–360 K与1小时保持验证",
+      "authors": "Yapeng Zhao, Tiaoyang Li, Zhijie Wang, Tai Min, Yanqing Wu",
+      "venue": "Applied Physics Letters 128, 102401 (2026)",
+      "published": "2026-03-09",
+      "recommendedOn": "2026-08-18",
+      "timeTier": "2026正式器件论文",
+      "system": "不同直径的垂直各向异性MTJ；以自由层多畴顺序翻转产生P与AP之间的中间电阻态；公开摘要未给完整材料层厚和RA",
+      "conditions": "无外场电压写入；直径系列；590 nm器件得到最多六态；5.4–360 K变温并对各态做1 h保持",
+      "methods": [
+        "测不同直径MTJ的电阻—电压特性",
+        "以电压脉冲顺序操控多畴",
+        "统计各电阻态与写入电压窗口",
+        "跨5.4–360 K验证区分度和1 h保持"
+      ],
+      "summary": "590 nm器件实测最多六个清晰稳定电阻态；各态在5.4–360 K保持显著电阻裕量和写入窗口，并完成1 h保持验证。",
+      "relevance": "把传统“多畴坏状态”转化为可利用的多比特资源，也给低温至高温的磁畴—电阻联合测试提供直接样板。",
+      "limitation": "590 nm远大于先进MRAM单元；1 h不等于10年保持；摘要未给TMR、RA、写入能耗、WER、耐久、层厚和阵列统计。",
+      "industrialization": "处于单器件多态验证；还需纳米缩放、状态分布长尾、选择器、读扰、10年保持、循环耐久和PVT角。",
+      "whyRecommended": "先看直径—状态数关系，再看590 nm六态、5.4–360 K和1 h保持；35–50分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1063/5.0312080",
+      "url": "https://pubs.aip.org/aip/apl/article-abstract/128/10/102401/3382667",
+      "backupUrl": "https://doi.org/10.1063/5.0312080",
+      "accessNote": "已打开AIP正式页，核验作者、日期、DOI、590 nm六态、5.4–360 K与1 h保持；未公开数据明确标注",
+      "featured": true
+    },
+    {
+      "id": "apl-129-062401",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Electrical-controlled and layer-filtered altermagnetic tunnel junction with all-in-one architecture",
+      "titleZh": "双层V₂Se₂O全电控交变磁隧道结：层过滤与约10¹⁰%理论TMR",
+      "authors": "Chao Mao, Shiqi Liu, Baochun Wu, Shunfang Li, Jinbo Yang, Jie Yang",
+      "venue": "Applied Physics Letters 129, 062401 (2026)",
+      "published": "2026-08-10",
+      "recommendedOn": "2026-08-18",
+      "timeTier": "八日前正式理论论文",
+      "system": "仅由双层V2Se2O构成的“全合一”交变磁隧道结；两端施加同向或反向垂直电场",
+      "conditions": "第一性原理+量子输运；电场增至0.25 V/Å时导带和价带自旋劈裂带共同交叉；温度、缺陷、实器件尺寸与RA不适用/原文未公开",
+      "methods": [
+        "计算双层能带与层分辨自旋极化",
+        "施加两端同向/反向电场",
+        "计算层分辨透射通道",
+        "由两种电导态求TMR"
+      ],
+      "summary": "理论预测电场解除能带简并并产生费米能级层依赖自旋极化；两种电场构型形成高低电导态，理想TMR最高约10^10%，通常仅底层贡献输运。",
+      "relevance": "把“电场—原子层—自旋通道”直接连接，可作为极薄MTJ原子终止、层错和电场强度的计算筛选案例。",
+      "limitation": "全部为理想结构计算；10^10%不是实测，极易受接触、缺陷、有限温、偏压和层间错位压低；无WER/保持/耐久。",
+      "industrialization": "处于概念/候选结构阶段；还缺可生长材料、击穿前电场窗口、电极接触、室温保持、阵列写入和晶圆工艺。",
+      "whyRecommended": "先看电场构型和层分辨能带，再看透射与0.25 V/Å交叉；40–55分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0346964",
+      "url": "https://pubs.aip.org/aip/apl/article/129/6/062401/3400606/Electrical-controlled-and-layer-filtered",
+      "backupUrl": "https://doi.org/10.1063/5.0346964",
+      "accessNote": "已打开AIP正式页，核验作者、日期、DOI、双层V2Se2O、电场构型、0.25 V/Å和约10^10%理论TMR",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-081304",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Ultra-high vacuum cluster system integrating two-dimensional heterostructures growth, characterization, device fabrication and electrical transport measurement",
+      "titleZh": "全流程UHV集群：生长—表征—五轴掩模加工—变温输运不破真空",
+      "authors": "Jinze Fan, Zhanbo Fang, Jiuduan Fan, Fangying Song, Chaojie Luo et al.",
+      "venue": "Review of Scientific Instruments 97, 081304 (2026)",
+      "published": "2026-08-17",
+      "recommendedOn": "2026-08-18",
+      "timeTier": "昨日正式发表",
+      "system": "固定/移动MBE、磁控溅射、VT-STM、LEED、器件蒸镀、Ar离子刻蚀、商用四探针和模块化变温测量平台；统一Mo旗形样品托",
+      "conditions": "主流程压力<5×10^-10 mbar；样品≤10×10 mm²、厚0.1–3 mm；Nb验证膜150 nm、50 W、0.16 Pa Ar，4.5–90 K/500 μA测量",
+      "methods": [
+        "UHV移动MBE生长",
+        "原位STM/LEED表征",
+        "实时光学五轴动态掩模对准",
+        "预制焊盘模块探针做四端R–T"
+      ],
+      "summary": "完整流程在UHV完成；五轴掩模支持微米级多层器件；Nb膜外围以3×10^-4 Pa Ar等离子刻蚀30 min后对地>20 MΩ，并测得4.5 K超导状态。",
+      "relevance": "几乎是MTJ“沉积—原位表征—无胶加工—封护—输运”的平台蓝本，可避免空气吸附和探针刮伤。",
+      "limitation": "验证样品以二维材料和Nb为主；未展示CoFeB/MgO、纳米CD、晶圆级套刻、TMR/WER或量产吞吐。",
+      "industrialization": "接近高端研发集群；距离300 mm生产还差自动传片、颗粒控制、腔体匹配、统计过程控制、MTBF和成本数据。",
+      "whyRecommended": "先看图1集群拓扑、五轴掩模系统、图7模块探针，再看Nb 4.5–90 K验证；55–75分钟。",
+      "score": 10,
+      "priority": "S",
+      "doi": "10.1063/5.0328828",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/8/081304/3401260/Ultra-high-vacuum-cluster-system-integrating-two",
+      "backupUrl": "https://doi.org/10.1063/5.0328828",
+      "accessNote": "已打开AIP正式全文，核验作者、日期、DOI、真空度、样品尺寸、各腔体、Nb工艺与4.5–90 K测量",
+      "featured": true
+    },
+    {
+      "id": "jvb-44-042802",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "D"
+      ],
+      "title": "Temperature-dependent dielectric function of tantalum nitride formed by atomic layer deposition for tunnel barriers in Josephson junctions",
+      "titleZh": "300 mm晶圆ALD绝缘TaN：80–600 K介电函数与1.5–1.8 eV带隙",
+      "authors": "Ekta Bhatia, Aaron Lopez Gonzalez, Yoshitha Hettige, Tuan Vo, Sandra Schujman et al.",
+      "venue": "Journal of Vacuum Science & Technology B 44, 042802 (2026)",
+      "published": "2026-06-05",
+      "recommendedOn": "2026-08-18",
+      "timeTier": "2026正式晶圆级材料论文",
+      "system": "300 mm Si/SiO2上的13和25 nm名义厚度绝缘ALD TaN；面向Ta基Josephson结势垒",
+      "conditions": "70°椭偏；0.03–0.7 eV/80–300 K与0.5–6.5 eV/80–600 K；TEM/SAED、XRD、溅射深度XPS",
+      "methods": [
+        "300 mm ALD沉积两厚度TaN",
+        "跨红外—紫外变温椭偏",
+        "Tauc–Lorentz色散拟合",
+        "结构和N/Ta深度成分交叉验证"
+      ],
+      "summary": "两厚度在全温区均呈绝缘、中红外透明且无自由载流子吸收；光学带隙1.5–1.8 eV，N/Ta约1.2并贯穿膜厚。",
+      "relevance": "提供“晶圆级沉积—成分—结构—变温介电”完整计量链，可迁移到MgO/AlOx势垒的厚度、氧化学计量和热稳定评估。",
+      "limitation": "13/25 nm远厚于实际JJ/MTJ隧穿势垒；未制成结，因此无Jc、IcRn、RA、TMR、WER、击穿或保持数据。",
+      "industrialization": "处于300 mm材料资格；下一步必须做亚2 nm连续性、晶圆九点统计、结电流、TLS损耗、老化和BEOL热预算。",
+      "whyRecommended": "先看实验温区/光谱窗口，再看介电模型、XPS的N/Ta和对AlOx的比较；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1116/5.0333748",
+      "url": "https://pubs.aip.org/avs/jvb/article/44/4/042802/3393881/Temperature-dependent-dielectric-function-of",
+      "backupUrl": "https://doi.org/10.1116/5.0333748",
+      "accessNote": "已打开AIP/AVS正式页，核验300 mm、13/25 nm、两段温度/光谱范围、带隙、绝缘行为与N/Ta≈1.2",
       "featured": true
     }
   ]
