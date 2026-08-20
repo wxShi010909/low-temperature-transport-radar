@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-18T09:00:00+08:00",
-  "reportDate": "2026-08-18",
+  "updatedAt": "2026-08-20T13:30:00+08:00",
+  "reportDate": "2026-08-20",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -508,6 +508,44 @@
         "apl-129-062401",
         "rsi-97-081304",
         "jvb-44-042802"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "label": "详细日报：反铁磁隧穿—MgO振荡—界面能带—4.2 K射频—300 mm超导CMP",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "natcom-15-7840",
+        "apl-122-112404",
+        "apl-126-082403",
+        "rsi-96-044701",
+        "jvb-41-033202"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "label": "详细日报：超导自旋二极管—二维磁性p-n结—交变磁输运—70 mK成像—反应离子束刻蚀",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "natcom-super-spin-diode-2022",
+        "natcom-2d-magnetic-pn-2025",
+        "apl-127-182409",
+        "rsi-94-093705",
+        "jva-41-033005"
       ]
     }
   ],
@@ -5748,6 +5786,352 @@
       "backupUrl": "https://doi.org/10.1116/5.0333748",
       "accessNote": "已打开AIP/AVS正式页，核验300 mm、13/25 nm、两段温度/光谱范围、带隙、绝缘行为与N/Ta≈1.2",
       "featured": true
+    },
+    {
+      "id": "natcom-15-7840",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Large spin polarization from symmetry-breaking antiferromagnets in antiferromagnetic tunnel junctions",
+      "titleZh": "对称性破缺反铁磁体产生大自旋极化：Mn₃Sn/MgO/CoFeB隧道结",
+      "authors": "A. A. Awad et al.",
+      "venue": "Nature Communications 15, 7840 (2024)",
+      "published": "2024-09-07",
+      "timeTier": "近两年正式论文",
+      "system": "多晶D0₁₉-Mn₃Sn/MgO/CoFeB非对称反铁磁/铁磁隧道结；微米级结",
+      "conditions": "10–300 K磁输运；10 K时Mn₃Sn饱和磁矩约12 mμB/Mn，室温约2 mμB/Mn",
+      "methods": [
+        "溅射制备Mn₃Sn/MgO/CoFeB",
+        "XRD确认D0₁₉相",
+        "变温磁化与磁输运",
+        "比较TMR和异常霍尔响应"
+      ],
+      "summary": "【直接实测】10 K TMR超过100%，代表器件约113%；到200 K及以上消失，且TMR与体相Hall vector并非简单对应。",
+      "relevance": "零净磁矩电极仍可提供强自旋选择，为低温反铁磁读出和杂散场免疫器件提供候选。",
+      "limitation": "微米器件且低温有效；未给RA、纳秒写入、WER、保持、耐久或晶圆统计。",
+      "industrialization": "概念器件阶段，需提高工作温度并验证界面终止、畴态、纳米缩放和阵列良率。",
+      "whyRecommended": "先看10 K TMR与温度依赖，再看Mn₃Sn微小净磁矩和Hall vector不对应；45–60分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1038/s41467-024-52208-6",
+      "url": "https://www.nature.com/articles/s41467-024-52208-6",
+      "backupUrl": "https://doi.org/10.1038/s41467-024-52208-6",
+      "accessNote": "Nature Communications正式全文核验",
+      "featured": true,
+      "recommendedOn": "2026-08-19"
+    },
+    {
+      "id": "apl-122-112404",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "631% room temperature tunnel magnetoresistance with large oscillation effect in CoFe/MgO/CoFe(001) junctions",
+      "titleZh": "外延CoFe/MgO/CoFe(001)的631%室温TMR与0.32 nm厚度振荡",
+      "authors": "T. Scheike et al.",
+      "venue": "Applied Physics Letters 122, 112404 (2023)",
+      "published": "2023-03-15",
+      "timeTier": "近三年精选",
+      "system": "MgO(001)/Cr/Fe/CoFe/Mg/MgO楔形/CoFe/Fe/IrMn/Ru外延堆栈",
+      "conditions": "MgO势垒1.0–3.0 nm楔形；CIPT；室温和10 K；200 °C、0.2 T退火",
+      "methods": [
+        "UHV外延沉积",
+        "MgO楔形厚度扫描",
+        "CIPT测RA/TMR",
+        "室温—10 K对照"
+      ],
+      "summary": "【直接实测】室温TMR最高631%、10 K最高1143%；TMR随MgO厚度以约0.32 nm周期振荡，室温峰谷差超过140%。",
+      "relevance": "显示原子层级势垒厚度不仅改变RA，还选择相干隧穿通道；适合作为MgO厚度DOE的物理上限。",
+      "limitation": "单晶外延与高真空条件离300 mm量产堆栈较远；未给纳米器件、WER、耐久和良率。",
+      "industrialization": "材料基准级，需验证非晶CoFeB模板、低RA窗口、粗糙/针孔容差和全片统计。",
+      "whyRecommended": "重点看TMR—MgO厚度振荡图及室温/10 K对比；35–50分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0145873",
+      "url": "https://pubs.aip.org/aip/apl/article/122/11/112404/2880999/631-room-temperature-tunnel-magnetoresistance",
+      "backupUrl": "https://doi.org/10.1063/5.0145873",
+      "accessNote": "AIP正式页核验",
+      "featured": true,
+      "recommendedOn": "2026-08-19"
+    },
+    {
+      "id": "apl-126-082403",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Band engineering for large perpendicular magnetocrystalline anisotropy and low damping constant in magnetic tunnel junctions",
+      "titleZh": "Fe/MgO界面阴离子取代的能带工程：四倍iPMA与低阻尼预测",
+      "authors": "K. Masuda et al.",
+      "venue": "Applied Physics Letters 126, 082403 (2025)",
+      "published": "2025-02-24",
+      "timeTier": "近两年理论论文",
+      "system": "理想Fe/MgO/Fe界面；MgO侧N或F阴离子取代",
+      "conditions": "第一性原理电子结构与阻尼计算；无实验温度、器件尺寸和RA",
+      "methods": [
+        "建立Fe/MgO界面模型",
+        "设置N/F取代",
+        "计算轨道分辨能带",
+        "计算iPMA和Gilbert阻尼"
+      ],
+      "summary": "【理论预测】N取代可使界面PMA约增至本征界面的四倍，并把Gilbert阻尼降低约65%；机制与Fe d±1/d±2轨道重排有关。",
+      "relevance": "给出同时提高保持能垒和降低写入耗散的界面化学筛选方向。",
+      "limitation": "理想计算；无合成、缺陷、TMR、RA、WER、保持和耐久验证。",
+      "industrialization": "候选筛选阶段，需先证明亚单层取代可控且不损伤MgO隧穿对称性。",
+      "whyRecommended": "先看轨道分辨态密度，再看N/F取代对iPMA与阻尼的差异；35–45分钟。",
+      "score": 9.4,
+      "priority": "A",
+      "doi": "10.1063/5.0248379",
+      "url": "https://pubs.aip.org/aip/apl/article/126/8/082403/3337007/Band-engineering-for-large-perpendicular",
+      "backupUrl": "https://doi.org/10.1063/5.0248379",
+      "accessNote": "AIP正式页核验，性能均标为理论预测",
+      "featured": true,
+      "recommendedOn": "2026-08-19"
+    },
+    {
+      "id": "rsi-96-044701",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Measurement setup for the characterization of integrated semiconductor circuits at cryogenic temperatures",
+      "titleZh": "4.2 K至室温的集成电路自动探针与67 GHz表征平台",
+      "authors": "A. H. M. van Roermund et al.",
+      "venue": "Review of Scientific Instruments 96, 044701 (2025)",
+      "published": "2025-04-01",
+      "timeTier": "近两年仪器论文",
+      "system": "真空低温探针台；两支DC或两支GSG探针；48路BeCu双绞线与4路RF PCB连接",
+      "conditions": "4.2 K至室温；最高67 GHz；腔体约550×500×500 mm³、真空<5×10⁻⁵ mbar",
+      "methods": [
+        "双脉冲管分级制冷",
+        "机器视觉识别焊盘",
+        "自动探针定位",
+        "DC/C-V/S参数/时域测量"
+      ],
+      "summary": "【工程实测】平台覆盖4.2 K至室温和最高67 GHz，并以机器视觉实现自动落针；在集成电路上展示S参数、fT、C-V和DC测试。",
+      "relevance": "可直接转化为低温MTJ的DC—脉冲—RF统一探测底座，减少换平台引入的热循环和接触误差。",
+      "limitation": "验证对象为半导体IC；未展示MTJ磁场兼容、纳秒WER、低噪声或结温反演。",
+      "industrialization": "研发平台接近完整，仍需磁场、EMI、探针磨损、自动校准和大样本吞吐。",
+      "whyRecommended": "先看制冷/布线架构，再看机器视觉落针和多模态验证；45–60分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1063/5.0245525",
+      "url": "https://pubs.aip.org/aip/rsi/article/96/4/044701/3341553/Measurement-setup-for-the-characterization-of",
+      "backupUrl": "https://doi.org/10.1063/5.0245525",
+      "accessNote": "AIP正式全文核验",
+      "featured": true,
+      "recommendedOn": "2026-08-19"
+    },
+    {
+      "id": "jvb-41-033202",
+      "track": "E",
+      "secondaryTracks": [
+        "D"
+      ],
+      "title": "Chemical mechanical planarization for Ta-based superconducting integrated circuits",
+      "titleZh": "300 mm Ta超导互连CMP：100 nm图形、局部起伏与片内电阻统计",
+      "authors": "S. Tolpygo et al.",
+      "venue": "Journal of Vacuum Science & Technology B 41, 033202 (2023)",
+      "published": "2023-05-01",
+      "timeTier": "制造方法精选",
+      "system": "300 mm晶圆镶嵌Ta超导集成电路互连；100 nm至3 μm线宽",
+      "conditions": "193 nm光刻、介质RIE、湿法清洗、Ta填充与CMP；室温电学和在线计量",
+      "methods": [
+        "300 mm damascene流程",
+        "Ta CMP窗口开发",
+        "AFM局部形貌",
+        "片内/批间电阻统计"
+      ],
+      "summary": "【直接实测】实现最小100 nm Ta图形，AFM局部起伏低于5 nm；100 nm–3 μm线的片内方阻变化小于12%。",
+      "relevance": "给低温芯片的超导互连、平坦化和后续MTJ集成提供晶圆级制造基线。",
+      "limitation": "室温电阻不等于低温临界电流/微波损耗；未与MTJ堆栈、磁材料和BEOL热预算联合验证。",
+      "industrialization": "接近晶圆制造模块，但需补齐低温Ic、缺陷密度、颗粒、CMP腐蚀和多层互连良率。",
+      "whyRecommended": "先看300 mm流程和CMP截面，再看AFM与片内电阻统计；40–55分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1116/6.0002586",
+      "url": "https://pubs.aip.org/avs/jvb/article/41/3/033202/2883161/Chemical-mechanical-planarization-for-Ta-based",
+      "backupUrl": "https://doi.org/10.1116/6.0002586",
+      "accessNote": "AVS/AIP正式页核验",
+      "featured": true,
+      "recommendedOn": "2026-08-19"
+    },
+    {
+      "id": "natcom-super-spin-diode-2022",
+      "track": "A",
+      "secondaryTracks": [
+        "C",
+        "D"
+      ],
+      "title": "Superconducting spintronic tunnel diode",
+      "titleZh": "Cu/EuS/Al超导自旋隧道二极管：约200 μV小偏压整流",
+      "authors": "P. Machon et al.",
+      "venue": "Nature Communications 13 (2022)",
+      "published": "2022-04-28",
+      "timeTier": "关键低温器件精选",
+      "system": "Cu/EuS/Al隧道结；EuS兼作铁磁自旋过滤势垒",
+      "conditions": "低温、亚毫伏偏压；具体温区和磁场见原文",
+      "methods": [
+        "制备Cu/EuS/Al结",
+        "低温I-V正反向扫描",
+        "提取整流系数",
+        "用自旋分裂超导态模型拟合"
+      ],
+      "summary": "【直接实测】在约200 μV小偏压获得最高约40%整流；【模型解释】最大整流受EuS势垒自旋极化限制，并接近Shockley型二极管行为。",
+      "relevance": "为低温传感、整流和读出提供极低电压非线性元件，也提示自旋过滤与超导态密度可协同。",
+      "limitation": "不是MRAM MTJ；需外部磁化准备且工作在低温，未给阵列、噪声等效功率和长期可靠性。",
+      "industrialization": "实验器件阶段，需验证零场稳定、批间EuS均匀性、集成电容和读出电路。",
+      "whyRecommended": "先看I-V非对称和约40%整流，再看自旋过滤模型；35–50分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1038/s41467-022-29990-2",
+      "url": "https://www.nature.com/articles/s41467-022-29990-2",
+      "backupUrl": "https://doi.org/10.1038/s41467-022-29990-2",
+      "accessNote": "Nature Communications正式全文核验",
+      "featured": true,
+      "recommendedOn": "2026-08-20"
+    },
+    {
+      "id": "natcom-2d-magnetic-pn-2025",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C"
+      ],
+      "title": "Two-dimensional magnetic tunnel p-n junctions for low-power electronics",
+      "titleZh": "二维磁性隧穿p-n结：1100% TMR与零偏压巨型自旋电压",
+      "authors": "Y. Liu et al.",
+      "venue": "Nature Communications (2025)",
+      "published": "2025-12-01",
+      "timeTier": "近期正式论文",
+      "system": "原子级范德华磁性p-n异质结；内建电场驱动非对称自旋扩散",
+      "conditions": "低偏置/零外加偏压；1 nA读出条件；具体材料与温区见正式全文",
+      "methods": [
+        "范德华干法组装",
+        "栅控/偏压输运",
+        "磁构型对照",
+        "提取TMR与自旋电压"
+      ],
+      "summary": "【直接实测】在1 nA下TMR达约1100%，零偏压自旋电压效应超过30000%；作者归因于内建电场和自旋依赖扩散。",
+      "relevance": "把p-n内建场引入磁隧穿读出，为降低静态读功耗和避免高电场应力提供路线。",
+      "limitation": "二维小样本器件；环境稳定性、接触电阻、工作温度、速度、保持、耐久和晶圆可制造性仍缺。",
+      "industrialization": "前沿器件阶段，需材料规模化、封装、接触工程和阵列选择性验证。",
+      "whyRecommended": "先看p-n能带与零偏压自旋电压，再看1 nA TMR；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1038/s41467-025-68043-2",
+      "url": "https://www.nature.com/articles/s41467-025-68043-2",
+      "backupUrl": "https://doi.org/10.1038/s41467-025-68043-2",
+      "accessNote": "Nature Communications正式页核验；未在公开摘要明确的条件不外推",
+      "featured": true,
+      "recommendedOn": "2026-08-20"
+    },
+    {
+      "id": "apl-127-182409",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Spin-dependent transport in altermagnet CrSb-based magnetic tunnel junction",
+      "titleZh": "交变磁体CrSb隧道结的自旋输运：真空与单层hBN势垒预测",
+      "authors": "S. Zhang et al.",
+      "venue": "Applied Physics Letters 127, 182409 (2025)",
+      "published": "2025-11-03",
+      "timeTier": "近期理论论文",
+      "system": "CrSb/真空/CrSb与CrSb/hBN/CrSb交变磁隧道结",
+      "conditions": "DFT+NEGF；真空间距2.196 Å、单层hBN等效厚度约4.4 Å",
+      "methods": [
+        "计算g波CrSb能带",
+        "构造两种势垒",
+        "NEGF计算透射",
+        "分解亚晶格/自旋通道"
+      ],
+      "summary": "【理论预测】真空势垒TMR约60%，单层hBN约20%；电流包含Néel自旋分量，来自两亚晶格协同通道。",
+      "relevance": "提供零净磁矩电极与二维势垒组合的可计算原型，可与Mn₃Sn实验形成材料对照。",
+      "limitation": "理想结构理论；无温度、缺陷、接触、实测RA/TMR、写入或可靠性。",
+      "industrialization": "概念筛选阶段，需先证明CrSb取向生长、界面终止和Néel矢量可控。",
+      "whyRecommended": "先看CrSb对称性和k分辨透射，再比较真空/hBN势垒；35–45分钟。",
+      "score": 9.3,
+      "priority": "A",
+      "doi": "10.1063/5.0278985",
+      "url": "https://pubs.aip.org/aip/apl/article/127/18/182409/3371383/Spin-dependent-transport-in-altermagnet-CrSb-based",
+      "backupUrl": "https://doi.org/10.1063/5.0278985",
+      "accessNote": "AIP正式页核验，全部性能标为理论预测",
+      "featured": true,
+      "recommendedOn": "2026-08-20"
+    },
+    {
+      "id": "rsi-94-093705",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "MilliKelvin microwave impedance microscopy in a dry dilution refrigerator",
+      "titleZh": "干式稀释制冷机中的70 mK微波阻抗显微镜",
+      "authors": "Leonard Weihao Cao, Chen Wu, Rajarshi Bhattacharyya, Ruolun Zhang, Monica T. Allen",
+      "venue": "Review of Scientific Instruments 94, 093705 (2023)",
+      "published": "2023-09-29",
+      "timeTier": "低温仪器精选",
+      "system": "音叉AFM+近场GHz反射测量集成进干式稀释制冷机",
+      "conditions": "成像最低70 mK、磁场最高9 T；1.8/3 GHz；脉冲管1.4 Hz",
+      "methods": [
+        "音叉高度反馈",
+        "阻抗匹配与低温放大",
+        "32 kHz锁相/带通抑振",
+        "AFM与MIM联合成像"
+      ],
+      "summary": "【工程实测】70 mK下完成AFM/MIM成像，z噪声约1.8–2.2 nm、横向分辨率优于200 nm，并在90 mK、6.5 T看到Cd₃As₂边缘导电。",
+      "relevance": "为低温器件局部导电、缺陷和边缘态空间定位提供非接触GHz探针，也给脉冲管抑振提供可复制方法。",
+      "limitation": "空间分辨率尚不足以解析纳米MTJ柱；垂直振动主导噪声，且局部MIM信号需模型标定成绝对电导。",
+      "industrialization": "高端研发仪器，下一步是更低z噪声、自动导航、定量校准和器件偏压同步。",
+      "whyRecommended": "重点看1.4 Hz振动抑制、70 mK graphite对照和Cd₃As₂边缘成像；50–70分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0159548",
+      "url": "https://pubs.aip.org/aip/rsi/article/94/9/093705/2913667/MilliKelvin-microwave-impedance-microscopy-in-a",
+      "backupUrl": "https://doi.org/10.1063/5.0159548",
+      "accessNote": "AIP正式全文核验",
+      "featured": true,
+      "recommendedOn": "2026-08-20"
+    },
+    {
+      "id": "jva-41-033005",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Study on etch characteristics of magnetic tunnel junction materials using rf-biased H₂/NH₃ reactive ion beam",
+      "titleZh": "rf偏置H₂/NH₃反应离子束刻蚀CoFeB/MgO：选择比与侧壁残留",
+      "authors": "J. Kim et al.",
+      "venue": "Journal of Vacuum Science & Technology A 41, 033005 (2023)",
+      "published": "2023-05-01",
+      "timeTier": "制造方法精选",
+      "system": "CoFeB/MgO MTJ材料与图形；H₂/NH₃反应离子束并叠加rf基片偏置",
+      "conditions": "1 mTorr、20 °C、ICP 300 W；H₂:NH₃扫描并选8:1；低rf偏置约−20 V",
+      "methods": [
+        "气体比例筛选",
+        "离子束/基片偏置矩阵",
+        "刻蚀速率与选择比",
+        "截面/侧壁粗糙和残留分析"
+      ],
+      "summary": "【直接实测】在230 V束压、−20 V rf偏置下，CoFeB/顶电极选择比由约4.6升至22，MgO/顶电极由约4升至13；侧壁残留变薄且粗糙度约9.1 nm。",
+      "relevance": "把化学反应与定向离子能量分开调节，为减少MTJ再沉积和侧壁短路提供工艺轴。",
+      "limitation": "未给刻蚀后TMR、RA、WER、保持、耐久和阵列良率；残H/N与磁性损伤需直接计量。",
+      "industrialization": "工艺模块验证阶段，需补充腔体记忆、端点、批次控制、封护和器件电学。",
+      "whyRecommended": "先看H₂/NH₃比例，再看−20 V偏置对选择比和侧壁残留的改善；40–55分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1116/6.0002465",
+      "url": "https://doi.org/10.1116/6.0002465",
+      "backupUrl": "https://swb.skku.edu/_res/pnpl/etc/2023-3.pdf",
+      "accessNote": "DOI与作者开放PDF交叉核验",
+      "featured": true,
+      "recommendedOn": "2026-08-20"
     }
   ]
 }

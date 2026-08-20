@@ -1,59 +1,59 @@
 {
-  "date": "2026-08-18",
+  "date": "2026-08-20",
   "review": {
-    "id": "review-ald-superconducting-films-2025",
+    "id": "review-atomic-layer-spintronics-2022",
     "kind": "每日综述",
     "track": "E",
     "secondaryTracks": [
-      "A",
-      "D"
+      "B",
+      "C"
     ],
-    "title": "Recent advances in atomic layer deposition of superconducting thin films: a review",
-    "titleZh": "超导薄膜ALD近期进展：材料、前驱体、原子级控制与器件瓶颈",
-    "authors": "G. K. Deyu et al.",
-    "venue": "Materials Horizons 12, 5594–5626 (2025)",
-    "published": "2025-05-09",
-    "recommendedOn": "2026-08-18",
-    "doi": "10.1039/D5MH00323G",
-    "url": "https://pubs.rsc.org/en/content/articlelanding/2025/mh/d5mh00323g",
-    "backupUrl": "https://doi.org/10.1039/D5MH00323G",
-    "assistantSummary": "正式综述系统梳理ALD超导金属、氮化物和氧化物的自限反应、厚度/成分控制及量子器件应用，并强调前驱体纯度、成核、杂质与规模化难点。",
-    "whySelected": "与今天300 mm TaN和原位Al/Ge结互补：一篇给材料/化学总图，两篇给晶圆计量和实际器件。",
+    "title": "Recent Progress of Atomic Layer Technology in Spintronics: Mechanism, Materials and Prospects",
+    "titleZh": "自旋电子学原子层技术进展：ALD/ALE机制、材料与前景",
+    "authors": "Yuanlu Tsai, Zhiteng Li, Shaojie Hu",
+    "venue": "Nanomaterials 12, 661 (2022)",
+    "published": "2022-02-16",
+    "doi": "10.3390/nano12040661",
+    "url": "https://www.mdpi.com/2079-4991/12/4/661",
+    "backupUrl": "https://doi.org/10.3390/nano12040661",
+    "assistantSummary": "正式综述系统讨论ALD/ALE在隧穿势垒、铁磁电极、二维磁性材料和界面修饰中的自限反应、成核、杂质与规模化问题。",
+    "whySelected": "与今日H₂/NH₃反应离子束刻蚀互补，形成“原子层沉积/刻蚀—侧壁—器件输运”的制造全图。",
     "readingGuide": [
-      "先读ALD循环与成核。",
-      "再按NbN/TiN/TaN等材料查表。",
-      "重点看杂质、Tc和薄膜连续性。",
-      "最后审视量子器件与规模化；70–90分钟。"
+      "先看ALD/ALE自限机制。",
+      "再按势垒、磁电极和二维材料分类。",
+      "重点记录成核延迟、残留和温度窗口。",
+      "最后对照MTJ量产缺口；65–85分钟。"
     ],
-    "notNew": true
+    "notNew": true,
+    "recommendedOn": "2026-08-20"
   },
   "classics": [
     {
-      "id": "classic-cofeb-mgo-interface-2006",
+      "id": "classic-tdbd-model-2012",
       "kind": "经典文章",
-      "track": "B",
+      "track": "E",
       "secondaryTracks": [
-        "C",
-        "E"
+        "A",
+        "B"
       ],
-      "title": "Atomic and electronic structure of the CoFeB/MgO interface from first principles",
-      "titleZh": "CoFeB/MgO界面原子与电子结构：B位置为何决定隧穿通道",
-      "authors": "J. D. Burton, S. S. Jaswal, E. Y. Tsymbal, O. N. Mryasov, O. G. Heinonen",
-      "venue": "Applied Physics Letters 89, 142507 (2006)",
-      "published": "2006-10-05",
-      "recommendedOn": "2026-08-18",
-      "doi": "10.1063/1.2360189",
-      "url": "https://pubs.aip.org/aip/apl/article/89/14/142507/332142/Atomic-and-electronic-structure-of-the-CoFeB-MgO",
-      "backupUrl": "https://doi.org/10.1063/1.2360189",
-      "assistantSummary": "经典第一性原理工作指出CoFeB/MgO界面附近B的占位和氧配位会改变界面电子结构，为退火驱动B扩散与高TMR形成提供原子尺度解释框架。",
-      "whySelected": "与今日多畴pMTJ形成“界面原子结构—磁畴—电阻态”的跨尺度对照，提醒多态稳定性最终仍受界面化学约束。",
+      "title": "Modelling of time-dependent dielectric barrier breakdown mechanisms in MgO-based magnetic tunnel junctions",
+      "titleZh": "MgO MTJ时变介质击穿机制建模",
+      "authors": "S. Amara-Dababi, H. Béa, R. C. Sousa, K. Mackay, B. Dieny",
+      "venue": "Journal of Physics D: Applied Physics 45, 295002 (2012)",
+      "published": "2012-07-18",
+      "doi": "10.1088/0022-3727/45/29/295002",
+      "url": "https://iopscience.iop.org/article/10.1088/0022-3727/45/29/295002",
+      "backupUrl": "https://doi.org/10.1088/0022-3727/45/29/295002",
+      "assistantSummary": "经典工作用统计模型区分MgO势垒随时间累积的击穿路径，把电压应力、缺陷生成和寿命外推连接起来。",
+      "whySelected": "与今日刻蚀侧壁损伤和二维低偏压读出共同定义“加工缺陷—工作电压—TDDB寿命”的可靠性边界。",
       "readingGuide": [
-        "先看界面结构模型。",
-        "再比较不同B占位的态密度。",
-        "注意这是理想计算。",
-        "最后与现代TEM/EELS和RF数据对照；30–45分钟。"
+        "先看击穿统计假设。",
+        "再看电压/时间加速模型。",
+        "区分软击穿与硬击穿证据。",
+        "最后评估对现代低RA pMTJ的迁移限制；35–50分钟。"
       ],
-      "notNew": true
+      "notNew": true,
+      "recommendedOn": "2026-08-20"
     }
   ]
 }

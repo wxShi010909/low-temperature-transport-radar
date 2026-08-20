@@ -308,6 +308,30 @@
       "atomicIds": [
         "2026-08-18-wafer-barrier-map"
       ]
+    },
+    {
+      "date": "2026-08-19",
+      "opportunityIds": [
+        "2026-08-19-transport-reliability-map"
+      ],
+      "methodIds": [
+        "2026-08-19-cryo-rf-platform"
+      ],
+      "atomicIds": [
+        "2026-08-19-interface-process-window"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "opportunityIds": [
+        "2026-08-20-transport-reliability-map"
+      ],
+      "methodIds": [
+        "2026-08-20-cryo-rf-platform"
+      ],
+      "atomicIds": [
+        "2026-08-20-interface-process-window"
+      ]
     }
   ],
   "items": [
@@ -4817,6 +4841,302 @@
       ],
       "researchConnection": "连接原子制造、MTJ/MRAM、低温输运、设备和可靠性。",
       "takeaway": "从厚膜介电资格逐步缩到亚2 nm结，并把理想层过滤对缺陷的敏感性纳入晶圆图。"
+    },
+    {
+      "id": "2026-08-19-transport-reliability-map",
+      "date": "2026-08-19",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 输运与可靠性",
+      "title": "低偏压自旋选择—局部结温—可靠性联合图",
+      "subtitle": "把TMR/整流、局部温升和TDDB放进同一偏压—温度坐标。",
+      "summary": "把TMR/整流、局部温升和TDDB放进同一偏压—温度坐标。",
+      "status": "本站组合推断，待同一MTJ平台验证",
+      "relatedPaperIds": [
+        "natcom-15-7840",
+        "apl-122-112404",
+        "classic-heating-asymmetry-2012"
+      ],
+      "question": "低偏压性能提升是否真的降低局部温升和寿命损耗？",
+      "rationale": "由今日直接实测与经典可靠性模型组合，跨器件连接需验证。",
+      "workflow": [
+        "偏压×脉宽×温度DOE",
+        "局部温度标定",
+        "TMR/整流/噪声同步",
+        "TDDB与WER闭环"
+      ],
+      "equipment": [
+        "低温探针台",
+        "脉冲参数分析仪",
+        "噪声/温度计量",
+        "磁场系统"
+      ],
+      "measurements": [
+        "I-V/TMR",
+        "结温",
+        "RTN",
+        "TDDB/WER"
+      ],
+      "metrics": [
+        "低偏压信号裕量",
+        "峰值结温",
+        "寿命分布",
+        "亚ppm尾部"
+      ],
+      "evidenceBoundary": "目标数值均需在同一CoFeB/MgO器件重测。",
+      "firstSteps": [
+        "建立空白结",
+        "校准热阻",
+        "完成偏压扫描"
+      ],
+      "researchConnection": "连接低温输运、MTJ/MRAM和可靠性。",
+      "takeaway": "先证明低电压读写确实同时改善信号、温升和寿命。"
+    },
+    {
+      "id": "2026-08-19-cryo-rf-platform",
+      "date": "2026-08-19",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 低温—射频平台",
+      "title": "4.2 K/70 mK自动探针—局部GHz成像双尺度平台",
+      "subtitle": "先做晶圆级电学筛查，再对异常单元做局部MIM定位。",
+      "summary": "先做晶圆级电学筛查，再对异常单元做局部MIM定位。",
+      "status": "本站组合推断，待同一MTJ平台验证",
+      "relatedPaperIds": [
+        "rsi-96-044701",
+        "natcom-15-7840"
+      ],
+      "question": "怎样把大样本电学尾部与局部导电缺陷一一对应？",
+      "rationale": "自动探针提供吞吐，MIM提供空间归因。",
+      "workflow": [
+        "自动DC/RF筛查",
+        "建立异常坐标清单",
+        "低温MIM复测",
+        "截面TEM/成分闭环"
+      ],
+      "equipment": [
+        "自动低温探针台",
+        "稀释制冷机MIM",
+        "FIB/TEM",
+        "参数分析仪"
+      ],
+      "measurements": [
+        "S参数/I-V",
+        "局部复导纳",
+        "形貌",
+        "缺陷成分"
+      ],
+      "metrics": [
+        "落针成功率",
+        "空间分辨率",
+        "异常复现率",
+        "根因闭环率"
+      ],
+      "evidenceBoundary": "MIM信号需用标准样品和有限元模型校准。",
+      "firstSteps": [
+        "统一坐标系",
+        "做导电标准片",
+        "建立异常样本库"
+      ],
+      "researchConnection": "连接低温输运、设备和失效分析。",
+      "takeaway": "用吞吐筛查定位尾部，再用局部GHz成像找根因。"
+    },
+    {
+      "id": "2026-08-19-interface-process-window",
+      "date": "2026-08-19",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "C/E · 原子界面与制造",
+      "title": "界面取代/二维势垒—刻蚀侧壁—TMR良率闭环",
+      "subtitle": "把理论界面通道与真实侧壁化学、粗糙和结良率对齐。",
+      "summary": "把理论界面通道与真实侧壁化学、粗糙和结良率对齐。",
+      "status": "本站组合推断，待同一MTJ平台验证",
+      "relatedPaperIds": [
+        "apl-126-082403",
+        "jvb-41-033202"
+      ],
+      "question": "理论优选通道在侧壁损伤和晶圆变异下还能保留多少？",
+      "rationale": "原子通道选择与制造损伤必须在同一器件链验证。",
+      "workflow": [
+        "界面/势垒DOE",
+        "刻蚀能量—化学矩阵",
+        "原位封护",
+        "TMR/RA/侧壁/良率关联"
+      ],
+      "equipment": [
+        "ALD/MBE/溅射",
+        "RIBE/ALE",
+        "XPS/TEM-EELS",
+        "晶圆探针"
+      ],
+      "measurements": [
+        "界面成分",
+        "侧壁粗糙",
+        "TMR/RA",
+        "良率/TDDB"
+      ],
+      "metrics": [
+        "亚单层连续性",
+        "残H/N/O",
+        "TMR保持率",
+        "全片3σ"
+      ],
+      "evidenceBoundary": "理论TMR不是器件实测，刻蚀选择比也不是最终电学良率。",
+      "firstSteps": [
+        "做见证片",
+        "做无偏置对照",
+        "完成截面计量"
+      ],
+      "researchConnection": "连接原子制造、MTJ和阵列可靠性。",
+      "takeaway": "同时优化原子界面与侧壁，而不是只追最高刻蚀选择比。"
+    },
+    {
+      "id": "2026-08-20-transport-reliability-map",
+      "date": "2026-08-20",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 输运与可靠性",
+      "title": "低偏压自旋选择—局部结温—可靠性联合图",
+      "subtitle": "把TMR/整流、局部温升和TDDB放进同一偏压—温度坐标。",
+      "summary": "把TMR/整流、局部温升和TDDB放进同一偏压—温度坐标。",
+      "status": "本站组合推断，待同一MTJ平台验证",
+      "relatedPaperIds": [
+        "natcom-super-spin-diode-2022",
+        "natcom-2d-magnetic-pn-2025",
+        "classic-tdbd-model-2012"
+      ],
+      "question": "低偏压性能提升是否真的降低局部温升和寿命损耗？",
+      "rationale": "由今日直接实测与经典可靠性模型组合，跨器件连接需验证。",
+      "workflow": [
+        "偏压×脉宽×温度DOE",
+        "局部温度标定",
+        "TMR/整流/噪声同步",
+        "TDDB与WER闭环"
+      ],
+      "equipment": [
+        "低温探针台",
+        "脉冲参数分析仪",
+        "噪声/温度计量",
+        "磁场系统"
+      ],
+      "measurements": [
+        "I-V/TMR",
+        "结温",
+        "RTN",
+        "TDDB/WER"
+      ],
+      "metrics": [
+        "低偏压信号裕量",
+        "峰值结温",
+        "寿命分布",
+        "亚ppm尾部"
+      ],
+      "evidenceBoundary": "目标数值均需在同一CoFeB/MgO器件重测。",
+      "firstSteps": [
+        "建立空白结",
+        "校准热阻",
+        "完成偏压扫描"
+      ],
+      "researchConnection": "连接低温输运、MTJ/MRAM和可靠性。",
+      "takeaway": "先证明低电压读写确实同时改善信号、温升和寿命。"
+    },
+    {
+      "id": "2026-08-20-cryo-rf-platform",
+      "date": "2026-08-20",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 低温—射频平台",
+      "title": "4.2 K/70 mK自动探针—局部GHz成像双尺度平台",
+      "subtitle": "先做晶圆级电学筛查，再对异常单元做局部MIM定位。",
+      "summary": "先做晶圆级电学筛查，再对异常单元做局部MIM定位。",
+      "status": "本站组合推断，待同一MTJ平台验证",
+      "relatedPaperIds": [
+        "rsi-94-093705",
+        "natcom-super-spin-diode-2022"
+      ],
+      "question": "怎样把大样本电学尾部与局部导电缺陷一一对应？",
+      "rationale": "自动探针提供吞吐，MIM提供空间归因。",
+      "workflow": [
+        "自动DC/RF筛查",
+        "建立异常坐标清单",
+        "低温MIM复测",
+        "截面TEM/成分闭环"
+      ],
+      "equipment": [
+        "自动低温探针台",
+        "稀释制冷机MIM",
+        "FIB/TEM",
+        "参数分析仪"
+      ],
+      "measurements": [
+        "S参数/I-V",
+        "局部复导纳",
+        "形貌",
+        "缺陷成分"
+      ],
+      "metrics": [
+        "落针成功率",
+        "空间分辨率",
+        "异常复现率",
+        "根因闭环率"
+      ],
+      "evidenceBoundary": "MIM信号需用标准样品和有限元模型校准。",
+      "firstSteps": [
+        "统一坐标系",
+        "做导电标准片",
+        "建立异常样本库"
+      ],
+      "researchConnection": "连接低温输运、设备和失效分析。",
+      "takeaway": "用吞吐筛查定位尾部，再用局部GHz成像找根因。"
+    },
+    {
+      "id": "2026-08-20-interface-process-window",
+      "date": "2026-08-20",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "C/E · 原子界面与制造",
+      "title": "界面取代/二维势垒—刻蚀侧壁—TMR良率闭环",
+      "subtitle": "把理论界面通道与真实侧壁化学、粗糙和结良率对齐。",
+      "summary": "把理论界面通道与真实侧壁化学、粗糙和结良率对齐。",
+      "status": "本站组合推断，待同一MTJ平台验证",
+      "relatedPaperIds": [
+        "apl-127-182409",
+        "jva-41-033005"
+      ],
+      "question": "理论优选通道在侧壁损伤和晶圆变异下还能保留多少？",
+      "rationale": "原子通道选择与制造损伤必须在同一器件链验证。",
+      "workflow": [
+        "界面/势垒DOE",
+        "刻蚀能量—化学矩阵",
+        "原位封护",
+        "TMR/RA/侧壁/良率关联"
+      ],
+      "equipment": [
+        "ALD/MBE/溅射",
+        "RIBE/ALE",
+        "XPS/TEM-EELS",
+        "晶圆探针"
+      ],
+      "measurements": [
+        "界面成分",
+        "侧壁粗糙",
+        "TMR/RA",
+        "良率/TDDB"
+      ],
+      "metrics": [
+        "亚单层连续性",
+        "残H/N/O",
+        "TMR保持率",
+        "全片3σ"
+      ],
+      "evidenceBoundary": "理论TMR不是器件实测，刻蚀选择比也不是最终电学良率。",
+      "firstSteps": [
+        "做见证片",
+        "做无偏置对照",
+        "完成截面计量"
+      ],
+      "researchConnection": "连接原子制造、MTJ和阵列可靠性。",
+      "takeaway": "同时优化原子界面与侧壁，而不是只追最高刻蚀选择比。"
     }
   ]
 }

@@ -181,6 +181,20 @@
       "classicIds": [
         "classic-cofeb-mgo-interface-2006"
       ]
+    },
+    {
+      "date": "2026-08-19",
+      "reviewId": "review-spin-memristors-2025",
+      "classicIds": [
+        "classic-heating-asymmetry-2012"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "reviewId": "review-atomic-layer-spintronics-2022",
+      "classicIds": [
+        "classic-tdbd-model-2012"
+      ]
     }
   ],
   "items": [
@@ -1717,6 +1731,114 @@
         "最后与现代TEM/EELS和RF数据对照；30–45分钟。"
       ],
       "notNew": true
+    },
+    {
+      "id": "review-spin-memristors-2025",
+      "kind": "每日综述",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Spintronic memristors for computing",
+      "titleZh": "面向计算的自旋忆阻器：器件物理、动力学与架构",
+      "authors": "H. Vakili et al.",
+      "venue": "npj Spintronics 3, 16 (2025)",
+      "published": "2025-06-25",
+      "doi": "10.1038/s44306-025-00078-z",
+      "url": "https://www.nature.com/articles/s44306-025-00078-z",
+      "backupUrl": "https://doi.org/10.1038/s44306-025-00078-z",
+      "assistantSummary": "正式综述按MTJ/纳磁体集合、畴壁、斯格明子和自旋波梳理稳态、振荡、随机与混沌动力学，并连接存内逻辑、神经形态和随机计算。",
+      "whySelected": "为今日反铁磁隧穿和界面能带工程提供从器件到计算任务的系统坐标。",
+      "readingGuide": [
+        "先看器件分类总图。",
+        "再比较稳态/振荡/随机/混沌动力学。",
+        "按目标任务查看读写和可训练性。",
+        "最后审视阵列接口、变异性和能耗；70–90分钟。"
+      ],
+      "notNew": true,
+      "recommendedOn": "2026-08-19"
+    },
+    {
+      "id": "classic-heating-asymmetry-2012",
+      "kind": "经典文章",
+      "track": "A",
+      "secondaryTracks": [
+        "D",
+        "E"
+      ],
+      "title": "Heating asymmetry induced by tunneling current flow in magnetic tunnel junctions",
+      "titleZh": "隧穿电流引起的MTJ非对称加热：用交换偏置作温度探针",
+      "authors": "E. Gapihan et al.",
+      "venue": "Applied Physics Letters 100, 202410 (2012)",
+      "published": "2012-05-18",
+      "doi": "10.1063/1.4719663",
+      "url": "https://pubs.aip.org/aip/apl/article/100/20/202410/25494/Heating-asymmetry-induced-by-tunneling-current",
+      "backupUrl": "https://doi.org/10.1063/1.4719663",
+      "assistantSummary": "经典工作利用FeMn阻塞温度和交换偏置反转作片上温度标尺，显示电子跨MgO后的非弹性弛豫会造成方向相关的温度分布。",
+      "whySelected": "给今日低温器件与RF平台补上“冷台温度不等于局部结温”的方法学边界。",
+      "readingGuide": [
+        "先理解TA-MRAM与FeMn阻塞温度。",
+        "再看偏压极性与热分布。",
+        "区分总焦耳热和界面非弹性弛豫。",
+        "最后迁移到低温结温标定；30–45分钟。"
+      ],
+      "notNew": true,
+      "recommendedOn": "2026-08-19"
+    },
+    {
+      "id": "review-atomic-layer-spintronics-2022",
+      "kind": "每日综述",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Recent Progress of Atomic Layer Technology in Spintronics: Mechanism, Materials and Prospects",
+      "titleZh": "自旋电子学原子层技术进展：ALD/ALE机制、材料与前景",
+      "authors": "Yuanlu Tsai, Zhiteng Li, Shaojie Hu",
+      "venue": "Nanomaterials 12, 661 (2022)",
+      "published": "2022-02-16",
+      "doi": "10.3390/nano12040661",
+      "url": "https://www.mdpi.com/2079-4991/12/4/661",
+      "backupUrl": "https://doi.org/10.3390/nano12040661",
+      "assistantSummary": "正式综述系统讨论ALD/ALE在隧穿势垒、铁磁电极、二维磁性材料和界面修饰中的自限反应、成核、杂质与规模化问题。",
+      "whySelected": "与今日H₂/NH₃反应离子束刻蚀互补，形成“原子层沉积/刻蚀—侧壁—器件输运”的制造全图。",
+      "readingGuide": [
+        "先看ALD/ALE自限机制。",
+        "再按势垒、磁电极和二维材料分类。",
+        "重点记录成核延迟、残留和温度窗口。",
+        "最后对照MTJ量产缺口；65–85分钟。"
+      ],
+      "notNew": true,
+      "recommendedOn": "2026-08-20"
+    },
+    {
+      "id": "classic-tdbd-model-2012",
+      "kind": "经典文章",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Modelling of time-dependent dielectric barrier breakdown mechanisms in MgO-based magnetic tunnel junctions",
+      "titleZh": "MgO MTJ时变介质击穿机制建模",
+      "authors": "S. Amara-Dababi, H. Béa, R. C. Sousa, K. Mackay, B. Dieny",
+      "venue": "Journal of Physics D: Applied Physics 45, 295002 (2012)",
+      "published": "2012-07-18",
+      "doi": "10.1088/0022-3727/45/29/295002",
+      "url": "https://iopscience.iop.org/article/10.1088/0022-3727/45/29/295002",
+      "backupUrl": "https://doi.org/10.1088/0022-3727/45/29/295002",
+      "assistantSummary": "经典工作用统计模型区分MgO势垒随时间累积的击穿路径，把电压应力、缺陷生成和寿命外推连接起来。",
+      "whySelected": "与今日刻蚀侧壁损伤和二维低偏压读出共同定义“加工缺陷—工作电压—TDDB寿命”的可靠性边界。",
+      "readingGuide": [
+        "先看击穿统计假设。",
+        "再看电压/时间加速模型。",
+        "区分软击穿与硬击穿证据。",
+        "最后评估对现代低RA pMTJ的迁移限制；35–50分钟。"
+      ],
+      "notNew": true,
+      "recommendedOn": "2026-08-20"
     }
   ]
 }
