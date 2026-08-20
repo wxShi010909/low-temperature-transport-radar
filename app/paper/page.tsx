@@ -21,6 +21,17 @@ const tracks: Record<TrackKey, { label: string; short: string }> = {
 const unavailableSourceIds = new Set(["2607.12740", "2607.12394", "2607.12754"]);
 const reportDates = report.history.map((entry) => entry.date).sort((a, b) => b.localeCompare(a));
 
+function termParts(term: string | { name: string; meaning: string } | { term: string; explanation: string }) {
+  if (typeof term === "string") {
+    const splitAt = term.indexOf("：");
+    return splitAt >= 0
+      ? { name: term.slice(0, splitAt), meaning: term.slice(splitAt + 1) }
+      : { name: term, meaning: "术语说明见正文。" };
+  }
+  if ("name" in term) return term;
+  return { name: term.term, meaning: term.explanation };
+}
+
 export default function PaperDetailPage() {
   const [paperId, setPaperId] = useState<string | null | undefined>(undefined);
   const { open: readingDockOpen, setOpen: setReadingDockOpen } = useReadingDockState();
@@ -141,7 +152,7 @@ export default function PaperDetailPage() {
             <section id="terms" className="detail-section">
               <div className="detail-section-title"><span>09</span><div><p>TERMS</p><h2>需要先懂的术语</h2></div></div>
               <dl className="term-grid">
-                {detail.terms.map((term) => <div key={term.name}><dt>{term.name}</dt><dd>{term.meaning}</dd></div>)}
+                {detail.terms.map((term) => { const item = termParts(term); return <div key={item.name}><dt>{item.name}</dt><dd>{item.meaning}</dd></div>; })}
               </dl>
             </section>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import report from "@/data/reports.json";
 import curatedReading from "@/data/curated-reading.json";
 import insightArchive from "@/data/insight-archive.json";
@@ -136,7 +137,7 @@ function LibraryPaper({ paper }: { paper: Paper }) {
       <footer className="library-card-footer">
         <span className="library-reading-hint">建议：先看核心结果，再进详解核对实验、解释与证据边界</span>
         <div className="library-actions">
-          <a className="detail-action" href={`/paper?id=${encodeURIComponent(paper.id)}`}>查看通俗详解 →</a>
+          <Link className="detail-action" href={`/paper?id=${encodeURIComponent(paper.id)}`}>查看通俗详解 →</Link>
           <FavoriteButton id={paper.id} /><OriginalSourceLink paper={paper} />
         </div>
       </footer>
@@ -268,7 +269,7 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="返回首页"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></a>
         <nav aria-label="主导航">
-          <a href="/weekly">本周精选</a>
+          <Link href="/weekly">本周精选</Link>
           {navigation.map((item) => (
             <a
               className={activeSection === item.id ? "active" : ""}
@@ -332,7 +333,7 @@ export default function Home() {
               {(paper as Paper & { timeTier?: string }).timeTier && <span className="time-tier-badge">{(paper as Paper & { timeTier?: string }).timeTier} · 原始发表 {paper.published}</span>}
               <h3>{paper.titleZh}</h3><p className="paper-title-en">{paper.title}</p><PaperTags paper={paper} limit={3} /><p className="summary">{paper.summary}</p>
               <div className="paper-footer"><span className="read-badge">点击查看通俗详解</span><span className="score"><b>{paper.score.toFixed(1)}</b> / 10</span></div>
-              <a className="card-link" href={`/paper?id=${encodeURIComponent(paper.id)}`} aria-label={`查看 ${paper.title} 的通俗详解`} />
+              <Link className="card-link" href={`/paper?id=${encodeURIComponent(paper.id)}`} aria-label={`查看 ${paper.title} 的通俗详解`} />
             </article>
           ))}
         </div>
@@ -357,7 +358,7 @@ export default function Home() {
             <aside>
               <b>为什么本期推荐</b><p>{selectedReview.whySelected}</p>
               <b>建议阅读顺序</b><ol>{selectedReview.readingGuide.map((item) => <li key={item}>{item}</li>)}</ol>
-              <a className="curated-detail-link" href={`/reading?id=${encodeURIComponent(selectedReview.id)}`}>查看通俗详解 →</a>
+              <Link className="curated-detail-link" href={`/reading?id=${encodeURIComponent(selectedReview.id)}`}>查看通俗详解 →</Link>
               <a href={selectedReview.url} target="_blank" rel="noreferrer">查看出版社页面 ↗</a>
             </aside>
           </div>
@@ -372,7 +373,7 @@ export default function Home() {
               <h3>{item.titleZh}</h3><p className="reading-title-en">{item.title}</p>
               <p className="assistant-summary">{item.assistantSummary}</p>
               <div className="classic-why"><b>为什么值得重读</b><p>{item.whySelected}</p></div>
-              <div className="classic-actions"><a className="curated-detail-link" href={`/reading?id=${encodeURIComponent(item.id)}`}>查看通俗详解 →</a><a href={item.url} target="_blank" rel="noreferrer">出版社原文 ↗</a></div>
+              <div className="classic-actions"><Link className="curated-detail-link" href={`/reading?id=${encodeURIComponent(item.id)}`}>查看通俗详解 →</Link><a href={item.url} target="_blank" rel="noreferrer">出版社原文 ↗</a></div>
             </article>
           ))}
         </div>
@@ -386,7 +387,7 @@ export default function Home() {
                   {[selectedReadingHistory.reviewId, ...selectedReadingHistory.classicIds].map((id) => {
                     const item = curatedReading.items.find((candidate) => candidate.id === id);
                     if (!item) return null;
-                    return <a href={`/reading?id=${encodeURIComponent(item.id)}`} key={item.id}><span>{item.kind}</span><b>{item.titleZh}</b><em>查看详解 →</em></a>;
+                    return <Link href={`/reading?id=${encodeURIComponent(item.id)}`} key={item.id}><span>{item.kind}</span><b>{item.titleZh}</b><em>查看详解 →</em></Link>;
                   })}
                 </div>
               </article>
@@ -445,7 +446,7 @@ export default function Home() {
               <div className="insight-card-top"><span>{item.trackLabel}</span><FavoriteButton id={item.id} compact /></div>
               <h3>{item.title}</h3><p>{item.summary}</p>
               <b>{item.subtitle}</b>
-              <a className="insight-detail-link" href={`/insight?id=${encodeURIComponent(item.id)}`}>查看问题、步骤、设备与验收指标 →</a>
+              <Link className="insight-detail-link" href={`/insight?id=${encodeURIComponent(item.id)}`}>查看问题、步骤、设备与验收指标 →</Link>
             </article>
           ))}
         </div>
@@ -460,12 +461,12 @@ export default function Home() {
             <div className="insight-card-top"><p className="eyebrow">本期设备启发</p><FavoriteButton id={selectedMethodItems[0].id} compact /></div>
             <h3>{selectedMethodItems[0].title}</h3><p>{selectedMethodItems[0].summary}</p>
             <ul>{selectedMethodItems[0].metrics.map((metric) => <li key={metric}>{metric}</li>)}</ul>
-            <a className="insight-detail-link on-dark" href={`/insight?id=${encodeURIComponent(selectedMethodItems[0].id)}`}>查看完整建设、校准与验收路线 →</a>
+            <Link className="insight-detail-link on-dark" href={`/insight?id=${encodeURIComponent(selectedMethodItems[0].id)}`}>查看完整建设、校准与验收路线 →</Link>
           </div>}
           {selectedMethodItems.length > 1 && <div className="method-cards">
             {selectedMethodItems.slice(1).map((item, index) => (
               <article className="method-link-card" key={item.id}>
-                <span>{String(index + 2).padStart(2, "0")}</span><div><h3>{item.title}</h3><p>{item.summary}</p><a href={`/insight?id=${encodeURIComponent(item.id)}`}>查看设备方案 →</a></div>
+                <span>{String(index + 2).padStart(2, "0")}</span><div><h3>{item.title}</h3><p>{item.summary}</p><Link href={`/insight?id=${encodeURIComponent(item.id)}`}>查看设备方案 →</Link></div>
               </article>
             ))}
           </div>}
@@ -480,12 +481,12 @@ export default function Home() {
             <article className="insight-summary-card" key={item.id}>
               <div className="insight-card-top"><span>{item.trackLabel.replace("E · ", "")}</span><FavoriteButton id={item.id} compact /></div>
               <h3>{item.title}</h3><p>{item.summary}</p><small>{item.subtitle}</small>
-              <a className="insight-detail-link atomic-link" href={`/insight?id=${encodeURIComponent(item.id)}`}>查看完整设备 / 工艺 / 表征路线 →</a>
+              <Link className="insight-detail-link atomic-link" href={`/insight?id=${encodeURIComponent(item.id)}`}>查看完整设备 / 工艺 / 表征路线 →</Link>
             </article>
           ))}
         </div>
         <div className="atomic-paper-strip">
-          {selectedPapers.filter((paper) => paper.track === "E" || paper.secondaryTracks.includes("E")).map((paper) => <a href={`/paper?id=${encodeURIComponent(paper.id)}`} key={paper.id}><span>{paper.score.toFixed(1)}</span><div><b>{paper.titleZh}</b><small>{paper.methods.slice(0, 3).join(" · ")}</small></div><em>详解 →</em></a>)}
+          {selectedPapers.filter((paper) => paper.track === "E" || paper.secondaryTracks.includes("E")).map((paper) => <Link href={`/paper?id=${encodeURIComponent(paper.id)}`} key={paper.id}><span>{paper.score.toFixed(1)}</span><div><b>{paper.titleZh}</b><small>{paper.methods.slice(0, 3).join(" · ")}</small></div><em>详解 →</em></Link>)}
         </div>
         {selectedAtomicItems.length === 0 && <div className="empty-state"><b>这个日期没有原子制造方案记录</b><span>相关论文仍会按兼具E标签显示在文献库。</span></div>}
       </section>
@@ -500,7 +501,7 @@ export default function Home() {
               <div className="insight-history-links">{ids.map((id) => {
                 const item = findInsight(id);
                 if (!item) return null;
-                return <a href={`/insight?id=${encodeURIComponent(item.id)}`} key={item.id}><span>{item.typeZh}</span><b>{item.title}</b><em>查看详解 →</em></a>;
+                return <Link href={`/insight?id=${encodeURIComponent(item.id)}`} key={item.id}><span>{item.typeZh}</span><b>{item.title}</b><em>查看详解 →</em></Link>;
               })}</div>
             </article>;
           })()}
@@ -521,7 +522,7 @@ export default function Home() {
                   {selectedReportHistory.paperIds.map((id, index) => {
                     const paper = report.papers.find((item) => item.id === id);
                     if (!paper) return null;
-                    return <a href={`/paper?id=${encodeURIComponent(paper.id)}`} key={paper.id}><span>{String(index + 1).padStart(2, "0")}</span><div><b>{paper.titleZh}</b><small>主分类 {paper.track} · {paper.venue}</small></div><em>查看详解 →</em></a>;
+                    return <Link href={`/paper?id=${encodeURIComponent(paper.id)}`} key={paper.id}><span>{String(index + 1).padStart(2, "0")}</span><div><b>{paper.titleZh}</b><small>主分类 {paper.track} · {paper.venue}</small></div><em>查看详解 →</em></Link>;
                   })}
                 </div>
               )}

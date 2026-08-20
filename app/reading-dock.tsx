@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import report from "@/data/reports.json";
 import curatedReading from "@/data/curated-reading.json";
 import insightArchive from "@/data/insight-archive.json";
@@ -131,9 +132,9 @@ export function ReadingDock({ context, open, onOpenChange }: { context: ReadingD
           ) : (
             <div className="dock-favorites-panel">
               {totalFavorites === 0 ? <div className="dock-empty"><span>♡</span><b>还没有收藏</b><p>点击文章或方案上的红心，这里会立即出现。</p></div> : <div className="dock-favorites-list">
-                {favoritePapers.map((paper) => <article key={paper.id}><FavoriteButton id={paper.id} compact /><a href={`/paper?id=${encodeURIComponent(paper.id)}`}><span>{paper.track} · 论文</span><b>{paper.titleZh}</b><small>{savedNoteIds.includes(paper.id) ? "已有笔记" : "打开详解"}</small></a></article>)}
-                {favoriteReadings.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><a href={`/reading?id=${encodeURIComponent(item.id)}`}><span>{item.kind}</span><b>{item.titleZh}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "打开详解"}</small></a></article>)}
-                {favoriteInsights.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><a href={`/insight?id=${encodeURIComponent(item.id)}`}><span>{item.typeZh}</span><b>{item.title}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "打开方案"}</small></a></article>)}
+                {favoritePapers.map((paper) => <article key={paper.id}><FavoriteButton id={paper.id} compact /><Link href={`/paper?id=${encodeURIComponent(paper.id)}`}><span>{paper.track} · 论文</span><b>{paper.titleZh}</b><small>{savedNoteIds.includes(paper.id) ? "已有笔记" : "打开详解"}</small></Link></article>)}
+                {favoriteReadings.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><Link href={`/reading?id=${encodeURIComponent(item.id)}`}><span>{item.kind}</span><b>{item.titleZh}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "打开详解"}</small></Link></article>)}
+                {favoriteInsights.map((item) => <article key={item.id}><FavoriteButton id={item.id} compact /><Link href={`/insight?id=${encodeURIComponent(item.id)}`}><span>{item.typeZh}</span><b>{item.title}</b><small>{savedNoteIds.includes(item.id) ? "已有笔记" : "打开方案"}</small></Link></article>)}
               </div>}
               <div className="dock-export"><span>{savedNoteIds.length} 条已保存笔记</span><ExportAllNotesButton entries={noteEntries} /></div>
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import weeklyReading from "@/data/weekly-reading.json";
 import reports from "@/data/reports.json";
 import curatedReading from "@/data/curated-reading.json";
@@ -104,10 +105,10 @@ export default function WeeklyPage() {
   return (
     <main className="weekly-page">
       <header className="site-header weekly-header">
-        <a className="brand" href="/" aria-label="返回研究雷达首页"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></a>
+        <Link className="brand" href="/" aria-label="返回研究雷达首页"><span className="brand-mark">LT</span><span>低温输运研究雷达</span></Link>
         <nav aria-label="周精选导航">
-          <a href="/">工作日日报</a>
-          <a className="active" href="/weekly">本周精选</a>
+          <Link href="/">工作日日报</Link>
+          <Link className="active" href="/weekly">本周精选</Link>
           <a href="#comparison">跨文献比较</a>
           <a href="#actions">执行清单</a>
         </nav>
@@ -198,7 +199,7 @@ export default function WeeklyPage() {
 
       <footer className="weekly-footer">
         <div><b>低温输运研究雷达</b><span>原子制造 · MTJ/MRAM · 低温测量 · 可靠性</span></div>
-        <a href="/">返回工作日日报 →</a>
+        <Link href="/">返回工作日日报 →</Link>
       </footer>
     </main>
   );

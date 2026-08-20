@@ -20,6 +20,17 @@ const tracks: Record<TrackKey, { label: string; short: string }> = {
 };
 const reportDates = Array.from(new Set([...report.history.map((entry) => entry.date), ...curated.history.map((entry) => entry.date)])).sort((a, b) => b.localeCompare(a));
 
+function termParts(term: string | { name: string; meaning: string } | { term: string; explanation: string }) {
+  if (typeof term === "string") {
+    const splitAt = term.indexOf("：");
+    return splitAt >= 0
+      ? { name: term.slice(0, splitAt), meaning: term.slice(splitAt + 1) }
+      : { name: term, meaning: "术语说明见正文。" };
+  }
+  if ("name" in term) return term;
+  return { name: term.term, meaning: term.explanation };
+}
+
 export default function CuratedReadingDetailPage() {
   const [readingId, setReadingId] = useState<string | null | undefined>(undefined);
   const { open: readingDockOpen, setOpen: setReadingDockOpen } = useReadingDockState();
@@ -81,7 +92,7 @@ export default function CuratedReadingDetailPage() {
             <section id="value" className="detail-section"><div className="detail-section-title"><span>06</span><div><p>WHY IT MATTERS</p><h2>为什么成为经典或重要综述？</h2></div></div><ul className="value-list">{detail.whyItMatters.map((entry) => <li key={entry}>{entry}</li>)}</ul></section>
             <section id="connection" className="detail-section connection-section"><div className="detail-section-title"><span>07</span><div><p>RESEARCH CONNECTION</p><h2>和你的研究有什么关系？</h2></div></div><p>{detail.researchConnection}</p></section>
             <section id="limitations" className="detail-section limitation-section"><div className="detail-section-title"><span>08</span><div><p>EVIDENCE BOUNDARY</p><h2>应该保留哪些证据边界？</h2></div></div><p>{detail.limitationsDetailed}</p></section>
-            <section id="terms" className="detail-section"><div className="detail-section-title"><span>09</span><div><p>TERMS</p><h2>需要先懂的术语</h2></div></div><dl className="term-grid">{detail.terms.map((term) => <div key={term.name}><dt>{term.name}</dt><dd>{term.meaning}</dd></div>)}</dl></section>
+            <section id="terms" className="detail-section"><div className="detail-section-title"><span>09</span><div><p>TERMS</p><h2>需要先懂的术语</h2></div></div><dl className="term-grid">{detail.terms.map((term) => { const entry = termParts(term); return <div key={entry.name}><dt>{entry.name}</dt><dd>{entry.meaning}</dd></div>; })}</dl></section>
             <section className="takeaway-section"><span>读完只记住这一点</span><p>{detail.takeaway}</p></section>
           </div>
 
