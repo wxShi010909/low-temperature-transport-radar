@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-20T13:30:00+08:00",
-  "reportDate": "2026-08-20",
+  "updatedAt": "2026-08-21T09:00:00+08:00",
+  "reportDate": "2026-08-21",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -546,6 +546,25 @@
         "apl-127-182409",
         "rsi-94-093705",
         "jva-41-033005"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "label": "详细日报：NiCl₂隧穿指纹—HMA退火—电场Hall理论—亚K STM—HZO低损伤减薄",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "prb-113-l100402-nicl2",
+        "apl-129-072404-hma-mtj",
+        "prb-113-115421-electric-hall",
+        "rsi-97-053701-subkelvin-stm",
+        "jva-44-053005-hzo-plasma"
       ]
     }
   ],
@@ -6132,6 +6151,181 @@
       "accessNote": "DOI与作者开放PDF交叉核验",
       "featured": true,
       "recommendedOn": "2026-08-20"
+    },
+    {
+      "id": "prb-113-l100402-nicl2",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Static, dynamic, and tunneling fingerprints of antiferromagnetism in layered NiCl2",
+      "titleZh": "层状NiCl₂反铁磁的静态、动态与隧穿指纹",
+      "authors": "Liguo Zhang, Shilin Li, Yufeng Gao, Junhai Ren et al.",
+      "venue": "Physical Review B 113, L100402 (2026)",
+      "published": "2026-03-05",
+      "recommendedOn": "2026-08-21",
+      "timeTier": "2026正式低温输运论文",
+      "system": "层状范德华反铁磁绝缘体NiCl₂；体相磁化/磁化率、GHz自旋共振与薄片隧穿磁电导三种样品/测量互证",
+      "conditions": "低场和高场、面内与面外磁场方向、宽温区GHz共振；薄NiCl₂作为隧穿势垒；公开摘要未给薄片厚度、完整温区、最大磁场、RA和器件尺寸",
+      "methods": [
+        "测各向异性磁化与Néel转变",
+        "扫描频率/温度/场方向做反铁磁共振",
+        "制备薄片隧穿器件",
+        "把磁电导异常与自旋翻转/饱和场对应"
+      ],
+      "summary": "【直接实测】低场Néel转变温度各向异性很小，高场出现面内/面外分叉；面内反铁磁共振在宽GHz与温区保持稳健，面外响应在TN附近受抑；薄片隧穿磁电导随场增强并显现自旋翻转和饱和场。",
+      "relevance": "把体相磁性、动态谱和隧穿输运放到同一材料上交叉核验，可作为反铁磁隧道结“磁序是否真的进入电导”的证据模板。",
+      "limitation": "公开摘要没有给完整温度/磁场、势垒厚度、RA、绝对TMR、器件尺寸、WER、保持和耐久；NiCl₂二维小样本不能直接外推到CMOS MTJ。",
+      "industrialization": "处于材料物理与原型隧穿阶段；还缺晶圆生长、封装稳定性、接触、室温工作、写入方式、阵列统计和可靠性。",
+      "whyRecommended": "先看静态相图，再看面内/面外共振，最后把隧穿磁电导异常与自旋翻转场对应；40–55分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1103/d73h-v5p8",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/d73h-v5p8",
+      "backupUrl": "https://doi.org/10.1103/d73h-v5p8",
+      "accessNote": "已打开APS正式页并核验题目、日期、卷页、DOI及摘要；未在公开页给出的数字明确标注",
+      "featured": true
+    },
+    {
+      "id": "apl-129-072404-hma-mtj",
+      "track": "B",
+      "secondaryTracks": [
+        "E",
+        "D"
+      ],
+      "title": "Susceptor-controlled speed-performance tradeoff in hybrid microwave annealing of CoFeB/MgO/CoFeB magnetic tunnel junctions",
+      "titleZh": "吸波体控制CoFeB/MgO/CoFeB混合微波退火：2.5–5分钟速度—TMR权衡",
+      "authors": "Ming-Chun Hsu, Fan-Yun Chiu, Yao-Jen Chang, Kun-Ping Huang, Wei-Chi Aeneas Hsu, Chang-Shan Shen, Tsun-Hsu Chang",
+      "venue": "Applied Physics Letters 129, 072404 (2026)",
+      "published": "2026-08-19",
+      "recommendedOn": "2026-08-21",
+      "timeTier": "两日前正式MTJ器件论文",
+      "system": "CoFeB/MgO/CoFeB磁隧道结；3 kW混合微波退火；p型Si与多晶SiC两种吸波体对照",
+      "conditions": "固定3 kW微波功率，比较吸波体材料与2.5–5 min处理时间；公开摘要未给完整堆栈层厚、峰值温度、RA、器件尺寸和磁场",
+      "methods": [
+        "同批次制备CoFeB/MgO/CoFeB MTJ",
+        "分别配置p-Si与poly-SiC吸波体",
+        "扫描HMA时间",
+        "测退火后TMR并比较速度/性能"
+      ],
+      "summary": "【直接实测】poly-SiC在3 kW下2.5 min得到101.9% TMR；p-Si需要5 min但达到120.3% TMR，明确显示吸波体耦合带来的速度—最终性能权衡。",
+      "relevance": "直接服务MTJ退火：把“快速晶化”和“界面最佳TMR”从单一时间参数扩展为吸波体—功率—时间—局部温度联合DOE。",
+      "limitation": "摘要未公开实际峰值温度、温度均匀性、RA、WER、保持、耐久、全片统计和批间重复性；最高TMR不等于最优量产窗口。",
+      "industrialization": "接近快速退火工艺模块验证；仍需300 mm温度场、吸波体寿命、设备匹配、颗粒、吞吐、BEOL热预算和阵列可靠性。",
+      "whyRecommended": "先看两种吸波体的升温/耦合差异，再看2.5与5 min的TMR，最后审视未公开的温度与晶圆均匀性；30–45分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.1063/5.0345264",
+      "url": "https://pubs.aip.org/aip/apl/article/129/7/072404/3401501/Susceptor-controlled-speed-performance-tradeoff-in",
+      "backupUrl": "https://doi.org/10.1063/5.0345264",
+      "accessNote": "已打开AIP正式页并核验作者、2026-08-19、DOI、3 kW、2.5/5 min与101.9%/120.3% TMR",
+      "featured": true
+    },
+    {
+      "id": "prb-113-115421-electric-hall",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "title": "Electric spin and valley tunneling Hall effects",
+      "titleZh": "纯电场驱动的自旋与谷隧穿霍尔效应",
+      "authors": "作者列表见APS正式页",
+      "venue": "Physical Review B 113, 115421 (2026)",
+      "published": "2026-03-23",
+      "recommendedOn": "2026-08-21",
+      "timeTier": "2026正式理论论文",
+      "system": "基于起伏二维六角材料的弹道“全合一”隧道结；垂直电场控制横向自旋/谷电流",
+      "conditions": "理论弹道输运模型；比较垂直电场正负方向；公开摘要未给具体材料厚度、器件尺寸、温度、偏压和电场数值",
+      "methods": [
+        "建立起伏二维六角隧道结模型",
+        "施加正/负垂直电场",
+        "计算反射相位与横向自旋/谷电导",
+        "比较Hall角与极化态"
+      ],
+      "summary": "【理论预测】谷Hall电导对垂直电场呈奇响应，自旋Hall电导呈偶响应；反射相位而非Berry曲率产生效应，并可分离一对100%自旋—谷锁定态，同时保持时间反演对称性。",
+      "relevance": "提供“电场—界面反射相位—纯自旋/谷流”的计算框架，可迁移到电控MTJ界面和对称性过滤，但不是现成MRAM单元。",
+      "limitation": "全部为理想弹道理论；公开摘要未给现实电场、缺陷、有限温、接触、RA、TMR、WER、保持和耐久；100%极化不是实测。",
+      "industrialization": "处于概念机制阶段；还需确定可生长材料、低击穿场窗口、接触、室温散射容限、读出方式和阵列集成。",
+      "whyRecommended": "先看器件几何和反射相位，再看奇/偶电场响应及等自旋—谷Hall角；35–50分钟。",
+      "score": 9.3,
+      "priority": "A",
+      "doi": "10.1103/7yy3-d25f",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/7yy3-d25f",
+      "backupUrl": "https://doi.org/10.1103/7yy3-d25f",
+      "accessNote": "已打开APS正式页并核验题目、2026-03-23、卷页、DOI与摘要；所有性能标为理论预测",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-053701-subkelvin-stm",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "A continuous-operation sub-Kelvin scanning tunneling microscope with high magnetic field via a remote liquefaction cryogen-free scheme",
+      "titleZh": "远程液化无液氦亚开尔文STM：420 mK、5 T与数月连续运行",
+      "authors": "Ruisong Ma, Yuanzhi Huang, Guangyuan Han, Hao Li, Chenshuai Shi, Fan Wang et al.",
+      "venue": "Review of Scientific Instruments 97, 053701 (2026)",
+      "published": "2026-05-08",
+      "recommendedOn": "2026-08-21",
+      "timeTier": "2026原子尺度低温仪器论文",
+      "system": "两级4He循环预冷（约20 K与2 K）+连续流STM插杆+3He或4He远程液化/蒸发泵浦；室温孔5 T超导磁体",
+      "conditions": "4He–3He模式最低420 mK；4He–4He模式最低894 mK；500 mK与1 K温控波动约±0.1 mK；可数月连续运行",
+      "methods": [
+        "两级4He循环预冷",
+        "远程液化3He/4He并蒸发制冷",
+        "PID稳定样品台温度",
+        "测冷却曲线、电流噪声、漂移、原子像和变温/变场谱"
+      ],
+      "summary": "【工程实测】3He模式420 mK、4He模式894 mK；500 mK和1 K实现约±0.1 mK稳定度；5 T下获得原子分辨与变温/变场谱，并支持数月连续工作。",
+      "relevance": "直接对应原子制造后的局域态、界面缺陷和磁性原子谱验证，也为低温平台的远程液化、振动隔离与长期自动化提供成熟架构。",
+      "limitation": "STM是局域表面测量而非晶圆级MTJ电学；公开摘要未给绝对电流噪声、漂移率、吞吐、自动换样和器件级TMR/WER。",
+      "industrialization": "高端研发仪器接近成熟；用于器件开发仍需坐标回访、自动寻区、封装样品兼容、统计采样和与TEM/XPS/输运数据关联。",
+      "whyRecommended": "先看远程液化流程和热级，再看420/894 mK与±0.1 mK稳定度，最后看原子分辨/磁场谱；45–65分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1063/5.0325806",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/5/053701/3389292/A-continuous-operation-sub-Kelvin-scanning",
+      "backupUrl": "https://doi.org/10.1063/5.0325806",
+      "accessNote": "已打开AIP正式全文并核验作者、日期、DOI、5 T、420/894 mK、±0.1 mK及数月连续运行",
+      "featured": true
+    },
+    {
+      "id": "jva-44-053005-hzo-plasma",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Titanium nitride and hafnium-zirconium oxide thin film plasma etching for ferroelectric nonvolatile memory applications. I. Etching mechanisms and processes",
+      "titleZh": "TiN/HZO薄膜等离子体减薄：400 °C晶化后实现BEOL兼容亚10 nm铁电层",
+      "authors": "Vincent Michaud, C. Boixaderas, L. Grenouillet, M. Marmiesse, T. Chevolleau",
+      "venue": "Journal of Vacuum Science & Technology A 44, 053005 (2026)",
+      "published": "2026-08-12",
+      "recommendedOn": "2026-08-21",
+      "timeTier": "九日前正式原子制造论文",
+      "system": "300 mm Si上的TiN/10 nm HZO/TiN堆栈；400 °C结晶；先移除顶TiN，再对已结晶HZO做受控ICP减薄",
+      "conditions": "10 nm HZO在TiN夹层中400 °C晶化；CH4/N2/Cl2去TiN+SC1清洗；BCl3/Cl2 ICP低偏置减薄至<10 nm；公开摘要未给最终厚度、刻蚀速率和铁电回线数值",
+      "methods": [
+        "ALD形成10 nm HZO并夹在TiN电极间",
+        "400 °C退火晶化",
+        "CH4/N2/Cl2选择性去顶TiN并SC1清洗",
+        "BCl3/Cl2低偏置ICP逐步减薄HZO"
+      ],
+      "summary": "【直接工艺结果】在不超过400 °C热预算下得到亚10 nm已结晶HZO；B物种夺氧与金属氯化形成挥发产物，降低偏置可改善减薄控制并限制离子损伤。",
+      "relevance": "与MTJ精确刻蚀终止高度同构：先保护关键相/界面，再用选择性化学+低偏置能量精修，适合转化为势垒上方停刻与侧壁损伤DOE。",
+      "limitation": "对象是FeRAM HZO而非CoFeB/MgO；公开摘要未给最终厚度分布、刻蚀速率、极化、耐久、保持、晶圆良率，也未证明MTJ兼容。",
+      "industrialization": "处于300 mm BEOL工艺模块验证；还需全片均匀性、端点、颗粒、残Cl/B、循环耐久、保持、批间SPC和集成良率。",
+      "whyRecommended": "先看TiN选择性移除，再看BCl3/Cl2机理、低偏置控制和亚10 nm结果；40–55分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.1116/6.0005641",
+      "url": "https://pubs.aip.org/avs/jva/article/44/5/053005/3400914/Titanium-nitride-and-hafnium-zirconium-oxide-thin",
+      "backupUrl": "https://doi.org/10.1116/6.0005641",
+      "accessNote": "已打开AVS/AIP正式全文并核验作者、日期、DOI、300 mm、10 nm、400 °C、两段刻蚀/清洗与低偏置机理",
+      "featured": true
     }
   ]
 }

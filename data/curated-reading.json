@@ -195,6 +195,13 @@
       "classicIds": [
         "classic-tdbd-model-2012"
       ]
+    },
+    {
+      "date": "2026-08-21",
+      "reviewId": "review-novel-atomic-layer-processes-2025",
+      "classicIds": [
+        "classic-brown-thermal-fluctuations-1963"
+      ]
     }
   ],
   "items": [
@@ -1839,6 +1846,60 @@
       ],
       "notNew": true,
       "recommendedOn": "2026-08-20"
+    },
+    {
+      "id": "review-novel-atomic-layer-processes-2025",
+      "kind": "每日综述",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Novel Atomic Layer Processes for Semiconductor Manufacturing: Area Selective Deposition, Atomic Layer Annealing, and Atomic Layer Etching",
+      "titleZh": "半导体制造新型原子层工艺：区域选择沉积、原子层退火与原子层刻蚀",
+      "authors": "Sangwon Lee, Gyuha Lee, Jeongmin Oh, Jihwan An",
+      "venue": "International Journal of Precision Engineering and Manufacturing 26, 2551–2571 (2025)",
+      "published": "2025-09-15",
+      "recommendedOn": "2026-08-21",
+      "doi": "10.1007/s12541-025-01337-z",
+      "url": "https://link.springer.com/article/10.1007/s12541-025-01337-z",
+      "backupUrl": "https://doi.org/10.1007/s12541-025-01337-z",
+      "assistantSummary": "正式开放综述系统比较区域选择沉积（ASD）、原子层退火（ALA）和原子层刻蚀（ALE），把表面选择性、低热预算局域晶化、掺杂激活与逐层去除连接到亚10 nm和三维集成。",
+      "whySelected": "它为今天HZO“先晶化后低损伤减薄”和MTJ界面/侧壁精修提供工艺总图，可直接用于设计沉积—退火—刻蚀超循环。",
+      "readingGuide": [
+        "先看图3三类原子层工艺的定位。",
+        "再读ASD的表面反应与抑制剂选择性。",
+        "重点读ALA的亚纳米加热深度和低热预算。",
+        "最后读ALE与沉积/刻蚀超循环及产业瓶颈；70–90分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-brown-thermal-fluctuations-1963",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "A"
+      ],
+      "title": "Thermal Fluctuations of a Single-Domain Particle",
+      "titleZh": "单畴磁性颗粒热涨落：保持时间与热稳定的经典理论基础",
+      "authors": "William Fuller Brown, Jr.",
+      "venue": "Physical Review 130, 1677 (1963)",
+      "published": "1963-06-01",
+      "recommendedOn": "2026-08-21",
+      "doi": "10.1103/PhysRev.130.1677",
+      "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.130.1677",
+      "backupUrl": "https://doi.org/10.1103/PhysRev.130.1677",
+      "assistantSummary": "Brown把单畴磁矩在热噪声下的随机运动写成Fokker–Planck问题，奠定磁性颗粒热激活翻转、保持时间和热稳定因子分析的理论基础。",
+      "whySelected": "今天的快速退火提高TMR并不自动保证保持；这篇经典理论提醒必须同时验证能垒、温度和观测时间，不能只看室温磁阻。",
+      "readingGuide": [
+        "先理解单畴近似与热噪声。",
+        "再看高能垒极限下的热激活逃逸。",
+        "把能垒、温度和尝试频率对应到保持。",
+        "最后审视多畴/自旋转矩器件的适用边界；45–65分钟。"
+      ],
+      "notNew": true
     }
   ]
 }

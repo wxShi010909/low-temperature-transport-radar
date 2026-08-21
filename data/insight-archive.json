@@ -332,6 +332,18 @@
       "atomicIds": [
         "2026-08-20-interface-process-window"
       ]
+    },
+    {
+      "date": "2026-08-21",
+      "opportunityIds": [
+        "2026-08-21-anneal-retention-map"
+      ],
+      "methodIds": [
+        "2026-08-21-triple-fingerprint-platform"
+      ],
+      "atomicIds": [
+        "2026-08-21-selective-thinning-route"
+      ]
     }
   ],
   "items": [
@@ -5137,6 +5149,153 @@
       ],
       "researchConnection": "连接原子制造、MTJ和阵列可靠性。",
       "takeaway": "同时优化原子界面与侧壁，而不是只追最高刻蚀选择比。"
+    },
+    {
+      "id": "2026-08-21-anneal-retention-map",
+      "date": "2026-08-21",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · MTJ工艺与可靠性",
+      "title": "HMA速度—TMR—热稳定三维工艺图",
+      "subtitle": "把最快退火、最高TMR和最长保持从同一个“最佳点”中拆开。",
+      "summary": "把最快退火、最高TMR和最长保持从同一个“最佳点”中拆开。",
+      "status": "本站组合推断，待同一批pMTJ验证",
+      "relatedPaperIds": [
+        "apl-129-072404-hma-mtj",
+        "classic-brown-thermal-fluctuations-1963"
+      ],
+      "question": "2.5 min得到可用TMR的快速窗口，是否也能保持足够能垒和十年寿命？",
+      "rationale": "TMR优化反映界面结晶，保持由能垒分布决定，两者不能互相替代。",
+      "workflow": [
+        "吸波体×功率×时间DOE",
+        "校准真实温度场",
+        "测TMR/RA/PMA",
+        "变温保持与WER闭环"
+      ],
+      "equipment": [
+        "HMA设备",
+        "红外/见证温度计量",
+        "VSM/FMR",
+        "低温脉冲输运"
+      ],
+      "measurements": [
+        "TMR/RA",
+        "PMA/阻尼",
+        "局部结温",
+        "保持/WER/耐久"
+      ],
+      "metrics": [
+        "达到100% TMR时间",
+        "全片3σ",
+        "热稳定因子",
+        "10年保持外推"
+      ],
+      "evidenceBoundary": "101.9%/120.3%是指定吸波体和时间的直接实测；保持与量产窗口尚未证明。",
+      "firstSteps": [
+        "复制p-Si/poly-SiC/空白三组",
+        "加入温度见证片",
+        "做首轮保持分布"
+      ],
+      "researchConnection": "直接连接CoFeB/MgO退火、低温输运和MRAM可靠性。",
+      "takeaway": "以后退火验收不只看TMR峰值，还要看能垒、均匀性和尾部寿命。"
+    },
+    {
+      "id": "2026-08-21-triple-fingerprint-platform",
+      "date": "2026-08-21",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 低温多模态平台",
+      "title": "磁化—FMR—隧穿—STM四级证据链",
+      "subtitle": "用体相、动态、输运和原子局域谱共同确认磁序与界面缺陷。",
+      "summary": "用体相、动态、输运和原子局域谱共同确认磁序与界面缺陷。",
+      "status": "本站组合推断，待统一样品坐标验证",
+      "relatedPaperIds": [
+        "prb-113-l100402-nicl2",
+        "rsi-97-053701-subkelvin-stm"
+      ],
+      "question": "隧穿异常究竟来自磁序、局域缺陷还是接触变化？",
+      "rationale": "单一电阻曲线难以排除伪影，多模态共用转变温度/场可提高归因可信度。",
+      "workflow": [
+        "同批见证片编号",
+        "磁化与FMR先筛查",
+        "低温隧穿复测",
+        "STM局域态与缺陷回访"
+      ],
+      "equipment": [
+        "VSM/PPMS",
+        "宽带FMR",
+        "低噪声输运",
+        "亚K 5 T STM"
+      ],
+      "measurements": [
+        "TN/磁化",
+        "共振频率/线宽",
+        "磁电导/RA",
+        "局域态密度/缺陷"
+      ],
+      "metrics": [
+        "跨模态转变一致性",
+        "异常复现率",
+        "噪声底",
+        "坐标回访成功率"
+      ],
+      "evidenceBoundary": "NiCl₂论文证明三联证据；加入STM定位MTJ缺陷是本站扩展。",
+      "firstSteps": [
+        "建立统一样品托与坐标",
+        "做非磁势垒对照",
+        "对异常结做局域谱"
+      ],
+      "researchConnection": "连接低温输运、FMR、原子表征和设备自动化。",
+      "takeaway": "任何“新磁输运信号”至少要有第二种动态或局域证据支撑。"
+    },
+    {
+      "id": "2026-08-21-selective-thinning-route",
+      "date": "2026-08-21",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "C/E · 原子制造",
+      "title": "选择性去盖层—低偏置精修—原位封护路线",
+      "subtitle": "把HZO的两段等离子体流程迁移为MTJ精确停刻与侧壁保护。",
+      "summary": "把HZO的两段等离子体流程迁移为MTJ精确停刻与侧壁保护。",
+      "status": "本站工艺推断，必须在CoFeB/MgO验证",
+      "relatedPaperIds": [
+        "jva-44-053005-hzo-plasma",
+        "review-novel-atomic-layer-processes-2025"
+      ],
+      "question": "能否把高选择性去顶层和低能量精修分开，从而减少MgO/CoFeB侧壁损伤？",
+      "rationale": "HZO工作证明“先保相、后减薄”；ASD/ALA/ALE综述给出逐层控制工具箱。",
+      "workflow": [
+        "选择性去盖层筛选",
+        "低偏置/循环式精修",
+        "原位XPS端点",
+        "不破真空封护与电学"
+      ],
+      "equipment": [
+        "ICP/RIBE/ALE",
+        "原位XPS/OES",
+        "ALD封护",
+        "截面TEM-EELS"
+      ],
+      "measurements": [
+        "选择比/端点",
+        "残Cl/B/O",
+        "侧壁粗糙",
+        "TMR/RA/TDDB"
+      ],
+      "metrics": [
+        "停刻误差",
+        "侧壁损伤深度",
+        "TMR保持率",
+        "晶圆良率3σ"
+      ],
+      "evidenceBoundary": "HZO不是MTJ；BCl3/Cl2化学不能直接照搬到CoFeB/MgO。",
+      "firstSteps": [
+        "先做单层见证片",
+        "建立低偏置剂量矩阵",
+        "用空白/连续刻蚀作对照"
+      ],
+      "researchConnection": "直接服务MTJ刻蚀终止、侧壁修复与原子制造专利方向。",
+      "takeaway": "把“粗去除”和“精停刻”分成两个物理阶段，再用原位封护锁住界面。"
     }
   ]
 }
