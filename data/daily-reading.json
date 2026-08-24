@@ -1,57 +1,57 @@
 {
-  "date": "2026-08-21",
+  "date": "2026-08-24",
   "review": {
-    "id": "review-novel-atomic-layer-processes-2025",
+    "id": "review-sot-mram-probabilistic-2026",
     "kind": "每日综述",
-    "track": "E",
+    "track": "B",
     "secondaryTracks": [
-      "B",
-      "C"
+      "C",
+      "E"
     ],
-    "title": "Novel Atomic Layer Processes for Semiconductor Manufacturing: Area Selective Deposition, Atomic Layer Annealing, and Atomic Layer Etching",
-    "titleZh": "半导体制造新型原子层工艺：区域选择沉积、原子层退火与原子层刻蚀",
-    "authors": "Sangwon Lee, Gyuha Lee, Jeongmin Oh, Jihwan An",
-    "venue": "International Journal of Precision Engineering and Manufacturing 26, 2551–2571 (2025)",
-    "published": "2025-09-15",
-    "recommendedOn": "2026-08-21",
-    "doi": "10.1007/s12541-025-01337-z",
-    "url": "https://link.springer.com/article/10.1007/s12541-025-01337-z",
-    "backupUrl": "https://doi.org/10.1007/s12541-025-01337-z",
-    "assistantSummary": "正式开放综述系统比较区域选择沉积（ASD）、原子层退火（ALA）和原子层刻蚀（ALE），把表面选择性、低热预算局域晶化、掺杂激活与逐层去除连接到亚10 nm和三维集成。",
-    "whySelected": "它为今天HZO“先晶化后低损伤减薄”和MTJ界面/侧壁精修提供工艺总图，可直接用于设计沉积—退火—刻蚀超循环。",
+    "title": "Spin–Orbit Torque MRAM: Fundamentals, Device Engineering, and Applications in Probabilistic Computing",
+    "titleZh": "SOT-MRAM正式综述：机理、器件工程、晶圆集成与概率计算",
+    "authors": "Kun Lei, Xinrui Wang, Yiqi Zhou, Bohan Liu, Kaiyou Wang",
+    "venue": "Advanced Quantum Technologies 9, e00886 (2026)",
+    "published": "2026-03-04",
+    "recommendedOn": "2026-08-24",
+    "doi": "10.1002/qute.202500886",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/qute.202500886",
+    "backupUrl": "https://doi.org/10.1002/qute.202500886",
+    "assistantSummary": "正式综述从自旋Hall/Rashba–Edelstein机制讲到SOT材料、2T–1SOT单元、无场翻转、晶圆级集成和p-bit概率计算，明确区分确定性存储与受热涨落控制的随机器件。",
+    "whySelected": "与今天MnPd₃非常规z极化SOT形成“总图—材料机制”组合，也能把转矩效率、写入电流、PMA、热稳定、WER和阵列应用放进同一评价框架。",
     "readingGuide": [
-      "先看图3三类原子层工艺的定位。",
-      "再读ASD的表面反应与抑制剂选择性。",
-      "重点读ALA的亚纳米加热深度和低热预算。",
-      "最后读ALE与沉积/刻蚀超循环及产业瓶颈；70–90分钟。"
+      "先看SHE/REE机理图。",
+      "再看2T–1SOT单元和读写路径。",
+      "重点读无场翻转、材料效率与晶圆集成。",
+      "最后读p-bit与系统级缺口；60–80分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-brown-thermal-fluctuations-1963",
+      "id": "classic-mathon-umerski-mgo-2001",
       "kind": "经典文章",
-      "track": "B",
+      "track": "C",
       "secondaryTracks": [
-        "C",
-        "A"
+        "B",
+        "E"
       ],
-      "title": "Thermal Fluctuations of a Single-Domain Particle",
-      "titleZh": "单畴磁性颗粒热涨落：保持时间与热稳定的经典理论基础",
-      "authors": "William Fuller Brown, Jr.",
-      "venue": "Physical Review 130, 1677 (1963)",
-      "published": "1963-06-01",
-      "recommendedOn": "2026-08-21",
-      "doi": "10.1103/PhysRev.130.1677",
-      "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.130.1677",
-      "backupUrl": "https://doi.org/10.1103/PhysRev.130.1677",
-      "assistantSummary": "Brown把单畴磁矩在热噪声下的随机运动写成Fokker–Planck问题，奠定磁性颗粒热激活翻转、保持时间和热稳定因子分析的理论基础。",
-      "whySelected": "今天的快速退火提高TMR并不自动保证保持；这篇经典理论提醒必须同时验证能垒、温度和观测时间，不能只看室温磁阻。",
+      "title": "Theory of tunneling magnetoresistance of an epitaxial Fe/MgO/Fe(001) junction",
+      "titleZh": "外延Fe/MgO/Fe隧穿磁阻理论：MgO对称性过滤的经典预测",
+      "authors": "J. Mathon, A. Umerski",
+      "venue": "Physical Review B 63, 220403(R) (2001)",
+      "published": "2001-05-10",
+      "recommendedOn": "2026-08-24",
+      "doi": "10.1103/PhysRevB.63.220403",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.63.220403",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.63.220403",
+      "assistantSummary": "作者用真实空间Kubo公式和拟合第一性原理能带计算外延Fe/MgO/Fe(001)，预测理想结TMR可超过1000%，并指出隧穿不只由Γ点状态决定。",
+      "whySelected": "今天MnTe/CdTe的近100%理论极化必须与这篇经典理想MgO预测对照：巨大计算TMR需要经过界面、缺陷、温度、偏压和制造统计才能转成器件结果。",
       "readingGuide": [
-        "先理解单畴近似与热噪声。",
-        "再看高能垒极限下的热激活逃逸。",
-        "把能垒、温度和尝试频率对应到保持。",
-        "最后审视多畴/自旋转矩器件的适用边界；45–65分钟。"
+        "先看计算结构与平行/反平行电导定义。",
+        "再看势垒厚度与TMR。",
+        "重点理解Fe表面谱和MgO复费米面。",
+        "最后与真实CoFeB/MgO的缺陷和RA对照；35–50分钟。"
       ],
       "notNew": true
     }

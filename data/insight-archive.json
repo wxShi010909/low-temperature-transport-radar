@@ -344,6 +344,18 @@
       "atomicIds": [
         "2026-08-21-selective-thinning-route"
       ]
+    },
+    {
+      "date": "2026-08-24",
+      "opportunityIds": [
+        "2026-08-24-cryo-mtj-mode-map"
+      ],
+      "methodIds": [
+        "2026-08-24-rf-barrier-metrology"
+      ],
+      "atomicIds": [
+        "2026-08-24-peald-sidewall-loop"
+      ]
     }
   ],
   "items": [
@@ -5296,6 +5308,153 @@
       ],
       "researchConnection": "直接服务MTJ刻蚀终止、侧壁修复与原子制造专利方向。",
       "takeaway": "把“粗去除”和“精停刻”分成两个物理阶段，再用原位封护锁住界面。"
+    },
+    {
+      "id": "2026-08-24-cryo-mtj-mode-map",
+      "date": "2026-08-24",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 低温MTJ可靠性",
+      "title": "自由层磁化模式—TMR—低温灵敏度联合地图",
+      "subtitle": "把TMR增益与真正的读出斜率、噪声和磁滞分开验收。",
+      "summary": "把TMR增益与真正的读出斜率、噪声和磁滞分开验收。",
+      "status": "本站组合推断，待纳米pMTJ验证",
+      "relatedPaperIds": [
+        "jphysd-59-055004-cryogenic-mtj-sensors",
+        "classic-mathon-umerski-mgo-2001"
+      ],
+      "question": "低温TMR升高时，读出窗口为何可能变窄，界面与自由层各贡献多少？",
+      "rationale": "经典MgO理论给出理想隧穿上限，低温实验显示自由层矫顽与磁化模式能反向改变灵敏度。",
+      "workflow": [
+        "同堆栈制作单轴/涡旋/纳米pMTJ",
+        "10–300 K R-H与噪声扫描",
+        "提取界面和磁化模式贡献",
+        "加入脉冲WER/保持"
+      ],
+      "equipment": [
+        "低温探针台",
+        "矢量磁场",
+        "锁相与低噪声前放",
+        "脉冲参数分析仪"
+      ],
+      "measurements": [
+        "TMR/RA",
+        "灵敏度/磁滞",
+        "1/f与RTN噪声",
+        "WER/保持"
+      ],
+      "metrics": [
+        "读出窗口6σ",
+        "温度系数",
+        "矫顽场分布",
+        "尾部误码"
+      ],
+      "evidenceBoundary": "54%/32% TMR和灵敏度变化来自微米传感器；迁移到纳米MRAM必须重测。",
+      "firstSteps": [
+        "复制两类几何",
+        "建立温度系数基线",
+        "把噪声纳入读出裕量"
+      ],
+      "researchConnection": "直接连接低温输运、MTJ自由层和可靠性。",
+      "takeaway": "以后低温MTJ验收必须同时报告TMR、灵敏度、磁滞、噪声和误码。"
+    },
+    {
+      "id": "2026-08-24-rf-barrier-metrology",
+      "date": "2026-08-24",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 射频低温计量",
+      "title": "RF反射—DC隧穿—电子温度三联校准",
+      "subtitle": "把高RA结的带宽、加热和局域缺陷放进同一可追溯测量链。",
+      "summary": "把高RA结的带宽、加热和局域缺陷放进同一可追溯测量链。",
+      "status": "本站设备路线，待MTJ标准件验证",
+      "relatedPaperIds": [
+        "rsi-97-083701-rf-mk-stm",
+        "jphysd-59-055004-cryogenic-mtj-sensors"
+      ],
+      "question": "怎样区分RF匹配改善带来的信号增益与载波加热、寄生电容造成的假变化？",
+      "rationale": "Nb相干峰可标定电子温度，距离调谐可分离结电容，DC曲线提供独立对照。",
+      "workflow": [
+        "50 Ω标准/开短负载去嵌入",
+        "Nb或Al超导标准测电子温度",
+        "高RA MTJ扫描S11与DC I-V",
+        "温度/功率/偏压自动化"
+      ],
+      "equipment": [
+        "VNA或RF反射计",
+        "低温衰减/隔离器",
+        "低噪声DC源表",
+        "超导标准结"
+      ],
+      "measurements": [
+        "S11/带宽",
+        "电子温度",
+        "DC I-V/RA",
+        "噪声/漂移"
+      ],
+      "metrics": [
+        "匹配深度",
+        "最小可辨电阻",
+        "载波温升",
+        "重复性3σ"
+      ],
+      "evidenceBoundary": "5 nm²成像是STM演示，不等于MTJ阵列读出性能。",
+      "firstSteps": [
+        "先做标准件去嵌入",
+        "标定功率—电子温度",
+        "再接入MTJ见证结"
+      ],
+      "researchConnection": "连接低温平台、RF小信号和MTJ高阻读出。",
+      "takeaway": "任何RF增益都必须同时给出电子温度、去嵌入和DC交叉验证。"
+    },
+    {
+      "id": "2026-08-24-peald-sidewall-loop",
+      "date": "2026-08-24",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "B/E · MTJ侧壁原子制造",
+      "title": "PEALD离子能量—亚表面残留—MTJ性能闭环",
+      "subtitle": "把“表面去Cl”升级为深度成分、侧壁损伤与TMR可靠性的联合验收。",
+      "summary": "把“表面去Cl”升级为深度成分、侧壁损伤与TMR可靠性的联合验收。",
+      "status": "本站工艺推断，必须在CoFeB/MgO侧壁验证",
+      "relatedPaperIds": [
+        "jva-44-042402-peald-sin-md",
+        "prb-114-094428-mnpd3-sot"
+      ],
+      "question": "怎样获得足够氮化/封护，同时避免Cl、H、N和离子位移进入MTJ边缘？",
+      "rationale": "原子模拟证明表面清洁和亚表面洁净可能相反；SOT界面又对原子对称性极敏感。",
+      "workflow": [
+        "离子能量×剂量×占空比DOE",
+        "自由基无偏压和热ALD对照",
+        "XPS/ToF-SIMS深度与TEM-EELS",
+        "TMR/RA/TDDB/保持闭环"
+      ],
+      "equipment": [
+        "偏压可控PEALD",
+        "离子能量分析",
+        "原位XPS/ToF-SIMS",
+        "截面TEM与器件电学"
+      ],
+      "measurements": [
+        "H/N/Cl深度",
+        "损伤层厚度",
+        "TMR/RA",
+        "漏电/TDDB/保持"
+      ],
+      "metrics": [
+        "表面与亚表面残留",
+        "TMR保持率",
+        "侧壁漏电尾部",
+        "晶圆3σ"
+      ],
+      "evidenceBoundary": "Si/氯化Si的MD不能直接给CoFeB/MgO安全窗口；所有能量与残留阈值需实测。",
+      "firstSteps": [
+        "先做单层见证片",
+        "加入无偏压对照",
+        "再上图形化MTJ"
+      ],
+      "researchConnection": "直接服务刻蚀后原位SiNₓ封护、界面成分控制和可靠性。",
+      "takeaway": "封护验收不能只看表面XPS，必须看深度残留和器件尾部失效。"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-21T09:00:00+08:00",
-  "reportDate": "2026-08-21",
+  "updatedAt": "2026-08-24T09:00:00+08:00",
+  "reportDate": "2026-08-24",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -565,6 +565,25 @@
         "prb-113-115421-electric-hall",
         "rsi-97-053701-subkelvin-stm",
         "jva-44-053005-hzo-plasma"
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "label": "详细日报：低温MTJ模式—MnPd₃ SOT—MnTe界面理论—RF反射计量—PEALD亚表面残留",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "jphysd-59-055004-cryogenic-mtj-sensors",
+        "prb-114-094428-mnpd3-sot",
+        "prb-114-084422-mnte-cdte",
+        "rsi-97-083701-rf-mk-stm",
+        "jva-44-042402-peald-sin-md"
       ]
     }
   ],
@@ -6325,6 +6344,181 @@
       "url": "https://pubs.aip.org/avs/jva/article/44/5/053005/3400914/Titanium-nitride-and-hafnium-zirconium-oxide-thin",
       "backupUrl": "https://doi.org/10.1116/6.0005641",
       "accessNote": "已打开AVS/AIP正式全文并核验作者、日期、DOI、300 mm、10 nm、400 °C、两段刻蚀/清洗与低偏置机理",
+      "featured": true
+    },
+    {
+      "id": "jphysd-59-055004-cryogenic-mtj-sensors",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Contrasting uniaxial and vortex-state magnetic tunnel junction sensors: sensitivity and tunnel magnetoresistance at low temperatures",
+      "titleZh": "单轴与涡旋态MTJ传感器的低温对比：10–300 K灵敏度与TMR分化",
+      "authors": "Liam K. Mitchell, Benjamin J. Brown, Z. C. Adamson, A. Zaslavsky, Gang Xiao",
+      "venue": "Journal of Physics D: Applied Physics 59, 055004 (2026)",
+      "published": "2026-02-06",
+      "recommendedOn": "2026-08-24",
+      "timeTier": "2026正式低温MTJ实验论文",
+      "system": "热氧化Si上的磁控溅射MTJ；单轴条形器件阵列与6–16 μm圆形涡旋自由层器件；MgO势垒2.0–2.9 nm",
+      "conditions": "10–300 K、磁场约±80 Oe；沉积基压<3.5×10⁻⁸ Torr；代表性单轴单元160×20 μm²并以38个串联，代表性涡旋器件直径15 μm",
+      "methods": [
+        "dc/rf磁控溅射并图形化两类MTJ",
+        "10–300 K测电阻—磁场回线",
+        "提取TMR、线性灵敏度、矫顽场与温度系数",
+        "按器件几何和磁化模式比较低温演化"
+      ],
+      "summary": "【直接实测】10 K相对300 K，单轴与涡旋器件TMR分别提高54%与32%；单轴灵敏度从1.05降至0.88 %/Oe（下降17%），涡旋灵敏度从0.54升至0.57 %/Oe（约+7%），且涡旋态保持无磁滞。",
+      "relevance": "直接提醒低温MTJ开发不能用“TMR升高”代替“传感/读出性能变好”；自由层磁化模式、矫顽场和热激活必须与TMR同时计量。",
+      "limitation": "器件为微米级传感器且最低10 K，不是纳米pMTJ存储单元；未公开RA、写入临界电流、WER、保持、耐久、阵列良率。",
+      "industrialization": "接近低温磁传感器工艺验证；进入MRAM仍需纳米缩放、读写电路、噪声、PVT校准、阵列尾部统计和长期可靠性。",
+      "whyRecommended": "先看图1器件几何与回线、图2 TMR、图3灵敏度，再看图5归一化比较；35–50分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1088/1361-6463/ae3df2",
+      "url": "https://doi.org/10.1088/1361-6463/ae3df2",
+      "backupUrl": "https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/c/328/files/2026/02/2026JPhysDv59a055004.pdf",
+      "accessNote": "已打开作者公开全文并核验题目、作者、日期、DOI、堆栈、尺寸、10–300 K及TMR/灵敏度数据",
+      "featured": true
+    },
+    {
+      "id": "prb-114-094428-mnpd3-sot",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Crystal symmetry dependent spin polarization and spin-orbit torque in MnPd3/NiFe bilayers",
+      "titleZh": "MnPd₃/NiFe晶体对称性调控自旋极化与非常规SOT",
+      "authors": "Qian Zhao, Zimu Li, Shibiao Xie, Pan Liu, Quwen Wang, Feng Li, Yixin Fan et al.",
+      "venue": "Physical Review B 114, 094428 (2026)",
+      "published": "2026-08-21",
+      "recommendedOn": "2026-08-24",
+      "timeTier": "三日前正式SOT材料论文",
+      "system": "MgO衬底外延MnPd₃/NiFe双层，并改变电流相对晶轴方向；另插入Cu间隔层区分体相与界面贡献",
+      "conditions": "外延薄膜、磁输运与铁磁共振/转矩测量；公开摘要未给MnPd₃、NiFe、Cu厚度、温度、驱动频率、电流密度和绝对转矩效率",
+      "methods": [
+        "在MgO上外延MnPd₃并覆盖NiFe",
+        "沿不同晶向注入电流",
+        "分解y、x、z自旋极化产生的转矩",
+        "加入Cu间隔层检验界面耦合"
+      ],
+      "summary": "【直接实测】除常规y极化SOT外还观察到x、z极化分量；【作者解释】面外阻尼型转矩同时含体相与界面贡献，插入Cu后显著转矩仍保留。公开摘要未给绝对效率。",
+      "relevance": "z极化阻尼型转矩是无外场pMTJ翻转的重要候选；晶向与界面工程可成为SOT层的原子级工艺轴。",
+      "limitation": "当前为MnPd₃/NiFe材料双层，不是完整pMTJ；公开摘要未给厚度、转矩效率、开关电流、TMR、WER、保持和耐久。",
+      "industrialization": "处于SOT材料与界面筛选；还需完整pMTJ无场翻转、300 mm取向均匀性、低电阻互连、BEOL热预算、阵列误码和寿命。",
+      "whyRecommended": "先看晶轴—电流几何，再看转矩分解和Cu间隔层对照；30–45分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1103/qktx-l8nd",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/qktx-l8nd",
+      "backupUrl": "https://doi.org/10.1103/qktx-l8nd",
+      "accessNote": "已打开APS正式页并核验题目、作者、2026-08-21、卷页、DOI、外延样品与摘要；未公开数字均明确标注",
+      "featured": true
+    },
+    {
+      "id": "prb-114-084422-mnte-cdte",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Substrate-induced transition from altermagnetic semiconductor to fully compensated ferrimagnetic half-metal in two-dimensional ultrathin MnTe films",
+      "titleZh": "CdTe衬底诱导超薄MnTe从交变磁半导体转为全补偿亚铁磁半金属",
+      "authors": "Yupeng Zhi, Qinxi Liu, Yinlu Gao, Jianpei Xing, Jijun Zhao, Xue Jiang",
+      "venue": "Physical Review B 114, 084422 (2026)",
+      "published": "2026-08-21",
+      "recommendedOn": "2026-08-24",
+      "timeTier": "三日前正式第一性原理论文",
+      "system": "(110)取向Mn₁₀Te₁₀超薄膜（两个晶胞厚）及晶格匹配CdTe(001)衬底；构建Mn₁₀Te₁₀/CdTe隧穿模型",
+      "conditions": "DFT、磁对称性、稳定性与自旋分辨输运；模型在零温零偏压下计算，未包含真实缺陷、声子散射、接触和工艺波动",
+      "methods": [
+        "计算自由薄膜结构与稳定性",
+        "求能带、磁序和反常Hall电导",
+        "加入CdTe衬底应变与电荷转移",
+        "计算理想隧穿自旋电导"
+      ],
+      "summary": "【理论预测】自由膜Néel温度454 K、自旋劈裂492 meV、带隙1.079 eV、反常Hall电导95 S/cm；CdTe衬底使其转为全补偿亚铁磁半金属，零温零偏压模型给自旋向上/向下电导44.82/0.23 μS，接近100%极化。",
+      "relevance": "把“衬底应变—界面电荷转移—磁序—隧穿极化”连成可计算因果链，适合指导原子级终止面和衬底选择。",
+      "limitation": "全部为理想理论；所谓接近100%极化不是实测，且未给有限温/偏压TMR、RA、缺陷容限、保持、耐久和晶圆制造数据。",
+      "industrialization": "处于材料预测；需先实现可重复外延、确认磁序与界面终止，再验证真实势垒、有限温偏压、器件缩放、阵列统计与可靠性。",
+      "whyRecommended": "先看自由膜结构与能带，再看CdTe诱导转变，最后看自旋分辨输运；40–60分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1103/3898-grgv",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/3898-grgv",
+      "backupUrl": "https://doi.org/10.1103/3898-grgv",
+      "accessNote": "已打开APS正式页并核验题目、作者、日期、DOI、两个晶胞、454 K、492 meV、1.079 eV、95 S/cm及44.82/0.23 μS",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-083701-rf-mk-stm",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Implementation of radio frequency reflectometry in a home-built millikelvin scanning tunneling microscope",
+      "titleZh": "毫开尔文STM集成射频反射计：阻抗匹配、电子温度与5 nm²局域成像",
+      "authors": "Jonathan Marbey, Michael Dreyer, Robert E. Butera",
+      "venue": "Review of Scientific Instruments 97, 083701 (2026)",
+      "published": "2026-08-03",
+      "recommendedOn": "2026-08-24",
+      "timeTier": "2026低温射频仪器论文",
+      "system": "自建毫开尔文STM加装原位RF反射计；Nb针尖与Au单晶形成超导体—绝缘体—正常金属隧穿结",
+      "conditions": "以针尖—样品距离改变电容和阻抗匹配；在50×50 nm² Au区域验证；公开摘要未给基温、RF频率、带宽、绝对噪声和灵敏度",
+      "methods": [
+        "把匹配网络接入mK STM",
+        "用Nb相干峰标定RF损耗和电子温度",
+        "扫描接近距离调节结电容",
+        "比较DC形貌与RF反射成像"
+      ],
+      "summary": "【工程实测】通过针尖—样品电容实现可调阻抗匹配；Nb相干峰用于检查电子温度与RF损耗；在50×50 nm² Au区域成像，并分辨总表面积低至5 nm²的小岛。",
+      "relevance": "为高RA隧穿结、局域缺陷和快速小信号读出提供“低温隧穿+RF阻抗”联合计量模板。",
+      "limitation": "是STM局域计量而非封装MTJ阵列；公开摘要未给基温、频率、带宽、S11、绝对电荷灵敏度与批次重复性。",
+      "industrialization": "处于先进研发计量；进入器件开发还需自动坐标回访、去嵌入、标准件校准、封装兼容、吞吐与长期漂移验收。",
+      "whyRecommended": "先看RF匹配电路和距离调谐，再看Nb能隙标定与Au小岛图；35–50分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1063/5.0326953",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/8/083701/3400067/Implementation-of-radio-frequency-reflectometry-in",
+      "backupUrl": "https://doi.org/10.1063/5.0326953",
+      "accessNote": "已打开AIP正式页并核验题目、作者、日期、DOI、Nb针尖、匹配方式、50×50 nm²与5 nm²；摘要未公开数字明确标注",
+      "featured": true
+    },
+    {
+      "id": "jva-44-042402-peald-sin-md",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Atomistic insights into ion irradiation effects in plasma-enhanced atomic layer deposition of silicon nitride",
+      "titleZh": "SiN PEALD离子辐照的原子机制：表面去Cl与亚表面埋Cl的双重效应",
+      "authors": "Abdullah Y. Jaber, Nicolas A. Mauchamp, Erin Joy C. Tinacba, Michiro Isobe, Tomoko Ito, Kazuhiro Karahashi, Satoshi Hamaguchi",
+      "venue": "Journal of Vacuum Science & Technology A 44, 042402 (2026)",
+      "published": "2026-05-11",
+      "recommendedOn": "2026-08-24",
+      "timeTier": "2026原子制造正式论文·Editor’s Pick",
+      "system": "Si及氯化Si表面；SiN PEALD第二半循环中的低能N₂⁺离子轰击；分子动力学并与既有离子束实验对照",
+      "conditions": "模拟低能N₂⁺轰击的氮化、去Cl与碰撞级联；公开摘要未给离子能量、剂量、胞元尺寸、基板温度和残留比例",
+      "methods": [
+        "构建Si/氯化Si原子模型",
+        "模拟N₂⁺入射和碰撞级联",
+        "统计N掺入与Cl去除/埋入",
+        "与可比离子束实验趋势核验"
+      ],
+      "summary": "【分子动力学+实验趋势核验】N₂⁺促进表面氮化并去除化学吸附Cl；【作者解释】同一碰撞级联也会把Cl压入亚表面，因此“表面Cl下降”不等于膜内无残留。",
+      "relevance": "直接服务MTJ刻蚀后SiNₓ原位封护：需要同时控制表面反应、离子能量和H/N/Cl的亚表面损伤，而不能只凭表面XPS判断干净。",
+      "limitation": "模型对象是Si/氯化Si，不是CoFeB/MgO侧壁；公开摘要未给能量/剂量和残留量，也没有TMR、RA、漏电、保持或耐久。",
+      "industrialization": "接近PEALD机理与窗口设计；还需真实MTJ侧壁、鞘层能量分布、300 mm均匀性、残留深度、器件电学和可靠性验证。",
+      "whyRecommended": "先看N₂⁺氮化与去Cl，再看碰撞级联和Cl深度分布，最后对照离子束验证；30–45分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.1116/6.0005302",
+      "url": "https://pubs.aip.org/avs/jva/article/44/4/042402/3389419/Atomistic-insights-into-ion-irradiation-effects-in",
+      "backupUrl": "https://doi.org/10.1116/6.0005302",
+      "accessNote": "已打开AVS/AIP正式页并核验题目、作者、日期、DOI、N₂⁺、去Cl/埋Cl机制及实验对照边界",
       "featured": true
     }
   ]
