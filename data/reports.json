@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-24T09:00:00+08:00",
-  "reportDate": "2026-08-24",
+  "updatedAt": "2026-08-25T09:56:00+08:00",
+  "reportDate": "2026-08-25",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -584,6 +584,25 @@
         "prb-114-084422-mnte-cdte",
         "rsi-97-083701-rf-mk-stm",
         "jva-44-042402-peald-sin-md"
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "label": "详细日报：高场降维—C掺杂PMA/DMI—交变磁斯格明子—低温亚THz谱—高速BP-ALE",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "prb-114-084424-field-dimensional-reduction",
+        "prb-114-084417-carbon-co-pt",
+        "prl-137-076702-altermagnetic-skyrmion",
+        "rsi-96-083101-cryo-subthz-spectrometer",
+        "jva-44-042601-diamond-bpale"
       ]
     }
   ],
@@ -6519,6 +6538,180 @@
       "url": "https://pubs.aip.org/avs/jva/article/44/4/042402/3389419/Atomistic-insights-into-ion-irradiation-effects-in",
       "backupUrl": "https://doi.org/10.1116/6.0005302",
       "accessNote": "已打开AVS/AIP正式页并核验题目、作者、日期、DOI、N₂⁺、去Cl/埋Cl机制及实验对照边界",
+      "featured": true
+    },
+    {
+      "id": "prb-114-084424-field-dimensional-reduction",
+      "track": "A",
+      "secondaryTracks": [
+        "C",
+        "D"
+      ],
+      "title": "Field-induced suppression of magnetic order in a three-dimensionally coupled frustrated square lattice",
+      "titleZh": "磁场抑制三维耦合受挫方格晶格磁序：从3D集体序到有效2D量子关联",
+      "authors": "Sota Monju, Satoshi Morota, Akira Matsuo, Koichi Kindo, Koji Araki, Takanori Kida, Masayuki Hagiwara, Hironori Yamaguchi",
+      "venue": "Physical Review B 114, 084424 (2026)",
+      "published": "2026-08-24",
+      "recommendedOn": "2026-08-25",
+      "timeTier": "昨日正式发表低温高磁场实验",
+      "system": "基于verdazyl自由基的Ni配合物；S=1/2受挫方格层由S=1自旋通道形成三维耦合",
+      "conditions": "低温磁化、比热与高场ESR；公开摘要未给最低温度、最高磁场、Néel温度、临界场及样品尺寸",
+      "methods": [
+        "制备并表征分子磁体晶体",
+        "测量低温磁化和比热寻找反铁磁有序",
+        "扫描磁场识别场致相变",
+        "用高场ESR跟踪S=1桥接自旋的解耦"
+      ],
+      "summary": "【直接实测】磁化与比热显示低温反铁磁有序和场致相变；高场ESR显示负责三维耦合的S=1自旋被磁场解耦。【作者解释】体系转化为有效S=1/2受挫方格晶格，Haldane与TLL关联竞争；原文公开摘要未给温度和临界场数字。",
+      "relevance": "提供“磁化—比热—ESR”三联判据，可迁移到低温MTJ自由层、交换偏置层和反铁磁电极的相变诊断，避免只用电阻曲线归因。",
+      "limitation": "分子磁体不是MTJ堆栈；公开摘要没有输运、薄膜、器件尺寸、TMR、RA、WER、保持和耐久数据。",
+      "industrialization": "处于量子磁性机理研究；与器件最近的价值是高场多模态计量方法，需先在可沉积磁性薄膜和真实结结构上验证。",
+      "whyRecommended": "先看晶格与交换路径图，再看比热/磁化相图和高场ESR；35–50分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "10.1103/qfcp-bywh",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/qfcp-bywh",
+      "backupUrl": "https://doi.org/10.1103/qfcp-bywh",
+      "accessNote": "已打开APS正式页并核验题目、作者、2026-08-24、卷页、DOI与摘要；未公开数字明确标注",
+      "featured": true
+    },
+    {
+      "id": "prb-114-084417-carbon-co-pt",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Modulation of interface magnetic anisotropy and Dzyaloshinskii-Moriya interaction by carbon doping in Co/Pt multilayers",
+      "titleZh": "碳掺杂调控Co/Pt界面磁各向异性与DMI：从自旋重取向到畴形貌转变",
+      "authors": "Jiawei Wang, Yongshuai Zhang, Dengwang Zhang, Qiong Peng, Xiukun Hu, Meishi Li, Sen Zhang et al.",
+      "venue": "Physical Review B 114, 084417 (2026)",
+      "published": "2026-08-19",
+      "recommendedOn": "2026-08-25",
+      "timeTier": "六日前正式磁性界面论文",
+      "system": "不同Co子层厚度的Co/Pt多层膜，通过掺入类金属C改变Co晶格体积和Co/Pt平均层间距",
+      "conditions": "异常Hall、Brillouin光散射、极向MOKE、微磁模拟与第一性原理；公开摘要未给层厚、C浓度、温度、DMI常数和各向异性能数值",
+      "methods": [
+        "沉积Co/Pt多层并系统改变C掺杂",
+        "用磁化和Hall分离体相/界面各向异性",
+        "用BLS确认DMI并用MOKE成像磁畴",
+        "以微磁和DFT解释结构—磁性关联"
+      ],
+      "summary": "【直接实测】C掺杂驱动自旋重取向并优先扰动Co/Pt界面；AHE与BLS确认DMI，极向MOKE观察到液滴畴向树枝状畴转变。【作者解释】Co子层晶格体积和平均层间距增加分别降低体相及界面各向异性；原文摘要未公开数值。",
+      "relevance": "把“掺杂—层间距—PMA/DMI—畴成核”连成器件材料链，可直接启发CoFeB/MgO邻近层的轻元素扩散、退火和无场SOT翻转DOE。",
+      "limitation": "Co/Pt多层不是完整pMTJ；没有TMR、RA、写入电流、WER、保持、耐久、晶圆均匀性和BEOL验证。",
+      "industrialization": "处于SOT/PMA材料工程阶段；仍需完整pMTJ、碳浓度和深度SPC、300 mm均匀性、热预算、图形化及阵列可靠性。",
+      "whyRecommended": "先看C掺杂系列与SRT，再看BLS-DMI和磁畴图，最后看DFT结构解释；40–55分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1103/hfv5-tr7y",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/hfv5-tr7y",
+      "backupUrl": "https://doi.org/10.1103/hfv5-tr7y",
+      "accessNote": "已打开APS正式页并核验题目、作者、日期、DOI、测量组合和机制边界",
+      "featured": true
+    },
+    {
+      "id": "prl-137-076702-altermagnetic-skyrmion",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Current-Driven Nonlinear Skyrmion Dynamics in d-Wave Altermagnets",
+      "titleZh": "d波交变磁体中的电流驱动非线性斯格明子动力学与太赫兹频梳",
+      "authors": "Yang Liu, Zhejunyu Jin, Jie Liu, Peng Yan",
+      "venue": "Physical Review Letters 137, 076702 (2026)",
+      "published": "2026-08-11",
+      "recommendedOn": "2026-08-25",
+      "timeTier": "两周内正式理论论文",
+      "system": "受挫d波交变磁体中的斯格明子；集体坐标理论配合全原子自旋动力学模拟",
+      "conditions": "电流驱动、不同电流方向和强度；公开摘要未给材料、温度、阻尼、尺寸、绝对电流密度或频率值",
+      "methods": [
+        "建立质心与螺旋度双自由度方程",
+        "推导电流驱动非线性动力学",
+        "扫描电流方向和强度",
+        "用全原子自旋动力学验证"
+      ],
+      "summary": "【理论预测】斯格明子螺旋度不再锁定Hall角，而以与电流密度平方成正比的全局角速度单向转动；方向各向异性显著，并出现太赫兹螺旋度振荡和快慢模混频产生的梳状谱。",
+      "relevance": "提示交变磁器件的内部自由度可能成为高频状态变量；对存储而言必须把拓扑纹理和高速脉冲下的非线性模式纳入误码建模。",
+      "limitation": "属于理论和模拟；没有真实材料器件、有限温缺陷、接触、读出TMR、能耗、WER、保持或耐久数据。",
+      "industrialization": "概念阶段；需要材料实现、室温稳定、可重复成核/删除、MTJ读出、低电流窗口和阵列串扰验证。",
+      "whyRecommended": "先看集体坐标图，再看角速度对j²和方向的关系，最后看频梳谱；35–50分钟。",
+      "score": 9.3,
+      "priority": "A",
+      "doi": "10.1103/y9q4-13fw",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/y9q4-13fw",
+      "backupUrl": "https://doi.org/10.1103/y9q4-13fw",
+      "accessNote": "已打开APS正式页并核验题目、作者、日期、DOI、j²标度、方向各向异性与THz频梳；均标为理论预测",
+      "featured": true
+    },
+    {
+      "id": "rsi-96-083101-cryo-subthz-spectrometer",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Cryogenic continuous-wave optical spectrometer for sub-THz frequencies",
+      "titleZh": "低温连续波50–1000 GHz光学谱仪：以样品温升直接测吸收",
+      "authors": "S. Griffitt, A. Najev, M. Spaić, S. Hameed, Y. Shemerliuk, S. Aswartham, M. Orlita, A. Alfonsov, D. Pelc",
+      "venue": "Review of Scientific Instruments 96, 083101 (2025)",
+      "published": "2025-08-01",
+      "recommendedOn": "2026-08-25",
+      "timeTier": "近一年高质量低温仪器论文",
+      "system": "近红外光拍频产生50–1000 GHz连续波辐射，样品作为热量计，通过温升直接提取吸收",
+      "conditions": "液氦温区以下工作，可兼容高磁场；公开摘要未给基温、场强、绝对功率、频率分辨率和温升噪声",
+      "methods": [
+        "两路近红外激光光拍频产生毫米波",
+        "把辐射耦合到低温样品",
+        "以样品温度变化测量吸收功率",
+        "用YTiO3 FMR、自由基ESR和vdW反铁磁共振验证"
+      ],
+      "summary": "【工程实测】覆盖50–1000 GHz；在液氦温区以下吸收系数动态范围最高10^6；可与高磁场组合，并通过FMR、ESR、AFMR三类样品验证。",
+      "relevance": "为MTJ自由层、交换偏置层和交变磁电极提供超宽带共振谱，能把静态TMR变化与阻尼、交换模、各向异性场联系起来。",
+      "limitation": "仪器验证对象不是完整MTJ阵列；公开摘要未给功率、分辨率、基温、场强、长期漂移和自动换样。",
+      "industrialization": "高端研发计量平台；走向器件开发需芯片封装耦合、功率/温升校准、自动化扫描、标准样品与跨批次可追溯性。",
+      "whyRecommended": "先看光拍频与热量计原理，再看50–1000 GHz/10^6性能和三类共振验证；40–60分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1063/5.0251272",
+      "url": "https://pubs.aip.org/aip/rsi/article/96/8/083101/3360442/Cryogenic-continuous-wave-optical-spectrometer-for",
+      "backupUrl": "https://doi.org/10.1063/5.0251272",
+      "accessNote": "已打开AIP正式全文并核验作者、日期、DOI、50–1000 GHz、10^6动态范围及三类验证样品",
+      "featured": true
+    },
+    {
+      "id": "jva-44-042601-diamond-bpale",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Rapid surface smoothing of monocrystalline diamond with bias-pulsed atomic layer etching",
+      "titleZh": "偏压脉冲ALE快速平滑单晶金刚石：6 s循环与亚埃级刻蚀速率",
+      "authors": "J. A. Michaels, Y. Tsaturyan, J. R. Renzas, D. D. Awschalom, J. G. Eden, N. Delegan, F. J. Heremans",
+      "venue": "Journal of Vacuum Science & Technology A 44, 042601 (2026)",
+      "published": "2026-06-01",
+      "recommendedOn": "2026-08-25",
+      "timeTier": "2026正式原子制造论文",
+      "system": "单晶金刚石；Oxford Instruments PlasmaPro 100 Cobra ICP-RIE，Ar/Cl2等离子体，仅脉冲DC偏压",
+      "conditions": "室温；6 s循环；0.90±0.02 Å/cycle；扫描RIE功率、刻蚀步时长与吹扫时间；公开摘要未给全片均匀性和缺陷态密度",
+      "methods": [
+        "Ar/Cl2保持连续流动",
+        "仅脉冲DC偏压实现改性/去除切换",
+        "绘制功率—步时长二维ALE窗口",
+        "用AFM粗糙度和OES监控表面及等离子体"
+      ],
+      "summary": "【直接实测】BP-ALE在6 s循环下达到0.90±0.02 Å/cycle；从BP-ALE到传统ALE随吹扫时间连续过渡；多块单晶金刚石表面粗糙度均降低，并用OES解释等离子体行为。",
+      "relevance": "其“连续气体＋偏压脉冲”的能量解耦思路可迁移到MTJ精修刻蚀和侧壁清洁，以更短节拍探索低损伤窗口。",
+      "limitation": "材料为金刚石而非CoFeB/MgO；不能直接外推化学、选择比、磁损伤、Cl残留和TMR保持率。",
+      "industrialization": "接近设备级高吞吐ALE模块；仍缺300 mm均匀性、颗粒、端点、批间SPC及MTJ材料选择性和器件可靠性。",
+      "whyRecommended": "先看设备与脉冲时序，再看二维ALE窗口、0.90 Å/cycle和AFM/OES；35–50分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1116/6.0005347",
+      "url": "https://pubs.aip.org/avs/jva/article/44/4/042601/3396164/Rapid-surface-smoothing-of-monocrystalline-diamond",
+      "backupUrl": "https://doi.org/10.1116/6.0005347",
+      "accessNote": "已打开AVS/AIP正式全文并核验作者、DOI、设备、Ar/Cl2、6 s和0.90±0.02 Å/cycle",
       "featured": true
     }
   ]

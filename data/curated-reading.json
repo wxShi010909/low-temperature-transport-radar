@@ -209,6 +209,13 @@
       "classicIds": [
         "classic-mathon-umerski-mgo-2001"
       ]
+    },
+    {
+      "date": "2026-08-25",
+      "reviewId": "review-peald-crystalline-films-2020",
+      "classicIds": [
+        "classic-oliver-tunneling-criteria-2003"
+      ]
     }
   ],
   "items": [
@@ -1959,6 +1966,60 @@
         "再看势垒厚度与TMR。",
         "重点理解Fe表面谱和MgO复费米面。",
         "最后与真实CoFeB/MgO的缺陷和RA对照；35–50分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-peald-crystalline-films-2020",
+      "kind": "每日综述",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "The role of plasma in plasma-enhanced atomic layer deposition of crystalline films",
+      "titleZh": "PEALD晶体薄膜综述：等离子体源、活性物种、鞘层与表面反应",
+      "authors": "David R. Boris, Virginia D. Wheeler, Neeraj Nepal, Syed B. Qadri, Scott G. Walton, Charles R. Eddy",
+      "venue": "Journal of Vacuum Science & Technology A 38, 040801 (2020)",
+      "published": "2020-04-29",
+      "recommendedOn": "2026-08-25",
+      "doi": "10.1116/6.0000145",
+      "url": "https://pubs.aip.org/avs/jva/article/38/4/040801/246987/The-role-of-plasma-in-plasma-enhanced-atomic-layer",
+      "backupUrl": "https://doi.org/10.1116/6.0000145",
+      "assistantSummary": "正式综述系统连接等离子体生成、电子能量分布、活性/带电物种输运、鞘层和表面反应，并以TiO2相纯度与InN低温结晶为案例说明源几何和功率不能脱离表面结果单独优化。",
+      "whySelected": "为今天BP-ALE提供设备物理底图，也直接服务MTJ刻蚀后PEALD封护：必须同时记录自由基通量、离子能量、基板温度和膜内杂质。",
+      "readingGuide": [
+        "先看等离子体产生与输运。",
+        "再看源几何和鞘层。",
+        "重点读TiO2/InN案例。",
+        "最后转成MTJ封护参数清单；60–80分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-oliver-tunneling-criteria-2003",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Tunneling criteria and breakdown for low resistive magnetic tunnel junctions",
+      "titleZh": "低阻MTJ隧穿判据与击穿：温度依赖并不能排除针孔",
+      "authors": "Bryan Oliver, Qing He, Xuefei Tang, Janusz Nowak",
+      "venue": "Journal of Applied Physics 94, 1783–1786 (2003)",
+      "published": "2003-08-01",
+      "recommendedOn": "2026-08-25",
+      "doi": "10.1063/1.1590064",
+      "url": "https://pubs.aip.org/aip/jap/article/94/3/1783/767615/Tunneling-criteria-and-breakdown-for-low-resistive",
+      "backupUrl": "https://doi.org/10.1063/1.1590064",
+      "assistantSummary": "作者比较含与不含针孔的超薄AlOx MTJ，证明Rowell判据不能可靠排除针孔，尤其“降温后电阻下降/上升”的单一温度判据不充分；击穿机制应与传统判据联合使用。",
+      "whySelected": "给低RA MgO/CoFeB器件一个关键证据边界：漂亮的R(T)和I–V拟合不能替代击穿、噪声、面积标度及截面证据。",
+      "readingGuide": [
+        "先看两类势垒样品。",
+        "再看三条Rowell判据。",
+        "重点读击穿差异。",
+        "最后转为RA/TMR/TDDB联合验收；30–40分钟。"
       ],
       "notNew": true
     }

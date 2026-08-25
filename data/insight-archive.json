@@ -356,6 +356,18 @@
       "atomicIds": [
         "2026-08-24-peald-sidewall-loop"
       ]
+    },
+    {
+      "date": "2026-08-25",
+      "opportunityIds": [
+        "2026-08-25-interface-mode-map"
+      ],
+      "methodIds": [
+        "2026-08-25-subthz-magnetic-metrology"
+      ],
+      "atomicIds": [
+        "2026-08-25-bpale-mtj-transfer"
+      ]
     }
   ],
   "items": [
@@ -5455,6 +5467,153 @@
       ],
       "researchConnection": "直接服务刻蚀后原位SiNₓ封护、界面成分控制和可靠性。",
       "takeaway": "封护验收不能只看表面XPS，必须看深度残留和器件尾部失效。"
+    },
+    {
+      "id": "2026-08-25-interface-mode-map",
+      "date": "2026-08-25",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 界面—磁态—读出",
+      "title": "轻元素掺杂—PMA/DMI—低温磁态联合地图",
+      "subtitle": "把C/B扩散、磁畴和低温相变统一到MTJ写入窗口。",
+      "summary": "把C/B扩散、磁畴和低温相变统一到MTJ写入窗口。",
+      "status": "本站组合推断，待CoFeB/MgO器件验证",
+      "relatedPaperIds": [
+        "prb-114-084417-carbon-co-pt",
+        "prb-114-084424-field-dimensional-reduction"
+      ],
+      "question": "轻元素在界面附近的浓度与深度如何改变PMA、DMI、畴成核和低温写入尾部？",
+      "rationale": "Co/Pt显示掺杂可同时改各向异性与DMI；低温多模态结果提醒磁场还能重排耦合网络。",
+      "workflow": [
+        "C/B浓度与退火DOE",
+        "XPS/SIMS/TEM深度表征",
+        "MOKE/BLS/FMR测PMA-DMI-阻尼",
+        "器件TMR/RA/Jc/WER跨温统计"
+      ],
+      "equipment": [
+        "共溅射与退火",
+        "ToF-SIMS/TEM-EELS",
+        "MOKE/BLS/FMR",
+        "低温脉冲测试"
+      ],
+      "measurements": [
+        "元素深度",
+        "Ku/D/阻尼",
+        "畴成核场",
+        "TMR/RA/Jc/WER"
+      ],
+      "metrics": [
+        "晶圆3σ",
+        "低温写入窗口",
+        "6σ读出裕量",
+        "保持/耐久"
+      ],
+      "evidenceBoundary": "Co/Pt和分子磁体只提供机制线索，不能替代CoFeB/MgO实测。",
+      "firstSteps": [
+        "做三档掺杂",
+        "加无掺杂同批对照",
+        "先材料后器件"
+      ],
+      "researchConnection": "直接连接原子成分控制、MTJ磁层和低温可靠性。",
+      "takeaway": "把掺杂深度而非名义含量作为主工艺变量。"
+    },
+    {
+      "id": "2026-08-25-subthz-magnetic-metrology",
+      "date": "2026-08-25",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 低温高频计量",
+      "title": "50–1000 GHz热量计式磁共振平台路线",
+      "subtitle": "用超宽带共振把静态TMR变化拆成阻尼、交换和各向异性贡献。",
+      "summary": "用超宽带共振把静态TMR变化拆成阻尼、交换和各向异性贡献。",
+      "status": "本站设备路线，待薄膜与MTJ标准件验证",
+      "relatedPaperIds": [
+        "rsi-96-083101-cryo-subthz-spectrometer",
+        "prb-114-084417-carbon-co-pt"
+      ],
+      "question": "如何在低温高场下定量追踪自由层、参考层和反铁磁层的高频模式？",
+      "rationale": "光拍频提供宽频连续扫描，热量计读出适合高反射薄膜。",
+      "workflow": [
+        "标准自由基/FMR样品校准",
+        "测空基底与单层薄膜",
+        "加入完整MTJ见证片",
+        "频率—场—温度自动拟合"
+      ],
+      "equipment": [
+        "双激光拍频源",
+        "低温热计",
+        "高场磁体",
+        "自动化拟合"
+      ],
+      "measurements": [
+        "吸收谱",
+        "共振场/线宽",
+        "阻尼/交换",
+        "样品温升"
+      ],
+      "metrics": [
+        "动态范围",
+        "频率准确度",
+        "温升噪声",
+        "跨日漂移"
+      ],
+      "evidenceBoundary": "10^6动态范围来自特定光学/热量计平台，不等于芯片内电学灵敏度。",
+      "firstSteps": [
+        "建立三种标准样",
+        "做功率线性",
+        "再测MTJ堆栈"
+      ],
+      "researchConnection": "服务MTJ材料筛选、低温动态和设备平台建设。",
+      "takeaway": "先做可追溯标准链，再把谱峰变化闭环到TMR/WER。"
+    },
+    {
+      "id": "2026-08-25-bpale-mtj-transfer",
+      "date": "2026-08-25",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "B/E · 高吞吐低损伤刻蚀",
+      "title": "BP-ALE向MTJ侧壁精修的迁移DOE",
+      "subtitle": "用连续气体和偏压脉冲分离表面化学、离子能量与节拍。",
+      "summary": "用连续气体和偏压脉冲分离表面化学、离子能量与节拍。",
+      "status": "本站迁移推断，材料化学需重新建立",
+      "relatedPaperIds": [
+        "jva-44-042601-diamond-bpale",
+        "classic-oliver-tunneling-criteria-2003"
+      ],
+      "question": "BP-ALE能否在MTJ图形化中兼顾亚埃级去除、侧壁平滑、低残留和吞吐？",
+      "rationale": "金刚石结果证明偏压脉冲可形成快速自限窗口；经典针孔研究要求用器件击穿验证势垒是否受损。",
+      "workflow": [
+        "CoFeB/Ru/Ta见证片筛气体化学",
+        "偏压×脉宽二维窗口",
+        "AFM/XPS/TEM验证损伤",
+        "MTJ TMR/RA/TDDB/噪声闭环"
+      ],
+      "equipment": [
+        "波形可编程ICP-RIE",
+        "OES/离子能量分析",
+        "AFM/XPS/TEM",
+        "器件电学"
+      ],
+      "measurements": [
+        "EPC/选择比",
+        "粗糙/残留",
+        "损伤层",
+        "TMR/RA/击穿"
+      ],
+      "metrics": [
+        "自限窗口宽度",
+        "节拍",
+        "TMR保持率",
+        "侧壁漏电尾部"
+      ],
+      "evidenceBoundary": "Ar/Cl2金刚石窗口不能直接用于磁性金属/MgO；气体、端点和安全能量全部需重建。",
+      "firstSteps": [
+        "先单层见证片",
+        "加入连续RIE和传统ALE对照",
+        "最后上MTJ"
+      ],
+      "researchConnection": "直接服务IBE/RIE后侧壁精修、封护前清洁与可靠性。",
+      "takeaway": "迁移目标不是复制配方，而是复制“自限窗口＋器件击穿闭环”的方法。"
     }
   ]
 }

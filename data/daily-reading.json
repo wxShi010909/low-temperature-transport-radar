@@ -1,57 +1,57 @@
 {
-  "date": "2026-08-24",
+  "date": "2026-08-25",
   "review": {
-    "id": "review-sot-mram-probabilistic-2026",
+    "id": "review-peald-crystalline-films-2020",
     "kind": "每日综述",
-    "track": "B",
+    "track": "E",
     "secondaryTracks": [
-      "C",
-      "E"
+      "B",
+      "D"
     ],
-    "title": "Spin–Orbit Torque MRAM: Fundamentals, Device Engineering, and Applications in Probabilistic Computing",
-    "titleZh": "SOT-MRAM正式综述：机理、器件工程、晶圆集成与概率计算",
-    "authors": "Kun Lei, Xinrui Wang, Yiqi Zhou, Bohan Liu, Kaiyou Wang",
-    "venue": "Advanced Quantum Technologies 9, e00886 (2026)",
-    "published": "2026-03-04",
-    "recommendedOn": "2026-08-24",
-    "doi": "10.1002/qute.202500886",
-    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/qute.202500886",
-    "backupUrl": "https://doi.org/10.1002/qute.202500886",
-    "assistantSummary": "正式综述从自旋Hall/Rashba–Edelstein机制讲到SOT材料、2T–1SOT单元、无场翻转、晶圆级集成和p-bit概率计算，明确区分确定性存储与受热涨落控制的随机器件。",
-    "whySelected": "与今天MnPd₃非常规z极化SOT形成“总图—材料机制”组合，也能把转矩效率、写入电流、PMA、热稳定、WER和阵列应用放进同一评价框架。",
+    "title": "The role of plasma in plasma-enhanced atomic layer deposition of crystalline films",
+    "titleZh": "PEALD晶体薄膜综述：等离子体源、活性物种、鞘层与表面反应",
+    "authors": "David R. Boris, Virginia D. Wheeler, Neeraj Nepal, Syed B. Qadri, Scott G. Walton, Charles R. Eddy",
+    "venue": "Journal of Vacuum Science & Technology A 38, 040801 (2020)",
+    "published": "2020-04-29",
+    "recommendedOn": "2026-08-25",
+    "doi": "10.1116/6.0000145",
+    "url": "https://pubs.aip.org/avs/jva/article/38/4/040801/246987/The-role-of-plasma-in-plasma-enhanced-atomic-layer",
+    "backupUrl": "https://doi.org/10.1116/6.0000145",
+    "assistantSummary": "正式综述系统连接等离子体生成、电子能量分布、活性/带电物种输运、鞘层和表面反应，并以TiO2相纯度与InN低温结晶为案例说明源几何和功率不能脱离表面结果单独优化。",
+    "whySelected": "为今天BP-ALE提供设备物理底图，也直接服务MTJ刻蚀后PEALD封护：必须同时记录自由基通量、离子能量、基板温度和膜内杂质。",
     "readingGuide": [
-      "先看SHE/REE机理图。",
-      "再看2T–1SOT单元和读写路径。",
-      "重点读无场翻转、材料效率与晶圆集成。",
-      "最后读p-bit与系统级缺口；60–80分钟。"
+      "先看等离子体产生与输运。",
+      "再看源几何和鞘层。",
+      "重点读TiO2/InN案例。",
+      "最后转成MTJ封护参数清单；60–80分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-mathon-umerski-mgo-2001",
+      "id": "classic-oliver-tunneling-criteria-2003",
       "kind": "经典文章",
-      "track": "C",
+      "track": "B",
       "secondaryTracks": [
-        "B",
+        "A",
         "E"
       ],
-      "title": "Theory of tunneling magnetoresistance of an epitaxial Fe/MgO/Fe(001) junction",
-      "titleZh": "外延Fe/MgO/Fe隧穿磁阻理论：MgO对称性过滤的经典预测",
-      "authors": "J. Mathon, A. Umerski",
-      "venue": "Physical Review B 63, 220403(R) (2001)",
-      "published": "2001-05-10",
-      "recommendedOn": "2026-08-24",
-      "doi": "10.1103/PhysRevB.63.220403",
-      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.63.220403",
-      "backupUrl": "https://doi.org/10.1103/PhysRevB.63.220403",
-      "assistantSummary": "作者用真实空间Kubo公式和拟合第一性原理能带计算外延Fe/MgO/Fe(001)，预测理想结TMR可超过1000%，并指出隧穿不只由Γ点状态决定。",
-      "whySelected": "今天MnTe/CdTe的近100%理论极化必须与这篇经典理想MgO预测对照：巨大计算TMR需要经过界面、缺陷、温度、偏压和制造统计才能转成器件结果。",
+      "title": "Tunneling criteria and breakdown for low resistive magnetic tunnel junctions",
+      "titleZh": "低阻MTJ隧穿判据与击穿：温度依赖并不能排除针孔",
+      "authors": "Bryan Oliver, Qing He, Xuefei Tang, Janusz Nowak",
+      "venue": "Journal of Applied Physics 94, 1783–1786 (2003)",
+      "published": "2003-08-01",
+      "recommendedOn": "2026-08-25",
+      "doi": "10.1063/1.1590064",
+      "url": "https://pubs.aip.org/aip/jap/article/94/3/1783/767615/Tunneling-criteria-and-breakdown-for-low-resistive",
+      "backupUrl": "https://doi.org/10.1063/1.1590064",
+      "assistantSummary": "作者比较含与不含针孔的超薄AlOx MTJ，证明Rowell判据不能可靠排除针孔，尤其“降温后电阻下降/上升”的单一温度判据不充分；击穿机制应与传统判据联合使用。",
+      "whySelected": "给低RA MgO/CoFeB器件一个关键证据边界：漂亮的R(T)和I–V拟合不能替代击穿、噪声、面积标度及截面证据。",
       "readingGuide": [
-        "先看计算结构与平行/反平行电导定义。",
-        "再看势垒厚度与TMR。",
-        "重点理解Fe表面谱和MgO复费米面。",
-        "最后与真实CoFeB/MgO的缺陷和RA对照；35–50分钟。"
+        "先看两类势垒样品。",
+        "再看三条Rowell判据。",
+        "重点读击穿差异。",
+        "最后转为RA/TMR/TDDB联合验收；30–40分钟。"
       ],
       "notNew": true
     }
