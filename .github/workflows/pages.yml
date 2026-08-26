@@ -81,6 +81,15 @@ jobs:
         run: |
           mkdir -p out/basketball-legend
           cp -r basketball-legend/. out/basketball-legend/
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('out/basketball-legend/index.html')
+          s=p.read_text()
+          tag='<script src="v5.js?v=5"></script>'
+          if tag not in s:
+              s=s.replace('</body>', tag+'\n</body>')
+          p.write_text(s)
+          PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
