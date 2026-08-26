@@ -77,10 +77,12 @@ jobs:
           fs.writeFileSync('basketball-legend/roster-data.js',out);
           console.log('Generated teams:',Object.keys(teams).length,'players:',Object.values(teams).reduce((n,t)=>n+t.players.length,0));
           NODE
-      - name: Add Basketball Legend static game
+      - name: Add static games
         run: |
           mkdir -p out/basketball-legend
           cp -r basketball-legend/. out/basketball-legend/
+          mkdir -p out/life-sim
+          cp -r life-sim/. out/life-sim/
           python - <<'PY'
           from pathlib import Path
           html=Path('out/basketball-legend/index.html')
