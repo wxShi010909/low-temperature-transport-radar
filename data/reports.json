@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-25T09:56:00+08:00",
-  "reportDate": "2026-08-25",
+  "updatedAt": "2026-08-26T09:02:00+08:00",
+  "reportDate": "2026-08-26",
   "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -603,6 +603,25 @@
         "prl-137-076702-altermagnetic-skyrmion",
         "rsi-96-083101-cryo-subthz-spectrometer",
         "jva-44-042601-diamond-bpale"
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "label": "详细日报：自旋散射—磁晶AMR—滑移交变磁—0.1 K光纤成像—Cl-GaN ALE",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "prb-114-105140-euzn2as2",
+        "prb-114-074431-co-amr-mca",
+        "prb-114-074432-sliding-altermagnet",
+        "rsi-97-083702-superfluid-imaging",
+        "jva-44-052601-cl-gan-ale"
       ]
     }
   ],
@@ -6712,6 +6731,180 @@
       "url": "https://pubs.aip.org/avs/jva/article/44/4/042601/3396164/Rapid-surface-smoothing-of-monocrystalline-diamond",
       "backupUrl": "https://doi.org/10.1116/6.0005347",
       "accessNote": "已打开AVS/AIP正式全文并核验作者、DOI、设备、Ar/Cl2、6 s和0.90±0.02 Å/cycle",
+      "featured": true
+    },
+    {
+      "id": "prb-114-105140-euzn2as2",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Temperature-dependent evolution of the electronic structure in EuZn2As2 across the Néel transition",
+      "titleZh": "EuZn₂As₂跨越19 K Néel转变的电子结构与输运：电阻异常来自自旋散射",
+      "authors": "Milo Sprague, Anup Pradhan Sakhya, Barun Ghosh, Mazharul Islam Mondal, Arun K. Kumay, Himanshu Sheokand, Kapil Gope, Tetiana Romanova, Dariusz Kaczorowski, Arun Bansil, Madhab Neupane",
+      "venue": "Physical Review B 114, 105140 (2026)",
+      "published": "2026-08-25",
+      "recommendedOn": "2026-08-26",
+      "timeTier": "昨日正式发表低温输运实验",
+      "system": "层状反铁磁半导体EuZn2As2单晶；磁性Eu层与Zn-As电子态耦合",
+      "conditions": "温变电阻、面内/面外磁场、温变ARPES与DFT；TN约19 K；公开摘要未给最高磁场、最低测温、样品尺寸与电流方向",
+      "methods": [
+        "测量R(T)定位Néel转变附近异常",
+        "分别施加面内与面外磁场观察异常抑制",
+        "跨TN进行温变ARPES",
+        "用DFT比较磁序相关能带并与输运交叉判读"
+      ],
+      "summary": "【直接实测】R(T)在TN≈19 K出现明显异常，面内和面外磁场均可抑制；ARPES显示远离费米能级的能带跨TN仅有限变化。【作者解释】异常主要来自自旋散射而非费米面重构。",
+      "relevance": "建立“电阻异常—场方向—ARPES—DFT”证据链，可用于判断低温MTJ电极或交换偏置层的R/TMR突变究竟来自能带变化还是磁散射。",
+      "limitation": "块体EuZn2As2不是MTJ；公开摘要没有TMR、RA、器件尺寸、WER、保持、耐久及晶圆数据。",
+      "industrialization": "处于材料机理阶段；要迁移到器件需薄膜生长、界面接触、尺寸缩放、完整结堆栈和跨温可靠性。",
+      "whyRecommended": "先看R(T)与磁场抑制，再看跨TN的ARPES能带，最后读DFT对照；35–50分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1103/np9y-351t",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/np9y-351t",
+      "backupUrl": "https://doi.org/10.1103/np9y-351t",
+      "accessNote": "已打开APS正式来源并核验题目、作者、2026-08-25、卷页、DOI、TN≈19 K及证据边界",
+      "featured": true
+    },
+    {
+      "id": "prb-114-074431-co-amr-mca",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C"
+      ],
+      "title": "Relationship between anisotropic magnetoresistance and magnetocrystalline anisotropy in uniaxially textured cobalt (002) films",
+      "titleZh": "Co(002)织构膜中各向异性磁阻与磁晶各向异性的定量关系",
+      "authors": "Zhiyang Gao, Junwen Sun, Sha Zhang, Yu Miao, Cunxu Gao, X. R. Wang, Desheng Xue",
+      "venue": "Physical Review B 114, 074431 (2026)",
+      "published": "2026-08-25",
+      "recommendedOn": "2026-08-26",
+      "timeTier": "昨日正式发表材料与器件基础",
+      "system": "具有垂直单轴磁晶各向异性的Co(002)织构薄膜；电流沿x，磁化m与晶体易轴n分开描述",
+      "conditions": "不同膜厚的角分辨磁阻与磁晶各向异性测量，结合理论模型；公开摘要未给膜厚范围、温度、磁场、MR幅值或电阻率",
+      "methods": [
+        "制备不同厚度Co(002)织构膜",
+        "在xy、yz、xz三个转动平面测角分辨磁阻",
+        "提取二重与四重谐波",
+        "把AMR系数与二重磁晶各向异性常数比较"
+      ],
+      "summary": "【直接实测/模型】xy面由传统AMR(m)主导，yz面体现晶体AMR(n)，xz面同时含两者；二重与四重项对厚度不敏感，二重AMR幅值与二重MCA常数成正比。",
+      "relevance": "提供分离“磁矩方向”和“晶轴/织构方向”输运贡献的方法，适合CoFeB/MgO、参考层和SOT底层的退火织构诊断。",
+      "limitation": "Co单层不是MTJ；公开摘要未给绝对MR、PMA、厚度、TMR、RA、写入电流、WER或可靠性。",
+      "industrialization": "接近薄膜计量方法；还需300 mm角分辨均匀性、完整pMTJ相关性、退火批间SPC与器件读写验证。",
+      "whyRecommended": "先看三种旋转几何，再看谐波分解和AMR—MCA比例关系；30–45分钟。",
+      "score": 9.4,
+      "priority": "S",
+      "doi": "10.1103/1dtz-pywx",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/1dtz-pywx",
+      "backupUrl": "https://doi.org/10.1103/1dtz-pywx",
+      "accessNote": "已打开APS正式来源核验题目、作者、日期、DOI、三种转动平面和厚度结论；未公开数字明确标注",
+      "featured": true
+    },
+    {
+      "id": "prb-114-074432-sliding-altermagnet",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Nonvolatile interwave switching of altermagnetism enabled by sliding ferroelectricity",
+      "titleZh": "滑移铁电驱动交变磁d波—i波非易失切换",
+      "authors": "Pengtao Diao, Shuang Wu, Wei Sun, Wenxuan Wang, Changhong Yang, Shifeng Huang, Zhenxiang Cheng",
+      "venue": "Physical Review B 114, 074432 (2026)",
+      "published": "2026-08-25",
+      "recommendedOn": "2026-08-26",
+      "timeTier": "昨日正式发表理论计算",
+      "system": "MnPSe3/TiGeS3范德华异质结构；层间滑移铁电与交变磁序耦合",
+      "conditions": "第一性原理计算不同滑移/极化构型、能带自旋劈裂、输运和Kerr响应；公开摘要未给滑移势垒、场强、温度、能量差与绝对输运数值",
+      "methods": [
+        "构造异质结滑移构型",
+        "计算极化与磁对称性",
+        "比较d波和i波自旋劈裂",
+        "预测自旋输运与Kerr光学判据"
+      ],
+      "summary": "【理论预测】滑移铁电破坏C3对称性，可逆切换d波与i波交变磁态，并改变自旋劈裂各向异性、自旋输运和Kerr信号；形成内禀极化—滑移极化—磁对称性的三重耦合。",
+      "relevance": "把原子级层间注册位置转化为可电控、非易失的磁对称性变量，为低功耗MTJ/交变磁存储提供“结构即状态”的设计方向。",
+      "limitation": "完全是第一性原理预测；没有有限温、缺陷、接触、真实滑移耐久、TMR、RA、WER、保持和阵列数据。",
+      "industrialization": "概念验证前阶段；需材料生长、受控滑移、室温稳定、可重复电写入、MTJ读出、封装与CMOS电压兼容。",
+      "whyRecommended": "先看异质结构与滑移路径，再看d/i波自旋劈裂，最后看输运和Kerr读出；35–50分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1103/bg6g-98m1",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/bg6g-98m1",
+      "backupUrl": "https://doi.org/10.1103/bg6g-98m1",
+      "accessNote": "已打开APS正式来源核验题目、作者、日期、DOI、材料和理论边界",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-083702-superfluid-imaging",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "Apparatus to visualize flows in superfluid 4He below 1 K",
+      "titleZh": "0.1 K旋转低温光学平台：光纤成像、远程定位与990 fps粒子追踪",
+      "authors": "I. Skachko, J. A. Hay, C. O. Goodwin, M. J. Doyle et al.",
+      "venue": "Review of Scientific Instruments 97, 083702 (2026)",
+      "published": "2026-08-19",
+      "recommendedOn": "2026-08-26",
+      "timeTier": "一周内正式低温仪器论文",
+      "system": "湿式3He-4He稀释制冷机、振动隔离旋转平台、室温激光与增强相机、相干光纤束和压电定位器",
+      "conditions": "最低设计温度0.1 K，实测粒子成像至0.14 K；连续旋转最高3 rad/s；相干束约10^5根光纤；最高990 fps；示踪粒子平均半径3.0 μm",
+      "methods": [
+        "室温激光经光纤送入旋转低温端",
+        "相干光纤束把图像送回室温相机",
+        "压电执行器远程调焦和移动照明",
+        "用He2*云与LiNbO3注入粒子验证"
+      ],
+      "summary": "【工程实测】平台到0.1 K并可3 rad/s连续旋转；10^5光纤相干束提供微米级成像；在0.14 K记录超流氦粒子，最高990 fps，并以1 MHz LiNbO3振荡注入3.0 μm粒子。",
+      "relevance": "其“冷端少电子学、光纤跨温传输、远程压电对准、振动隔离”可迁移到低温MTJ光热/磁光成像和样品原位对准。",
+      "limitation": "验证对象是超流氦，不是MTJ；微米级空间分辨率不足以分辨纳米结，且没有电噪声、磁场、TMR或晶圆计量。",
+      "industrialization": "属于低温科研设备平台；需纳米光学/电学探头、磁场兼容、自动校准、芯片封装和长期漂移数据才能用于器件开发。",
+      "whyRecommended": "先看低温/旋转/光路总图，再看两种示踪粒子与帧率验证；35–50分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "10.1063/5.0331632",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/8/083702/3401470/Apparatus-to-visualize-flows-in-superfluid-4He",
+      "backupUrl": "https://doi.org/10.1063/5.0331632",
+      "accessNote": "已打开AIP正式全文并核验作者、日期、DOI、0.1/0.14 K、3 rad/s、10^5光纤、3.0 μm、1 MHz和990 fps",
+      "featured": true
+    },
+    {
+      "id": "jva-44-052601-cl-gan-ale",
+      "track": "E",
+      "secondaryTracks": [
+        "C",
+        "D"
+      ],
+      "title": "First-principles investigation of chlorine adsorption onto GaN(0001) during atomic layer etching",
+      "titleZh": "GaN(0001)原子层刻蚀中Cl吸附与扩散：−3.6 eV吸附及低于0.1 eV迁移势垒",
+      "authors": "T. Rasoanarivo, C. Mannequin, A. Rhallabi, F. Roqueta, M. Boufnichel, I. Braems",
+      "venue": "Journal of Vacuum Science & Technology A 44, 052601 (2026)",
+      "published": "2026-08-17",
+      "recommendedOn": "2026-08-26",
+      "timeTier": "近期正式原子制造论文",
+      "system": "纤锌矿GaN(0001)表面与自由基Cl；面向含氯等离子体ALE的表面改性半循环",
+      "conditions": "DFT计算吸附位、吸附能、扩散势垒、覆盖度、Bader电荷与电荷密度差；非实验，温度/压力/离子能量不适用，超胞与泛函细节需读全文",
+      "methods": [
+        "枚举Cl在GaN(0001)吸附位",
+        "计算吸附能与覆盖度效应",
+        "计算向稳定Ga位点的扩散势垒",
+        "用PDOS、Bader和电荷密度差分析成键"
+      ],
+      "summary": "【理论预测】Cl优先吸附在表面Ga附近，最强吸附能达−3.6 eV；Cl-Ga形成局域表面态；向稳定Ga位的扩散势垒低于0.1 eV；覆盖度升高时吸附逐渐变弱。",
+      "relevance": "给ALE改性半循环提供“位点—覆盖度—吸附能—扩散势垒”模板，可迁移到MgO/CoFeB侧壁卤化或配体化学筛选。",
+      "limitation": "材料是GaN且为DFT；不能直接外推CoFeB/MgO反应、刻蚀选择比、损伤、残Cl、TMR保持或晶圆均匀性。",
+      "industrialization": "接近ALE配方前端建模；需等离子体通量、离子去除半循环、原位XPS/QMS、300 mm均匀性、颗粒与器件可靠性闭环。",
+      "whyRecommended": "先看吸附位与能量图，再看扩散路径和覆盖度曲线，最后看PDOS/Bader；35–50分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1116/6.0005564",
+      "url": "https://pubs.aip.org/avs/jva/article/44/5/052601/3401324/First-principles-investigation-of-chlorine",
+      "backupUrl": "https://doi.org/10.1116/6.0005564",
+      "accessNote": "已打开AVS/AIP正式全文并核验全部作者、日期、DOI、−3.6 eV、<0.1 eV及覆盖度结论",
       "featured": true
     }
   ]
