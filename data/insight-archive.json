@@ -368,6 +368,18 @@
       "atomicIds": [
         "2026-08-25-bpale-mtj-transfer"
       ]
+    },
+    {
+      "date": "2026-08-26",
+      "opportunityIds": [
+        "2026-08-26-scattering-anisotropy-map"
+      ],
+      "methodIds": [
+        "2026-08-26-fiber-cryo-imaging"
+      ],
+      "atomicIds": [
+        "2026-08-26-cl-ale-mtj"
+      ]
     }
   ],
   "items": [
@@ -5614,6 +5626,154 @@
       ],
       "researchConnection": "直接服务IBE/RIE后侧壁精修、封护前清洁与可靠性。",
       "takeaway": "迁移目标不是复制配方，而是复制“自限窗口＋器件击穿闭环”的方法。"
+    },
+    {
+      "id": "2026-08-26-scattering-anisotropy-map",
+      "date": "2026-08-26",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 散射—织构—电控",
+      "title": "低温散射、磁晶各向异性与电控磁态联合证据链",
+      "subtitle": "把R(T)异常、角分辨MR和非易失电控统一成可验证器件路线。",
+      "summary": "把R(T)异常、角分辨MR和非易失电控统一成可验证器件路线。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "prb-114-105140-euzn2as2",
+        "prb-114-074431-co-amr-mca",
+        "prb-114-074432-sliding-altermagnet"
+      ],
+      "question": "MTJ跨温电阻变化有多少来自自旋散射、织构和电控对称性？",
+      "rationale": "A提供散射/能带判别，B提供m/n分解，C给出电控状态变量。",
+      "workflow": [
+        "先做自由层/参考层角分辨MR",
+        "加入温度和矢量磁场",
+        "用谱学或FMR排除能带/磁散射混淆",
+        "最后关联TMR、RA和WER"
+      ],
+      "equipment": [
+        "低温矢量磁体",
+        "旋转样品台",
+        "FMR/MOKE",
+        "脉冲器件测试"
+      ],
+      "measurements": [
+        "R/MR",
+        "二/四重谐波",
+        "阻尼/Ku",
+        "TMR/RA/WER"
+      ],
+      "metrics": [
+        "TN或阻塞温度",
+        "角度模型残差",
+        "晶圆3σ",
+        "低温写入尾部"
+      ],
+      "evidenceBoundary": "三篇对象均非同一MTJ堆栈，跨体系关联属于本站推断。",
+      "firstSteps": [
+        "先做自由层/参考层角分辨MR",
+        "加入温度和矢量磁场",
+        "用谱学或FMR排除能带/磁散射混淆"
+      ],
+      "researchConnection": "直接连接原子制造、MTJ/MRAM和低温测量平台。",
+      "takeaway": "最后关联TMR、RA和WER"
+    },
+    {
+      "id": "2026-08-26-fiber-cryo-imaging",
+      "date": "2026-08-26",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 毫开尔文光电协同",
+      "title": "光纤跨温＋远程压电的低热负荷MTJ成像平台",
+      "subtitle": "把室温光源/相机留在外部，用冷端无源光路和压电定位降低热负荷。",
+      "summary": "把室温光源/相机留在外部，用冷端无源光路和压电定位降低热负荷。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "rsi-97-083702-superfluid-imaging",
+        "prb-114-105140-euzn2as2"
+      ],
+      "question": "如何在低温磁场中同步观察MTJ热点/磁畴并减少冷端电子学？",
+      "rationale": "D证明0.1 K光纤成像和远程定位可行，A说明温度—磁场证据必须同步。",
+      "workflow": [
+        "先用微加热器标定光功率温升",
+        "比较光纤与冷端相机热负荷",
+        "加入压电重复定位",
+        "再与MTJ脉冲/电阻同步"
+      ],
+      "equipment": [
+        "稀释制冷机",
+        "相干光纤束",
+        "压电定位器",
+        "高速相机/锁相"
+      ],
+      "measurements": [
+        "温升",
+        "振动/漂移",
+        "定位误差",
+        "R/TMR同步"
+      ],
+      "metrics": [
+        "基温恢复时间",
+        "跨日漂移",
+        "帧率",
+        "热点—WER相关性"
+      ],
+      "evidenceBoundary": "超流氦平台的微米成像不能直接达到纳米MTJ分辨率。",
+      "firstSteps": [
+        "先用微加热器标定光功率温升",
+        "比较光纤与冷端相机热负荷",
+        "加入压电重复定位"
+      ],
+      "researchConnection": "直接连接原子制造、MTJ/MRAM和低温测量平台。",
+      "takeaway": "再与MTJ脉冲/电阻同步"
+    },
+    {
+      "id": "2026-08-26-cl-ale-mtj",
+      "date": "2026-08-26",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "B/E · 表面化学—器件可靠性",
+      "title": "Cl吸附—扩散—覆盖度驱动的MTJ ALE迁移DOE",
+      "subtitle": "先用第一性原理和见证片确定自限化学，再用完整结验证残留与损伤。",
+      "summary": "先用第一性原理和见证片确定自限化学，再用完整结验证残留与损伤。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "jva-44-052601-cl-gan-ale",
+        "classic-double-interface-pmtj-2012"
+      ],
+      "question": "如何把吸附能/扩散势垒转成CoFeB/MgO侧壁的低损伤工艺窗口？",
+      "rationale": "E给出原子尺度模板；经典pMTJ说明界面微小变化会影响保持/写入。",
+      "workflow": [
+        "对Co/Fe/B/Mg/O位点筛Cl/F配体",
+        "做覆盖度与低能离子二维窗口",
+        "原位XPS/QMS验证残留和副产物",
+        "最后测TMR/RA/TDDB/WER"
+      ],
+      "equipment": [
+        "DFT",
+        "ALE/ICP",
+        "原位XPS/QMS",
+        "TEM/EELS与器件电测"
+      ],
+      "measurements": [
+        "吸附能/势垒",
+        "EPC/选择比",
+        "残卤素/损伤层",
+        "TMR/RA/击穿"
+      ],
+      "metrics": [
+        "自限窗口",
+        "TMR保持率",
+        "侧壁漏电尾部",
+        "300 mm均匀性"
+      ],
+      "evidenceBoundary": "GaN的−3.6 eV和<0.1 eV不能直接外推到CoFeB/MgO。",
+      "firstSteps": [
+        "对Co/Fe/B/Mg/O位点筛Cl/F配体",
+        "做覆盖度与低能离子二维窗口",
+        "原位XPS/QMS验证残留和副产物"
+      ],
+      "researchConnection": "直接连接原子制造、MTJ/MRAM和低温测量平台。",
+      "takeaway": "最后测TMR/RA/TDDB/WER"
     }
   ]
 }
