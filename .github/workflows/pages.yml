@@ -83,12 +83,18 @@ jobs:
           cp -r basketball-legend/. out/basketball-legend/
           python - <<'PY'
           from pathlib import Path
-          p=Path('out/basketball-legend/index.html')
-          s=p.read_text()
-          tag='<script src="v5.js?v=5"></script>'
-          if tag not in s:
+          html=Path('out/basketball-legend/index.html')
+          s=html.read_text()
+          tag='<script src="v5.js?v=5.1"></script>'
+          if 'v5.js' not in s:
               s=s.replace('</body>', tag+'\n</body>')
-          p.write_text(s)
+          else:
+              s=s.replace('v5.js?v=5', 'v5.js?v=5.1')
+          html.write_text(s)
+          js=Path('out/basketball-legend/v5.js')
+          t=js.read_text()
+          t=t.replace("state.playoffTotals=state.playoffTotals||totals();state.autoSim=false;state.autoResume=!!state.autoResume;", "state.playoffTotals=state.playoffTotals||totals();if(typeof state.autoSim!=='boolean')state.autoSim=false;state.autoResume=!!state.autoResume;")
+          js.write_text(t)
           PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
