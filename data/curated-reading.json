@@ -216,6 +216,13 @@
       "classicIds": [
         "classic-oliver-tunneling-criteria-2003"
       ]
+    },
+    {
+      "date": "2026-08-26",
+      "reviewId": "review-electric-field-pmtj-2025",
+      "classicIds": [
+        "classic-double-interface-pmtj-2012"
+      ]
     }
   ],
   "items": [
@@ -2020,6 +2027,59 @@
         "再看三条Rowell判据。",
         "重点读击穿差异。",
         "最后转为RA/TMR/TDDB联合验收；30–40分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-electric-field-pmtj-2025",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Prospects of Electric Field Control in Perpendicular Magnetic Tunnel Junctions and Emerging 2D Spintronics for Ultralow Energy Memory and Logic Devices",
+      "titleZh": "电场控制pMTJ与二维自旋电子学：超低能耗存储和逻辑路线综述",
+      "authors": "Will Echtenkamp, Brahmdutta Dixit, Yifei Yang, Deyuan Lyu, Thomas Peterson, Qi Jia, Yu-Chia Chen, Jian-Ping Wang",
+      "venue": "Advanced Functional Materials 36, 2505426 (2026)",
+      "published": "2025-06-04",
+      "recommendedOn": "2026-08-26",
+      "doi": "10.1002/adfm.202505426",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202505426",
+      "backupUrl": "https://doi.org/10.1002/adfm.202505426",
+      "assistantSummary": "正式综述比较多铁耦合、VCMA、VCEC、常规/非常规SOT、STT/SOT混合及二维范德华路线，核心目标是在保持pMTJ尺寸、保持时间和速度的同时减少大写电流及焦耳热。",
+      "whySelected": "为今天滑移铁电交变磁理论提供器件评价框架：电场能否真正降能耗，必须同时核对非易失性、热稳定、写入错误、耐久和CMOS电压。",
+      "readingGuide": [
+        "先看pMTJ功耗与缩放约束。",
+        "比较VCMA、VCEC和混合SOT/STT。",
+        "再看二维/交变磁新路线。",
+        "最后整理能耗—保持—耐久证据表；60–90分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-double-interface-pmtj-2012",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "E"
+      ],
+      "title": "Perpendicular-anisotropy CoFeB-MgO magnetic tunnel junctions with a MgO/CoFeB/Ta/CoFeB/MgO recording structure",
+      "titleZh": "双MgO界面CoFeB pMTJ：提高热稳定而保持临界电流",
+      "authors": "H. Sato, M. Yamanouchi, S. Ikeda, S. Fukami, F. Matsukura, H. Ohno",
+      "venue": "Applied Physics Letters 101, 022414 (2012)",
+      "published": "2012-07-13",
+      "recommendedOn": "2026-08-26",
+      "doi": "10.1063/1.4736727",
+      "url": "https://pubs.aip.org/aip/apl/article/101/2/022414/127813/Perpendicular-anisotropy-CoFeB-MgO-magnetic-tunnel",
+      "backupUrl": "https://doi.org/10.1063/1.4736727",
+      "assistantSummary": "经典实验采用MgO/CoFeB(1.6 nm)/Ta(0.4 nm)/CoFeB(1.0 nm)/MgO记录层；70 nm器件热稳定因子较同结构最佳单界面MTJ提高1.9倍，而本征STT临界电流保持相当。",
+      "whySelected": "它把原子级界面数、超薄Ta插层与器件保持/写入折中直接连接，是评估新型电场或交变磁存储路线的现实基准。",
+      "readingGuide": [
+        "先看双界面记录层堆栈。",
+        "核对70 nm器件提取方法。",
+        "重点比较1.9倍热稳定与临界电流。",
+        "最后列出Ta厚度/扩散DOE；30–45分钟。"
       ],
       "notNew": true
     }
