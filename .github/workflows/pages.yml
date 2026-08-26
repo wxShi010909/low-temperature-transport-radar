@@ -85,11 +85,14 @@ jobs:
           from pathlib import Path
           html=Path('out/basketball-legend/index.html')
           s=html.read_text()
-          tag='<script src="v5.js?v=5.1"></script>'
+          v5='<script src="v5.js?v=5.1"></script>'
+          v6='<script src="v6.js?v=6"></script>'
           if 'v5.js' not in s:
-              s=s.replace('</body>', tag+'\n</body>')
+              s=s.replace('</body>', v5+'\n</body>')
           else:
               s=s.replace('v5.js?v=5', 'v5.js?v=5.1')
+          if 'v6.js' not in s:
+              s=s.replace('</body>', v6+'\n</body>')
           html.write_text(s)
           js=Path('out/basketball-legend/v5.js')
           t=js.read_text()
