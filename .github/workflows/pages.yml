@@ -45,6 +45,8 @@ jobs:
           for(const p of (src.players||[])){
             const abbr=byTid[p.tid];
             if(!abbr || !teams[abbr]) continue;
+            const playerName=String(p.name || [p.firstName,p.lastName].filter(Boolean).join(' ') || '').trim();
+            if(!playerName) continue;
             const r=(p.ratings||[]).slice().sort((a,b)=>(a.season||0)-(b.season||0)).at(-1)||{};
             const finish=clamp(Math.round(((r.ins??55)+(r.dnk??55))/2),40,99);
             const steal=clamp(Math.round((r.diq??55)*.72+(r.spd??55)*.28),40,99);
@@ -52,9 +54,9 @@ jobs:
             const defense=clamp(Math.round((r.diq??55)*.62+(r.spd??55)*.18+(r.stre??55)*.20),40,99);
             const durability=clamp(Math.round(55+(r.endu??45)*.44),45,99);
             teams[abbr].players.push({
-              name:p.name,
+              name:playerName,
               pos:p.pos||'',
-              img:p.imgURL||'',
+              img:p.imgURL||p.imgUrl||'',
               salary:p.contract&&Number.isFinite(+p.contract.amount)?+(+p.contract.amount/1000).toFixed(2):0,
               ratings:{
                 three:clamp(Math.round(r.tp??55),40,99),
@@ -70,7 +72,7 @@ jobs:
               }
             });
           }
-          for(const t of Object.values(teams)) t.players.sort((a,b)=>b.salary-a.salary || a.name.localeCompare(b.name));
+          for(const t of Object.values(teams)) t.players.sort((a,b)=>b.salary-a.salary || String(a.name).localeCompare(String(b.name)));
           const out='window.NBA_DATA='+JSON.stringify({generatedAt:new Date().toISOString(),source:'A-V29/NBA.Rosters 2026-27',teams})+';\n';
           fs.writeFileSync('basketball-legend/roster-data.js',out);
           console.log('Generated teams:',Object.keys(teams).length,'players:',Object.values(teams).reduce((n,t)=>n+t.players.length,0));
