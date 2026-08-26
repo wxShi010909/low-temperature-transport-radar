@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>篮球传奇 · 生涯模拟器</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand"><div class="brand-badge">🏀</div><div>篮球传奇<small>CAREER LAB · V1</small></div></div>
+    <button class="ghost" id="resetBtn">重开生涯</button>
+  </header>
+
+  <main>
+    <section class="screen active" id="home">
+      <div class="hero">
+        <div>
+          <div class="eyebrow">● CAREER SIMULATION 2.0</div>
+          <h1>创造你的<br><span>篮球传奇</span></h1>
+          <p>从不同球员身上夺取最强属性，打造独一无二的球星。选秀、成长、伤病、季后赛、荣誉与退役，每一次选择都会改变你的生涯。</p>
+          <div class="hero-actions">
+            <button class="primary" id="newCareer">开始新生涯 →</button>
+            <button class="secondary" id="continueCareer">继续生涯</button>
+          </div>
+          <div class="subtle">✓ 本地自动存档　✓ 不登录也能玩　✓ 手机/电脑自适应</div>
+        </div>
+        <div class="hero-card">
+          <div class="mini-title">MY PLAYER<strong>BUILD. DRAFT. DOMINATE.</strong></div>
+          <div class="court"></div><div class="player-silhouette">⛹️</div>
+          <div class="floating-stat f1">总评潜力<b>99</b></div>
+          <div class="floating-stat f2">完整生涯<b>20+</b></div>
+          <div class="floating-stat f3">关键属性<b>13</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="position">
+      <div class="section-head"><div><h2>选择你的初始位置</h2><p>不同位置使用不同 OVR 权重，不再简单平均。</p></div><div class="eyebrow">STEP 01 / 04</div></div>
+      <div class="position-grid" id="positionGrid"></div>
+      <div class="bottom-action"><button class="primary" id="confirmPosition" disabled>确认位置 →</button></div>
+    </section>
+
+    <section class="screen" id="build">
+      <div class="section-head"><div><h2>夺取 13 项能力</h2><p>每轮从 3 名候选中选择一人，并锁定他的一项能力。</p></div><div class="eyebrow">STEP 02 / 04</div></div>
+      <div class="build-layout">
+        <aside class="panel player-panel">
+          <div class="ovr-ring" id="ovrRing"><div class="inside"><strong id="liveOvr">--</strong><span>LIVE OVR</span></div></div>
+          <div class="build-meta"><span id="buildPos">位置 --</span><span id="lockedText">0 / 13</span></div>
+          <div class="progress"><i id="buildProgress"></i></div>
+          <div class="attr-list" id="attrList"></div>
+        </aside>
+        <section class="panel build-main">
+          <div class="spin-head"><div><h3 id="attrTitle">正在寻找第一项能力…</h3><p id="attrTip">比较三名候选，选择最适合你的位置模板。</p></div><button class="reroll" id="rerollBtn">↻ 重抽 <b id="rerolls">4</b></button></div>
+          <div class="candidate-grid" id="candidateGrid"></div>
+          <div class="hint">优化机制：候选值会根据你的目标位置进行“跨位置适配”，但不会粗暴砍成同一数值；关键稀缺属性的价值更高。</div>
+        </section>
+      </div>
+    </section>
+
+    <section class="screen" id="reveal">
+      <div class="reveal-wrap"><div class="eyebrow">STEP 03 / 04 · PLAYER REVEAL</div>
+        <div class="reveal-card">
+          <div class="reveal-number" id="finalOvr">88</div><div class="grade" id="finalGrade">ALL-STAR</div>
+          <div class="archetype" id="archetype">全能持球核心</div><div class="attribute-cloud" id="attributeCloud"></div>
+          <div class="summary-grid" id="revealSummary"></div>
+          <button class="primary" id="goDraft">进入选秀夜 →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="draft">
+      <div class="section-head"><div><h2>选秀夜</h2><p>顺位同时考虑总评、位置价值、即战力和潜力。</p></div><div class="eyebrow">STEP 04 / 04</div></div>
+      <div class="draft-board">
+        <div class="panel draft-card"><div class="team-badge" id="teamBadge">🌆</div><div class="draft-big" id="draftPick">#1 <span>OVERALL PICK</span></div><h3 id="draftTeam">海湾鲨鱼</h3><p class="reason" id="draftReason"></p><button class="primary" id="startSeason">开启新秀赛季 →</button></div>
+        <div class="panel draft-card"><h3 style="margin-top:0">球队适配报告</h3><div id="fitMeters"></div><div class="hint">V1 使用原创球队与演示球员池，便于你后续正式上线时规避直接复制第三方球员卡、Logo 和页面素材的问题。</div></div>
+      </div>
+    </section>
+
+    <section class="screen" id="career">
+      <div class="section-head"><div><h2 id="careerTitle">新秀赛季</h2><p id="careerSub">19岁 · 海湾鲨鱼 · PG</p></div><div class="eyebrow" id="seasonBadge">SEASON 1</div></div>
+      <div class="season-top">
+        <div class="panel season-card"><div class="record" id="record">0–0 <small>REGULAR SEASON</small></div><div class="stat-grid" id="statGrid"></div><div class="career-controls"><button class="primary" id="simSeason">模拟完整赛季</button><button class="secondary" id="simFive">模拟 5 场</button></div><div class="timeline" id="gameTimeline"></div></div>
+        <div class="panel career-card"><h3 style="margin-top:0">球员状态</h3><div id="contractCard"></div><div id="careerMeters"></div><div class="awards" id="awards"></div><div id="eventArea"></div></div>
+      </div>
+      <div class="panel season-card history"><h3 style="margin-top:0">生涯履历</h3><table><thead><tr><th>赛季</th><th>年龄</th><th>球队</th><th>战绩</th><th>PTS</th><th>REB</th><th>AST</th><th>OVR</th><th>当年合同</th><th>荣誉</th></tr></thead><tbody id="historyBody"></tbody></table></div>
+    </section>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<script src="core.js"></script>
+<script src="career.js"></script>
+</body>
+</html>
