@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#080b10" />
+<title>LIFE / 人生实验室</title>
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<div class="app">
+<header class="top"><div class="brand">LIFE / 人生实验室 <small>ORIGINAL LIFE SIM · V1</small></div><div class="top-actions"><button class="btn ghost" id="saveBtn">保存</button><button class="btn" id="resetBtn">重开</button></div></header>
+<main>
+<section class="screen active" id="home">
+  <div class="hero">
+    <div>
+      <div class="kicker">A LIFE THAT KEEPS MOVING</div>
+      <h1>不是选结局。<br><span>是活一辈子。</span></h1>
+      <p>工作会变，朋友会离开，市场会起伏，身体会衰老，机会也不会永远等你。每个月只有有限的时间；你的选择会改变关系、财富、健康、职业和下一次机会。</p>
+      <div class="panel create-card">
+        <div class="form">
+          <div class="field"><label>姓名</label><input id="nameInput" placeholder="例如 林川 / Ethan Reed"></div>
+          <div class="field"><label>性别</label><select id="genderInput"><option>男</option><option>女</option><option>不设定</option></select></div>
+          <div class="field"><label>国家 / 地区</label><select id="countryInput"><option>中国</option><option>日本</option><option>美国</option><option>加拿大</option><option>英国</option><option>法国</option><option>德国</option><option>澳大利亚</option><option>新加坡</option></select></div>
+          <div class="field"><label>人生起点</label><select id="ageInput"><option value="16">16岁 · 高中阶段</option><option value="18" selected>18岁 · 成年起点</option><option value="22">22岁 · 毕业起点</option></select></div>
+          <div class="field wide"><label>家庭背景</label><select id="backgroundInput"><option value="random">完全随机</option><option value="working">普通工薪家庭</option><option value="poor">经济困难家庭</option><option value="middle">中产家庭</option><option value="wealthy">富裕家庭</option></select></div>
+        </div>
+        <div class="start-row"><button class="btn primary" id="startBtn">生成我的人生</button><button class="btn" id="continueBtn">继续上次人生</button></div>
+      </div>
+    </div>
+    <div class="panel hero-card"><div class="kicker">2026 → ?</div><div class="hero-year">LIFE<small>CAREER · LOVE · MONEY · HEALTH · FAMILY</small></div><div class="hero-pills"><span>每月行动点</span><span>重大事件暂停</span><span>NPC独立成长</span><span>经济与行业周期</span><span>多种人生结局</span></div></div>
+  </div>
+</section>
+<section class="screen" id="game">
+  <div class="dashboard">
+    <aside class="panel side">
+      <div class="identity"><div class="avatar" id="avatar">LC</div><div><h2 id="playerName">—</h2><div class="age-line" id="playerMeta">—</div></div></div>
+      <div class="money-big" id="netWorth">¥0</div><div class="money-label">NET WORTH / 净资产</div>
+      <div class="meters" id="meters"></div>
+      <div class="life-score"><div class="mini"><span>幸福</span><b id="happyScore">—</b></div><div class="mini"><span>声望</span><b id="fameScore">—</b></div><div class="mini"><span>职业</span><b id="jobScore">—</b></div><div class="mini"><span>家庭</span><b id="familyScore">—</b></div></div>
+    </aside>
+    <div class="main">
+      <section class="panel now">
+        <div class="datebar"><div><div class="kicker" id="stageLabel">EARLY LIFE</div><h2 id="dateText">2026年9月</h2><p id="headline">你的人生刚刚开始。</p></div><div class="time-actions"><button class="btn blue" id="monthBtn">进入下个月</button><button class="btn" id="yearBtn">快进一年</button></div></div>
+        <div class="actionpts"><div><b style="font-size:12px">本月可安排的时间</b><div class="muted" style="font-size:9px;margin-top:3px">重大事件不会消耗行动点，但你的日常选择会。</div></div><div class="dots" id="actionDots"></div></div>
+      </section>
+      <div class="map">
+        <button class="place" data-place="career"><div class="tag">CAREER</div><b>学校 / 职场</b><small>学习、找工作、升职、跳槽</small></button>
+        <button class="place" data-place="social"><div class="tag">PEOPLE</div><b>关系 / 社交</b><small>朋友、同事、恋爱、家庭</small></button>
+        <button class="place" data-place="finance"><div class="tag">MONEY</div><b>财富 / 住房</b><small>存款、投资、买房、负债</small></button>
+        <button class="place" data-place="health"><div class="tag">BODY</div><b>健康 / 生活</b><small>运动、休息、旅行、体检</small></button>
+        <button class="place" data-place="growth"><div class="tag">GROWTH</div><b>能力 / 兴趣</b><small>技能、证书、创作、阅读</small></button>
+        <button class="place" data-place="world"><div class="tag">WORLD</div><b>社会 / 新闻</b><small>经济周期、行业变化、热点</small></button>
+        <button class="place" data-place="goals"><div class="tag">GOALS</div><b>目标 / 成就</b><small>人生目标与里程碑</small></button>
+        <button class="place" data-place="history"><div class="tag">MEMORY</div><b>人生履历</b><small>重要决定与年度记录</small></button>
+      </div>
+      <div class="content-grid">
+        <section class="panel box"><h3>最近发生</h3><div class="feed" id="lifeFeed"></div></section>
+        <section class="panel box"><h3>身边的人</h3><div class="cards" id="peoplePreview"></div></section>
+      </div>
+      <div class="footer-note">本游戏为原创虚构人生模拟。世界新闻、公司、NPC与事件均为游戏内生成，不代表现实人物或真实事件。</div>
+    </div>
+  </div>
+</section>
+<section class="screen" id="end"><div class="panel end"><div class="kicker">LIFE COMPLETE</div><h1 id="endName">人生终章</h1><div class="end-score" id="endScore">0</div><p class="muted" id="endSummary"></p><div class="statgrid" id="endStats"></div><div class="timeline" id="endTimeline"></div><button class="btn primary" style="margin-top:18px" onclick="resetGame()">再活一次</button></div></section>
+</main>
+</div>
+<div class="drawer" id="drawer"><div class="shade" id="shade"></div><div class="sheet"><div class="sheet-head"><div><div class="kicker" id="sheetKicker">LIFE</div><h2 id="sheetTitle">—</h2></div><button class="close" id="closeSheet">×</button></div><div id="sheetBody"></div></div></div>
+<script src="app.js?v=1"></script>
+</body>
+</html>
