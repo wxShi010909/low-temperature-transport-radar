@@ -25,6 +25,56 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build:pages
+      - name: Build current NBA roster snapshot
+        run: |
+          curl -fL --retry 3 --retry-delay 2 \
+            https://raw.githubusercontent.com/A-V29/NBA.Rosters/main/2026-27.NBA.Roster.json \
+            -o /tmp/nba-roster.json
+          node <<'NODE'
+          const fs = require('fs');
+          const src = JSON.parse(fs.readFileSync('/tmp/nba-roster.json','utf8'));
+          const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+          const teams={};
+          for(const t of (src.teams||[])){
+            if(typeof t.tid!=='number' || t.tid<0 || t.tid>29) continue;
+            const abbr=t.abbrev || String(t.region||'').slice(0,3).toUpperCase();
+            teams[abbr]={abbr,name:[t.region,t.name].filter(Boolean).join(' '),players:[]};
+          }
+          const byTid={};
+          for(const t of (src.teams||[])) if(t.tid>=0&&t.tid<=29) byTid[t.tid]=t.abbrev;
+          for(const p of (src.players||[])){
+            const abbr=byTid[p.tid];
+            if(!abbr || !teams[abbr]) continue;
+            const r=(p.ratings||[]).slice().sort((a,b)=>(a.season||0)-(b.season||0)).at(-1)||{};
+            const finish=clamp(Math.round(((r.ins??55)+(r.dnk??55))/2),40,99);
+            const steal=clamp(Math.round((r.diq??55)*.72+(r.spd??55)*.28),40,99);
+            const block=clamp(Math.round((r.diq??55)*.42+(r.hgt??55)*.43+(r.jmp??55)*.15),40,99);
+            const defense=clamp(Math.round((r.diq??55)*.62+(r.spd??55)*.18+(r.stre??55)*.20),40,99);
+            const durability=clamp(Math.round(55+(r.endu??45)*.44),45,99);
+            teams[abbr].players.push({
+              name:p.name,
+              pos:p.pos||'',
+              img:p.imgURL||'',
+              salary:p.contract&&Number.isFinite(+p.contract.amount)?+(+p.contract.amount/1000).toFixed(2):0,
+              ratings:{
+                three:clamp(Math.round(r.tp??55),40,99),
+                mid:clamp(Math.round(r.fg??55),40,99),
+                finish,
+                pass:clamp(Math.round(r.pss??55),40,99),
+                handle:clamp(Math.round(r.drb??55),40,99),
+                speed:clamp(Math.round(r.spd??55),40,99),
+                vertical:clamp(Math.round(r.jmp??55),40,99),
+                strength:clamp(Math.round(r.stre??55),40,99),
+                rebound:clamp(Math.round(r.reb??55),40,99),
+                steal,block,defense,durability
+              }
+            });
+          }
+          for(const t of Object.values(teams)) t.players.sort((a,b)=>b.salary-a.salary || a.name.localeCompare(b.name));
+          const out='window.NBA_DATA='+JSON.stringify({generatedAt:new Date().toISOString(),source:'A-V29/NBA.Rosters 2026-27',teams})+';\n';
+          fs.writeFileSync('basketball-legend/roster-data.js',out);
+          console.log('Generated teams:',Object.keys(teams).length,'players:',Object.values(teams).reduce((n,t)=>n+t.players.length,0));
+          NODE
       - name: Add Basketball Legend static game
         run: |
           mkdir -p out/basketball-legend
