@@ -25,10 +25,13 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build:pages
+      - name: Add Basketball Legend static game
+        run: |
+          mkdir -p out/basketball-legend
+          cp -r basketball-legend/. out/basketball-legend/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
       - id: deployment
         uses: actions/deploy-pages@v4
-  
