@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-26T09:02:00+08:00",
-  "reportDate": "2026-08-26",
-  "scope": "原子级制造、MTJ/MRAM、产业化器件与低温可靠性精选；推荐日期不等于发表日期",
+  "updatedAt": "2026-08-27T09:00:00+08:00",
+  "reportDate": "2026-08-27",
+  "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期不等于发表日期",
   "history": [
     {
       "date": "2026-07-13",
@@ -622,6 +622,25 @@
         "prb-114-074432-sliding-altermagnet",
         "rsi-97-083702-superfluid-imaging",
         "jva-44-052601-cl-gan-ale"
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "label": "详细日报：一阶磁相变—超薄ALD稳定—滑移谷劈裂—TES噪声预算—低温刻蚀",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "prb-114-074404-pr3mnbi5",
+        "jva-44-052403-al2o3-stability",
+        "apl-129-082902-sliding-valley",
+        "rsi-97-083101-simons-tes",
+        "jva-44-053008-cryo-etch"
       ]
     }
   ],
@@ -6905,6 +6924,181 @@
       "url": "https://pubs.aip.org/avs/jva/article/44/5/052601/3401324/First-principles-investigation-of-chlorine",
       "backupUrl": "https://doi.org/10.1116/6.0005564",
       "accessNote": "已打开AVS/AIP正式全文并核验全部作者、日期、DOI、−3.6 eV、<0.1 eV及覆盖度结论",
+      "featured": true
+    },
+    {
+      "id": "prb-114-074404-pr3mnbi5",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "First-order magnetic transition and field-sensitive magnetic states in the distorted kagome metal Pr3MnBi5",
+      "titleZh": "畸变笼目金属Pr₃MnBi₅的一阶磁相变、场调磁态与68%正磁阻",
+      "authors": "Jingyu Li, Cuiwei Zhang, Zhongchen Xu, Guohao Dong, Shanshan Miao, Yong-Chang Lau, Fang Hong, Youguo Shi",
+      "venue": "Physical Review B 114, 074404 (2026)",
+      "published": "2026-08-04",
+      "recommendedOn": "2026-08-27",
+      "timeTier": "2026正式低温输运实验",
+      "system": "Pr₃MnBi₅畸变笼目金属单晶；准一维几何与面内易磁化并存",
+      "conditions": "磁化、比热、电阻和低温XRD联合测量；50 K以下连续异常，25 K一阶转变；公开摘要未给最低温、最高磁场、样品尺寸、电流方向和电阻率绝对值",
+      "methods": [
+        "温变磁化与热滞回",
+        "比热和四探针电阻",
+        "外磁场调控相态",
+        "低温XRD检查体积与晶体对称性"
+      ],
+      "summary": "【直接实测】25 K处磁化和电阻均出现不连续及热滞回，低温XRD看到体积异常但无晶体对称性改变；低温铁磁基态中正磁阻达68%。【作者解释】自旋—晶格和电子—晶格耦合使相态、输运和磁各向异性可被磁场调控。",
+      "relevance": "给低温MTJ/交换偏置层提供一套判别相变来源的多模态流程：R(T)异常不能只凭电阻命名，需和磁化、比热、结构与场方向交叉验证。",
+      "limitation": "块体Pr₃MnBi₅不是MTJ；68%是材料磁阻而非TMR，摘要未公开RA、厚度、器件尺寸、Jc、WER、保持、耐久或晶圆数据。",
+      "industrialization": "材料机理阶段；需薄膜外延、界面接触、图形化、跨温循环与阵列统计后才能评估器件价值。",
+      "whyRecommended": "先看25 K热滞回图，再看低温XRD体积异常，最后看场调相图和68% MR；40–55分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1103/w36g-kk84",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/w36g-kk84",
+      "backupUrl": "https://doi.org/10.1103/w36g-kk84",
+      "accessNote": "已打开APS正式页，核验题目、全部作者、2026-08-04、卷页、DOI、25 K、50 K以下异常及68% MR；订阅外数字均标为原文未公开",
+      "featured": true
+    },
+    {
+      "id": "jva-44-052403-al2o3-stability",
+      "track": "B",
+      "secondaryTracks": [
+        "E",
+        "D"
+      ],
+      "title": "Stability of sub-10 nm atomic layer-deposited alumina thin films on gold electrode surfaces in aqueous electrolytes",
+      "titleZh": "金电极上亚10 nm ALD Al₂O₃稳定性：2.5 nm在22 h内明显退化",
+      "authors": "Dorian Thompson, Saidjafarzoda Ilhom, Fatih Bayansal, Steven Allaby, Xinhao Wang, Yangchao Luo, Necmi Biyikli, Yu Lei",
+      "venue": "Journal of Vacuum Science & Technology A 44, 052403 (2026)",
+      "published": "2026-08-24",
+      "recommendedOn": "2026-08-27",
+      "timeTier": "本周正式材料与器件基础实验",
+      "system": "金电极/ALD Al₂O₃，名义厚度2.5–10 nm；水溶液电化学阻挡层",
+      "conditions": "2.5–10 nm厚度系列；在含氧化还原探针的缓冲液中连续原位DPV；暴露前后椭偏、AFM与EDS；原文公开页未给沉积温度、ALD循环数和晶圆均匀性",
+      "methods": [
+        "ALD沉积厚度系列",
+        "原位差分脉冲伏安监测漏通",
+        "长期浸泡",
+        "椭偏/AFM/EDS前后对照"
+      ],
+      "summary": "【直接实测】2.5 nm膜在测试电解液中22 h内明显退化，DPV信号恢复到裸金水平；10 nm膜保持更好的绝缘阻挡性。【作者结论】超薄ALD层不能沿用块体氧化铝稳定性假设，厚度是长期可靠性的主变量。",
+      "relevance": "虽然介质环境不同，但它直指MTJ最薄势垒/封护层的针孔与时间依赖失效：平均厚度合格不等于尾部漏电和长期稳定合格。",
+      "limitation": "Au/Al₂O₃水溶液体系不是CoFeB/MgO真空固态MTJ；22 h化学退化不能外推TMR、TDDB或BEOL寿命。",
+      "industrialization": "薄膜可靠性方法阶段；缺300 mm厚度/针孔地图、封装应力、热循环、阵列漏电尾部及MTJ读写指标。",
+      "whyRecommended": "先看2.5/10 nm DPV时间曲线，再看AFM/EDS和椭偏前后对照；35–50分钟。",
+      "score": 9.3,
+      "priority": "A",
+      "doi": "10.1116/6.0005555",
+      "url": "https://pubs.aip.org/avs/jva/article/44/5/052403/3402951/Stability-of-sub-10-nm-atomic-layer-deposited",
+      "backupUrl": "https://doi.org/10.1116/6.0005555",
+      "accessNote": "已打开AVS/AIP正式全文，核验全部作者、2026-08-24、DOI、2.5–10 nm、22 h、DPV/椭偏/AFM/EDS",
+      "featured": true
+    },
+    {
+      "id": "apl-129-082902-sliding-valley",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Synergistic manipulation of valley splitting by sliding ferroelectricity and magnetic proximity effect in Ti-based TMH/MnO/TMH heterostructures",
+      "titleZh": "滑移铁电与磁近邻协同调控谷劈裂：9.4 meV势垒与可逆自旋极化",
+      "authors": "Shuisheng Yi, Dexuan Huo",
+      "venue": "Applied Physics Letters 129, 082902 (2026)",
+      "published": "2026-08-25",
+      "recommendedOn": "2026-08-27",
+      "timeTier": "本周正式第一性原理论文",
+      "system": "Ti基过渡金属卤化物TMH/MnO/TMH范德华异质结构；滑移铁电与磁近邻耦合",
+      "conditions": "第一性原理比较层间滑移、极化、磁近邻、能带与谷/自旋极化；无真实器件温度、缺陷、接触、脉冲或磁场条件",
+      "methods": [
+        "构建不同层间注册构型",
+        "计算滑移势垒和极化",
+        "比较K/K′谷劈裂",
+        "分析表面/界面卤素电负性"
+      ],
+      "summary": "【理论预测】滑移势垒9.4 meV/晶胞、可切换极化1.7×10⁻¹² C/m；磁近邻同时破坏时间反演与面外反演；滑移可反转谷劈裂方向，导带劈裂由TiClI(Cl)的9.2 meV增至TiClI(I)的19.6 meV。",
+      "relevance": "把原子级层间注册位置变成非易失状态变量，为低功耗自旋/谷器件提供材料筛选指标，也提醒原子制造的亚晶格错位可能是功能而非单纯缺陷。",
+      "limitation": "完全是理论预测；没有室温稳定、实际切换电压、TMR、RA、Jc、WER、保持、耐久、晶圆或阵列验证。",
+      "industrialization": "概念阶段；需可控制备、原位结构确认、有限温滑移寿命、电写入、隧穿读出和CMOS/BEOL兼容。",
+      "whyRecommended": "先看异质结构与滑移路径，再看9.4 meV/1.7×10⁻¹² C/m，最后看9.2→19.6 meV；35–50分钟。",
+      "score": 9.4,
+      "priority": "S",
+      "doi": "10.1063/5.0347487",
+      "url": "https://pubs.aip.org/aip/apl/article/129/8/082902/3403017/Synergistic-manipulation-of-valley-splitting-by",
+      "backupUrl": "https://doi.org/10.1063/5.0347487",
+      "accessNote": "已打开AIP正式全文，核验作者、卷页、DOI及9.4 meV、1.7×10⁻¹² C/m、9.2/19.6 meV；明确标为第一性原理预测",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-083101-simons-tes",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Performance characterization of the transition-edge sensor array, readout system, and optical coupling of the Simons Array cosmic microwave background experiment",
+      "titleZh": "Simons Array低温TES阵列全链路诊断：15,000+探测器与40倍频分复用",
+      "authors": "N. Farias et al.",
+      "venue": "Review of Scientific Instruments 97, 083101 (2026)",
+      "published": "2026-08-11",
+      "recommendedOn": "2026-08-27",
+      "timeTier": "2026正式低温仪器论文",
+      "system": "polarbear-2a/2b低温TES阵列、透镜耦合正弦天线、光学链和频分复用读出",
+      "conditions": "90与150 GHz；智利阿塔卡马5200 m；超过15,000个双色双偏振TES；40×频分复用；公开摘要未给基温、NET绝对值和单通道噪声谱",
+      "methods": [
+        "标定TES响应度",
+        "估算光学通量",
+        "分解读出噪声预算",
+        "把模型与在天灵敏度交叉验证"
+      ],
+      "summary": "【工程实测】完成15,000+ TES、90/150 GHz与40×复用的系统级表征；实测在天NET高于设计目标。【作者解释】polarbear-2a主要由光学通量偏低和读出噪声偏高解释，2b还更易受RF干扰。",
+      "relevance": "这是一套可直接迁移到低温输运多通道平台的‘端到端噪声预算’方法：不只看锁相放大器指标，要分离样品、线缆、复用、RF污染与光/热耦合。",
+      "limitation": "对象是CMB TES而非MTJ；摘要未公开基温、绝对NET、MTJ电压噪声、磁场兼容性和长期漂移。",
+      "industrialization": "大型科学仪器成熟度；迁移到器件平台仍需标准电阻/结、通道串扰、磁场扫描、自动校准与跨日可追溯性。",
+      "whyRecommended": "先看系统框图，再看响应度—通量—读出噪声预算，最后比较2a/2b与RF干扰；45–65分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1063/5.0319093",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/8/083101/3400726/Performance-characterization-of-the-transition",
+      "backupUrl": "https://doi.org/10.1063/5.0319093",
+      "accessNote": "已打开AIP正式全文，核验日期、卷页、DOI、90/150 GHz、5200 m、15,000+ TES与40×复用；未公开绝对NET不补造",
+      "featured": true
+    },
+    {
+      "id": "jva-44-053008-cryo-etch",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Cryogenic etching characteristics of SiO2, SiN, and a-C films with HF/fluorocarbon-containing plasmas",
+      "titleZh": "HF/含氟碳等离子体低温刻蚀：−80°C窗口使介质对碳选择比提升约2.5倍",
+      "authors": "Yusuke Imai, Shih-Nan Hsiao, Makoto Sekine, Michael Kin Ting Mo, Nikolay Britun, Takayoshi Tsutsumi, Ryutaro Suda, Yoshihide Kihara, Kenji Ishikawa",
+      "venue": "Journal of Vacuum Science & Technology A 44, 053008 (2026)",
+      "published": "2026-08-26",
+      "recommendedOn": "2026-08-27",
+      "timeTier": "昨日正式原子与极端制造实验",
+      "system": "SiO₂、SiN和非晶碳薄膜；CF₄/H₂及HF/CF₄低温等离子体刻蚀",
+      "conditions": "双频CCP：100 MHz上电极、2 MHz下电极、30 mm间距、4 Pa；300 W源功率、0–300 W偏压；20×20 mm样片/100 mm载片；20至−80°C；CF₄/H₂总流量150 sccm、H₂ 20%–67%，HF/CF₄总流量50 sccm、CF₄ 0%–50%",
+      "methods": [
+        "二维扫描气体比例和偏压",
+        "温度20至−80°C扫描",
+        "OES监测F/H/CFx",
+        "FTIR与刻蚀率/选择比关联"
+      ],
+      "summary": "【直接实测】HF/CF₄中CF₄低于20%时SiO₂刻蚀率基本不受影响；少量含氟碳加入使SiO₂和SiN相对a-C选择比均提高约2.5倍且不牺牲吞吐；SiN与a-C响应由(NH₄)₂SiF₆稳定性、F清除和聚合竞争决定。",
+      "relevance": "提供温度—偏压—气体比例—表面沉积的完整窗口模板，可用于MTJ图形化后介质开口、硬掩膜和低损伤侧壁工艺设计。",
+      "limitation": "材料不是CoFeB/MgO，100 mm见证片不是300 mm器件晶圆；不能直接外推磁损伤、残F、TMR保持、RA、WER或TDDB。",
+      "industrialization": "接近设备配方开发；还缺高深宽比真实图形、300 mm均匀性、颗粒/端点、残留、完整MTJ电性和批间SPC。",
+      "whyRecommended": "先看反应器和−80°C窗口，再看CF₄<20%平台与2.5×选择比，最后读表面化学；45–65分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1116/6.0005614",
+      "url": "https://pubs.aip.org/avs/jva/article/44/5/053008/3403119/Cryogenic-etching-characteristics-of-SiO2-SiN-and",
+      "backupUrl": "https://doi.org/10.1116/6.0005614",
+      "accessNote": "已打开AVS/AIP正式全文，核验全部作者、2026-08-26、DOI、反应器、流量、功率、20至−80°C、<20%窗口和约2.5倍选择比",
       "featured": true
     }
   ]

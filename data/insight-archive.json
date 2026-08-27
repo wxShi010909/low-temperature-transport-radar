@@ -380,6 +380,18 @@
       "atomicIds": [
         "2026-08-26-cl-ale-mtj"
       ]
+    },
+    {
+      "date": "2026-08-27",
+      "opportunityIds": [
+        "2026-08-27-transition-interface-map"
+      ],
+      "methodIds": [
+        "2026-08-27-end-to-end-noise-budget"
+      ],
+      "atomicIds": [
+        "2026-08-27-cryo-ale-hvm-route"
+      ]
     }
   ],
   "items": [
@@ -5774,6 +5786,155 @@
       ],
       "researchConnection": "直接连接原子制造、MTJ/MRAM和低温测量平台。",
       "takeaway": "最后测TMR/RA/TDDB/WER"
+    },
+    {
+      "id": "2026-08-27-transition-interface-map",
+      "date": "2026-08-27",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 相变—界面—原子注册",
+      "title": "从25 K相变到亚10 nm势垒的多尺度可靠性地图",
+      "subtitle": "把磁相变、绝缘层贯通和层间滑移分成三类失效源。",
+      "summary": "把磁相变、绝缘层贯通和层间滑移分成三类失效源。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "prb-114-074404-pr3mnbi5",
+        "jva-44-052403-al2o3-stability",
+        "apl-129-082902-sliding-valley"
+      ],
+      "question": "跨温R/TMR异常究竟来自磁相变、势垒缺陷还是原子注册变化？",
+      "rationale": "A提供磁/热/结构证据链，B提供厚度—时间失效，C提供滑移—能带变量。",
+      "workflow": [
+        "同一器件做R(T,H)升降温",
+        "加入噪声/漏电和角分辨",
+        "用结构/磁学交叉验证",
+        "建立失效分类器而非只看单曲线"
+      ],
+      "equipment": [
+        "低温输运",
+        "VSM/FMR",
+        "XRD/TEM",
+        "源表与噪声谱"
+      ],
+      "measurements": [
+        "热滞回",
+        "TMR/RA",
+        "漏电尾部",
+        "结构注册"
+      ],
+      "metrics": [
+        "转变温度/宽度",
+        "P99漏电",
+        "TMR保持",
+        "跨温重复性"
+      ],
+      "evidenceBoundary": "三篇材料体系不同，统一分类框架属于本站推断。",
+      "firstSteps": [
+        "先做升降温速率对照",
+        "再做裸膜/完整MTJ对照",
+        "同步测噪声和磁性"
+      ],
+      "researchConnection": "直接连接用户低温输运平台、MTJ界面和原子制造。",
+      "takeaway": "优先建立异常归因证据链。"
+    },
+    {
+      "id": "2026-08-27-end-to-end-noise-budget",
+      "date": "2026-08-27",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 多通道低温噪声预算",
+      "title": "标准负载—复用—RF注入的端到端低温平台验收",
+      "subtitle": "把样品噪声、光/热耦合、读出与RF污染逐级拆开。",
+      "summary": "把样品噪声、光/热耦合、读出与RF污染逐级拆开。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "rsi-97-083101-simons-tes",
+        "prb-114-074404-pr3mnbi5"
+      ],
+      "question": "平台灵敏度不达标时，如何定位到样品、线缆、复用、温控或RF？",
+      "rationale": "D示范15,000+通道端到端预算，A说明输运异常必须配合多物理量验证。",
+      "workflow": [
+        "短路/标准电阻/MTJ三级负载",
+        "1/8/40通道复用对照",
+        "冷头/磁场/RF注入矩阵",
+        "自动生成噪声和串扰报告"
+      ],
+      "equipment": [
+        "低噪声前放",
+        "频谱仪/锁相",
+        "RF注入",
+        "温控与自动化"
+      ],
+      "measurements": [
+        "1 Hz–1 MHz PSD",
+        "串扰矩阵",
+        "增益漂移",
+        "电子温度"
+      ],
+      "metrics": [
+        "噪声预算闭合度",
+        "串扰<-60 dB目标",
+        "跨日漂移",
+        "数据完整率"
+      ],
+      "evidenceBoundary": "TES频分系统不是MTJ锁相平台，指标阈值需本机标定。",
+      "firstSteps": [
+        "先测短路和标准电阻",
+        "再开关冷头/磁场",
+        "最后接入MTJ脉冲"
+      ],
+      "researchConnection": "可直接纳入现有LabVIEW/Python低温输运平台验收。",
+      "takeaway": "先证明平台，再解释样品。"
+    },
+    {
+      "id": "2026-08-27-cryo-ale-hvm-route",
+      "date": "2026-08-27",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "B/E · 低温刻蚀—HVM闭环",
+      "title": "低温介质刻蚀到MTJ侧壁的HVM迁移路线",
+      "subtitle": "用温度—偏压—CF₄窗口换选择比，再用颗粒、残留和TMR把工艺关门。",
+      "summary": "用温度—偏压—CF₄窗口换选择比，再用颗粒、残留和TMR把工艺关门。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "jva-44-053008-cryo-etch",
+        "review-ale-industrial-2026",
+        "classic-ikeda-604-tmr-2008"
+      ],
+      "question": "约2.5倍选择比能否转化为MTJ图形化的低损伤、可量产窗口？",
+      "rationale": "E给实测配方窗口，综述给5×节拍/颗粒/HAR边界，经典文献给CoFeB/MgO界面性能基准。",
+      "workflow": [
+        "见证片筛温度/偏压/CF₄",
+        "真实图形验证轮廓和端点",
+        "XPS/TEM查残F与损伤",
+        "最终以TMR/RA/TDDB/WER关门"
+      ],
+      "equipment": [
+        "低温CCP/ICP",
+        "OES/FTIR/XPS",
+        "CD-SEM/TEM",
+        "晶圆探针与脉冲测试"
+      ],
+      "measurements": [
+        "刻蚀率/选择比",
+        "颗粒/均匀性",
+        "残F/损伤层",
+        "TMR/RA/TDDB/WER"
+      ],
+      "metrics": [
+        "CF₄<20%窗口",
+        "选择比增益",
+        "节拍倍率",
+        "300 mm 3σ与P99尾部"
+      ],
+      "evidenceBoundary": "SiO₂/SiN/a-C的低温化学不能直接证明CoFeB/MgO安全。",
+      "firstSteps": [
+        "先复现100 mm见证片窗口",
+        "加入MTJ材料兼容片",
+        "再做完整器件可靠性"
+      ],
+      "researchConnection": "直接服务原子制造设备、MTJ图形化和BEOL兼容。",
+      "takeaway": "单点选择比必须升级为晶圆与器件闭环。"
     }
   ]
 }

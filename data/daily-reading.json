@@ -1,56 +1,57 @@
 {
-  "date": "2026-08-26",
+  "date": "2026-08-27",
   "review": {
-    "id": "review-electric-field-pmtj-2025",
+    "id": "review-ale-industrial-2026",
     "kind": "每日综述",
-    "track": "B",
+    "track": "E",
     "secondaryTracks": [
-      "C",
-      "E"
+      "B",
+      "D"
     ],
-    "title": "Prospects of Electric Field Control in Perpendicular Magnetic Tunnel Junctions and Emerging 2D Spintronics for Ultralow Energy Memory and Logic Devices",
-    "titleZh": "电场控制pMTJ与二维自旋电子学：超低能耗存储和逻辑路线综述",
-    "authors": "Will Echtenkamp, Brahmdutta Dixit, Yifei Yang, Deyuan Lyu, Thomas Peterson, Qi Jia, Yu-Chia Chen, Jian-Ping Wang",
-    "venue": "Advanced Functional Materials 36, 2505426 (2026)",
-    "published": "2025-06-04",
-    "recommendedOn": "2026-08-26",
-    "doi": "10.1002/adfm.202505426",
-    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202505426",
-    "backupUrl": "https://doi.org/10.1002/adfm.202505426",
-    "assistantSummary": "正式综述比较多铁耦合、VCMA、VCEC、常规/非常规SOT、STT/SOT混合及二维范德华路线，核心目标是在保持pMTJ尺寸、保持时间和速度的同时减少大写电流及焦耳热。",
-    "whySelected": "为今天滑移铁电交变磁理论提供器件评价框架：电场能否真正降能耗，必须同时核对非易失性、热稳定、写入错误、耐久和CMOS电压。",
+    "title": "Current status of atomic layer etching and its adoption to low-k fine patterning: An industrial perspective",
+    "titleZh": "ALE产业化现状与low-k精细图形化：从自限反应到吞吐、颗粒和HVM",
+    "authors": "Sanghyun Lee, HyunWook Ra, Keun Hee Bai",
+    "venue": "Journal of Vacuum Science & Technology A 44, 058501 (2026)",
+    "published": "2026-08-25",
+    "recommendedOn": "2026-08-27",
+    "doi": "10.1116/6.0005592",
+    "url": "https://pubs.aip.org/avs/jva/article/44/5/058501/3403027/Current-status-of-atomic-layer-etching-and-its",
+    "backupUrl": "https://doi.org/10.1116/6.0005592",
+    "assistantSummary": "三星作者的正式产业视角综述指出：ALE低损伤和低加载优势明确，但同图形刻蚀时间约为RIE的5倍；实际3D图形中EPC随时间和深宽比变化，压力/等离子体过渡会生颗粒。低k案例在较低离子能下形成更垂直轮廓，使Cu体积最多增加约67%，并建议向‘每个等离子体脉冲一个ALE循环’简化。",
+    "whySelected": "它把今天E类低温刻蚀的局部配方结果放到HVM框架：真正决定量产的不是单点选择比，而是吞吐、颗粒、非理想自限、全片轮廓、low-k损伤和工具稳定性。",
     "readingGuide": [
-      "先看pMTJ功耗与缩放约束。",
-      "比较VCMA、VCEC和混合SOT/STT。",
-      "再看二维/交变磁新路线。",
-      "最后整理能耗—保持—耐久证据表；60–90分钟。"
+      "先看图1的2017–2026 HVM采用趋势。",
+      "再看约5×节拍、颗粒与非理想自限。",
+      "重点看low-k垂直轮廓及Cu体积+67%。",
+      "最后整理MTJ ALE的HVM门槛；60–80分钟。"
     ],
-    "notNew": true
+    "notNew": false
   },
   "classics": [
     {
-      "id": "classic-double-interface-pmtj-2012",
+      "id": "classic-ikeda-604-tmr-2008",
       "kind": "经典文章",
       "track": "B",
       "secondaryTracks": [
+        "A",
         "E"
       ],
-      "title": "Perpendicular-anisotropy CoFeB-MgO magnetic tunnel junctions with a MgO/CoFeB/Ta/CoFeB/MgO recording structure",
-      "titleZh": "双MgO界面CoFeB pMTJ：提高热稳定而保持临界电流",
-      "authors": "H. Sato, M. Yamanouchi, S. Ikeda, S. Fukami, F. Matsukura, H. Ohno",
-      "venue": "Applied Physics Letters 101, 022414 (2012)",
-      "published": "2012-07-13",
-      "recommendedOn": "2026-08-26",
-      "doi": "10.1063/1.4736727",
-      "url": "https://pubs.aip.org/aip/apl/article/101/2/022414/127813/Perpendicular-anisotropy-CoFeB-MgO-magnetic-tunnel",
-      "backupUrl": "https://doi.org/10.1063/1.4736727",
-      "assistantSummary": "经典实验采用MgO/CoFeB(1.6 nm)/Ta(0.4 nm)/CoFeB(1.0 nm)/MgO记录层；70 nm器件热稳定因子较同结构最佳单界面MTJ提高1.9倍，而本征STT临界电流保持相当。",
-      "whySelected": "它把原子级界面数、超薄Ta插层与器件保持/写入折中直接连接，是评估新型电场或交变磁存储路线的现实基准。",
+      "title": "Tunnel magnetoresistance of 604% at 300 K by suppression of Ta diffusion in CoFeB/MgO/CoFeB pseudo-spin-valves annealed at high temperature",
+      "titleZh": "抑制Ta扩散实现300 K 604%与5 K 1144% TMR的经典CoFeB/MgO研究",
+      "authors": "S. Ikeda et al.",
+      "venue": "Applied Physics Letters 93, 082508 (2008)",
+      "published": "2008-08-27",
+      "recommendedOn": "2026-08-27",
+      "doi": "10.1063/1.2976435",
+      "url": "https://pubs.aip.org/aip/apl/article/93/8/082508/923250/Tunnel-magnetoresistance-of-604-at-300K-by",
+      "backupUrl": "https://doi.org/10.1063/1.2976435",
+      "assistantSummary": "经典伪自旋阀Ta/Co20Fe60B20/MgO/Co20Fe60B20/Ta在525°C退火后实现300 K 604% TMR，5 K达1144%；作者把高TMR归因于500°C以上改善MgO(001)取向和应力松弛，同时必须抑制Ta向CoFeB尤其CoFeB/MgO界面扩散。",
+      "whySelected": "它把低温输运、MgO界面晶体质量和退火扩散直接连接，也是今天ALD超薄层稳定性与ALE损伤讨论的器件基准。",
       "readingGuide": [
-        "先看双界面记录层堆栈。",
-        "核对70 nm器件提取方法。",
-        "重点比较1.9倍热稳定与临界电流。",
-        "最后列出Ta厚度/扩散DOE；30–45分钟。"
+        "先看堆栈与退火温度系列。",
+        "核对300 K 604%和5 K 1144%。",
+        "重点读Ta扩散与MgO(001)/应力证据。",
+        "最后对照现代BEOL热预算；30–45分钟。"
       ],
       "notNew": true
     }
