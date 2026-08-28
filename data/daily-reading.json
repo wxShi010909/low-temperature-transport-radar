@@ -1,57 +1,57 @@
 {
-  "date": "2026-08-27",
+  "date": "2026-08-28",
   "review": {
-    "id": "review-ale-industrial-2026",
+    "id": "review-cryo-power-electronics-2024",
     "kind": "每日综述",
-    "track": "E",
+    "track": "D",
     "secondaryTracks": [
       "B",
-      "D"
+      "A"
     ],
-    "title": "Current status of atomic layer etching and its adoption to low-k fine patterning: An industrial perspective",
-    "titleZh": "ALE产业化现状与low-k精细图形化：从自限反应到吞吐、颗粒和HVM",
-    "authors": "Sanghyun Lee, HyunWook Ra, Keun Hee Bai",
-    "venue": "Journal of Vacuum Science & Technology A 44, 058501 (2026)",
-    "published": "2026-08-25",
-    "recommendedOn": "2026-08-27",
-    "doi": "10.1116/6.0005592",
-    "url": "https://pubs.aip.org/avs/jva/article/44/5/058501/3403027/Current-status-of-atomic-layer-etching-and-its",
-    "backupUrl": "https://doi.org/10.1116/6.0005592",
-    "assistantSummary": "三星作者的正式产业视角综述指出：ALE低损伤和低加载优势明确，但同图形刻蚀时间约为RIE的5倍；实际3D图形中EPC随时间和深宽比变化，压力/等离子体过渡会生颗粒。低k案例在较低离子能下形成更垂直轮廓，使Cu体积最多增加约67%，并建议向‘每个等离子体脉冲一个ALE循环’简化。",
-    "whySelected": "它把今天E类低温刻蚀的局部配方结果放到HVM框架：真正决定量产的不是单点选择比，而是吞吐、颗粒、非理想自限、全片轮廓、low-k损伤和工具稳定性。",
+    "title": "Review of semiconductor devices and other power electronics components at cryogenic temperature",
+    "titleZh": "低温功率电子器件与系统综述：Si/GaN受益、SiC与栅驱动需重新资格认证",
+    "authors": "Yuchuan Liao, Abdelrahman Elwakeel, Yudi Xiao, Rafael Peña Alzola, Min Zhang, Weijia Yuan, Alfonso J. Cruz Feliciano, Lukas Graber",
+    "venue": "iEnergy 3, 102–114 (2024)",
+    "published": "2024-07-24",
+    "recommendedOn": "2026-08-28",
+    "doi": "10.23919/IEN.2024.0014",
+    "url": "https://www.sciopen.com/article/10.23919/IEN.2024.0014",
+    "backupUrl": "https://doi.org/10.23919/IEN.2024.0014",
+    "assistantSummary": "正式综述系统比较低温下功率半导体、无源器件、栅驱动、传感器与变换器：Si和GaN随降温通常获得更好导通/开关表现，而SiC可能出现导通电阻和开关时间增加；商用栅驱动器在低温反而退化，因此必须按整条链路而不是只按功率开关选型。",
+    "whySelected": "它为今日165 K平台提供更宽的器件资格地图，也解释为什么‘样品更低噪’不代表整套电子学更可靠。",
     "readingGuide": [
-      "先看图1的2017–2026 HVM采用趋势。",
-      "再看约5×节拍、颗粒与非理想自限。",
-      "重点看low-k垂直轮廓及Cu体积+67%。",
-      "最后整理MTJ ALE的HVM门槛；60–80分钟。"
+      "先看不同半导体材料低温物性对照。",
+      "再看Si/SiC/GaN器件导通和开关趋势。",
+      "重点读栅驱动、传感和无源器件失效。",
+      "最后对照已公开低温变换器；60–80分钟。"
     ],
     "notNew": false
   },
   "classics": [
     {
-      "id": "classic-ikeda-604-tmr-2008",
+      "id": "classic-science-1218197-ta-she",
       "kind": "经典文章",
       "track": "B",
       "secondaryTracks": [
-        "A",
-        "E"
+        "C",
+        "A"
       ],
-      "title": "Tunnel magnetoresistance of 604% at 300 K by suppression of Ta diffusion in CoFeB/MgO/CoFeB pseudo-spin-valves annealed at high temperature",
-      "titleZh": "抑制Ta扩散实现300 K 604%与5 K 1144% TMR的经典CoFeB/MgO研究",
-      "authors": "S. Ikeda et al.",
-      "venue": "Applied Physics Letters 93, 082508 (2008)",
-      "published": "2008-08-27",
-      "recommendedOn": "2026-08-27",
-      "doi": "10.1063/1.2976435",
-      "url": "https://pubs.aip.org/aip/apl/article/93/8/082508/923250/Tunnel-magnetoresistance-of-604-at-300K-by",
-      "backupUrl": "https://doi.org/10.1063/1.2976435",
-      "assistantSummary": "经典伪自旋阀Ta/Co20Fe60B20/MgO/Co20Fe60B20/Ta在525°C退火后实现300 K 604% TMR，5 K达1144%；作者把高TMR归因于500°C以上改善MgO(001)取向和应力松弛，同时必须抑制Ta向CoFeB尤其CoFeB/MgO界面扩散。",
-      "whySelected": "它把低温输运、MgO界面晶体质量和退火扩散直接连接，也是今天ALD超薄层稳定性与ALE损伤讨论的器件基准。",
+      "title": "Spin-Torque Switching with the Giant Spin Hall Effect of Tantalum",
+      "titleZh": "β-Ta巨自旋霍尔效应与三端SOT-MTJ经典实验：自旋霍尔角0.12–0.15",
+      "authors": "Luqiao Liu, Chi-Feng Pai, Y. Li, H. W. Tseng, D. C. Ralph, R. A. Buhrman",
+      "venue": "Science 336, 555–558 (2012)",
+      "published": "2012-05-04",
+      "recommendedOn": "2026-08-28",
+      "doi": "10.1126/science.1218197",
+      "url": "https://www.science.org/doi/10.1126/science.1218197",
+      "backupUrl": "https://arxiv.org/abs/1203.2875",
+      "assistantSummary": "经典工作在室温用三种独立方法量出β-Ta自旋霍尔角约0.12–0.15，Co40Fe40B20(4 nm)/Ta(8 nm)微条宽10 μm、β-Ta电阻率约190 μΩ·cm，并演示把Ta/铁磁写入通道与MTJ读出分开的三端器件。",
+      "whySelected": "它是今日低WER非常规SOT模型的基线：2012年解决‘能否用SHE写入’，2026年进一步追问‘有限温是否回跳、z自旋能否把WER降下来’。",
       "readingGuide": [
-        "先看堆栈与退火温度系列。",
-        "核对300 K 604%和5 K 1144%。",
-        "重点读Ta扩散与MgO(001)/应力证据。",
-        "最后对照现代BEOL热预算；30–45分钟。"
+        "先看三种SHE定量方法。",
+        "核对4/8 nm、10 μm、190 μΩ·cm和0.12–0.15。",
+        "再看三端MTJ写读分离。",
+        "最后与50 nm低WER模型对照；40–55分钟。"
       ],
       "notNew": true
     }
