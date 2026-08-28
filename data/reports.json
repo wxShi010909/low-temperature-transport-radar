@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-27T09:00:00+08:00",
-  "reportDate": "2026-08-27",
+  "updatedAt": "2026-08-28T09:00:00+08:00",
+  "reportDate": "2026-08-28",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -641,6 +641,25 @@
         "apl-129-082902-sliding-valley",
         "rsi-97-083101-simons-tes",
         "jva-44-053008-cryo-etch"
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "label": "详细日报：高压超导—氢调畴壁—低WER SOT—165 K资格平台—选择区MBE",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "prb-114-074502-pbsnse2",
+        "apl-129-082401-hydrogen-dw",
+        "jap-140-063901-sot-wer",
+        "rsi-97-084707-cots-cryo",
+        "jva-44-052705-selective-mbe"
       ]
     }
   ],
@@ -7099,6 +7118,181 @@
       "url": "https://pubs.aip.org/avs/jva/article/44/5/053008/3403119/Cryogenic-etching-characteristics-of-SiO2-SiN-and",
       "backupUrl": "https://doi.org/10.1116/6.0005614",
       "accessNote": "已打开AVS/AIP正式全文，核验全部作者、2026-08-26、DOI、反应器、流量、功率、20至−80°C、<20%窗口和约2.5倍选择比",
+      "featured": true
+    },
+    {
+      "id": "prb-114-074502-pbsnse2",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Structure and superconductivity in a ternary selenide PbSnSe2 alloy of three-dimensional PbSe and two-dimensional SnSe under pressure",
+      "titleZh": "PbSnSe₂高压金属化与超导：17.8 GPa出现、卸压15.5 GPa时Tc升至6.1 K",
+      "authors": "Binbin Yue, Wei Zhong, Huchen Shu, Kaiwen Li, Yi Tan, Jingwei Miao, E. Karaca, D. Errandonea, Fang Hong",
+      "venue": "Physical Review B 114, 074502 (2026)",
+      "published": "2026-08-10",
+      "recommendedOn": "2026-08-28",
+      "timeTier": "2026正式低温输运实验",
+      "system": "由三维PbSe与二维SnSe构成的晶格失配三元硒化物PbSnSe₂；金刚石对顶砧高压样品",
+      "conditions": "金刚石对顶砧内加压，低温电阻、同步辐射XRD和光学吸收联合；17.8–20.1 GPa附近金属化/超导；公开摘要未给最低测温、最高磁场、样品厚度、接触几何和临界场",
+      "methods": [
+        "压力依赖低温四探针输运",
+        "高压XRD识别结构演化",
+        "光吸收跟踪带隙",
+        "加压与卸压路径对照"
+      ],
+      "summary": "【直接实测】常压为半导体，约17.8 GPa金属化并出现超导；20.1 GPa时Tc约4.4 K，继续加压Tc单调下降；卸压到15.5 GPa时Tc约6.1 K。【作者解释】低压区保留Pnma-SnSe特征，高压区更接近PbSe，金属化和超导早于Pnma→CsCl结构转变。",
+      "relevance": "给低温输运平台示范压力—温度—结构三变量闭环，并提醒回程路径能产生更高Tc；可迁移到MTJ应力/热循环的滞回与不可逆性判别。",
+      "limitation": "块体高压材料不是MTJ；公开页未给器件尺寸、TMR、RA、Jc、WER、保持或耐久，不能把压力诱导超导外推为常压器件功能。",
+      "industrialization": "基础机理阶段；需薄膜稳定、低压/应变等效调控、可重复接触、循环寿命和晶圆均匀性。",
+      "whyRecommended": "先看电阻—温度—压力图，再比较加压/卸压Tc，最后对照XRD相变与带隙；40–55分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1103/1mx3-s5yx",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/1mx3-s5yx",
+      "backupUrl": "https://doi.org/10.1103/1mx3-s5yx",
+      "accessNote": "已打开APS正式页，核验题目、全部作者、2026-08-10、卷页、DOI、17.8/20.1/15.5 GPa及4.4/6.1 K",
+      "featured": true
+    },
+    {
+      "id": "apl-129-082401-hydrogen-dw",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Hydrogen-induced modulation of magnetic domain wall creep velocity in Pd/Co/Pd system",
+      "titleZh": "氢吸收可逆减慢Pd/Co/Pd磁畴壁蠕变：界面钉扎与DMI成为关键变量",
+      "authors": "T. Koyama, D. Chiba",
+      "venue": "Applied Physics Letters 129, 082401 (2026)",
+      "published": "2026-08-24",
+      "recommendedOn": "2026-08-28",
+      "timeTier": "本周正式材料与器件基础实验",
+      "system": "垂直磁化Pd/Co/Pd多层膜；Pd吸氢作为可逆界面调控手段",
+      "conditions": "样品暴露于氢气并测热激活磁畴壁蠕变；随后脱氢恢复。公开网页未给各层厚度、氢浓度/压力、温度、磁场、速度绝对值和循环次数",
+      "methods": [
+        "制备垂直磁化Pd/Co/Pd",
+        "氢气吸收/脱附循环",
+        "磁畴成像与场驱蠕变速度比较",
+        "用畴壁能量和各向异性分析机制"
+      ],
+      "summary": "【直接实测】吸氢后畴壁速度下降，脱氢后回到初始值。【作者解释】有效钉扎增强；只用磁各向异性变化不足以解释，界面钉扎景观和/或Dzyaloshinskii–Moriya相互作用可能改变。",
+      "relevance": "对CoFeB/MgO和SOT器件，氢/水残留可能不是普通污染，而会重写界面各向异性、DMI与缺陷钉扎，进而影响成核、传播和WER尾部。",
+      "limitation": "不是MTJ，公开页未给TMR、RA、Jc、WER、保持、耐久、晶圆统计；氢可逆性不能自动代表长期无损。",
+      "industrialization": "材料/传感机理阶段；缺定量气氛剂量、循环漂移、封装渗透、阵列一致性和BEOL残氢控制。",
+      "whyRecommended": "先看吸氢/脱氢速度曲线，再看各向异性不足以解释的证据，最后读钉扎与DMI讨论；30–45分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "10.1063/5.0346195",
+      "url": "https://pubs.aip.org/aip/apl/article/129/8/082401/3402900/Hydrogen-induced-modulation-of-magnetic-domain",
+      "backupUrl": "https://doi.org/10.1063/5.0346195",
+      "accessNote": "已打开AIP正式页，核验作者、2026-08-24、卷页、DOI及吸氢减速/脱氢恢复；网页未公开数值明确标注",
+      "featured": true
+    },
+    {
+      "id": "jap-140-063901-sot-wer",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "title": "Achieving low write error rates in perpendicular spin–orbit torque MRAM: A micromagnetic modeling feasibility study",
+      "titleZh": "50 nm垂直SOT-MRAM低WER可行性：常规SOT易回跳，z自旋比例>0.25可降约3倍电流",
+      "authors": "Goran Mihajlović, Yabin Fan, Tiffany S. Santos, Michael K. Grobis, Neil Robertson",
+      "venue": "Journal of Applied Physics 140, 063901 (2026)",
+      "published": "2026-08-10",
+      "recommendedOn": "2026-08-28",
+      "timeTier": "2026正式微磁计算论文",
+      "system": "直径50 nm垂直磁化自由层；常规正交y自旋SOT与额外共线z自旋SOT比较",
+      "conditions": "0 K确定性切换与室温热涨落微磁模拟；比较面内偏场、DMI、场型力矩和无场条件。公开摘要未给自由层厚度、脉宽、材料Ms/Ku完整表和目标WER数值",
+      "methods": [
+        "建立50 nm自由层微磁网格",
+        "扫描常规/非常规SOT效率",
+        "加入热噪声、DMI和场型力矩",
+        "统计回跳、不完全切换与电流门槛"
+      ],
+      "summary": "【理论预测】多种0 K可切换的常规SOT方案在室温仍有高回跳/不完全切换概率；当θy=0.3且θz/θy>0.25时，切换由非均匀中间态转为近均匀反转，抑制回跳；z自旋可使开关电流密度约降低3倍。",
+      "relevance": "直接指向SOT-MRAM的材料—波形—WER协同：只展示单次翻转或0 K轨迹不够，必须做有限温重复统计和空间磁化诊断。",
+      "limitation": "微磁预测不是流片实测；未公开RA、TMR、绝对Jc、目标WER、保持、耐久和阵列良率，θz/θy>0.25的材料实现仍是关键前提。",
+      "industrialization": "器件设计规则阶段；需真实SOT源材料、50 nm以下图形、脉冲电路、10⁹级写入统计、跨晶圆变异和BEOL验证。",
+      "whyRecommended": "先看50 nm常规SOT回跳轨迹，再看θz/θy阈值和约3×电流下降，最后看室温统计；45–60分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.1063/5.0348028",
+      "url": "https://pubs.aip.org/aip/jap/article/140/6/063901/3400679/Achieving-low-write-error-rates-in-perpendicular",
+      "backupUrl": "https://doi.org/10.1063/5.0348028",
+      "accessNote": "已打开AIP正式页，核验全部作者、2026-08-10、卷页、DOI、50 nm、θy=0.3、θz/θy>0.25与约3倍电流降低",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-084707-cots-cryo",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "A cryogenic characterization platform for commercial off-the-shelf (COTS) electronic devices in liquid xenon detectors for high-energy physics experiments",
+      "titleZh": "165 K商用器件低温资格平台：ADC约64 dB SNR、SiPM暗计数降至1 Hz以下",
+      "authors": "Yang Liu, Jiannan Tang, Yi Fu, Wei Zhi, Weihao Wu",
+      "venue": "Review of Scientific Instruments 97, 084707 (2026)",
+      "published": "2026-08-27",
+      "recommendedOn": "2026-08-28",
+      "timeTier": "昨日正式低温仪器论文",
+      "system": "面向液氙探测器前端的受控165 K环境、低湿系统和FPGA数字测试子系统",
+      "conditions": "温度中心165 K；相对湿度<15%；ADI ADS52J65 ADC近满量程1.1 MHz正弦输入；Hamamatsu S13370 SiPM",
+      "methods": [
+        "先逐模块低温资格测试FPGA系统",
+        "稳定温湿度并抑制凝露",
+        "自动测试ADC动态性能",
+        "测试SiPM低温暗计数并做系统集成"
+      ],
+      "summary": "【直接实测】ADC和SiPM均在165 K可靠运行；ADC在1.1 MHz近满量程输入时SNR约64 dB；SiPM暗计数率低于1 Hz。【作者结论】模块先行资格认证可减少系统级低温集成不确定性。",
+      "relevance": "可直接迁移到低温输运平台：先对ADC、DAC、前放、继电器、FPGA和温控模块逐项验收，再接入MTJ样品，避免把电子学失真误判为输运异常。",
+      "limitation": "165 K不是4 K或mK，液氙环境不是强磁场MTJ平台；未公开长期漂移、热循环次数、磁兼容性、全链噪声PSD和通道串扰。",
+      "industrialization": "工程原型阶段；还需器件批次、老化/热循环、磁场、辐照、凝露故障模式、校准可追溯和维护性。",
+      "whyRecommended": "先看平台框图和凝露控制，再看FPGA逐模块资格，最后核对64 dB/1 Hz指标；35–50分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0337354",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/8/084707/3403201/A-cryogenic-characterization-platform-for",
+      "backupUrl": "https://doi.org/10.1063/5.0337354",
+      "accessNote": "已打开AIP正式页，核验全部作者、2026-08-27、DOI、165 K、<15%RH、1.1 MHz、约64 dB与<1 Hz",
+      "featured": true
+    },
+    {
+      "id": "jva-44-052705-selective-mbe",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Selective area molecular beam epitaxy over patterned ZrO2 and HfO2",
+      "titleZh": "在图形化ZrO₂/HfO₂上实现GaAs完全选择区MBE：通量窗口约为SiO₂的一半",
+      "authors": "R. Corey White, Minjoo L. Lee",
+      "venue": "Journal of Vacuum Science & Technology A 44, 052705 (2026)",
+      "published": "2026-08-04",
+      "recommendedOn": "2026-08-28",
+      "timeTier": "2026正式原子与极端制造实验",
+      "system": "图形化ZrO₂、HfO₂与SiO₂介质掩膜上的GaAs选择区分子束外延",
+      "conditions": "比较三种掩膜的GaAs成核选择性、入射通量和条纹晶向；公开页未给掩膜厚度、衬底温度、线宽范围、缺陷密度和晶圆尺寸",
+      "methods": [
+        "制备ZrO₂/HfO₂图形掩膜",
+        "MBE扫描Ga/As通量窗口",
+        "比较SiO₂基线选择性",
+        "分析[010]等取向内的晶面与并合"
+      ],
+      "summary": "【直接实测】首次在图形化ZrO₂和HfO₂上实现GaAs完全选择生长；允许完全选择性的通量约为SiO₂掩膜的一半。【直接实测/作者解释】[010]方向结构形成适合横向外延并合的{101}晶面；差异与SiO₂上更高的吸附原子脱附概率有关。【作者推测】条件可能扩展到任意HfZrO₂组分。",
+      "relevance": "把掩膜化学、原子脱附和图形晶向共同视为工艺变量，适合原子制造的‘不该长处零成核、该长处可并合’路线，也连接HZO功能介质集成。",
+      "limitation": "GaAs/氧化物不是MTJ；对HfZrO₂任意组分的扩展是作者推测，未给300 mm均匀性、缺陷/颗粒、套刻、良率、BEOL热预算和器件可靠性。",
+      "industrialization": "选择区外延验证阶段；需晶圆级成核缺陷地图、选择性随图形密度/通量漂移、并合缺陷、界面电性与集成温度窗口。",
+      "whyRecommended": "先看三种掩膜选择性窗口，再看通量约一半，最后看[010]→{101}并合；40–55分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1116/6.0005625",
+      "url": "https://pubs.aip.org/avs/jva/article/44/5/052705/3400248/Selective-area-molecular-beam-epitaxy-over",
+      "backupUrl": "https://doi.org/10.1116/6.0005625",
+      "accessNote": "已打开AVS/AIP正式页，核验作者、2026-08-04、卷页、DOI、完全选择、约一半通量及[010]/{101}",
       "featured": true
     }
   ]
