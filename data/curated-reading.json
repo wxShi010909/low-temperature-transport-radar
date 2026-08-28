@@ -230,6 +230,13 @@
       "classicIds": [
         "classic-ikeda-604-tmr-2008"
       ]
+    },
+    {
+      "date": "2026-08-28",
+      "reviewId": "review-cryo-power-electronics-2024",
+      "classicIds": [
+        "classic-science-1218197-ta-she"
+      ]
     }
   ],
   "items": [
@@ -2141,6 +2148,60 @@
         "核对300 K 604%和5 K 1144%。",
         "重点读Ta扩散与MgO(001)/应力证据。",
         "最后对照现代BEOL热预算；30–45分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-cryo-power-electronics-2024",
+      "kind": "每日综述",
+      "track": "D",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "title": "Review of semiconductor devices and other power electronics components at cryogenic temperature",
+      "titleZh": "低温功率电子器件与系统综述：Si/GaN受益、SiC与栅驱动需重新资格认证",
+      "authors": "Yuchuan Liao, Abdelrahman Elwakeel, Yudi Xiao, Rafael Peña Alzola, Min Zhang, Weijia Yuan, Alfonso J. Cruz Feliciano, Lukas Graber",
+      "venue": "iEnergy 3, 102–114 (2024)",
+      "published": "2024-07-24",
+      "recommendedOn": "2026-08-28",
+      "doi": "10.23919/IEN.2024.0014",
+      "url": "https://www.sciopen.com/article/10.23919/IEN.2024.0014",
+      "backupUrl": "https://doi.org/10.23919/IEN.2024.0014",
+      "assistantSummary": "正式综述系统比较低温下功率半导体、无源器件、栅驱动、传感器与变换器：Si和GaN随降温通常获得更好导通/开关表现，而SiC可能出现导通电阻和开关时间增加；商用栅驱动器在低温反而退化，因此必须按整条链路而不是只按功率开关选型。",
+      "whySelected": "它为今日165 K平台提供更宽的器件资格地图，也解释为什么‘样品更低噪’不代表整套电子学更可靠。",
+      "readingGuide": [
+        "先看不同半导体材料低温物性对照。",
+        "再看Si/SiC/GaN器件导通和开关趋势。",
+        "重点读栅驱动、传感和无源器件失效。",
+        "最后对照已公开低温变换器；60–80分钟。"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-science-1218197-ta-she",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "A"
+      ],
+      "title": "Spin-Torque Switching with the Giant Spin Hall Effect of Tantalum",
+      "titleZh": "β-Ta巨自旋霍尔效应与三端SOT-MTJ经典实验：自旋霍尔角0.12–0.15",
+      "authors": "Luqiao Liu, Chi-Feng Pai, Y. Li, H. W. Tseng, D. C. Ralph, R. A. Buhrman",
+      "venue": "Science 336, 555–558 (2012)",
+      "published": "2012-05-04",
+      "recommendedOn": "2026-08-28",
+      "doi": "10.1126/science.1218197",
+      "url": "https://www.science.org/doi/10.1126/science.1218197",
+      "backupUrl": "https://arxiv.org/abs/1203.2875",
+      "assistantSummary": "经典工作在室温用三种独立方法量出β-Ta自旋霍尔角约0.12–0.15，Co40Fe40B20(4 nm)/Ta(8 nm)微条宽10 μm、β-Ta电阻率约190 μΩ·cm，并演示把Ta/铁磁写入通道与MTJ读出分开的三端器件。",
+      "whySelected": "它是今日低WER非常规SOT模型的基线：2012年解决‘能否用SHE写入’，2026年进一步追问‘有限温是否回跳、z自旋能否把WER降下来’。",
+      "readingGuide": [
+        "先看三种SHE定量方法。",
+        "核对4/8 nm、10 μm、190 μΩ·cm和0.12–0.15。",
+        "再看三端MTJ写读分离。",
+        "最后与50 nm低WER模型对照；40–55分钟。"
       ],
       "notNew": true
     }
