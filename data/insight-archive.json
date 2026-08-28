@@ -392,6 +392,18 @@
       "atomicIds": [
         "2026-08-27-cryo-ale-hvm-route"
       ]
+    },
+    {
+      "date": "2026-08-28",
+      "opportunityIds": [
+        "2026-08-28-wer-hydrogen-codesign"
+      ],
+      "methodIds": [
+        "2026-08-28-cryo-electronics-qualification"
+      ],
+      "atomicIds": [
+        "2026-08-28-selective-growth-wafer-route"
+      ]
     }
   ],
   "items": [
@@ -5935,6 +5947,163 @@
       ],
       "researchConnection": "直接服务原子制造设备、MTJ图形化和BEOL兼容。",
       "takeaway": "单点选择比必须升级为晶圆与器件闭环。"
+    },
+    {
+      "id": "2026-08-28-wer-hydrogen-codesign",
+      "date": "2026-08-28",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/C · 界面化学—SOT—WER",
+      "title": "把氢残留纳入SOT-MRAM低WER设计变量",
+      "subtitle": "用可控H剂量连接界面钉扎、DMI、反转轨迹与写错误尾部。",
+      "summary": "用可控H剂量连接界面钉扎、DMI、反转轨迹与写错误尾部。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "apl-129-082401-hydrogen-dw",
+        "jap-140-063901-sot-wer",
+        "classic-science-1218197-ta-she"
+      ],
+      "question": "沉积/刻蚀/封装残氢是否通过钉扎和DMI放大50 nm以下SOT器件回跳与WER？",
+      "rationale": "B证明氢可逆改变畴壁蠕变，C给出室温回跳与z自旋阈值，经典文献提供Ta-SHE三端基线。",
+      "workflow": [
+        "H₂ 0/低/高剂量及脱氢退火",
+        "MOKE/FMR量钉扎、DMI和阻尼",
+        "微磁模型输入实测参数",
+        "器件脉冲统计WER—J—宽度"
+      ],
+      "equipment": [
+        "气氛/退火腔",
+        "MOKE/FMR",
+        "SIMS/XPS",
+        "脉冲源表与示波器",
+        "MuMax3"
+      ],
+      "measurements": [
+        "畴壁速度",
+        "DMI/各向异性",
+        "H深度分布",
+        "Jc/回跳/WER"
+      ],
+      "metrics": [
+        "θz/θy",
+        "WER尾部",
+        "脱氢恢复率",
+        "跨晶圆P99"
+      ],
+      "evidenceBoundary": "Pd/Co/Pd吸氢与50 nm微磁模型属于不同体系，连接到CoFeB/MgO是待验证假设。",
+      "firstSteps": [
+        "先在薄膜上做可逆吸/脱氢",
+        "再把实测磁参数输入模型",
+        "最后做完整MTJ写入统计"
+      ],
+      "researchConnection": "直接服务用户的MTJ界面、低温输运和原子制造残留控制。",
+      "takeaway": "把氢从污染标签升级为可量化的WER变量。"
+    },
+    {
+      "id": "2026-08-28-cryo-electronics-qualification",
+      "date": "2026-08-28",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 分温区低温电子学资格",
+      "title": "300→165→77→4 K的模块化电子学验收路线",
+      "subtitle": "先验收ADC/FPGA/前放/开关，再让样品进入测量链。",
+      "summary": "先验收ADC/FPGA/前放/开关，再让样品进入测量链。",
+      "status": "本站组合推断，待本机验证",
+      "relatedPaperIds": [
+        "rsi-97-084707-cots-cryo",
+        "review-cryo-power-electronics-2024",
+        "prb-114-074502-pbsnse2"
+      ],
+      "question": "如何证明低温曲线中的异常来自样品，而不是ADC、驱动、继电器、温控或凝露？",
+      "rationale": "D给165 K实测平台，综述指出不同器件低温趋势相反，A说明相变解释必须有路径和多物理证据。",
+      "workflow": [
+        "标准信号/电阻空载验收",
+        "300/165/77/4 K阶梯降温",
+        "每级测增益/噪声/误码/功耗",
+        "热循环与磁场开关复测",
+        "生成可追溯BOM资格表"
+      ],
+      "equipment": [
+        "控温腔/低温恒温器",
+        "标准源与电阻",
+        "频谱仪/示波器",
+        "温湿度传感",
+        "自动化脚本"
+      ],
+      "measurements": [
+        "SNR/ENOB",
+        "偏置与增益漂移",
+        "时钟误码",
+        "PSD/串扰",
+        "温度均匀性"
+      ],
+      "metrics": [
+        "165 K约64 dB基线",
+        "RH<15%",
+        "跨日漂移",
+        "热循环通过率",
+        "数据完整率"
+      ],
+      "evidenceBoundary": "165 K液氙平台不能直接证明4 K/mK或强磁场兼容，阈值需本机标定。",
+      "firstSteps": [
+        "先做室温/165 K空载",
+        "再加入77 K和强磁场",
+        "最后接MTJ与脉冲负载"
+      ],
+      "researchConnection": "可直接纳入现有LabVIEW/Python低温输运平台的状态机和自动报告。",
+      "takeaway": "先证明电子链，再解释低温物理。"
+    },
+    {
+      "id": "2026-08-28-selective-growth-wafer-route",
+      "date": "2026-08-28",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 选择区外延—功能氧化物集成",
+      "title": "从完全选择到晶圆良率的HfO₂/ZrO₂选择区生长路线",
+      "subtitle": "把通量、掩膜化学和晶向变成三轴DOE，再用成核尾部关门。",
+      "summary": "把通量、掩膜化学和晶向变成三轴DOE，再用成核尾部关门。",
+      "status": "本站组合推断，待实验验证",
+      "relatedPaperIds": [
+        "jva-44-052705-selective-mbe",
+        "review-cryo-power-electronics-2024"
+      ],
+      "question": "实验室‘完全选择’如何转化为不同图形密度、任意HZO组分和晶圆尺度上的稳定窗口？",
+      "rationale": "E给出ZrO₂/HfO₂约半通量窗口和[010]/{101}晶面，综述提醒最终器件与系统必须再做低温资格。",
+      "workflow": [
+        "SiO₂/ZrO₂/HfO₂/HZO见证片",
+        "通量×温度×晶向DOE",
+        "不同线宽/密度图形成核统计",
+        "并合后TEM/电性",
+        "晶圆地图与批间SPC"
+      ],
+      "equipment": [
+        "MBE/原位RHEED",
+        "SEM/AFM",
+        "TEM/XPS",
+        "晶圆计量与探针"
+      ],
+      "measurements": [
+        "掩膜成核密度",
+        "选择性窗口",
+        "并合缺陷",
+        "界面陷阱",
+        "晶圆均匀性"
+      ],
+      "metrics": [
+        "零成核P99",
+        "线宽偏差",
+        "缺陷密度",
+        "300 mm 3σ",
+        "批间Cpk"
+      ],
+      "evidenceBoundary": "作者只证明GaAs在图形ZrO₂/HfO₂上的选择生长；HZO任意组分、300 mm和MTJ集成均未验证。",
+      "firstSteps": [
+        "先复现约半通量窗口",
+        "加入HZO组分梯度",
+        "再做图形密度和晶圆地图"
+      ],
+      "researchConnection": "直接服务原子制造的自对准、功能介质集成和晶圆良率。",
+      "takeaway": "完全选择必须升级为成核尾部和晶圆SPC。"
     }
   ]
 }
