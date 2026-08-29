@@ -138,7 +138,7 @@ export default function WeeklyPage() {
       <section className="weekly-container weekly-overview">
         <div className="weekly-section-heading">
           <div><span>SELECTION LOGIC</span><h2>为什么是这 5 篇</h2></div>
-          <p>质量不足不凑数：本周没有单列纯理论论文，而由正式Primer提供共同理论框架；5篇分别占据方法、设备、图形化、器件和可靠性位置。</p>
+          <p>质量不足不凑数：每期以至少一篇正式综述建立共同框架，再按材料、工艺、器件、测量与可靠性的真实缺口选择3—5篇；理论预测、直接实测、作者解释和本站推断分别标注。</p>
         </div>
         <div className="weekly-coverage-grid">
           {Object.entries(issue.coverage).map(([track, text]) => (
