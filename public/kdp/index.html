@@ -1,12 +1,76 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KDP / DKDP 溶解度与晶体生长模型</title><style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#f4f7fb}iframe{display:block;border:0;width:100%;height:100%}</style></head><body><iframe id="app" src="../kdp-solubility-model/" title="KDP / DKDP 溶解度与晶体生长模型"></iframe><script>
-const f=document.getElementById('app');
-f.addEventListener('load',()=>{try{const d=f.contentDocument,w=f.contentWindow;const st=d.createElement('style');st.textContent=`
-.hero h1{font-size:clamp(27px,3vw,39px)!important}.hero p{font-size:15px!important}.tabs button.on{box-shadow:none!important;border-color:#0b5ea8!important}.pill{display:none!important}.foot{font-size:11px!important;color:#8b96a5!important}.quick-ui{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}.quick-ui>button{border:1px solid #dfe7f0;background:#fbfdff;border-radius:15px;padding:16px;text-align:left;cursor:pointer;color:#172033}.quick-ui>button:hover{border-color:#b8d5ee;box-shadow:0 8px 20px rgba(31,52,78,.07)}.quick-ui b{display:block;font-size:16px;margin-bottom:6px}.quick-ui small{color:#667085;line-height:1.55}.clean-note{margin-top:10px;padding:10px 12px;background:#f8fafc;border:1px solid #dfe7f0;border-radius:11px;color:#667085;font-size:12px;line-height:1.55}.field-note{font-size:11px;color:#7a8798;margin:-2px 0 8px}.mass-ui{display:grid;grid-template-columns:1fr 92px;gap:8px;margin-bottom:5px}.mass-ui input,.mass-ui select{width:100%;border:1px solid #ccd7e3;border-radius:10px;padding:9px;background:#fff;font:inherit}.mass-ui select{background:#f8fafc}.card h2{letter-spacing:-.01em}@media(max-width:850px){.quick-ui{grid-template-columns:1fr}}
-`;d.head.appendChild(st);
-const hero=d.querySelector('.hero h1');if(hero)hero.textContent='KDP / DKDP 溶解度与晶体生长模型';const hp=d.querySelector('.hero p');if(hp)hp.textContent='从文献基准到实验校正：配液、饱和点、过饱和度、降温设计与 DKDP 温度–氘化率响应面';
-const home=d.getElementById('home');if(home){const left=home.querySelector('.c8'),right=home.querySelector('.c4');if(left){const h=left.querySelector('h2');if(h)h.textContent='你现在想做什么？';left.querySelectorAll('.pill').forEach(x=>x.remove());const old=left.querySelector('.note');if(old)old.remove();const q=d.createElement('div');q.className='quick-ui';q.innerHTML='<button data-go="kdp"><b>查溶解度 / 配饱和溶液</b><small>输入温度和水量，得到饱和溶解度、所需 KDP 质量，并可反算饱和温度。</small></button><button data-go="cool"><b>算过饱和度 / 设计降温</b><small>输入初始饱和温度和目标温度，计算过饱和度、析晶量和降温过程。</small></button><button data-go="fit"><b>用自己的实验数据校正</b><small>导入实测饱和点，自动比较模型，并给出拟合误差与外推提醒。</small></button><button data-go="dkdp"><b>建立 DKDP 二维模型</b><small>同时考虑温度和氘化率，建立 S(T,D) 响应面并辅助选择下一实验点。</small></button>';left.appendChild(q);q.querySelectorAll('button').forEach(b=>b.onclick=()=>{const target=[...d.querySelectorAll('.tabs button')].find(x=>x.dataset.t===b.dataset.go);if(target)target.click()});}if(right){const h=right.querySelector('h2');if(h)h.textContent='模型说明';const p=right.querySelector('.mut');if(p)p.textContent='KDP 使用公开文献经验式作为基准；DKDP 按不同氘化率用真实实验数据校正。';const warn=right.querySelector('.warn');if(warn){warn.className='clean-note';warn.textContent='实验数据只在当前页面中参与计算，刷新后默认消失。';}}}
-function massControl(id){const orig=d.getElementById(id);if(!orig)return;const g0=Number(orig.value)||0;orig.style.display='none';const box=d.createElement('div');box.className='mass-ui';const vis=d.createElement('input');vis.type='number';vis.min='0';vis.step='0.1';const sel=d.createElement('select');sel.innerHTML='<option value="kg">kg</option><option value="g">g</option>';if(g0>=1000){vis.value=g0/1000;sel.value='kg'}else{vis.value=g0;sel.value='g'}const sync=()=>{const grams=(Number(vis.value)||0)*(sel.value==='kg'?1000:1);orig.value=grams;if(typeof w.uk==='function'&&id==='W')w.uk();if(typeof w.uc==='function'&&id==='Wc')w.uc()};vis.oninput=sync;sel.onchange=sync;box.append(vis,sel);orig.insertAdjacentElement('afterend',box);const hint=d.createElement('div');hint.className='field-note';const setHint=()=>{const grams=(Number(vis.value)||0)*(sel.value==='kg'?1000:1);hint.textContent=grams>=1000?`当前：${(grams/1000).toFixed(3)} kg（${grams.toFixed(0)} g）`:`当前：${grams.toFixed(2)} g`};vis.addEventListener('input',setHint);sel.addEventListener('change',setHint);box.insertAdjacentElement('afterend',hint);setHint()}
-[...d.querySelectorAll('label')].forEach(l=>{const t=l.textContent.trim();if(t==='水质量 / g')l.textContent='水的质量';if(t.startsWith('反算目标溶解度')){l.textContent='目标溶解度 S（用于反算饱和温度）';const n=d.createElement('div');n.className='field-note';n.textContent='单位：g KDP / 100 g H₂O';l.insertAdjacentElement('afterend',n)}if(t==='目标 σ / %')l.textContent='目标过饱和度 σ（%）';if(t==='线性降温时长 / day')l.textContent='计划降温时长（天）';});massControl('W');massControl('Wc');
-const foot=d.querySelector('.foot');if(foot)foot.textContent='KDP / DKDP 溶解度与晶体生长模型 · v1.1';
-}catch(e){console.error(e)}});
-</script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KDP / DKDP 溶解度模型</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#f4f5f3}
+iframe{display:block;border:0;width:100%;height:100%}
+</style>
+</head>
+<body>
+<iframe id="app" src="../kdp-solubility-model/" title="KDP / DKDP 溶解度模型"></iframe>
+<script>
+const frame=document.getElementById('app');
+frame.addEventListener('load',()=>{
+  try{
+    const d=frame.contentDocument;
+    const w=frame.contentWindow;
+    if(!d||!d.body) return;
+
+    const style=d.createElement('style');
+    style.textContent=`
+:root{--bg:#f4f5f3;--paper:#fff;--ink:#1f2933;--muted:#69737d;--line:#dde2e6;--line2:#e9ecef;--accent:#274f6d;--accent2:#3d6c8e;--soft:#eef3f6}
+*{box-sizing:border-box}
+body{margin:0!important;background:linear-gradient(rgba(39,79,109,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(39,79,109,.025) 1px,transparent 1px),var(--bg)!important;background-size:32px 32px!important;color:var(--ink)!important;font-family:"Microsoft YaHei","PingFang SC",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important}
+.wrap{max-width:1240px!important;margin:0 auto!important;padding:28px 24px 56px!important}
+.hero{position:relative!important;overflow:hidden!important;min-height:190px!important;display:flex!important;align-items:center!important;padding:38px 44px!important;margin-bottom:18px!important;color:var(--ink)!important;background:rgba(255,255,255,.96)!important;border:1px solid var(--line)!important;border-radius:16px!important;box-shadow:none!important}
+.hero-copy{position:relative;z-index:2;max-width:760px}.hero-line{width:44px;height:3px;background:var(--accent);margin-bottom:18px}
+.hero h1{margin:0 0 12px!important;color:var(--ink)!important;font-size:clamp(28px,3.2vw,42px)!important;line-height:1.16!important;font-weight:680!important;letter-spacing:-.035em!important}
+.hero p{margin:0!important;max-width:760px!important;color:var(--muted)!important;font-size:15px!important;line-height:1.8!important;opacity:1!important}
+.crystal-mark{position:absolute;right:24px;top:18px;width:270px;height:150px;opacity:.26;pointer-events:none}
+.tabs{position:sticky!important;top:0!important;z-index:20!important;display:flex!important;gap:26px!important;align-items:center!important;overflow:auto!important;padding:0 4px!important;margin:0 0 18px!important;background:rgba(244,245,243,.94)!important;backdrop-filter:blur(12px)!important;border-bottom:1px solid var(--line)!important}
+.tabs button{position:relative!important;border:0!important;background:transparent!important;border-radius:0!important;padding:15px 0 13px!important;color:#626d76!important;font-size:14px!important;font-weight:500!important;box-shadow:none!important}
+.tabs button:hover{color:var(--ink)!important}.tabs button.on{color:var(--accent)!important;background:transparent!important;border:0!important;font-weight:650!important}.tabs button.on:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent)}
+.grid{gap:16px!important}.card{background:rgba(255,255,255,.97)!important;border:1px solid var(--line)!important;border-radius:14px!important;box-shadow:none!important;padding:22px!important}
+.card h2{margin:0 0 16px!important;color:var(--ink)!important;font-size:19px!important;font-weight:650!important;letter-spacing:-.015em!important}.card h3{color:var(--ink)!important}
+label{display:block!important;margin:13px 0 7px!important;color:#505b65!important;font-size:13px!important;font-weight:550!important}
+input,select,textarea{border:1px solid #ccd3d9!important;border-radius:9px!important;background:#fff!important;color:var(--ink)!important;box-shadow:none!important;transition:border-color .16s ease,box-shadow .16s ease!important}
+input,select{min-height:43px!important;padding:9px 11px!important}textarea{padding:12px!important;line-height:1.55!important}input:focus,select:focus,textarea:focus{outline:none!important;border-color:#8da9bd!important;box-shadow:0 0 0 3px rgba(39,79,109,.08)!important}
+.btn{border:1px solid #cbd3da!important;background:#fff!important;color:var(--ink)!important;border-radius:9px!important;padding:9px 13px!important;box-shadow:none!important}.btn.primary{background:var(--accent)!important;border-color:var(--accent)!important;color:#fff!important}.btn:hover{border-color:#9eabb5!important}.btn.primary:hover{background:#1f435f!important}
+.metrics{gap:10px!important}.metric{background:#fafbfb!important;border:1px solid var(--line2)!important;border-radius:10px!important;padding:15px!important;min-height:94px!important}.metric small{color:#7b858e!important;font-size:11px!important}.metric b{color:var(--ink)!important;font-size:20px!important;font-weight:650!important;letter-spacing:-.02em!important}
+.note,.warn{border-radius:10px!important;font-size:13px!important;line-height:1.7!important;padding:12px 14px!important}.note{color:#435462!important;background:#f3f6f8!important;border:1px solid #e1e8ed!important;border-left:3px solid #8fa9bb!important}.warn{color:#5d5448!important;background:#f8f6f1!important;border:1px solid #ebe5da!important;border-left:3px solid #b7a27d!important}
+.formula{background:#fafbfb!important;border:1px solid var(--line)!important;border-radius:10px!important;color:#2a3945!important;font-size:17px!important;padding:13px 14px!important}.foot{display:none!important}.pill{display:none!important}a{color:var(--accent)!important}table{font-size:12px!important}th{color:#66717a!important;background:#f8f9f9!important}th,td{border-color:#edf0f2!important}
+.quick-home{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.task-card{appearance:none;width:100%;min-height:168px;text-align:left;background:#fff;border:1px solid var(--line);border-radius:13px;padding:24px;color:var(--ink);cursor:pointer;transition:transform .16s ease,border-color .16s ease,background .16s ease}.task-card:hover{transform:translateY(-1px);border-color:#aebdc8;background:#fcfdfd}.task-no{display:block;margin-bottom:24px;color:#8a949c;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.12em}.task-title{display:flex;align-items:center;justify-content:space-between;font-size:18px;font-weight:650;letter-spacing:-.015em}.task-arrow{color:#8a9aa6;font-size:20px;font-weight:400}.task-desc{display:block;margin-top:9px;color:var(--muted);font-size:13px;line-height:1.7}.home-note{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:16px;padding:14px 2px 0;color:#78828a;font-size:12px;line-height:1.65}
+.mass-ui{display:grid;grid-template-columns:1fr 88px;gap:8px;margin-bottom:4px}.mass-ui input,.mass-ui select{width:100%}.field-note{margin:-2px 0 9px;color:#88929a;font-size:11px;line-height:1.5}
+@media(max-width:900px){.wrap{padding:16px 12px 42px!important}.hero{min-height:170px!important;padding:28px 24px!important}.crystal-mark{right:-70px;opacity:.15}.tabs{gap:20px!important}.quick-home{grid-template-columns:1fr}.task-card{min-height:145px}}
+`;
+    d.head.appendChild(style);
+
+    const hero=d.querySelector('.hero');
+    if(hero){hero.innerHTML=`<div class="hero-copy"><div class="hero-line"></div><h1>KDP / DKDP 溶解度模型</h1><p>用于晶体生长实验中的溶解度查询、饱和温度反算、过饱和度与降温设计，以及实验数据拟合。</p></div><svg class="crystal-mark" viewBox="0 0 300 170" fill="none" aria-hidden="true"><g stroke="#274f6d" stroke-width="1.1"><path d="M88 27L157 14L219 49L205 121L137 153L75 116Z"/><path d="M88 27L137 66L219 49"/><path d="M137 66L137 153"/><path d="M75 116L137 66L205 121"/><path d="M157 14L137 66"/><path d="M88 27L75 116"/><path d="M219 49L205 121"/><path d="M48 54L88 27M48 54L75 116"/><path d="M244 83L219 49M244 83L205 121"/></g><g fill="#274f6d"><circle cx="137" cy="66" r="2.2"/><circle cx="88" cy="27" r="1.8"/><circle cx="219" cy="49" r="1.8"/><circle cx="75" cy="116" r="1.8"/><circle cx="205" cy="121" r="1.8"/><circle cx="137" cy="153" r="1.8"/></g></svg>`;}
+
+    const navMap={home:'概览',kdp:'KDP 溶解度',cool:'过饱和度与降温',fit:'实验拟合',dkdp:'DKDP 模型',refs:'方法与文献'};
+    d.querySelectorAll('.tabs button').forEach(btn=>{const key=btn.dataset.t;if(navMap[key]) btn.textContent=navMap[key];});
+
+    const home=d.getElementById('home');
+    if(home){home.innerHTML=`<div class="quick-home"><button class="task-card" data-go="kdp"><span class="task-no">01</span><span class="task-title">KDP 溶解度与配液 <span class="task-arrow">→</span></span><span class="task-desc">输入温度查询饱和溶解度，反算饱和温度，并计算配液所需 KDP 质量。</span></button><button class="task-card" data-go="cool"><span class="task-no">02</span><span class="task-title">过饱和度与降温 <span class="task-arrow">→</span></span><span class="task-desc">计算过饱和度、理论析晶量，并查看给定降温过程中的变化。</span></button><button class="task-card" data-go="fit"><span class="task-no">03</span><span class="task-title">实验数据拟合 <span class="task-arrow">→</span></span><span class="task-desc">导入实测饱和点，比较候选模型，建立适用于本实验体系的校正曲线。</span></button><button class="task-card" data-go="dkdp"><span class="task-no">04</span><span class="task-title">DKDP 温度–氘化率模型 <span class="task-arrow">→</span></span><span class="task-desc">同时考虑温度与氘化率建立二维响应面，并辅助选择后续实验点。</span></button></div><div class="home-note"><span>文献曲线用于基准；正式实验建议使用实测饱和点进行校正。</span><span>数据仅在当前浏览器页面处理，刷新后默认清空。</span></div>`;home.querySelectorAll('[data-go]').forEach(btn=>{btn.addEventListener('click',()=>{const target=[...d.querySelectorAll('.tabs button')].find(x=>x.dataset.t===btn.dataset.go);if(target) target.click();});});}
+
+    function relabel(id,text,note){const el=d.getElementById(id);if(!el)return;let label=el.previousElementSibling;if(label&&label.tagName==='LABEL')label.textContent=text;if(note&&!el.nextElementSibling?.classList?.contains('field-note')){const p=d.createElement('div');p.className='field-note';p.textContent=note;el.insertAdjacentElement('afterend',p);}}
+    relabel('T','温度 T','单位：℃');relabel('Sinv','目标溶解度 S（用于反算饱和温度）','单位：g KDP / 100 g H₂O');relabel('Ts','初始饱和温度 Ts','单位：℃');relabel('Tn','当前 / 终止温度 T','单位：℃');relabel('sd','过饱和度定义');relabel('st','目标过饱和度 σ','单位：%');relabel('days','线性降温时长','单位：day');relabel('dpt','预测温度','单位：℃');relabel('dpd','预测氘化率','单位：%');
+
+    function massControl(id,labelText){const orig=d.getElementById(id);if(!orig||orig.dataset.massEnhanced==='1')return;orig.dataset.massEnhanced='1';let label=orig.previousElementSibling;if(label&&label.tagName==='LABEL')label.textContent=labelText;const grams=Number(orig.value)||0;orig.style.display='none';const box=d.createElement('div');box.className='mass-ui';const vis=d.createElement('input');vis.type='number';vis.min='0';vis.step='0.1';const unit=d.createElement('select');unit.innerHTML='<option value="kg">kg</option><option value="g">g</option>';unit.value=grams>=1000?'kg':'g';vis.value=unit.value==='kg'?(grams/1000):grams;box.append(vis,unit);orig.insertAdjacentElement('afterend',box);const note=d.createElement('div');note.className='field-note';note.textContent='可直接切换 g / kg，计算时自动换算。';box.insertAdjacentElement('afterend',note);const sync=()=>{const g=(Number(vis.value)||0)*(unit.value==='kg'?1000:1);orig.value=String(g);orig.dispatchEvent(new Event('input',{bubbles:true}));};vis.addEventListener('input',sync);unit.addEventListener('change',()=>{const g=Number(orig.value)||0;vis.value=unit.value==='kg'?(g/1000):g;sync();});}
+    massControl('W','水的质量');massControl('Wc','水的质量');
+
+    const kdp=d.getElementById('kdp');if(kdp){const h=kdp.querySelector('.card h2');if(h)h.textContent='KDP 文献基准';}
+    const cool=d.getElementById('cool');if(cool){const h=cool.querySelector('.card h2');if(h)h.textContent='过饱和度与降温';}
+    const fit=d.getElementById('fit');if(fit){const h=fit.querySelector('.card h2');if(h)h.textContent='实验数据拟合';}
+    const dkdp=d.getElementById('dkdp');if(dkdp){const h=dkdp.querySelector('.card h2');if(h)h.textContent='DKDP 温度–氘化率模型';}
+    const footer=d.querySelector('.foot');if(footer)footer.remove();
+    setTimeout(()=>w.dispatchEvent(new Event('resize')),120);
+  }catch(err){console.error(err);}
+});
+</script>
+</body>
+</html>
