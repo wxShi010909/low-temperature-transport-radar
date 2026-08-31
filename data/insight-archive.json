@@ -404,6 +404,18 @@
       "atomicIds": [
         "2026-08-28-selective-growth-wafer-route"
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "opportunityIds": [
+        "2026-08-31-ibe-noise-yield"
+      ],
+      "methodIds": [
+        "2026-08-31-open-cryogenic-qa"
+      ],
+      "atomicIds": [
+        "2026-08-31-interface-window"
+      ]
     }
   ],
   "items": [
@@ -6104,6 +6116,155 @@
       ],
       "researchConnection": "直接服务原子制造的自对准、功能介质集成和晶圆良率。",
       "takeaway": "完全选择必须升级为成核尾部和晶圆SPC。"
+    },
+    {
+      "id": "2026-08-31-ibe-noise-yield",
+      "date": "2026-08-31",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 图形化与可靠性",
+      "title": "把IBE侧壁角、陷阱噪声和阵列坏点放进同一张良率图",
+      "subtitle": "用截面形貌、TMR/RA、1/f/RTN与16 Kb坏点空间分布区分短路、势垒损伤和热稳定不足。",
+      "summary": "把>80°侧壁工艺假设转换成可证伪的“形貌—界面—噪声—阵列”闭环。",
+      "status": "本站组合推断，待同一pMTJ平台验证",
+      "relatedPaperIds": [
+        "jos-26040004",
+        "classic-mgo-noise-2007",
+        "prb-114-125201"
+      ],
+      "question": "阵列尾部失效究竟由再沉积短路、MgO陷阱还是自由层热稳定不足主导？",
+      "rationale": "三篇分别提供阵列工艺、势垒噪声和离子损伤后低温相干诊断。",
+      "workflow": [
+        "IBE角度/过刻DOE",
+        "截面TEM/EDS与侧壁轮廓",
+        "单结TMR/RA/1/f/RTN",
+        "16 Kb坏点空间关联"
+      ],
+      "equipment": [
+        "IBE",
+        "截面TEM/EDS",
+        "低噪声前置/频谱",
+        "自动阵列探针"
+      ],
+      "measurements": [
+        "侧壁角/再沉积",
+        "TMR/RA",
+        "1/f与RTN",
+        "Δ/WER/坏点ppm"
+      ],
+      "metrics": [
+        "跨片Cpk",
+        "6σ读窗",
+        "噪声分位数",
+        "失效模式占比"
+      ],
+      "evidenceBoundary": "60 ppm定义必须回到全文确认；经典噪声机制不能直接视为现代阵列失效证明。",
+      "firstSteps": [
+        "确定80°上下三档",
+        "做未刻蚀见证结",
+        "建立噪声与坏点数据库"
+      ],
+      "researchConnection": "直连MTJ图形化、低温噪声、可靠性与量产统计。",
+      "takeaway": "优先把“平均TMR”升级为“尾部噪声+阵列空间失效”验收。"
+    },
+    {
+      "id": "2026-08-31-open-cryogenic-qa",
+      "date": "2026-08-31",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 低温自动化",
+      "title": "开放低温平台的FAT/SAT与可复现脚本基线",
+      "subtitle": "标准电阻、Hall片、MTJ dummy三类样品共同验收底噪、漂移、磁滞、时间戳和恢复能力。",
+      "summary": "在采购或升级前把厂商功能清单变成可重复的量化验收。",
+      "status": "厂商资料驱动的本站验收方案",
+      "relatedPaperIds": [
+        "oxford-teslatronpt-plus-2025",
+        "prb-114-125201"
+      ],
+      "question": "怎样证明开放软件确实改善复现，而不仅是接口更多？",
+      "rationale": "统一时间戳和QCoDeS适合建立审计链，但必须用独立标准件验证。",
+      "workflow": [
+        "冻结Python/QCoDeS环境",
+        "空载与标准件噪声测试",
+        "T/B扫速与磁滞矩阵",
+        "断电/断网恢复与复测"
+      ],
+      "equipment": [
+        "低温磁体系统",
+        "M81/M91或等效仪器",
+        "标准电阻/Hall片",
+        "MTJ dummy"
+      ],
+      "measurements": [
+        "噪声谱",
+        "温漂/热电势",
+        "时间戳偏差",
+        "跨日重复性"
+      ],
+      "metrics": [
+        "GR&R",
+        "漂移ppm/h",
+        "字段缺失率",
+        "自动恢复时间"
+      ],
+      "evidenceBoundary": "100×速度为厂商声明；验收阈值需按用户现有设备和样品重新定义。",
+      "firstSteps": [
+        "索取完整T/B/噪声规格",
+        "跑24 h空载",
+        "用同一样品与现平台A/B"
+      ],
+      "researchConnection": "服务器件开发、低噪声测量与设备平台资产化。",
+      "takeaway": "先验证底噪、同步和恢复，再讨论“开放”是否带来真实效率。"
+    },
+    {
+      "id": "2026-08-31-interface-window",
+      "date": "2026-08-31",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "C/E · 界面反应窗口",
+      "title": "从H₂三区反应到ALE自限窗口的原子制造路线",
+      "subtitle": "用OES/XPS实时区分F自由基、贫O层与NHx保护层，再尝试脉冲化为改性—移除循环。",
+      "summary": "把连续SiOCN刻蚀的峰值曲线转化为可测、可反馈的表面反应窗口。",
+      "status": "本站组合推断，需图形晶圆验证",
+      "relatedPaperIds": [
+        "jva-44-053213",
+        "review-ale-extreme-2026",
+        "prb-114-094112"
+      ],
+      "question": "H2反应三区中是否存在能转化为自限EPC的平台，并保持对下层材料的选择性？",
+      "rationale": "实验给出三区机理，综述提供ALE窗口框架，计算论文提示应变/缺陷会改变扩散通道。",
+      "workflow": [
+        "连续流H2基线扫描",
+        "脉冲改性/移除/吹扫",
+        "原位OES与离线XPS",
+        "图形片CD/电性反馈"
+      ],
+      "equipment": [
+        "NF3/Ar/H2等离子腔",
+        "OES",
+        "XPS",
+        "椭偏/SEM/AFM"
+      ],
+      "measurements": [
+        "EPC饱和",
+        "选择比",
+        "表面O/F/N",
+        "粗糙/CD/漏电"
+      ],
+      "metrics": [
+        "片内3σ",
+        "循环漂移",
+        "颗粒",
+        "下游TMR/RA保持率"
+      ],
+      "evidenceBoundary": "SiOCN机制不能直接外推CoFeB/MgO；磁性材料必须先做小剂量见证片和氢残留检查。",
+      "firstSteps": [
+        "补齐流量/功率窗口",
+        "设置无H2对照",
+        "确认EPC是否饱和"
+      ],
+      "researchConnection": "连接原位表征、ALE、侧壁介质和MTJ界面保护。",
+      "takeaway": "先证明自限与低损伤，再谈把连续刻蚀升级为ALE。"
     }
   ]
 }

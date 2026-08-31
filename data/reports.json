@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-28T09:00:00+08:00",
-  "reportDate": "2026-08-28",
+  "updatedAt": "2026-08-31T09:00:00+08:00",
+  "reportDate": "2026-08-31",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -660,6 +660,25 @@
         "jap-140-063901-sot-wer",
         "rsi-97-084707-cots-cryo",
         "jva-44-052705-selective-mbe"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "label": "详细日报：离子损伤低温相干—IBE阵列良率—界面缺陷扩散—开放低温平台—高选择刻蚀",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "prb-114-125201",
+        "jos-26040004",
+        "prb-114-094112",
+        "oxford-teslatronpt-plus-2025",
+        "jva-44-053213"
       ]
     }
   ],
@@ -7293,6 +7312,180 @@
       "url": "https://pubs.aip.org/avs/jva/article/44/5/052705/3400248/Selective-area-molecular-beam-epitaxy-over",
       "backupUrl": "https://doi.org/10.1116/6.0005625",
       "accessNote": "已打开AVS/AIP正式页，核验作者、2026-08-04、卷页、DOI、完全选择、约一半通量及[010]/{101}",
+      "featured": true
+    },
+    {
+      "id": "prb-114-125201",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Dopant-species-dependent quantum interference and spin-orbit coupling in n-type silicon hyperdoped with group-V dopants",
+      "titleZh": "超掺杂Si的低温量子干涉：As/Sb/Bi决定相干长度与WL–WAL竞争",
+      "authors": "Weiyan Li, Yuling Jiang, Moritz Hoesch, R. Heller, U. Kentsch, Shengqiang Zhou, Mao Wang",
+      "venue": "Physical Review B 114, 125201 (2026)",
+      "published": "2026-08-17",
+      "recommendedOn": "2026-08-31",
+      "timeTier": "两周内正式发表",
+      "system": "Si中分别以As、Sb、Bi进行V族元素超掺杂；离子注入后脉冲激光退火，形成单晶n++层。原文公开摘要未显示各层厚、注入剂量、激光能量密度与最低温度。",
+      "conditions": "低温磁电导；二维Hikami–Larkin–Nagaoka模型拟合。载流子浓度高于10^20 cm^-3、迁移率超过50 cm²/(V·s)；摘要未公开完整温区、磁场端点及器件横向尺寸。",
+      "methods": [
+        "As/Sb/Bi离子注入形成超掺杂层",
+        "脉冲激光退火恢复单晶并激活掺杂",
+        "测温变电阻与低场磁电导",
+        "用二维HLN模型提取相干长度和自旋轨道长度"
+      ],
+      "summary": "三种超掺杂Si均呈金属性输运；低温相干长度45–120 nm，Si:Bi的自旋轨道长度30–67 nm，并出现弱局域化到弱反局域化竞争。",
+      "relevance": "它把“离子损伤—快速退火—结构无序—低温相干/自旋轨道散射”串成可测链条，可迁移到IBE后CoFeB/MgO侧壁损伤与低温噪声诊断。",
+      "limitation": "材料是超掺杂Si而非MTJ；HLN长度为模型拟合；摘要未公开温区、磁场、膜厚、TMR、RA、WER、保持或耐久。",
+      "industrialization": "接近CMOS兼容的掺杂与激光退火材料模块；仍缺晶圆均匀性、接触电阻、器件阵列、长期稳定及与BEOL热预算的联合验证。",
+      "whyRecommended": "先看不同掺杂种类的R–T和磁电导，再看HLN拟合及Si:Bi的WL–WAL交叉；35–50分钟。",
+      "score": 9.4,
+      "priority": "A",
+      "doi": "10.1103/8fdl-32w3",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/8fdl-32w3",
+      "backupUrl": "https://doi.org/10.1103/8fdl-32w3",
+      "accessNote": "已打开APS正式页，核验作者、2026-08-17日期、DOI、离子注入/脉冲激光退火、载流子/迁移率及45–120 nm、30–67 nm；未公开量明确标注。",
+      "featured": true
+    },
+    {
+      "id": "jos-26040004",
+      "track": "B",
+      "secondaryTracks": [
+        "E",
+        "D"
+      ],
+      "title": "Achieving high-yield 16 Kb SOT-MRAM array through ion-beam-etched profile control of MTJ cells",
+      "titleZh": "300 mm、16 Kb无通道SOT‑MRAM：用IBE台阶角控制残留、界面损伤与阵列功能分布",
+      "authors": "Zhenghui Ji, Guoxiu Qiu, Qijun Guo, Enlong Liu, Wenlong Yang, Qingxiu Li, Lei Zhao, Hengan Zhou, Dinggui Zeng, Shasha Wang, Weiming He, Shikun He",
+      "venue": "Journal of Semiconductors, in press (2026)",
+      "published": "2026-07-24",
+      "recommendedOn": "2026-08-31",
+      "timeTier": "近期正式在线论文",
+      "system": "300 mm平台制造的channel-less SOT-MRAM，16 Kb阵列；核心为MgO/CoFeB MTJ柱及SOT写入结构。公开摘要未给完整堆栈、MTJ直径、MgO厚度、RA与TMR。",
+      "conditions": "IBE改变MTJ侧壁台阶角；比较金属再沉积、隧穿势垒附近清理与MgO/CoFeB界面损伤；室温提取热稳定因子并做阵列功能统计。",
+      "methods": [
+        "在300 mm平台制造16 Kb CHL SOT-MRAM",
+        "系统改变IBE柱形/台阶角",
+        "分析侧壁净刻蚀与金属再沉积",
+        "关联界面损伤、热稳定因子和阵列功能统计"
+      ],
+      "summary": "台阶角超过80°时侧壁净去除增强，可清除势垒附近金属残留并减小MgO/CoFeB损伤；优化器件室温热稳定因子Δ>95。摘要把阵列结果写成“functional yield reaches 60 ppm”，该措辞与量纲语义异常，本站不擅自换算。",
+      "relevance": "这是本日最直接服务MTJ量产的问题：IBE角度、再沉积、侧壁损伤、阵列统计和300 mm工艺被放在同一因果链。",
+      "limitation": "公开页面未给完整堆栈、CD、TMR、RA、写电流/能耗、WER、保持时长、耐久及跨晶圆统计；“60 ppm”需正文或作者澄清其究竟是失效率还是原文定义的指标。",
+      "industrialization": "最接近300 mm阵列制造与图形化良率环节；已有16 Kb和Δ>95，但距产品还缺多批次/跨片Cpk、坏点空间分布、完整PVT、ECC、10年保持、耐久和BEOL整合。",
+      "whyRecommended": "先看侧壁角定义和截面，再看>80°的清残机理、Δ统计及16 Kb功能图；45–60分钟，并优先核对60 ppm原始定义。",
+      "score": 10,
+      "priority": "S",
+      "doi": "10.1088/1674-4926/26040004",
+      "url": "https://www.jos.ac.cn/en/article/doi/10.1088/1674-4926/26040004",
+      "backupUrl": "https://doi.org/10.1088/1674-4926/26040004",
+      "accessNote": "已打开期刊正式HTML，核验作者、DOI、300 mm、16 Kb、>80°、Δ>95及原文60 ppm措辞；对语义歧义未作无依据换算。",
+      "featured": true
+    },
+    {
+      "id": "prb-114-094112",
+      "track": "C",
+      "secondaryTracks": [
+        "E",
+        "B"
+      ],
+      "title": "Asymmetric interfacial strain governing anomalous fluorine diffusion in ultrathin CaF2−BaF2 heterostructures",
+      "titleZh": "超薄CaF₂/BaF₂界面离子扩散：应变把空位与间隙通道分隔到两侧",
+      "authors": "Zefeng Lao, Jinkai Hu, Zhong-Kang Han, Yong Wang",
+      "venue": "Physical Review B 114, 094112 (2026)",
+      "published": "2026-08-19",
+      "recommendedOn": "2026-08-31",
+      "timeTier": "近期正式计算论文",
+      "system": "超薄CaF2−BaF2多层异质结构及F空位/间隙缺陷；面向约600 K异常高F离子扩散的原子尺度解释。",
+      "conditions": "团簇展开结合机器学习分子动力学；重点比较600 K与900 K。公开摘要未给超胞尺寸、层数、应变百分比、时间步长或扩散系数数值。",
+      "methods": [
+        "建立界面缺陷构型与团簇展开模型",
+        "用机器学习分子动力学采样热运动",
+        "分辨空位与间隙的空间分布",
+        "比较600/900 K扩散路径及电子—应变耦合"
+      ],
+      "summary": "空位优先聚集在CaF2侧，间隙仅出现在BaF2侧；600 K由BaF2间隙扩散主导，900 K时CaF2空位扩散启动并与前者协同增强。",
+      "relevance": "虽不是MgO/CoFeB，但“缺陷种类—界面应变—温度—扩散通道”的建模范式可直接用于B、O或金属再沉积在MTJ界面的热扩散敏感性筛选。",
+      "limitation": "全部为特定氟化物模型预测；不能直接外推MgO、CoFeB或BEOL温区，扩散系数和应变定量值未在公开摘要给出。",
+      "industrialization": "处于原子机制与模型方法阶段；距离器件需真实界面参数标定、缺陷浓度测量、跨尺度动力学、工艺时间映射和实验扩散验证。",
+      "whyRecommended": "先看缺陷分布图，再看600/900 K轨迹与应变示意；最后读电子成对稳定空位团簇部分；40–55分钟。",
+      "score": 9.5,
+      "priority": "A",
+      "doi": "10.1103/sz89-51zk",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/sz89-51zk",
+      "backupUrl": "https://doi.org/10.1103/sz89-51zk",
+      "accessNote": "已打开APS正式页，核验作者、2026-08-19、DOI、团簇展开+MLMD、600/900 K及缺陷分侧结论。",
+      "featured": true
+    },
+    {
+      "id": "oxford-teslatronpt-plus-2025",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "Oxford Instruments NanoScience introduces TeslatronPT Plus, an open-architecture low temperature measurement system",
+      "titleZh": "TeslatronPT Plus开放式低温磁输运平台：Python/QCoDeS、时间戳与低噪声信号链",
+      "authors": "Oxford Instruments NanoScience",
+      "venue": "Oxford Instruments vendor technical material",
+      "published": "2025-03-06",
+      "recommendedOn": "2026-08-31",
+      "timeTier": "厂商技术资料（非科研证据）",
+      "system": "无液氦超导磁体低温系统，集成Lake Shore M81同步源测量与M91 FastHall选件；浏览器/oi.DECS环境控制、Jupyter/Python、Grafana及QCoDeS第三方仪器驱动。",
+      "conditions": "支持低/高电阻、Hall bar与van der Pauw Hall、I–V、低电平DC/AC锁相；温度/磁场与仪器数据统一时间戳。该公告未公开最低温度、最大磁场、噪声谱、样品吞吐或长期漂移。",
+      "methods": [
+        "用oi.DECS自动控制温度与磁场",
+        "由M81执行低电平DC/AC锁相输运",
+        "由M91执行FastHall",
+        "以Jupyter/QCoDeS编排并用Grafana实时监控"
+      ],
+      "summary": "平台采用开放架构和浏览器控制，可接QCoDeS兼容仪器；厂商称M91对低迁移率材料最高快100倍，并提供经过验证的低噪声信号链。",
+      "relevance": "适合把MTJ的R–T–H–I、Hall、噪声和工艺批次元数据自动关联；开放驱动也便于接入现有电流源、前置放大器和脉冲设备。",
+      "limitation": "这是厂商技术资料，100×为厂商声明，不是同行评议证明；公告缺最低温度、磁场范围、底噪、漂移、样品线数、价格及第三方复现。",
+      "industrialization": "接近研发和器件资格平台采购环节；量产验证仍需FAT/SAT、标准电阻/Hall样品、空载噪声、温漂、磁滞、断电恢复、脚本版本化及跨机台GR&R。",
+      "whyRecommended": "先看开放架构和数据时间戳，再看M81/M91能力；把温场规格与底噪列为询价必问项；20–30分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "",
+      "url": "https://www.oxinst.com/news/oxford-instruments-introduces-teslatronpt-plus/",
+      "backupUrl": "https://www.oxinst.com/news/oxford-instruments-introduces-teslatronpt-plus/",
+      "accessNote": "已打开Oxford Instruments官方页面，核验2025-03-06、开放架构、M81/M91、Python/Jupyter/Grafana/QCoDeS与统一时间戳；明确标注厂商资料。",
+      "featured": true
+    },
+    {
+      "id": "jva-44-053213",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Effects of H2 addition on highly selective SiOCN etching using NF3-based plasma",
+      "titleZh": "NF₃/Ar/H₂高选择性SiOCN刻蚀：F自由基、贫O反应层与NHx保护层的三窗口",
+      "authors": "Takahiro Goya, Masanaga Fukasawa, Akiko Hirata, Wataru Mizubayashi, Yoshihiro Hayashi",
+      "venue": "Journal of Vacuum Science & Technology A 44, 053213 (2026)",
+      "published": "2026-08-27",
+      "recommendedOn": "2026-08-31",
+      "timeTier": "四日前正式发表",
+      "system": "面向3D堆叠逻辑侧墙的低k SiOCN，选择层/对照材料包括SiO2、poly-Si和SiN；采用NF3/Ar等离子体并改变H2添加。",
+      "conditions": "测刻蚀速率与材料选择性，以光发射光谱和XPS分析等离子体及表面反应。公开HTML摘要未给H2流量、功率、压力、温度、膜厚、速率与选择比数值。",
+      "methods": [
+        "在NF3/Ar中扫描H2添加",
+        "分别测SiOCN、SiO2、poly-Si、SiN刻蚀响应",
+        "用OES追踪活性物种",
+        "用XPS识别贫O反应层与NHx保护层"
+      ],
+      "summary": "SiOCN刻蚀率随H2呈峰值而非单调变化；作者划分为F自由基增加、贫O反应层促进、NHx保护层抑制三个区间，并指出不同材料的H2响应不同。",
+      "relevance": "虽然对象不是MTJ，但它给出“气相活性物种—表面改性层—选择比”可复制诊断法，可用于MTJ侧壁介质回刻、封护前清洗及避免H相关界面漂移。",
+      "limitation": "不是ALE也不是磁性材料；摘要无关键工艺数值，不能直接生成recipe，更不能推断CoFeB/MgO兼容性。",
+      "industrialization": "接近3D器件选择性刻蚀模块；仍需图形晶圆、HAR loading、CD/侧壁粗糙、颗粒、腔体记忆、片内/片间均匀性、下游电性和可靠性。",
+      "whyRecommended": "先看刻蚀率—H2曲线，再看OES/XPS与三区机制；最后看四种材料选择性；35–50分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1116/6.0005595",
+      "url": "https://pubs.aip.org/avs/jva/article/44/5/053213/3403231/Effects-of-H2-addition-on-highly-selective-SiOCN",
+      "backupUrl": "https://doi.org/10.1116/6.0005595",
+      "accessNote": "已打开AIP/AVS正式HTML，核验作者、2026-08-27、DOI、NF3/Ar/H2、OES/XPS和三反应区；摘要未公开工艺数值已明示。",
       "featured": true
     }
   ]

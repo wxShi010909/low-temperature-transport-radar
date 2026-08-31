@@ -237,6 +237,13 @@
       "classicIds": [
         "classic-science-1218197-ta-she"
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "reviewId": "review-ale-extreme-2026",
+      "classicIds": [
+        "classic-mgo-noise-2007"
+      ]
     }
   ],
   "items": [
@@ -2202,6 +2209,60 @@
         "核对4/8 nm、10 μm、190 μΩ·cm和0.12–0.15。",
         "再看三端MTJ写读分离。",
         "最后与50 nm低WER模型对照；40–55分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-ale-extreme-2026",
+      "kind": "每日综述",
+      "track": "E",
+      "secondaryTracks": [
+        "C",
+        "D"
+      ],
+      "title": "Atomic Layer Etching for Extreme Manufacturing: Pushing the Limits of Atomic Scale Precision",
+      "titleZh": "极端制造中的原子层刻蚀：机制、建模、三维集成与量产缺口",
+      "authors": "Yuqun Feng, Bowen Sun, Fan Yang, Kun Cao, Yuan Gao, Bin Shan, Fred Roozeboom, Rong Chen et al.",
+      "venue": "Nanomanufacturing and Metrology 9, 11 (2026)",
+      "published": "2026-03-23",
+      "recommendedOn": "2026-08-31",
+      "doi": "10.1007/s41871-026-00297-w",
+      "url": "https://link.springer.com/article/10.1007/s41871-026-00297-w",
+      "backupUrl": "https://doi.org/10.1007/s41871-026-00297-w",
+      "assistantSummary": "开放获取正式综述把ALE的“表面改性—选择性移除—吹扫”自限循环，与第一性原理、等离子体/特征尺度模型、选择性、形貌、3D和量子器件连接起来。",
+      "whySelected": "为今日SiOCN连续等离子刻蚀提供机制坐标：先判断哪些反应可被改造成真正自限窗口，再决定是否值得上ALE/ALD超循环。",
+      "readingGuide": [
+        "先看图1的能量窗口和EPC定义。",
+        "再读thermal/plasma ALE差异。",
+        "重点查选择性、形貌与ALD–ALE超循环。",
+        "最后看原位监控、放大和量产缺口；70–90分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-mgo-noise-2007",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "D"
+      ],
+      "title": "Noise in MgO barrier magnetic tunnel junctions with CoFeB electrodes: Influence of annealing temperature",
+      "titleZh": "CoFeB/MgO MTJ低频噪声与退火：从235%磁阻到势垒局域陷阱",
+      "authors": "J. Scola, H. Polovy, C. Fermon, M. Pannetier-Lecœur, G. Feng, K. Fahy, J. M. D. Coey",
+      "venue": "Applied Physics Letters 90, 252501 (2007)",
+      "published": "2007-06-20",
+      "recommendedOn": "2026-08-31",
+      "doi": "10.1063/1.2749433",
+      "url": "https://pubs.aip.org/aip/apl/article/90/25/252501/152367/Noise-in-MgO-barrier-magnetic-tunnel-junctions",
+      "backupUrl": "https://doi.org/10.1063/1.2749433",
+      "assistantSummary": "经典实测比较不同退火/结晶程度下CoFeB/MgO MTJ低频噪声，磁阻最高235%，1/f噪声显著低于Al2O3势垒结，并将其归因于MgO内局域电荷陷阱。",
+      "whySelected": "它把今日IBE侧壁损伤和低温自动化落到一个敏感量：TMR合格并不等于势垒无缺陷，1/f/RTN能揭示平均电阻看不到的陷阱。",
+      "readingGuide": [
+        "先看退火温度与TMR。",
+        "再看归一化1/f噪声。",
+        "对比MgO与Al2O3。",
+        "最后审视“陷阱归因”的证据边界；30–45分钟。"
       ],
       "notNew": true
     }
