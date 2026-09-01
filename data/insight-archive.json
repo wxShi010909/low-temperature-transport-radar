@@ -416,6 +416,18 @@
       "atomicIds": [
         "2026-08-31-interface-window"
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "opportunityIds": [
+        "2026-09-01-thermal-endurance-map"
+      ],
+      "methodIds": [
+        "2026-09-01-opticool-fat"
+      ],
+      "atomicIds": [
+        "2026-09-01-interface-aware-hafnia"
+      ]
     }
   ],
   "items": [
@@ -6265,6 +6277,154 @@
       ],
       "researchConnection": "连接原位表征、ALE、侧壁介质和MTJ界面保护。",
       "takeaway": "先证明自限与低损伤，再谈把连续刻蚀升级为ALE。"
+    },
+    {
+      "id": "2026-09-01-thermal-endurance-map",
+      "date": "2026-09-01",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B · SOT‑MRAM可靠性",
+      "title": "把写入温升、互扩散和WER尾部做成同一张耐久相图",
+      "subtitle": "线长/材料/脉宽与环境温度四维DOE，连接瞬态结温、B/金属扩散、TMR/RA漂移和阵列失效分布。",
+      "summary": "把“>10^18次”升级为带热史、失效模式和置信区间的可制造可靠性证据。",
+      "status": "本站组合推断，待用户阵列验证",
+      "relatedPaperIds": [
+        "nr-94908447",
+        "classic-jap-105-033916",
+        "jva-44-053402"
+      ],
+      "question": "耐久尾部由瞬态峰值温度、累计热剂量还是特定界面扩散先触发？",
+      "rationale": "新论文给阵列耐久/温升，经典文给退火—界面读窗，HfO2文给应力/缺陷联合计量范式。",
+      "workflow": [
+        "红外/热反射或电阻温标校准瞬态结温",
+        "通道材料×长度×脉宽DOE",
+        "循环中间点测TMR/RA/WER",
+        "SIMS/TEM-EELS定位扩散并拟合失效分布"
+      ],
+      "equipment": [
+        "高速脉冲源与示波器",
+        "热反射/电阻温标",
+        "自动2 Kb阵列台",
+        "SIMS/TEM-EELS"
+      ],
+      "measurements": [
+        "ΔT峰值/热剂量",
+        "TMR/RA漂移",
+        "WER/失效分位",
+        "B/金属扩散深度"
+      ],
+      "metrics": [
+        "10^18次置信界",
+        "ppm尾部",
+        "Weibull斜率",
+        "跨片Cpk"
+      ],
+      "evidenceBoundary": ">180 K与>10^18次来自特定论文阵列；用户堆栈、热阻和脉冲条件不同，必须重新标定。",
+      "firstSteps": [
+        "先用dummy线标定R–T温标",
+        "固定写成功率比较等热剂量",
+        "设置无写入125 °C存储对照"
+      ],
+      "researchConnection": "直连CoFeB/MgO界面、SOT线、阵列、低温/高温输运和产品可靠性。",
+      "takeaway": "先测真实结温和失效分布，再优化平均循环数。"
+    },
+    {
+      "id": "2026-09-01-opticool-fat",
+      "date": "2026-09-01",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 磁光低温验收",
+      "title": "OptiCool用于MTJ磁畴—输运联合测量的FAT/SAT",
+      "subtitle": "用Kerr标准样、Hall片和MTJ dummy验收1.7–350 K、矢量场、振动、光漂移与电噪声。",
+      "summary": "把厂商参数转成可重复、可审计的设备验收矩阵。",
+      "status": "厂商资料驱动的本站验收方案",
+      "relatedPaperIds": [
+        "qd-opticool",
+        "apl-129-083103"
+      ],
+      "question": "低振动和多光口是否在真实线缆/样品负载下仍支持MTJ畴成像和同步电测？",
+      "rationale": "厂商给边界规格，应变输运论文提示相位/机械扰动可能被误判为材料效应。",
+      "workflow": [
+        "空载振动/温稳测试",
+        "标准电阻与Hall磁场映射",
+        "Kerr样品光斑漂移/磁滞",
+        "MTJ脉冲与同步成像A/B"
+      ],
+      "equipment": [
+        "OptiCool候选配置",
+        "干涉振动计",
+        "低噪声电测",
+        "Kerr显微/光谱"
+      ],
+      "measurements": [
+        "振动频谱",
+        "温度稳定度",
+        "场均匀/磁滞",
+        "光斑漂移/电噪声"
+      ],
+      "metrics": [
+        "跨日GR&R",
+        "漂移nm/h",
+        "噪声nV/√Hz",
+        "自动恢复时间"
+      ],
+      "evidenceBoundary": "<10 nm、1.7–350 K和磁场值为厂商标称，验收阈值需在合同配置中锁定。",
+      "firstSteps": [
+        "索取feedthrough/线缆完整规格",
+        "定义三类标准样",
+        "跑24 h空载与满载"
+      ],
+      "researchConnection": "支持MTJ磁性、低温输运、设备自动化和失效定位。",
+      "takeaway": "设备合格标准应是目标样品上的噪声和复现，而不是目录页参数。"
+    },
+    {
+      "id": "2026-09-01-interface-aware-hafnia",
+      "date": "2026-09-01",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "C/E · 界面环境与溅射窗口",
+      "title": "界面感知的HfO₂/HZO沉积—退火—电性闭环",
+      "subtitle": "用压力/厚度/终止/退火矩阵，把晶相、应力、固定电荷、Dit与局域极化模型对齐。",
+      "summary": "从“优化体相材料”转向“定义电极—介质—缺陷整体环境”。",
+      "status": "本站组合推断，需超薄器件验证",
+      "relatedPaperIds": [
+        "prb-114-l080101",
+        "jva-44-053402"
+      ],
+      "question": "HfO2/HZO的极化和可靠性波动究竟由体相相型还是界面环境/应力主导？",
+      "rationale": "计算否定环境无关的单一体相极化，实验给压力—厚度—应力—Dit的可量化链。",
+      "workflow": [
+        "1–10 nm压力/功率见证片DOE",
+        "对称/非对称电极终止",
+        "BEOL兼容退火矩阵",
+        "XRD/XRR/应力/C–V/G–V/P–E与TEM-EELS联合"
+      ],
+      "equipment": [
+        "磁控溅射或ALD/PEALD",
+        "原位XPS/椭偏可选",
+        "晶圆弯曲/XRD/XRR",
+        "电容/隧道结自动电测"
+      ],
+      "measurements": [
+        "厚度/粗糙/晶相",
+        "应力/固定电荷/Dit",
+        "局域成分/氧空位",
+        "P–E/漏电/保持/耐久"
+      ],
+      "metrics": [
+        "片内3σ/Cpk",
+        "Dit分位",
+        "击穿Weibull",
+        "循环漂移"
+      ],
+      "evidenceBoundary": "厚膜ISFET HfO2与第一性原理结论不能直接当作超薄HZO器件结果；950 °C退火不适合BEOL。",
+      "firstSteps": [
+        "先做1/3/5/10 nm厚度阶梯",
+        "加入ALD对照",
+        "把退火上限限制在现有BEOL窗口"
+      ],
+      "researchConnection": "连接原子层界面、缺陷/应力控制、磁控溅射、铁电/隧道器件和可靠性。",
+      "takeaway": "每个极化值都要带上电极、终止、厚度、应力和缺陷条件。"
     }
   ]
 }

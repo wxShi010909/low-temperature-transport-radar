@@ -1,57 +1,56 @@
 {
-  "date": "2026-08-31",
+  "date": "2026-09-01",
   "review": {
-    "id": "review-ale-extreme-2026",
+    "id": "review-mram-versatile-2026",
     "kind": "每日综述",
-    "track": "E",
+    "track": "B",
     "secondaryTracks": [
       "C",
-      "D"
+      "E"
     ],
-    "title": "Atomic Layer Etching for Extreme Manufacturing: Pushing the Limits of Atomic Scale Precision",
-    "titleZh": "极端制造中的原子层刻蚀：机制、建模、三维集成与量产缺口",
-    "authors": "Yuqun Feng, Bowen Sun, Fan Yang, Kun Cao, Yuan Gao, Bin Shan, Fred Roozeboom, Rong Chen et al.",
-    "venue": "Nanomanufacturing and Metrology 9, 11 (2026)",
-    "published": "2026-03-23",
-    "recommendedOn": "2026-08-31",
-    "doi": "10.1007/s41871-026-00297-w",
-    "url": "https://link.springer.com/article/10.1007/s41871-026-00297-w",
-    "backupUrl": "https://doi.org/10.1007/s41871-026-00297-w",
-    "assistantSummary": "开放获取正式综述把ALE的“表面改性—选择性移除—吹扫”自限循环，与第一性原理、等离子体/特征尺度模型、选择性、形貌、3D和量子器件连接起来。",
-    "whySelected": "为今日SiOCN连续等离子刻蚀提供机制坐标：先判断哪些反应可被改造成真正自限窗口，再决定是否值得上ALE/ALD超循环。",
+    "title": "MRAM: A Versatile Non-Volatile Memory for Next-Generation Computing Applications",
+    "titleZh": "MRAM全景综述：从MTJ、STT/SOT/VCMA到阵列、计算与产业化约束",
+    "authors": "Zhihan Wang, Haiwen Li, Sheng Jiang",
+    "venue": "Nanomaterials 16(13), 816 (2026)",
+    "published": "2026-07-01",
+    "recommendedOn": "2026-09-01",
+    "doi": "10.3390/nano16130816",
+    "url": "https://www.mdpi.com/2079-4991/16/13/816",
+    "backupUrl": "https://doi.org/10.3390/nano16130816",
+    "assistantSummary": "正式综述系统梳理MTJ相干隧穿、STT/SOT/VCMA写入、MRAM阵列与新型计算应用，并讨论速度、功耗、密度、保持、耐久和CMOS集成的权衡。",
+    "whySelected": "为本日耐久论文提供全栈坐标：材料互扩散和通道自热最终要落到写错误、保持、阵列外围与制造成本，而不能只看循环数。",
     "readingGuide": [
-      "先看图1的能量窗口和EPC定义。",
-      "再读thermal/plasma ALE差异。",
-      "重点查选择性、形貌与ALD–ALE超循环。",
-      "最后看原位监控、放大和量产缺口；70–90分钟。"
+      "先看MRAM技术路线与MTJ结构总图。",
+      "比较STT、SOT和VCMA写入的电流路径与可靠性。",
+      "重点读阵列/外围、规模化和商业化障碍。",
+      "最后把综述指标表与2 Kb耐久论文逐项对照；70–90分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-mgo-noise-2007",
+      "id": "classic-jap-105-033916",
       "kind": "经典文章",
       "track": "B",
       "secondaryTracks": [
-        "A",
-        "D"
+        "E"
       ],
-      "title": "Noise in MgO barrier magnetic tunnel junctions with CoFeB electrodes: Influence of annealing temperature",
-      "titleZh": "CoFeB/MgO MTJ低频噪声与退火：从235%磁阻到势垒局域陷阱",
-      "authors": "J. Scola, H. Polovy, C. Fermon, M. Pannetier-Lecœur, G. Feng, K. Fahy, J. M. D. Coey",
-      "venue": "Applied Physics Letters 90, 252501 (2007)",
-      "published": "2007-06-20",
-      "recommendedOn": "2026-08-31",
-      "doi": "10.1063/1.2749433",
-      "url": "https://pubs.aip.org/aip/apl/article/90/25/252501/152367/Noise-in-MgO-barrier-magnetic-tunnel-junctions",
-      "backupUrl": "https://doi.org/10.1063/1.2749433",
-      "assistantSummary": "经典实测比较不同退火/结晶程度下CoFeB/MgO MTJ低频噪声，磁阻最高235%，1/f噪声显著低于Al2O3势垒结，并将其归因于MgO内局域电荷陷阱。",
-      "whySelected": "它把今日IBE侧壁损伤和低温自动化落到一个敏感量：TMR合格并不等于势垒无缺陷，1/f/RTN能揭示平均电阻看不到的陷阱。",
+      "title": "Annealing of CoFeB/MgO based single and double barrier magnetic tunnel junctions: Tunnel magnetoresistance, bias dependence, and output voltage",
+      "titleZh": "CoFeB/MgO单/双势垒MTJ退火经典：TMR、偏压对称性与输出电压的工艺窗口",
+      "authors": "G. Feng, Sebastiaan van Dijken, J. F. Feng, J. M. D. Coey, T. Leo, David J. Smith",
+      "venue": "Journal of Applied Physics 105, 033916 (2009)",
+      "published": "2009-02-11",
+      "recommendedOn": "2026-09-01",
+      "doi": "10.1063/1.3068186",
+      "url": "https://pubs.aip.org/aip/jap/article/105/3/033916/383720/Annealing-of-CoFeB-MgO-based-single-and-double",
+      "backupUrl": "https://doi.org/10.1063/1.3068186",
+      "assistantSummary": "Co40Fe40B20/MgO单/双势垒分别用dc磁控溅射和target-facing-target势垒沉积；800 mT场退火后室温TMR达230%/120%，350 °C后偏压曲线近对称，300 °C时输出0.65/0.85 V。",
+      "whySelected": "它给今日耐久研究一个必要的历史基线：退火既决定CoFeB结晶和TMR，也改变偏压不对称；更高循环数若以界面互扩散和读窗损失为代价并不等于更可靠。",
       "readingGuide": [
-        "先看退火温度与TMR。",
-        "再看归一化1/f噪声。",
-        "对比MgO与Al2O3。",
-        "最后审视“陷阱归因”的证据边界；30–45分钟。"
+        "先看单/双势垒堆栈和沉积法。",
+        "再看退火温度—TMR。",
+        "重点看偏压对称性与0.65/0.85 V输出。",
+        "最后思考现代pMTJ中B扩散与BEOL窗口；35–50分钟。"
       ],
       "notNew": true
     }

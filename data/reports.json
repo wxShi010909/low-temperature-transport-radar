@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-31T09:00:00+08:00",
-  "reportDate": "2026-08-31",
+  "updatedAt": "2026-09-01T09:00:00+08:00",
+  "reportDate": "2026-09-01",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -679,6 +679,25 @@
         "prb-114-094112",
         "oxford-teslatronpt-plus-2025",
         "jva-44-053213"
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "label": "详细日报：应变低温相位—SOT阵列耐久—hafnia界面理论—低振动磁光平台—溅射应力缺陷",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "apl-129-083103",
+        "nr-94908447",
+        "prb-114-l080101",
+        "qd-opticool",
+        "jva-44-053402"
       ]
     }
   ],
@@ -7486,6 +7505,183 @@
       "url": "https://pubs.aip.org/avs/jva/article/44/5/053213/3403231/Effects-of-H2-addition-on-highly-selective-SiOCN",
       "backupUrl": "https://doi.org/10.1116/6.0005595",
       "accessNote": "已打开AIP/AVS正式HTML，核验作者、2026-08-27、DOI、NF3/Ar/H2、OES/XPS和三反应区；摘要未公开工艺数值已明示。",
+      "featured": true
+    },
+    {
+      "id": "apl-129-083103",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Uniaxial strain-induced spin zero effect in ZrTe5",
+      "titleZh": "单轴应变诱导ZrTe₅自旋零点：用SdH振幅节点区分Zeeman相位与Berry相位",
+      "authors": "Peipei Wang, Xinmin Wang, Lingxiao Zhao, Ziyue Qi, Alei Li, Long Cheng, Ziheng Sun, Chengying Liu, Hongming Weng, Xi Dai, Quansheng Wu, Liyuan Zhang",
+      "venue": "Applied Physics Letters 129, 083103 (2026)",
+      "published": "2026-08-28",
+      "recommendedOn": "2026-09-01",
+      "timeTier": "四日前正式发表",
+      "system": "ZrTe5单晶低温输运样品，沿晶体a轴施加连续可调拉伸应变；公开HTML未给样品厚度、接触金属、应变百分比和载流子密度。",
+      "conditions": "在拉伸应变下测Shubnikov–de Haas量子振荡并作Landau fan分析。公开页面未给最低温度、最高磁场、扫场速率和应变标定误差，均标为原文公开页面未公开。",
+      "methods": [
+        "沿a轴施加原位单轴拉伸应变",
+        "测磁阻并提取SdH振荡幅值和相位",
+        "追踪振幅节点与振荡符号反转",
+        "用Landau fan截距检验Berry相位是否改变"
+      ],
+      "summary": "应变调谐使SdH振幅出现节点并反相，而Landau fan截距仍接近π Berry相位；作者据此把反相归因于Zeeman分裂轨道的相对相位，而不是全局拓扑相变。",
+      "relevance": "方法可迁移到MTJ封装应力、BEOL应变和磁性层磁弹耦合：同时看幅度节点、相位和独立结构标定，避免把应力引起的相位重排误判成界面拓扑或磁相改变。",
+      "limitation": "材料不是MTJ；摘要没有温度、磁场、应变、器件尺寸等量值；对极值费米面分裂和自旋几何相位的解释依赖模型，不能直接外推CoFeB/MgO。",
+      "industrialization": "处于应变低温计量方法阶段；距离可制造器件还缺晶圆应力图、封装前后对照、器件级TMR/RA/WER关联、温循和批次GR&R。",
+      "whyRecommended": "先看SdH振幅随应变的节点/反相图，再看Landau fan截距，最后读Zeeman轨道相位模型；35–50分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "10.1063/5.0348138",
+      "url": "https://pubs.aip.org/aip/apl/article/129/8/083103/3403274/Uniaxial-strain-induced-spin-zero-effect-in-ZrTe5",
+      "backupUrl": "https://doi.org/10.1063/5.0348138",
+      "accessNote": "已打开AIP正式HTML，核验题名、作者、2026-08-28、DOI、a轴拉伸、SdH节点/反相和Landau fan结论；页面未公开量值不补写。",
+      "featured": true
+    },
+    {
+      "id": "nr-94908447",
+      "track": "B",
+      "secondaryTracks": [
+        "D",
+        "E"
+      ],
+      "title": "Unveiling the endurance limit of SOT-MRAM with CoFeB/MgO/CoFeB junctions: From elemental interdiffusion to array-level reliability",
+      "titleZh": "CoFeB/MgO/CoFeB SOT‑MRAM耐久极限：从写入自热与元素互扩散到2 Kb阵列可靠性",
+      "authors": "Chuanpeng Jiang, Jinhao Li, Chao Wang, Shiyang Lu, Xingyu Yao, Wenlong Cai, Danrong Xiong, Xiaofei Fan, Hong-Xi Liu, Gefei Wang, He Zhang, Kaihua Cao, Zhaohao Wang, Weisheng Zhao",
+      "venue": "Nano Research 19(7), 94908447 (2026)",
+      "published": "2026-05-06",
+      "recommendedOn": "2026-09-01",
+      "timeTier": "近期正式发表",
+      "system": "CoFeB/MgO/CoFeB磁隧道结与SOT写入通道组成的2 Kb SOT-MRAM阵列。可访问摘要未公开完整种子层/自旋源/钉扎层堆栈、MgO/CoFeB厚度、结CD、TMR与RA。",
+      "conditions": "对2 Kb阵列进行不同写电压和热应力循环；公开摘要报告写入期间SOT通道焦耳升温超过180 K，并在优化通道材料和缩短通道后于125 °C验证耐久超过10^18次。脉宽、电压、占空比和失效判据未公开。",
+      "methods": [
+        "在2 Kb阵列上扫描写电压与热应力循环",
+        "分析失效与MTJ元素互扩散/热退化",
+        "量化SOT通道写入自热",
+        "优化通道材料并缩短通道长度",
+        "在125 °C重复阵列耐久测试"
+      ],
+      "summary": "主要失效来自MTJ热驱动元素互扩散；写入通道焦耳升温超过180 K。降低通道热负担后，125 °C阵列耐久超过10^18次，高于作者采用的≥10^17“近无限耐久”目标。",
+      "relevance": "本日最高优先级：它把CoFeB/MgO界面、B/金属扩散、线长/材料、写入自热和阵列耐久放进同一条可制造因果链，直接服务SOT‑MRAM工艺与可靠性。",
+      "limitation": "180 K是报告的写入温升而非绝对结温；公开摘要没有完整堆栈、CD、TMR、RA、脉宽、WER、保持、读扰、失效分布和加速模型，不能据此宣称产品量产。",
+      "industrialization": "最接近阵列级耐久与热设计；已有2 Kb、125 °C和>10^18次，但仍缺大阵列、多晶圆/多批次、PVT、ECC、10年保持、写错误率尾部、BEOL热预算和封装热阻验证。",
+      "whyRecommended": "先看2 Kb耐久/失效图，再看温升与互扩散证据，最后看通道材料/长度优化；50–70分钟，优先核对加速模型。",
+      "score": 10,
+      "priority": "S",
+      "doi": "10.26599/NR.2026.94908447",
+      "url": "https://www.sciopen.com/article/10.26599/NR.2026.94908447",
+      "backupUrl": "https://doi.org/10.26599/NR.2026.94908447",
+      "accessNote": "已打开SciOpen正式页面，核验作者、2026-05-06、2 Kb、>180 K温升、125 °C与>10^18次；未把温升误写成绝对温度。",
+      "featured": true
+    },
+    {
+      "id": "prb-114-l080101",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "The polarization of hafnia ferroelectrics is not a bulk property",
+      "titleZh": "HfO₂铁电极化不是孤立体相常数：同一极性原子层可因界面环境产生相反退极化场",
+      "authors": "Binayak Mukherjee, Xabier Diaz de Cerio, Iñigo Robredo-Magro, Natalya S. Fedorova, Jorge Íñiguez-González",
+      "venue": "Physical Review B 114, L080101 (2026)",
+      "published": "2026-08-20",
+      "recommendedOn": "2026-09-01",
+      "timeTier": "两周内正式计算论文",
+      "system": "HfO2铁电结构及其不同电学/原子环境；对固定极性HfO2原子层进行第一性原理比较。公开摘要未给超胞、相结构厚度、电极终止或场强数值。",
+      "conditions": "第一性原理计算同一极性层在不同环境中的局域极化/退极化场。无实验温度、磁场、器件尺寸、耐久或保持数据。",
+      "methods": [
+        "构造固定极性HfO2原子层",
+        "改变其周围界面/电学环境",
+        "由第一性原理计算局域响应与退极化场",
+        "比较场方向并检验体相极化定义"
+      ],
+      "summary": "同一极性HfO2原子层可因环境产生正或负退极化场，因此作者认为hafnia的“体相极化”并非良定义的内禀常数，而具有环境依赖的外禀性。",
+      "relevance": "对HZO铁电隧道结、VCMA/多铁耦合和原子层界面建模尤其关键：电极终止、邻层和缺陷必须进入模型，不能只用一个体相P值解释器件。",
+      "limitation": "这是理论论证；公开摘要缺相型、厚度、终止与定量场强，也未提供器件实测。不能直接外推到MgO/CoFeB磁隧穿或商业HZO工艺。",
+      "industrialization": "位于界面感知的材料模型环节；还缺真实电极/缺陷/应力、有限温度、晶粒统计、泄漏、循环退化及晶圆电学标定。",
+      "whyRecommended": "先读核心反例图，再看局域极化/退极化场定义，最后读对连续体模型的限制；35–50分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1103/dssv-gsq9",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/dssv-gsq9",
+      "backupUrl": "https://doi.org/10.1103/dssv-gsq9",
+      "accessNote": "已打开APS正式页，核验作者、2026-08-20、DOI、第一性原理方法和环境依赖退极化场结论。",
+      "featured": true
+    },
+    {
+      "id": "qd-opticool",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "OptiCool Cryogen-free Optical Cryostat",
+      "titleZh": "Quantum Design OptiCool低振动光学低温平台：1.7–350 K、7 T或4‑1‑1 T矢量场",
+      "authors": "Quantum Design North America",
+      "venue": "Quantum Design vendor technical material",
+      "published": "原网页未公开",
+      "recommendedOn": "2026-09-01",
+      "timeTier": "厂商技术资料（非科研证明）",
+      "system": "无液氦光学低温恒温器系列：7 T分裂锥形超导磁体、4‑1‑1 T矢量磁体或无磁体Flex；自动温度/磁场控制，面向光学、电学和磁性测量。",
+      "conditions": "厂商标称1.7–350 K、振动<10 nm峰峰值；7 T版为±7 T、3 cm DSV内均匀度±0.3%、8个光学端口，矢量版为±4 T(z)/±1 T(x,y)、5端口。需FAT/SAT复核。",
+      "methods": [
+        "闭循环制冷并自动控制1.7–350 K",
+        "在7 T或4‑1‑1 T矢量磁场下原位光/电/磁测量",
+        "利用侧向与顶部高NA光路接显微/光谱",
+        "以标准样品验收振动、温场、磁场和电噪声"
+      ],
+      "summary": "厂商提供低振动、宽温区和多光口磁光平台；7 T版样品空间84×89 mm，Flex无磁体版为75×200 mm并提供4 K热总线。",
+      "relevance": "适合MTJ磁畴/Kerr、磁光泵浦、矢量场翻转和封装应力成像，可把磁结构与TMR异常关联；但电流脉冲、低噪声引线和阵列吞吐需单独设计。",
+      "limitation": "全部性能来自厂商网页，非同行评议证据；网页未给冷却时间、样品实际振动频谱、温度稳定度、底噪、线数、脉冲带宽、价格和第三方复现。",
+      "industrialization": "接近研发设备采购与故障分析平台；需用标准电阻/Hall片/MTJ dummy执行FAT/SAT，核验热锚、电噪声、磁滞、自动恢复、脚本审计和跨日GR&R。",
+      "whyRecommended": "先看三种磁体配置，再看光口/样品空间与振动声明；把电学feedthrough和实测噪声列为询价必问；20–30分钟。",
+      "score": 9.3,
+      "priority": "A",
+      "doi": "",
+      "url": "https://qdusa.com/products/opticool.html",
+      "backupUrl": "https://qdusa.com/products/opticool.html",
+      "accessNote": "已打开Quantum Design官方产品页并核验温区、磁场、振动、端口、均匀度和样品空间；明确标为厂商技术资料。",
+      "featured": true
+    },
+    {
+      "id": "jva-44-053402",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Structural, mechanical, and electrical properties of magnetron-sputtered HfO2/SiO2 stacks",
+      "titleZh": "磁控溅射HfO₂/SiO₂：压力与厚度共同控制结晶、应力、固定电荷和界面态",
+      "authors": "Vl. Kolkovsky, E. Kurth",
+      "venue": "Journal of Vacuum Science & Technology A 44, 053402 (2026)",
+      "published": "2026-08-03",
+      "recommendedOn": "2026-09-01",
+      "timeTier": "近一个月正式发表",
+      "system": "n-Si（约2 Ω·cm）/热氧化SiO2（30±1或60±2 nm）/RF溅射HfO2；电测结构为Al(500 nm, 0.25 mm²)/HfO2/SiO2/Si MOS电容。",
+      "conditions": "HfO2陶瓷靶99.99%，靶基距12 cm，1800 W，O2/Ar=1:45，约25 °C、约1 nm/s；压力0.2–5 Pa与厚度16–193 nm。部分样品950 °C O2 20 min+Ar 10 min，之后440 °C forming gas 2 h；C–V/G–V为室温100 kHz。",
+      "methods": [
+        "系统扫描溅射压力和HfO2厚度",
+        "XRD/SEM表征相与晶粒",
+        "晶圆弯曲测应力并做退火序列",
+        "Al电容C–V/G–V提取固定电荷和界面态",
+        "用多晶圆复现检查工艺稳定性"
+      ],
+      "summary": "室温沉积即可能部分结晶；高压力促进单斜相。193 nm膜压应力约−1500 MPa，950 °C后转为600–1100 MPa拉应力；固定电荷−6.6×10^10 cm−2至近零，Dit由<70 nm时<5×10^10增至193 nm约8×10^12 cm−2eV−1。",
+      "relevance": "直接连接磁控溅射、原子/界面缺陷、电荷与应力计量；可把“压力—厚度—晶相—应力—Dit”模板迁移到HZO隧道结和MTJ封装介质的DOE。",
+      "limitation": "对象是ISFET用厚HfO2/SiO2，不是超薄HZO铁电或MgO势垒；950 °C不符合后端热预算，193 nm结论不能直接外推1–3 nm隧穿层。",
+      "industrialization": "接近可放大的溅射介质模块，作者报告独立批次±10%复现；仍缺全片映射、颗粒、漏电/击穿、TDDB、薄层极限、低温电学和BEOL兼容。",
+      "whyRecommended": "先看图5压力—非晶临界厚度，再看图6/7应力转变，最后看固定电荷和Dit；55–75分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1116/6.0005594",
+      "url": "https://pubs.aip.org/avs/jva/article/44/5/053402/3400150/Structural-mechanical-and-electrical-properties-of",
+      "backupUrl": "https://doi.org/10.1116/6.0005594",
+      "accessNote": "已打开AIP/AVS全文，核验作者、日期、堆栈、压力/功率/气比/退火、XRD/应力/C–V/G–V及公开定量数据。",
       "featured": true
     }
   ]
