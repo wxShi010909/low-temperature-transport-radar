@@ -251,6 +251,13 @@
       "classicIds": [
         "classic-jap-105-033916"
       ]
+    },
+    {
+      "date": "2026-09-02",
+      "reviewId": "review-apr-2d-mtj-2021",
+      "classicIds": [
+        "classic-jap-117-043913"
+      ]
     }
   ],
   "items": [
@@ -2323,6 +2330,59 @@
         "再看退火温度—TMR。",
         "重点看偏压对称性与0.65/0.85 V输出。",
         "最后思考现代pMTJ中B扩散与BEOL窗口；35–50分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-apr-2d-mtj-2021",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Recent progress and challenges in magnetic tunnel junctions with 2D materials for spintronic applications",
+      "titleZh": "二维材料MTJ正式综述：电极、势垒、界面与可制造挑战的比较框架",
+      "authors": "Lishu Zhang, Jun Zhou, Hui Li, Lei Shen, Yuan Ping Feng",
+      "venue": "Applied Physics Reviews 8, 021308 (2021)",
+      "published": "2021-04-15",
+      "recommendedOn": "2026-09-02",
+      "doi": "10.1063/5.0032538",
+      "url": "https://pubs.aip.org/aip/apr/article/8/2/021308/933321/Recent-progress-and-challenges-in-magnetic-tunnel",
+      "backupUrl": "https://doi.org/10.1063/5.0032538",
+      "assistantSummary": "AIP正式Review Article梳理石墨烯、h-BN、MoS2、CrI3、Fe3GeTe2等作为MTJ电极或势垒的实验/理论进展，并讨论自旋极化、界面、温度与器件挑战。",
+      "whySelected": "不把二维材料作为默认中心，而把它用作“原子级界面与隧穿通道”的比较工具；阅读重点是哪些界面控制方法可迁移到MgO/CoFeB，而非追逐纯二维物性。",
+      "readingGuide": [
+        "先看材料角色分类图。",
+        "重点读界面质量、温度与器件尺寸限制。",
+        "把理论TMR与实测/室温条件分开。",
+        "最后只摘录可迁移的原子层界面与缺陷方法；60–75分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-jap-117-043913",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "E"
+      ],
+      "title": "Influence of boron diffusion on the perpendicular magnetic anisotropy in Ta|CoFeB|MgO ultrathin films",
+      "titleZh": "B扩散控制CoFeB/MgO垂直各向异性的经典证据：0.2 nm Ta、2 nm阈值与20%下降",
+      "authors": "Jaivardhan Sinha, Maria Gruber, Masaya Kodzuka, Tadakatsu Ohkubo, Seiji Mitani, Kazuhiro Hono, Masamitsu Hayashi",
+      "venue": "Journal of Applied Physics 117, 043913 (2015)",
+      "published": "2015-01-29",
+      "recommendedOn": "2026-09-02",
+      "doi": "10.1063/1.4906096",
+      "url": "https://pubs.aip.org/aip/jap/article/117/4/043913/140132/Influence-of-boron-diffusion-on-the-perpendicular",
+      "backupUrl": "https://doi.org/10.1063/1.4906096",
+      "assistantSummary": "截面TEM/EELS/VSM显示300 °C后CoFeB出现约5 nm纳米晶，但仅结晶不足以产生PMA；约0.2 nm Ta已可吸收B并诱导PMA，CoFeB厚度超过约2 nm后B扩散受限，Ms和Ki同步下降约20%。",
+      "whySelected": "它为今日DCFB结果提供原子层级基线：热预算下PMA不只由结晶决定，还取决于B是否有合适的吸收/扩散路径。",
+      "readingGuide": [
+        "先看TEM/EELS的B分布。",
+        "再看Ta厚度与PMA。",
+        "重点比较0.2 nm、2 nm和约20%三个阈值。",
+        "最后与DCFB的W界面/400 °C数据做DOE；35–50分钟。"
       ],
       "notNew": true
     }

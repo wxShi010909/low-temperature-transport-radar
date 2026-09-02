@@ -428,6 +428,18 @@
       "atomicIds": [
         "2026-09-01-interface-aware-hafnia"
       ]
+    },
+    {
+      "date": "2026-09-02",
+      "opportunityIds": [
+        "2026-09-02-dcfb-diffusion-doe"
+      ],
+      "methodIds": [
+        "2026-09-02-cryo-dac-fat"
+      ],
+      "atomicIds": [
+        "2026-09-02-nb-surface-window"
+      ]
     }
   ],
   "items": [
@@ -6425,6 +6437,155 @@
       ],
       "researchConnection": "连接原子层界面、缺陷/应力控制、磁控溅射、铁电/隧道器件和可靠性。",
       "takeaway": "每个极化值都要带上电极、终止、厚度、应力和缺陷条件。"
+    },
+    {
+      "id": "2026-09-02-dcfb-diffusion-doe",
+      "date": "2026-09-02",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/E · 400 °C界面扩散",
+      "title": "把DCFB的PMA优势拆成“界面数—B去向—Pt/Fe扩散—读写窗”四联DOE",
+      "subtitle": "用SCFB/DCFB、W厚度、CoFeB厚度和350/400 °C热史建立可制造相图。",
+      "summary": "从137%单点TMR推进到可解释、可缩放、可统计的BEOL工艺窗。",
+      "status": "本站组合推断，待实验",
+      "relatedPaperIds": [
+        "jos-26010048",
+        "classic-jap-117-043913",
+        "jap-132-213904"
+      ],
+      "question": "400 °C后读窗由B排出不足、Pt–Fe互扩散还是钝化N污染先失效？",
+      "rationale": "新MTJ论文给DCFB器件数据，经典文给B扩散阈值，理论文给N缺陷AP寄生通道。",
+      "workflow": [
+        "SCFB/DCFB×CoFeB/W厚度矩阵",
+        "350/400 °C等热剂量退火",
+        "SIMS/EELS/EDS联测B/N/Pt/Fe",
+        "TMR/RA/PMA/Jc/WER联合建模"
+      ],
+      "equipment": [
+        "多靶磁控溅射",
+        "场退火",
+        "CIPT/PMOKE/VSM",
+        "SIMS/TEM-EELS/EDS",
+        "脉冲WER平台"
+      ],
+      "measurements": [
+        "B/N/Pt/Fe深度",
+        "PMA/Bex",
+        "TMR/RA",
+        "Jc—脉宽/WER"
+      ],
+      "metrics": [
+        "片内3σ/Cpk",
+        "400 °C后TMR保持率",
+        "ppm WER尾部",
+        "跨批次GR&R"
+      ],
+      "evidenceBoundary": "137%、120/50 mT来自10 μm器件；纳米pMTJ和用户堆栈必须重新验证。",
+      "firstSteps": [
+        "先复现SCFB/DCFB薄膜基线",
+        "用见证片做B/N深度标定",
+        "再进入50 nm以下器件"
+      ],
+      "researchConnection": "直接服务CoFeB/MgO、扩散、BEOL和量产统计。",
+      "takeaway": "把每个高TMR点还原成界面元素去向和统计工艺窗。"
+    },
+    {
+      "id": "2026-09-02-cryo-dac-fat",
+      "date": "2026-09-02",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · 极端条件平台",
+      "title": "低温DAC平台的FAT/SAT与MTJ应力—输运迁移路线",
+      "subtitle": "从红宝石标压、温稳和耗液开始，再加入四线电测、磁场和自动化。",
+      "summary": "把论文原型转成可复现实验设备验收矩阵。",
+      "status": "基于同行评议设备文的本站方案",
+      "relatedPaperIds": [
+        "rsi-97-093902",
+        "apl-129-094001"
+      ],
+      "question": "低温—高压—电输运联合测量的真实误差由压力漂移、热梯度还是引线噪声主导？",
+      "rationale": "RSI论文给通用硬件与标压方法，JJ论文提示器件电阻对热史和几何敏感。",
+      "workflow": [
+        "红宝石压力/温度同步标定",
+        "空载与满载热漂移",
+        "标准电阻四线噪声测试",
+        "MTJ/JJ压力循环与卸载回线"
+      ],
+      "equipment": [
+        "低温DAC适配器",
+        "红宝石光谱",
+        "低噪声源表/锁相",
+        "温度计与磁体可选"
+      ],
+      "measurements": [
+        "T/P稳定度",
+        "R噪声谱",
+        "压力回差",
+        "耗液和跨日复现"
+      ],
+      "metrics": [
+        "标压误差",
+        "nV/√Hz",
+        "GR&R",
+        "4–5 L/run基准偏差"
+      ],
+      "evidenceBoundary": "4–5 L/run和7.6 GPa来自论文平台；最低温度和电噪声原文未公开。",
+      "firstSteps": [
+        "定义标准样片和验收阈值",
+        "做24 h热漂移",
+        "再加入MTJ封装件"
+      ],
+      "researchConnection": "支持低温输运、应力失效和设备平台建设。",
+      "takeaway": "先验收温度、压力与噪声，再解释材料物理。"
+    },
+    {
+      "id": "2026-09-02-nb-surface-window",
+      "date": "2026-09-02",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/A · Nb表面化学",
+      "title": "25–250 °C Nb氧化层自由基处理窗口与低温器件闭环",
+      "subtitle": "把XPS化学态、自限性、Nb损失与Tc/RRR/TLS/Q连接起来。",
+      "summary": "验证“选择性表面改性”是否真正改善超导界面，而不是只改变XPS峰。",
+      "status": "本站组合推断，需器件验证",
+      "relatedPaperIds": [
+        "jva-44-053207",
+        "apl-129-094001"
+      ],
+      "question": "100–150 °C的F介导氮化能否减少有害亚氧化物而不侵入Nb？",
+      "rationale": "论文给清楚温区和250 °C失选边界，但尚未连接低温相干。",
+      "workflow": [
+        "NF3/H脉冲与温度饱和矩阵",
+        "原位XPS/ARXPS",
+        "AFM/TEM-EELS测损伤",
+        "Nb线/谐振器Tc、RRR、Q和TLS验证"
+      ],
+      "equipment": [
+        "自由基源与真空互联",
+        "原位XPS",
+        "AFM/TEM",
+        "低温四线与微波谐振"
+      ],
+      "measurements": [
+        "Nb/O/F/N化学态",
+        "Nb损失/粗糙",
+        "Tc/RRR",
+        "Q/TLS噪声"
+      ],
+      "metrics": [
+        "片内均匀性",
+        "自限窗口",
+        "Q提升置信度",
+        "颗粒/循环腔体漂移"
+      ],
+      "evidenceBoundary": "XPS三段机制为实测；改善TLS/Q只是待验证假设。",
+      "firstSteps": [
+        "先做25/100/150/200/250 °C见证片",
+        "加入仅NF3/仅H对照",
+        "禁止直接以250 °C作为器件配方"
+      ],
+      "researchConnection": "连接原子级表面、真空互联、超导低温输运与可靠性。",
+      "takeaway": "化学态优化只有经过低温器件指标验证才成立。"
     }
   ]
 }

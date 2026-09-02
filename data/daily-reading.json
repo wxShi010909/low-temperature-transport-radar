@@ -1,56 +1,56 @@
 {
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "review": {
-    "id": "review-mram-versatile-2026",
+    "id": "review-apr-2d-mtj-2021",
     "kind": "每日综述",
     "track": "B",
     "secondaryTracks": [
       "C",
       "E"
     ],
-    "title": "MRAM: A Versatile Non-Volatile Memory for Next-Generation Computing Applications",
-    "titleZh": "MRAM全景综述：从MTJ、STT/SOT/VCMA到阵列、计算与产业化约束",
-    "authors": "Zhihan Wang, Haiwen Li, Sheng Jiang",
-    "venue": "Nanomaterials 16(13), 816 (2026)",
-    "published": "2026-07-01",
-    "recommendedOn": "2026-09-01",
-    "doi": "10.3390/nano16130816",
-    "url": "https://www.mdpi.com/2079-4991/16/13/816",
-    "backupUrl": "https://doi.org/10.3390/nano16130816",
-    "assistantSummary": "正式综述系统梳理MTJ相干隧穿、STT/SOT/VCMA写入、MRAM阵列与新型计算应用，并讨论速度、功耗、密度、保持、耐久和CMOS集成的权衡。",
-    "whySelected": "为本日耐久论文提供全栈坐标：材料互扩散和通道自热最终要落到写错误、保持、阵列外围与制造成本，而不能只看循环数。",
+    "title": "Recent progress and challenges in magnetic tunnel junctions with 2D materials for spintronic applications",
+    "titleZh": "二维材料MTJ正式综述：电极、势垒、界面与可制造挑战的比较框架",
+    "authors": "Lishu Zhang, Jun Zhou, Hui Li, Lei Shen, Yuan Ping Feng",
+    "venue": "Applied Physics Reviews 8, 021308 (2021)",
+    "published": "2021-04-15",
+    "recommendedOn": "2026-09-02",
+    "doi": "10.1063/5.0032538",
+    "url": "https://pubs.aip.org/aip/apr/article/8/2/021308/933321/Recent-progress-and-challenges-in-magnetic-tunnel",
+    "backupUrl": "https://doi.org/10.1063/5.0032538",
+    "assistantSummary": "AIP正式Review Article梳理石墨烯、h-BN、MoS2、CrI3、Fe3GeTe2等作为MTJ电极或势垒的实验/理论进展，并讨论自旋极化、界面、温度与器件挑战。",
+    "whySelected": "不把二维材料作为默认中心，而把它用作“原子级界面与隧穿通道”的比较工具；阅读重点是哪些界面控制方法可迁移到MgO/CoFeB，而非追逐纯二维物性。",
     "readingGuide": [
-      "先看MRAM技术路线与MTJ结构总图。",
-      "比较STT、SOT和VCMA写入的电流路径与可靠性。",
-      "重点读阵列/外围、规模化和商业化障碍。",
-      "最后把综述指标表与2 Kb耐久论文逐项对照；70–90分钟。"
+      "先看材料角色分类图。",
+      "重点读界面质量、温度与器件尺寸限制。",
+      "把理论TMR与实测/室温条件分开。",
+      "最后只摘录可迁移的原子层界面与缺陷方法；60–75分钟。"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-jap-105-033916",
+      "id": "classic-jap-117-043913",
       "kind": "经典文章",
       "track": "B",
       "secondaryTracks": [
         "E"
       ],
-      "title": "Annealing of CoFeB/MgO based single and double barrier magnetic tunnel junctions: Tunnel magnetoresistance, bias dependence, and output voltage",
-      "titleZh": "CoFeB/MgO单/双势垒MTJ退火经典：TMR、偏压对称性与输出电压的工艺窗口",
-      "authors": "G. Feng, Sebastiaan van Dijken, J. F. Feng, J. M. D. Coey, T. Leo, David J. Smith",
-      "venue": "Journal of Applied Physics 105, 033916 (2009)",
-      "published": "2009-02-11",
-      "recommendedOn": "2026-09-01",
-      "doi": "10.1063/1.3068186",
-      "url": "https://pubs.aip.org/aip/jap/article/105/3/033916/383720/Annealing-of-CoFeB-MgO-based-single-and-double",
-      "backupUrl": "https://doi.org/10.1063/1.3068186",
-      "assistantSummary": "Co40Fe40B20/MgO单/双势垒分别用dc磁控溅射和target-facing-target势垒沉积；800 mT场退火后室温TMR达230%/120%，350 °C后偏压曲线近对称，300 °C时输出0.65/0.85 V。",
-      "whySelected": "它给今日耐久研究一个必要的历史基线：退火既决定CoFeB结晶和TMR，也改变偏压不对称；更高循环数若以界面互扩散和读窗损失为代价并不等于更可靠。",
+      "title": "Influence of boron diffusion on the perpendicular magnetic anisotropy in Ta|CoFeB|MgO ultrathin films",
+      "titleZh": "B扩散控制CoFeB/MgO垂直各向异性的经典证据：0.2 nm Ta、2 nm阈值与20%下降",
+      "authors": "Jaivardhan Sinha, Maria Gruber, Masaya Kodzuka, Tadakatsu Ohkubo, Seiji Mitani, Kazuhiro Hono, Masamitsu Hayashi",
+      "venue": "Journal of Applied Physics 117, 043913 (2015)",
+      "published": "2015-01-29",
+      "recommendedOn": "2026-09-02",
+      "doi": "10.1063/1.4906096",
+      "url": "https://pubs.aip.org/aip/jap/article/117/4/043913/140132/Influence-of-boron-diffusion-on-the-perpendicular",
+      "backupUrl": "https://doi.org/10.1063/1.4906096",
+      "assistantSummary": "截面TEM/EELS/VSM显示300 °C后CoFeB出现约5 nm纳米晶，但仅结晶不足以产生PMA；约0.2 nm Ta已可吸收B并诱导PMA，CoFeB厚度超过约2 nm后B扩散受限，Ms和Ki同步下降约20%。",
+      "whySelected": "它为今日DCFB结果提供原子层级基线：热预算下PMA不只由结晶决定，还取决于B是否有合适的吸收/扩散路径。",
       "readingGuide": [
-        "先看单/双势垒堆栈和沉积法。",
-        "再看退火温度—TMR。",
-        "重点看偏压对称性与0.65/0.85 V输出。",
-        "最后思考现代pMTJ中B扩散与BEOL窗口；35–50分钟。"
+        "先看TEM/EELS的B分布。",
+        "再看Ta厚度与PMA。",
+        "重点比较0.2 nm、2 nm和约20%三个阈值。",
+        "最后与DCFB的W界面/400 °C数据做DOE；35–50分钟。"
       ],
       "notNew": true
     }

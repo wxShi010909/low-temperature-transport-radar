@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-01T09:00:00+08:00",
-  "reportDate": "2026-09-01",
+  "updatedAt": "2026-09-02T09:00:00+08:00",
+  "reportDate": "2026-09-02",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -698,6 +698,25 @@
         "prb-114-l080101",
         "qd-opticool",
         "jva-44-053402"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "label": "详细日报：JJ后调—双CoFeB 400 °C—界面N缺陷—低温DAC—Nb原子表面反应窗",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "apl-129-094001",
+        "jos-26010048",
+        "jap-132-213904",
+        "rsi-97-093902",
+        "jva-44-053207"
       ]
     }
   ],
@@ -7682,6 +7701,181 @@
       "url": "https://pubs.aip.org/avs/jva/article/44/5/053402/3400150/Structural-mechanical-and-electrical-properties-of",
       "backupUrl": "https://doi.org/10.1116/6.0005594",
       "accessNote": "已打开AIP/AVS全文，核验作者、日期、堆栈、压力/功率/气比/退火、XRD/应力/C–V/G–V及公开定量数据。",
+      "featured": true
+    },
+    {
+      "id": "apl-129-094001",
+      "track": "A",
+      "secondaryTracks": [
+        "D",
+        "E"
+      ],
+      "title": "Alternating-bias assisted annealing of micrometer-scale Josephson junctions",
+      "titleZh": "微米级约瑟夫森结的交变偏压辅助退火：把常态电阻后调变成可预测工艺",
+      "authors": "Qingyu Wang, Jie Zhao, Wenchang Yan, Wei Xin, Yang Yu",
+      "venue": "Applied Physics Letters 129, 094001 (2026)",
+      "published": "2026-08-31",
+      "recommendedOn": "2026-09-02",
+      "timeTier": "两日前正式发表",
+      "system": "微米级Josephson结；交变偏压辅助退火（ABAA）用于在制后调节常态电阻。出版社公开HTML未给电极/势垒材料、势垒厚度、结面积绝对值和光刻流程。",
+      "conditions": "系统扫描预退火加热时间、退火温度、偏压、氧化暴露量、线宽和长宽比。公开页面未给各变量数值、低温测量温度、临界电流与一致性统计，均标为原文公开页面未公开。",
+      "methods": [
+        "制备具有不同氧化暴露和几何参数的微米级JJ",
+        "记录初始常态电阻与预热历史",
+        "施加交变偏压并改变温度/时间",
+        "测退火前后电阻变化并建立效率—工艺—几何关系"
+      ],
+      "summary": "ABAA的电阻调节效率并非常数，而受热历史、温度、偏压、氧化暴露、线宽与长宽比共同控制；作者提出面向微米级JJ的预测性电阻后调框架。",
+      "relevance": "这是一种“制后小步校准”思路：可迁移到隧道结RA分档、测试片电阻trim和晶圆工艺反馈，但不能直接照搬到MgO/CoFeB，因为磁势垒的扩散与磁性退化窗口不同。",
+      "limitation": "公开来源只有摘要和变量清单，没有量值、堆栈、低温Ic、均匀性、循环稳定性与良率；因此不声称达成某个调节幅度或量产精度。",
+      "industrialization": "处于器件后调与校准方法阶段；还缺晶圆内/晶圆间分布、调节分辨率、长期漂移、噪声、临界电流、超导相干和自动化吞吐验证。",
+      "whyRecommended": "先看实验流程与参数矩阵，再看几何/氧化暴露对效率的图，最后检查是否给出预测误差；35–50分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "10.1063/5.0347836",
+      "url": "https://pubs.aip.org/aip/apl/article/129/9/094001/3403317/Alternating-bias-assisted-annealing-of-micrometer",
+      "backupUrl": "https://doi.org/10.1063/5.0347836",
+      "accessNote": "已打开AIP正式HTML，核验Research Article、题名、作者、2026-08-31、DOI、六类控制变量；量值未公开不补写。",
+      "featured": true
+    },
+    {
+      "id": "jos-26010048",
+      "track": "B",
+      "secondaryTracks": [
+        "E",
+        "D"
+      ],
+      "title": "Double CoFeB reference layers for optimized PMA and BEOL compatibility of SOT-MRAM",
+      "titleZh": "双CoFeB参考层：以CoFeB/W界面和扩散阻挡实现400 °C后137% TMR",
+      "authors": "Yuxuan Yao, Siyuan Cheng, Shiyang Lu, Danrong Xiong, Jianing Liang, Wenwen Wang, Xiantao Shang, Kaihua Cao, Daoqian Zhu, Hongxi Liu, Weisheng Zhao",
+      "venue": "Journal of Semiconductors, in press (2026)",
+      "published": "2026-05-21",
+      "recommendedOn": "2026-09-02",
+      "timeTier": "近期正式录用并在线",
+      "system": "用于top-pinned SOT-MRAM的PMA MTJ；比较单CoFeB参考层与双CoFeB参考层（DCFB），后者新增一层CoFeB及两个CoFeB/W界面，并与上方Pt/Co多层耦合。公开HTML未列完整底电极、MgO、自由层和帽层厚度。",
+      "conditions": "PMOKE、CIPT、R–H/TMR、TEM与EDS；比较350/400 °C退火。器件直径10 μm；示例下CoFeB厚1.1 nm，RA为50或150 Ω·μm²。",
+      "methods": [
+        "用PMOKE比较单/双CoFeB参考层PMA与RKKY交换场",
+        "用CIPT筛选RA与下CoFeB厚度",
+        "在350/400 °C后做TEM/EDS检查结晶与Pt–Fe互扩散",
+        "制备10 μm MTJ并测TMR/R–H/SOT开关"
+      ],
+      "summary": "1.1 nm下CoFeB、RA 50 Ω·μm²时交换场约120 mT；400 °C后降至约50 mT，但MTJ仍有137% TMR。作者归因于新增CoFeB/W界面增强PMA、促进Pt/Co结晶并抑制Pt–Fe互扩散。",
+      "relevance": "本日最高优先级：把原子层界面数、B/Pt/Fe扩散、400 °C热预算、RA、TMR与器件开关放在同一条可制造链路中。",
+      "limitation": "10 μm器件不是先进节点；公开HTML图注未给Jc数值、脉宽、WER、保持、耐久、晶圆尺寸、片内3σ、良率和多批次统计。137% TMR不能等价为阵列量产。",
+      "industrialization": "最接近BEOL兼容的堆栈模块；已有400 °C与器件级TMR，但仍缺≤50 nm缩放、300 mm均匀性、WER尾部、10年保持、>10¹²次耐久、图形化损伤和CMOS阵列验证。",
+      "whyRecommended": "先看图1/2的SCFB—DCFB堆栈与PMA，再看图3的RA/120 mT，重点看图4/5的TEM-EDS和400 °C后137% TMR；55–75分钟。",
+      "score": 10,
+      "priority": "S",
+      "doi": "10.1088/1674-4926/26010048",
+      "url": "https://www.jos.ac.cn/en/article/doi/10.1088/1674-4926/26010048?viewType=HTML",
+      "backupUrl": "https://doi.org/10.1088/1674-4926/26010048",
+      "accessNote": "已打开期刊正式HTML，核验作者、在线日期、10 μm、50/150 Ω·μm²、1.1 nm、120/50 mT、350/400 °C、137% TMR及TEM/EDS。",
+      "featured": true
+    },
+    {
+      "id": "jap-132-213904",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Effect of interfacial nitrogen defects on tunnel magnetoresistance in an Fe/MgO/Fe magnetic tunnel junction",
+      "titleZh": "MgO/Fe界面氮缺陷的第一性原理输运：反平行态寄生通道如何拉低TMR",
+      "authors": "Yutaro Ogawa, Masaaki Araidai, Tetsuo Endoh, Kenji Shiraishi",
+      "venue": "Journal of Applied Physics 132, 213904 (2022)",
+      "published": "2022-12-02",
+      "recommendedOn": "2026-09-02",
+      "timeTier": "近四年高相关正式理论论文",
+      "system": "外延Fe/MgO/Fe MTJ的理想界面与含N缺陷界面模型；N被假设来自抗氧化SiN覆盖层。出版社公开摘要未给MgO层数、横向超胞、缺陷浓度和k点网格。",
+      "conditions": "第一性原理电子结构结合量子输运，比较平行/反平行磁化电导与TMR；无实验温度、器件尺寸、RA、WER或可靠性数据。",
+      "methods": [
+        "构建无缺陷Fe/MgO/Fe基线",
+        "在MgO/Fe界面引入额外N原子",
+        "计算自旋分辨透射与P/AP电导",
+        "比较寄生通道与TMR变化"
+      ],
+      "summary": "界面N显著恶化TMR；在MgO/Fe界面增加N时，反平行磁化构型出现额外导电通道。作者据此强调制造中必须阻止来自SiN覆盖/钝化的氮污染。",
+      "relevance": "直接把侧墙钝化、刻蚀后封装和界面化学与读窗连接；非常适合指导“SiN工艺前后—截面成分—RA/TMR/噪声”联合DOE。",
+      "limitation": "结论为理想Fe/MgO/Fe模型的理论预测；公开摘要无缺陷浓度和TMR数值，且现代器件是CoFeB/MgO、多晶、含B/O空位和边缘损伤，不能直接外推绝对降幅。",
+      "industrialization": "处于污染物筛选与机理模型环节；尚缺真实CoFeB/MgO侧壁、SIMS/EELS定量、全片污染图、尺寸缩放、TMR/RA/噪声/WER统计及钝化替代方案。",
+      "whyRecommended": "先看缺陷位置模型，再看P/AP透射谱和反平行寄生通道；最后列出SiN钝化污染DOE；35–50分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0126570",
+      "url": "https://pubs.aip.org/aip/jap/article/132/21/213904/2837823/Effect-of-interfacial-nitrogen-defects-on-tunnel",
+      "backupUrl": "https://doi.org/10.1063/5.0126570",
+      "accessNote": "已打开AIP正式页，核验作者、日期、DOI、第一性原理量子输运、SiN来源假设和AP寄生通道结论；无公开TMR数值。",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-093902",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Development of an integrated cryogenic diamond anvil cell for photoluminescence of CrSBr",
+      "titleZh": "集成低温金刚石压砧光谱平台：液氮/液氦、红宝石标压与CrSBr高压发光",
+      "authors": "Luther J. Langston, Jacob Hause, Carla Boix-Constant, Samuel Mañas-Valero, Eugenio Coronado, Janice L. Musfeldt",
+      "venue": "Review of Scientific Instruments 97, 093902 (2026)",
+      "published": "2026-09-01",
+      "recommendedOn": "2026-09-02",
+      "timeTier": "昨日正式发表",
+      "system": "用常见低温硬件构造可装载DAC的低温适配器，保留光学通道；以CrSBr光致发光验证并用红宝石荧光标压。",
+      "conditions": "支持液氮或液氦低温运行，单次典型耗液4–5 L；CrSBr在接近7.6 GPa压力诱导转变时发光强烈淬灭。公开摘要未给最低样品温度、温稳、最高压力、光斑、冷却时间和振动。",
+      "methods": [
+        "机械/热设计低温DAC适配器",
+        "以液氮或液氦冷却并稳定样品",
+        "红宝石荧光原位标压",
+        "采集压缩/卸压CrSBr宽发光带并检验可逆性"
+      ],
+      "summary": "平台用通用部件实现低温—高压—光谱联合；CrSBr在约7.6 GPa附近发光淬灭，压缩/卸压出现可逆红/蓝移；作者解释压缩削弱激子—声子耦合。",
+      "relevance": "可迁移为极端条件器件平台的“机械热接口—原位标定—样品信号”模板；对MTJ更现实的用途是压力/应力—磁光/电输运关联，而非直接照搬CrSBr物理。",
+      "limitation": "演示是光致发光而非低噪声电输运；公开来源没有温度下限/稳定度、压力精度、振动、电引线、磁场兼容和自动化数据。",
+      "industrialization": "属于研发平台原型；还缺FAT/SAT、温度/压力GR&R、24–72 h漂移、引线热漏、电噪声、磁场兼容、安全联锁、样品更换节拍与多实验室复现。",
+      "whyRecommended": "先看适配器剖面与热锚，再看红宝石标压，最后看7.6 GPa附近PL与可逆回线；30–45分钟。",
+      "score": 8.9,
+      "priority": "A",
+      "doi": "10.1063/5.0337421",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/9/093902/3403415/Development-of-an-integrated-cryogenic-diamond",
+      "backupUrl": "https://doi.org/10.1063/5.0337421",
+      "accessNote": "已打开RSI正式页，核验Research Article、作者、2026-09-01、DOI、液氮/液氦、红宝石标压、7.6 GPa与4–5 L/run。",
+      "featured": true
+    },
+    {
+      "id": "jva-44-053207",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Temperature-dependent reaction pathways of fluorination and nitridation in native Nb oxide under NF3/H-radical exposure",
+      "titleZh": "Nb原生氧化层的25–250 °C温控氟化—氮化：超导表面的反应窗口与失选边界",
+      "authors": "Daisuke Ohori, Yamato Aoyama, Yuichi Fujita, Yoshiro Urade, Go Fujii, Kunihiro Inomata, Kazuhiko Endo",
+      "venue": "Journal of Vacuum Science & Technology A 44, 053207 (2026)",
+      "published": "2026-07-30",
+      "recommendedOn": "2026-09-02",
+      "timeTier": "近两月正式发表·Editor’s Pick",
+      "system": "空气暴露Nb表面的Nb2O5/NbOx原生氧化层；暴露于NF3与H自由基并用XPS分辨Nb–O/F/N化学态。",
+      "conditions": "25–250 °C温度扫描。25 °C形成NbF5和类NH4F物种；100–150 °C稳定NbO2F并发生F介导氮化；200 °C转为直接Nb–O氮化；250 °C氮化深入Nb金属。公开页面未给流量、压力、时间、去除速率和面内均匀性。",
+      "methods": [
+        "让Nb形成可重复原生氧化层",
+        "在25/100–150/200/250 °C暴露NF3/H自由基",
+        "XPS拟合Nb/O/F/N化学态",
+        "按温度划分氟化、F介导氮化和直接氮化路径"
+      ],
+      "summary": "发现三个反应区间；250 °C时形成厚NbON并失去对氧化层的选择性。作者把该窗口与超导量子电路中会引入双能级系统的Nb亚氧化物控制联系起来。",
+      "relevance": "原子制造价值很高：用温度把表面化学从“选择性改性”推到“侵入基底”，可作为ALE/ALE-like配方开发的机制模板，也提示真空互联中必须控制空气暴露。",
+      "limitation": "XPS化学态不等于已证明表面TLS降低或量子比特寿命提升；未公开EPC、粗糙度、损伤深度、均匀性、器件电学和低温相干数据。",
+      "industrialization": "处于表面反应窗口与失选边界；还缺自限饱和曲线、300 mm均匀性、颗粒/腔体记忆、吞吐、原位端点、粗糙度、超导Tc/RRR/TLS/Q和器件良率。",
+      "whyRecommended": "先看XPS分峰和温度相图，重点比较100–150与200/250 °C机制切换，最后看对TLS的证据边界；45–60分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1116/6.0005517",
+      "url": "https://pubs.aip.org/avs/jva/article/44/5/053207/3399677/Temperature-dependent-reaction-pathways-of",
+      "backupUrl": "https://doi.org/10.1116/6.0005517",
+      "accessNote": "已打开JVST A正式HTML/PDF入口，核验Editor’s Pick、作者、日期、DOI、25–250 °C四段化学态与250 °C失选。",
       "featured": true
     }
   ]
