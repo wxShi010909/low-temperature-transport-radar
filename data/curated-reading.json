@@ -258,6 +258,13 @@
       "classicIds": [
         "classic-jap-117-043913"
       ]
+    },
+    {
+      "date": "2026-09-03",
+      "reviewId": "review-molecules-28104151",
+      "classicIds": [
+        "classic-nmat3172"
+      ]
     }
   ],
   "items": [
@@ -2383,6 +2390,59 @@
         "再看Ta厚度与PMA。",
         "重点比较0.2 nm、2 nm和约20%三个阈值。",
         "最后与DCFB的W界面/400 °C数据做DOE；35–50分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-molecules-28104151",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "D"
+      ],
+      "title": "Electromagnetic Radiation Effects on MgO-Based Magnetic Tunnel Junctions: A Review",
+      "titleZh": "MgO基MTJ电磁辐照效应正式综述：从材料容限到原位可靠性缺口",
+      "authors": "Dereje Seifu, Qing Peng, Kit Sze, Jie Hou, Fei Gao, Yucheng Lan",
+      "venue": "Molecules 28, 4151 (2023)",
+      "published": "2023-05-17",
+      "recommendedOn": "2026-09-03",
+      "doi": "10.3390/molecules28104151",
+      "url": "https://www.mdpi.com/1420-3049/28/10/4151",
+      "backupUrl": "https://doi.org/10.3390/molecules28104151",
+      "assistantSummary": "正式Review汇总宇宙辐射、γ射线、X射线、UV–vis、红外、微波与射频对MgO势垒、磁层和界面的影响，指出很多“耐辐照”结论来自辐照后测量，而非原位动态测试。",
+      "whySelected": "把今天3.5 fJ VCMA器件从性能点推进到可靠性验证：辐照、偏压、温度与热循环应分离设计，并区分辐照中与辐照后状态。",
+      "readingGuide": [
+        "先看辐射类型与能量耦合路径图。",
+        "重点读γ射线结果及相互矛盾报告。",
+        "标记原位与辐照后证据。",
+        "最后生成MTJ辐照×温度×偏压DOE；55–75分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-nmat3172",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "C"
+      ],
+      "title": "Induction of coherent magnetization switching in a few atomic layers of FeCo using voltage pulses",
+      "titleZh": "电压脉冲驱动数原子层FeCo相干翻转：VCMA双稳态切换的经典起点",
+      "authors": "Yoichi Shiota, Takayuki Nozaki, Frédéric Bonell, Shinichi Murakami, Teruya Shinjo, Yoshishige Suzuki",
+      "venue": "Nature Materials 11, 39–43 (2012)",
+      "published": "2011-11-13",
+      "recommendedOn": "2026-09-03",
+      "doi": "10.1038/nmat3172",
+      "url": "https://www.nature.com/articles/nmat3172",
+      "backupUrl": "https://doi.org/10.1038/nmat3172",
+      "assistantSummary": "FeCo(001)/MgO(001)/Fe(001)纳米结用电压脉冲改变界面各向异性，演示相干进动与双稳态toggle切换；理想等效电路估算单次能耗约10^4 kBT、约为自旋电流写入的1/500。",
+      "whySelected": "与2026年远程Ir/3.5 fJ工作成对阅读：经典文给VCMA相干进动原理，新文回答如何在400 °C后同时保住TMR。",
+      "readingGuide": [
+        "先看图1的FeCo/MgO结构和电压各向异性。",
+        "再看图2宏自旋相图。",
+        "重点看图3/4脉冲时长—场—切换概率。",
+        "最后比较3.5 fJ与经典理想估算的定义；35–50分钟。"
       ],
       "notNew": true
     }

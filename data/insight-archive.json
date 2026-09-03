@@ -440,6 +440,18 @@
       "atomicIds": [
         "2026-09-02-nb-surface-window"
       ]
+    },
+    {
+      "date": "2026-09-03",
+      "opportunityIds": [
+        "2026-09-03-ir-diffusion-vcma-doe"
+      ],
+      "methodIds": [
+        "2026-09-03-cfms-mtj-fat"
+      ],
+      "atomicIds": [
+        "2026-09-03-low-damage-patterning"
+      ]
     }
   ],
   "items": [
@@ -6586,6 +6598,162 @@
       ],
       "researchConnection": "连接原子级表面、真空互联、超导低温输运与可靠性。",
       "takeaway": "化学态优化只有经过低温器件指标验证才成立。"
+    },
+    {
+      "id": "2026-09-03-ir-diffusion-vcma-doe",
+      "date": "2026-09-03",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/E · VCMA与原子扩散",
+      "title": "远程Ir“位置—扩散—界面—读写”四联DOE",
+      "subtitle": "把3.5 fJ与160% TMR从单点拆成可制造工艺窗。",
+      "summary": "Ir名义厚度和距MgO距离，与退火热剂量共同决定界面浓度、VCMA、TMR和WER。",
+      "status": "本站组合推断，待实验",
+      "relatedPaperIds": [
+        "sciadv-aef6328",
+        "pra-26-014108",
+        "classic-nmat3172"
+      ],
+      "question": "增强VCMA所需的Ir浓度窗有多宽，400 °C后能否保持ppm级WER和10年保持？",
+      "rationale": "新文给器件性能，模型文给快速搜索，经典文给相干进动窗口。",
+      "workflow": [
+        "无Ir/界面Ir/远程Ir厚度与距离矩阵",
+        "350/400 °C时间分级",
+        "STEM-EELS/SIMS定量Ir/B/O",
+        "TMR/RA/VCMA/脉宽—WER联合测量",
+        "把实测散布反馈给贝叶斯模型"
+      ],
+      "equipment": [
+        "多靶原子级溅射",
+        "场退火",
+        "STEM-EELS/ToF-SIMS",
+        "高速脉冲与概率测试"
+      ],
+      "measurements": [
+        "Ir/B/O深度",
+        "TMR/RA",
+        "VCMA系数",
+        "WER—脉宽",
+        "Δ与耐久"
+      ],
+      "metrics": [
+        "片内3σ/Cpk",
+        "3.5 fJ复现率",
+        "160% TMR保持率",
+        "ppm WER尾部"
+      ],
+      "evidenceBoundary": "3.5 fJ、160%、400 °C为论文器件结果；阵列和300 mm尚未公开。",
+      "firstSteps": [
+        "先做见证片浓度标定",
+        "再做无Ir/直接Ir/远程Ir三组",
+        "最后进入纳米器件"
+      ],
+      "researchConnection": "直接服务MgO/CoFeB原子级界面与低功耗存储。",
+      "takeaway": "不以掺杂名义厚度替代退火后的真实界面浓度。"
+    },
+    {
+      "id": "2026-09-03-cfms-mtj-fat",
+      "date": "2026-09-03",
+      "type": "method",
+      "typeZh": "设备与测量平台",
+      "trackLabel": "A/D · CFMS验收",
+      "title": "±18 T CFMS到MTJ低噪声输运的FAT/SAT路线",
+      "subtitle": "用标准件把温度、磁场、换线、角度与噪声逐项验收。",
+      "summary": "厂商标称只有转成量化验收结果，才能支撑MTJ机制判断。",
+      "status": "基于厂商资料的本站验收方案",
+      "relatedPaperIds": [
+        "vendor-cryogenic-cfms-18t",
+        "prb-114-154402"
+      ],
+      "question": "双阶跃或小Hall信号是真磁相还是换线、热电势和场扫伪影？",
+      "rationale": "FGT论文显示低温磁输运阶跃敏感，CFMS页面提供多样/换线/角度硬件。",
+      "workflow": [
+        "开短路和标准电阻噪声基线",
+        "Hall标准片场线性与回差",
+        "双样/五样串扰和换线测试",
+        "角度回零与温漂",
+        "MTJ R-H/TMR/1/f噪声脚本化"
+      ],
+      "equipment": [
+        "CFMS",
+        "2182纳伏表",
+        "2450源表",
+        "标准电阻/Hall片",
+        "低噪声前放/锁相"
+      ],
+      "measurements": [
+        "T/H稳定度",
+        "热电势",
+        "μΩ分辨",
+        "串扰",
+        "角度误差",
+        "重复装样GR&R"
+      ],
+      "metrics": [
+        "nV/√Hz",
+        "ppm/K",
+        "场回差",
+        "跨日CV",
+        "脚本恢复率"
+      ],
+      "evidenceBoundary": "系统规格为厂商标称；电子温度和噪声底必须现场测。",
+      "firstSteps": [
+        "写FAT/SAT表",
+        "准备三类标准件",
+        "先验1.6–300 K再考虑mK扩展"
+      ],
+      "researchConnection": "支撑低温MTJ、Hall和可靠性自动化平台。",
+      "takeaway": "最低温不是第一验收指标，噪声、热化和复现性才是。"
+    },
+    {
+      "id": "2026-09-03-low-damage-patterning",
+      "date": "2026-09-03",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 低损伤图形化",
+      "title": "用“无等离子体对照”量化MTJ侧墙离子损伤",
+      "subtitle": "借AlGaN均匀性结果设计低能IBE/RIBE/后处理对照。",
+      "summary": "把刻蚀性能拆成CD、残留、成分、接触与器件离散，而非只看去除速率。",
+      "status": "跨材料方法迁移，待MTJ验证",
+      "relatedPaperIds": [
+        "jva-44-053204",
+        "sciadv-aef6328"
+      ],
+      "question": "MTJ图形化离散中，有多少来自离子损伤而非堆栈本征散布？",
+      "rationale": "hν-MacEtch在保持接触电阻时把均匀性从>15%降至<5%，给出强对照思路。",
+      "workflow": [
+        "常规IBE、低能IBE、反应离子束/温和后处理分组",
+        "相同硬掩膜与CD",
+        "截面EELS/XPS侧墙成分",
+        "TMR/RA/噪声/击穿/循环统计"
+      ],
+      "equipment": [
+        "IBE/RIBE",
+        "截面TEM-EELS",
+        "XPS/ToF-SIMS",
+        "自动探针台"
+      ],
+      "measurements": [
+        "侧墙损伤深度",
+        "CD/粗糙",
+        "TMR/RA",
+        "1/f噪声",
+        "击穿与WER"
+      ],
+      "metrics": [
+        "器件CV",
+        "边缘损伤nm",
+        "良率/Cpk",
+        "可靠性尾部"
+      ],
+      "evidenceBoundary": "<5%与>15%来自AlGaN接触，不是MTJ直接证据。",
+      "firstSteps": [
+        "先在非磁见证结构标定损伤",
+        "再用大尺寸MTJ筛选",
+        "最后进入50 nm以下"
+      ],
+      "researchConnection": "直接连接图形化损伤、接触和量产离散。",
+      "takeaway": "先建立低损伤对照，才能把器件离散归因给界面或刻蚀。"
     }
   ]
 }
