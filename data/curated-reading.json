@@ -265,6 +265,13 @@
       "classicIds": [
         "classic-nmat3172"
       ]
+    },
+    {
+      "date": "2026-09-07",
+      "reviewId": "review-admt-202500133",
+      "classicIds": [
+        "classic-apl-86-092502"
+      ]
     }
   ],
   "items": [
@@ -2443,6 +2450,58 @@
         "再看图2宏自旋相图。",
         "重点看图3/4脉冲时长—场—切换概率。",
         "最后比较3.5 fJ与经典理想估算的定义；35–50分钟。"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-admt-202500133",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "E"
+      ],
+      "title": "A Review on Novel Low-Dimensional Materials based Magnetic Tunnel Junctions: Opportunities, Challenges, and Applications",
+      "titleZh": "低维材料MTJ正式综述：原子界面机会与规模化边界",
+      "authors": "Abinash Thapa, Bikash Sharma",
+      "venue": "Advanced Materials Technologies 10, e00133 (2025)",
+      "published": "2025-05-19",
+      "recommendedOn": "2026-09-07",
+      "doi": "10.1002/admt.202500133",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admt.202500133",
+      "backupUrl": "https://doi.org/10.1002/admt.202500133",
+      "assistantSummary": "正式Review比较TMD、石墨烯、h-BN、MgO、BNNT、CrI3、Fe3GeTe2等作为MTJ电极/势垒；本期只提取可迁移的界面、缺陷、掺杂、应变和接触方法。",
+      "whySelected": "用低维体系作原子界面的极限对照，反向审视CoFeB/MgO的缺陷、晶格/自旋匹配和规模化缺口。",
+      "readingGuide": [
+        "先看材料—角色分类",
+        "重点读缺陷/应变/接触",
+        "理论与实测分栏",
+        "只摘可迁移方法；60–75分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "classic-apl-86-092502",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "230% room-temperature magnetoresistance in CoFeB/MgO/CoFeB magnetic tunnel junctions",
+      "titleZh": "CoFeB/MgO经典起点：室温230%、20 K 294%磁阻",
+      "authors": "D. D. Djayaprawira et al.",
+      "venue": "Applied Physics Letters 86, 092502 (2005)",
+      "published": "2005-02-28",
+      "recommendedOn": "2026-09-07",
+      "doi": "10.1063/1.1871344",
+      "url": "https://pubs.aip.org/aip/apl/article/86/9/092502/328725/230-room-temperature-magnetoresistance-in-CoFeB",
+      "backupUrl": "https://doi.org/10.1063/1.1871344",
+      "assistantSummary": "热氧化Si上的非晶CoFeB/MgO/CoFeB自旋阀MTJ实现室温230%、20 K 294%磁阻；MgO呈(001)纤维织构。",
+      "whySelected": "为今天的新材料SOT和低温输运提供MgO读出与温度依赖基准。",
+      "readingGuide": [
+        "看堆栈",
+        "核对230%/294%",
+        "看MgO(001)证据",
+        "列出现代可靠性缺口；30–40分钟"
       ],
       "notNew": true
     }

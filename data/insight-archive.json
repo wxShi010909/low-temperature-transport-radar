@@ -452,6 +452,18 @@
       "atomicIds": [
         "2026-09-03-low-damage-patterning"
       ]
+    },
+    {
+      "date": "2026-09-07",
+      "opportunityIds": [
+        "2026-09-07-interface-transport-loop"
+      ],
+      "methodIds": [
+        "2026-09-07-cryoraman-acceptance"
+      ],
+      "atomicIds": [
+        "2026-09-07-ale-digital-twin"
+      ]
     }
   ],
   "items": [
@@ -6754,6 +6766,157 @@
       ],
       "researchConnection": "直接连接图形化损伤、接触和量产离散。",
       "takeaway": "先建立低损伤对照，才能把器件离散归因给界面或刻蚀。"
+    },
+    {
+      "id": "2026-09-07-interface-transport-loop",
+      "date": "2026-09-07",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C/E · 界面—输运闭环",
+      "title": "用低温输运反演原子界面与刻蚀残留",
+      "subtitle": "把Tc/Hc2、TMR/RA和过程信号放入同一DOE。",
+      "summary": "贯通原位过程、结构、低温输运和可靠性。",
+      "status": "可立即开展",
+      "relatedPaperIds": [
+        "prmat-10-094801",
+        "jva-44-022602",
+        "jva-44-053003"
+      ],
+      "question": "界面/残留对低温与器件离散贡献能否分离？",
+      "rationale": "相干尺度、ALE模型与QMS过程信号可互补。",
+      "workflow": [
+        "离子能×剂量DOE",
+        "QMS+XPS",
+        "2–300 K输运/噪声",
+        "过程—界面—器件回归"
+      ],
+      "equipment": [
+        "ALE/RIBE/IBE",
+        "QMS",
+        "XPS/SIMS/TEM",
+        "低温输运"
+      ],
+      "measurements": [
+        "EPC",
+        "残留",
+        "TMR/RA或Tc/Hc2",
+        "噪声",
+        "失效率"
+      ],
+      "metrics": [
+        "片内CV",
+        "批间漂移",
+        "模型残差",
+        "失效率"
+      ],
+      "evidenceBoundary": "跨材料迁移，尚非同材料实证。",
+      "firstSteps": [
+        "见证片QMS",
+        "无离子/连续刻蚀对照",
+        "预注册指标"
+      ],
+      "researchConnection": "连接原子制造、低温输运和工艺反馈。",
+      "takeaway": "过程化学与低温电学同坐标才可闭环。"
+    },
+    {
+      "id": "2026-09-07-cryoraman-acceptance",
+      "date": "2026-09-07",
+      "type": "method",
+      "typeZh": "设备与方法",
+      "trackLabel": "D · 多场验收",
+      "title": "把cryoRaman规格改写成FAT/SAT验收表",
+      "subtitle": "1.8–300 K与12 T不是可复现性的充分条件。",
+      "summary": "验收温稳、振动、光热、复位和同步。",
+      "status": "采购/升级前设计",
+      "relatedPaperIds": [
+        "oxford-cryoraman",
+        "prmat-10-094801"
+      ],
+      "question": "扫场和长扫下能否复现同一点？",
+      "rationale": "厂商范围清楚，噪声与重复性数字缺失。",
+      "workflow": [
+        "标准样温循",
+        "功率扫描",
+        "扫场漂移",
+        "12 h复测"
+      ],
+      "equipment": [
+        "cryoRaman",
+        "加速度计",
+        "标准样",
+        "同步采集"
+      ],
+      "measurements": [
+        "温稳",
+        "振动PSD",
+        "峰位漂移",
+        "复位",
+        "SNR"
+      ],
+      "metrics": [
+        "GR&R",
+        "小时漂移",
+        "滞回",
+        "脉管差异"
+      ],
+      "evidenceBoundary": "厂商规格已核验，阈值需用户定义。",
+      "firstSteps": [
+        "索取振动谱",
+        "规定交付样/脚本",
+        "要求原始数据/API"
+      ],
+      "researchConnection": "服务低温界面表征。",
+      "takeaway": "可达温场不等于测量链可复现。"
+    },
+    {
+      "id": "2026-09-07-ale-digital-twin",
+      "date": "2026-09-07",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "C/E · ALE数字孪生",
+      "title": "用PDE—QMS—XPS三层校准ALE数字孪生",
+      "subtitle": "先Si/SiNx闭环，再迁移MTJ侧墙。",
+      "summary": "模型预测、QMS在线、XPS/SIMS给深度真值。",
+      "status": "方法验证",
+      "relatedPaperIds": [
+        "jva-44-022602",
+        "jva-44-053003"
+      ],
+      "question": "能否预测终点、EPC与损伤？",
+      "rationale": "模型与QMS/XPS互补。",
+      "workflow": [
+        "45/70/80 eV点",
+        "同步QMS",
+        "1/4/8周期深度剖面",
+        "反演并盲测"
+      ],
+      "equipment": [
+        "ALE/ICP-RIE",
+        "差分QMS",
+        "XPS/SIMS",
+        "AFM"
+      ],
+      "measurements": [
+        "EPC",
+        "协同度",
+        "产物",
+        "残留",
+        "粗糙度"
+      ],
+      "metrics": [
+        "盲测误差",
+        "参数稳定",
+        "批次复现",
+        "吞吐"
+      ],
+      "evidenceBoundary": "两论文化学体系不同。",
+      "firstSteps": [
+        "统一时间戳",
+        "空白/标准气",
+        "验证积分守恒"
+      ],
+      "researchConnection": "服务ALE和MTJ侧墙损伤。",
+      "takeaway": "数字孪生须有在线信号和离线真值。"
     }
   ]
 }

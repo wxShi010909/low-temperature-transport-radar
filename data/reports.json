@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-03T09:00:00+08:00",
-  "reportDate": "2026-09-03",
+  "updatedAt": "2026-09-07T12:00:00+08:00",
+  "reportDate": "2026-09-07",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期不等于发表日期",
   "history": [
     {
@@ -736,6 +736,25 @@
         "pra-26-014108",
         "vendor-cryogenic-cfms-18t",
         "jva-44-053204"
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "label": "详细日报：PtSb低温相干—自生SOT—ALE数字孪生—低温Raman—原位产物",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "prmat-10-094801",
+        "prb-114-l140401",
+        "jva-44-022602",
+        "oxford-cryoraman",
+        "jva-44-053003"
       ]
     }
   ],
@@ -8072,6 +8091,180 @@
       "url": "https://pubs.aip.org/avs/jva/article/44/5/053204/3399122/h-MacEtch-of-Al-rich-AlGaN-Enabling-plasma-free",
       "backupUrl": "https://doi.org/10.1116/6.0005575",
       "accessNote": "已打开JVST A正式HTML，核验Research Article、作者、2026-07-22、DOI、Al0.6Ga0.4N、HF/(NH4)2S2O8、接触电阻相当及<5%对>15%均匀性。",
+      "featured": true
+    },
+    {
+      "id": "prmat-10-094801",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Superconductivity in epitaxial PtSb(0001) thin films",
+      "titleZh": "外延PtSb(0001)薄膜超导：0.5 K下Jc约6×10⁴ A/cm²与各向异性相干长度",
+      "authors": "C. Müller, S. P. Bommanaboyena, A. Badura, T. Uchimura, F. Husstedt, B. V. Schwarze, S. Banerjee, M. Ledinský, J. Michalicka et al.",
+      "venue": "Physical Review Materials 10, 094801 (2026)",
+      "published": "2026-09-04",
+      "timeTier": "本周正式发表",
+      "system": "SrF2(111)衬底上的外延PtSb(0001)薄膜；代表性厚度d=50 nm。电阻—温度、平行/垂直磁场上临界场及I–V测试，并用各向异性Ginzburg–Landau框架拟合。",
+      "conditions": "Tc=1.72 K；50 nm薄膜ξab≈56 nm、ξc≈14 nm；0.5 K下Jc≈6×10^4 A/cm²。生长温度、完整厚度系列、RRR和晶圆均匀性在公开摘要未公开。",
+      "methods": [
+        "在SrF2(111)上外延生长PtSb(0001)",
+        "低温四探针R–T确认超导转变",
+        "平行/垂直磁场提取Hc2(T)",
+        "I–V提取0.5 K临界电流密度"
+      ],
+      "summary": "PtSb外延薄膜在1.72 K进入II型超导；50 nm样品ξab≈56 nm、ξc≈14 nm，0.5 K下Jc≈6×10^4 A/cm²。",
+      "relevance": "直接服务低温输运和外延界面质量评价；相干长度与厚度同量级，可把界面散射、应变和厚度波动转成Hc2各向异性。",
+      "limitation": "非MTJ/MRAM；未给纳米器件、接触、循环、晶圆均匀性和BEOL兼容数据。",
+      "industrialization": "处于外延异质材料验证；缺大面积片内Tc/Jc/Hc2、批次复现、图形化、热循环和封装。",
+      "whyRecommended": "先看R–T与Hc2，再看50 nm样品GL拟合和I–V；35–50分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1103/zjt7-88m9",
+      "url": "https://journals.aps.org/prmaterials/abstract/10.1103/zjt7-88m9",
+      "backupUrl": "https://doi.org/10.1103/zjt7-88m9",
+      "accessNote": "已打开APS正式页面，核验题目、作者、2026-09-04、DOI、Tc、厚度、相干长度和Jc。",
+      "recommendedOn": "2026-09-07",
+      "featured": true
+    },
+    {
+      "id": "prb-114-l140401",
+      "track": "B",
+      "secondaryTracks": [
+        "C"
+      ],
+      "title": "Self-induced spin-orbit torque switching in a synthetic antiferromagnetic Co2MnGa/MnGa bilayer",
+      "titleZh": "Co₂MnGa/MnGa合成反铁磁自生SOT翻转：去除独立重金属自旋源",
+      "authors": "Rongkun Han, Haohang Cheng, Dahai Wei, Yuan Lu, Jianhua Zhao",
+      "venue": "Physical Review B 114, L140401 (2026)",
+      "published": "2026-09-02",
+      "timeTier": "本周正式发表",
+      "system": "Co2MnGa(CMG)/MnGa合成反铁磁双层；CMG同时作为磁层和内禀自旋流源，无独立重金属层。",
+      "conditions": "公开摘要确认SOT翻转与宏自旋模拟；层厚、器件尺寸、电流密度、脉宽、温度、磁场、WER、保持和耐久均未公开。",
+      "methods": [
+        "制备CMG/MnGa双层器件",
+        "电流脉冲/输运读出翻转",
+        "检查SOT对称性",
+        "宏自旋模拟检验自生翻转链路"
+      ],
+      "summary": "CMG产生SOT先切换MnGa，再由反铁磁交换带动CMG反转，实现无独立重金属层的自生SOT翻转。",
+      "relevance": "为SOT-MRAM堆栈减层提供方向；需检验与MgO读出、热预算和纳米尺寸的兼容性。",
+      "limitation": "是双层翻转与模型，不是完整MTJ/阵列；关键Jc、脉宽、WER和Δ未公开。",
+      "industrialization": "最接近SOT写入材料单元；缺MgO读出、场自由、BEOL退火、能耗、阵列扰动、保持和耐久。",
+      "whyRecommended": "先看结构和翻转回线，再看宏自旋因果链；30–45分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1103/byz8-31yp",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/byz8-31yp",
+      "backupUrl": "https://doi.org/10.1103/byz8-31yp",
+      "accessNote": "已打开APS正式页面，核验Letter、作者、2026-09-02、DOI和机制；未公开数字未补写。",
+      "recommendedOn": "2026-09-07",
+      "featured": true
+    },
+    {
+      "id": "jva-44-022602",
+      "track": "C",
+      "secondaryTracks": [
+        "E"
+      ],
+      "title": "Diffusion-reaction modeling of atomic layer etching",
+      "titleZh": "Si原子层刻蚀扩散—反应模型：从MD标定到多循环Cl亚表面累积",
+      "authors": "Jaehong Kwon, Joseph R. Vella, David B. Graves",
+      "venue": "Journal of Vacuum Science & Technology A 44, 022602 (2026)",
+      "published": "2026-01-09",
+      "timeTier": "近一年正式发表",
+      "system": "Si表面Cl2氯化/Ar+轰击ALE；PDE连续模型解析近表面非晶混合层的Cl浓度梯度，参数由MD标定。",
+      "conditions": "比较45、80、215 eV产物分布；70 eV示例比较第1、4、8周期Cl深度剖面；不解析粗糙度和局域涨落。",
+      "methods": [
+        "用MD生成参考数据",
+        "建立一维扩散—反应PDE",
+        "验证45/80/215 eV产额",
+        "70 eV推进1/4/8周期"
+      ],
+      "summary": "PDE降阶模型复现MD的Cl耗尽、亚表面累积和刻蚀产物趋势；多循环显示残余Cl积累，但不解析粗糙度。",
+      "relevance": "可作为ALE数字孪生骨架，并迁移到MTJ侧墙反应离子束/低损伤清洗的参数化。",
+      "limitation": "Si/Cl2/Ar+模型而非独立实验；不可直接外推CoFeB/MgO，未含三维图形、充电、温升和设备漂移。",
+      "industrialization": "处于工艺模型阶段；缺实验交叉验证、晶圆尺度、传感闭环和对CD/良率的预测精度。",
+      "whyRecommended": "先看模型框架，再看45/80/215 eV产额和图5–6；45–60分钟。",
+      "score": 9.3,
+      "priority": "S",
+      "doi": "10.1116/6.0005041",
+      "url": "https://pubs.aip.org/avs/jva/article/44/2/022602/3377066/Diffusion-reaction-modeling-of-atomic-layer",
+      "backupUrl": "https://doi.org/10.1116/6.0005041",
+      "accessNote": "已打开JVST A正式全文，核验作者、日期、DOI、离子能和周期比较。",
+      "recommendedOn": "2026-09-07",
+      "featured": true
+    },
+    {
+      "id": "oxford-cryoraman",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "cryoRaman – Cryogenic Raman Imaging Microscope",
+      "titleZh": "Oxford Instruments/WITec cryoRaman：1.8–300 K、最高12 T低振动磁光平台（厂商技术资料）",
+      "authors": "Oxford Instruments WITec / attocube",
+      "venue": "厂商产品页与应用资料",
+      "published": "原文未公开（2026-09-07核查）",
+      "timeTier": "厂商技术资料",
+      "system": "witec360共焦Raman与attocube低振动闭循环恒温器、低温纳米位移台和磁体集成；支持VIS–NIR、偏振、Raman/PL。",
+      "conditions": "【厂商标称】1.8–300 K；最高12 T螺线管或矢量磁体；示例含120 K WSe2、2 K MoS2/WSe2。振动谱、温稳、光斑、噪声和价格未公开。",
+      "methods": [
+        "闭循环温度/磁场扫描",
+        "低温纳米位移复位",
+        "Raman/PL偏振成像",
+        "标准样做漂移与光热验收"
+      ],
+      "summary": "厂商集成1.8–300 K、最高12 T/矢量磁体和低温Raman成像；适合多场关联，但所有性能须用户验收。",
+      "relevance": "可把应力、结晶、氧化和界面相变化与低温输运同坐标关联。",
+      "limitation": "厂商资料不是独立科研证明；CoFeB/MgO灵敏度、振动、光热和MTJ接线兼容性需实测。",
+      "industrialization": "设备选型/失效分析阶段；缺FAT/SAT、GR&R、自动换样、晶圆mapping、数据接口和TCO。",
+      "whyRecommended": "先看规格，再把温稳、振动、场、复位和API转成验收表；20–30分钟。",
+      "score": 8.9,
+      "priority": "A",
+      "doi": "",
+      "url": "https://raman.oxinst.com/products/raman-microscopes/cryoraman",
+      "backupUrl": "https://www.oxinst.com/news/witec-and-attocube-launch-cryoraman/",
+      "accessNote": "已打开Oxford/WITec厂商页，核验1.8–300 K、最高12 T/矢量磁体、低振动闭循环及2 K示例。",
+      "vendorMaterial": true,
+      "recommendedOn": "2026-09-07",
+      "featured": true
+    },
+    {
+      "id": "jva-44-053003",
+      "track": "E",
+      "secondaryTracks": [
+        "C",
+        "D"
+      ],
+      "title": "Detection of silicon-containing etch products during SiNx etching in an HF plasma",
+      "titleZh": "HF等离子体SiNₓ刻蚀产物原位诊断：差分抽气QMS确认SiF₄主通道",
+      "authors": "S. Agarwal et al.",
+      "venue": "Journal of Vacuum Science & Technology A 44, 053003 (2026)",
+      "published": "2026-07-29",
+      "timeTier": "近六周正式发表",
+      "system": "HF等离子体刻蚀SiNx，衬底偏压−240 V；两级差分抽气QMS通过1 mm采样锥在距表面约3 mm处收集产物，腔压10 mTorr。",
+      "conditions": "1 mm孔、约3 mm、10 mTorr、−240 V；SiF4主产物，少量SiH2F2/SiHF3；H2O在m/z 16/17重叠使NH3无法确证。",
+      "methods": [
+        "两级差分抽气降低背景",
+        "近表面采样锥收集产物",
+        "HF等离子体/−240 V采谱",
+        "用裂解谱识别并标不确定性"
+      ],
+      "summary": "近表面QMS确认SiF4为主含Si产物；未知电离截面限制副产物定量，H2O背景限制NH3判别。",
+      "relevance": "把ALE/低损伤刻蚀从配方—结果升级为表面反应—产物—残留可观测流程，可迁移MTJ侧墙终点和污染诊断。",
+      "limitation": "SiNx/HF不同于CoFeB/MgO；−240 V高于许多低损伤窗口，未给器件、晶圆、颗粒或量产节拍。",
+      "industrialization": "最接近原位过程监控；缺跨工具标定、截面库、传输延迟、闭环FDC/SPC及晶圆缺陷相关性。",
+      "whyRecommended": "先看采样几何，再看SiF4与m/z 16/17边界；35–50分钟。",
+      "score": 9.4,
+      "priority": "S",
+      "doi": "10.1116/6.0005561",
+      "url": "https://pubs.aip.org/avs/jva/article/44/5/053003/3399619/Detection-of-silicon-containing-etch-products",
+      "backupUrl": "https://doi.org/10.1116/6.0005561",
+      "accessNote": "已打开JVST A正式全文，核验日期、DOI、偏压、孔径、距离、压力和产物。",
+      "recommendedOn": "2026-09-07",
       "featured": true
     }
   ]

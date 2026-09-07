@@ -1,56 +1,55 @@
 {
-  "date": "2026-09-03",
+  "date": "2026-09-07",
   "review": {
-    "id": "review-molecules-28104151",
+    "id": "review-admt-202500133",
     "kind": "每日综述",
     "track": "B",
     "secondaryTracks": [
-      "A",
-      "D"
+      "E"
     ],
-    "title": "Electromagnetic Radiation Effects on MgO-Based Magnetic Tunnel Junctions: A Review",
-    "titleZh": "MgO基MTJ电磁辐照效应正式综述：从材料容限到原位可靠性缺口",
-    "authors": "Dereje Seifu, Qing Peng, Kit Sze, Jie Hou, Fei Gao, Yucheng Lan",
-    "venue": "Molecules 28, 4151 (2023)",
-    "published": "2023-05-17",
-    "recommendedOn": "2026-09-03",
-    "doi": "10.3390/molecules28104151",
-    "url": "https://www.mdpi.com/1420-3049/28/10/4151",
-    "backupUrl": "https://doi.org/10.3390/molecules28104151",
-    "assistantSummary": "正式Review汇总宇宙辐射、γ射线、X射线、UV–vis、红外、微波与射频对MgO势垒、磁层和界面的影响，指出很多“耐辐照”结论来自辐照后测量，而非原位动态测试。",
-    "whySelected": "把今天3.5 fJ VCMA器件从性能点推进到可靠性验证：辐照、偏压、温度与热循环应分离设计，并区分辐照中与辐照后状态。",
+    "title": "A Review on Novel Low-Dimensional Materials based Magnetic Tunnel Junctions: Opportunities, Challenges, and Applications",
+    "titleZh": "低维材料MTJ正式综述：原子界面机会与规模化边界",
+    "authors": "Abinash Thapa, Bikash Sharma",
+    "venue": "Advanced Materials Technologies 10, e00133 (2025)",
+    "published": "2025-05-19",
+    "recommendedOn": "2026-09-07",
+    "doi": "10.1002/admt.202500133",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admt.202500133",
+    "backupUrl": "https://doi.org/10.1002/admt.202500133",
+    "assistantSummary": "正式Review比较TMD、石墨烯、h-BN、MgO、BNNT、CrI3、Fe3GeTe2等作为MTJ电极/势垒；本期只提取可迁移的界面、缺陷、掺杂、应变和接触方法。",
+    "whySelected": "用低维体系作原子界面的极限对照，反向审视CoFeB/MgO的缺陷、晶格/自旋匹配和规模化缺口。",
     "readingGuide": [
-      "先看辐射类型与能量耦合路径图。",
-      "重点读γ射线结果及相互矛盾报告。",
-      "标记原位与辐照后证据。",
-      "最后生成MTJ辐照×温度×偏压DOE；55–75分钟。"
+      "先看材料—角色分类",
+      "重点读缺陷/应变/接触",
+      "理论与实测分栏",
+      "只摘可迁移方法；60–75分钟"
     ],
     "notNew": true
   },
   "classics": [
     {
-      "id": "classic-nmat3172",
+      "id": "classic-apl-86-092502",
       "kind": "经典文章",
       "track": "B",
       "secondaryTracks": [
-        "C"
+        "A"
       ],
-      "title": "Induction of coherent magnetization switching in a few atomic layers of FeCo using voltage pulses",
-      "titleZh": "电压脉冲驱动数原子层FeCo相干翻转：VCMA双稳态切换的经典起点",
-      "authors": "Yoichi Shiota, Takayuki Nozaki, Frédéric Bonell, Shinichi Murakami, Teruya Shinjo, Yoshishige Suzuki",
-      "venue": "Nature Materials 11, 39–43 (2012)",
-      "published": "2011-11-13",
-      "recommendedOn": "2026-09-03",
-      "doi": "10.1038/nmat3172",
-      "url": "https://www.nature.com/articles/nmat3172",
-      "backupUrl": "https://doi.org/10.1038/nmat3172",
-      "assistantSummary": "FeCo(001)/MgO(001)/Fe(001)纳米结用电压脉冲改变界面各向异性，演示相干进动与双稳态toggle切换；理想等效电路估算单次能耗约10^4 kBT、约为自旋电流写入的1/500。",
-      "whySelected": "与2026年远程Ir/3.5 fJ工作成对阅读：经典文给VCMA相干进动原理，新文回答如何在400 °C后同时保住TMR。",
+      "title": "230% room-temperature magnetoresistance in CoFeB/MgO/CoFeB magnetic tunnel junctions",
+      "titleZh": "CoFeB/MgO经典起点：室温230%、20 K 294%磁阻",
+      "authors": "D. D. Djayaprawira et al.",
+      "venue": "Applied Physics Letters 86, 092502 (2005)",
+      "published": "2005-02-28",
+      "recommendedOn": "2026-09-07",
+      "doi": "10.1063/1.1871344",
+      "url": "https://pubs.aip.org/aip/apl/article/86/9/092502/328725/230-room-temperature-magnetoresistance-in-CoFeB",
+      "backupUrl": "https://doi.org/10.1063/1.1871344",
+      "assistantSummary": "热氧化Si上的非晶CoFeB/MgO/CoFeB自旋阀MTJ实现室温230%、20 K 294%磁阻；MgO呈(001)纤维织构。",
+      "whySelected": "为今天的新材料SOT和低温输运提供MgO读出与温度依赖基准。",
       "readingGuide": [
-        "先看图1的FeCo/MgO结构和电压各向异性。",
-        "再看图2宏自旋相图。",
-        "重点看图3/4脉冲时长—场—切换概率。",
-        "最后比较3.5 fJ与经典理想估算的定义；35–50分钟。"
+        "看堆栈",
+        "核对230%/294%",
+        "看MgO(001)证据",
+        "列出现代可靠性缺口；30–40分钟"
       ],
       "notNew": true
     }
