@@ -464,6 +464,18 @@
       "atomicIds": [
         "2026-09-07-ale-digital-twin"
       ]
+    },
+    {
+      "date": "2026-09-08",
+      "opportunityIds": [
+        "2026-09-08-thermal-window-mtj"
+      ],
+      "methodIds": [
+        "2026-09-08-cryogenic-platform-acceptance"
+      ],
+      "atomicIds": [
+        "2026-09-08-snox-ale-loop"
+      ]
     }
   ],
   "items": [
@@ -6917,6 +6929,161 @@
       ],
       "researchConnection": "服务ALE和MTJ侧墙损伤。",
       "takeaway": "数字孪生须有在线信号和离线真值。"
+    },
+    {
+      "id": "2026-09-08-thermal-window-mtj",
+      "date": "2026-09-08",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 温度—写入—界面闭环",
+      "title": "比较Mn₃Ge与CoFeB自由层的4–400 K写入—保持—噪声窗口",
+      "subtitle": "把低Ms优势放回温度依赖和界面热涨落中检验。",
+      "summary": "同尺寸、同MgO、同RA条件下比较Jc、WER、Δ与噪声。",
+      "status": "可立即开展",
+      "relatedPaperIds": [
+        "nnano-mn3ge-01827",
+        "classic-prb-98-214428",
+        "prl-soft-phonon-l5xq"
+      ],
+      "question": "低Ms带来的0.5 ns低Jc优势能否跨温区保持，而不牺牲Δ、TMR与离散？",
+      "rationale": "新器件给速度/WER，经典文献给CoFeB温度基准，热输运文献提供成分—晶格异常识别思路。",
+      "workflow": [
+        "匹配MgO/RA和柱径",
+        "4/77/150/300/400 K测Ms/Ki/TMR",
+        "0.5–10 ns测Jc/WER",
+        "退火/热循环后复测并回归界面成分"
+      ],
+      "equipment": [
+        "溅射/退火",
+        "TEM/XPS/SIMS",
+        "低温脉冲探针台",
+        "噪声与磁性测量"
+      ],
+      "measurements": [
+        "TMR/RA",
+        "Jc/WER",
+        "Ms/Ki/Δ",
+        "1/f噪声",
+        "耐久"
+      ],
+      "metrics": [
+        "片内CV",
+        "WER斜率",
+        "能量/次",
+        "保持外推残差",
+        "热循环漂移"
+      ],
+      "evidenceBoundary": "Mn₃Ge单器件公开结果与CoFeB薄膜模型来自不同论文，交叉比较为本站DOE。",
+      "firstSteps": [
+        "先做薄膜温标",
+        "再做同尺寸器件",
+        "预注册WER停止规则"
+      ],
+      "researchConnection": "直连MTJ/MRAM、低温输运和可靠性。",
+      "takeaway": "低Ms只有在TMR、Δ和良率同时成立时才是器件优势。"
+    },
+    {
+      "id": "2026-09-08-cryogenic-platform-acceptance",
+      "date": "2026-09-08",
+      "type": "method",
+      "typeZh": "设备与方法",
+      "trackLabel": "D · 毫开尔文平台验收",
+      "title": "把Proteox模块规格改写成MTJ脉冲与噪声FAT/SAT",
+      "subtitle": "空载基温不代表脉冲负载下的电子温度。",
+      "summary": "用真实线束、插入件和标准结验收温稳、EMI、振动与自动恢复。",
+      "status": "采购/升级前设计",
+      "relatedPaperIds": [
+        "oxford-proteox-platform",
+        "nnano-mn3ge-01827"
+      ],
+      "question": "0.5 ns脉冲和多通道读出加载后，平台能否维持可追溯电子温度与低噪声？",
+      "rationale": "厂商只给模块能力，器件开发需要负载态证据。",
+      "workflow": [
+        "空载冷量曲线",
+        "装线/滤波分步加负载",
+        "标准电阻与MTJ脉冲测试",
+        "三次热循环和换插入件GR&R"
+      ],
+      "equipment": [
+        "Proteox或同级平台",
+        "噪声温度计",
+        "加速度计/频谱仪",
+        "高速脉冲/示波器"
+      ],
+      "measurements": [
+        "基温/电子温度",
+        "冷量/降温时间",
+        "振动PSD/EMI",
+        "脉冲失真/串扰",
+        "12 h漂移"
+      ],
+      "metrics": [
+        "GR&R",
+        "温度回稳时间",
+        "噪声底",
+        "通道间串扰",
+        "自动恢复成功率"
+      ],
+      "evidenceBoundary": "50%板面积等为厂商声明；验收阈值需由用户器件需求定义。",
+      "firstSteps": [
+        "索取负载态数据",
+        "冻结线束BOM",
+        "把原始数据/API写入合同"
+      ],
+      "researchConnection": "服务低温WER、噪声与可靠性平台。",
+      "takeaway": "验收对象是完整测量链，不是冰箱空载温度。"
+    },
+    {
+      "id": "2026-09-08-snox-ale-loop",
+      "date": "2026-09-08",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 热ALE工艺闭环",
+      "title": "从SnO₂自限窗口迁移到MTJ势垒/侧墙的四层验证",
+      "subtitle": "先证化学选择性，再接磁性与电学。",
+      "summary": "QCM/XRR/QMS/AFM建立反应真值，XPS/SIMS与MTJ电学判定迁移。",
+      "status": "方法迁移验证",
+      "relatedPaperIds": [
+        "jva-44-022604",
+        "review-jva-33-020802",
+        "nnano-mn3ge-01827"
+      ],
+      "question": "HF/TMA式自限反应能否在不损伤MgO/CoFeB/Mn₃Ge的情况下用于精修或残留去除？",
+      "rationale": "SnO₂论文提供完整闭环，综述提供ALE判据，但材料兼容性未知。",
+      "workflow": [
+        "SnO₂复现实验225–300 °C",
+        "MgO/CoFeB/Mn₃Ge见证片暴露矩阵",
+        "XPS/SIMS/QMS查F/Al/C与B/Mn迁移",
+        "MTJ前后测TMR/RA/噪声/耐久"
+      ],
+      "equipment": [
+        "热ALE/ALD+QCM",
+        "QMS/XRR/AFM",
+        "XPS/SIMS/TEM",
+        "MTJ电学/低温平台"
+      ],
+      "measurements": [
+        "EPC/饱和度",
+        "选择比/粗糙度",
+        "F/Al/C残留",
+        "TMR/RA",
+        "磁性/噪声"
+      ],
+      "metrics": [
+        "原子/循环",
+        "片内CV",
+        "电学漂移",
+        "失效率",
+        "清腔节拍"
+      ],
+      "evidenceBoundary": "SnO₂数据是直接实测，迁移到磁性堆栈完全是待验证假设。",
+      "firstSteps": [
+        "先做见证片禁入器件",
+        "设置仅HF/仅TMA/热空白",
+        "定义污染停止线"
+      ],
+      "researchConnection": "直接服务原子制造、MgO界面和图形化损伤修复。",
+      "takeaway": "化学自限不等于器件无损，必须以磁性和电学收口。"
     }
   ]
 }

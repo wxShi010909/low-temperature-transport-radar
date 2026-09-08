@@ -1,55 +1,56 @@
 {
-  "date": "2026-09-07",
+  "date": "2026-09-08",
   "review": {
-    "id": "review-admt-202500133",
+    "id": "review-jva-33-020802",
     "kind": "每日综述",
-    "track": "B",
+    "track": "E",
     "secondaryTracks": [
-      "E"
+      "B",
+      "C"
     ],
-    "title": "A Review on Novel Low-Dimensional Materials based Magnetic Tunnel Junctions: Opportunities, Challenges, and Applications",
-    "titleZh": "低维材料MTJ正式综述：原子界面机会与规模化边界",
-    "authors": "Abinash Thapa, Bikash Sharma",
-    "venue": "Advanced Materials Technologies 10, e00133 (2025)",
-    "published": "2025-05-19",
-    "recommendedOn": "2026-09-07",
-    "doi": "10.1002/admt.202500133",
-    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admt.202500133",
-    "backupUrl": "https://doi.org/10.1002/admt.202500133",
-    "assistantSummary": "正式Review比较TMD、石墨烯、h-BN、MgO、BNNT、CrI3、Fe3GeTe2等作为MTJ电极/势垒；本期只提取可迁移的界面、缺陷、掺杂、应变和接触方法。",
-    "whySelected": "用低维体系作原子界面的极限对照，反向审视CoFeB/MgO的缺陷、晶格/自旋匹配和规模化缺口。",
+    "title": "Overview of atomic layer etching in the semiconductor industry",
+    "titleZh": "半导体产业原子层刻蚀综述：从自限反应到lab-to-fab",
+    "authors": "Keren J. Kanarik, Thorsten Lill, Eric A. Hudson, Saravanapriyan Sriraman, Samantha Tan, Jeffrey Marks, Vahid Vahedi, Richard A. Gottscho",
+    "venue": "Journal of Vacuum Science & Technology A 33, 020802 (2015)",
+    "published": "2015-03-05",
+    "recommendedOn": "2026-09-08",
+    "doi": "10.1116/1.4913379",
+    "url": "https://pubs.aip.org/avs/jva/article/33/2/020802/246821/Overview-of-atomic-layer-etching-in-the",
+    "backupUrl": "https://doi.org/10.1116/1.4913379",
+    "assistantSummary": "正式Review定义ALE的改性—去除自限循环，梳理Si、氧化物、III–V与方向性/各向同性路线，并把原子级保真度、变异与lab-to-fab放在同一框架。",
+    "whySelected": "为今天SnO₂热ALE提供产业化判据：协同度、饱和、自限、选择性、方向性、片内/批间变异和吞吐。",
     "readingGuide": [
-      "先看材料—角色分类",
-      "重点读缺陷/应变/接触",
-      "理论与实测分栏",
-      "只摘可迁移方法；60–75分钟"
-    ],
-    "notNew": true
+      "先看图1 ALE循环与定义",
+      "比较等离子体/热ALE",
+      "读Si案例和材料版图",
+      "重点看制造变异与lab-to-fab；60–75分钟"
+    ]
   },
   "classics": [
     {
-      "id": "classic-apl-86-092502",
+      "id": "classic-prb-98-214428",
       "kind": "经典文章",
       "track": "B",
       "secondaryTracks": [
+        "C",
         "A"
       ],
-      "title": "230% room-temperature magnetoresistance in CoFeB/MgO/CoFeB magnetic tunnel junctions",
-      "titleZh": "CoFeB/MgO经典起点：室温230%、20 K 294%磁阻",
-      "authors": "D. D. Djayaprawira et al.",
-      "venue": "Applied Physics Letters 86, 092502 (2005)",
-      "published": "2005-02-28",
-      "recommendedOn": "2026-09-07",
-      "doi": "10.1063/1.1871344",
-      "url": "https://pubs.aip.org/aip/apl/article/86/9/092502/328725/230-room-temperature-magnetoresistance-in-CoFeB",
-      "backupUrl": "https://doi.org/10.1063/1.1871344",
-      "assistantSummary": "热氧化Si上的非晶CoFeB/MgO/CoFeB自旋阀MTJ实现室温230%、20 K 294%磁阻；MgO呈(001)纤维织构。",
-      "whySelected": "为今天的新材料SOT和低温输运提供MgO读出与温度依赖基准。",
+      "title": "Temperature-dependent properties of CoFeB/MgO thin films: Experiments versus simulations",
+      "titleZh": "CoFeB/MgO温度依赖经典：实验—原子模拟拆分体相与界面热涨落",
+      "authors": "H. Sato, P. Chureemart, F. Matsukura, R. W. Chantrell, H. Ohno, R. F. L. Evans",
+      "venue": "Physical Review B 98, 214428 (2018)",
+      "published": "2018-12-14",
+      "recommendedOn": "2026-09-08",
+      "doi": "10.1103/PhysRevB.98.214428",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.98.214428",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.98.214428",
+      "assistantSummary": "实验与原子自旋模拟比较CoFeB/MgO磁化、各向异性随温度和厚度的变化，指出体相与界面热涨落不同，界面各向异性可由两位点各向异性交换描述。",
+      "whySelected": "为Mn₃Ge替代CoFeB时的温度基准和低温/高温保持建模提供经典参照。",
       "readingGuide": [
-        "看堆栈",
-        "核对230%/294%",
-        "看MgO(001)证据",
-        "列出现代可靠性缺口；30–40分钟"
+        "看实验—模拟对照",
+        "分离体相/界面温标",
+        "核对两位点交换解释",
+        "列出Mn₃Ge对照参数；40–55分钟"
       ],
       "notNew": true
     }

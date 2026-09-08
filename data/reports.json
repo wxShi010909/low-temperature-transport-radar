@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-07T12:00:00+08:00",
-  "reportDate": "2026-09-07",
-  "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期不等于发表日期",
+  "updatedAt": "2026-09-08T12:00:00+08:00",
+  "reportDate": "2026-09-08",
+  "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
       "date": "2026-07-13",
@@ -755,6 +755,25 @@
         "jva-44-022602",
         "oxford-cryoraman",
         "jva-44-053003"
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "label": "详细日报：软声子输运—Mn₃Ge高速MTJ—有限温声子理论—Proteox平台—SnO₂热ALE",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "prl-soft-phonon-l5xq",
+        "nnano-mn3ge-01827",
+        "prb-114-154303",
+        "oxford-proteox-platform",
+        "jva-44-022604"
       ]
     }
   ],
@@ -8265,6 +8284,184 @@
       "backupUrl": "https://doi.org/10.1116/6.0005561",
       "accessNote": "已打开JVST A正式全文，核验日期、DOI、偏压、孔径、距离、压力和产物。",
       "recommendedOn": "2026-09-07",
+      "featured": true
+    },
+    {
+      "id": "prl-soft-phonon-l5xq",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Electronic Tuning of the Soft-Phonon Transport Anomaly in Ta2Ni(SxSe1−x)5",
+      "titleZh": "成分调谐Ta₂Ni(SₓSe₁₋ₓ)₅软声子输运异常：130–326 K电子—晶格耦合窗口",
+      "authors": "Yuan-Shan Zhang, Masahiko Isobe, Hidenori Takagi, Dennis Huang",
+      "venue": "Physical Review Letters 137, 106503 (2026)",
+      "published": "2026-09-02",
+      "timeTier": "本周正式发表",
+      "system": "层状Ta₂Ni(SₓSe₁₋ₓ)₅硫硒固溶系列；以S取代调控常态能带重叠/带隙，通过热输运与相变信号追踪垂直链方向的巨各向异性声子散射。",
+      "conditions": "Se端Tc最高326 K，S端弱结构转变Tc趋近130 K；公开页面未给完整x取值、样品尺寸、低温下限、磁场或绝对热导率，均标作原文未公开。",
+      "methods": [
+        "制备S/Se成分系列",
+        "测量各向异性热输运与相变",
+        "用成分调谐正常态能带重叠/带隙",
+        "关联软声子异常与电子转变特征"
+      ],
+      "summary": "随体系由Se端电子不稳定性增强区走向高x带绝缘体，软声子输运异常与电子转变信号同步消失；S端仅剩约130 K弱结构转变，Se端电子不稳定性把Tc推高到326 K。",
+      "relevance": "给出用输运响应反演成分—电子结构—晶格耦合的范例，可迁移到CoFeB/MgO界面成分梯度、退火扩散与低温噪声的工艺反馈。",
+      "limitation": "不是MTJ器件；摘要未公开绝对热导率、误差、x点、晶圆均匀性，不能把相变温区直接外推到MgO/CoFeB。",
+      "industrialization": "处于材料机理与成分窗口识别；缺薄膜化、晶圆mapping、批次重复、接触/图形化及器件相关性。",
+      "whyRecommended": "先看图1相图与图2–4热输运/软模关联，再读作者对电子涨落的边界；35–50分钟。",
+      "score": 9.2,
+      "priority": "S",
+      "doi": "10.1103/l5xq-2yrt",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/l5xq-2yrt",
+      "backupUrl": "https://doi.org/10.1103/l5xq-2yrt",
+      "accessNote": "已打开APS正式页面，核验题目、作者、2026-09-02、DOI与130/326 K定量信息。",
+      "recommendedOn": "2026-09-08",
+      "featured": true
+    },
+    {
+      "id": "nnano-mn3ge-01827",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Ferrimagnetic Heusler tunnel junctions with fast spin-transfer torque switching enabled by low magnetization",
+      "titleZh": "低磁化Mn₃Ge Heusler MTJ：0.5 ns、约10 MA/cm²、WER至10⁻⁷与室温87% TMR",
+      "authors": "Chirag Garg, Panagiotis Ch. Filippou, Ikhtiar, Yari Ferrante, See-Hun Yang, Brian Hughes, Charles T. Rettner, Timothy Phung, Sergey Faleev, Teya Topuria, Mahesh G. Samant, Jaewoo Jeong, Stuart S. P. Parkin",
+      "venue": "Nature Nanotechnology 20, 360–365 (2025)",
+      "published": "2025-01-03",
+      "timeTier": "近两年高质量正式论文",
+      "system": "Si(001)/250 nm SiO₂/5 nm Ta/0.5 nm CoFeB/0.1 nm ScN/40 nm Cr/5 nm IrAl/15 nm CoAl/1.9 nm Mn₃Ge/1.4 nm MgO/1.45 nm CoFeB/5 nm Ta/10 nm Ru；氮化物种子与化学模板使Mn₃Ge在非晶衬底上形成垂直各向异性MTJ。",
+      "conditions": "室温TMR 87%；0.5 ns写脉冲下临界电流密度约10 MA/cm²；测量至WER 10⁻⁷；Mn₃Ge饱和磁化约为现用CoFeB自由层的1/6。阵列容量、保持Δ、耐久和晶圆良率原文公开摘要未给。",
+      "methods": [
+        "在热氧化Si上构建种子/模板/Heusler/MgO/CoFeB堆栈",
+        "STEM验证外延/界面结构",
+        "脉冲写入并小电流读回",
+        "每点累计至10个错误或10⁷次试验并拟合WER"
+      ],
+      "summary": "低磁化Mn₃Ge自由层在技术相关非晶衬底上实现0.5 ns、约10 MA/cm²的STT写入，室温TMR 87%，实测WER深至10⁻⁷。",
+      "relevance": "直接对应MTJ材料、MgO界面、写入速度和WER；模板化生长也与原子级界面/成分控制高度相关。",
+      "limitation": "单器件演示不等于阵列量产；尚缺高温保持、>10¹²耐久、300 mm均匀性、BEOL热预算、侧墙损伤与封装后数据。",
+      "industrialization": "最接近高性能STT-MRAM自由层材料与单元验证；障碍是复杂种子/模板堆栈、超薄层成分控制、阵列良率、热稳定和工艺整合。",
+      "whyRecommended": "先看图1堆栈/STEM，再看脉宽—Jc与图4 WER；45–60分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.1038/s41565-024-01827-7",
+      "url": "https://www.nature.com/articles/s41565-024-01827-7",
+      "backupUrl": "https://doi.org/10.1038/s41565-024-01827-7",
+      "accessNote": "已核验Nature/IBM直接条目与公开全文信息：作者、2025-01-03、完整堆栈、0.5 ns、约10 MA/cm²、87% TMR、WER 10⁻⁷。",
+      "recommendedOn": "2026-09-08",
+      "featured": true
+    },
+    {
+      "id": "prb-114-154303",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Finite-temperature Green's function theory of terahertz-induced phonon angular momentum in polar crystals",
+      "titleZh": "有限温格林函数计算太赫兹诱导声子角动量：GaN简并/非简并通道",
+      "authors": "Hong Sun, Xiaozhe Li, Lifa Zhang",
+      "venue": "Physical Review B 114, 154303 (2026)",
+      "published": "2026-09-03",
+      "timeTier": "本周正式发表",
+      "system": "极性晶体的有限温声子格林函数理论；以纤锌矿GaN为算例，考虑E₁(TO)–A₁(TO)非简并通道和E₁(TO)简并通道。",
+      "conditions": "二阶整流角动量、dressed-bubble近似与非谐自能；公开摘要未给温度网格、太赫兹场强、频率、线宽或数值角动量。",
+      "methods": [
+        "建立自能修饰的有限温声子格林函数",
+        "推导二阶整流角动量响应",
+        "用非谐自能纳入频率重整化和线宽",
+        "在GaN检验相位/频率/手性选择"
+      ],
+      "summary": "理论预测非简并E₁(TO)–A₁(TO)通道可由脉冲相位和频率调节，简并E₁(TO)通道由太赫兹手性选择；有限温重整化和展宽决定响应。",
+      "relevance": "提供把温度、驱动波形与晶格角动量纳入界面声子/热输运模型的方法；可作为脉冲写入自热和界面声子耦合的计算工具，但不是MTJ直接结论。",
+      "limitation": "纯理论且算例为GaN；缺实验验证、缺MgO/CoFeB参数和器件尺度热—磁耦合。",
+      "industrialization": "位于多物理模型前端；需材料参数标定、泵浦—探测验证、与器件温升/WER关联和计算成本评估。",
+      "whyRecommended": "先读理论框架与GaN两通道图，再核对自能近似；40–55分钟。",
+      "score": 8.8,
+      "priority": "A",
+      "doi": "10.1103/ysd2-6ch2",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/ysd2-6ch2",
+      "backupUrl": "https://doi.org/10.1103/ysd2-6ch2",
+      "accessNote": "已打开APS正式页面，核验作者、2026-09-03、DOI与GaN通道；未公开数字未补写。",
+      "recommendedOn": "2026-09-08",
+      "featured": true
+    },
+    {
+      "id": "oxford-proteox-platform",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "E"
+      ],
+      "title": "Quantum Computing with Oxford Instruments: Proteox dilution refrigerator platform",
+      "titleZh": "Oxford Instruments Proteox模块化毫开尔文平台（厂商技术资料）：二级插入件与冷电子扩展",
+      "authors": "Oxford Instruments",
+      "venue": "厂商量子计算/Proteox技术页面",
+      "published": "原文未公开（2026-09-08核查）",
+      "timeTier": "厂商技术资料",
+      "system": "ProteoxMX模块化稀释制冷平台，支持Secondary Insert与低温电子学工厂集成；架构面向更多插入件、冷却能力和测线扩展。",
+      "conditions": "【厂商标称】混合室板面积增加50%；页面宣称毫开尔文运行及模块化扩展。基温、冷量、降温时间、振动PSD、布线热漏、磁体规格和长期稳定度在本页未公开。",
+      "methods": [
+        "把厂商功能拆成FAT/SAT验收条款",
+        "标准电阻/噪声源标定全链路",
+        "加载实际MTJ探针与脉冲线后测基温/热负载",
+        "重复热循环、换插入件并做GR&R"
+      ],
+      "summary": "厂商强调50%更大混合室板、二级插入件和冷电子集成；这些是配置能力，不是负载状态下的独立性能证明。",
+      "relevance": "适合构建MTJ低温WER、噪声和脉冲自热的一体化平台，也可衔接ALD/刻蚀设备后的快速工艺反馈。",
+      "limitation": "厂商技术资料不是科研证明；关键基温/冷量/振动/EMI/API/可复现性数字需采购前索取并实测。",
+      "industrialization": "位于设备选型与产线实验室基础设施；缺FAT/SAT原始数据、维护节拍、备件、自动化接口、TCO及多机一致性。",
+      "whyRecommended": "先看模块与二级插入件布局，再把每条规格转成可验收指标；20–30分钟。",
+      "score": 8.9,
+      "priority": "A",
+      "doi": "",
+      "url": "https://www.oxinst.com/applications/segments/quantum-technology/quantum-computing",
+      "backupUrl": "https://www.oxinst.com/products/cryogenic-environments/proteox",
+      "accessNote": "已打开Oxford Instruments厂商页面，核验ProteoxMX、Secondary Insert、工厂集成冷电子与50%混合室板面积声明。",
+      "vendorMaterial": true,
+      "recommendedOn": "2026-09-08",
+      "featured": true
+    },
+    {
+      "id": "jva-44-022604",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Thermal atomic layer etching of SnO2 by fluorination and ligand-exchange/conversion reactions using sequential hydrogen fluoride and Al(CH3)3 exposures",
+      "titleZh": "SnO₂热原子层刻蚀：225–300 °C下0.47–1.78 Å/cycle自限HF/TMA反应",
+      "authors": "Chen Li, Jonathan L. Partridge, Troy A. Colleran, Micah H. Duffield, Yong Hyun Ham, Steven M. George",
+      "venue": "Journal of Vacuum Science & Technology A 44, 022604 (2026)",
+      "published": "2026-01-14",
+      "timeTier": "近一年正式发表",
+      "system": "先用四(二甲氨基)锡/H₂O₂ ALD制备SnO₂，再以TMA转化表面、HF氟化、TMA配体交换/去除的热ALE循环；QCM/XRR/QMS/AFM交叉验证。",
+      "conditions": "225/250/275/300 °C；MCPC分别−32.6/−44.2/−100.2/−123.5 ng·cm⁻²·cycle⁻¹，对应0.47/0.64/1.44/1.78 Å/cycle。",
+      "methods": [
+        "ALD制备SnO₂起始膜",
+        "TMA转化—HF氟化—TMA配体交换循环",
+        "原位QCM验证剂量饱和和质量线性",
+        "XRR验证厚度，QMS识别挥发物，AFM检查粗糙度"
+      ],
+      "summary": "HF和TMA两步均达到剂量饱和，刻蚀速率随225→300 °C由0.47增至1.78 Å/cycle；Sn(CH₃)₄为主要Sn产物，多循环未显著改变表面粗糙度。",
+      "relevance": "给出“自限窗口—原位质量—离线厚度—副产物—粗糙度”完整闭环，可直接迁移到势垒/电极精修与残留监控方法开发。",
+      "limitation": "SnO₂化学不能直接套用MgO/CoFeB；225–300 °C可能触及MTJ热预算，HF/TMA对磁层、侧墙和交叉污染需独立验证。",
+      "industrialization": "最接近热ALE单元工艺；缺图形晶圆、选择比、颗粒、腔体记忆、吞吐、设备匹配和电学良率。",
+      "whyRecommended": "先看反应循环和QCM饱和图，再看温度—EPC、QMS与AFM；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1116/6.0005016",
+      "url": "https://pubs.aip.org/avs/jva/article/44/2/022604/3377369/Thermal-atomic-layer-etching-of-SnO2-by",
+      "backupUrl": "https://doi.org/10.1116/6.0005016",
+      "accessNote": "已打开JVST A正式全文，核验2026-01-14、作者、DOI、225–300 °C、MCPC、EPC、QMS与AFM结果。",
+      "recommendedOn": "2026-09-08",
       "featured": true
     }
   ]
