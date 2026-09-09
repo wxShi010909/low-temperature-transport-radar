@@ -1,56 +1,55 @@
 {
-  "date": "2026-09-08",
+  "date": "2026-09-09",
   "review": {
-    "id": "review-jva-33-020802",
+    "id": "review-jap-140-040703",
     "kind": "每日综述",
-    "track": "E",
+    "track": "B",
     "secondaryTracks": [
-      "B",
+      "E",
       "C"
     ],
-    "title": "Overview of atomic layer etching in the semiconductor industry",
-    "titleZh": "半导体产业原子层刻蚀综述：从自限反应到lab-to-fab",
-    "authors": "Keren J. Kanarik, Thorsten Lill, Eric A. Hudson, Saravanapriyan Sriraman, Samantha Tan, Jeffrey Marks, Vahid Vahedi, Richard A. Gottscho",
-    "venue": "Journal of Vacuum Science & Technology A 33, 020802 (2015)",
-    "published": "2015-03-05",
-    "recommendedOn": "2026-09-08",
-    "doi": "10.1116/1.4913379",
-    "url": "https://pubs.aip.org/avs/jva/article/33/2/020802/246821/Overview-of-atomic-layer-etching-in-the",
-    "backupUrl": "https://doi.org/10.1116/1.4913379",
-    "assistantSummary": "正式Review定义ALE的改性—去除自限循环，梳理Si、氧化物、III–V与方向性/各向同性路线，并把原子级保真度、变异与lab-to-fab放在同一框架。",
-    "whySelected": "为今天SnO₂热ALE提供产业化判据：协同度、饱和、自限、选择性、方向性、片内/批间变异和吞吐。",
+    "title": "Fundamental understanding of the reliability issues of hafnium oxide-based ferroelectric field-effect transistors: A comprehensive review",
+    "titleZh": "HfO₂铁电FET可靠性正式综述：材料相、制程、器件架构与失效缓解",
+    "authors": "Agniva Paul, Apu Das, Gautham Kumar, Sourav De",
+    "venue": "Journal of Applied Physics 140, 040703 (2026)",
+    "published": "2026-07-31",
+    "recommendedOn": "2026-09-09",
+    "doi": "10.1063/5.0339947",
+    "url": "https://pubs.aip.org/aip/jap/article/140/4/040703/3399954/Fundamental-understanding-of-the-reliability",
+    "backupUrl": "https://doi.org/10.1063/5.0339947",
+    "assistantSummary": "正式Review串联HfO₂铁电相与晶体学、薄膜制备、器件架构、可靠性失效及缓解策略，强调CMOS兼容和纳米缩放不能替代耐久/保持验证。",
+    "whySelected": "作为MTJ之外的可产业化存储对照，重点借鉴缺陷、界面、电荷俘获、热预算与阵列可靠性验证框架。",
     "readingGuide": [
-      "先看图1 ALE循环与定义",
-      "比较等离子体/热ALE",
-      "读Si案例和材料版图",
-      "重点看制造变异与lab-to-fab；60–75分钟"
+      "先看失效机制总图",
+      "再看制程—缺陷关系",
+      "比较保持/耐久/唤醒/疲劳",
+      "最后提取可迁移到MTJ的可靠性矩阵；60–75分钟"
     ]
   },
   "classics": [
     {
-      "id": "classic-prb-98-214428",
+      "id": "classic-rsi-92-095101",
       "kind": "经典文章",
-      "track": "B",
+      "track": "D",
       "secondaryTracks": [
-        "C",
         "A"
       ],
-      "title": "Temperature-dependent properties of CoFeB/MgO thin films: Experiments versus simulations",
-      "titleZh": "CoFeB/MgO温度依赖经典：实验—原子模拟拆分体相与界面热涨落",
-      "authors": "H. Sato, P. Chureemart, F. Matsukura, R. W. Chantrell, H. Ohno, R. F. L. Evans",
-      "venue": "Physical Review B 98, 214428 (2018)",
-      "published": "2018-12-14",
-      "recommendedOn": "2026-09-08",
-      "doi": "10.1103/PhysRevB.98.214428",
-      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.98.214428",
-      "backupUrl": "https://doi.org/10.1103/PhysRevB.98.214428",
-      "assistantSummary": "实验与原子自旋模拟比较CoFeB/MgO磁化、各向异性随温度和厚度的变化，指出体相与界面热涨落不同，界面各向异性可由两位点各向异性交换描述。",
-      "whySelected": "为Mn₃Ge替代CoFeB时的温度基准和低温/高温保持建模提供经典参照。",
+      "title": "A simple and efficient passive vibration isolation system for large loads in closed-cycle cryostats",
+      "titleZh": "闭循环低温系统大载荷被动隔振：1.6 K、30 kg、水平156倍与垂直60倍抑制",
+      "authors": "Eugen Wiens, Stephan Schiller",
+      "venue": "Review of Scientific Instruments 92, 095101 (2021)",
+      "published": "2021-09-07",
+      "recommendedOn": "2026-09-09",
+      "doi": "10.1063/5.0053381",
+      "url": "https://pubs.aip.org/aip/rsi/article/92/9/095101/1032518/A-simple-and-efficient-passive-vibration-isolation",
+      "backupUrl": "https://doi.org/10.1063/5.0053381",
+      "assistantSummary": "两级垂直隔振承载30 kg，在1.6 K具有2.1/1.3 Hz垂直共振与0.65 Hz摆动模；5–200 Hz积分加速度水平由6.7×10⁻³降至4.3×10⁻⁵ g，垂直由4.3×10⁻³降至7.2×10⁻⁵ g。",
+      "whySelected": "给闭循环低温探针、Raman/AFM及低噪声输运平台提供可复现的振动验收基准。",
       "readingGuide": [
-        "看实验—模拟对照",
-        "分离体相/界面温标",
-        "核对两位点交换解释",
-        "列出Mn₃Ge对照参数；40–55分钟"
+        "看机械结构",
+        "核对共振频率",
+        "看5–200 Hz积分PSD",
+        "转成自有平台FAT/SAT；35–45分钟"
       ],
       "notNew": true
     }

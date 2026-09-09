@@ -476,6 +476,18 @@
       "atomicIds": [
         "2026-09-08-snox-ale-loop"
       ]
+    },
+    {
+      "date": "2026-09-09",
+      "opportunityIds": [
+        "2026-09-09-cryo-mtj-wer-loop"
+      ],
+      "methodIds": [
+        "2026-09-09-auto-low-noise-acceptance"
+      ],
+      "atomicIds": [
+        "2026-09-09-ale-throughput-damage"
+      ]
     }
   ],
   "items": [
@@ -7084,6 +7096,160 @@
       ],
       "researchConnection": "直接服务原子制造、MgO界面和图形化损伤修复。",
       "takeaway": "化学自限不等于器件无损，必须以磁性和电学收口。"
+    },
+    {
+      "id": "2026-09-09-cryo-mtj-wer-loop",
+      "date": "2026-09-09",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 低温MTJ闭环",
+      "title": "把4 K WER、界面透明度与自洽输运放入同一DOE",
+      "subtitle": "从Ar界面处理到纳米柱翻转和模型反演。",
+      "summary": "工艺—结构—SOT/STT—结温—WER全链验证。",
+      "status": "可立即开展",
+      "relatedPaperIds": [
+        "apl-115-182404",
+        "prb-113-134402",
+        "prb-105-134407"
+      ],
+      "question": "界面处理带来的力矩增益能否跨温区转成更低Jc/WER，而不增加损伤与离散？",
+      "rationale": "三篇分别提供低温器件、界面工艺和自洽模型。",
+      "workflow": [
+        "Ar时间×功率DOE",
+        "XRR/XPS/ST-FMR",
+        "4–300 K脉冲/结温/WER",
+        "用NEGF—微磁反演"
+      ],
+      "equipment": [
+        "原位等离子/溅射",
+        "XRR/XPS/TEM",
+        "ST-FMR",
+        "低温高速脉冲台"
+      ],
+      "measurements": [
+        "粗糙度/互混",
+        "透明度/SOT",
+        "TMR/RA",
+        "Jc/WER",
+        "结温/噪声"
+      ],
+      "metrics": [
+        "片内CV",
+        "WER斜率",
+        "模型残差",
+        "耐久",
+        "热循环漂移"
+      ],
+      "evidenceBoundary": "Pt/NiFe SOT与CoFeB pMTJ STT材料体系不同，组合为本站待验证路线。",
+      "firstSteps": [
+        "先见证片找无损窗口",
+        "再同柱径器件",
+        "预注册WER统计规则"
+      ],
+      "researchConnection": "直连MTJ/MRAM、低温输运和界面工艺。",
+      "takeaway": "界面透明度只有转成器件级Jc/WER改善才有价值。"
+    },
+    {
+      "id": "2026-09-09-auto-low-noise-acceptance",
+      "date": "2026-09-09",
+      "type": "method",
+      "typeZh": "设备与方法",
+      "trackLabel": "D · 自动低噪声测量",
+      "title": "把TWPA最弱通道优化迁移到MTJ多通道测量",
+      "subtitle": "优化目标从单一SNR扩展到噪声、结温和误码。",
+      "summary": "以几何平均和最差通道约束实现每日自动健康检查。",
+      "status": "软件可先行",
+      "relatedPaperIds": [
+        "rsi-97-094703",
+        "classic-rsi-92-095101"
+      ],
+      "question": "能否用约百次测量完成多通道偏置/滤波/增益自动整定并识别振动漂移？",
+      "rationale": "现代自动优化与经典隔振给出算法和硬件两侧基准。",
+      "workflow": [
+        "定义多目标代价",
+        "自动扫描偏置/滤波",
+        "记录PSD与漂移",
+        "跨热循环复现"
+      ],
+      "equipment": [
+        "低温平台",
+        "低噪声放大器",
+        "高速采集",
+        "加速度计"
+      ],
+      "measurements": [
+        "最差/平均SNR",
+        "1/f噪声",
+        "串扰",
+        "结温",
+        "漂移"
+      ],
+      "metrics": [
+        "搜索次数",
+        "提升幅度",
+        "GR&R",
+        "自动恢复率",
+        "误报警"
+      ],
+      "evidenceBoundary": "TWPA/量子比特数据不可直接等同MTJ，算法迁移需重新定义目标。",
+      "firstSteps": [
+        "用标准电阻回放",
+        "加入安全边界",
+        "保存全量参数/日志"
+      ],
+      "researchConnection": "服务低噪声、自动化和设备复现。",
+      "takeaway": "先优化最差通道，再谈平台平均性能。"
+    },
+    {
+      "id": "2026-09-09-ale-throughput-damage",
+      "date": "2026-09-09",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · ALE节拍—损伤",
+      "title": "用五时序矩阵验证MTJ侧墙ALE的节拍—残留—电学三角",
+      "subtitle": "不以EPC或速度单指标选配方。",
+      "summary": "全吹扫到偏压脉冲并行比较，以TMR/RA/噪声收口。",
+      "status": "工艺验证",
+      "relatedPaperIds": [
+        "jva-43-042603",
+        "prb-113-134402"
+      ],
+      "question": "缩短吹扫和连续等离子能否降低MTJ节拍且不引入Cl/Ar损伤？",
+      "rationale": "AlGaN给出60%节拍收益和Cl残留代价，界面论文给出Ar处理窗口效应。",
+      "workflow": [
+        "五种时序复制",
+        "见证片XPS/XRR/AFM",
+        "MTJ侧墙小剂量矩阵",
+        "TMR/RA/噪声/耐久"
+      ],
+      "equipment": [
+        "ALE/ICP-RIE",
+        "XPS/XRR/AFM",
+        "TEM/SIMS",
+        "MTJ电学"
+      ],
+      "measurements": [
+        "EPC/协同度",
+        "Cl/Ar残留",
+        "粗糙度/互混",
+        "TMR/RA",
+        "WER/耐久"
+      ],
+      "metrics": [
+        "节拍",
+        "片内CV",
+        "电学漂移",
+        "颗粒",
+        "成本/片"
+      ],
+      "evidenceBoundary": "AlGaN结果只提供方法，不证明对CoFeB/MgO安全。",
+      "firstSteps": [
+        "先禁入器件的见证片",
+        "定义残留停止线",
+        "保留全吹扫基线"
+      ],
+      "researchConnection": "直接服务原子制造和MTJ图形化损伤。",
+      "takeaway": "最短节拍必须同时通过化学和器件电学验收。"
     }
   ]
 }

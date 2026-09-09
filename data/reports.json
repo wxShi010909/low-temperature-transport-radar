@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-08T12:00:00+08:00",
-  "reportDate": "2026-09-08",
+  "updatedAt": "2026-09-09T12:00:00+08:00",
+  "reportDate": "2026-09-09",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -774,6 +774,25 @@
         "prb-114-154303",
         "oxford-proteox-platform",
         "jva-44-022604"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "label": "详细日报：4 K pMTJ—Ar界面SOT—NEGF微磁—自动低噪声—ALE节拍",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "apl-115-182404",
+        "prb-113-134402",
+        "prb-105-134407",
+        "rsi-97-094703",
+        "jva-43-042603"
       ]
     }
   ],
@@ -8462,6 +8481,180 @@
       "backupUrl": "https://doi.org/10.1116/6.0005016",
       "accessNote": "已打开JVST A正式全文，核验2026-01-14、作者、DOI、225–300 °C、MCPC、EPC、QMS与AFM结果。",
       "recommendedOn": "2026-09-08",
+      "featured": true
+    },
+    {
+      "id": "apl-115-182404",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Sub-nanosecond spin-torque switching of perpendicular magnetic tunnel junction nanopillars at cryogenic temperatures",
+      "titleZh": "40–60 nm pMTJ低温写入：4 K低于300 fJ、4 ns WER≤5×10⁻⁵",
+      "authors": "L. Rehm, G. Wolf, B. Kardasz, M. Pinarbasi, A. D. Kent",
+      "venue": "Applied Physics Letters 115, 182404 (2019)",
+      "published": "2019-10-29",
+      "timeTier": "关键低温器件文献",
+      "system": "40–60 nm垂直磁各向异性MTJ纳米柱；比较室温至4 K的纳秒STT脉冲翻转。公开摘要未给完整材料堆栈、RA、TMR和退火条件。",
+      "conditions": "4 K每次写入能量<300 fJ；4 ns脉冲WER≤5×10⁻⁵；特征翻转时间从室温降至150 K时显著缩短。",
+      "methods": [
+        "制备40–60 nm pMTJ纳米柱",
+        "跨温区施加STT电压脉冲",
+        "统计翻转概率和WER",
+        "比较写入时间与能量"
+      ],
+      "summary": "低温下特征翻转更快，但写入能量随降温增加；4 K仍实现<300 fJ/次及4 ns下WER≤5×10⁻⁵。",
+      "relevance": "直接服务低温MRAM读写、WER、脉冲链和结温校准。",
+      "limitation": "2019年单元数据；缺现代300 mm阵列、保持、长耐久与完整堆栈公开信息。",
+      "industrialization": "位于低温单元可行性；还需阵列扰动、百万级错误统计、封装热阻、CMOS接口与良率。",
+      "whyRecommended": "先看温度—翻转时间，再看4 K能量与WER；35–50分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/1.5128106",
+      "url": "https://pubs.aip.org/aip/apl/article/115/18/182404/37488/Sub-nanosecond-spin-torque-switching-of",
+      "backupUrl": "https://doi.org/10.1063/1.5128106",
+      "accessNote": "已打开AIP正式页面，核验作者、日期、尺寸、4 K能量和WER。",
+      "recommendedOn": "2026-09-09",
+      "featured": true
+    },
+    {
+      "id": "prb-113-134402",
+      "track": "B",
+      "secondaryTracks": [
+        "D",
+        "E"
+      ],
+      "title": "Highly spin-transparent nonmagnetic/ferromagnetic interface tailored with an interface argon plasma treatment",
+      "titleZh": "原位Ar等离子体调控Pt/NiFe界面：自旋透明度约0.98、阻尼型SOT提高81%",
+      "authors": "Nifei Gu, Lifan Xiang, Sha Lu, Ruoshi Li, Guang Zeng, Pan Zhang, Lixuan Xu, Baishi Yu, Cuimei Cao et al.",
+      "venue": "Physical Review B 113, 134402 (2026)",
+      "published": "2026-04-01",
+      "timeTier": "近一年正式发表",
+      "system": "Pt/NiFe(Py)双层界面，经不同时间的原位Ar等离子体处理；用ST-FMR量化阻尼型SOT，以XRR表征界面粗糙度。",
+      "conditions": "最大自旋透明度约0.98；阻尼型SOT效率提高81%。公开摘要未给层厚、等离子体功率/压力/时间、温度与晶圆尺寸。",
+      "methods": [
+        "Pt/NiFe原位Ar等离子体处理",
+        "扫描暴露时间",
+        "ST-FMR提取SOT效率",
+        "XRR关联界面粗糙度"
+      ],
+      "summary": "适度Ar等离子体降低界面粗糙度与自旋记忆损失，使自旋透明度达约0.98并把阻尼型SOT效率提高81%。",
+      "relevance": "给SOT-MRAM界面前处理提供直接工艺变量，也提醒离子处理需同时追踪粗糙度、互混和损伤。",
+      "limitation": "Pt/NiFe薄膜不是完整CoFeB/MgO MTJ；缺器件Jc、WER、耐久、保持和晶圆均匀性。",
+      "industrialization": "最接近SOT源/磁层界面模块；需300 mm片内均匀性、窗口容差、污染、退火与阵列电学验证。",
+      "whyRecommended": "先看处理时间—XRR粗糙度，再看透明度与SOT效率；35–50分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1103/5mb3-thyn",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/5mb3-thyn",
+      "backupUrl": "https://doi.org/10.1103/5mb3-thyn",
+      "accessNote": "已打开APS正式页面，核验作者、日期、DOI、0.98与81%。",
+      "recommendedOn": "2026-09-09",
+      "featured": true
+    },
+    {
+      "id": "prb-105-134407",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Efficient solution strategy to couple micromagnetic simulations with ballistic transport in magnetic tunnel junctions",
+      "titleZh": "MTJ微磁—弹道NEGF耦合：>300 mV下P→AP翻转低于4 ns",
+      "authors": "Peter Flauger, Claas Abert, Dieter Suess",
+      "venue": "Physical Review B 105, 134407 (2022)",
+      "published": "2022-04-07",
+      "timeTier": "重要计算方法论文",
+      "system": "微磁Landau–Lifshitz–Gilbert动力学与矩阵非平衡格林函数(NEGF)弹道输运自洽耦合，用现实参数模拟STT-MTJ翻转。",
+      "conditions": "P→AP在>300 mV或约2×10¹⁰ A/m²时翻转时间<4 ns；AP→P随偏压先加快后反向变慢。几何、温度和缺陷参数在公开摘要未完整公开。",
+      "methods": [
+        "微磁离散自由层",
+        "NEGF计算自旋输运与力矩",
+        "自洽更新磁化和电流",
+        "扫描电压比较P↔AP方向"
+      ],
+      "summary": "高效自洽算法复现电压依赖翻转，并发现AP→P的非单调趋势，说明固定力矩/固定电流近似可能漏掉反馈。",
+      "relevance": "可用于把真实侧墙损伤、局域各向异性和RA离散接入WER/翻转预测。",
+      "limitation": "模型是弹道、示例参数；未包含声子散射、完整自热、随机缺陷统计和阵列电路。",
+      "industrialization": "属于器件数字孪生内核；需实验标定、统计加速、紧凑模型和PDK接口。",
+      "whyRecommended": "先看耦合流程，再看P→AP与AP→P差异；40–55分钟。",
+      "score": 9.2,
+      "priority": "S",
+      "doi": "10.1103/PhysRevB.105.134407",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.105.134407",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.105.134407",
+      "accessNote": "已打开APS正式页面，并核验作者、日期、DOI、300 mV、2×10¹⁰ A/m²和<4 ns。",
+      "recommendedOn": "2026-09-09",
+      "featured": true
+    },
+    {
+      "id": "rsi-97-094703",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "C"
+      ],
+      "title": "Automated signal-to-noise ratio-based optimization of traveling-wave parametric amplifiers for multiplexed qubit readout",
+      "titleZh": "10 mK多路低噪声链自动优化：约100次测量、搜索量降4.5倍、几何平均SNR提高12.8%",
+      "authors": "Jeakyung Choi, Hwan-Seop Yeo, Seong Hyeon Park, Youngdu Kim, Beomgyu Choi, Bokyung Kim, Changki Hong, Yonuk Chong, Yong-Ho Lee, Gahyun Choi",
+      "venue": "Review of Scientific Instruments 97, 094703 (2026)",
+      "published": "2026-09-04",
+      "timeTier": "本周正式发表",
+      "system": "Bluefors XLD约10 mK、5量子比特频分复用、Josephson TWPA、4 K HEMT和Zurich Instruments SHFQC/SHFPPC控制链。",
+      "conditions": "输入总衰减79 dB；TWPA 7–8 GHz、约15 dB平均增益、约4 dB(2σ)增益波纹；SNR约2.5以上保真度饱和；约100次测量达到最优，较451点网格减少4.5倍，几何平均SNR高12.8%。",
+      "methods": [
+        "多温级衰减与隔离",
+        "扫描泵频/泵功率",
+        "以各通道SNR几何平均为目标",
+        "Nelder–Mead连续优化并与网格搜索比较"
+      ],
+      "summary": "把最弱通道约束纳入目标函数后，自动优化以约100次测量超过451点网格的最佳几何平均SNR 12.8%。",
+      "relevance": "算法可迁移到MTJ多通道低噪声、脉冲幅度/滤波/偏置自动整定与日常健康检查。",
+      "limitation": "量子比特/TWPA链不是MTJ平台；SNR目标需改成TMR、WER、噪声与结温多目标。",
+      "industrialization": "最接近自动化测量软件与可重复调参；缺跨设备迁移、漂移恢复、审计日志、GR&R和产线节拍。",
+      "whyRecommended": "先看图1测量链，再看约100次优化与SNR收益；35–50分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1063/5.0323923",
+      "url": "https://pubs.aip.org/aip/rsi/article/97/9/094703/3403848/Automated-signal-to-noise-ratio-based-optimization",
+      "backupUrl": "https://doi.org/10.1063/5.0323923",
+      "accessNote": "已打开RSI正式全文，核验日期、作者、10 mK、79 dB、增益、搜索次数和12.8%。",
+      "recommendedOn": "2026-09-09",
+      "featured": true
+    },
+    {
+      "id": "jva-43-042603",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "On the way to more sustainability: Development of five Al0.25Ga0.75N atomic layer etching modes for shorter cycle times",
+      "titleZh": "五种Al₀.₂₅Ga₀.₇₅N ALE节拍比较：0.20 nm/cycle、0.3 nm粗糙度与最高60%时间缩减",
+      "authors": "Christian Miersch, Sarah Seidel, Friedrich Roth, Johannes Heitmann, Franziska C. Beyer",
+      "venue": "Journal of Vacuum Science & Technology A 43, 042603 (2025)",
+      "published": "2025-06-16",
+      "timeTier": "近两年正式发表",
+      "system": "Al₀.₂₅Ga₀.₇₅N的全吹扫、半吹扫、无吹扫、连续等离子体、偏压脉冲五种ALE模式；优化离子能、Cl通量、改性/去除时间。",
+      "conditions": "标准半吹扫在25/50/75周期均为0.20±0.02 nm/cycle，粗糙度0.3 nm；偏压脉冲0.33±0.02 nm/cycle且有Cl污染；连续等离子体最高缩短60%处理时间。",
+      "methods": [
+        "五模式平行比较",
+        "优化离子能与Cl通量",
+        "测EPC随周期稳定性",
+        "比较粗糙度、污染和总节拍"
+      ],
+      "summary": "连续等离子体在保持低EPC/低粗糙度的同时把时间最多缩短60%；偏压脉冲更快但出现更高EPC与Cl残留。",
+      "relevance": "把原子精度、污染与吞吐放在同一DOE，非常适合迁移到MTJ侧墙低损伤刻蚀。",
+      "limitation": "AlGaN不等于CoFeB/MgO；未给磁性、电学、晶圆颗粒、ARDE与选择比。",
+      "industrialization": "接近节拍优化与设备配方阶段；需晶圆级CD/均匀性、腔体漂移、颗粒、成本和器件良率。",
+      "whyRecommended": "先看五种时序，再比较EPC/粗糙度/Cl/时间；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1116/6.0004593",
+      "url": "https://pubs.aip.org/avs/jva/article/43/4/042603/3350030/On-the-way-to-more-sustainability-Development-of",
+      "backupUrl": "https://doi.org/10.1116/6.0004593",
+      "accessNote": "已打开JVST A正式全文，核验作者、日期、DOI、EPC、粗糙度、污染与60%节拍。",
+      "recommendedOn": "2026-09-09",
       "featured": true
     }
   ]
