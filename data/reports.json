@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-09T12:00:00+08:00",
-  "reportDate": "2026-09-09",
+  "updatedAt": "2026-09-10T12:00:00+08:00",
+  "reportDate": "2026-09-10",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -793,6 +793,25 @@
         "prb-105-134407",
         "rsi-97-094703",
         "jva-43-042603"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "label": "详细日报：低温离子重排—SAF VCMA—77 K DMTJ—冷端计量—NbN ALE",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "arxiv-2609-02368",
+        "arxiv-2604-00839",
+        "arxiv-2204-09395",
+        "rsi-94-054710",
+        "arxiv-2502-17745"
       ]
     }
   ],
@@ -8655,6 +8674,186 @@
       "backupUrl": "https://doi.org/10.1116/6.0004593",
       "accessNote": "已打开JVST A正式全文，核验作者、日期、DOI、EPC、粗糙度、污染与60%节拍。",
       "recommendedOn": "2026-09-09",
+      "featured": true
+    },
+    {
+      "id": "arxiv-2609-02368",
+      "track": "A",
+      "secondaryTracks": [
+        "E",
+        "C"
+      ],
+      "title": "Magneto-Structural Coupling Enables Cryogenic Cation Redistribution in a Spinel Oxide",
+      "titleZh": "5–200 K尖晶石阳离子重排：磁—结构耦合解冻低温离子迁移",
+      "authors": "Yifeng Han, Yixing Zhao, Yunbo Ou, Feiran Shen, Lunhua He, Ligang Xu, Mingxue Tang, Jared Matteucci, Seth Ariel Tongay, Zexiao Zhang, Xiaoli Ma, Xiaohui Yu, Zheng Deng, Man-Rong Li, Alexandra Navrotsky",
+      "venue": "arXiv:2609.02368（可靠近期预印本）",
+      "published": "2026-09-02",
+      "timeTier": "本周可靠预印本",
+      "system": "尖晶石Mg₀.₅Fe₀.₅TiFeO₄；以中子粉末衍射/Rietveld精修跟踪A、B位Fe/Mg占位，并用低温磁致体积变化和室温高压XRD作机制对照。",
+      "conditions": "冷却范围200→5 K；5 K时A位Fe占位在Rietveld分辨率内趋近完全，Ti保持B位；高压XRD在室温给出相反占位趋势。原文摘要未公开压力上限、时间常数与迁移势垒。",
+      "methods": [
+        "制备并确认尖晶石相",
+        "200–5 K中子粉末衍射",
+        "Rietveld精修Fe/Mg位点占据",
+        "比较磁关联和磁致体积变化",
+        "室温高压XRD排除单纯体积收缩"
+      ],
+      "summary": "直接观测到通常应被冻结的低温阳离子重排；占位变化与复杂磁关联同步，压力对照表明体积收缩不足以单独解释。",
+      "relevance": "提醒原子级界面/氧化物势垒在低温磁有序附近可能发生非Arrhenius成分重排；可迁移为MgO/铁磁界面的低温结构—输运联合检查。",
+      "limitation": "预印本且为体相尖晶石；衍射占位变化不等同于直接观测单个离子迁移轨迹，不能外推到MgO/CoFeB。",
+      "industrialization": "位于材料失效机制发现；距离器件尚缺薄膜、界面、循环可逆性、时间稳定性、晶圆均匀性和电学后果验证。",
+      "whyRecommended": "先看温度—占位图，再看磁致体积和高压反向对照；35–50分钟。",
+      "score": 9.2,
+      "priority": "S",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2609.02368",
+      "backupUrl": "https://arxiv.org/pdf/2609.02368",
+      "accessNote": "已打开arXiv摘要，核验题名、作者、2026-09-02、200–5 K、5 K占位与高压对照。",
+      "recommendedOn": "2026-09-10",
+      "featured": true
+    },
+    {
+      "id": "arxiv-2604-00839",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Impact of gate voltage on switching field of perpendicular magnetic tunnel junctions with a synthetic antiferromagnetic free layer",
+      "titleZh": "SAF自由层pMTJ：用MgO厚度/RA分离VCMA、STT与焦耳热",
+      "authors": "K. Fan, S. V. Beek, G. Talmelli, V. Kateel, D. Giuliano, B. Vermeulen, K. Cai, B. Sorée, J. D. Boeck, R. Carpenter, S. Rao, S. Couet, V. D. Nguyen, G. S. Kar",
+      "venue": "arXiv:2604.00839（可靠近期预印本）",
+      "published": "2026-04-01",
+      "timeTier": "近一年可靠预印本",
+      "system": "垂直MTJ采用合成反铁磁(SAF)自由层，其中一个子层由TMR读出；改变MgO势垒厚度系统调节RA，并结合微磁模拟和门压下开关场实测。",
+      "conditions": "高RA器件由VCMA主导；低RA器件因STT与焦耳热增强出现非线性。公开摘要未给MgO厚度、RA绝对值、VCMA系数、尺寸和退火条件。",
+      "methods": [
+        "建立局域PMA调制的SAF微磁模型",
+        "改变MgO厚度/RA",
+        "施加门电压并测开关场",
+        "分解VCMA、STT与焦耳热有效场",
+        "比较不同临界尺寸"
+      ],
+      "summary": "用RA作为物理旋钮把三种电压效应分离；高RA接近纯VCMA，低RA出现STT/自热混合，提取的有效场对尺寸依赖较小。",
+      "relevance": "直接服务VCMA/SOT-MRAM堆栈、MgO厚度窗口、结温分离与尺寸缩放。",
+      "limitation": "预印本；摘要缺关键绝对参数、WER、耐久、保持和阵列数据，不能据此宣称量产就绪。",
+      "industrialization": "接近器件设计与缩放规则；缺300 mm片内RA/TMR分布、门介质可靠性、阵列寻址、BEOL热预算及百万级WER。",
+      "whyRecommended": "先看RA分组的开关场—电压，再看三有效场分解和尺寸依赖；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2604.00839",
+      "backupUrl": "https://arxiv.org/pdf/2604.00839",
+      "accessNote": "已打开arXiv摘要，核验题名、作者、日期及高/低RA机制分区。",
+      "recommendedOn": "2026-09-10",
+      "featured": true
+    },
+    {
+      "id": "arxiv-2204-09395",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Adjusting Thermal Stability in Double-Barrier MTJ for Energy Improvement in Cryogenic STT-MRAMs",
+      "titleZh": "77 K双势垒MTJ紧凑模型：放宽室温保持以降低读写能耗",
+      "authors": "Esteban Garzón, Raffaele De Rose, Felice Crupi, Lionel Trojman, Adam Teman, Marco Lanuzza",
+      "venue": "arXiv:2204.09395；IEEE Transactions on Electron Devices相关研究",
+      "published": "2022-04-20",
+      "timeTier": "重要低温器件计算论文",
+      "system": "双势垒MTJ(DMTJ)宏自旋Verilog-A模型与65 nm商用PDK耦合；PDK由硅器件实测标定至77 K，并向位单元和存储阵列层级传播。",
+      "conditions": "目标温度77 K；通过缩小截面积放宽室温非易失要求，但在77 K保持典型10年保持；相对6T-SRAM平均读能耗降低56%、写能耗降低37%。",
+      "methods": [
+        "建立DMTJ宏自旋紧凑模型",
+        "将65 nm PDK标定到77 K",
+        "扫描截面积/热稳定因子",
+        "位单元读写/泄漏仿真",
+        "上推不同容量存储器能耗与延迟"
+      ],
+      "summary": "低温显著提高保持裕量，可把过剩热稳定性换成更小尺寸与更低能耗；模型预测DMTJ在77 K读写能耗均优于6T-SRAM。",
+      "relevance": "提供“温度—Δ—面积—能耗—保持”联合设计框架，可用于低温MRAM器件/电路协同。",
+      "limitation": "理论/紧凑模型预测，不是制造阵列实测；宏自旋忽略非均匀翻转、工艺离散、自热和真实误码尾部。",
+      "industrialization": "位于架构/PDK前评估；需硅后DMTJ阵列、低温模型角、读扰、WER、耐久、封装热负载和EDA认证。",
+      "whyRecommended": "先看热稳定放宽假设，再看77 K位单元和容量级能耗比较；40–55分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2204.09395",
+      "backupUrl": "https://arxiv.org/pdf/2204.09395",
+      "accessNote": "已打开arXiv全文页面，核验作者、77 K、65 nm PDK、10年保持及−56%/−37%。",
+      "recommendedOn": "2026-09-10",
+      "featured": true
+    },
+    {
+      "id": "rsi-94-054710",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Cryogenic sensor enabling broad-band and traceable power measurements",
+      "titleZh": "10 mK原位微波功率标定：50 MHz–7 GHz、−114 dBm、0.1 dB不确定度",
+      "authors": "J.-P. Girard, R. E. Lake, W. Liu, R. Kokkoniemi, E. Visakorpi, J. Govenius, M. Möttönen",
+      "venue": "Review of Scientific Instruments 94, 054710 (2023)",
+      "published": "2023-05-25",
+      "timeTier": "高质量设备计量论文",
+      "system": "10 mK稀释制冷机内AuPd纳米线吸收器、Al/AuPd/Al SNS温度计与片上直流加热器；用RF/DC等效加热把低温吸收功率追溯到约瑟夫森电压和量子霍尔电阻。",
+      "conditions": "50 MHz–7 GHz；典型吸收功率−114 dBm；衰减测量不确定度最低0.1 dB；最低NEP约2 aW/√Hz、热时间常数20 μs；7 GHz示例线路衰减−122.80 dB。",
+      "methods": [
+        "10 mK安装辐射屏蔽纳米量热计",
+        "直流加热建立可追溯响应",
+        "RF加热扫功率并匹配复数S21",
+        "逐频率求线路衰减",
+        "噪声谱/响应度得到NEP"
+      ],
+      "summary": "把低温端实际吸收功率而非室温源表读数变成可追溯量，覆盖50 MHz–7 GHz并达到0.1 dB级不确定度。",
+      "relevance": "可直接迁移到MTJ纳秒写入线的冷端脉冲能量、频响和自热校准，降低“源端电压≠结上能量”的系统误差。",
+      "limitation": "纳米量热计/SNS链不是MTJ脉冲波形探头；频域等效功率不能直接还原亚纳秒峰值与器件局域温升。",
+      "industrialization": "最接近计量与设备验收模块；需封装标准件、自动校准脚本、跨热循环GR&R、脉冲校准和多通道节拍。",
+      "whyRecommended": "先看图1器件和图2链路，再看7 GHz衰减与NEP；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0143761",
+      "url": "https://pubs.aip.org/aip/rsi/article/94/5/054710/2890183/Cryogenic-sensor-enabling-broad-band-and",
+      "backupUrl": "https://doi.org/10.1063/5.0143761",
+      "accessNote": "已打开正式检索页与arXiv全文，核验出版日期、DOI、10 mK、50 MHz–7 GHz、−114 dBm、0.1 dB与NEP。",
+      "recommendedOn": "2026-09-10",
+      "featured": true
+    },
+    {
+      "id": "arxiv-2502-17745",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Atomic layer etching of niobium nitride using sequential exposures of O2 and H2/SF6 plasmas",
+      "titleZh": "NbN等离子体热ALE：125 °C、1.77 Å/cycle并保持更高Tc",
+      "authors": "Azmain A. Hossain, Sela Murphy, David S. Catherall, Anthony J. Ardizzi, Austin J. Minnich",
+      "venue": "arXiv:2502.17745（可靠预印本）",
+      "published": "2025-02-25",
+      "timeTier": "近两年可靠预印本",
+      "system": "NbN薄膜先以O₂等离子体氧化，再用H₂/SF₆等离子体形成挥发性NbF₅；调整SF₆:H₂实现Nb₂O₅相对NbN的选择性去除和循环自限。",
+      "conditions": "125 °C；椭偏实测1.77 Å/cycle；ALE后薄膜Tc高于相近厚度RIE样品。原文摘要未公开绝对Tc、粗糙度、选择比和晶圆尺寸。",
+      "methods": [
+        "O₂气体/等离子体氧化态对比",
+        "优化SF₆:H₂流量比",
+        "循环剂量饱和验证",
+        "椭偏测EPC",
+        "与同厚度RIE样品比较Tc"
+      ],
+      "summary": "首个NbN低损伤ALE路线以+5价Nb氧化和NbF₅挥发实现自限去除；1.77 Å/cycle且超导Tc优于RIE对照。",
+      "relevance": "把器件功能指标Tc纳入刻蚀损伤验收，是MTJ侧墙工艺用TMR/RA/噪声闭环的直接范式。",
+      "limitation": "预印本；NbN化学不同于CoFeB/MgO，Tc优于RIE不等于无损伤；缺微波损耗、图形CD、颗粒和长期漂移。",
+      "industrialization": "接近超导器件刻蚀单元；缺图形晶圆、ARDE、选择比、片内均匀性、腔体记忆、吞吐与良率。",
+      "whyRecommended": "先看循环化学和饱和窗口，再看1.77 Å/cycle及Tc对照；40–55分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2502.17745",
+      "backupUrl": "https://arxiv.org/pdf/2502.17745",
+      "accessNote": "已打开arXiv摘要/全文页面，核验作者、日期、125 °C、1.77 Å/cycle和Tc对照。",
+      "recommendedOn": "2026-09-10",
       "featured": true
     }
   ]

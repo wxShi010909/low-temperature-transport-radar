@@ -488,6 +488,18 @@
       "atomicIds": [
         "2026-09-09-ale-throughput-damage"
       ]
+    },
+    {
+      "date": "2026-09-10",
+      "opportunityIds": [
+        "2026-09-10-ra-vcma-cryo-window"
+      ],
+      "methodIds": [
+        "2026-09-10-cold-end-power-metrology"
+      ],
+      "atomicIds": [
+        "2026-09-10-nbn-ale-functional-gate"
+      ]
     }
   ],
   "items": [
@@ -7250,6 +7262,164 @@
       ],
       "researchConnection": "直接服务原子制造和MTJ图形化损伤。",
       "takeaway": "最短节拍必须同时通过化学和器件电学验收。"
+    },
+    {
+      "id": "2026-09-10-ra-vcma-cryo-window",
+      "date": "2026-09-10",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/C/A · VCMA—低温窗口",
+      "title": "建立RA×温度×门压的SAF-pMTJ三机制分离图",
+      "subtitle": "把VCMA、STT与焦耳热从同一开关曲线中拆开。",
+      "summary": "以MgO厚度/RA为主轴，在300/77/4 K重复门压开关和脉冲WER。",
+      "status": "器件DOE",
+      "relatedPaperIds": [
+        "arxiv-2604-00839",
+        "arxiv-2204-09395"
+      ],
+      "question": "低温下高RA纯VCMA窗口是否扩大，且能否同时满足WER、能耗与保持？",
+      "rationale": "SAF论文给出RA分区，77 K模型给出过剩Δ可换能耗的设计逻辑。",
+      "workflow": [
+        "制备3–5档MgO厚度/RA",
+        "300/77/4 K测TMR和Hsw–V",
+        "热阻标定分离焦耳热",
+        "纳秒脉冲统计WER",
+        "微磁/紧凑模型拟合"
+      ],
+      "equipment": [
+        "磁控溅射/退火",
+        "低温磁电输运",
+        "高速脉冲",
+        "红外/电阻温标",
+        "微磁/Verilog-A"
+      ],
+      "measurements": [
+        "TMR/RA",
+        "Hsw–V",
+        "VCMA系数",
+        "Jc/能量",
+        "结温",
+        "WER/保持"
+      ],
+      "metrics": [
+        "片内CV",
+        "机制残差",
+        "百万级错误尾",
+        "PVT窗口"
+      ],
+      "evidenceBoundary": "高/低RA机制来自预印本；低温收益来自理论模型，需自有器件实测。",
+      "firstSteps": [
+        "先做薄膜片RA阶梯",
+        "固定CD避免混杂",
+        "用双脉宽分离热效应"
+      ],
+      "researchConnection": "直接服务VCMA/SOT-MRAM、MgO界面和低温可靠性。",
+      "takeaway": "先分清机制，再优化电压与能耗。"
+    },
+    {
+      "id": "2026-09-10-cold-end-power-metrology",
+      "date": "2026-09-10",
+      "type": "method",
+      "typeZh": "设备/方法路线",
+      "trackLabel": "D/A · 冷端功率计量",
+      "title": "给MTJ高速脉冲链增加冷端功率与热循环校准",
+      "subtitle": "不再把室温源端幅度当作结上真实能量。",
+      "summary": "用RF/DC替代标准件标定每次降温后的频响、衰减和不确定度。",
+      "status": "平台升级",
+      "relatedPaperIds": [
+        "rsi-94-054710",
+        "arxiv-2604-00839"
+      ],
+      "question": "低温线缆频响和热循环漂移给MTJ写入能量带来多大系统误差？",
+      "rationale": "10 mK量热计已证明50 MHz–7 GHz可达0.1 dB级；MTJ需进一步扩展到脉冲域。",
+      "workflow": [
+        "冷端标准件/量热计安装",
+        "每次热循环扫S参数",
+        "RF/DC等效功率标定",
+        "脉冲反射/去嵌入",
+        "写入能量不确定度预算"
+      ],
+      "equipment": [
+        "低温系统",
+        "VNA/脉冲源",
+        "高速示波器",
+        "冷端量热计",
+        "偏置器/TDR"
+      ],
+      "measurements": [
+        "S11/S21",
+        "冷端功率",
+        "上升沿/反射",
+        "结温",
+        "WER"
+      ],
+      "metrics": [
+        "0.1 dB级频域目标",
+        "能量不确定度",
+        "热循环GR&R",
+        "自动校准时间"
+      ],
+      "evidenceBoundary": "论文验证连续/准稳态RF功率；亚纳秒MTJ脉冲需新的带宽与峰值校准。",
+      "firstSteps": [
+        "先用50 Ω冷端负载",
+        "记录三次热循环",
+        "把校准系数写入自动采集元数据"
+      ],
+      "researchConnection": "衔接现有低温自动化、噪声和MRAM脉冲测量。",
+      "takeaway": "测到冷端，才能可信比较写入能量。"
+    },
+    {
+      "id": "2026-09-10-nbn-ale-functional-gate",
+      "date": "2026-09-10",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · ALE功能损伤门槛",
+      "title": "用功能指标而非EPC单独验收低损伤ALE",
+      "subtitle": "把NbN的Tc门槛迁移为MTJ的TMR/RA/噪声门槛。",
+      "summary": "先在见证片确认自限化学，再用图形器件功能劣化决定离子能和循环窗口。",
+      "status": "工艺验证",
+      "relatedPaperIds": [
+        "arxiv-2502-17745",
+        "classic-arxiv-condmat-0701749"
+      ],
+      "question": "低EPC配方是否真的减少侧墙缺陷、残留和器件劣化？",
+      "rationale": "NbN工作用Tc区分ALE与RIE；CoFeB/MgO经典文献说明化学迁移会直接改变TMR。",
+      "workflow": [
+        "O₂/氟化单步与完整循环矩阵",
+        "见证片XPS/椭偏/AFM",
+        "图形NbN或MTJ功能测试",
+        "热处理前后复测",
+        "颗粒/片内统计"
+      ],
+      "equipment": [
+        "ALE/ICP-RIE",
+        "XPS/椭偏/AFM",
+        "SIMS/TEM",
+        "低温输运",
+        "MTJ测试"
+      ],
+      "measurements": [
+        "EPC/协同度",
+        "F/Cl/O残留",
+        "粗糙度",
+        "Tc或TMR/RA",
+        "噪声/耐久"
+      ],
+      "metrics": [
+        "功能保持率",
+        "片内CV",
+        "选择比",
+        "节拍",
+        "良率"
+      ],
+      "evidenceBoundary": "NbN化学不能直接用于CoFeB/MgO；可迁移的是“化学+功能”双门槛方法。",
+      "firstSteps": [
+        "先做禁入产品线见证片",
+        "定义残留和功能停止线",
+        "保留RIE等厚度对照"
+      ],
+      "researchConnection": "直接服务原子制造、刻蚀损伤与MTJ界面可靠性。",
+      "takeaway": "原子级去除必须通过器件功能验收。"
     }
   ]
 }

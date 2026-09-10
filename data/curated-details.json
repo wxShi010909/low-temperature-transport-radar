@@ -3215,5 +3215,66 @@
       "积分加速度：指定频带总振动强度。"
     ],
     "takeaway": "结构→模态→5–200 Hz积分值→自有平台验收；35–45分钟。"
+  },
+  {
+    "id": "review-procieee-104-1796",
+    "oneSentence": "正式综述系统连接MgO-MTJ、STT翻转、热稳定、写入电流、读写电路、制造缩放与产品化约束；用于建立今天五篇的共同器件指标框架。",
+    "background": "STT-MRAM用自旋极化电流翻转MTJ自由层；TMR/RA、临界电流和热稳定性之间存在强耦合。",
+    "question": "STT-MRAM从材料堆栈到阵列产品需要同时解决哪些物理、工艺和电路约束？",
+    "workflow": [
+      "MTJ与STT基础",
+      "材料/堆栈和PMA",
+      "缩放、Δ与Jc",
+      "读写电路和阵列",
+      "可靠性与产品化"
+    ],
+    "findings": [
+      "【综述归纳】MgO相干隧穿和CoFeB界面决定TMR。",
+      "【综述归纳】降低Jc不能牺牲Δ与保持。",
+      "【综述归纳】器件分布和选择晶体管共同限定阵列窗口。",
+      "【边界】2016综述不含近年SOT/VCMA全部进展。"
+    ],
+    "explanation": "从原子界面到系统良率是跨尺度链条，任一单指标最优都不等于存储器最优。",
+    "whyItMatters": [
+      "给当前MTJ/MRAM研究提供指标字典和验证层级。"
+    ],
+    "researchConnection": "用TMR、RA、Jc、Δ、WER、保持、耐久、CD、片内CV和阵列良率建立固定模板，并用今天B/C论文更新VCMA/低温部分。",
+    "limitationsDetailed": "数据年代较早；制程节点和商业状态需用近年论文更新，不能把综述中的路线图当作当前量产证明。",
+    "terms": [
+      "STT：自旋转移力矩。",
+      "选择晶体管：限制写入电流和阵列面积的CMOS器件。"
+    ],
+    "takeaway": "基础图→器件权衡→阵列→可靠性；60–75分钟。"
+  },
+  {
+    "id": "classic-arxiv-condmat-0701749",
+    "oneSentence": "TMR由200 °C退火后的20%升至350 °C的112%；275 °C前界面Fe–O还原并提高Fe磁矩，随后CoFeB晶化促进相干隧穿，同时B向MgO迁移形成B₂O₃。",
+    "background": "CoFeB常以非晶态沉积，退火后从MgO模板晶化；同时界面氧化态和B扩散会改变隧穿通道。",
+    "question": "CoFeB/MgO TMR随退火升高的增长分别来自哪些化学与结构机制？",
+    "workflow": [
+      "制备CoFeB/MgO/CoFeB",
+      "200–350 °C退火",
+      "测TMR",
+      "XAS/XMCD观察Fe/Co化学与磁矩",
+      "跟踪B迁移/晶化"
+    ],
+    "findings": [
+      "【实测】TMR从200 °C的20%升至350 °C的112%。",
+      "【实测】界面Fe–O在275 °C退火后消失。",
+      "【实测】Fe磁矩随Fe–O还原上升。",
+      "【实测】350 °C出现CoFeB再结晶谱学特征。",
+      "【实测】B含量下降并向MgO迁移形成B₂O₃。"
+    ],
+    "explanation": "275 °C前主要是界面去氧化；更高温下晶化使Δ1相干隧穿增强，但B扩散带来长期势垒风险。",
+    "whyItMatters": [
+      "直接指导退火窗口、B吸收层和原位界面表征。"
+    ],
+    "researchConnection": "变量：退火250–400 °C、时间、升温速率、帽层/B吸收层；对照：未退火和扩散阻挡层；指标：TMR/RA、XPS/XAS、TEM/EELS、SIMS、噪声、耐久。",
+    "limitationsDetailed": "早期堆栈和TMR水平；没有pMTJ阵列、300 mm均匀性、WER和BEOL循环，不能直接给现代产品工艺窗口。",
+    "terms": [
+      "Fe–O还原：界面氧从Fe氧化物状态退出。",
+      "Δ1相干隧穿：MgO选择特定对称性电子通道。"
+    ],
+    "takeaway": "TMR曲线→Fe–O→晶化→B扩散；40–55分钟。"
   }
 ]

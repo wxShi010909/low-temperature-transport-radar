@@ -286,6 +286,13 @@
       "classicIds": [
         "classic-rsi-92-095101"
       ]
+    },
+    {
+      "date": "2026-09-10",
+      "reviewId": "review-procieee-104-1796",
+      "classicIds": [
+        "classic-arxiv-condmat-0701749"
+      ]
     }
   ],
   "items": [
@@ -2621,6 +2628,59 @@
         "核对共振频率",
         "看5–200 Hz积分PSD",
         "转成自有平台FAT/SAT；35–45分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-procieee-104-1796",
+      "kind": "每日综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Spin-transfer torque magnetic random access memory (STT-MRAM)",
+      "titleZh": "STT-MRAM系统综述：从MTJ材料、写入物理到阵列与制造挑战",
+      "authors": "Dmytro Apalkov, Bernard Dieny, J. M. Slaughter",
+      "venue": "Proceedings of the IEEE 104(10), 1796–1830 (2016)",
+      "published": "2016-10",
+      "recommendedOn": "2026-09-10",
+      "doi": "10.1109/JPROC.2016.2590142",
+      "url": "https://ieeexplore.ieee.org/document/7555318/",
+      "backupUrl": "https://doi.org/10.1109/JPROC.2016.2590142",
+      "assistantSummary": "正式综述系统连接MgO-MTJ、STT翻转、热稳定、写入电流、读写电路、制造缩放与产品化约束；用于建立今天五篇的共同器件指标框架。",
+      "whySelected": "虽非近年论文，但仍是把材料—器件—阵列—产业链条讲清楚的高质量正式综述，适合作为基础较弱读者的骨架。",
+      "readingGuide": [
+        "先看MTJ/STT基础图",
+        "再看缩放与热稳定",
+        "对照阵列读写和可靠性",
+        "最后提取TMR/RA/Jc/Δ/膜厚/良率矩阵；60–75分钟"
+      ]
+    },
+    {
+      "id": "classic-arxiv-condmat-0701749",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "E",
+        "D"
+      ],
+      "title": "Influence of chemical and magnetic interface properties of Co-Fe-B/MgO/Co-Fe-B tunnel junctions on the annealing temperature dependence of the magnetoresistance",
+      "titleZh": "CoFeB/MgO退火经典：200→350 °C使TMR由20%升至112%的界面化学证据",
+      "authors": "J. Schmalhorst, A. Thomas, G. Reiss, X. Kou, E. Arenholz",
+      "venue": "Applied Physics Letters相关正式论文；arXiv:cond-mat/0701749",
+      "published": "2007-01-30（预印本公开日期）",
+      "recommendedOn": "2026-09-10",
+      "doi": "",
+      "url": "https://arxiv.org/abs/cond-mat/0701749",
+      "backupUrl": "https://arxiv.org/pdf/cond-mat/0701749",
+      "assistantSummary": "TMR由200 °C退火后的20%升至350 °C的112%；275 °C前界面Fe–O还原并提高Fe磁矩，随后CoFeB晶化促进相干隧穿，同时B向MgO迁移形成B₂O₃。",
+      "whySelected": "直接展示退火不是单一晶化变量，而是界面还原、B扩散与结构有序化的竞争过程。",
+      "readingGuide": [
+        "看TMR—退火温度",
+        "看Fe/Co吸收与磁矩",
+        "看B迁移证据",
+        "转成退火温度×时间×阻挡层DOE；40–55分钟"
       ],
       "notNew": true
     }

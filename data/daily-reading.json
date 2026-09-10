@@ -1,55 +1,56 @@
 {
-  "date": "2026-09-09",
+  "date": "2026-09-10",
   "review": {
-    "id": "review-jap-140-040703",
+    "id": "review-procieee-104-1796",
     "kind": "每日综述",
     "track": "B",
     "secondaryTracks": [
-      "E",
-      "C"
+      "C",
+      "E"
     ],
-    "title": "Fundamental understanding of the reliability issues of hafnium oxide-based ferroelectric field-effect transistors: A comprehensive review",
-    "titleZh": "HfO₂铁电FET可靠性正式综述：材料相、制程、器件架构与失效缓解",
-    "authors": "Agniva Paul, Apu Das, Gautham Kumar, Sourav De",
-    "venue": "Journal of Applied Physics 140, 040703 (2026)",
-    "published": "2026-07-31",
-    "recommendedOn": "2026-09-09",
-    "doi": "10.1063/5.0339947",
-    "url": "https://pubs.aip.org/aip/jap/article/140/4/040703/3399954/Fundamental-understanding-of-the-reliability",
-    "backupUrl": "https://doi.org/10.1063/5.0339947",
-    "assistantSummary": "正式Review串联HfO₂铁电相与晶体学、薄膜制备、器件架构、可靠性失效及缓解策略，强调CMOS兼容和纳米缩放不能替代耐久/保持验证。",
-    "whySelected": "作为MTJ之外的可产业化存储对照，重点借鉴缺陷、界面、电荷俘获、热预算与阵列可靠性验证框架。",
+    "title": "Spin-transfer torque magnetic random access memory (STT-MRAM)",
+    "titleZh": "STT-MRAM系统综述：从MTJ材料、写入物理到阵列与制造挑战",
+    "authors": "Dmytro Apalkov, Bernard Dieny, J. M. Slaughter",
+    "venue": "Proceedings of the IEEE 104(10), 1796–1830 (2016)",
+    "published": "2016-10",
+    "recommendedOn": "2026-09-10",
+    "doi": "10.1109/JPROC.2016.2590142",
+    "url": "https://ieeexplore.ieee.org/document/7555318/",
+    "backupUrl": "https://doi.org/10.1109/JPROC.2016.2590142",
+    "assistantSummary": "正式综述系统连接MgO-MTJ、STT翻转、热稳定、写入电流、读写电路、制造缩放与产品化约束；用于建立今天五篇的共同器件指标框架。",
+    "whySelected": "虽非近年论文，但仍是把材料—器件—阵列—产业链条讲清楚的高质量正式综述，适合作为基础较弱读者的骨架。",
     "readingGuide": [
-      "先看失效机制总图",
-      "再看制程—缺陷关系",
-      "比较保持/耐久/唤醒/疲劳",
-      "最后提取可迁移到MTJ的可靠性矩阵；60–75分钟"
+      "先看MTJ/STT基础图",
+      "再看缩放与热稳定",
+      "对照阵列读写和可靠性",
+      "最后提取TMR/RA/Jc/Δ/膜厚/良率矩阵；60–75分钟"
     ]
   },
   "classics": [
     {
-      "id": "classic-rsi-92-095101",
+      "id": "classic-arxiv-condmat-0701749",
       "kind": "经典文章",
-      "track": "D",
+      "track": "B",
       "secondaryTracks": [
-        "A"
+        "E",
+        "D"
       ],
-      "title": "A simple and efficient passive vibration isolation system for large loads in closed-cycle cryostats",
-      "titleZh": "闭循环低温系统大载荷被动隔振：1.6 K、30 kg、水平156倍与垂直60倍抑制",
-      "authors": "Eugen Wiens, Stephan Schiller",
-      "venue": "Review of Scientific Instruments 92, 095101 (2021)",
-      "published": "2021-09-07",
-      "recommendedOn": "2026-09-09",
-      "doi": "10.1063/5.0053381",
-      "url": "https://pubs.aip.org/aip/rsi/article/92/9/095101/1032518/A-simple-and-efficient-passive-vibration-isolation",
-      "backupUrl": "https://doi.org/10.1063/5.0053381",
-      "assistantSummary": "两级垂直隔振承载30 kg，在1.6 K具有2.1/1.3 Hz垂直共振与0.65 Hz摆动模；5–200 Hz积分加速度水平由6.7×10⁻³降至4.3×10⁻⁵ g，垂直由4.3×10⁻³降至7.2×10⁻⁵ g。",
-      "whySelected": "给闭循环低温探针、Raman/AFM及低噪声输运平台提供可复现的振动验收基准。",
+      "title": "Influence of chemical and magnetic interface properties of Co-Fe-B/MgO/Co-Fe-B tunnel junctions on the annealing temperature dependence of the magnetoresistance",
+      "titleZh": "CoFeB/MgO退火经典：200→350 °C使TMR由20%升至112%的界面化学证据",
+      "authors": "J. Schmalhorst, A. Thomas, G. Reiss, X. Kou, E. Arenholz",
+      "venue": "Applied Physics Letters相关正式论文；arXiv:cond-mat/0701749",
+      "published": "2007-01-30（预印本公开日期）",
+      "recommendedOn": "2026-09-10",
+      "doi": "",
+      "url": "https://arxiv.org/abs/cond-mat/0701749",
+      "backupUrl": "https://arxiv.org/pdf/cond-mat/0701749",
+      "assistantSummary": "TMR由200 °C退火后的20%升至350 °C的112%；275 °C前界面Fe–O还原并提高Fe磁矩，随后CoFeB晶化促进相干隧穿，同时B向MgO迁移形成B₂O₃。",
+      "whySelected": "直接展示退火不是单一晶化变量，而是界面还原、B扩散与结构有序化的竞争过程。",
       "readingGuide": [
-        "看机械结构",
-        "核对共振频率",
-        "看5–200 Hz积分PSD",
-        "转成自有平台FAT/SAT；35–45分钟"
+        "看TMR—退火温度",
+        "看Fe/Co吸收与磁矩",
+        "看B迁移证据",
+        "转成退火温度×时间×阻挡层DOE；40–55分钟"
       ],
       "notNew": true
     }
