@@ -500,6 +500,18 @@
       "atomicIds": [
         "2026-09-10-nbn-ale-functional-gate"
       ]
+    },
+    {
+      "date": "2026-09-11",
+      "opportunityIds": [
+        "2026-09-11-wafer-sot-distribution"
+      ],
+      "methodIds": [
+        "2026-09-11-resistance-traceability"
+      ],
+      "atomicIds": [
+        "2026-09-11-atomic-dipole-mtj"
+      ]
     }
   ],
   "items": [
@@ -7420,6 +7432,164 @@
       ],
       "researchConnection": "直接服务原子制造、刻蚀损伤与MTJ界面可靠性。",
       "takeaway": "原子级去除必须通过器件功能验收。"
+    },
+    {
+      "id": "2026-09-11-wafer-sot-distribution",
+      "date": "2026-09-11",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/C · 晶圆SOT统计闭环",
+      "title": "把10% D2D拆成材料、CD、RA与热源贡献",
+      "subtitle": "从“平均性能好”推进到可制造分布预算。",
+      "summary": "对晶圆中心—边缘与不同lot建立TMR/RA/Ic/温升协方差，定位变异来源。",
+      "status": "可立即立项",
+      "relatedPaperIds": [
+        "b-wafer-sot-2510-25853",
+        "c-2t-sot-2512-06215"
+      ],
+      "question": "10%器件间变异主要来自SOT层、MgO、CD还是接触？",
+      "rationale": "晶圆SOT工作已给出D2D，但模型又指出面外效率和尺寸是写能关键，必须做分层统计。",
+      "workflow": [
+        "5点/9点晶圆采样",
+        "TMR/RA/CD/片阻联合映射",
+        "2 ns写入概率曲线",
+        "热反射/电阻测温",
+        "混合效应模型分解lot/wafer/device"
+      ],
+      "equipment": [
+        "晶圆探针台",
+        "高速脉冲源与示波器",
+        "CD-SEM/椭偏",
+        "四探针",
+        "温控平台"
+      ],
+      "measurements": [
+        "TMR/RA",
+        "Ic与WER",
+        "D2D",
+        "温升",
+        "保持/耐久"
+      ],
+      "metrics": [
+        "片内CV",
+        "lot间CV",
+        "相关系数",
+        "尾部WER",
+        "功能良率"
+      ],
+      "evidenceBoundary": "150% TMR等数据来自预印本摘要；分布归因是本站DOE建议。",
+      "firstSteps": [
+        "先做100–300器件小样本",
+        "固定脉宽和温度",
+        "保留中心/边缘与未图形化见证片"
+      ],
+      "researchConnection": "直接服务SOT-MRAM晶圆均匀性、良率与工艺反馈。",
+      "takeaway": "先把10%拆解，才知道该改材料还是图形。"
+    },
+    {
+      "id": "2026-09-11-resistance-traceability",
+      "date": "2026-09-11",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "A/D · 低温电阻溯源",
+      "title": "建立MTJ低阻测量的可追溯校准与Allan验收",
+      "subtitle": "把100 s、nΩ/Ω计量思想缩放为实验室可执行方案。",
+      "summary": "用标准电阻、换向、四线和Allan偏差定义跨温区RA漂移的设备底噪。",
+      "status": "平台验证",
+      "relatedPaperIds": [
+        "d-ccc-2609-01124",
+        "a-pt-yig-1406-1859"
+      ],
+      "question": "观察到的低温RA/霍尔漂移有多少来自样品，多少来自仪器与热路？",
+      "rationale": "CCC工作证明脉管平台也能通过溯源与平均时间获得液氦级一致性。",
+      "workflow": [
+        "室温/4 K标准电阻校准",
+        "电流换向去热电势",
+        "100 s起始Allan扫描",
+        "脉管相位同步记录",
+        "样品与短路/开路对照"
+      ],
+      "equipment": [
+        "低噪声源表/纳伏表",
+        "标准电阻",
+        "低温磁体",
+        "温度计",
+        "自动换向矩阵"
+      ],
+      "measurements": [
+        "R(T,B)",
+        "Allan偏差",
+        "热电势",
+        "脉管相干噪声",
+        "漂移"
+      ],
+      "metrics": [
+        "重复性",
+        "不确定度预算",
+        "最佳平均时间",
+        "跨日再现性"
+      ],
+      "evidenceBoundary": "nΩ/Ω来自CCC/QHR系统，普通MTJ平台不应宣称同等精度；迁移的是校准方法。",
+      "firstSteps": [
+        "先做100 Ω与1 kΩ标准件",
+        "固定电缆与热锚",
+        "记录原始时间序列"
+      ],
+      "researchConnection": "直接提升低温输运、低噪声和设备验收可信度。",
+      "takeaway": "没有不确定度预算，微小界面效应就可能只是平台漂移。"
+    },
+    {
+      "id": "2026-09-11-atomic-dipole-mtj",
+      "date": "2026-09-11",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 原子界面偶极DOE",
+      "title": "把ALD界面偶极方法迁移到MgO/CoFeB插层筛选",
+      "subtitle": "以亚单层剂量、低热预算和可靠性三重门槛验收。",
+      "summary": "先在非磁见证结构验证偶极与泄漏，再进入MTJ比较VCMA、TMR/RA与耐久。",
+      "status": "工艺探索",
+      "relatedPaperIds": [
+        "e-sil-ald-2511-00786",
+        "classic-hayakawa-0504051"
+      ],
+      "question": "亚单层SiOx/AlOx/MgOx插层能否在不破坏Δ1通道下调界面电势与VCMA？",
+      "rationale": "SiOx工作证明低于225 °C的原子界面层可同时改Vt和可靠性；经典MTJ说明MgO厚度与结晶高度敏感。",
+      "workflow": [
+        "ALD 0/1/2/3循环剂量",
+        "XPS/椭偏确认覆盖与价态",
+        "非磁MIM泄漏/击穿",
+        "MTJ退火前后TMR/RA/VCMA",
+        "低温噪声和耐久筛选"
+      ],
+      "equipment": [
+        "ALD/真空互联",
+        "XPS/椭偏/TEM",
+        "磁控溅射",
+        "低温输运",
+        "脉冲可靠性平台"
+      ],
+      "measurements": [
+        "覆盖率/价态",
+        "RA/TMR",
+        "VCMA",
+        "1/f噪声",
+        "击穿/耐久"
+      ],
+      "metrics": [
+        "界面剂量窗口",
+        "片内CV",
+        "功能保持率",
+        "BEOL热预算",
+        "失效率"
+      ],
+      "evidenceBoundary": "SiOx结果来自氧化物晶体管，不能直接宣称对MTJ有效；这是受控迁移实验。",
+      "firstSteps": [
+        "先做MIM安全窗口",
+        "加入无插层和等效厚度对照",
+        "禁止仅凭TMR单指标放行"
+      ],
+      "researchConnection": "直接服务原子制造、MgO/CoFeB界面和可制造性验证。",
+      "takeaway": "亚单层插层必须同时过结构、电学、磁性和可靠性门槛。"
     }
   ]
 }

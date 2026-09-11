@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-10T12:00:00+08:00",
-  "reportDate": "2026-09-10",
+  "updatedAt": "2026-09-11T12:26:00+08:00",
+  "reportDate": "2026-09-11",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -812,6 +812,25 @@
         "arxiv-2204-09395",
         "rsi-94-054710",
         "arxiv-2502-17745"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "label": "详细日报：Pt/YIG低温界面—300 mm SOT-MRAM—二端SOT模型—量子电阻计量—ALD界面偶极",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-pt-yig-1406-1859",
+        "b-wafer-sot-2510-25853",
+        "c-2t-sot-2512-06215",
+        "d-ccc-2609-01124",
+        "e-sil-ald-2511-00786"
       ]
     }
   ],
@@ -8854,6 +8873,187 @@
       "backupUrl": "https://arxiv.org/pdf/2502.17745",
       "accessNote": "已打开arXiv摘要/全文页面，核验作者、日期、125 °C、1.77 Å/cycle和Tc对照。",
       "recommendedOn": "2026-09-10",
+      "featured": true
+    },
+    {
+      "id": "a-pt-yig-1406-1859",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Interface-dependent magnetotransport properties for thin Pt films on ferrimagnetic Y3Fe5O12",
+      "titleZh": "0.46–300 K、±15 T的Pt/YIG界面磁输运：弱反局域化与霍尔响应",
+      "authors": "Y. Shiomi, T. Ohtani, S. Iguchi, T. Sasaki, Z. Qiu, H. Nakayama, K. Uchida, E. Saitoh",
+      "venue": "Applied Physics Letters 104, 242406 (2014)",
+      "published": "2014-06-07（预印本）；正式论文2014年",
+      "timeTier": "关键旧文/方法基准",
+      "system": "1.8 nm Pt薄膜/Y3Fe5O12（YIG）亚铁磁绝缘体界面；对照为非磁基底上的Pt薄膜。",
+      "conditions": "0.46–300 K；磁场−15至+15 T；纵向磁阻与霍尔电阻。器件横向尺寸、驱动电流和晶圆统计在摘要中未公开。",
+      "methods": [
+        "低温四端磁输运",
+        "宽温区纵向电阻",
+        "高场角度/磁场扫描",
+        "霍尔电阻",
+        "Pt/YIG与Pt/非磁基底对照"
+      ],
+      "summary": "1.8 nm Pt在0.46–300 K、±15 T下呈现界面敏感输运：YIG显著压制Pt的弱反局域化，霍尔电阻出现宽温区对数温度依赖，高场磁输运也受界面控制。",
+      "relevance": "提供一套把超薄金属量子修正、磁界面耦合和寄生霍尔项分离的低温对照框架，可迁移到SOT层/CoFeB和MTJ引线。",
+      "limitation": "2014年连续薄膜，不是MTJ、无写入或可靠性；界面磁输运不能直接等同于自旋透明度。",
+      "industrialization": "位于界面材料筛选与失效诊断；缺器件级TMR/RA、300 mm均匀性、图形化侧墙、温循和阵列统计。",
+      "whyRecommended": "先看0.46–300 K电导修正，再看±15 T霍尔/磁阻对照；30–40分钟。",
+      "score": 8.8,
+      "priority": "A",
+      "doi": "10.1063/1.4883898",
+      "url": "https://arxiv.org/abs/1406.1859",
+      "backupUrl": "https://doi.org/10.1063/1.4883898",
+      "accessNote": "已打开arXiv直接来源，核验题目、作者、日期、1.8 nm、0.46–300 K、±15 T和DOI。",
+      "recommendedOn": "2026-09-11",
+      "featured": true
+    },
+    {
+      "id": "b-wafer-sot-2510-25853",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications",
+      "titleZh": "300 mm兼容SOT-MRAM：150% TMR、2 ns、<1 V与350 fJ",
+      "authors": "Samuel Liu, Chen-Yu Hu, Ming-Yuan Song, Xinyu Bao, Jean Anne C. Incorvia",
+      "venue": "arXiv:2510.25853v2（可靠预印本）",
+      "published": "2025-10-29；v2 2025-11-03",
+      "timeTier": "近两年可靠预印本",
+      "system": "300 mm兼容SOT-MRAM器件；双稳态与随机开关既用于2 bit量化交叉阵列，也用于随机训练和概率图模型。完整薄膜堆栈与器件直径需查PDF。",
+      "conditions": "实测TMR 150%、脉宽2 ns、写电压<1 V、能耗350 fJ、写噪声0.1%、器件间变异10%；MNIST精度95%。摘要未公开RA、WER、保持、耐久和样本数。",
+      "methods": [
+        "300 mm兼容制程",
+        "器件电学/开关测量",
+        "噪声与D2D统计",
+        "2 bit量化感知训练",
+        "概率图模型映射"
+      ],
+      "summary": "把SOT-MRAM从单器件性能推进到晶圆兼容器件与算法联合评估，公开150% TMR、2 ns、<1 V、350 fJ、0.1%写噪声、10% D2D和95% MNIST。",
+      "relevance": "直接对应晶圆工艺、变异、功耗、速度与存算一体应用，是当前MTJ/MRAM优先方向。",
+      "limitation": "预印本；摘要不含完整堆栈、芯片阵列规模、耐久/保持、温度范围、良率或尾部WER。",
+      "industrialization": "接近300 mm兼容器件和应用映射；仍缺大阵列、工艺窗口、BEOL热预算、长期漂移、温循、百万级器件尾部统计。",
+      "whyRecommended": "先读器件统计与图2/3，再读算法误差注入；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "2510.25853",
+      "url": "https://arxiv.org/abs/2510.25853",
+      "backupUrl": "https://arxiv.org/pdf/2510.25853",
+      "accessNote": "已打开arXiv直接来源，核验作者、日期和全部摘要定量指标。",
+      "recommendedOn": "2026-09-11",
+      "featured": true
+    },
+    {
+      "id": "c-2t-sot-2512-06215",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Modeling and Optimization of Two-Terminal Spin-Orbit-Torque MRAM",
+      "titleZh": "二端SOT-MRAM物理建模：20 nm器件的面外扭矩效率门槛",
+      "authors": "Md Nahid Haque Shazon, Piyush Kumar, Luqiao Liu, Daniel C. Ralph, Azad Naeemi",
+      "venue": "arXiv:2512.06215（可靠预印本）",
+      "published": "2025-12-05",
+      "timeTier": "近两年可靠预印本",
+      "system": "二端SOT-MRAM，把同一路径中的电荷流用于SOT写入；比较仅面内扭矩、含面外扭矩及延长电子在SOT层路径的新结构。",
+      "conditions": "横向尺寸重点为30和20 nm；面外SOT效率0.1即可显著降低能耗，20 nm时效率0.051可逼近7 nm节点SRAM写能。绝对写能、脉宽、温度和工艺变异在摘要未公开。",
+      "methods": [
+        "物理模型",
+        "器件缩放",
+        "扭矩分量扫描",
+        "写能基准",
+        "结构路径优化"
+      ],
+      "summary": "模型指出常见纯面内SOT在二端结构中几乎不优于STT-MRAM；真正的杠杆是面外扭矩与20–30 nm缩放，20 nm时效率0.051已可接近7 nm SRAM写能。",
+      "relevance": "把材料指标“面外扭矩效率”转成器件写能和尺寸门槛，适合指导SOT材料/界面DOE。",
+      "limitation": "理论预测，尚无同结构实测；摘要未公开热噪声、WER、寄生电阻、击穿或CMOS版图开销。",
+      "industrialization": "位于器件结构与材料指标定义；缺工艺可实现性、紧凑模型硅验证、阵列IR drop、耐久和温度统计。",
+      "whyRecommended": "先看面内/面外扭矩对比，再看20 nm阈值与新路径；35–50分钟。",
+      "score": 9.4,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "2512.06215",
+      "url": "https://arxiv.org/abs/2512.06215",
+      "backupUrl": "https://arxiv.org/pdf/2512.06215",
+      "accessNote": "已打开arXiv直接来源，核验作者、日期、20/30 nm和0.051/0.1效率结论。",
+      "recommendedOn": "2026-09-11",
+      "featured": true
+    },
+    {
+      "id": "d-ccc-2609-01124",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "Helium-Gas-Cooled Cryogenic Current Comparator Integrated with a Quantum Resistance Standard",
+      "titleZh": "4 K氦气冷却CCC与量子霍尔标准：100 s达到1 nΩ/Ω",
+      "authors": "Yuma Okazaki, Takehiko Oe, Nobu-Hisa Kaneko",
+      "venue": "arXiv:2609.01124（近期可靠预印本）",
+      "published": "2026-09-01",
+      "timeTier": "近期可靠预印本",
+      "system": "脉管式无液氦稀释制冷机4 K级内设置氦气腔，CCC探头以氦气换热冷却，并在同一系统集成量子霍尔电阻器件。",
+      "conditions": "QHR/100 Ω比值测量；100 s平均达到1 nΩ/Ω量级A类不确定度，与液氦方案在数nΩ/Ω内一致；每热循环氦气消耗<1 L。",
+      "methods": [
+        "4 K氦气换热腔",
+        "低温电流比较器",
+        "QHR集成",
+        "电阻比计量",
+        "与液氦基准交叉验证"
+      ],
+      "summary": "在脉管无液氦平台内，以不足1 L氦气/热循环实现与液氦CCC相当的精密电阻比计量；100 s达到1 nΩ/Ω级。",
+      "relevance": "可作为MTJ低阻态/RA、低频漂移和跨温区校准链的上位计量参考，强调“设备读数必须有量值溯源”。",
+      "limitation": "预印本；100 Ω量子计量并非直接MTJ脉冲写入平台；摘要未公开振动谱、完整热循环时间和自动化吞吐。",
+      "industrialization": "接近国家计量/校准平台；转入器件线仍需多通道开关矩阵、脉冲带宽、探针台兼容、长期再现性和维护成本。",
+      "whyRecommended": "先看系统热路和QHR集成，再看100 s不确定度；35–45分钟。",
+      "score": 9.2,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "2609.01124",
+      "url": "https://arxiv.org/abs/2609.01124",
+      "backupUrl": "https://arxiv.org/pdf/2609.01124",
+      "accessNote": "已打开arXiv直接来源，核验作者、日期、4 K、100 s、1 nΩ/Ω和<1 L。",
+      "recommendedOn": "2026-09-11",
+      "featured": true
+    },
+    {
+      "id": "e-sil-ald-2511-00786",
+      "track": "E",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Gate Dielectric Engineering with an Ultrathin Silicon-oxide Interfacial Dipole Layer for Low-Leakage Oxide-Semiconductor Memories",
+      "titleZh": "超薄ALD SiOx界面偶极：<225 °C实现四级Vt与10,000 s保持",
+      "authors": "Fabia F. Athena et al.",
+      "venue": "arXiv:2511.00786（可靠预印本）",
+      "published": "2025-11-02",
+      "timeTier": "近两年可靠预印本",
+      "system": "非晶氧化物半导体沟道/超薄ALD SiOx界面层/高k栅介质；随后集成到两晶体管增益单元存储器。",
+      "conditions": "总工艺温度<225 °C，无额外偶极激活退火；至少4个Vt档，最大正移500 mV；85 °C PBTS；Vsn下降减少67%；室温保持至10,000 s；待机漏电降低3个数量级。界面层绝对厚度摘要未公开。",
+      "methods": [
+        "ALD超薄SiOx",
+        "多循环/多Vt剂量",
+        "晶体管电学",
+        "85 °C PBTS",
+        "2T增益单元保持与漏电"
+      ],
+      "summary": "用原子层界面偶极而非高温掺杂，在<225 °C下获得多级阈值并改善85 °C稳定性、保持和漏电，展示界面单层工程到存储器指标的闭环。",
+      "relevance": "其变量—器件—可靠性链可迁移到MgO/CoFeB界面插层、VCMA和BEOL兼容工艺。",
+      "limitation": "预印本且不是MTJ；摘要不公开SiOx厚度、片内均匀性、循环寿命、阵列规模和高温保持外推。",
+      "industrialization": "接近低温BEOL兼容界面工艺与2T单元；缺300 mm均匀性、批间重复、阵列刷新功耗、长时TDDB/BTI与成本。",
+      "whyRecommended": "先看Vt多级与界面偶极，再看85 °C PBTS和2T保持；40–55分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "2511.00786",
+      "url": "https://arxiv.org/abs/2511.00786",
+      "backupUrl": "https://arxiv.org/pdf/2511.00786",
+      "accessNote": "已打开arXiv摘要/HTML直接来源，核验作者、日期和全部公开量化结果。",
+      "recommendedOn": "2026-09-11",
       "featured": true
     }
   ]

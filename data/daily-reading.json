@@ -1,56 +1,56 @@
 {
-  "date": "2026-09-10",
+  "date": "2026-09-11",
   "review": {
-    "id": "review-procieee-104-1796",
-    "kind": "每日综述",
+    "id": "review-jxcdc-3227062",
+    "kind": "正式发表综述",
     "track": "B",
     "secondaryTracks": [
-      "C",
-      "E"
+      "C"
     ],
-    "title": "Spin-transfer torque magnetic random access memory (STT-MRAM)",
-    "titleZh": "STT-MRAM系统综述：从MTJ材料、写入物理到阵列与制造挑战",
-    "authors": "Dmytro Apalkov, Bernard Dieny, J. M. Slaughter",
-    "venue": "Proceedings of the IEEE 104(10), 1796–1830 (2016)",
-    "published": "2016-10",
-    "recommendedOn": "2026-09-10",
-    "doi": "10.1109/JPROC.2016.2590142",
-    "url": "https://ieeexplore.ieee.org/document/7555318/",
-    "backupUrl": "https://doi.org/10.1109/JPROC.2016.2590142",
-    "assistantSummary": "正式综述系统连接MgO-MTJ、STT翻转、热稳定、写入电流、读写电路、制造缩放与产品化约束；用于建立今天五篇的共同器件指标框架。",
-    "whySelected": "虽非近年论文，但仍是把材料—器件—阵列—产业链条讲清楚的高质量正式综述，适合作为基础较弱读者的骨架。",
+    "title": "Review of Magnetic Tunnel Junctions for Stochastic Computing",
+    "titleZh": "用于随机计算的磁隧道结综述",
+    "authors": "B. R. Zink, Y. Lv, J.-P. Wang",
+    "venue": "IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 8 (2022)",
+    "published": "2022-12",
+    "recommendedOn": "2026-09-11",
+    "doi": "10.1109/JXCDC.2022.3227062",
+    "url": "https://ieeexplore.ieee.org/document/10005096",
+    "backupUrl": "https://doi.org/10.1109/JXCDC.2022.3227062",
+    "assistantSummary": "系统梳理MTJ热激活随机翻转、概率位、随机数与非布尔计算，并讨论能垒、偏压、温度和器件分布如何决定概率曲线。",
+    "whySelected": "能帮助把今日300 mm SOT-MRAM的0.1%写噪声与10% D2D区分为可利用随机性和不可接受工艺变异。",
     "readingGuide": [
-      "先看MTJ/STT基础图",
-      "再看缩放与热稳定",
-      "对照阵列读写和可靠性",
-      "最后提取TMR/RA/Jc/Δ/膜厚/良率矩阵；60–75分钟"
-    ]
+      "先读随机MTJ工作区定义",
+      "再看热稳定因子与偏压/温度",
+      "整理概率曲线斜率、相关性和能耗",
+      "最后对照晶圆级分布；50–70分钟"
+    ],
+    "notNew": false
   },
   "classics": [
     {
-      "id": "classic-arxiv-condmat-0701749",
+      "id": "classic-hayakawa-0504051",
       "kind": "经典文章",
       "track": "B",
       "secondaryTracks": [
-        "E",
-        "D"
+        "A",
+        "E"
       ],
-      "title": "Influence of chemical and magnetic interface properties of Co-Fe-B/MgO/Co-Fe-B tunnel junctions on the annealing temperature dependence of the magnetoresistance",
-      "titleZh": "CoFeB/MgO退火经典：200→350 °C使TMR由20%升至112%的界面化学证据",
-      "authors": "J. Schmalhorst, A. Thomas, G. Reiss, X. Kou, E. Arenholz",
-      "venue": "Applied Physics Letters相关正式论文；arXiv:cond-mat/0701749",
-      "published": "2007-01-30（预印本公开日期）",
-      "recommendedOn": "2026-09-10",
-      "doi": "",
-      "url": "https://arxiv.org/abs/cond-mat/0701749",
-      "backupUrl": "https://arxiv.org/pdf/cond-mat/0701749",
-      "assistantSummary": "TMR由200 °C退火后的20%升至350 °C的112%；275 °C前界面Fe–O还原并提高Fe磁矩，随后CoFeB晶化促进相干隧穿，同时B向MgO迁移形成B₂O₃。",
-      "whySelected": "直接展示退火不是单一晶化变量，而是界面还原、B扩散与结构有序化的竞争过程。",
+      "title": "Dependence of Giant Tunnel Magnetoresistance of Sputtered CoFeB/MgO/CoFeB Magnetic Tunnel Junctions on MgO Barrier Thickness and Annealing Temperature",
+      "titleZh": "溅射CoFeB/MgO/CoFeB经典：MgO厚度、375 °C退火与260%室温TMR",
+      "authors": "Jun Hayakawa, Shoji Ikeda, Fumihiro Matsukura, Hiromasa Takahashi, Hideo Ohno",
+      "venue": "Japanese Journal of Applied Physics 44, L587–L589 (2005)",
+      "published": "2005-04-03（预印本）；正式论文2005年",
+      "recommendedOn": "2026-09-11",
+      "doi": "10.1143/JJAP.44.L587",
+      "url": "https://arxiv.org/abs/cond-mat/0504051",
+      "backupUrl": "https://doi.org/10.1143/JJAP.44.L587",
+      "assistantSummary": "在SiO2/Si上溅射CoFeB/MgO/CoFeB，MgO 1.15–2.4 nm范围RA随厚度指数增长；375 °C退火使原本非晶CoFeB形成晶态结构，TMR达室温260%、5 K 403%。",
+      "whySelected": "把势垒厚度、RA、结晶和跨温TMR连成至今仍适用的工艺基线。",
       "readingGuide": [
-        "看TMR—退火温度",
-        "看Fe/Co吸收与磁矩",
-        "看B迁移证据",
-        "转成退火温度×时间×阻挡层DOE；40–55分钟"
+        "图1看堆栈/TEM",
+        "图2看RA指数关系",
+        "图3看退火与TMR",
+        "对照现代BEOL窗口；35–45分钟"
       ],
       "notNew": true
     }

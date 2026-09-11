@@ -293,6 +293,13 @@
       "classicIds": [
         "classic-arxiv-condmat-0701749"
       ]
+    },
+    {
+      "date": "2026-09-11",
+      "reviewId": "review-jxcdc-3227062",
+      "classicIds": [
+        "classic-hayakawa-0504051"
+      ]
     }
   ],
   "items": [
@@ -2681,6 +2688,59 @@
         "看Fe/Co吸收与磁矩",
         "看B迁移证据",
         "转成退火温度×时间×阻挡层DOE；40–55分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-jxcdc-3227062",
+      "kind": "正式发表综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C"
+      ],
+      "title": "Review of Magnetic Tunnel Junctions for Stochastic Computing",
+      "titleZh": "用于随机计算的磁隧道结综述",
+      "authors": "B. R. Zink, Y. Lv, J.-P. Wang",
+      "venue": "IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 8 (2022)",
+      "published": "2022-12",
+      "recommendedOn": "2026-09-11",
+      "doi": "10.1109/JXCDC.2022.3227062",
+      "url": "https://ieeexplore.ieee.org/document/10005096",
+      "backupUrl": "https://doi.org/10.1109/JXCDC.2022.3227062",
+      "assistantSummary": "系统梳理MTJ热激活随机翻转、概率位、随机数与非布尔计算，并讨论能垒、偏压、温度和器件分布如何决定概率曲线。",
+      "whySelected": "能帮助把今日300 mm SOT-MRAM的0.1%写噪声与10% D2D区分为可利用随机性和不可接受工艺变异。",
+      "readingGuide": [
+        "先读随机MTJ工作区定义",
+        "再看热稳定因子与偏压/温度",
+        "整理概率曲线斜率、相关性和能耗",
+        "最后对照晶圆级分布；50–70分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-hayakawa-0504051",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Dependence of Giant Tunnel Magnetoresistance of Sputtered CoFeB/MgO/CoFeB Magnetic Tunnel Junctions on MgO Barrier Thickness and Annealing Temperature",
+      "titleZh": "溅射CoFeB/MgO/CoFeB经典：MgO厚度、375 °C退火与260%室温TMR",
+      "authors": "Jun Hayakawa, Shoji Ikeda, Fumihiro Matsukura, Hiromasa Takahashi, Hideo Ohno",
+      "venue": "Japanese Journal of Applied Physics 44, L587–L589 (2005)",
+      "published": "2005-04-03（预印本）；正式论文2005年",
+      "recommendedOn": "2026-09-11",
+      "doi": "10.1143/JJAP.44.L587",
+      "url": "https://arxiv.org/abs/cond-mat/0504051",
+      "backupUrl": "https://doi.org/10.1143/JJAP.44.L587",
+      "assistantSummary": "在SiO2/Si上溅射CoFeB/MgO/CoFeB，MgO 1.15–2.4 nm范围RA随厚度指数增长；375 °C退火使原本非晶CoFeB形成晶态结构，TMR达室温260%、5 K 403%。",
+      "whySelected": "把势垒厚度、RA、结晶和跨温TMR连成至今仍适用的工艺基线。",
+      "readingGuide": [
+        "图1看堆栈/TEM",
+        "图2看RA指数关系",
+        "图3看退火与TMR",
+        "对照现代BEOL窗口；35–45分钟"
       ],
       "notNew": true
     }
