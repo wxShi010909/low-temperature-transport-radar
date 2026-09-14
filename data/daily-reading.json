@@ -1,56 +1,56 @@
 {
-  "date": "2026-09-11",
+  "date": "2026-09-14",
   "review": {
-    "id": "review-jxcdc-3227062",
-    "kind": "正式发表综述",
+    "id": "review-harsh-mtj-ae5e80",
+    "kind": "正式综述",
     "track": "B",
     "secondaryTracks": [
-      "C"
+      "A",
+      "D"
     ],
-    "title": "Review of Magnetic Tunnel Junctions for Stochastic Computing",
-    "titleZh": "用于随机计算的磁隧道结综述",
-    "authors": "B. R. Zink, Y. Lv, J.-P. Wang",
-    "venue": "IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 8 (2022)",
-    "published": "2022-12",
-    "recommendedOn": "2026-09-11",
-    "doi": "10.1109/JXCDC.2022.3227062",
-    "url": "https://ieeexplore.ieee.org/document/10005096",
-    "backupUrl": "https://doi.org/10.1109/JXCDC.2022.3227062",
-    "assistantSummary": "系统梳理MTJ热激活随机翻转、概率位、随机数与非布尔计算，并讨论能垒、偏压、温度和器件分布如何决定概率曲线。",
-    "whySelected": "能帮助把今日300 mm SOT-MRAM的0.1%写噪声与10% D2D区分为可利用随机性和不可接受工艺变异。",
+    "title": "Magnetic tunnel junctions for harsh environment resilience and space exploration: a review",
+    "titleZh": "正式综述｜极端温度、辐射与空间环境中的MTJ可靠性",
+    "authors": "Jehan Shalabi, Connor Devitt, Ernesto E. Marinero",
+    "venue": "Journal of Physics D: Applied Physics 59(17) (2026)",
+    "published": "2026-04-27",
+    "recommendedOn": "2026-09-14",
+    "doi": "10.1088/1361-6463/ae5e80",
+    "url": "https://doi.org/10.1088/1361-6463/ae5e80",
+    "backupUrl": "https://www.researchgate.net/publication/404224553_Magnetic_tunnel_junctions_for_harsh_environment_resilience_and_space_exploration_a_review",
+    "assistantSummary": "系统梳理辐射与宽温环境对Ms、各向异性、交换偏置、Δ、TMR、临界电流和延迟的影响，并把MTJ与CMOS/FPGA空间电子结合；综述复用文献给出10年安全写压随MgO厚度约0.425 V/nm的设计标度。",
+    "whySelected": "把今天3D存储层、低温热去嵌入与电源验收统一落到极端环境可靠性；同时提醒低温性能改善可能伴随写入延迟。",
     "readingGuide": [
-      "先读随机MTJ工作区定义",
-      "再看热稳定因子与偏压/温度",
-      "整理概率曲线斜率、相关性和能耗",
-      "最后对照晶圆级分布；50–70分钟"
+      "先看温度对磁参数/TMR/写入的汇总",
+      "再看辐射陷阱电荷与MgO寿命边界",
+      "看CMOS/FPGA系统集成",
+      "记录综述引用的原始证据，不把汇总图当新实验；50–70分钟"
     ],
     "notNew": false
   },
   "classics": [
     {
-      "id": "classic-hayakawa-0504051",
+      "id": "classic-ikeda-nmat2804",
       "kind": "经典文章",
       "track": "B",
       "secondaryTracks": [
-        "A",
         "E"
       ],
-      "title": "Dependence of Giant Tunnel Magnetoresistance of Sputtered CoFeB/MgO/CoFeB Magnetic Tunnel Junctions on MgO Barrier Thickness and Annealing Temperature",
-      "titleZh": "溅射CoFeB/MgO/CoFeB经典：MgO厚度、375 °C退火与260%室温TMR",
-      "authors": "Jun Hayakawa, Shoji Ikeda, Fumihiro Matsukura, Hiromasa Takahashi, Hideo Ohno",
-      "venue": "Japanese Journal of Applied Physics 44, L587–L589 (2005)",
-      "published": "2005-04-03（预印本）；正式论文2005年",
-      "recommendedOn": "2026-09-11",
-      "doi": "10.1143/JJAP.44.L587",
-      "url": "https://arxiv.org/abs/cond-mat/0504051",
-      "backupUrl": "https://doi.org/10.1143/JJAP.44.L587",
-      "assistantSummary": "在SiO2/Si上溅射CoFeB/MgO/CoFeB，MgO 1.15–2.4 nm范围RA随厚度指数增长；375 °C退火使原本非晶CoFeB形成晶态结构，TMR达室温260%、5 K 403%。",
-      "whySelected": "把势垒厚度、RA、结晶和跨温TMR连成至今仍适用的工艺基线。",
+      "title": "A perpendicular-anisotropy CoFeB–MgO magnetic tunnel junction",
+      "titleZh": "pMTJ经典｜Ta/CoFeB/MgO/CoFeB/Ta中的界面PMA与>120% TMR",
+      "authors": "S. Ikeda et al.",
+      "venue": "Nature Materials 9, 721–724 (2010)",
+      "published": "2010-07-11（在线）",
+      "recommendedOn": "2026-09-14",
+      "doi": "10.1038/nmat2804",
+      "url": "https://doi.org/10.1038/nmat2804",
+      "backupUrl": "https://pubmed.ncbi.nlm.nih.gov/20622864/",
+      "assistantSummary": "证明Ta/CoFeB/MgO/CoFeB/Ta可同时获得界面驱动垂直各向异性与超过120%的TMR，并在约40 nm尺度保持适用于非易失存储的热稳定性，奠定现代pMTJ材料基线。",
+      "whySelected": "今天所有3D/多界面缩放路线都必须回到这一CoFeB/MgO界面PMA与相干隧穿起点。",
       "readingGuide": [
-        "图1看堆栈/TEM",
-        "图2看RA指数关系",
-        "图3看退火与TMR",
-        "对照现代BEOL窗口；35–45分钟"
+        "先看堆栈和厚度",
+        "看退火前后PMA/TMR",
+        "看尺寸—热稳定性",
+        "对照现代BEOL、B扩散和亚10 nm要求；30–40分钟"
       ],
       "notNew": true
     }

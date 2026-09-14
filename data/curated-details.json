@@ -3337,5 +3337,67 @@
       "Δ1通道：MgO中衰减最慢的对称性隧穿态。"
     ],
     "takeaway": "图2 RA—厚度→TEM→TMR—退火；35–45分钟。"
+  },
+  {
+    "id": "review-harsh-mtj-ae5e80",
+    "oneSentence": "正式综述把辐射、极端温度、MgO寿命、写入和CMOS系统集成放进同一MTJ可靠性框架。",
+    "background": "航天/极端环境要求非易失、抗辐射和宽温，但MTJ本体与外围CMOS的失效机制不同，必须分层验证。",
+    "question": "MTJ在辐射和宽温下哪些磁性、隧穿和写入指标最先退化，现有证据距离空间级器件还有多远？",
+    "workflow": [
+      "梳理辐射环境与陷阱电荷",
+      "汇总高低温磁性/TMR",
+      "比较STT/SOT/VCMA写入",
+      "分析MgO击穿与耐久",
+      "连接CMOS/FPGA系统"
+    ],
+    "findings": [
+      "【综述结论】高温降低Ms和各向异性并削弱能垒/保持；低温通常提高TMR或稳定性，但写入延迟可能增加。",
+      "【综述复用数据】10年可靠性安全写压对MgO厚度给出约0.425 V/nm线性标度；这是引用数据，不是综述新实验。",
+      "【综述结论】MTJ本征抗辐射不代表外围CMOS、互连和电源同样鲁棒。",
+      "【边界】不同堆栈、辐射粒子/剂量和温区的数据不可直接横向拼接。"
+    ],
+    "explanation": "温度同时改变磁矩、PMA、交换偏置和隧穿；辐射可经陷阱电荷、氧化层损伤和外围电路引发系统失效。本站判断必须把本体、驱动、互连和封装分层做DOE。",
+    "whyItMatters": [
+      "为低温MTJ与可靠性指标提供正式综述入口。",
+      "阻止把单器件低温TMR提升误写成系统可用。"
+    ],
+    "researchConnection": "变量：4–400 K、总剂量/粒子、MgO厚度、写压/脉宽；对照：器件本体/带CMOS阵列；指标：TMR、RA、Δ、WER、TDDB、保持、SEU、恢复。",
+    "limitationsDetailed": "综述不是新实验；原始文献年代和堆栈差异大，关键定量值需回查源论文。",
+    "terms": [
+      "TID：累计电离辐射剂量。",
+      "TDDB：随时间积累的介质击穿。"
+    ],
+    "takeaway": "先看温度总表，再看MgO寿命与系统集成；50–70分钟。"
+  },
+  {
+    "id": "classic-ikeda-nmat2804",
+    "oneSentence": "2010年CoFeB/MgO pMTJ用界面PMA兼顾垂直易轴与>120% TMR，成为现代STT-MRAM材料起点。",
+    "background": "早期垂直磁体常牺牲MgO相干隧穿；CoFeB/MgO界面把PMA与高TMR统一。",
+    "question": "超薄CoFeB/MgO界面能否同时提供垂直各向异性、热稳定和可读TMR？",
+    "workflow": [
+      "溅射Ta/CoFeB/MgO/CoFeB/Ta",
+      "控制超薄CoFeB厚度",
+      "退火促使界面/结晶演化",
+      "测磁各向异性与TMR",
+      "评估约40 nm器件热稳定"
+    ],
+    "findings": [
+      "【直接实测】Ta/CoFeB/MgO/CoFeB/Ta获得垂直各向异性。",
+      "【直接实测】TMR超过120%。",
+      "【直接实测】约40 nm尺度保持高热稳定性。",
+      "【边界】早期器件未覆盖现代亚10 nm、300 mm阵列WER和BEOL全流程。"
+    ],
+    "explanation": "CoFeB/MgO杂化与退火结晶产生界面PMA，同时MgO支持对称性选择隧穿。本站判断B扩散、Ta混合和侧壁损伤是把经典堆栈推向先进节点的核心风险。",
+    "whyItMatters": [
+      "确立pMTJ材料—界面—器件的共同语言。",
+      "为3D/多界面改型提供基准对照。"
+    ],
+    "researchConnection": "变量：CoFeB/MgO厚度、Ta吸B、退火温度/时间；对照：单/双界面、不同帽层；指标：TMR、RA、PMA、Δ、SIMS/TEM、WER。",
+    "limitationsDetailed": "数据属于2010年代初工艺；不代表现代制程良率、耐久或亚10 nm性能。",
+    "terms": [
+      "PMA：垂直磁各向异性。",
+      "界面各向异性：单位面积贡献，在超薄磁层中占主导。"
+    ],
+    "takeaway": "堆栈→PMA→TMR→尺度热稳定；30–40分钟。"
   }
 ]

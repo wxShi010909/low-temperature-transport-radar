@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-11T12:26:00+08:00",
-  "reportDate": "2026-09-11",
+  "updatedAt": "2026-09-14T12:00:00+08:00",
+  "reportDate": "2026-09-14",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -831,6 +831,25 @@
         "c-2t-sot-2512-06215",
         "d-ccc-2609-01124",
         "e-sil-ald-2511-00786"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "label": "详细日报：LAFO热磁子去嵌入—3D pMTJ—双自由层模型—IPS3磁源—InGaAs ALE",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-lafo-magnon-2609-09674",
+        "b-3d-mtj-2608-20850",
+        "c-dfl-mtj-xlfp-z2hf",
+        "d-ips3-qdo-2026",
+        "e-ingaas-ale-2506-19749"
       ]
     }
   ],
@@ -9054,6 +9073,186 @@
       "backupUrl": "https://arxiv.org/pdf/2511.00786",
       "accessNote": "已打开arXiv摘要/HTML直接来源，核验作者、日期和全部公开量化结果。",
       "recommendedOn": "2026-09-11",
+      "featured": true
+    },
+    {
+      "id": "a-lafo-magnon-2609-09674",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Microscopic Understanding of Thermal-magnon Transport in a Low-damping Ferrimagnetic Thin Films",
+      "titleZh": "LAFO/Pt非局域热磁子输运：热成像去嵌入、0.3–8 T与交换刚度标度",
+      "authors": "Lerato Takana et al.",
+      "venue": "arXiv:2609.09674（可靠预印本）",
+      "published": "2026-09-09",
+      "timeTier": "本周可靠预印本",
+      "system": "13 nm外延Li0.5Al1.0Fe1.5O4（LAFO）/(001) MgAl2O4，表面Pt注入器与空间分离Pt探测器；非局域自旋Seebeck/逆自旋霍尔读出。",
+      "conditions": "MWIR热成像电流0.85–1.4 mA；本征输运取注入—探测间距4 µm，超过约3.5 µm热愈合长度；250 K下扫场0.3–8 T；BLS示例284 mT、300 K；温标重点>100 K。",
+      "methods": [
+        "二次谐波非局域锁相",
+        "MWIR热成像",
+        "距离依赖扩散拟合",
+        "BLS色散",
+        "MuMax3有限温微磁模拟"
+      ],
+      "summary": "把局域热电背景、热磁子扩散、磁子色散和温度依赖交换刚度串成闭环，给出MTJ自热/热磁信号去嵌入可直接迁移的方法。",
+      "relevance": "可迁移到低温MTJ脉冲自热、二次谐波热背景和磁场依赖界面输运的分离；重点是先测真实温度场再解释电压。",
+      "limitation": "预印本；材料不是CoFeB/MgO，主要温区>100 K，未给出MRAM写入、TMR或可靠性；微磁解释依赖参数化交换刚度。",
+      "industrialization": "最接近低温测量方法与热失效去嵌入；缺片上温度计交叉校准、器件间统计、封装热路径和阵列级自热关联。",
+      "whyRecommended": "先看图1热愈合长度与二次谐波，再看图2场依赖扩散、图3温度标度；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "2609.09674",
+      "url": "https://arxiv.org/html/2609.09674v1",
+      "backupUrl": "https://arxiv.org/abs/2609.09674",
+      "accessNote": "已打开arXiv HTML直接来源，核验堆栈、尺寸、温度、磁场、电流、热愈合长度及幂律指数。",
+      "recommendedOn": "2026-09-14",
+      "featured": true
+    },
+    {
+      "id": "b-3d-mtj-2608-20850",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Towards Ultra Scalability of Non-Volatile Magnetic Tunnel Junctions with a 3D Storage Layer",
+      "titleZh": "3D高纵横比存储层：把pMTJ热稳定性推向亚10 nm并暴露工艺/串扰代价",
+      "authors": "Nuno Caçoilo, Shunsuke Fukami, Olivier Fruchart, Ioan-Lucian Prejbeanu",
+      "venue": "arXiv:2608.20850（可靠预印本/观点与综合研究）",
+      "published": "2026-08-21",
+      "timeTier": "近期可靠预印本",
+      "system": "传统约1.1–1.4 nm薄自由层与15–60 nm厚3D高纵横比存储层对比；讨论FeB、NiFe、Co单层及多CoFeB/MgO界面方案。",
+      "conditions": "覆盖常规30–80 nm结、亚10 nm目标；微磁网格2 nm，示例20 nm底宽、16–60 nm厚、−3 V；假设TMR 100%、RA 1 Ω·µm²、界面STT衰减长1 nm。",
+      "methods": [
+        "能量/退磁因子解析",
+        "最小能量路径",
+        "3D微磁反转",
+        "纳米柱工艺综述",
+        "温度与阵列串扰分析"
+      ],
+      "summary": "高纵横比通过形状各向异性和体积保留热稳定性，但域壁型非均匀反转会封顶能垒并拉长写入；多界面结构可在较薄体积下兼顾稳定、速度和串扰。",
+      "relevance": "直指先进节点pMTJ自由层厚度、MgO多界面、IBE图形化侧壁控制和阵列pitch；适合反推沉积/刻蚀深宽比能力。",
+      "limitation": "属于综合与模型主导文章；部分定量来自既有文献，−3 V示例不是量产电压；缺统一堆栈的晶圆级对比。",
+      "industrialization": "最接近亚10 nm STT-MRAM单元架构；障碍是高纵横比刻蚀/侧壁再沉积、保形绝缘、RA/TMR损失、相邻单元偶极串扰、WER与良率。",
+      "whyRecommended": "图4看稳定性地图，图5看非均匀反转，图11–17看实验、串扰和多界面路线；55–75分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "2608.20850",
+      "url": "https://arxiv.org/html/2608.20850v1",
+      "backupUrl": "https://arxiv.org/abs/2608.20850",
+      "accessNote": "已打开arXiv HTML直接来源，核验亚10 nm目标、15/60 nm实验层、8.8 nm电学直径、RA与串扰/稳定性边界。",
+      "recommendedOn": "2026-09-14",
+      "featured": true
+    },
+    {
+      "id": "c-dfl-mtj-xlfp-z2hf",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Efficient modeling algorithm and design-space exploration for double-free-layer magnetic tunnel junctions",
+      "titleZh": "双自由层MTJ的NEGF—磁动力学联合优化：117.1倍加速与0.846 ns最优解",
+      "authors": "Zifeng Wang, Hongwei Zhou, Suteng Zhao, Weisheng Zhao, Lang Zeng",
+      "venue": "Physical Review Applied 26, 014108 (2026)",
+      "published": "2026-07-31",
+      "timeTier": "近期正式发表",
+      "system": "双自由层MTJ；用NEGF计算自旋输运并与两自由层磁化动力学耦合，扫描层间铁磁耦合、热稳定性等设计参数。",
+      "conditions": "论文摘要公开117.1倍加速与最短0.846 ns；具体层厚、偏压、阻尼、温度和优化边界需正文/补充材料，本站不臆造。",
+      "methods": [
+        "NEGF输运",
+        "混合能量采样",
+        "复积分避奇点",
+        "变步长1(2)阶Runge–Kutta",
+        "单目标与贝叶斯优化"
+      ],
+      "summary": "把原本昂贵的量子输运—磁化耦合仿真提速117.1倍，并用于双自由层参数空间优化；最优参数下给出0.846 ns开关时间。",
+      "relevance": "可作为用户的材料参数—器件写入闭环：把实测RA/TMR、耦合场、PMA和温度参数回灌模型，减少盲目堆栈试错。",
+      "limitation": "主要是模型与算法；摘要未公开WER样本数、工艺离散、焦耳热、边缘损伤及与硅电路联合验证。",
+      "industrialization": "最接近器件设计空间压缩和数字孪生；缺硅后标定、PVT/老化角、阵列统计、模型不确定度和跨工艺节点验证。",
+      "whyRecommended": "先读算法框图与117.1倍基准，再看0.846 ns优化点和参数敏感性；35–50分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1103/xlfp-z2hf",
+      "url": "https://journals.aps.org/prapplied/abstract/10.1103/xlfp-z2hf",
+      "backupUrl": "https://doi.org/10.1103/xlfp-z2hf",
+      "accessNote": "已打开APS期刊直接来源，核验正式发表日期、算法组成、117.1倍加速及0.846 ns结果。",
+      "recommendedOn": "2026-09-14",
+      "featured": true
+    },
+    {
+      "id": "d-ips3-qdo-2026",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "Quantum Design Oxford Announces New IPS3 Superconducting Magnet Power Supply",
+      "titleZh": "厂商技术资料｜IPS3超导磁体电源：±120 A四象限、双机±240 A与以太网多轴控制",
+      "authors": "Quantum Design Oxford",
+      "venue": "Quantum Design Oxford厂商技术资料（新闻稿）",
+      "published": "2026-07-09",
+      "timeTier": "近期厂商正式技术资料",
+      "system": "2U、19英寸机架式IPS3超导磁体电源；面向Proteox、TeslatronPT Plus及湿式/干式存量磁体；可多机多轴控制。",
+      "conditions": "单机全四象限±120 A；两机并联最高±240 A，面向典型16–20 T高电流/高电感磁体；前面板自适应Ethernet；兼容DECS软件。",
+      "methods": [
+        "四象限电流驱动",
+        "多机并联/多轴控制",
+        "Ethernet远控",
+        "DECS软件集成",
+        "失超安全管理"
+      ],
+      "summary": "IPS3替代Mercury电子学家族，给出存量磁体兼容、多轴自动化和失超管理路径；这是厂商规格与升级信息，不是科研性能证明。",
+      "relevance": "对低温MTJ角度依赖、矢量场扫描、自动化联锁和老系统升级直接相关，可提前检查控制协议、触发同步与磁场回线复现。",
+      "limitation": "厂商未在新闻稿公开纹波、长期漂移、扫场噪声、同步触发延迟、磁场传递函数和第三方重复性。",
+      "industrialization": "最接近低温设备控制与存量系统升级；采购/验收仍需FAT/SAT、EMI、漂移、失超恢复、API稳定性及备件寿命。",
+      "whyRecommended": "先看±120/±240 A和兼容矩阵，再据此制定验收条款；20–30分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "",
+      "url": "https://qd-oxford.com/about_us/2026_07_09_news_item_IPS3_superconducting_magnet_power_supply.html",
+      "backupUrl": "https://qd-oxford.com/",
+      "accessNote": "已打开Quantum Design Oxford官方页面；所有参数仅作为厂商技术资料使用，不作为科研结论。",
+      "recommendedOn": "2026-09-14",
+      "featured": true
+    },
+    {
+      "id": "e-ingaas-ale-2506-19749",
+      "track": "E",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Atomic layer etching of InGaAs using sequential exposures of atomic hydrogen and oxygen gas",
+      "titleZh": "InGaAs热ALE：原子氢/氧气顺序暴露、350 °C下0.095 Å/cycle",
+      "authors": "Mete M. Bayrak, Anthony J. Ardizzi, Sadhvikas Addamane, Kieran Cleary, Austin J. Minnich",
+      "venue": "arXiv:2506.19749（可靠预印本）",
+      "published": "2025-06-24",
+      "timeTier": "近两年可靠预印本",
+      "system": "InGaAs表面，原子氢与氧气顺序暴露构成热ALE循环；目标是InP HEMT栅凹槽的低损伤、均匀、埃级深度控制。",
+      "conditions": "350 °C；椭偏测得0.095 Å/cycle；200个ALE循环后保持原子级平滑；摘要未公开压力、单步剂量/吹扫时间与晶圆尺寸。",
+      "methods": [
+        "原子氢修饰",
+        "O2顺序反应",
+        "循环式ALE",
+        "非原位光谱椭偏",
+        "表面平滑度表征"
+      ],
+      "summary": "以不含离子轰击的顺序气相反应实现极低刻蚀增量，给出将低损伤ALE用于纳米器件栅凹槽和界面终止控制的路线。",
+      "relevance": "虽然材料不是MTJ，但“修饰—去除—吹扫—饱和窗口”可迁移到MgO/CoFeB帽层或侧壁残留的低损伤工艺开发。",
+      "limitation": "预印本；350 °C对部分BEOL/磁性堆栈偏高；摘要未给选择比、片内均匀性、残留杂质、循环时间与器件电学。",
+      "industrialization": "最接近原子层刻蚀模块；缺300 mm均匀性、选择比、腔体记忆、颗粒、吞吐量、批间稳定及实际HEMT/MTJ良率。",
+      "whyRecommended": "先看每循环刻蚀量和200循环粗糙度，再找饱和窗口/表面化学；35–45分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.48550/arXiv.2506.19749",
+      "arxiv": "2506.19749",
+      "url": "https://arxiv.org/abs/2506.19749",
+      "backupUrl": "https://arxiv.org/pdf/2506.19749",
+      "accessNote": "已打开arXiv摘要直接来源，核验作者、流程、350 °C、0.095 Å/cycle和200循环表面结果。",
+      "recommendedOn": "2026-09-14",
       "featured": true
     }
   ]

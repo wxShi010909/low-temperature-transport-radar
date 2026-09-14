@@ -512,6 +512,18 @@
       "atomicIds": [
         "2026-09-11-atomic-dipole-mtj"
       ]
+    },
+    {
+      "date": "2026-09-14",
+      "opportunityIds": [
+        "2026-09-14-3d-mtj-process-window"
+      ],
+      "methodIds": [
+        "2026-09-14-lowtemp-thermal-deembed"
+      ],
+      "atomicIds": [
+        "2026-09-14-ale-mtj-damage-gate"
+      ]
     }
   ],
   "items": [
@@ -7590,6 +7602,168 @@
       ],
       "researchConnection": "直接服务原子制造、MgO/CoFeB界面和可制造性验证。",
       "takeaway": "亚单层插层必须同时过结构、电学、磁性和可靠性门槛。"
+    },
+    {
+      "id": "2026-09-14-3d-mtj-process-window",
+      "date": "2026-09-14",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/C · 3D pMTJ缩放",
+      "title": "建立厚度×界面数×pitch的3D pMTJ联合DOE",
+      "subtitle": "不再只追求单柱Δ，把写入、侧壁和阵列串扰同时纳入。",
+      "summary": "以薄单层、厚单层和多界面三组对照，联合测结构、TMR/RA、Δ、WER与邻近偏置。",
+      "status": "高优先级验证",
+      "relatedPaperIds": [
+        "b-3d-mtj-2608-20850",
+        "c-dfl-mtj-xlfp-z2hf",
+        "classic-ikeda-nmat2804"
+      ],
+      "question": "怎样在亚10 nm同时维持Δ、低写压、短脉冲和阵列低串扰？",
+      "rationale": "3D综述指出单层厚柱能垒封顶和串扰；双自由层模型提供快速筛参；经典pMTJ给界面基准。",
+      "workflow": [
+        "先用实测参数校准模型",
+        "制备薄/厚/多界面见证堆栈",
+        "20/10/5 nm图形化",
+        "多pitch阵列与低温/高温测量",
+        "失效截面回溯"
+      ],
+      "equipment": [
+        "磁控溅射/真空互联",
+        "IBE/RIE",
+        "TEM/EELS/SIMS",
+        "低温磁输运",
+        "脉冲WER平台"
+      ],
+      "measurements": [
+        "TMR/RA",
+        "PMA/Δ",
+        "WER/击穿",
+        "邻近偏置",
+        "侧壁成分"
+      ],
+      "metrics": [
+        "片内CV",
+        "模型残差",
+        "10^-6起步WER",
+        "保持外推",
+        "良率"
+      ],
+      "evidenceBoundary": "3D文章包含模拟与异质实验汇总；本站路线是迁移性DOE，不等于已量产。",
+      "firstSteps": [
+        "固定MgO主势垒和参考层",
+        "先做15/30/60 nm厚度",
+        "每组加入至少三种pitch"
+      ],
+      "researchConnection": "直接服务pMTJ缩放、图形化损伤和阵列可靠性。",
+      "takeaway": "亚10 nm优化对象必须从单结扩展为工艺—单元—阵列。"
+    },
+    {
+      "id": "2026-09-14-lowtemp-thermal-deembed",
+      "date": "2026-09-14",
+      "type": "method",
+      "typeZh": "设备/方法路线",
+      "trackLabel": "A/D · 热去嵌入与磁源验收",
+      "title": "把热愈合长度和磁源纹波纳入低温MTJ测量基线",
+      "subtitle": "温度场、谐波、场漂移和器件信号同步记录。",
+      "summary": "先用标准电阻/霍尔探头标定热与场，再测MTJ，避免把热电压或磁源噪声误判为界面输运。",
+      "status": "可立即实施",
+      "relatedPaperIds": [
+        "a-lafo-magnon-2609-09674",
+        "d-ips3-qdo-2026",
+        "review-harsh-mtj-ae5e80"
+      ],
+      "question": "低温TMR/噪声变化有多少来自器件，有多少来自热梯度与磁源？",
+      "rationale": "LAFO工作证明必须越过热愈合长度；IPS3资料提供多轴自动化但未给纹波数据。",
+      "workflow": [
+        "短路/标准电阻基线",
+        "片上温度计或热成像",
+        "一/二次谐波同步",
+        "霍尔探头测扫场传递函数",
+        "MTJ低温脉冲复测"
+      ],
+      "equipment": [
+        "低温磁体/IPS3类电源",
+        "锁相/低噪声前放",
+        "霍尔探头",
+        "片上温度计",
+        "自动化DAQ"
+      ],
+      "measurements": [
+        "V1ω/V2ω",
+        "温升与热时常",
+        "场漂移/回线",
+        "PSD",
+        "TMR/RA"
+      ],
+      "metrics": [
+        "热背景占比",
+        "nT或mT级漂移",
+        "重复性",
+        "噪声底",
+        "脚本恢复率"
+      ],
+      "evidenceBoundary": "IPS3参数为厂商声明；任何低噪声结论必须通过本地FAT/SAT。",
+      "firstSteps": [
+        "先在空载/假负载测纹波",
+        "确定探测点热愈合尺度",
+        "保存原始温度/场/电压时间戳"
+      ],
+      "researchConnection": "直接服务低温输运、设备自动化和工艺反馈。",
+      "takeaway": "没有温度场和磁源基线，就没有可信的低温MTJ机制。"
+    },
+    {
+      "id": "2026-09-14-ale-mtj-damage-gate",
+      "date": "2026-09-14",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 低损伤ALE门槛",
+      "title": "用InGaAs热ALE方法学建立MTJ侧壁清理安全窗口",
+      "subtitle": "先在见证片验证温度与氧暴露，再接入器件。",
+      "summary": "把修饰—去除—吹扫的饱和DOE迁移到MTJ帽层/侧壁残留，但设置磁性、氧化和TMR三重否决门槛。",
+      "status": "工艺探索",
+      "relatedPaperIds": [
+        "e-ingaas-ale-2506-19749",
+        "classic-ikeda-nmat2804",
+        "b-3d-mtj-2608-20850"
+      ],
+      "question": "低能ALE能否去除侧壁再沉积而不氧化CoFeB或破坏MgO？",
+      "rationale": "InGaAs过程显示0.095 Å/cycle和200循环平滑，但350 °C/O2对MTJ高风险。",
+      "workflow": [
+        "非磁见证片扫描H/O2剂量",
+        "XPS确认反应饱和与残留",
+        "降温/替代氧化剂筛选",
+        "MTJ blanket片磁性/TMR",
+        "最后进入图形侧壁"
+      ],
+      "equipment": [
+        "ALE/ALD腔体",
+        "真空互联",
+        "XPS",
+        "AFM/TEM",
+        "TMR/低温噪声平台"
+      ],
+      "measurements": [
+        "EPC/选择比",
+        "RMS",
+        "B/O/残留",
+        "PMA/TMR/RA",
+        "噪声/击穿"
+      ],
+      "metrics": [
+        "温度上限",
+        "氧暴露窗口",
+        "片内CV",
+        "功能保持率",
+        "循环时间"
+      ],
+      "evidenceBoundary": "材料不同，不能直接把InGaAs配方用于CoFeB；仅迁移自限验证逻辑。",
+      "firstSteps": [
+        "先做单步H与单步O2对照",
+        "优先降到≤250 °C",
+        "任一PMA/TMR劣化即停止"
+      ],
+      "researchConnection": "连接ALE、侧壁损伤、MgO/CoFeB界面和良率。",
+      "takeaway": "低EPC不是安全证明，磁性和界面化学必须共同放行。"
     }
   ]
 }
