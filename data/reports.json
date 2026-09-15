@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-14T12:00:00+08:00",
-  "reportDate": "2026-09-14",
+  "updatedAt": "2026-09-15T12:00:00+08:00",
+  "reportDate": "2026-09-15",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -850,6 +850,25 @@
         "c-dfl-mtj-xlfp-z2hf",
         "d-ips3-qdo-2026",
         "e-ingaas-ale-2506-19749"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "label": "详细日报：MTJ磁子读出—VIA偏置补偿—超晶格理论—矢量磁体—ALE/ALD修复",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-magnon-mtj-2509-19483",
+        "b-via-field-sot-2609-11397",
+        "c-bandpass-mtj-1801-09409",
+        "d-cryogenic-vector-vsm",
+        "e-qubit-ale-ald-2506-17474"
       ]
     }
   ],
@@ -9253,6 +9272,187 @@
       "backupUrl": "https://arxiv.org/pdf/2506.19749",
       "accessNote": "已打开arXiv摘要直接来源，核验作者、流程、350 °C、0.095 Å/cycle和200循环表面结果。",
       "recommendedOn": "2026-09-14",
+      "featured": true
+    },
+    {
+      "id": "a-magnon-mtj-2509-19483",
+      "track": "A",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Electrical detection of magnons with nanoscale magnetic tunnel junctions",
+      "titleZh": "CMOS线制纳米MTJ电读出磁子：谱线宽低至数百kHz",
+      "authors": "Christopher Heins et al.",
+      "venue": "arXiv:2509.19483（可靠预印本）",
+      "published": "2025-09-23",
+      "timeTier": "近两年可靠预印本",
+      "system": "在先进CMOS生产线制备的纳米MTJ作为电学探测单元，与外部自旋波及MTJ磁化动态耦合。",
+      "conditions": "公开摘要确认纳米MTJ、CMOS产线和数百kHz最低谱线宽；具体堆栈、结尺寸、场/频率和温度须查正文，摘要未公开。",
+      "methods": [
+        "微波激发自旋波",
+        "纳米MTJ电阻读出",
+        "动态耦合工程",
+        "频谱测量",
+        "非线性线宽分析"
+      ],
+      "summary": "证明CMOS兼容纳米MTJ可把自旋波激发转换为高保真电信号，并分辨数百kHz量级非线性谱线宽。",
+      "relevance": "把MTJ从存储单元扩展为片上磁动力学传感器，可用于低温噪声、共振与器件健康监测。",
+      "limitation": "预印本；摘要未公开TMR、RA、绝对信噪比、温区、晶圆统计和长期漂移。",
+      "industrialization": "最接近CMOS线内MTJ传感/读出；尚缺工艺节点、片内良率、PVT、读出电路功耗与阵列串扰。",
+      "whyRecommended": "先看器件与耦合示意，再看频谱/线宽和CMOS流程；40–55分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.48550/arXiv.2509.19483",
+      "arxiv": "2509.19483",
+      "url": "https://arxiv.org/abs/2509.19483",
+      "backupUrl": "https://arxiv.org/pdf/2509.19483",
+      "accessNote": "已打开arXiv摘要直接来源，核验CMOS产线、纳米MTJ电读出与数百kHz线宽。",
+      "recommendedOn": "2026-09-15",
+      "featured": true
+    },
+    {
+      "id": "b-via-field-sot-2609-11397",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Influence of magnetic fields on the performance of spin-orbit torque magnetic random-access memory",
+      "titleZh": "BEOL磁性VIA补偿SOT-MRAM偏置场：写电流不对称21.6%降至1.3%",
+      "authors": "Jiaxin Liu, Yuqing Zhou, Guoyi Shi, Kaiming Cai",
+      "venue": "arXiv:2609.11397（可靠预印本）",
+      "published": "2026-09-10",
+      "timeTier": "本周可靠预印本",
+      "system": "不改MTJ本体堆栈，在垂直互连VIA内引入磁性填充层，以局域杂散场补偿参考层/层间耦合造成的内建偏置。",
+      "conditions": "微磁模拟；p-SOT-MTJ不对称度21.6%→1.3%，面内器件19.8%→−0.2%；缩小到原尺寸20%、MTJ直径约10 nm仍有效。",
+      "methods": [
+        "BEOL磁性VIA构型",
+        "局域杂散场计算",
+        "微磁开关模拟",
+        "位置优化",
+        "尺寸缩放分析"
+      ],
+      "summary": "把偏置补偿从MTJ堆栈转移到BEOL互连几何，理论上显著压低正反向写入不对称且保持约10 nm缩放。",
+      "relevance": "直接连接MTJ、接触/VIA、BEOL集成和写入能耗，适合转为版图—材料—器件联合DOE。",
+      "limitation": "纯理论预测；未验证磁性填充工艺、互连电阻、热预算、退磁、邻近单元串扰和WER。",
+      "industrialization": "最接近BEOL SOT-MRAM偏置补偿；缺300 mm填充均匀性、CMP兼容、磁污染管理、阵列统计和CMOS可靠性。",
+      "whyRecommended": "先看VIA/MTJ几何，再看不对称度和10 nm缩放；35–50分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "2609.11397",
+      "url": "https://arxiv.org/abs/2609.11397",
+      "backupUrl": "https://arxiv.org/pdf/2609.11397",
+      "accessNote": "已打开arXiv直接来源并核验作者、日期、21.6→1.3%、19.8→−0.2%及约10 nm缩放。",
+      "recommendedOn": "2026-09-15",
+      "featured": true
+    },
+    {
+      "id": "c-bandpass-mtj-1801-09409",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Band-pass superlattice magnetic tunnel junctions",
+      "titleZh": "带通超晶格MTJ理论：TMR约5×10⁴%与写入偏压降低约92%",
+      "authors": "Abhishek Sharma, Ashwin A. Tulapurkar, Bhaskaran Muralidharan",
+      "venue": "Applied Physics Letters 112, 192404 (2018)",
+      "published": "2018-05-07",
+      "timeTier": "关键理论文章",
+      "system": "固定层与自由层之间加入抗反射层和超晶格势垒，形成类似光学Fabry–Pérot的带通自旋滤波。",
+      "conditions": "NEGF与LLGS自洽计算；相对传统单势垒MTJ，理论TMR约5×10⁴%、STT开关偏压降低近92%；材料和几何细节以正文为准。",
+      "methods": [
+        "NEGF自旋输运",
+        "抗反射势垒设计",
+        "超晶格带通滤波",
+        "LLGS自洽",
+        "传输谱解析"
+      ],
+      "summary": "利用共振带通而非单MgO势垒提高自旋选择性；理论给出极高TMR和显著降低的写入偏压。",
+      "relevance": "提供势垒/插层原子级设计上限，可作为多势垒MTJ的理论筛选框架。",
+      "limitation": "理论值高度依赖理想界面、厚度和能带；未含粗糙、缺陷、非弹性散射、沉积波动与击穿。",
+      "industrialization": "最接近新型势垒架构概念；距离制造器件仍缺可沉积材料、Å级厚度公差、退火稳定、RA和大样本实测。",
+      "whyRecommended": "先看势垒示意和传输谱，再看TMR/偏压对比；30–45分钟。",
+      "score": 9.3,
+      "priority": "A",
+      "doi": "10.1063/1.5023159",
+      "arxiv": "1801.09409",
+      "url": "https://arxiv.org/abs/1801.09409",
+      "backupUrl": "https://doi.org/10.1063/1.5023159",
+      "accessNote": "已打开arXiv摘要并核验NEGF-LLGS、约5×10⁴% TMR及92%偏压降低。",
+      "recommendedOn": "2026-09-15",
+      "featured": true
+    },
+    {
+      "id": "d-cryogenic-vector-vsm",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "5T-2T-2T Optical Vector Cryogen-Free Magnet",
+      "titleZh": "厂商技术资料｜Cryogenic Ltd 5–2–2 T矢量磁体与49 mm VTI空间",
+      "authors": "Cryogenic Limited",
+      "venue": "Cryogenic Ltd厂商技术资料",
+      "published": "2026年官网在售资料",
+      "timeTier": "厂商正式技术资料",
+      "system": "5 T–2 T–2 T无液氦光学矢量磁体，集成循环4He VTI、晶体石英窗口及可选THz窗口。",
+      "conditions": "1.5 W脉管冷头、F100压缩机；50 mm样品空间（49 mm净孔径）；涡旋泵与4He气体储罐循环；官网未公开最低温度、稳定度和振动谱。",
+      "methods": [
+        "三轴矢量场",
+        "无液氦运行",
+        "循环VTI",
+        "光学/THz窗口",
+        "温度—磁场联动"
+      ],
+      "summary": "提供光学与输运兼容的三轴磁场/大孔径样品空间配置，但关键噪声和稳定性必须本地验收。",
+      "relevance": "适合MTJ角度依赖、磁各向异性、SOT对称性和原位光电联合测量的平台规划。",
+      "limitation": "厂商资料非科研证明；缺温区、扫场速率、场均匀性、振动、EMI、漂移与自动化API指标。",
+      "industrialization": "最接近低温多场设备选型；采购前需FAT/SAT、振动/纹波、样品热锚、脚本联锁和维护成本。",
+      "whyRecommended": "把5–2–2 T、49 mm空间转化为MTJ角度测量验收表；20–30分钟。",
+      "score": 9.1,
+      "priority": "A",
+      "doi": "",
+      "url": "https://www.cryogenic.co.uk/",
+      "backupUrl": "https://www.cryogenic.co.uk/",
+      "accessNote": "已打开Cryogenic Ltd官方技术页面；参数仅按厂商资料使用。",
+      "recommendedOn": "2026-09-15",
+      "featured": true
+    },
+    {
+      "id": "e-qubit-ale-ald-2506-17474",
+      "track": "E",
+      "secondaryTracks": [
+        "A",
+        "D"
+      ],
+      "title": "Improving the lifetime of aluminum-based superconducting qubits through atomic layer etching and deposition",
+      "titleZh": "ALE+ALD修复超导量子器件表面：TLS损耗减半、T1中位数196±22 µs",
+      "authors": "Neha Mahuli et al.",
+      "venue": "arXiv:2506.17474（可靠预印本）",
+      "published": "2025-06-20",
+      "timeTier": "近两年可靠预印本",
+      "system": "已完成制备的Al/Si谐振器与平面transmon；封装前先ALE去除原生氧化物/残留，再原位ALD介质封装。",
+      "conditions": "处理后TLS吸收损耗约降低2倍；紧凑电容transmon的中位Q=3.69±0.42×10⁶、T1=196±22 µs；改善保持数月。具体ALE/ALD配方需查正文。",
+      "methods": [
+        "器件末端ALE",
+        "原位ALD封装",
+        "谐振器损耗分解",
+        "transmon T1/Q统计",
+        "数月稳定性跟踪"
+      ],
+      "summary": "用真空连续ALE—ALD逆转加工表面损伤，并把界面缺陷变化直接连接到低温量子器件寿命。",
+      "relevance": "高度可迁移到MTJ侧壁清理—原位钝化—低温1/f噪声/击穿闭环。",
+      "limitation": "预印本且对象为Al超导量子器件；未公开300 mm、吞吐、颗粒、片内均匀性和MTJ磁性兼容性。",
+      "industrialization": "最接近封装前表面修复模块；缺晶圆级统计、配方漂移、选择比、磁性堆栈验证与量产节拍。",
+      "whyRecommended": "先看ALE/ALD连续流程，再看TLS分解、T1分布与数月稳定；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "2506.17474",
+      "url": "https://arxiv.org/abs/2506.17474",
+      "backupUrl": "https://arxiv.org/pdf/2506.17474",
+      "accessNote": "已打开arXiv直接来源并核验两倍损耗改善、Q、T1和数月保持。",
+      "recommendedOn": "2026-09-15",
       "featured": true
     }
   ]

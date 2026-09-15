@@ -307,6 +307,13 @@
       "classicIds": [
         "classic-ikeda-nmat2804"
       ]
+    },
+    {
+      "date": "2026-09-15",
+      "reviewId": "review-ale-extreme-s41871",
+      "classicIds": [
+        "classic-parkin-nmat1256"
+      ]
     }
   ],
   "items": [
@@ -2801,6 +2808,60 @@
         "看退火前后PMA/TMR",
         "看尺寸—热稳定性",
         "对照现代BEOL、B扩散和亚10 nm要求；30–40分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-ale-extreme-s41871",
+      "kind": "正式综述",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Atomic Layer Etching for Extreme Manufacturing: Pushing the Limits of Atomic Scale Precision",
+      "titleZh": "正式综述｜ALE极端制造：自限化学、缺陷控制、3D构形与ALD协同",
+      "authors": "Y. Feng et al.",
+      "venue": "Nanomanufacturing and Metrology 9, 11 (2026)",
+      "published": "2026-03-23",
+      "recommendedOn": "2026-09-15",
+      "doi": "10.1007/s41871-026-00297-w",
+      "url": "https://link.springer.com/article/10.1007/s41871-026-00297-w",
+      "backupUrl": "https://doi.org/10.1007/s41871-026-00297-w",
+      "assistantSummary": "正式开放获取综述从热ALE/等离子ALE、自限能量窗口、第一性原理—等离子—feature-scale建模，延伸到选择性、表面平滑、深孔和ALD–ALE超循环。",
+      "whySelected": "为今天的量子器件ALE—ALD、MTJ侧壁和3D结构提供统一方法学，并明确实时监控、规模化和设备适配仍是缺口。",
+      "readingGuide": [
+        "图1掌握修饰—去除—吹扫",
+        "比较热ALE与等离子ALE能量窗口",
+        "看选择性/3D/ALD协同案例",
+        "重点读规模化与原位监控局限；50–70分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-parkin-nmat1256",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "E",
+        "A"
+      ],
+      "title": "Giant tunnelling magnetoresistance at room temperature with MgO (100) tunnel barriers",
+      "titleZh": "MgO相干隧穿经典｜室温约220%、低温约300% TMR与400 °C稳定",
+      "authors": "Stuart S. P. Parkin et al.",
+      "venue": "Nature Materials 3, 862–867 (2004)",
+      "published": "2004-10-31（在线）",
+      "recommendedOn": "2026-09-15",
+      "doi": "10.1038/nmat1256",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15516928/",
+      "backupUrl": "https://doi.org/10.1038/nmat1256",
+      "assistantSummary": "溅射多晶MTJ在非晶底层上形成高度(100)取向MgO与CoFe电极，获得室温约220%、低温约300% TMR，隧穿自旋极化约85%，并展示最高400 °C热稳定。",
+      "whySelected": "建立MgO取向、界面有序、跨温TMR与热预算的经典基准，便于判断今天超晶格/侧壁修复方案是否真正超越基线。",
+      "readingGuide": [
+        "先看MgO取向与堆栈",
+        "看300 K/低温TMR",
+        "看隧穿谱与85%极化",
+        "对照现代CoFeB、RA和BEOL；30–40分钟"
       ],
       "notNew": true
     }

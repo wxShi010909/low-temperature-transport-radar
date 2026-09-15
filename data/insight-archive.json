@@ -524,6 +524,18 @@
       "atomicIds": [
         "2026-09-14-ale-mtj-damage-gate"
       ]
+    },
+    {
+      "date": "2026-09-15",
+      "opportunityIds": [
+        "2026-09-15-via-sot-doe"
+      ],
+      "methodIds": [
+        "2026-09-15-vector-magnet-acceptance"
+      ],
+      "atomicIds": [
+        "2026-09-15-ale-ald-sidewall"
+      ]
     }
   ],
   "items": [
@@ -7764,6 +7776,166 @@
       ],
       "researchConnection": "连接ALE、侧壁损伤、MgO/CoFeB界面和良率。",
       "takeaway": "低EPC不是安全证明，磁性和界面化学必须共同放行。"
+    },
+    {
+      "id": "2026-09-15-via-sot-doe",
+      "date": "2026-09-15",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/C · BEOL偏置补偿",
+      "title": "磁性VIA位置×材料×尺寸的SOT-MRAM联合DOE",
+      "subtitle": "把版图场工程与写入不对称、互连和串扰一起验证。",
+      "summary": "非磁VIA为基线，扫描磁性填充和MTJ相对位置，测正反临界电流与WER。",
+      "status": "高优先级验证",
+      "relatedPaperIds": [
+        "b-via-field-sot-2609-11397",
+        "c-bandpass-mtj-1801-09409"
+      ],
+      "question": "理论21.6→1.3%的补偿能否在实际BEOL工艺中保持？",
+      "rationale": "VIA方案不改MTJ堆栈，但引入磁污染、CMP与串扰新风险。",
+      "workflow": [
+        "场仿真",
+        "见证VIA填充",
+        "MTJ位置阵列",
+        "电学/磁学映射",
+        "WER/老化"
+      ],
+      "equipment": [
+        "溅射/电镀",
+        "CMP",
+        "探针台",
+        "脉冲平台",
+        "磁成像"
+      ],
+      "measurements": [
+        "Ic±",
+        "WER",
+        "互连R",
+        "偏置场",
+        "片内CV"
+      ],
+      "metrics": [
+        "不对称度",
+        "10 nm缩放",
+        "良率",
+        "串扰",
+        "热预算"
+      ],
+      "evidenceBoundary": "目前为微磁预测，未有器件实测。",
+      "firstSteps": [
+        "先做非磁VIA",
+        "三种位置偏移",
+        "加入热循环"
+      ],
+      "researchConnection": "服务SOT-MRAM、BEOL与阵列可靠性。",
+      "takeaway": "补偿收益必须大于新增工艺与串扰代价。"
+    },
+    {
+      "id": "2026-09-15-vector-magnet-acceptance",
+      "date": "2026-09-15",
+      "type": "method",
+      "typeZh": "设备/方法路线",
+      "trackLabel": "A/D · 矢量场与频谱",
+      "title": "建立矢量磁场—MTJ磁子频谱联合验收",
+      "subtitle": "把场角误差、振动和电源纹波映射到数百kHz线宽。",
+      "summary": "用霍尔探头、标准样品和MTJ三层验收5–2–2 T类平台。",
+      "status": "可立即实施",
+      "relatedPaperIds": [
+        "a-magnon-mtj-2509-19483",
+        "d-cryogenic-vector-vsm"
+      ],
+      "question": "数百kHz线宽中有多少来自器件，多少来自场源与机械振动？",
+      "rationale": "MTJ频谱分辨率要求设备噪声有可追溯基线。",
+      "workflow": [
+        "空载纹波",
+        "霍尔场图",
+        "标准FMR",
+        "MTJ频谱",
+        "温漂复测"
+      ],
+      "equipment": [
+        "矢量磁体",
+        "VTI",
+        "VNA/频谱仪",
+        "锁相",
+        "霍尔探头"
+      ],
+      "measurements": [
+        "场漂移",
+        "角度误差",
+        "振动PSD",
+        "线宽",
+        "SNR"
+      ],
+      "metrics": [
+        "重复性",
+        "频率漂移",
+        "噪声底",
+        "自动恢复",
+        "热稳定"
+      ],
+      "evidenceBoundary": "厂商参数仅定义额定能力，不证明线宽性能。",
+      "firstSteps": [
+        "先测电源与振动",
+        "建立标准样品",
+        "再进器件"
+      ],
+      "researchConnection": "服务低温MTJ与自动化平台。",
+      "takeaway": "先证明仪器线宽，再解释器件线宽。"
+    },
+    {
+      "id": "2026-09-15-ale-ald-sidewall",
+      "date": "2026-09-15",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · ALE—ALD界面修复",
+      "title": "把量子器件ALE—ALD连续工艺迁移到MTJ侧壁钝化",
+      "subtitle": "以PMA/TMR/噪声三重门槛限制氧化与损伤。",
+      "summary": "先去残留再原位封装，比较空气暴露和不同ALD层。",
+      "status": "工艺探索",
+      "relatedPaperIds": [
+        "e-qubit-ale-ald-2506-17474",
+        "review-ale-extreme-s41871",
+        "classic-parkin-nmat1256"
+      ],
+      "question": "ALE清理—ALD封装能否降低MTJ侧壁缺陷而不破坏MgO相干隧穿？",
+      "rationale": "量子器件已显示TLS损耗减半和T1提升，但磁性兼容性未知。",
+      "workflow": [
+        "见证片ALE",
+        "原位XPS",
+        "ALD封装",
+        "blanket磁性",
+        "图形MTJ"
+      ],
+      "equipment": [
+        "ALE/ALD真空互联",
+        "XPS",
+        "TEM",
+        "磁输运",
+        "低噪声平台"
+      ],
+      "measurements": [
+        "残留/价态",
+        "PMA",
+        "TMR/RA",
+        "1/f噪声",
+        "击穿"
+      ],
+      "metrics": [
+        "功能保持率",
+        "片内CV",
+        "缺陷密度",
+        "耐久",
+        "节拍"
+      ],
+      "evidenceBoundary": "Al量子器件结果不能直接外推CoFeB/MgO。",
+      "firstSteps": [
+        "无处理/仅ALE/仅ALD/连续四组",
+        "限制热预算",
+        "任何TMR下降即否决"
+      ],
+      "researchConnection": "连接原子制造、侧壁损伤与低温可靠性。",
+      "takeaway": "清理效果必须通过磁性与隧穿共同验证。"
     }
   ]
 }
