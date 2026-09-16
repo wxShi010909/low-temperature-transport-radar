@@ -536,6 +536,18 @@
       "atomicIds": [
         "2026-09-15-ale-ald-sidewall"
       ]
+    },
+    {
+      "date": "2026-09-16",
+      "opportunityIds": [
+        "2026-09-16-pmtj-probability-aging"
+      ],
+      "methodIds": [
+        "2026-09-16-dynacool-mtj-grr"
+      ],
+      "atomicIds": [
+        "2026-09-16-sputter-field-stress-map"
+      ]
     }
   ],
   "items": [
@@ -7936,6 +7948,161 @@
       ],
       "researchConnection": "连接原子制造、侧壁损伤与低温可靠性。",
       "takeaway": "清理效果必须通过磁性与隧穿共同验证。"
+    },
+    {
+      "id": "2026-09-16-pmtj-probability-aging",
+      "date": "2026-09-16",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/A · pMTJ概率—老化闭环",
+      "title": "建立脉冲—概率—电阻漂移联合寿命图",
+      "subtitle": "把104 MHz随机输出转成器件健康指标。",
+      "summary": "在不同温度和循环数下同步记录翻转概率、电阻、TMR与能耗。",
+      "status": "可立即执行",
+      "relatedPaperIds": [
+        "b-pmtj-trng-104mhz",
+        "classic-sankey-stt-vector-2008"
+      ],
+      "question": "长期概率漂移由电阻漂移、热积累还是磁参数变化主导？",
+      "rationale": "论文已显示偏置漂移与pMTJ电阻相关，但尚无温度/老化因果拆分。",
+      "workflow": [
+        "脉冲幅值×宽度DOE",
+        "10^4–10^8循环分段",
+        "温度扫描",
+        "R/TMR回读",
+        "概率模型拟合"
+      ],
+      "equipment": [
+        "脉冲源",
+        "示波器/计数器",
+        "低温磁体",
+        "低噪声电阻测量"
+      ],
+      "measurements": [
+        "翻转概率",
+        "R_P/R_AP",
+        "TMR",
+        "结温代理",
+        "能耗"
+      ],
+      "metrics": [
+        "偏置漂移",
+        "卡方p值",
+        "失效率",
+        "批内CV"
+      ],
+      "evidenceBoundary": "104 MHz与两次XOR为原文实测；老化因果路线为本站建议。",
+      "firstSteps": [
+        "室温三幅值基线",
+        "77 K/300 K对照",
+        "设置电阻漂移告警"
+      ],
+      "researchConnection": "连接读写、低温、噪声与可靠性。",
+      "takeaway": "概率质量必须和器件电阻健康同时验收。"
+    },
+    {
+      "id": "2026-09-16-dynacool-mtj-grr",
+      "date": "2026-09-16",
+      "type": "method",
+      "typeZh": "设备/方法路线",
+      "trackLabel": "D/B · DynaCool平台验收",
+      "title": "建立低温MTJ输运与FMR的GR&R验收矩阵",
+      "subtitle": "用标准件、参考MTJ和跨日复测约束厂商规格。",
+      "summary": "覆盖1.8–400 K、扫场、四探针和FMR链路，输出重复性与再现性。",
+      "status": "设备验收",
+      "relatedPaperIds": [
+        "d-qd-dynacool-platform",
+        "a-vdw-mtj-temp-stable-2025",
+        "classic-sankey-stt-vector-2008"
+      ],
+      "question": "平台噪声、温漂和布线误差是否足以分辨器件真实温度系数与转矩变化？",
+      "rationale": "厂商给出环境与量程，但电子温度、噪声和脉冲响应需实验室自证。",
+      "workflow": [
+        "短路/开路",
+        "标准电阻",
+        "参考MTJ",
+        "跨日三重复",
+        "FMR标准膜"
+      ],
+      "equipment": [
+        "DynaCool或等效PPMS",
+        "ETO",
+        "外部SMU",
+        "FMR选件"
+      ],
+      "measurements": [
+        "噪声谱",
+        "T误差",
+        "场回线",
+        "R漂移",
+        "线宽"
+      ],
+      "metrics": [
+        "GR&R",
+        "跨日CV",
+        "最低可辨TMR",
+        "热滞后"
+      ],
+      "evidenceBoundary": "环境/量程为厂商声明；验收阈值需按本实验室任务定义。",
+      "firstSteps": [
+        "建立标准件清单",
+        "固定布线与功率上限",
+        "生成自动化日志"
+      ],
+      "researchConnection": "直接服务MTJ宽温区和工艺见证片。",
+      "takeaway": "厂商规格只有通过本地GR&R才成为实验能力。"
+    },
+    {
+      "id": "2026-09-16-sputter-field-stress-map",
+      "date": "2026-09-16",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 晶圆级PVD闭环",
+      "title": "把等离子密度—残余应力—PMA/TMR做成同片映射",
+      "subtitle": "用靶磁距与阳极场分配控制晶圆级一致性。",
+      "summary": "先在单层见证膜标定场分布，再转入完整MTJ堆栈。",
+      "status": "工艺DOE",
+      "relatedPaperIds": [
+        "e-large-area-sputter-field-control",
+        "review-ikegawa-mram-present-future"
+      ],
+      "question": "场协同能否同时降低膜厚/应力CV并改善完整MTJ的PMA、TMR和RA一致性？",
+      "rationale": "文献给出+300到−478 MPa应力翻转，但未验证MTJ多层界面。",
+      "workflow": [
+        "TM距离扫描",
+        "阳极杆开/关",
+        "9点/49点膜厚应力图",
+        "单层磁性",
+        "完整MTJ"
+      ],
+      "equipment": [
+        "磁控溅射",
+        "等离子探针/模拟",
+        "晶圆曲率",
+        "VSM",
+        "探针台"
+      ],
+      "measurements": [
+        "离子密度",
+        "膜厚",
+        "应力",
+        "粗糙度",
+        "PMA/TMR/RA"
+      ],
+      "metrics": [
+        "片内CV",
+        "批间漂移",
+        "颗粒",
+        "良率"
+      ],
+      "evidenceBoundary": "应力定量来自大面积薄膜；迁移到CoFeB/MgO需重新验证。",
+      "firstSteps": [
+        "先做非磁见证膜",
+        "再做CoFeB单层",
+        "最后完整MTJ"
+      ],
+      "researchConnection": "连接设备场结构、薄膜应力、界面与器件良率。",
+      "takeaway": "不以单点应力最优替代整片器件一致性。"
     }
   ]
 }

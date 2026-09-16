@@ -314,6 +314,13 @@
       "classicIds": [
         "classic-parkin-nmat1256"
       ]
+    },
+    {
+      "date": "2026-09-16",
+      "reviewId": "review-ikegawa-mram-present-future",
+      "classicIds": [
+        "classic-sankey-stt-vector-2008"
+      ]
     }
   ],
   "items": [
@@ -2862,6 +2869,60 @@
         "看300 K/低温TMR",
         "看隧穿谱与85%极化",
         "对照现代CoFeB、RA和BEOL；30–40分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-ikegawa-mram-present-future",
+      "kind": "正式综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Magnetoresistive Random Access Memory: Present and Future",
+      "titleZh": "MRAM现状与未来｜从Toggle/STT产品到后续写入机制与制造约束",
+      "authors": "S. Ikegawa et al.",
+      "venue": "IEEE Transactions on Electron Devices 67, 1407–1419 (2020)",
+      "published": "2020-04",
+      "recommendedOn": "2026-09-16",
+      "doi": "10.1109/TED.2020.2965403",
+      "url": "https://ieeexplore.ieee.org/document/8976130",
+      "backupUrl": "https://doi.org/10.1109/TED.2020.2965403",
+      "assistantSummary": "正式同行评审综述，系统梳理Toggle与STT-MRAM产品基础、未来STT缩放及新型MRAM路线，适合把材料指标放回单元、阵列和产品约束。",
+      "whySelected": "为今天的TRNG、AFMTJ电路与溅射均匀性建立产品级坐标，避免把单器件峰值直接写成量产能力。",
+      "readingGuide": [
+        "先看产品代际和单元结构",
+        "看STT缩放与可靠性权衡",
+        "看未来写入机制",
+        "整理材料—器件—阵列缺口；50–70分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-sankey-stt-vector-2008",
+      "kind": "经典文章",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Measurement of the spin-transfer-torque vector in magnetic tunnel junctions",
+      "titleZh": "ST-FMR定量测量MTJ自旋转矩矢量：面内分量与偏压诱导转矩旋转",
+      "authors": "Jack C. Sankey et al.",
+      "venue": "Nature Physics 4, 67–71 (2008)",
+      "published": "2007-11-25（在线）",
+      "recommendedOn": "2026-09-16",
+      "doi": "10.1038/nphys783",
+      "url": "https://www.nature.com/articles/nphys783",
+      "backupUrl": "https://doi.org/10.1038/nphys783",
+      "assistantSummary": "以ST-FMR直接测量MTJ自旋转矩大小和方向：低偏压微分转矩位于两电极磁化定义的平面内，幅值符合近完美自旋极化隧穿预测；随偏压增大转矩出现面外旋转。",
+      "whySelected": "是把写入模型参数从“拟合常数”变成可实验标定量的经典方法基础，可直接连接今日AFMTJ电路模型和DynaCool/FMR验收。",
+      "readingGuide": [
+        "先看器件几何",
+        "读ST-FMR谱线分解",
+        "看转矩随偏压",
+        "对照现代pMTJ参数提取；30–45分钟"
       ],
       "notNew": true
     }

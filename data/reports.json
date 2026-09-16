@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-15T12:00:00+08:00",
-  "reportDate": "2026-09-15",
+  "updatedAt": "2026-09-16T12:00:00+08:00",
+  "reportDate": "2026-09-16",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -869,6 +869,25 @@
         "c-bandpass-mtj-1801-09409",
         "d-cryogenic-vector-vsm",
         "e-qubit-ale-ald-2506-17474"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "label": "详细日报：宽温MTJ—pMTJ随机可靠性—AFMTJ协同—DynaCool验收—溅射应力均匀性",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-vdw-mtj-temp-stable-2025",
+        "b-pmtj-trng-104mhz",
+        "c-afmtj-pvt-codesign-2602-11614",
+        "d-qd-dynacool-platform",
+        "e-large-area-sputter-field-control"
       ]
     }
   ],
@@ -9453,6 +9472,189 @@
       "backupUrl": "https://arxiv.org/pdf/2506.17474",
       "accessNote": "已打开arXiv直接来源并核验两倍损耗改善、Q、T1和数月保持。",
       "recommendedOn": "2026-09-15",
+      "featured": true
+    },
+    {
+      "id": "a-vdw-mtj-temp-stable-2025",
+      "track": "A",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Thermally-Stable Temperature-Independent Tunneling Magnetoresistance in all van der Waals Fe3GaTe2/GaSe/Fe3GaTe2 Magnetic Tunnel Junctions",
+      "titleZh": "2–300 K全范德华MTJ｜低温47%、室温17%，2–160 K近温度稳定",
+      "authors": "Hao Wu et al.",
+      "venue": "Small Methods (2025)",
+      "published": "2025-02-03（在线）",
+      "timeTier": "近两年正式发表",
+      "system": "Fe3GaTe2/GaSe/Fe3GaTe2垂直磁隧道结；GaSe为隧穿层，上下Fe3GaTe2为磁电极。",
+      "conditions": "跨低温至室温磁输运；公开摘要给出低温TMR 47%、室温17%，并称2–160 K范围TMR保持稳定。具体层厚、偏压与样本数需查正文。",
+      "methods": [
+        "层状晶体异质结组装",
+        "四端/两端磁输运",
+        "温度扫描",
+        "磁场扫描",
+        "偏压依赖"
+      ],
+      "summary": "把低温TMR衰减问题拆成电极磁序、界面微磁结构和势垒输运三部分，并给出宽温区稳定窗口。",
+      "relevance": "可作为CoFeB/MgO器件温度系数、界面非弹性通道与低温读出裕量的对照，不把二维材料本身作为默认中心。",
+      "limitation": "材料和集成路线与量产MgO/CoFeB不同；公开摘要未给出晶圆均匀性、RA、WER、耐久与封装数据。",
+      "industrialization": "最接近宽温区磁传感/存储物理验证；离可制造器件尚缺晶圆工艺、接触稳定、环境封装与阵列统计。",
+      "whyRecommended": "先看TMR–T曲线和2–160 K平台，再看偏压/磁场依赖与器件结构；35–50分钟。",
+      "score": 9,
+      "priority": "A",
+      "doi": "10.1002/smtd.202401117",
+      "arxiv": "",
+      "url": "https://doi.org/10.1002/smtd.202401117",
+      "backupUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=10.1002%2Fsmtd.202401117",
+      "accessNote": "已打开Wiley/PubMed直接记录，核验结构、47%/17% TMR和2–160 K稳定区间。",
+      "recommendedOn": "2026-09-16",
+      "featured": true
+    },
+    {
+      "id": "b-pmtj-trng-104mhz",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C"
+      ],
+      "title": "High-speed tunable generation of random number distributions using actuated perpendicular magnetic tunnel junctions",
+      "titleZh": "pMTJ随机数器件｜104 MHz脉冲驱动、两次XOR通过均匀性检验",
+      "authors": "Ahmed Sidi El Valli et al.",
+      "venue": "Applied Physics Letters 126, 212403 (2025)",
+      "published": "2025-05-28",
+      "timeTier": "近两年正式发表",
+      "system": "纳秒脉冲驱动的垂直磁隧道结pMTJ，用随机翻转产生Bernoulli比特流并合成8-bit随机数。",
+      "conditions": "工作频率104 MHz；通过改变脉冲幅值调概率偏置；以约0.5偏置生成8-bit均匀分布。公开摘要未给出堆栈、直径、RA和温度。",
+      "methods": [
+        "纳秒脉冲写入",
+        "重复随机翻转统计",
+        "二项分布方差检验",
+        "XOR去偏",
+        "电阻漂移相关分析"
+      ],
+      "summary": "器件可高速调谐随机分布，但长期概率漂移与pMTJ电阻变化相关，直接暴露工艺/老化稳定性问题。",
+      "relevance": "把MTJ电阻、写入概率和长期可靠性连成可测闭环，适合建立阵列级随机器件健康监测。",
+      "limitation": "未公开阵列规模、温区、耐久、跨片/批次统计；TRNG统计通过不等同于存储级低WER。",
+      "industrialization": "最接近概率计算/TRNG读写电路；缺PVT、老化、在线校准、功耗、面积与安全认证。",
+      "whyRecommended": "先看概率—脉冲幅值，再看卡方/XOR结果和电阻—偏置漂移；30–45分钟。",
+      "score": 9.4,
+      "priority": "S",
+      "doi": "10.1063/5.0259366",
+      "arxiv": "",
+      "url": "https://pubs.aip.org/aip/apl/article/126/21/212403/3347858/High-speed-tunable-generation-of-random-number",
+      "backupUrl": "https://doi.org/10.1063/5.0259366",
+      "accessNote": "已打开AIP直接来源并核验104 MHz、二项分布、两次XOR及长期漂移关联。",
+      "recommendedOn": "2026-09-16",
+      "featured": true
+    },
+    {
+      "id": "c-afmtj-pvt-codesign-2602-11614",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Device-Circuit Co-Design of Variation-Resilient Read and Write Drivers for Antiferromagnetic Tunnel Junction Memories",
+      "titleZh": "AFMTJ器件—电路协同｜低TMR/PVT条件下自定时读出与非对称写脉冲",
+      "authors": "Yousuf Choudhary and Tosiron Adegbija",
+      "venue": "arXiv:2602.11614（可靠预印本）",
+      "published": "2026-02-12",
+      "timeTier": "近期可靠预印本",
+      "system": "标定AFMTJ紧凑模型＋非对称脉冲驱动器＋动态跳变点自定时灵敏放大器，加入PVT和3D集成寄生。",
+      "conditions": "SPICE与Monte Carlo评估；摘要确认比较标准MRAM前端，但未公开本轮可核验的绝对TMR、样本数和硅后数据。",
+      "methods": [
+        "AFMTJ紧凑模型",
+        "SPICE联合仿真",
+        "Monte Carlo PVT",
+        "寄生参数注入",
+        "读写电路对照"
+      ],
+      "summary": "用电路自适应补偿低TMR与器件变化，强调材料指标必须在真实读写窗和寄生条件下评价。",
+      "relevance": "可把MTJ的RA/TMR/偏置不对称分布直接转成sense margin、写入成功率和能耗指标。",
+      "limitation": "纯理论/电路仿真；缺硅后阵列、温漂、老化、真实AFMTJ分布与工艺相关性。",
+      "industrialization": "最接近外围读写电路与器件协同；量产障碍是模型校准、PDK、角落覆盖和阵列良率。",
+      "whyRecommended": "先看器件模型，再看非对称写驱动和自定时读出，最后核对Monte Carlo角落；30–45分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "2602.11614",
+      "url": "https://arxiv.org/abs/2602.11614",
+      "backupUrl": "https://arxiv.org/pdf/2602.11614",
+      "accessNote": "已打开arXiv直接来源并核验器件—电路协同、非对称脉冲、自定时感放与PVT/寄生评估。",
+      "recommendedOn": "2026-09-16",
+      "featured": true
+    },
+    {
+      "id": "d-qd-dynacool-platform",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "PPMS DynaCool cryogen-free physical property measurement system",
+      "titleZh": "Quantum Design DynaCool｜1.8–400 K、9/12/14 T与可扩展输运/FMR平台",
+      "authors": "Quantum Design",
+      "venue": "厂商正式技术资料",
+      "published": "本轮核验：2026-09-16",
+      "timeTier": "厂商技术资料",
+      "system": "两级脉管冷头同时冷却超导磁体和温控系统；支持ETO/DC输运、VSM、AC磁化率、热容、热输运与宽带FMR。",
+      "conditions": "厂商标称1.8–400 K；9/12/14 T；内置低于10^-4 Torr冷泵；标准四探针ETO 10 μΩ–10 MΩ，高阻两探针2 MΩ–5 GΩ。",
+      "methods": [
+        "连续温控",
+        "受控扫温/扫场",
+        "四探针输运",
+        "VSM/ACMS",
+        "FMR与第三方API"
+      ],
+      "summary": "适合作为MTJ宽温区、磁性和FMR统一验收平台，但标称规格必须用短路/标准件/参考MTJ复验。",
+      "relevance": "可承接TMR(T)、RA、霍尔、PMA、阻尼和退火见证片的统一自动化测量。",
+      "limitation": "厂商资料不是科研证明；未给出特定布线下电子温度、噪声谱、脉冲带宽、接触热阻和跨日漂移。",
+      "industrialization": "最接近研发/小批工艺监控平台；缺量产节拍、自动上片、探针接触良率和GR&R验证。",
+      "whyRecommended": "先看环境规格，再看ETO电阻量程与FMR扩展；按验收矩阵阅读20–30分钟。",
+      "score": 9.3,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://qdusa.com/products/dynacool.html",
+      "backupUrl": "https://qdusa.com/siteDocs/productBrochures/1307-010.pdf",
+      "accessNote": "已打开Quantum Design官方页面；所有参数均标注为厂商规格。",
+      "recommendedOn": "2026-09-16",
+      "featured": true
+    },
+    {
+      "id": "e-large-area-sputter-field-control",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Combined control of magnetic and electric fields for enhanced plasma uniformity and compressive residual stress in large-area DC magnetron sputtering",
+      "titleZh": "大面积磁控溅射场协同｜中心应力由+300 MPa调至−478 MPa",
+      "authors": "Hyungbin Lee et al.",
+      "venue": "Journal of Vacuum Science & Technology A 44, 033414 (2026)",
+      "published": "2026-04-09（接收）",
+      "timeTier": "近期正式发表",
+      "system": "大面积DC磁控溅射；通过局部调整靶—磁体距离增强中心磁约束，并加入接地阳极杆重分配电场。",
+      "conditions": "实验应力测量结合等离子体模拟；公开摘要给出中心残余应力由拉应力+300 MPa转为压应力−478 MPa。具体基片尺寸和膜材需查正文。",
+      "methods": [
+        "靶—磁体间距扫描",
+        "接地阳极杆",
+        "等离子体模拟",
+        "离子密度映射",
+        "残余应力测量"
+      ],
+      "summary": "将等离子均匀性和残余应力从两个独立结果改造成同一磁场—电场调控问题。",
+      "relevance": "可迁移到MTJ溅射腔的片内膜厚、应力、织构和PMA/TMR均匀性闭环。",
+      "limitation": "面向大面积薄膜，尚未证明对超薄CoFeB/MgO多层、300 mm旋转基片和界面混层同样有效。",
+      "industrialization": "最接近晶圆级PVD均匀性/应力调机；缺MTJ堆栈验证、颗粒、靶耗漂移、批间重复与良率相关性。",
+      "whyRecommended": "先看场结构和离子密度，再看应力映射与模型—实测对应；35–50分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1116/6.0005396",
+      "arxiv": "",
+      "url": "https://pubs.aip.org/avs/jva/article/44/3/033414/3388465/Combined-control-of-magnetic-and-electric-fields",
+      "backupUrl": "https://doi.org/10.1116/6.0005396",
+      "accessNote": "已打开JVST A直接来源并核验装置逻辑及+300→−478 MPa定量结果。",
+      "recommendedOn": "2026-09-16",
       "featured": true
     }
   ]
