@@ -548,6 +548,18 @@
       "atomicIds": [
         "2026-09-16-sputter-field-stress-map"
       ]
+    },
+    {
+      "date": "2026-09-18",
+      "opportunityIds": [
+        "2026-09-18-mtj-thermal-wer"
+      ],
+      "methodIds": [
+        "2026-09-18-clover-fatsat"
+      ],
+      "atomicIds": [
+        "2026-09-18-ale-stress-sidewall"
+      ]
     }
   ],
   "items": [
@@ -8103,6 +8115,153 @@
       ],
       "researchConnection": "连接设备场结构、薄膜应力、界面与器件良率。",
       "takeaway": "不以单点应力最优替代整片器件一致性。"
+    },
+    {
+      "id": "2026-09-18-mtj-thermal-wer",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 热—写入可靠性",
+      "title": "把势垒热导率接入纳秒WER与耐久模型",
+      "subtitle": "区分电子温度、声子温度和平均结温。",
+      "summary": "同一器件做脉冲热响应与写入统计。",
+      "status": "可立即DOE",
+      "relatedPaperIds": [
+        "a-mtj-barrier-thermal-conductivity",
+        "b-hybrid-smjt-ising-71844"
+      ],
+      "question": "0.4–0.6 W m⁻¹ K⁻¹的势垒热导率如何改变短脉冲结温和WER？",
+      "rationale": "超快热测量给出界面时间尺度，随机MTJ给出电压控制概率；两者尚未在同一器件闭环。",
+      "workflow": [
+        "热参数标定",
+        "脉冲I-V",
+        "温变WER",
+        "热—微磁拟合"
+      ],
+      "equipment": [
+        "脉冲源",
+        "示波器",
+        "低温探针台",
+        "MOKE/热反射"
+      ],
+      "measurements": [
+        "结温",
+        "TMR/RA",
+        "WER",
+        "耐久"
+      ],
+      "metrics": [
+        "模型残差",
+        "器件间CV",
+        "热漂移"
+      ],
+      "evidenceBoundary": "跨文献连接属于本站实验建议。",
+      "firstSteps": [
+        "先做室温热参数",
+        "再做77/9 K",
+        "最后寿命加速"
+      ],
+      "researchConnection": "把低温输运与器件可靠性直接相连。",
+      "takeaway": "先校准温度，再解释写入。"
+    },
+    {
+      "id": "2026-09-18-clover-fatsat",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/E · 真空互联验收",
+      "title": "把Clover厂商规格翻译为可复现FAT/SAT",
+      "subtitle": "0.2 Å声明必须落到GRR、颗粒与TMR/RA。",
+      "summary": "建立见证片—完整堆栈—器件三级验收。",
+      "status": "设备验收",
+      "relatedPaperIds": [
+        "d-amat-endura-clover-mram-pvd",
+        "e-al2o3-ale-in-situ-stress-0005425"
+      ],
+      "question": "在线厚度计量能否预测最终MTJ电性和良率？",
+      "rationale": "厂商只给架构与声明，需第三方可复现实验。",
+      "workflow": [
+        "计量GRR",
+        "腔交叉污染",
+        "片内49点",
+        "完整MTJ",
+        "批间SPC"
+      ],
+      "equipment": [
+        "集群PVD",
+        "XRR",
+        "XPS",
+        "探针台"
+      ],
+      "measurements": [
+        "厚度",
+        "颗粒",
+        "成分",
+        "TMR/RA"
+      ],
+      "metrics": [
+        "GRR",
+        "CV",
+        "Cp/Cpk",
+        "良率"
+      ],
+      "evidenceBoundary": "厂商规格不是科研证明。",
+      "firstSteps": [
+        "定义金片",
+        "盲测三批",
+        "关联器件电性"
+      ],
+      "researchConnection": "服务真空互联与量产设备选型。",
+      "takeaway": "验收终点是器件，不是仪表读数。"
+    },
+    {
+      "id": "2026-09-18-ale-stress-sidewall",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · ALE侧壁修复",
+      "title": "用原位应力和残氟双指标开发MTJ侧壁ALE",
+      "subtitle": "避免只以EPC判定低损伤。",
+      "summary": "HF/TMA循环必须同时追踪应力、氟残留和隧穿电性。",
+      "status": "工艺DOE",
+      "relatedPaperIds": [
+        "e-al2o3-ale-in-situ-stress-0005425",
+        "classic-yang-fe-mgo-pma-2011"
+      ],
+      "question": "9–10 Å氟化深度在纳米MTJ侧壁是否会侵入势垒/自由层？",
+      "rationale": "平面Al₂O₃显示氟化深于单循环去除，提示残留层风险。",
+      "workflow": [
+        "平面Al₂O₃",
+        "MgO/CoFeB见证片",
+        "图形侧壁",
+        "退火",
+        "电性"
+      ],
+      "equipment": [
+        "热ALE",
+        "原位曲率",
+        "XPS/LEIS",
+        "TEM",
+        "低噪声输运"
+      ],
+      "measurements": [
+        "EPC",
+        "应力",
+        "残氟",
+        "粗糙度",
+        "漏电/TMR"
+      ],
+      "metrics": [
+        "选择性",
+        "损伤层厚度",
+        "片内CV",
+        "击穿"
+      ],
+      "evidenceBoundary": "从Al₂O₃到MgO/CoFeB迁移需重新验证。",
+      "firstSteps": [
+        "做半反应对照",
+        "剂量饱和曲线",
+        "退火前后残氟"
+      ],
+      "researchConnection": "连接原子级去除、界面PMA与器件击穿。",
+      "takeaway": "EPC合格不等于界面无损伤。"
     }
   ]
 }

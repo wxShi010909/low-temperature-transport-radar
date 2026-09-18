@@ -1,57 +1,57 @@
 {
-  "date": "2026-09-16",
+  "date": "2026-09-18",
   "review": {
-    "id": "review-ikegawa-mram-present-future",
+    "id": "review-nextgen-mram-ai-2026",
     "kind": "正式综述",
     "track": "B",
     "secondaryTracks": [
       "C",
       "E"
     ],
-    "title": "Magnetoresistive Random Access Memory: Present and Future",
-    "titleZh": "MRAM现状与未来｜从Toggle/STT产品到后续写入机制与制造约束",
-    "authors": "S. Ikegawa et al.",
-    "venue": "IEEE Transactions on Electron Devices 67, 1407–1419 (2020)",
-    "published": "2020-04",
-    "recommendedOn": "2026-09-16",
-    "doi": "10.1109/TED.2020.2965403",
-    "url": "https://ieeexplore.ieee.org/document/8976130",
-    "backupUrl": "https://doi.org/10.1109/TED.2020.2965403",
-    "assistantSummary": "正式同行评审综述，系统梳理Toggle与STT-MRAM产品基础、未来STT缩放及新型MRAM路线，适合把材料指标放回单元、阵列和产品约束。",
-    "whySelected": "为今天的TRNG、AFMTJ电路与溅射均匀性建立产品级坐标，避免把单器件峰值直接写成量产能力。",
+    "title": "Next-generation MRAM technologies and their emerging roles in artificial intelligence",
+    "titleZh": "下一代MRAM与AI｜六类新型MRAM的器件—电路—应用统一比较",
+    "authors": "Puyang Huang et al.",
+    "venue": "Journal of Magnetism and Magnetic Materials 655 (2026)",
+    "published": "2026-06",
+    "recommendedOn": "2026-09-18",
+    "doi": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0304885326005007",
+    "backupUrl": "https://par.nsf.gov/biblio/10709071-next-generation-mram-technologies-emerging-roles-artificial-intelligence",
+    "assistantSummary": "正式发表综述，统一比较混合STT-SOT、STT辅助SOT、二端SOT等六类下一代MRAM，并讨论其在AI存内计算中的位置。",
+    "whySelected": "用于把今日随机MTJ、读扰动和制造平台放回同一产品坐标：写入端口、密度、能耗、耐久、阵列外围和应用负载。",
     "readingGuide": [
-      "先看产品代际和单元结构",
-      "看STT缩放与可靠性权衡",
-      "看未来写入机制",
-      "整理材料—器件—阵列缺口；50–70分钟"
+      "先看六类架构总表",
+      "再看器件/阵列权衡",
+      "看AI工作负载映射",
+      "列出量产缺口；50–70分钟"
     ],
     "notNew": false
   },
   "classics": [
     {
-      "id": "classic-sankey-stt-vector-2008",
+      "id": "classic-yang-fe-mgo-pma-2011",
       "kind": "经典文章",
-      "track": "A",
+      "track": "B",
       "secondaryTracks": [
-        "B",
-        "C"
+        "C",
+        "E"
       ],
-      "title": "Measurement of the spin-transfer-torque vector in magnetic tunnel junctions",
-      "titleZh": "ST-FMR定量测量MTJ自旋转矩矢量：面内分量与偏压诱导转矩旋转",
-      "authors": "Jack C. Sankey et al.",
-      "venue": "Nature Physics 4, 67–71 (2008)",
-      "published": "2007-11-25（在线）",
-      "recommendedOn": "2026-09-16",
-      "doi": "10.1038/nphys783",
-      "url": "https://www.nature.com/articles/nphys783",
-      "backupUrl": "https://doi.org/10.1038/nphys783",
-      "assistantSummary": "以ST-FMR直接测量MTJ自旋转矩大小和方向：低偏压微分转矩位于两电极磁化定义的平面内，幅值符合近完美自旋极化隧穿预测；随偏压增大转矩出现面外旋转。",
-      "whySelected": "是把写入模型参数从“拟合常数”变成可实验标定量的经典方法基础，可直接连接今日AFMTJ电路模型和DynaCool/FMR验收。",
+      "title": "First-principles investigation of the very large perpendicular magnetic anisotropy at Fe|MgO and Co|MgO interfaces",
+      "titleZh": "Fe|MgO与Co|MgO界面PMA的第一性原理起点",
+      "authors": "H. X. Yang et al.",
+      "venue": "Physical Review B 84, 054401 (2011)",
+      "published": "2011-08-01",
+      "recommendedOn": "2026-09-18",
+      "doi": "10.1103/PhysRevB.84.054401",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.054401",
+      "backupUrl": "https://arxiv.org/abs/1011.5667",
+      "assistantSummary": "第一性原理揭示Fe|MgO和Co|MgO界面的强垂直磁各向异性来自界面电子轨道杂化，是理解现代CoFeB/MgO退火结晶和界面缺陷敏感性的经典基线。",
+      "whySelected": "与今日原子级热/应力和真空沉积主题直接相连：设备与工艺最终必须保持界面轨道结构，而不只是控制平均厚度。",
       "readingGuide": [
-        "先看器件几何",
-        "读ST-FMR谱线分解",
-        "看转矩随偏压",
-        "对照现代pMTJ参数提取；30–45分钟"
+        "先看界面结构",
+        "看轨道分辨贡献",
+        "看应变/界面差异",
+        "对照现代CoFeB/MgO；30–45分钟"
       ],
       "notNew": true
     }

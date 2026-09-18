@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-16T12:00:00+08:00",
-  "reportDate": "2026-09-16",
+  "updatedAt": "2026-09-18T12:00:00+08:00",
+  "reportDate": "2026-09-18",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -888,6 +888,25 @@
         "c-afmtj-pvt-codesign-2602-11614",
         "d-qd-dynacool-platform",
         "e-large-area-sputter-field-control"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "label": "详细日报：势垒热输运—随机pMTJ混合计算—读扰动—真空互联PVD—ALE原位应力",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-mtj-barrier-thermal-conductivity",
+        "b-hybrid-smjt-ising-71844",
+        "c-3rset-read-disturb-2511-22551",
+        "d-amat-endura-clover-mram-pvd",
+        "e-al2o3-ale-in-situ-stress-0005425"
       ]
     }
   ],
@@ -9655,6 +9674,190 @@
       "backupUrl": "https://doi.org/10.1116/6.0005396",
       "accessNote": "已打开JVST A直接来源并核验装置逻辑及+300→−478 MPa定量结果。",
       "recommendedOn": "2026-09-16",
+      "featured": true
+    },
+    {
+      "id": "a-mtj-barrier-thermal-conductivity",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Thermal Conductivity of Oxide Tunnel Barriers in Magnetic Tunnel Junctions Measured by Ultrafast Thermoreflectance and Magneto-optic Kerr Effect Thermometry",
+      "titleZh": "MTJ原子级氧化物势垒热输运｜0.4–0.6 W m⁻¹ K⁻¹与电子/声子温降偏差",
+      "authors": "Hyejin Jang et al.",
+      "venue": "Physical Review Applied 13, 024007 (2020)",
+      "published": "2020-02-06",
+      "timeTier": "关键高质量文章",
+      "system": "Ru/oxide/FM/seed/MgO多层；oxide为MgO或MgAl₂O₄，FM为Co或CoFeB，seed为Pt或Ta；具有垂直磁各向异性。",
+      "conditions": "飞秒激光加热Ru；热反射监测Ru温度，二次MOKE监测FM磁温响应；覆盖约0.2 ps至3000 ps动力学。",
+      "methods": [
+        "超快热反射",
+        "二次MOKE",
+        "多层热模型",
+        "Co/CoFeB对照",
+        "MgO/MgAl₂O₄对照"
+      ],
+      "summary": "【实测】Co与CoFeB磁响应约0.2 ps和2 ps；跨势垒热输运发生在10–3000 ps；MgO/MgAl₂O₄有效热导率0.4–0.6 W m⁻¹ K⁻¹。",
+      "relevance": "把写入自热从平均结温推进到电子—声子—界面温降分配，可用于校正STT/SOT脉冲可靠性模型。",
+      "limitation": "薄膜泵浦探测并非工作中的纳米MTJ；未给阵列级结温、WER、击穿或尺寸分布。",
+      "industrialization": "最接近MTJ热模型与失效物理标定；缺真实图形器件、BEOL热边界、批次统计及寿命相关性。",
+      "whyRecommended": "先看热时间常数与热导率表，再看电子/声子温差模型；35–50分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1103/PhysRevApplied.13.024007",
+      "arxiv": "1912.03588",
+      "url": "https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.13.024007",
+      "backupUrl": "https://arxiv.org/abs/1912.03588",
+      "accessNote": "已打开APS检索结果与arXiv直接摘要，核验结构、时间尺度、热导率和证据边界。",
+      "recommendedOn": "2026-09-18",
+      "featured": true
+    },
+    {
+      "id": "b-hybrid-smjt-ising-71844",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Intrinsic annealing in a hybrid memristor-magnetic tunnel junction Ising machine",
+      "titleZh": "HfOₓ忆阻器—随机pMTJ混合退火器｜零场、BEOL集成与30天漂移验证",
+      "authors": "Mohammed Akib Iftakher et al.",
+      "venue": "Nature Communications 17, 5246 (2026)",
+      "published": "2026-04-16",
+      "timeTier": "近期正式发表",
+      "system": "HfOₓ多级忆阻器交叉阵列存储耦合；低保持随机垂直MTJ作为p-bit；两者分别位于CMOS上方BEOL并以外部反馈连接。",
+      "conditions": "室温、零外磁场；Vread从20/50/100 mV表征概率曲线，退火调度约30–40 mV升至250 mV。",
+      "methods": [
+        "随机pMTJ时间轨迹",
+        "忆阻器交叉阵列MAC",
+        "电压控制伪温度",
+        "MAX-CUT",
+        "图着色与30天漂移"
+      ],
+      "summary": "【实测】求解24顶点加权MAX-CUT和10顶点三色图；30×30矩阵图着色1500次更新；忆阻电导30天漂移低于15 μS。",
+      "relevance": "直接连接pMTJ热涨落、读偏压、BEOL集成和系统级容差，适合作为随机MTJ从器件到计算的验证模板。",
+      "limitation": "反馈仍外置；30天复测时SMTJ概率函数由软件仿真，不能据此证明完整硬件长期可靠性。",
+      "industrialization": "最接近BEOL异质集成与概率计算演示；缺单芯片闭环、阵列良率、PVT、长期老化、能耗/吞吐量及制造统计。",
+      "whyRecommended": "先看图1–2的模拟温度，再看MAX-CUT/图着色和漂移边界；40–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1038/s41467-026-71844-8",
+      "arxiv": "",
+      "url": "https://www.nature.com/articles/s41467-026-71844-8",
+      "backupUrl": "https://doi.org/10.1038/s41467-026-71844-8",
+      "accessNote": "已打开Nature Communications全文，核验室温零场、Vread、问题规模、更新次数和30天漂移边界。",
+      "recommendedOn": "2026-09-18",
+      "featured": true
+    },
+    {
+      "id": "c-3rset-read-disturb-2511-22551",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "3RSeT: Read Disturbance Rate Reduction in STT-MRAM Caches by Selective Tag Comparison",
+      "titleZh": "STT-MRAM读扰动系统缓解｜选择性Tag比较降低71.8%读扰动率",
+      "authors": "Elham Cheshmikhani, Hamed Farbeh, Hossein Asad",
+      "venue": "arXiv:2511.22551 (2025)",
+      "published": "2025-11-27",
+      "timeTier": "可靠预印本",
+      "system": "STT-MRAM缓存Tag阵列；利用地址Tag低有效位提前排除不可能命中的Tag，减少并行无效读取。",
+      "conditions": "gem5全系统周期精确模拟；器件读扰动模型映射到缓存访问。摘要未公开节点、容量、温度和实测芯片条件。",
+      "methods": [
+        "gem5全系统模拟",
+        "Tag访问统计",
+        "选择性比较",
+        "MTTF建模",
+        "能耗/面积评估"
+      ],
+      "summary": "【理论/系统模拟】Tag读扰动率降低71.8%，MTTF提高3.6倍，能耗降低62.1%，面积开销低于0.4%，性能无损。",
+      "relevance": "提醒器件团队把读扰动脉冲概率与真实缓存访问次数相乘，形成从单结RDR到系统寿命的闭环。",
+      "limitation": "没有硅后实测；收益依赖工作负载、Tag组织和器件扰动模型，不能替代阵列级BER验证。",
+      "industrialization": "最接近缓存控制器可靠性优化；缺工艺角、温度角、老化后读电流分布、ECC交互和真实宏验证。",
+      "whyRecommended": "先看故障模型和选择逻辑，再看工作负载敏感性；30–45分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "10.48550/arXiv.2511.22551",
+      "arxiv": "2511.22551",
+      "url": "https://arxiv.org/abs/2511.22551",
+      "backupUrl": "https://arxiv.org/pdf/2511.22551",
+      "accessNote": "已打开arXiv摘要并核验提交日期、模拟方法和四项定量结果。",
+      "recommendedOn": "2026-09-18",
+      "featured": true
+    },
+    {
+      "id": "d-amat-endura-clover-mram-pvd",
+      "track": "D",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Endura Clover MRAM PVD",
+      "titleZh": "厂商技术资料｜Endura Clover真空互联MRAM PVD与0.2 Å在线计量",
+      "authors": "Applied Materials",
+      "venue": "Applied Materials厂商正式产品资料",
+      "published": "页面于2026-09-18核验",
+      "timeTier": "厂商技术资料",
+      "system": "最多七个沉积腔，集成预清洗、退火、冷却和在线计量；覆盖超过30层的MRAM堆栈并保持真空互联。",
+      "conditions": "厂商声明关键层厚计量精度0.2 Å；独立MgO腔与一腔最多五种材料。未公开第三方GRR、吞吐量、OEE和良率数据。",
+      "methods": [
+        "集群PVD",
+        "真空互联",
+        "原位厚度计量",
+        "独立MgO沉积",
+        "预清洗/退火/冷却"
+      ],
+      "summary": "【厂商声明】整堆栈无破真空、实时逐层监控和0.2 Å厚度计量，目标是快速发现工艺漂移并改善良率。",
+      "relevance": "可反向定义现有多腔溅射/真空互联系统的FAT/SAT：交叉污染、腔间等待、厚度GRR、MgO缺陷与片内TMR。",
+      "limitation": "不是同行评审科研证明；无独立重复、300 mm统计、颗粒、UPH、维护周期、成本及器件良率原始数据。",
+      "industrialization": "最接近HVM沉积设备架构；真正门槛是跨腔/跨靶/跨批次计量相关性和MTJ电性闭环。",
+      "whyRecommended": "先看腔体拓扑与0.2 Å声明，再把每项转成采购验收指标；20–30分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://www.appliedmaterials.com/us/en/product-library/endura-clover-mram-pvd.html",
+      "backupUrl": "https://www.appliedmaterials.com/us/en/product-library/endura-clover-mram-pvd.html",
+      "accessNote": "已打开Applied Materials官方页面；所有规格明确按厂商声明处理，不作为科研结论。",
+      "recommendedOn": "2026-09-18",
+      "featured": true
+    },
+    {
+      "id": "e-al2o3-ale-in-situ-stress-0005425",
+      "track": "E",
+      "secondaryTracks": [
+        "D",
+        "B"
+      ],
+      "title": "Film and surface stress during Al2O3 thermal atomic layer etching using in situ wafer curvature measurements",
+      "titleZh": "Al₂O₃热ALE原位应力｜0.3–1.3 Å/cycle与9–10 Å氟化深度",
+      "authors": "Ryan B. Vanfleet, Victor M. Bright, Steven M. George",
+      "venue": "Journal of Vacuum Science & Technology A 44, 032605 (2026)",
+      "published": "2026-04-28",
+      "timeTier": "近期正式发表",
+      "system": "TMA/H₂O ALD Al₂O₃起始膜；HF氟化与TMA配体交换热ALE；76.2 mm、200 μm厚双抛Si(100)与MOSS原位曲率。",
+      "conditions": "ALE温度250/275/300 °C；UHP N₂载气/背吹；椭偏验证刻蚀；300循环示例与HF/TMA mini-dose。",
+      "methods": [
+        "热ALE",
+        "MOSS原位曲率",
+        "Stoney方程",
+        "椭偏",
+        "HF/TMA半反应分解"
+      ],
+      "summary": "【实测】刻蚀率0.3/1.0/1.3 Å cycle⁻¹；TMA表面应力厚度−0.50±0.07 N m⁻¹；HF初始氟化深度约9–10 Å。",
+      "relevance": "将原子层去除、残余氟和瞬态表面应力统一监控，可迁移到MTJ侧壁介质修复和低损伤界面清理。",
+      "limitation": "对象是平面Al₂O₃而非MgO/CoFeB纳米侧壁；76.2 mm薄Si提高灵敏度，不能直接外推300 mm量产曲率能力。",
+      "industrialization": "最接近ALE原位过程监控；缺图形化结构选择性、金属兼容、残氟电性、300 mm均匀性和批间SPC。",
+      "whyRecommended": "先看图2/5/8与结论中的刻蚀率、半反应应力和氟化深度；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1116/6.0005425",
+      "arxiv": "",
+      "url": "https://pubs.aip.org/avs/jva/article/44/3/032605/3388371/Film-and-surface-stress-during-Al2O3-thermal",
+      "backupUrl": "https://doi.org/10.1116/6.0005425",
+      "accessNote": "已打开JVST A全文，核验设备、晶圆、温度、刻蚀率、表面应力和氟化深度。",
+      "recommendedOn": "2026-09-18",
       "featured": true
     }
   ]
