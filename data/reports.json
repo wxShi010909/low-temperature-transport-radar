@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-18T12:00:00+08:00",
-  "reportDate": "2026-09-18",
+  "updatedAt": "2026-09-21T12:00:00+08:00",
+  "reportDate": "2026-09-21",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -907,6 +907,25 @@
         "c-3rset-read-disturb-2511-22551",
         "d-amat-endura-clover-mram-pvd",
         "e-al2o3-ale-in-situ-stress-0005425"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "label": "详细日报：低温MTJ灵敏度—300 mm轨道矩MRAM—DMI写错—自动化平台—秒级ALE",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-cryo-mtj-uniaxial-vortex-ae3df2",
+        "b-300mm-orbital-torque-memory-2609-18008",
+        "c-dmi-wer-ballooning-2511-10437",
+        "d-teslatronpt-plus-open-architecture",
+        "e-diamond-bp-ale-0005347"
       ]
     }
   ],
@@ -9858,6 +9877,189 @@
       "backupUrl": "https://doi.org/10.1116/6.0005425",
       "accessNote": "已打开JVST A全文，核验设备、晶圆、温度、刻蚀率、表面应力和氟化深度。",
       "recommendedOn": "2026-09-18",
+      "featured": true
+    },
+    {
+      "id": "a-cryo-mtj-uniaxial-vortex-ae3df2",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Contrasting uniaxial and vortex-state magnetic tunnel junction sensors: sensitivity and tunnel magnetoresistance at low temperatures",
+      "titleZh": "10–300 K MTJ传感器对比｜TMR升高不等于低温灵敏度提高",
+      "authors": "Liam K. Mitchell, Benjamin J. Brown, Z. C. Adamson, A. Zaslavsky, Gang Xiao",
+      "venue": "Journal of Physics D: Applied Physics 59, 055004 (2026)",
+      "published": "2026-02-06",
+      "timeTier": "近期正式发表",
+      "system": "单轴器件为Ta/CoFe/IrMn/CoFe/Ru/CoFeB(3 nm)/MgO(2 nm)/CoFeB(30 nm)，160 μm × 20 μm椭圆、38结串联；涡旋器件含IrMn/CoFe/Ru/CoFeB(3.5 nm)/MgO(2.9 nm)/CoFeB(55 nm)，圆形直径3–20 μm。",
+      "conditions": "直流/射频磁控溅射，基压<3.5×10⁻⁸ Torr；涡旋器件360 °C 1 h后正交场310 °C 1 h，单轴器件310 °C 4 h；Janis ST-100、Lake Shore 340，10–300 K，每温点稳定5 min，0.1/0.5 V偏压。",
+      "methods": [
+        "低温磁输运",
+        "主/次磁滞回线",
+        "单轴—涡旋几何对照",
+        "灵敏度温度系数",
+        "低场Helmholtz线圈"
+      ],
+      "summary": "【实测】10 K相对300 K，单轴/涡旋TMR分别增加54%/32%；单轴灵敏度却下降17%（1.05→0.88 % Oe⁻¹），涡旋灵敏度增加7%，低温系数仅−21 ppm K⁻¹。",
+      "relevance": "证明低温器件不能只看TMR：自由层反转路径、矫顽力与滞回才决定传感输出，可直接迁移到低温MTJ读出和工艺反馈。",
+      "limitation": "器件为微米级厚自由层传感器而非先进纳米pMTJ；未给噪声谱、阵列良率、循环寿命和10 K以下数据。",
+      "industrialization": "最接近低温磁传感器几何选择与验收；缺纳米缩放、片内统计、封装应力、1/f噪声和长期校准漂移。",
+      "whyRecommended": "先看表1和图3–5，再看堆栈与退火；35–50分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1088/1361-6463/ae3df2",
+      "arxiv": "",
+      "url": "https://doi.org/10.1088/1361-6463/ae3df2",
+      "backupUrl": "https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/c/328/files/2026/02/2026JPhysDv59a055004.pdf",
+      "accessNote": "已实际打开作者公开PDF，核验完整堆栈、退火、10–300 K条件、表1定量结果与数据可用性声明。",
+      "recommendedOn": "2026-09-21",
+      "featured": true
+    },
+    {
+      "id": "b-300mm-orbital-torque-memory-2609-18008",
+      "track": "B",
+      "secondaryTracks": [
+        "E",
+        "C"
+      ],
+      "title": "High-performance orbital-torque magnetic memory on the 300-mm platform",
+      "titleZh": "300 mm轨道矩MRAM｜182% TMR、<0.1 pJ与>10¹²次耐久",
+      "authors": "Dinggui Zeng et al.",
+      "venue": "arXiv:2609.18008 (2026)",
+      "published": "2026-09-16",
+      "timeTier": "近期可靠预印本",
+      "system": "Ti(6)/W(1.5)/CoFeB(1.05)/MgO(1.4)/CoFeB(0.9)/W(0.4)/[Co/Pt]合成反铁磁参考层（厚度单位nm）的顶钉扎pMTJ；器件约60×130 nm，Ti/W为较厚轨道流源。",
+      "conditions": "300 mm BEOL兼容平台磁控溅射，基压<3×10⁻⁸ Torr，350 °C退火，IBE图形化；2 ns写脉冲和约−35 mT辅助场；室温及85/125 °C读窗口评估。",
+      "methods": [
+        "300 mm磁控溅射",
+        "CIPT与纳米器件TMR",
+        "2 ns脉冲写入",
+        ">10¹²次耐久",
+        "DFT轨道霍尔分析"
+      ],
+      "summary": "【实测】薄膜TMR最高205%、RA 95 Ω·μm²；>200器件平均TMR 171±7%、最高182%，die-to-die变异2.9%；2 ns写能约0.08 pJ，>2000器件电性良率>99.95%。",
+      "relevance": "把真空沉积、MgO/CoFeB界面、300 mm统计、纳秒写入和耐久放在同一证据链，是当前MTJ与存储器方向的最高优先级参考。",
+      "limitation": "仍是预印本；写入依赖辅助场，未公开阵列级ppm/ppb WER、完整PVT角、封装后可靠性和独立复现。",
+      "industrialization": "最接近300 mm SOT/OT-MRAM器件工艺；主要障碍是无场翻转、单元面积、阵列宏、读写外围、跨批次SPC与长期保持。",
+      "whyRecommended": "先看图1的堆栈与统计、图2的2 ns写入、图3的耐久和能耗；45–60分钟。",
+      "score": 10,
+      "priority": "S",
+      "doi": "10.48550/arXiv.2609.18008",
+      "arxiv": "2609.18008",
+      "url": "https://arxiv.org/abs/2609.18008",
+      "backupUrl": "https://arxiv.org/pdf/2609.18008",
+      "accessNote": "已打开arXiv摘要并核验2026-09-16版本、300 mm平台、182% TMR、纳秒响应、10¹²耐久和<0.1 pJ声明；堆栈与统计来自实际打开PDF。",
+      "recommendedOn": "2026-09-21",
+      "featured": true
+    },
+    {
+      "id": "c-dmi-wer-ballooning-2511-10437",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Exploring the Role of Interfacial Dzyaloshinskii-Moriya Interaction in Write Error Rate Anomalies of Spin-Transfer Torque Magnetic Tunnel Junctions",
+      "titleZh": "DMI诱发STT-MTJ写错误率鼓包｜多畴中间态与脉宽边界",
+      "authors": "Prosenjit Das, Md Mahadi Rajib, Jayasimha Atulasimha",
+      "venue": "arXiv:2511.10437 (2025)",
+      "published": "2025-11-13",
+      "timeTier": "可靠预印本",
+      "system": "圆形垂直MTJ自由层，20 nm与50 nm直径、1 nm厚；DMI常数D扫描0–5 mJ m⁻²，使用MuMax3随机微磁模拟。",
+      "conditions": "比较5 ns短脉冲与最长50 ns脉冲及脉冲后弛豫；50 nm模型网格32×32×1、单元1.5625×1.5625×1 nm³。",
+      "methods": [
+        "随机微磁模拟",
+        "DMI参数扫描",
+        "WER统计",
+        "磁畴快照",
+        "脉宽—电流矩阵"
+      ],
+      "summary": "【理论预测】DMI使反转非相干并形成持久多畴；20 nm临界DMI约2.753 mJ m⁻²；50 nm在D=3 mJ m⁻²出现非单调WER，D=4–5 mJ m⁻²时测试范围内WER接近100%。",
+      "relevance": "给出界面氧化、重金属插层和退火如何通过DMI进入纳秒WER的可检验机制，适合与BLS/DW测速及器件写错统计联动。",
+      "limitation": "纯模拟而非阵列实测；未完整纳入VCMA、焦耳热、边缘粗糙度分布、参考层杂散场和刻蚀损伤。",
+      "industrialization": "最接近短脉冲写入失效模型；缺实测DMI—WER相关、大样本尾部分布、PVT角和老化后验证。",
+      "whyRecommended": "先看WER—电流曲线和失败磁畴，再看5/50 ns对照；30–45分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.48550/arXiv.2511.10437",
+      "arxiv": "2511.10437",
+      "url": "https://arxiv.org/abs/2511.10437",
+      "backupUrl": "https://arxiv.org/pdf/2511.10437",
+      "accessNote": "已打开arXiv摘要和公开全文，核验20/50 nm、D=0–5 mJ m⁻²、5 ns、多畴失败及50 nm补充模拟。",
+      "recommendedOn": "2026-09-21",
+      "featured": true
+    },
+    {
+      "id": "d-teslatronpt-plus-open-architecture",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "TeslatronPT Plus — An Open-Architecture, Low Temperature Measurement System",
+      "titleZh": "厂商技术资料｜1.5–300 K、最高14 T与时间戳自动化低温输运",
+      "authors": "Quantum Design Oxford",
+      "venue": "Quantum Design Oxford厂商正式技术资料",
+      "published": "页面于2026-09-21核验",
+      "timeTier": "厂商技术资料",
+      "system": "Cryofree超导磁体、VTI与50 mm样品空间；8/12/14 T或6/1/1 T矢量磁体；DECS控制、Lake Shore M81/M91和低噪声ESD保护探杆。",
+      "conditions": "厂商标称1.5–300 K、稳定性±50 mK；基础探杆室温降到<2 K少于2 h；M81兼顾DC和最高100 kHz AC。",
+      "methods": [
+        "浏览器/API自动化",
+        "QCoDeS驱动",
+        "JupyterHub",
+        "Grafana时间戳",
+        "第三方仪器集成"
+      ],
+      "summary": "【厂商声明】温度、磁场与测量数据统一时间戳；M91对低迁移率材料宣称最快100倍；支持远程GUI/API和可编辑模板。",
+      "relevance": "可直接作为现有低温平台的软件与验收蓝本：把温度、磁场、量程、滤波、接线和异常状态写入同一时间轴。",
+      "limitation": "不是独立科研证明；未公开底噪、磁场回线误差、温度梯度、通道串扰、长期漂移和第三方GRR。",
+      "industrialization": "最接近低温输运自动化与设备升级；采购/升级前仍需以短路、标准电阻、参考MTJ和实际器件做四级FAT/SAT。",
+      "whyRecommended": "先看Key Specifications、DECS与探杆接线；20–30分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://qd-oxford.com/products/teslatronPT_Plus.html",
+      "backupUrl": "https://qd-oxford.com/products/teslatronPT_Plus.html",
+      "accessNote": "已打开Quantum Design Oxford官方页面核验全部规格；所有性能均明确标注为厂商声明。",
+      "recommendedOn": "2026-09-21",
+      "featured": true
+    },
+    {
+      "id": "e-diamond-bp-ale-0005347",
+      "track": "E",
+      "secondaryTracks": [
+        "D"
+      ],
+      "title": "Rapid surface smoothing of monocrystalline diamond with bias-pulsed atomic layer etching",
+      "titleZh": "偏压脉冲金刚石ALE｜6秒循环、0.90±0.02 Å/cycle与98%协同度",
+      "authors": "J. A. Michaels et al.",
+      "venue": "Journal of Vacuum Science & Technology A 44, 042601 (2026)",
+      "published": "2026-06-22",
+      "timeTier": "近期正式发表",
+      "system": "电子级(100)单晶金刚石；Oxford Instruments PlasmaPro 100 Cobra ICP-RIE；Ar/Cl₂持续供气，仅脉冲RIE偏压完成吸附—轰击循环。",
+      "conditions": "基片25 °C、腔体60 °C、7 mTorr、Ar 100 sccm、Cl₂ 40 sccm、ICP 1000 W；偏压0–40 V、步骤0–10 s；AFM每点至少5处扫描。",
+      "methods": [
+        "偏压脉冲ALE",
+        "传统ALE对照",
+        "二维ALE窗口",
+        "AFM/PSD粗糙度",
+        "原位OES"
+      ],
+      "summary": "【实测】优化BP-ALE为0.90±0.02 Å cycle⁻¹、6 s/cycle；偏压ALE窗口15–25 V，t_on窗口约3 s；ALE协同度98%，多片单晶金刚石表面均出现平滑。",
+      "relevance": "提供把ALE节拍从长吹扫缩短到秒级、同时用协同度和表面PSD证明自限性的模板，可迁移到硬质掩膜、封装和低损伤侧壁工艺。",
+      "limitation": "对象是平面微米图形金刚石，不是MgO/CoFeB；未给300 mm均匀性、晶体缺陷深度、量子态寿命、颗粒和批间SPC。",
+      "industrialization": "最接近高吞吐原子级刻蚀模块；障碍是材料专用化学、复杂图形加载、端点监控、腔体污染和量产节拍/维护。",
+      "whyRecommended": "先看图2的二维窗口与图3后的平滑/PSD，再看OES机制；40–55分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1116/6.0005347",
+      "arxiv": "",
+      "url": "https://pubs.aip.org/avs/jva/article/44/4/042601/3396164/Rapid-surface-smoothing-of-monocrystalline-diamond",
+      "backupUrl": "https://doi.org/10.1116/6.0005347",
+      "accessNote": "已打开JVST A全文，核验设备、气体/功率/温度、6 s周期、EPC、15–25 V窗口、98%协同度和AFM统计。",
+      "recommendedOn": "2026-09-21",
       "featured": true
     }
   ]

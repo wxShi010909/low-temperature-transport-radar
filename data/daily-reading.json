@@ -1,57 +1,57 @@
 {
-  "date": "2026-09-18",
+  "date": "2026-09-21",
   "review": {
-    "id": "review-nextgen-mram-ai-2026",
+    "id": "review-sot-mram-qute-202500886",
     "kind": "正式综述",
     "track": "B",
     "secondaryTracks": [
       "C",
       "E"
     ],
-    "title": "Next-generation MRAM technologies and their emerging roles in artificial intelligence",
-    "titleZh": "下一代MRAM与AI｜六类新型MRAM的器件—电路—应用统一比较",
-    "authors": "Puyang Huang et al.",
-    "venue": "Journal of Magnetism and Magnetic Materials 655 (2026)",
-    "published": "2026-06",
-    "recommendedOn": "2026-09-18",
-    "doi": "",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0304885326005007",
-    "backupUrl": "https://par.nsf.gov/biblio/10709071-next-generation-mram-technologies-emerging-roles-artificial-intelligence",
-    "assistantSummary": "正式发表综述，统一比较混合STT-SOT、STT辅助SOT、二端SOT等六类下一代MRAM，并讨论其在AI存内计算中的位置。",
-    "whySelected": "用于把今日随机MTJ、读扰动和制造平台放回同一产品坐标：写入端口、密度、能耗、耐久、阵列外围和应用负载。",
+    "title": "Spin–Orbit Torque MRAM: Fundamentals, Device Engineering, and Applications in Probabilistic Computing",
+    "titleZh": "SOT-MRAM正式综述｜写入机理、晶圆集成与概率计算",
+    "authors": "Kun Lei, Xinrui Wang, Yiqi Zhou, Bohan Liu, Kaiyou Wang",
+    "venue": "Advanced Quantum Technologies 9, e00886 (2026)",
+    "published": "2026-03-04",
+    "recommendedOn": "2026-09-21",
+    "doi": "10.1002/qute.202500886",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/qute.202500886",
+    "backupUrl": "https://doi.org/10.1002/qute.202500886",
+    "assistantSummary": "正式发表综述，覆盖SOT写入机理、材料与器件工程、晶圆级集成、三端读写分离以及SOT-MTJ作为p-bit的概率计算。",
+    "whySelected": "为今日300 mm轨道矩器件和DMI/WER理论提供统一坐标，尤其适合区分器件演示、晶圆集成与系统应用证据。",
     "readingGuide": [
-      "先看六类架构总表",
-      "再看器件/阵列权衡",
-      "看AI工作负载映射",
-      "列出量产缺口；50–70分钟"
+      "先看SOT与轨道矩机理",
+      "再看无场翻转与晶圆集成",
+      "看p-bit/Ising应用",
+      "整理制造缺口；50–70分钟"
     ],
     "notNew": false
   },
   "classics": [
     {
-      "id": "classic-yang-fe-mgo-pma-2011",
+      "id": "classic-cipt-worledge-2003",
       "kind": "经典文章",
       "track": "B",
       "secondaryTracks": [
-        "C",
+        "D",
         "E"
       ],
-      "title": "First-principles investigation of the very large perpendicular magnetic anisotropy at Fe|MgO and Co|MgO interfaces",
-      "titleZh": "Fe|MgO与Co|MgO界面PMA的第一性原理起点",
-      "authors": "H. X. Yang et al.",
-      "venue": "Physical Review B 84, 054401 (2011)",
-      "published": "2011-08-01",
-      "recommendedOn": "2026-09-18",
-      "doi": "10.1103/PhysRevB.84.054401",
-      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.054401",
-      "backupUrl": "https://arxiv.org/abs/1011.5667",
-      "assistantSummary": "第一性原理揭示Fe|MgO和Co|MgO界面的强垂直磁各向异性来自界面电子轨道杂化，是理解现代CoFeB/MgO退火结晶和界面缺陷敏感性的经典基线。",
-      "whySelected": "与今日原子级热/应力和真空沉积主题直接相连：设备与工艺最终必须保持界面轨道结构，而不只是控制平均厚度。",
+      "title": "Magnetoresistance measurement of unpatterned magnetic tunnel junction wafers by current-in-plane tunneling",
+      "titleZh": "CIPT经典文章｜无需图形化的MTJ晶圆磁阻计量",
+      "authors": "D. C. Worledge, P. L. Trouilloud",
+      "venue": "Applied Physics Letters 83, 84–86 (2003)",
+      "published": "2003-06-30",
+      "recommendedOn": "2026-09-21",
+      "doi": "10.1063/1.1590740",
+      "url": "https://research.ibm.com/publications/magnetoresistance-measurement-of-unpatterned-magnetic-tunnel-junction-wafers-by-current-in-plane-tunneling",
+      "backupUrl": "https://doi.org/10.1063/1.1590740",
+      "assistantSummary": "经典CIPT用非破坏四探针在未图形化MTJ晶圆上同时提取片电阻、RA与磁阻，建立沉积条件、热稳定性和片内均匀性的快速反馈。",
+      "whySelected": "与今日300 mm OT-MRAM最直接相连：先用CIPT筛选整片MgO/CoFeB，再把异常坐标传递到器件和截面分析。",
       "readingGuide": [
-        "先看界面结构",
-        "看轨道分辨贡献",
-        "看应变/界面差异",
-        "对照现代CoFeB/MgO；30–45分钟"
+        "先看四探针几何和解析模型",
+        "看探针间距扫描",
+        "看RA/TMR反演",
+        "对照300 mm空间采样；30–40分钟"
       ],
       "notNew": true
     }

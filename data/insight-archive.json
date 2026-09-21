@@ -560,6 +560,18 @@
       "atomicIds": [
         "2026-09-18-ale-stress-sidewall"
       ]
+    },
+    {
+      "date": "2026-09-21",
+      "opportunityIds": [
+        "2026-09-21-otm-dmi-wer"
+      ],
+      "methodIds": [
+        "2026-09-21-cryo-platform-fatsat"
+      ],
+      "atomicIds": [
+        "2026-09-21-bpale-mtj-transfer"
+      ]
     }
   ],
   "items": [
@@ -8262,6 +8274,157 @@
       ],
       "researchConnection": "连接原子级去除、界面PMA与器件击穿。",
       "takeaway": "EPC合格不等于界面无损伤。"
+    },
+    {
+      "id": "2026-09-21-otm-dmi-wer",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/C · 界面—写入可靠性",
+      "title": "建立轨道矩器件的DMI—脉宽—WER实验矩阵",
+      "subtitle": "把高写效率与多畴失败放进同一张图。",
+      "summary": "先测DMI，再做2–50 ns大样本WER。",
+      "status": "可立即DOE",
+      "relatedPaperIds": [
+        "b-300mm-orbital-torque-memory-2609-18008",
+        "c-dmi-wer-ballooning-2511-10437"
+      ],
+      "question": "Ti/W/CoFeB/MgO界面的DMI是否限制2 ns低能写入的WER尾部？",
+      "rationale": "300 mm器件给出高TMR和低能耗，微磁工作提示界面DMI可能造成短脉冲鼓包；两者尚无同片闭环。",
+      "workflow": [
+        "BLS/DW测速测DMI",
+        "2/5/10/50 ns写入",
+        "至少10⁵次/点",
+        "失败态分类",
+        "跨片位置关联"
+      ],
+      "equipment": [
+        "脉冲源/示波器",
+        "低温探针台",
+        "BLS或畴壁平台",
+        "自动探针系统"
+      ],
+      "measurements": [
+        "DMI",
+        "TMR/RA",
+        "Ic/Vc",
+        "WER",
+        "自热"
+      ],
+      "metrics": [
+        "WER尾部",
+        "鼓包位置",
+        "片内CV",
+        "能耗"
+      ],
+      "evidenceBoundary": "DMI导致OT-MRAM WER异常是本站跨文献假设，不是两篇论文已共同证明。",
+      "firstSteps": [
+        "选W对照",
+        "固定MgO/退火",
+        "先室温再77 K"
+      ],
+      "researchConnection": "直接连接原子层界面、器件写入和可靠性。",
+      "takeaway": "低能耗必须与低WER同时成立。"
+    },
+    {
+      "id": "2026-09-21-cryo-platform-fatsat",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "A/D · 低温自动化验收",
+      "title": "用四级标准样品验收低温输运自动化",
+      "subtitle": "时间戳完整不等于测量准确。",
+      "summary": "短路—标准电阻—参考MTJ—实际器件逐级验收。",
+      "status": "平台升级",
+      "relatedPaperIds": [
+        "a-cryo-mtj-uniaxial-vortex-ae3df2",
+        "d-teslatronpt-plus-open-architecture"
+      ],
+      "question": "自动化平台能否在10–300 K重复分辨真实灵敏度变化而非仪表漂移？",
+      "rationale": "MTJ论文给出17%与7%的相反趋势，厂商平台提供API与时间戳；需要可追溯误差预算连接两者。",
+      "workflow": [
+        "底噪/热电势",
+        "温控稳定性",
+        "剩磁/回线",
+        "参考MTJ重复",
+        "自动异常回退"
+      ],
+      "equipment": [
+        "Teslatron或现有低温系统",
+        "标准电阻",
+        "低噪声源表",
+        "锁相/示波器"
+      ],
+      "measurements": [
+        "噪声谱",
+        "温漂",
+        "R-B回线",
+        "灵敏度",
+        "重测率"
+      ],
+      "metrics": [
+        "GRR",
+        "ppm K⁻¹",
+        "剩磁",
+        "数据完整率"
+      ],
+      "evidenceBoundary": "厂商规格需本地独立FAT/SAT。",
+      "firstSteps": [
+        "冻结接线图",
+        "定义稳定判据",
+        "盲测三轮"
+      ],
+      "researchConnection": "把低温测量变成可用于工艺反馈的数据链。",
+      "takeaway": "先验收误差，再解释材料。"
+    },
+    {
+      "id": "2026-09-21-bpale-mtj-transfer",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 秒级ALE迁移",
+      "title": "把BP-ALE二维窗口迁移为MTJ侧壁低损伤筛选",
+      "subtitle": "偏压和时间必须同时自限。",
+      "summary": "用同深度连续IBE/RIE与BP-ALE对照。",
+      "status": "工艺DOE",
+      "relatedPaperIds": [
+        "e-diamond-bp-ale-0005347",
+        "classic-cipt-worledge-2003"
+      ],
+      "question": "秒级偏压脉冲能否降低MTJ侧壁损伤且保持MgO停止层完整？",
+      "rationale": "金刚石证明偏压—时间二维窗口和98%协同度；MTJ需重新开发化学并用CIPT/器件电性判定。",
+      "workflow": [
+        "模拟堆栈见证片",
+        "偏压×t_on矩阵",
+        "半反应对照",
+        "同深度IBE对照",
+        "退火与电性"
+      ],
+      "equipment": [
+        "ICP-RIE/ALE",
+        "IBE",
+        "AFM/XPS",
+        "TEM",
+        "CIPT/探针台"
+      ],
+      "measurements": [
+        "EPC",
+        "协同度",
+        "残留",
+        "PMA/阻尼",
+        "TMR/RA/击穿"
+      ],
+      "metrics": [
+        "选择性",
+        "损伤层",
+        "片内CV",
+        "节拍"
+      ],
+      "evidenceBoundary": "Ar/Cl₂金刚石配方不可直接用于CoFeB/MgO，迁移只限方法学。",
+      "firstSteps": [
+        "先做Ta/Ru硬掩膜",
+        "再做MgO停止层",
+        "最后完整MTJ"
+      ],
+      "researchConnection": "连接原子刻蚀窗口、界面保持与器件良率。",
+      "takeaway": "二维自限加器件电性才算低损伤。"
     }
   ]
 }

@@ -328,6 +328,13 @@
       "classicIds": [
         "classic-yang-fe-mgo-pma-2011"
       ]
+    },
+    {
+      "date": "2026-09-21",
+      "reviewId": "review-sot-mram-qute-202500886",
+      "classicIds": [
+        "classic-cipt-worledge-2003"
+      ]
     }
   ],
   "items": [
@@ -2984,6 +2991,60 @@
         "看轨道分辨贡献",
         "看应变/界面差异",
         "对照现代CoFeB/MgO；30–45分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-sot-mram-qute-202500886",
+      "kind": "正式综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Spin–Orbit Torque MRAM: Fundamentals, Device Engineering, and Applications in Probabilistic Computing",
+      "titleZh": "SOT-MRAM正式综述｜写入机理、晶圆集成与概率计算",
+      "authors": "Kun Lei, Xinrui Wang, Yiqi Zhou, Bohan Liu, Kaiyou Wang",
+      "venue": "Advanced Quantum Technologies 9, e00886 (2026)",
+      "published": "2026-03-04",
+      "recommendedOn": "2026-09-21",
+      "doi": "10.1002/qute.202500886",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/qute.202500886",
+      "backupUrl": "https://doi.org/10.1002/qute.202500886",
+      "assistantSummary": "正式发表综述，覆盖SOT写入机理、材料与器件工程、晶圆级集成、三端读写分离以及SOT-MTJ作为p-bit的概率计算。",
+      "whySelected": "为今日300 mm轨道矩器件和DMI/WER理论提供统一坐标，尤其适合区分器件演示、晶圆集成与系统应用证据。",
+      "readingGuide": [
+        "先看SOT与轨道矩机理",
+        "再看无场翻转与晶圆集成",
+        "看p-bit/Ising应用",
+        "整理制造缺口；50–70分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-cipt-worledge-2003",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "D",
+        "E"
+      ],
+      "title": "Magnetoresistance measurement of unpatterned magnetic tunnel junction wafers by current-in-plane tunneling",
+      "titleZh": "CIPT经典文章｜无需图形化的MTJ晶圆磁阻计量",
+      "authors": "D. C. Worledge, P. L. Trouilloud",
+      "venue": "Applied Physics Letters 83, 84–86 (2003)",
+      "published": "2003-06-30",
+      "recommendedOn": "2026-09-21",
+      "doi": "10.1063/1.1590740",
+      "url": "https://research.ibm.com/publications/magnetoresistance-measurement-of-unpatterned-magnetic-tunnel-junction-wafers-by-current-in-plane-tunneling",
+      "backupUrl": "https://doi.org/10.1063/1.1590740",
+      "assistantSummary": "经典CIPT用非破坏四探针在未图形化MTJ晶圆上同时提取片电阻、RA与磁阻，建立沉积条件、热稳定性和片内均匀性的快速反馈。",
+      "whySelected": "与今日300 mm OT-MRAM最直接相连：先用CIPT筛选整片MgO/CoFeB，再把异常坐标传递到器件和截面分析。",
+      "readingGuide": [
+        "先看四探针几何和解析模型",
+        "看探针间距扫描",
+        "看RA/TMR反演",
+        "对照300 mm空间采样；30–40分钟"
       ],
       "notNew": true
     }
