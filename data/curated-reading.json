@@ -335,6 +335,13 @@
       "classicIds": [
         "classic-cipt-worledge-2003"
       ]
+    },
+    {
+      "date": "2026-09-22",
+      "reviewId": "review-mtj-applications-s20010121",
+      "classicIds": [
+        "classic-epitaxial-mtj-noise-0803-3564"
+      ]
     }
   ],
   "items": [
@@ -3045,6 +3052,60 @@
         "看探针间距扫描",
         "看RA/TMR反演",
         "对照300 mm空间采样；30–40分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-mtj-applications-s20010121",
+      "kind": "正式综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "D"
+      ],
+      "title": "Magnetic Tunnel Junction Applications",
+      "titleZh": "MTJ应用正式综述｜STT、SOT、VCMA到存储与概率电路",
+      "authors": "Nilson Maciel, Elaine Marques, Lírida Naviner, Yongliang Zhou, Hao Cai",
+      "venue": "Sensors 20, 121 (2020)",
+      "published": "2019-12-24",
+      "recommendedOn": "2026-09-22",
+      "doi": "10.3390/s20010121",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6982960/",
+      "backupUrl": "https://doi.org/10.3390/s20010121",
+      "assistantSummary": "正式开放综述，系统比较STT、SOT与VCMA写入机制，并覆盖MRAM、逻辑、ADC、随机采样和传感应用；同时明确读写错误、工艺波动、热稳定—写电流权衡和缩放障碍。",
+      "whySelected": "为今日“250颗MTJ系统+概率翻转模型”提供器件到电路的统一术语，同时提醒实验室系统演示不能跳过可靠性与制造变异。",
+      "readingGuide": [
+        "先看图1–3和STT/SOT/VCMA差异",
+        "再看memory与mixed-signal章节",
+        "最后看结论中的可靠性/缩放缺口",
+        "50–65分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-epitaxial-mtj-noise-0803-3564",
+      "kind": "经典文章",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Very low 1/f noise at room temperature in fully epitaxial Fe/MgO/Fe magnetic tunnel junctions",
+      "titleZh": "外延Fe/MgO/Fe低噪声经典｜界面重构如何进入Hooge因子",
+      "authors": "F. G. Aliev, R. Guerrero, D. Herranz, R. Villar, F. Greullet, C. Tiusan, M. Hehn",
+      "venue": "Physical Review B 79, 195415 (2009)",
+      "published": "2009-05-22",
+      "recommendedOn": "2026-09-22",
+      "doi": "10.1103/PhysRevB.79.195415",
+      "url": "https://arxiv.org/abs/0803.3564",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.79.195415",
+      "assistantSummary": "外延Fe(45)/MgO(2.6)/Fe(10) nm结在300 K得到最低约10⁻¹¹ μm²的P态Hooge因子；碳诱导c(2×2)界面重构改变P/AP噪声不对称和偏压极性响应。",
+      "whySelected": "与今日低温磁子—缺陷噪声形成室温/低温互补：噪声谱不仅是读出限制，也能反映外延度、界面应力和缺陷通道。",
+      "readingGuide": [
+        "先看图1–2 Hooge偏压/磁态不对称",
+        "看13个器件的TMR/RA统计",
+        "读作者对外延度和C重构的解释",
+        "30–40分钟"
       ],
       "notNew": true
     }

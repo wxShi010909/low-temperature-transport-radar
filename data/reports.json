@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-21T12:00:00+08:00",
-  "reportDate": "2026-09-21",
+  "updatedAt": "2026-09-22T11:50:00+08:00",
+  "reportDate": "2026-09-22",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -926,6 +926,25 @@
         "c-dmi-wer-ballooning-2511-10437",
         "d-teslatronpt-plus-open-architecture",
         "e-diamond-bp-ale-0005347"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "label": "详细日报：磁子缺陷噪声—250颗MTJ概率机—热噪声模型—4.2 K读出—Ru ALE",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-magnon-defect-lf-noise-1410-3586",
+        "b-250-mtj-pim-2506-14590",
+        "c-thermal-probability-spin-circuit-2505-00418",
+        "d-cryo-cmos-lfn-2405-17685",
+        "e-ru-plasma-thermal-ale-167227"
       ]
     }
   ],
@@ -10060,6 +10079,189 @@
       "backupUrl": "https://doi.org/10.1116/6.0005347",
       "accessNote": "已打开JVST A全文，核验设备、气体/功率/温度、6 s周期、EPC、15–25 V窗口、98%协同度和AFM统计。",
       "recommendedOn": "2026-09-21",
+      "featured": true
+    },
+    {
+      "id": "a-magnon-defect-lf-noise-1410-3586",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Low frequency noise peak near magnon emission energy in magnetic tunnel junctions",
+      "titleZh": "0.6–3.6 K MTJ低频噪声｜磁子发射激活界面缺陷",
+      "authors": "Liang Liu, Li Xiang, Huiqiang Guo, Jian Wei, D. L. Li, Z. H. Yuan, J. F. Feng, X. F. Han, J. M. D. Coey",
+      "venue": "AIP Advances 4, 127102 (2014)",
+      "published": "2014-12-01",
+      "timeTier": "关键低温输运论文",
+      "system": "MgO结主堆栈IrMn(10)/CoFe(2.5)/Ru(0.9)/CoFeB(3)/MgO(2.5)/CoFeB(3) nm；AlOx对照为CoFeB(4)/AlOx(1)/CoFeB(4) nm，均为5×10 μm²矩形结。",
+      "conditions": "MgO结350 °C、8000 Oe、30 min退火；AlOx结未退火。稀释制冷机与矢量磁体，重点温度0.6 K和3.6 K；双前放交叉相关，10 Hz–1 kHz，并用IETS定位约20–30 mV磁子阈值。",
+      "methods": [
+        "低温低频噪声",
+        "随机电报噪声",
+        "交叉相关",
+        "IETS",
+        "偏压与磁态对照"
+      ],
+      "summary": "【实测】MgO与AlOx结均在约20 mV磁子发射能附近出现噪声峰；MgO峰宽由3.6 K的约4 mV收窄到0.6 K的约2 mV，AlOx结可分辨约2.5 μV的RTN台阶。",
+      "relevance": "把低温噪声从“设备底噪”变成界面缺陷与磁子散射的工艺指纹，适合验证MgO/CoFeB退火、离子刻蚀和侧壁修复。",
+      "limitation": "样品为微米级面内MTJ且数量有限；反复扫描会改变缺陷，不能直接外推到纳米pMTJ阵列的WER或寿命。",
+      "industrialization": "最接近失效分析与工艺筛选；尚缺晶圆级噪声映射、同器件前后可重复性、与TEM/XPS缺陷计数及TDDB/WER的统计关联。",
+      "whyRecommended": "先看图1磁子IETS、图2温度收窄、图3–4 RTN拟合；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1063/1.4903278",
+      "arxiv": "1410.3586",
+      "url": "https://arxiv.org/abs/1410.3586",
+      "backupUrl": "https://doi.org/10.1063/1.4903278",
+      "accessNote": "已实际打开arXiv摘要与HTML全文，核验堆栈、退火、0.6/3.6 K、IETS、交叉相关、峰宽及RTN拟合。",
+      "recommendedOn": "2026-09-22",
+      "featured": true
+    },
+    {
+      "id": "b-250-mtj-pim-2506-14590",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "D"
+      ],
+      "title": "250 Magnetic Tunnel Junctions-Based Probabilistic Ising Machine",
+      "titleZh": "250颗STT-MTJ概率Ising机｜器件离散性校准到系统加速",
+      "authors": "Shuhan Yang, Andrea Grimaldi, Youwei Bao, Eleonora Raimondo, Jia Si, Giovanni Finocchio, Hyunsoo Yang",
+      "venue": "arXiv:2506.14590 (2025)",
+      "published": "2025-06-17",
+      "timeTier": "可靠预印本",
+      "system": "约80 nm pMTJ；W/Ru多层底电极、Pt/Co合成反铁磁参考层、W(0.3)/CoFeB(0.9)/MgO(0.85)/CoFeB(1.2)/W(0.4)/CoFeB(0.8)/MgO(0.7) nm双自由层结构；250颗器件接FPGA。",
+      "conditions": "DC/RF磁控溅射，基压<2×10⁻⁸ Torr；Ar离子铣削，Si3N4原位封装；10 μs概率写脉冲每点10,000次；系统12.5 kHz，250通道并行。",
+      "methods": [
+        "250颗STT-MTJ阵列",
+        "FPGA闭环",
+        "器件概率校准",
+        "并行退火",
+        "短脉冲外推"
+      ],
+      "summary": "【实测】单结TMR约180%，250颗MTJ经线性校准得到标准S形概率响应；并行集群更新加速10倍，模拟量子退火的解质量比传统退火提高20倍。",
+      "relevance": "直接示范如何把MTJ的随机性和器件间离散从缺陷转成计算资源，并把沉积、图形化、读写脉冲、校准和系统算法连成一条链。",
+      "limitation": "当前为PCB+FPGA原型，ADC/DAC和复位开销占主导；“10倍快/10倍省能”来自4 ns数据向1 Mbit ASIC的投影，不是本原型实测。",
+      "industrialization": "最接近概率计算原型与器件—电路协同；缺片上CMOS集成、跨批次校准成本、老化漂移、阵列良率、封装温漂和端到端能耗实测。",
+      "whyRecommended": "先看图1器件概率与250条曲线，再看图2并行架构、图3–4算法；45–60分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.48550/arXiv.2506.14590",
+      "arxiv": "2506.14590",
+      "url": "https://arxiv.org/abs/2506.14590",
+      "backupUrl": "https://arxiv.org/pdf/2506.14590",
+      "accessNote": "已实际打开arXiv摘要并下载全文，核验完整堆栈、80 nm器件、10 μs/10,000次、250通道、12.5 kHz及算法结果。",
+      "recommendedOn": "2026-09-22",
+      "featured": true
+    },
+    {
+      "id": "c-thermal-probability-spin-circuit-2505-00418",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Thermal noise induced probability switching in magnetic tunnel junction based on spin-circuit simulation",
+      "titleZh": "STT-MTJ热噪声概率翻转｜1 ns与10 ns分隔三种写入区间",
+      "authors": "Shaojie Hu, Fupeng Gao, Tengwei Huang, Zhizhong Wang, Hui Li, Dawei Wang",
+      "venue": "arXiv:2505.00418 (2025)",
+      "published": "2025-05-01",
+      "timeTier": "可靠预印本",
+      "system": "SPICE自洽自旋电路：半径75 nm、自由层/固定层各3.5 nm，非磁层200 nm；LLG模块含白噪声等效磁场。",
+      "conditions": "Ms=9×10⁵ A/m、Hk=8×10⁴ A/m、阻尼0.039、极化率0.46；0.2–20 ns脉宽与电流密度扫描，每点100次随机轨迹。",
+      "methods": [
+        "SPICE自旋电路",
+        "随机LLG",
+        "脉宽—电流矩阵",
+        "概率统计",
+        "启发式热激活模型"
+      ],
+      "summary": "【理论预测】>10 ns为热激活概率区，<1 ns为近确定性进动区，1–10 ns为混合区；20 ns时4.3×10¹¹ A/m²出现1%翻转，4.94×10¹¹ A/m²达到100%。",
+      "relevance": "为250颗MTJ系统的概率曲线提供可检验物理分区，提醒校准必须锁定脉宽、温度和方向，不能只用单一S形拟合。",
+      "limitation": "纯模型，几何大于先进pMTJ；每点100次不足以讨论ppm级尾部，也未纳入边缘损伤、VCMA、真实自热场和器件间分布。",
+      "industrialization": "最接近compact model与脉冲窗口设计；缺硅后验证、PVT角、方向不对称、相关噪声及10⁶–10⁹次统计。",
+      "whyRecommended": "先看图3的20/0.2 ns对照与图4相图，再查参数表；30–40分钟。",
+      "score": 9.4,
+      "priority": "A",
+      "doi": "10.48550/arXiv.2505.00418",
+      "arxiv": "2505.00418",
+      "url": "https://arxiv.org/abs/2505.00418",
+      "backupUrl": "https://arxiv.org/pdf/2505.00418",
+      "accessNote": "已实际打开arXiv摘要与全文，核验几何、模型参数、0.2–20 ns、100次轨迹及电流密度阈值。",
+      "recommendedOn": "2026-09-22",
+      "featured": true
+    },
+    {
+      "id": "d-cryo-cmos-lfn-2405-17685",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Cryogenic Characterization of Low-Frequency Noise in 40-nm CMOS",
+      "titleZh": "4.2 K、400管40 nm CMOS低频噪声计量｜MTJ低温读出前端基线",
+      "authors": "Gerd Kiene, Sadık İlik, Luigi Mastrodomenico, Masoud Babaie, Fabio Sebastiano",
+      "venue": "arXiv:2405.17685 (2024)",
+      "published": "2024-05-27",
+      "timeTier": "可靠预印本/公开方法论文",
+      "system": "40 nm bulk-CMOS NMOS/PMOS测试芯片；每种几何8颗、总计400颗复用器件；液氦浸没4.2 K与室温对照。",
+      "conditions": "线性区Vds=50 mV和二极管连接Vds=Vgs；1/5 Hz–50 kHz；11个对数间隔过驱动偏置；电阻bias-T与跨阻放大器。",
+      "methods": [
+        "400器件统计",
+        "4.2 K液氦基准",
+        "复用偏置",
+        "1 Hz–50 kHz噪声谱",
+        "几何/偏置/温度扫描"
+      ],
+      "summary": "【实测】白噪声在4.2 K下降但低频噪声未一致下降；平均1/f噪声面积缩放与离散性在室温和4.2 K相近，并发现跨多器件重复的Lorentzian特征。",
+      "relevance": "说明低温MTJ读出前端的晶体管1/f与陷阱噪声不会因降温自动消失；可把前端噪声与MTJ本征RTN分段验收。",
+      "limitation": "对象是40 nm bulk-CMOS而非MTJ；未展示磁场、辐照、脉冲写入串扰或完整sense amplifier，物理起源仍需掺杂可控样品验证。",
+      "industrialization": "最接近低温读出电路模型与量测规范；缺foundry模型回标、跨批次/晶圆、磁场兼容、长期漂移及与MTJ阵列共同测试。",
+      "whyRecommended": "先看图1复用测试芯片、图4多偏置均值谱、图5–7 Lorentzian与缩放；40–55分钟。",
+      "score": 9.5,
+      "priority": "A",
+      "doi": "10.48550/arXiv.2405.17685",
+      "arxiv": "2405.17685",
+      "url": "https://arxiv.org/abs/2405.17685",
+      "backupUrl": "https://arxiv.org/pdf/2405.17685",
+      "accessNote": "已实际打开arXiv并下载全文，核验4.2 K、40 nm、400器件、1/5 Hz–50 kHz、8器件/几何与系统Lorentzian。",
+      "recommendedOn": "2026-09-22",
+      "featured": true
+    },
+    {
+      "id": "e-ru-plasma-thermal-ale-167227",
+      "track": "E",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Plasma-assisted thermal atomic layer etching of ruthenium via O2/Ar plasma oxidation and formic acid chelation",
+      "titleZh": "Ru等离子辅助热ALE｜3.5 Å/cycle与160×400 nm沟槽保形去除",
+      "authors": "Hojin Kang, Heeju Ha, Hyeongwu Lee, Daeun Hong, Hwan Park, Jaeho Kim, Sungmin Choi, Minsung Jeon, Heeyeop Chae",
+      "venue": "Applied Surface Science 742, 167227 (卷期记录出版日2026-10-01)",
+      "published": "2026-10-01",
+      "timeTier": "已获正式卷期记录/近期论文",
+      "system": "Ru薄膜与Ru包覆Si沟槽；O2/Ar等离子体把表面转为RuO2，HCOOH通过螯合去除氧化层。",
+      "conditions": "氧化温度最高300 °C；150 °C下等离子10–60 s形成2–11 Å氧化层；HCOOH为60 s/100 mTorr或100 s/50 mTorr；最多100循环。",
+      "methods": [
+        "等离子氧化",
+        "甲酸螯合",
+        "XPS/SIMS",
+        "XRD",
+        "高深宽比保形验证"
+      ],
+      "summary": "【实测】平面Ru最高3.5 Å/cycle；HCOOH 60 s后氧浓度回到4%基线；100循环后XRD峰面积下降64–80%但无相变；160 nm宽、400 nm深沟槽约2 Å/cycle且全深度均匀。",
+      "relevance": "Ru是合成反铁磁和互连常用材料；该氧化—配体去除思路可用于硬掩膜/参考层选择性回刻，但必须评估氧向CoFeB/MgO传播。",
+      "limitation": "公开记录未给300 mm均匀性、下层磁性保持、颗粒、吞吐、残碳/残氢、循环饱和图全数据；出版日晚于本日报日期，需以DOI卷期状态为准。",
+      "industrialization": "最接近Ru选择性刻蚀与高深宽比清理；缺MTJ堆栈选择比、BEOL材料兼容、腔体污染、端点监控和晶圆级SPC。",
+      "whyRecommended": "先看氧化厚度—时间、EPC与XPS，再看100循环XRD和沟槽保形；35–50分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1016/j.apsusc.2026.167227",
+      "arxiv": "",
+      "url": "https://pure.skku.edu/en/publications/plasma-assisted-thermal-atomic-layer-etching-of-ruthenium-via-osu/",
+      "backupUrl": "https://doi.org/10.1016/j.apsusc.2026.167227",
+      "accessNote": "已实际打开成均馆大学正式论文记录，核验DOI、卷期状态、温度/时间/压力、EPC、XPS/SIMS/XRD与沟槽尺寸。",
+      "recommendedOn": "2026-09-22",
       "featured": true
     }
   ]

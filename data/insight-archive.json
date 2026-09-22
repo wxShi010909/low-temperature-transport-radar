@@ -572,6 +572,18 @@
       "atomicIds": [
         "2026-09-21-bpale-mtj-transfer"
       ]
+    },
+    {
+      "date": "2026-09-22",
+      "opportunityIds": [
+        "2026-09-22-noise-probability-calibration"
+      ],
+      "methodIds": [
+        "2026-09-22-cryo-front-end-separation"
+      ],
+      "atomicIds": [
+        "2026-09-22-ru-ale-mtj-selectivity"
+      ]
     }
   ],
   "items": [
@@ -8425,6 +8437,157 @@
       ],
       "researchConnection": "连接原子刻蚀窗口、界面保持与器件良率。",
       "takeaway": "二维自限加器件电性才算低损伤。"
+    },
+    {
+      "id": "2026-09-22-noise-probability-calibration",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 噪声—概率—可靠性",
+      "title": "建立MTJ噪声谱—概率曲线—WER三联标定",
+      "subtitle": "把缺陷涨落与随机计算所需随机性分开。",
+      "summary": "同一器件依次测IETS/RTN、Psw和WER。",
+      "status": "可立即DOE",
+      "relatedPaperIds": [
+        "a-magnon-defect-lf-noise-1410-3586",
+        "b-250-mtj-pim-2506-14590",
+        "c-thermal-probability-spin-circuit-2505-00418"
+      ],
+      "question": "低温RTN与磁子噪声峰是否预测概率曲线漂移和短脉冲WER尾部？",
+      "rationale": "A给出缺陷噪声，B使用概率曲线，C给出脉宽相图；三者尚未在同片同器件闭环。",
+      "workflow": [
+        "0.6–300 K噪声谱",
+        "IETS定位磁子阈值",
+        "1–20 ns Psw矩阵",
+        "10⁵次关键点",
+        "老化前后复测"
+      ],
+      "equipment": [
+        "低温矢量磁体",
+        "双通道前放/DAQ",
+        "脉冲源/示波器",
+        "自动探针台"
+      ],
+      "measurements": [
+        "TMR/RA",
+        "Hooge/RTN",
+        "Psw斜率",
+        "WER",
+        "自热"
+      ],
+      "metrics": [
+        "相关系数",
+        "漂移率",
+        "ppm尾部",
+        "重测性"
+      ],
+      "evidenceBoundary": "噪声能预测WER是本站假设，今日三篇未共同证明。",
+      "firstSteps": [
+        "先室温建立链路",
+        "再4.2 K",
+        "只选3个工艺批次"
+      ],
+      "researchConnection": "直接连接界面缺陷、低温输运、概率计算与可靠性。",
+      "takeaway": "随机性可利用，但漂移必须可计量。"
+    },
+    {
+      "id": "2026-09-22-cryo-front-end-separation",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "A/D · 低温噪声分段验收",
+      "title": "分离MTJ本征RTN与4.2 K CMOS前端噪声",
+      "subtitle": "先量前端，再解释器件。",
+      "summary": "空载—标准电阻—CMOS—MTJ四级噪声预算。",
+      "status": "平台升级",
+      "relatedPaperIds": [
+        "a-magnon-defect-lf-noise-1410-3586",
+        "d-cryo-cmos-lfn-2405-17685"
+      ],
+      "question": "测到的Lorentzian来自MTJ缺陷、复用器还是低温CMOS陷阱？",
+      "rationale": "两类器件都可产生Lorentzian，必须用分段噪声预算和交叉相关定位。",
+      "workflow": [
+        "短路/标准电阻",
+        "400级同几何统计",
+        "交叉相关",
+        "温度/偏置扫描",
+        "替换前端复测"
+      ],
+      "equipment": [
+        "液氦/稀释制冷机",
+        "低噪声TIA",
+        "双DAQ",
+        "屏蔽箱"
+      ],
+      "measurements": [
+        "1 Hz–50 kHz PSD",
+        "fc",
+        "输入等效噪声",
+        "互谱",
+        "温漂"
+      ],
+      "metrics": [
+        "噪声底",
+        "GRR",
+        "器件CV",
+        "可归因比例"
+      ],
+      "evidenceBoundary": "40 nm CMOS数据不能直接代表现有仪器前端，需本地验收。",
+      "firstSteps": [
+        "冻结接线图",
+        "测短路三轮",
+        "加入参考MTJ"
+      ],
+      "researchConnection": "把低温平台变成可追溯工艺反馈工具。",
+      "takeaway": "Lorentzian不是自动等于MTJ缺陷。"
+    },
+    {
+      "id": "2026-09-22-ru-ale-mtj-selectivity",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · Ru选择性刻蚀",
+      "title": "验证Ru ALE对CoFeB/MgO/SAF的材料选择性",
+      "subtitle": "保形去除必须同时保住磁性。",
+      "summary": "平面—沟槽—完整堆栈三级迁移。",
+      "status": "工艺DOE",
+      "relatedPaperIds": [
+        "e-ru-plasma-thermal-ale-167227",
+        "classic-epitaxial-mtj-noise-0803-3564"
+      ],
+      "question": "O2/Ar氧化是否会穿透Ru并损伤CoFeB/MgO界面？",
+      "rationale": "Ru ALE有高深宽比证据，但尚无MTJ堆栈磁性与隧穿验证。",
+      "workflow": [
+        "Ru/CoFeB见证片",
+        "氧化时间×温度",
+        "HCOOH压力×时间",
+        "XPS/SIMS深度",
+        "PMA/TMR/噪声"
+      ],
+      "equipment": [
+        "ALE/ICP",
+        "XPS/SIMS",
+        "XRD/TEM",
+        "CIPT/低噪声平台"
+      ],
+      "measurements": [
+        "EPC饱和",
+        "选择比",
+        "残O/C/H",
+        "PMA",
+        "TMR/RA/Hooge"
+      ],
+      "metrics": [
+        "top/mid/bottom CV",
+        "损伤层厚度",
+        "噪声增量",
+        "片内均匀性"
+      ],
+      "evidenceBoundary": "把Ru互连/ALE结果迁移到MTJ属于本站工艺假设。",
+      "firstSteps": [
+        "先Ru/SiO2",
+        "再Ru/CoFeB",
+        "最后完整SAF"
+      ],
+      "researchConnection": "连接原子层去除、界面保持、噪声和器件良率。",
+      "takeaway": "EPC合格不等于MTJ功能合格。"
     }
   ]
 }
