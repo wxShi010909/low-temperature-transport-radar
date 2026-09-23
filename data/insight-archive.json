@@ -584,6 +584,18 @@
       "atomicIds": [
         "2026-09-22-ru-ale-mtj-selectivity"
       ]
+    },
+    {
+      "date": "2026-09-23",
+      "opportunityIds": [
+        "2026-09-23-barrier-spectrum-process-window"
+      ],
+      "methodIds": [
+        "2026-09-23-cryo-vibration-acceptance"
+      ],
+      "atomicIds": [
+        "2026-09-23-cobalt-ale-mtj-transfer"
+      ]
     }
   ],
   "items": [
@@ -8588,6 +8600,162 @@
       ],
       "researchConnection": "连接原子层去除、界面保持、噪声和器件良率。",
       "takeaway": "EPC合格不等于MTJ功能合格。"
+    },
+    {
+      "id": "2026-09-23-barrier-spectrum-process-window",
+      "type": "research",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 势垒谱学与可靠性",
+      "title": "建立“势垒厚度—低温谱—错误率”联合窗口",
+      "subtitle": "把高TMR转化为可制造读写窗口。",
+      "summary": "同片完成厚度、温度、谱学、噪声与可靠性关联。",
+      "status": "优先DOE",
+      "relatedPaperIds": [
+        "a-mgalox-tmr-2112-09910",
+        "b-sttmram-cache-reliability-2201-02855",
+        "classic-high-temp-anneal-mtj-0610526"
+      ],
+      "question": "亚单层势垒波动造成的TMR/RA谱学差异，是否能预测阵列读扰、写失败与保持尾部？",
+      "rationale": "Mg–Al–O显示0.3 nm振荡，而系统模型显示工作负载可放大错误率32倍；二者之间缺真实器件桥接。",
+      "workflow": [
+        "MgO/MgAlO厚度楔形",
+        "10–300 K TMR/dI/dV",
+        "1/f与RTN",
+        "P/AP写入统计",
+        "输入工作负载模型"
+      ],
+      "equipment": [
+        "溅射/EBE",
+        "低温磁输运",
+        "低噪声前放",
+        "脉冲发生器/示波器",
+        "TEM/EELS"
+      ],
+      "measurements": [
+        "RA/TMR地图",
+        "谱峰位置",
+        "Hooge/RTN",
+        "WER/读扰/保持",
+        "晶圆坐标"
+      ],
+      "metrics": [
+        "厚度周期与CV",
+        "尾部错误率",
+        "谱学—缺陷相关系数",
+        "模型校准误差"
+      ],
+      "evidenceBoundary": "势垒振荡来自外延Fe体系；把它用于CoFeB阵列错误预测属于本站假设。",
+      "firstSteps": [
+        "先小面积楔形片",
+        "再同片纳米结",
+        "最后工作负载测试"
+      ],
+      "researchConnection": "连接原子层势垒控制、低温输运、噪声、阵列可靠性和应用负载。",
+      "takeaway": "最高TMR只是起点，能预测错误尾部的谱学指标才有制造价值。"
+    },
+    {
+      "id": "2026-09-23-cryo-vibration-acceptance",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/A · 低温微音验收",
+      "title": "给低温MTJ平台增加机械—电学同步验收",
+      "subtitle": "用相干函数区分器件噪声与平台微音。",
+      "summary": "压缩机、线缆、热锚和样品架逐项量化。",
+      "status": "平台验收",
+      "relatedPaperIds": [
+        "d-low-vibration-cryo-2408-10477",
+        "a-mgalox-tmr-2112-09910"
+      ],
+      "question": "闭循环振动通过哪些路径进入MTJ电压噪声，怎样设置可复现的验收阈值？",
+      "rationale": "设备论文提供位移噪声和长期温稳标杆，但输运平台需要额外测机械—电学转移函数。",
+      "workflow": [
+        "布置三轴加速度计",
+        "同步记录电压/温度/位移",
+        "压缩机与泵状态切换",
+        "改变线缆和热锚",
+        "计算PSD与相干函数"
+      ],
+      "equipment": [
+        "低温恒温器",
+        "加速度计/激光测振",
+        "低噪声前放",
+        "同步DAQ",
+        "标准电阻/参考MTJ"
+      ],
+      "measurements": [
+        "加速度/位移PSD",
+        "电压噪声PSD",
+        "相干函数",
+        "温漂",
+        "冷却时间"
+      ],
+      "metrics": [
+        "50 Hz–10 kHz峰值",
+        "1/f拐点",
+        "机械到电学转移增益",
+        "重复装样差异"
+      ],
+      "evidenceBoundary": "10⁻¹⁶ m/√Hz是引力波测试设施指标，不是现有MTJ平台应直接承诺的验收值。",
+      "firstSteps": [
+        "室温短路基线",
+        "低温标准电阻",
+        "参考MTJ与压缩机切换"
+      ],
+      "researchConnection": "把平台振动、接触、温漂与低温TMR/噪声数据放入同一时间轴。",
+      "takeaway": "先证明信号不随平台机械状态变化，再解释器件物理。"
+    },
+    {
+      "id": "2026-09-23-cobalt-ale-mtj-transfer",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · Co ALE迁移",
+      "title": "从纯Co热ALE推进到CoFeB/MgO选择性修整",
+      "subtitle": "配体路线先过残留和磁性门槛。",
+      "summary": "比较TMEDA与PMe₃的去除量、粗糙度和功能保持。",
+      "status": "工艺DOE",
+      "relatedPaperIds": [
+        "e-cobalt-thermal-ale-0002488",
+        "review-thermal-ale-0000894",
+        "classic-high-temp-anneal-mtj-0610526"
+      ],
+      "question": "SO₂Cl₂/配体化学能否选择性去除CoFeB而不让Cl/S/P/C进入MgO界面并破坏PMA/TMR？",
+      "rationale": "纯Co结果显示TMEDA平滑、PMe₃粗化且EPC温敏；合金和隧穿界面仍是关键未知。",
+      "workflow": [
+        "Co/Fe/B单组分见证片",
+        "CoFeB合金片",
+        "MgO/CoFeB双层",
+        "完整MTJ模拟堆栈",
+        "侧壁与器件验证"
+      ],
+      "equipment": [
+        "热ALE",
+        "原位QCM",
+        "XPS/SIMS",
+        "AFM/TEM",
+        "VSM/FMR/CIPT"
+      ],
+      "measurements": [
+        "半反应饱和",
+        "EPC/选择比",
+        "残Cl/S/C/N/P",
+        "PMA/阻尼",
+        "TMR/RA/噪声"
+      ],
+      "metrics": [
+        "粗糙度增量",
+        "磁性保持率",
+        "界面污染深度",
+        "片内CV",
+        "循环时间"
+      ],
+      "evidenceBoundary": "原文只证明纯Co薄膜热ALE；迁移到CoFeB/MgO和纳米侧壁属于本站工艺假设。",
+      "firstSteps": [
+        "175–225 °C TMEDA低EPC窗口",
+        "与低能IBE同深度对照",
+        "残Cl合格后进入MTJ"
+      ],
+      "researchConnection": "连接配体化学、原子级去除、界面扩散、磁性和隧穿可靠性。",
+      "takeaway": "先用残留和磁性否决不合格配方，再谈EPC与吞吐。"
     }
   ]
 }
