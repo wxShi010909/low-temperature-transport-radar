@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-23T11:58:00+08:00",
-  "reportDate": "2026-09-23",
+  "updatedAt": "2026-09-24T11:58:00+08:00",
+  "reportDate": "2026-09-24",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -964,6 +964,25 @@
         "c-magnified-tmr-imc-2110-03937",
         "d-low-vibration-cryo-2408-10477",
         "e-cobalt-thermal-ale-0002488"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "label": "详细日报：77 K隧穿结—晶圆级手性MTJ—交替磁性输运—300 mK平台—循环ALE",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-hafnia-ftj-cryo-00461-2",
+        "b-skyrmionic-mtj-nmat-07131-7",
+        "c-kv2se2o-altmtj-2604-14817",
+        "d-cryogenic-he3-vti30",
+        "e-pdse2-ale-202408154"
       ]
     }
   ],
@@ -10461,6 +10480,187 @@
       "backupUrl": "https://doi.org/10.1116/6.0002488",
       "accessNote": "已实际打开AIP全文页，核验反应物、QCM/XRR/QMS/AFM、六个TMEDA温度点EPC、PMe₃暴露次数与粗糙度趋势。",
       "recommendedOn": "2026-09-23",
+      "featured": true
+    },
+    {
+      "id": "a-hafnia-ftj-cryo-00461-2",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Enhanced performance of hafnia self-rectifying ferroelectric tunnel junctions at cryogenic temperatures",
+      "titleZh": "77 K自整流HfO₂铁电隧穿结｜TER超过20万并保持十年级外推",
+      "authors": "Junghyeon Hwang, Chaeheon Kim, Jinho Ahn, Sanghun Jeon",
+      "venue": "Nano Convergence 11, 58 (2024)",
+      "published": "2024-12-16",
+      "timeTier": "近两年正式发表/低温隧穿输运",
+      "system": "HfO₂基铁电隧穿结，引入InOₓ非对称氧空位层并利用界面印记形成自整流势垒。",
+      "conditions": "比较300 K与77 K；公开正文给出极化、TER、保持和NLS拟合，完整电极厚度与大阵列统计未作为本期已核验数据补写。",
+      "methods": [
+        "77 K电输运",
+        "P–V/TER",
+        "NLS开关模型",
+        "保持外推",
+        "氧空位界面工程"
+      ],
+      "summary": "【实测】Hf比例1:2器件的剩余极化在300 K与77 K分别约33.9和32 µC/cm²；低温下TER超过200,000，并给出十年级保持外推。",
+      "relevance": "虽非MTJ，但可迁移的方法是用低温抑制热激活漏电，再把势垒非对称、氧空位和印记场与读窗拆分；适合对照MgO/CoFeB缺陷辅助隧穿。",
+      "limitation": "FTJ的极化调势垒与MTJ的自旋过滤不同；保持为外推而非十年实测，且缺晶圆级均匀性、循环耐久和封装后数据。",
+      "industrialization": "最接近CMOS兼容隧穿存储与低温失效诊断；仍缺大阵列BER、跨批次、BEOL热预算、读扰、疲劳和300 mm统计。",
+      "whyRecommended": "先看77/300 K TER、极化与保持，再看NLS拟合；35–45分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "10.1186/s40580-024-00461-2",
+      "arxiv": "",
+      "url": "https://link.springer.com/article/10.1186/s40580-024-00461-2",
+      "backupUrl": "https://doi.org/10.1186/s40580-024-00461-2",
+      "accessNote": "本轮已实际打开Springer开放全文，核验题录、温度、极化、TER与保持结论。",
+      "recommendedOn": "2026-09-24",
+      "featured": true
+    },
+    {
+      "id": "b-skyrmionic-mtj-nmat-07131-7",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "All-electrical skyrmionic magnetic tunnel junction",
+      "titleZh": "晶圆级手性MTJ｜室温单斯格明子20–70%电读出与三态非易失",
+      "authors": "Shaohai Chen et al.",
+      "venue": "Nature 627, 522–527 (2024)",
+      "published": "2024-03-20",
+      "timeTier": "近两年正式发表/MTJ器件",
+      "system": "纳米手性MTJ，把[Pt/CoB/Ir]与[Pt/CoB/MgO]混合磁性多层和隧穿读出集成，室温承载单斯格明子。",
+      "conditions": "室温、零场三态；晶圆级制备，结合电输运与多模态磁成像；摘要未公开结直径分布、RA/TMR全晶圆CV和长期保持。",
+      "methods": [
+        "晶圆级薄膜与纳米图形化",
+        "TMR读出",
+        "多模态磁成像",
+        "电流写删",
+        "零场状态稳定"
+      ],
+      "summary": "【实测】单斯格明子相对均匀磁态产生20–70%电读出信号；零场获得三个非易失电阻态；写入/删除电流密度比既有先进结果低约1000倍。",
+      "relevance": "直接连接CoB/MgO界面、DMI、纳米图形化与多级MTJ读出；可用于评估非常规自由层能否进入存储或概率计算。",
+      "limitation": "论文证明器件概念，不等于STT/SOT-MRAM阵列；缺大样本WER、纳秒速度、十年保持、10¹²耐久、PVT角落和BEOL集成。",
+      "industrialization": "最接近多态MTJ单元与晶圆工艺演示；主要障碍是状态分布、写入确定性、阵列寻址、工艺窗口和可靠性统计。",
+      "whyRecommended": "先看堆栈与电—磁成像对应，再看零场三态和电流写删；40–55分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1038/s41586-024-07131-7",
+      "arxiv": "2302.08020",
+      "url": "https://www.nature.com/articles/s41586-024-07131-7",
+      "backupUrl": "https://arxiv.org/abs/2302.08020",
+      "accessNote": "本轮已实际打开Nature论文页和arXiv直接来源，核验晶圆级、室温、20–70%、三态与1000倍电流密度结论。",
+      "recommendedOn": "2026-09-24",
+      "featured": true
+    },
+    {
+      "id": "c-kv2se2o-altmtj-2604-14817",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Layer-dependent quantum transport in KV2Se2O-based altermagnetic tunnel junctions",
+      "titleZh": "交替磁性MTJ理论｜SrTiO₃奇偶层改变界面并预测4.6×10⁷% TMR",
+      "authors": "Yue Zhao, Bin Xiao, Jiawei Liu, Hui Zeng, Jun Zhao",
+      "venue": "arXiv:2604.14817 (可靠预印本)",
+      "published": "2026-04-16",
+      "timeTier": "近期可靠预印本/第一性原理输运",
+      "system": "KV₂Se₂O/SrTiO₃/KV₂Se₂O交替磁性隧穿结；改变SrTiO₃原子层数会在O–Se与Ti–Se界面之间切换。",
+      "conditions": "DFT+NEGF相干弹道输运；公开摘要未给有限温、缺陷、偏压、声子散射和实验制备结果。",
+      "methods": [
+        "DFT",
+        "NEGF",
+        "k∥分辨输运",
+        "界面终止比较",
+        "层数奇偶效应"
+      ],
+      "summary": "【理论预测】SrTiO₃奇偶层改变界面键合、有效势垒与k∥通道；四层势垒计算TMR达4.6×10⁷%。",
+      "relevance": "提示原子层计数和终止面可能主导MTJ输运，比平均厚度更敏感；可转化为界面终止—层数—TMR的原子制造问题。",
+      "limitation": "纯理论预印本，巨幅TMR依赖理想晶体、相干弹道和特定磁态；不能外推到室温、有限偏压或实际良率。",
+      "industrialization": "最接近新型反铁/交替磁性电极筛选；距离器件仍缺薄膜生长、界面控制、磁态读写、低RA、温度稳定与阵列统计。",
+      "whyRecommended": "先看奇偶层界面图和k∥透射，再看4层TMR；30–40分钟。",
+      "score": 8.9,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "2604.14817",
+      "url": "https://arxiv.org/abs/2604.14817",
+      "backupUrl": "https://arxiv.org/pdf/2604.14817",
+      "accessNote": "本轮已实际打开arXiv摘要，核验结构、方法、奇偶层机制和4.6×10⁷%理论值。",
+      "recommendedOn": "2026-09-24",
+      "featured": true
+    },
+    {
+      "id": "d-cryogenic-he3-vti30",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "3He Insert Probe for 30mm VTI",
+      "titleZh": "Cryogenic Ltd ³He插杆｜把30 mm VTI扩展到300 mK且保持300 K上限",
+      "authors": "Cryogenic Limited",
+      "venue": "厂商技术资料",
+      "published": "2026-09-24核验",
+      "timeTier": "厂商正式技术资料/不作为科研证明",
+      "system": "面向Modular Measurement System的可替换³He插杆，利用VTI冷量与两只内部温控吸附泵实现连续温区。",
+      "conditions": "厂商标称平台低于300 mK至高于300 K；适配30 mm VTI。独立温度稳定性、振动、线缆热负载和基准样品数据未公开。",
+      "methods": [
+        "³He吸附制冷",
+        "双温控吸附泵",
+        "30 mm VTI兼容",
+        "可换插杆"
+      ],
+      "summary": "【厂商声明】将无液氦VTI最低温扩展至300 mK以下，同时覆盖300 K以上；依靠VTI冷量和两只内部温控吸附泵。",
+      "relevance": "适合作为MTJ低温输运、噪声和热激活开关从4 K向300 mK扩展的模块化路线参考。",
+      "limitation": "仅为厂商规格，不是独立科研证明；未公开冷却时间、持温时长、基础温度带载、磁场扫速和电学噪声。",
+      "industrialization": "最接近可复现低温测试模块；采购/验收前仍需标准电阻、参考MTJ、满线缆热负载、场扫和重复装样测试。",
+      "whyRecommended": "先看结构与温区，再把缺失规格变成FAT/SAT验收表；15–20分钟。",
+      "score": 8.7,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://www.cryogenic.co.uk/products/he3VTI30",
+      "backupUrl": "https://www.cryogenic.co.uk/",
+      "accessNote": "本轮已实际打开Cryogenic官方产品页；所有数字均标为厂商声明。",
+      "recommendedOn": "2026-09-24",
+      "featured": true
+    },
+    {
+      "id": "e-pdse2-ale-202408154",
+      "track": "E",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Cyclic Atomic Layer Etching of PdSe2",
+      "titleZh": "PdSe₂循环ALE｜O或Cl自由基配合甲酸实现每循环单层去除",
+      "authors": "Ji Eun Kang et al.",
+      "venue": "Advanced Functional Materials 34, 2408154 (2024)",
+      "published": "2024-09-18",
+      "timeTier": "近两年正式发表/原子制造",
+      "system": "CVD PdSe₂；先用氧或氯等离子体自由基吸附改性，再以甲酸蒸气脱附反应层。",
+      "conditions": "两种自由基路线均报告每循环约一层PdSe₂；去除后Se/Pd约2。公开摘要未给300 mm均匀性、周期秒数和完整器件电学。",
+      "methods": [
+        "远程等离子体自由基",
+        "甲酸蒸气",
+        "循环ALE",
+        "成分分析",
+        "表面形貌"
+      ],
+      "summary": "【实测】O或Cl自由基路线均实现约一个PdSe₂单层/cycle；刻蚀后Se/Pd约2；逐层去除粗糙凸起使表面平滑。",
+      "relevance": "二维材料不是当前中心，但“自由基改性—温和有机蒸气脱附—避免高能离子”可迁移到MTJ侧壁低损伤清洗与原子级修整。",
+      "limitation": "PdSe₂化学不能直接套用CoFeB/MgO；一层/cycle仍需半反应饱和、残Cl/O/C、选择比、磁性和器件功能验证。",
+      "industrialization": "最接近低损伤循环刻蚀概念；缺大面积均匀性、图形负载、复杂侧壁、吞吐、残留控制和MTJ专用化学。",
+      "whyRecommended": "先看两条反应路径、单层EPC与平滑机制；30–40分钟。",
+      "score": 9,
+      "priority": "A",
+      "doi": "10.1002/adfm.202408154",
+      "arxiv": "",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202408154",
+      "backupUrl": "https://doi.org/10.1002/adfm.202408154",
+      "accessNote": "本轮已实际打开Wiley直接来源并核验题录、循环化学、单层去除、Se/Pd与平滑结论。",
+      "recommendedOn": "2026-09-24",
       "featured": true
     }
   ]

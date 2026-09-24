@@ -596,6 +596,18 @@
       "atomicIds": [
         "2026-09-23-cobalt-ale-mtj-transfer"
       ]
+    },
+    {
+      "date": "2026-09-24",
+      "opportunityIds": [
+        "2026-09-24-cryo-tunnel-defect-map"
+      ],
+      "methodIds": [
+        "2026-09-24-he3-vti-acceptance"
+      ],
+      "atomicIds": [
+        "2026-09-24-radical-ale-mtj-sidewall"
+      ]
     }
   ],
   "items": [
@@ -8756,6 +8768,161 @@
       ],
       "researchConnection": "连接配体化学、原子级去除、界面扩散、磁性和隧穿可靠性。",
       "takeaway": "先用残留和磁性否决不合格配方，再谈EPC与吞吐。"
+    },
+    {
+      "id": "2026-09-24-cryo-tunnel-defect-map",
+      "type": "research",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B · 低温势垒缺陷",
+      "title": "建立77–300 K隧穿势垒缺陷指纹",
+      "subtitle": "用温度、偏压和噪声拆分本征通道与缺陷通道。",
+      "summary": "FTJ方法迁移到MgO/CoFeB，但不混淆两种开关机制。",
+      "status": "优先DOE",
+      "relatedPaperIds": [
+        "a-hafnia-ftj-cryo-00461-2",
+        "b-skyrmionic-mtj-nmat-07131-7",
+        "review-fluorite-ftj-202305271"
+      ],
+      "question": "低温TER/TMR与RTN能否预测室温读窗、保持尾部和局部薄弱点？",
+      "rationale": "低温抑制热激活过程，适合暴露界面氧空位和局域通道。",
+      "workflow": [
+        "同片FTJ/MTJ见证结构",
+        "77–300 K I–V/TMR/TER",
+        "1/f与RTN",
+        "脉冲保持/读扰",
+        "失效点TEM/EELS"
+      ],
+      "equipment": [
+        "低温探针台",
+        "低噪声前放",
+        "脉冲源表",
+        "频谱分析",
+        "TEM/EELS"
+      ],
+      "measurements": [
+        "I–V",
+        "dI/dV",
+        "TER/TMR",
+        "RTN/1/f",
+        "保持/读扰"
+      ],
+      "metrics": [
+        "激活能",
+        "Hooge参数",
+        "尾部错误率",
+        "缺陷相关系数"
+      ],
+      "evidenceBoundary": "FTJ结果支持方法迁移，不证明MgO MTJ具有相同缺陷机制。",
+      "firstSteps": [
+        "先标准电阻基线",
+        "再大面积结",
+        "最后纳米器件统计"
+      ],
+      "researchConnection": "连接界面成分、低温输运、噪声和可靠性。",
+      "takeaway": "把低温当成缺陷放大镜，而不是只追峰值比值。"
+    },
+    {
+      "id": "2026-09-24-he3-vti-acceptance",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/A · 300 mK验收",
+      "title": "把³He插杆规格转成MTJ验收矩阵",
+      "subtitle": "在满线缆、满磁场和器件自热下验证真实基温。",
+      "summary": "厂商标称只作起点，使用标准件和参考MTJ独立验收。",
+      "status": "设备验收",
+      "relatedPaperIds": [
+        "d-cryogenic-he3-vti30",
+        "a-hafnia-ftj-cryo-00461-2"
+      ],
+      "question": "300 mK在真实布线、场扫和脉冲写入负载下能否稳定复现？",
+      "rationale": "厂商页没有公开带载、温稳、振动和电噪声。",
+      "workflow": [
+        "空载基温",
+        "满线缆热负载",
+        "标准电阻温标",
+        "场扫与脉冲自热",
+        "重复装样"
+      ],
+      "equipment": [
+        "³He插杆",
+        "VTI/磁体",
+        "标准温度计",
+        "低噪声锁相/源表",
+        "参考MTJ"
+      ],
+      "measurements": [
+        "降温/持温",
+        "温稳",
+        "接触电阻",
+        "噪声谱",
+        "场扫回差"
+      ],
+      "metrics": [
+        "基温裕量",
+        "重复性",
+        "样品温升",
+        "有效测量带宽"
+      ],
+      "evidenceBoundary": "300 mK以下和300 K以上均为厂商声明，需现场验收。",
+      "firstSteps": [
+        "要求FAT数据",
+        "定义SAT标准",
+        "保存全时间轴元数据"
+      ],
+      "researchConnection": "把平台状态与器件曲线绑定，形成可复现测量记录。",
+      "takeaway": "真正指标是样品端可复现温度和噪声，不是空载铭牌温度。"
+    },
+    {
+      "id": "2026-09-24-radical-ale-mtj-sidewall",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 低损伤侧壁",
+      "title": "自由基—有机蒸气循环清理MTJ侧壁",
+      "subtitle": "先做残留与功能否决，再追求单层节拍。",
+      "summary": "借鉴PdSe₂化学序列，开发CoFeB/MgO专用反应。",
+      "status": "工艺探索",
+      "relatedPaperIds": [
+        "e-pdse2-ale-202408154",
+        "b-skyrmionic-mtj-nmat-07131-7"
+      ],
+      "question": "能否用低能自由基改性与温和脱附替代连续IBE后处理，同时保护MgO和PMA？",
+      "rationale": "PdSe₂证明循环自由基/甲酸可平滑，但MTJ化学与选择比完全未知。",
+      "workflow": [
+        "单元素见证片",
+        "CoFeB合金",
+        "MgO/CoFeB双层",
+        "刻蚀侧壁模拟片",
+        "完整MTJ"
+      ],
+      "equipment": [
+        "远程等离子体",
+        "蒸气投送",
+        "XPS/SIMS",
+        "AFM/TEM",
+        "VSM/FMR/CIPT"
+      ],
+      "measurements": [
+        "半反应饱和",
+        "EPC/选择比",
+        "残Cl/O/C",
+        "PMA/阻尼",
+        "TMR/RA/噪声"
+      ],
+      "metrics": [
+        "损伤层厚度",
+        "残留浓度",
+        "粗糙度",
+        "磁性保持率",
+        "片内CV"
+      ],
+      "evidenceBoundary": "PdSe₂单层去除不能证明CoFeB/MgO可用；此路线是本站推断。",
+      "firstSteps": [
+        "仅见证片化学筛选",
+        "与低能IBE同深度对照",
+        "通过功能门槛后再做纳米柱"
+      ],
+      "researchConnection": "连接原子化学、图形化损伤、界面输运和可靠性。",
+      "takeaway": "残留、选择比和磁性任何一项失败都应先否决配方。"
     }
   ]
 }
