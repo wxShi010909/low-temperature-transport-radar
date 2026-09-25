@@ -608,6 +608,18 @@
       "atomicIds": [
         "2026-09-24-radical-ale-mtj-sidewall"
       ]
+    },
+    {
+      "date": "2026-09-25",
+      "opportunityIds": [
+        "2026-09-25-cryo-growth-wer-loop"
+      ],
+      "methodIds": [
+        "2026-09-25-rox-field-calibration"
+      ],
+      "atomicIds": [
+        "2026-09-25-mgfeo-cofe-interface"
+      ]
     }
   ],
   "items": [
@@ -8923,6 +8935,162 @@
       ],
       "researchConnection": "连接原子化学、图形化损伤、界面输运和可靠性。",
       "takeaway": "残留、选择比和磁性任何一项失败都应先否决配方。"
+    },
+    {
+      "id": "2026-09-25-cryo-growth-wer-loop",
+      "type": "research",
+      "typeZh": "研究机会",
+      "trackLabel": "E/B/C · 成核—WER闭环",
+      "title": "100 K沉积—连续性—低阻尼—WER因果闭环",
+      "subtitle": "把成核温度作为第一变量，而不是事后用退火补救。",
+      "summary": "同片联测结构、磁动力学和尾部写错误。",
+      "status": "优先DOE",
+      "relatedPaperIds": [
+        "e-cryo-cofe-mgo-2504-07350",
+        "c-cofeb-mgo-thermal-nucleation-1704-00106",
+        "review-spintronics-ram-2017"
+      ],
+      "question": "100 K沉积降低岛化后，α与0.3–1.5 ns WER是否按同一空间分布改善？",
+      "rationale": "结构连续性、热成核与写入尾部目前常分开测量。",
+      "workflow": [
+        "100/200/300 K沉积",
+        "MgO/MgFeO对照",
+        "TEM/AFM/XRR",
+        "FMR/PMA",
+        "10⁶级脉冲与失效定位"
+      ],
+      "equipment": [
+        "低温溅射",
+        "300 mm映射",
+        "TEM/AFM",
+        "FMR/VSM",
+        "脉冲/高速读出"
+      ],
+      "measurements": [
+        "连续率",
+        "α/PMA",
+        "TMR/RA",
+        "WER-脉宽",
+        "片内位置"
+      ],
+      "metrics": [
+        "岛密度",
+        "α",
+        "CV",
+        "WER尾部",
+        "结构—电学相关系数"
+      ],
+      "evidenceBoundary": "文献给出特定堆栈结果；跨设备、跨批次改善是待验证假设。",
+      "firstSteps": [
+        "先见证片",
+        "再大面积MTJ",
+        "最后纳米阵列"
+      ],
+      "researchConnection": "连接原子成核、磁动力学和器件可靠性。",
+      "takeaway": "用同片相关性证明结构改善真正进入WER。"
+    },
+    {
+      "id": "2026-09-25-rox-field-calibration",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/A · mK温标",
+      "title": "场外ROX—场内次级温标—样品自热三点校准",
+      "subtitle": "把“不可在磁场用”转化为多场平台测温架构。",
+      "summary": "温度、磁场和激励电流同时记录，避免把温标磁阻当成器件异常。",
+      "status": "平台验收",
+      "relatedPaperIds": [
+        "d-lakeshore-rox-ultralow",
+        "a-cfa-mgo-tmr-temperature-092402"
+      ],
+      "question": "扫场时样品真实温度与场外ROX读数相差多少，是否随脉冲负载漂移？",
+      "rationale": "厂商明确不推荐ROX用于磁场环境。",
+      "workflow": [
+        "零场交叉标定",
+        "固定温度扫场",
+        "不同激励自热",
+        "样品端标准电阻",
+        "重复热循环"
+      ],
+      "equipment": [
+        "ROX+Model 372",
+        "场内次级温标",
+        "标准电阻",
+        "锁相/源表",
+        "磁体"
+      ],
+      "measurements": [
+        "温差",
+        "磁场交叉敏感",
+        "时间常数",
+        "自热",
+        "TMR基线"
+      ],
+      "metrics": [
+        "mK偏差",
+        "滞后",
+        "重复性",
+        "热稳态时间"
+      ],
+      "evidenceBoundary": "厂商规格仅界定使用边界，系统精度须独立验收。",
+      "firstSteps": [
+        "画温标位置图",
+        "定义允许偏差",
+        "保存全时间轴"
+      ],
+      "researchConnection": "把低温平台误差与MTJ温度系数分开。",
+      "takeaway": "没有场校准的mK读数不应直接进入物理拟合。"
+    },
+    {
+      "id": "2026-09-25-mgfeo-cofe-interface",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 亚纳米界面",
+      "title": "MgFeO终止—0.8 nm CoFe连续性—300 mm统计",
+      "subtitle": "从单点最佳结构转向晶圆坐标和批间分布。",
+      "summary": "验证低温成核是否兼顾界面化学、PMA、阻尼和隧穿质量。",
+      "status": "原子制造路线",
+      "relatedPaperIds": [
+        "e-cryo-cofe-mgo-2504-07350",
+        "a-cfa-mgo-tmr-temperature-092402"
+      ],
+      "question": "Fe掺杂势垒改善连续性时，是否引入额外缺陷通道或RA/TMR代价？",
+      "rationale": "结构连续与隧穿势垒化学可能存在权衡。",
+      "workflow": [
+        "MgO/MgFeO掺杂梯度",
+        "100–300 K沉积",
+        "退火矩阵",
+        "晶圆九区映射",
+        "失效点STEM-EELS"
+      ],
+      "equipment": [
+        "低温PVD",
+        "原位RHEED/XPS",
+        "XRR/TEM",
+        "CIPT",
+        "FMR"
+      ],
+      "measurements": [
+        "终止面/成分",
+        "粗糙度/覆盖率",
+        "PMA/α",
+        "RA/TMR",
+        "WER/噪声"
+      ],
+      "metrics": [
+        "片内CV",
+        "针孔率",
+        "α",
+        "TMR",
+        "亚ppm尾部"
+      ],
+      "evidenceBoundary": "预印本支持路线可行性，不证明量产良率。",
+      "firstSteps": [
+        "先做掺杂剂量梯度",
+        "固定CoFe 0.8 nm",
+        "再扩展退火与纳米图形"
+      ],
+      "researchConnection": "连接材料—工艺—器件—测量—可靠性。",
+      "takeaway": "连续性改善必须同时通过势垒完整性和统计可靠性门槛。"
     }
   ]
 }

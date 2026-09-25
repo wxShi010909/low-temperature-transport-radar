@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-24T11:58:00+08:00",
-  "reportDate": "2026-09-24",
+  "updatedAt": "2026-09-25T12:00:00+08:00",
+  "reportDate": "2026-09-25",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -983,6 +983,25 @@
         "c-kv2se2o-altmtj-2604-14817",
         "d-cryogenic-he3-vti30",
         "e-pdse2-ale-202408154"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "label": "详细日报：外延MTJ温变—并行概率处理器—热成核—mK温标—100 K低温溅射",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-cfa-mgo-tmr-temperature-092402",
+        "b-parallel-mtj-ising-71128-1",
+        "c-cofeb-mgo-thermal-nucleation-1704-00106",
+        "d-lakeshore-rox-ultralow",
+        "e-cryo-cofe-mgo-2504-07350"
       ]
     }
   ],
@@ -10661,6 +10680,187 @@
       "backupUrl": "https://doi.org/10.1002/adfm.202408154",
       "accessNote": "本轮已实际打开Wiley直接来源并核验题录、循环化学、单层去除、Se/Pd与平滑结论。",
       "recommendedOn": "2026-09-24",
+      "featured": true
+    },
+    {
+      "id": "a-cfa-mgo-tmr-temperature-092402",
+      "track": "A",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Temperature dependence of tunneling magnetoresistance in epitaxial magnetic tunnel junctions using a Co2FeAl Heusler alloy electrode",
+      "titleZh": "外延Co₂FeAl/MgO MTJ温度输运｜Δ₁半金属特征与上下电极非对称",
+      "authors": "T. Marukame et al.",
+      "venue": "Physical Review B 82, 092402 (2010)",
+      "published": "2010-09-20",
+      "timeTier": "关键经典实验/低温输运",
+      "system": "全溅射外延Co₂FeAl(CFA)/MgO磁隧穿结；比较位于Cr缓冲层上的下CFA电极与MgO上生长的上CFA电极。",
+      "conditions": "变温TMR测量至室温并用自旋波模型P(T)=P₀(1−αT³ᐟ²)拟合。可访问摘要未公开完整层厚、温区下限和各温度TMR绝对值，本期不补写。",
+      "methods": [
+        "外延磁控溅射",
+        "变温TMR",
+        "自旋极化反演",
+        "Bloch T³ᐟ²拟合",
+        "上下电极对比"
+      ],
+      "summary": "【实测+模型拟合】TMR温度依赖可由自旋波模型描述；Cr缓冲层上的下CFA电极得到很小α，并在Δ₁对称通道中表现出接近1的P₀；上下CFA电极的温度响应并不等价。",
+      "relevance": "直接提醒MTJ低温数据不能只报TMR升幅：必须把上下界面、生长模板和电极位置分开，否则会把非对称界面退化误归因于材料本征。",
+      "limitation": "早期外延大面积结不代表现代pMTJ纳米阵列；摘要没有给可复核的完整厚度、RA、晶圆统计和可靠性。",
+      "industrialization": "最接近电极/界面筛选和变温失效诊断；距制造应用仍缺300 mm均匀性、纳米图形化、WER、保持、耐久和BEOL热预算。",
+      "whyRecommended": "先看TMR–T拟合与上下电极α差异，再回到结构图；30–40分钟。",
+      "score": 9,
+      "priority": "A",
+      "doi": "10.1103/PhysRevB.82.092402",
+      "arxiv": "",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.82.092402",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.82.092402",
+      "accessNote": "本轮已打开APS直接来源，核验题录、全溅射外延结构、T³ᐟ²模型和Δ₁结论；未公开数字明确留空。",
+      "recommendedOn": "2026-09-25",
+      "featured": true
+    },
+    {
+      "id": "b-parallel-mtj-ising-71128-1",
+      "track": "B",
+      "secondaryTracks": [
+        "C"
+      ],
+      "title": "A parallel magnetic tunnel junction-based probabilistic Ising processor for efficient quadratic optimization",
+      "titleZh": "144路MTJ概率Ising处理器｜14.4 Mflip/s与同硬件123倍加速",
+      "authors": "Hao Cai et al.",
+      "venue": "Nature Communications 17, 4616 (2026)",
+      "published": "2026-03-30",
+      "timeTier": "近期正式发表/MTJ系统",
+      "system": "144个紧凑STT-MTJ可调随机数单元并行组成概率Ising处理器，用于二次指派问题。",
+      "conditions": "论文比较同一硬件上的概率Ising与传统模拟退火，并与Intel i9-14900K C++实现比较；算法任务为12城市QAP。",
+      "methods": [
+        "STT-MTJ随机翻转",
+        "144路并行阵列",
+        "概率Ising映射",
+        "QAP基准",
+        "速度与能耗对照"
+      ],
+      "summary": "【实测】144个MTJ单元实现14.4 million flips/s；12城市QAP相对同硬件模拟退火快123倍且节能98.3%；相对i9-14900K C++实现快3.2倍且节能58.3%。",
+      "relevance": "把单颗随机MTJ推进到并行系统与任务级指标，适合反向定义器件所需随机性、偏置校准、通道一致性和长期漂移规格。",
+      "limitation": "特定QAP和对照实现不代表通用计算优势；摘要数字不能替代芯片面积、良率、温漂、寿命与大规模互连评估。",
+      "industrialization": "最接近概率计算加速器原型；仍缺更大阵列、片间统计、PVT校准、长期老化、封装、工具链与标准工作负载。",
+      "whyRecommended": "先看144路架构，再核对两组加速/能耗对照和校准流程；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1038/s41467-026-71128-1",
+      "arxiv": "",
+      "url": "https://www.nature.com/articles/s41467-026-71128-1",
+      "backupUrl": "https://doi.org/10.1038/s41467-026-71128-1",
+      "accessNote": "本轮已打开Nature开放全文，核验发表日期、144单元、14.4 Mflip/s及两组任务级对照。",
+      "recommendedOn": "2026-09-25",
+      "featured": true
+    },
+    {
+      "id": "c-cofeb-mgo-thermal-nucleation-1704-00106",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Thermally nucleated magnetic reversal in CoFeB/MgO nanodots",
+      "titleZh": "CoFeB/MgO纳米点热成核翻转｜30 nm以下仍存在本征开关分布",
+      "authors": "Andrea Meo et al.",
+      "venue": "arXiv:1704.00106 (可靠预印本)",
+      "published": "2017-04-01",
+      "timeTier": "可靠预印本/原子磁模拟",
+      "system": "CoFeB/MgO垂直磁各向异性纳米点；用原子级动态模拟研究有限温亚纳秒反转。",
+      "conditions": "模型排除了尺寸/各向异性分布和显式缺陷，专门考察热涨落导致的成核与非相干翻转；不是阵列实测。",
+      "methods": [
+        "原子自旋动力学",
+        "有限温随机场",
+        "亚纳秒反转",
+        "尺寸缩放",
+        "开关场分布"
+      ],
+      "summary": "【理论预测】器件工作温度下反转由热成核触发且通常非相干；即便无尺寸、各向异性或缺陷分布，亚纳秒开关仍出现本征热分布；30 nm以下可靠性不会自动变成宏自旋极限。",
+      "relevance": "为WER建模提供“零工艺离散性基线”：实测分布应拆成热本征、边缘损伤、材料波动和电路噪声，而不是全部归因于制程。",
+      "limitation": "理论预印本；材料参数、阻尼、温度、边缘和电流力矩简化，不能直接给真实器件WER。",
+      "industrialization": "最接近纳米pMTJ可靠性模型；缺实测校准、DMI/自热/杂散场、器件间差异和大样本尾部概率。",
+      "whyRecommended": "先看翻转快照与分布，再看尺寸和温度依赖；30–40分钟。",
+      "score": 9.1,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "1704.00106",
+      "url": "https://arxiv.org/abs/1704.00106",
+      "backupUrl": "https://arxiv.org/pdf/1704.00106",
+      "accessNote": "本轮已打开arXiv直接来源，核验热成核、非相干反转、本征分布与30 nm以下结论。",
+      "recommendedOn": "2026-09-25",
+      "featured": true
+    },
+    {
+      "id": "d-lakeshore-rox-ultralow",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "Ultra-low Temperature Rox™",
+      "titleZh": "Lake Shore Rox超低温温标｜5 mK–40 K标定与磁场禁用边界",
+      "authors": "Lake Shore Cryotronics",
+      "venue": "厂商技术资料",
+      "published": "2026-09-25核验",
+      "timeTier": "厂商正式技术资料/不作为科研证明",
+      "system": "面向稀释制冷机的Rox电阻温度传感器，配光学屏蔽并建议与Model 372温控器搭配。",
+      "conditions": "厂商标称5 mK–40 K标定、5 mK时±1.2 mK准确度、4.2 K短期稳定性±15 mK、电阻1–20 kΩ；明确不推荐在磁场或辐射中使用。",
+      "methods": [
+        "电阻温标",
+        "光学屏蔽",
+        "低激励读出",
+        "Model 372配套",
+        "校准曲线"
+      ],
+      "summary": "【厂商声明】覆盖5 mK–40 K，5 mK准确度±1.2 mK，阻值1–20 kΩ；光学屏蔽降低辐射加热；不建议用于磁场或辐射环境。",
+      "relevance": "对多场MTJ测量的价值恰在禁用边界：样品附近主温标不能只靠ROX，应设计场外ROX+场内次级温标+样品自热校正。",
+      "limitation": "规格是厂商资料，不是独立科研证明；±15 mK/4.2 K等指标需按具体封装、激励、热锚和读出验证。",
+      "industrialization": "最接近mK平台温度计量与验收；缺系统级磁场交叉敏感、带载热梯度、装样重复性和长期漂移数据。",
+      "whyRecommended": "先看温区/准确度，再重点看磁场禁用说明并转成验收项；15–20分钟。",
+      "score": 8.8,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://www.lakeshore.com/products/categories/overview/temperature-products/cryogenic-temperature-sensors/ultra-low-temperature-rox",
+      "backupUrl": "https://www.lakeshore.com/",
+      "accessNote": "本轮已打开Lake Shore官方页面；所有数值和兼容性均明确标为厂商声明。",
+      "recommendedOn": "2026-09-25",
+      "featured": true
+    },
+    {
+      "id": "e-cryo-cofe-mgo-2504-07350",
+      "track": "E",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Cryogenic-temperature Grain-to-grain Epitaxial Growth of High-quality Ultrathin CoFe Layer on MgO Tunnel Barrier for High-performance Magnetic Tunnel Junctions",
+      "titleZh": "100 K低温溅射超薄CoFe｜300 mm兼容、0.8 nm低阻尼与0.3 ns低WER",
+      "authors": "Tomohiro Ichinose et al.",
+      "venue": "arXiv:2504.07350 (可靠预印本)",
+      "published": "2025-04-10",
+      "timeTier": "近期可靠预印本/原子界面制造",
+      "system": "300 mm Si晶圆；100 K低温磁控溅射超薄CoFe于MgO或Fe掺杂MgO(MgFeO)隧穿势垒。",
+      "conditions": "质量制造兼容的低温溅射；比较MgO与MgFeO模板、亚纳米CoFe连续性、阻尼及电压写入。摘要未公开全晶圆CV、退火窗口和完整堆栈厚度。",
+      "methods": [
+        "100 K低温溅射",
+        "300 mm晶圆",
+        "grain-to-grain外延",
+        "MgFeO界面工程",
+        "FMR与脉冲WER"
+      ],
+      "summary": "【实测】100 K沉积抑制CoFe岛状初期生长且保留外延；MgFeO进一步改善均匀性；0.8 nm CoFe阻尼α=0.008；电压写入WER在0.3 ns低于10⁻⁶、1.5 ns约10⁻³。",
+      "relevance": "高度匹配原子级制造与MTJ：温度作为成核控制变量，把界面连续性、阻尼和纳秒WER直接串联，并具300 mm工艺语境。",
+      "limitation": "可靠预印本而非量产证明；0.3与1.5 ns WER差异需结合脉冲机制、样本数和读写定义解读，缺跨批次良率、保持与耐久。",
+      "industrialization": "最接近300 mm MTJ界面沉积模块；仍缺腔体低温吞吐、晶圆热均匀性、颗粒、批间稳定、BEOL整合和完整可靠性。",
+      "whyRecommended": "优先看100 K成核/连续性、MgFeO对照、α与WER；45–60分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "",
+      "arxiv": "2504.07350",
+      "url": "https://arxiv.org/abs/2504.07350",
+      "backupUrl": "https://arxiv.org/pdf/2504.07350",
+      "accessNote": "本轮已打开arXiv直接来源，核验300 mm、100 K、0.8 nm、α=0.008及两组WER。",
+      "recommendedOn": "2026-09-25",
       "featured": true
     }
   ]
