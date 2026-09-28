@@ -620,6 +620,18 @@
       "atomicIds": [
         "2026-09-25-mgfeo-cofe-interface"
       ]
+    },
+    {
+      "date": "2026-09-28",
+      "opportunityIds": [
+        "2026-09-28-noise-grain-boundary-loop"
+      ],
+      "methodIds": [
+        "2026-09-28-common-mode-grr"
+      ],
+      "atomicIds": [
+        "2026-09-28-in-vacuo-barrier-route"
+      ]
     }
   ],
   "items": [
@@ -9091,6 +9103,163 @@
       ],
       "researchConnection": "连接材料—工艺—器件—测量—可靠性。",
       "takeaway": "连续性改善必须同时通过势垒完整性和统计可靠性门槛。"
+    },
+    {
+      "id": "2026-09-28-noise-grain-boundary-loop",
+      "type": "research",
+      "typeZh": "研究机会",
+      "trackLabel": "A/E/B · 噪声—晶界闭环",
+      "title": "MgO晶界—RTN—软击穿相关性",
+      "subtitle": "用低温噪声先筛出高风险器件，再做定点原子表征。",
+      "summary": "把频域涨落、晶界旁路和可靠性失效定位到同一器件。",
+      "status": "优先DOE",
+      "relatedPaperIds": [
+        "a-submicron-mtj-noise-10k-1012-3151",
+        "e-mgo-grain-boundary-srep45594",
+        "classic-moodera-room-temp-tmr-1995"
+      ],
+      "question": "洛伦兹噪声强的器件是否具有更高晶界密度和更早软击穿？",
+      "rationale": "噪声和晶界已有各自证据，但缺同器件统计关联。",
+      "workflow": [
+        "10–300 K噪声",
+        "P/AP与场角扫描",
+        "TDDB分组",
+        "FIB定点截面",
+        "STEM/EELS晶界统计"
+      ],
+      "equipment": [
+        "低噪声源表/锁相",
+        "CFMS/He-3",
+        "脉冲应力",
+        "FIB",
+        "原子分辨STEM"
+      ],
+      "measurements": [
+        "PSD/RTN",
+        "RA/TMR",
+        "击穿时间",
+        "晶界密度",
+        "Mg/O/B分布"
+      ],
+      "metrics": [
+        "Hooge参数",
+        "时间常数",
+        "Weibull斜率",
+        "结构—失效相关系数"
+      ],
+      "evidenceBoundary": "文献分别支持噪声磁源与晶界旁路；二者的直接因果关系仍是待检验假设。",
+      "firstSteps": [
+        "先建立标准电阻噪声底",
+        "筛20–50个器件",
+        "再选择极端样本做TEM"
+      ],
+      "researchConnection": "连接低温输运、原子缺陷和可靠性。",
+      "takeaway": "将“噪声大”转化为可定位、可复验的工艺缺陷。"
+    },
+    {
+      "id": "2026-09-28-common-mode-grr",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/A · 低阻测量GR&R",
+      "title": "双接触平衡—正反激励—标准件三级校准",
+      "subtitle": "把共模泄漏和真实磁阻在采集阶段分开。",
+      "summary": "自动计算接触不平衡上限并写入每次扫场元数据。",
+      "status": "平台验收",
+      "relatedPaperIds": [
+        "d-qd-ppms-common-mode-1584-201",
+        "a-submicron-mtj-noise-10k-1012-3151"
+      ],
+      "question": "当前接线和量程下，共模伪信号占MTJ差分电压多少？",
+      "rationale": "四端法并不能消除激励端接触不平衡。",
+      "workflow": [
+        "测两侧接触",
+        "估算F和Vleak",
+        "正反电流/频率扫描",
+        "短路与标准电阻",
+        "样品重复装夹"
+      ],
+      "equipment": [
+        "CFMS/PPMS",
+        "锁相/源表",
+        "低热电势开关",
+        "标准电阻",
+        "脚本化校验"
+      ],
+      "measurements": [
+        "接触差",
+        "共模电压",
+        "相位",
+        "假负阻",
+        "装夹重复性"
+      ],
+      "metrics": [
+        "nV伪信号",
+        "μΩ误差",
+        "GR&R",
+        "SNR",
+        "漂移"
+      ],
+      "evidenceBoundary": "厂商算例仅给误差机制，必须以现有平台实测确定阈值。",
+      "firstSteps": [
+        "把公式写入LabVIEW/Python",
+        "设报警阈值",
+        "保存量程/compliance/相位"
+      ],
+      "researchConnection": "提升MTJ低温与低噪声数据可信度。",
+      "takeaway": "没有共模预算的微欧级结果不可直接解释为器件物理。"
+    },
+    {
+      "id": "2026-09-28-in-vacuo-barrier-route",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 真空互联势垒",
+      "title": "PVD—ALD—原位谱学超薄势垒路线",
+      "subtitle": "从厚度控制升级为成核、界面层和针孔共同控制。",
+      "summary": "比较PVD MgO与原位ALD氧化物势垒的缺陷和隧穿谱。",
+      "status": "原子制造路线",
+      "relatedPaperIds": [
+        "e-mgo-grain-boundary-srep45594",
+        "review-in-vacuo-ald-tunnel-barriers-5141078",
+        "b-mtj-enhanced-meso-73382-9"
+      ],
+      "question": "ALD原子级厚度控制能否在不氧化CoFeB的前提下降低针孔与晶界旁路？",
+      "rationale": "超薄势垒的第一批成核循环往往决定最终缺陷。",
+      "workflow": [
+        "原位清洁/终止",
+        "ALD成核剂量梯度",
+        "真空转移",
+        "STS/XPS",
+        "MTJ RA/TMR/TDDB"
+      ],
+      "equipment": [
+        "UHV-PVD",
+        "ALD模块",
+        "真空互联",
+        "XPS/STS",
+        "CIPT"
+      ],
+      "measurements": [
+        "成核延迟",
+        "界面氧",
+        "粗糙度",
+        "针孔率",
+        "RA/TMR/击穿"
+      ],
+      "metrics": [
+        "覆盖率",
+        "界面层厚度",
+        "CV",
+        "TMR",
+        "Weibull"
+      ],
+      "evidenceBoundary": "综述支持路线和风险，不证明ALD势垒已优于量产PVD MgO。",
+      "firstSteps": [
+        "先金属见证片",
+        "再MIM隧穿谱",
+        "最后进入完整MTJ"
+      ],
+      "researchConnection": "连接沉积、原位表征、器件与可靠性。",
+      "takeaway": "先证明界面无额外氧化，再讨论ALD厚度精度。"
     }
   ]
 }

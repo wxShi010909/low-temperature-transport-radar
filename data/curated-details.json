@@ -3871,5 +3871,63 @@
       "未把理论等同实测"
     ],
     "takeaway": "先读三个效应；看角度电导与界面势能突变；看J对势垒/交换分裂依赖；再联系现代STT-MTJ；30–40分钟"
+  },
+  {
+    "id": "review-in-vacuo-ald-tunnel-barriers-5141078",
+    "oneSentence": "正式Review总结原位PVD—ALD—扫描隧道谱平台，用于Al₂O₃、MgO和Al₂MgO₄亚纳米至约1 nm势垒；核心难点是金属表面成核、原生界面氧化层和针孔，而不是单纯达到目标厚度。",
+    "background": "原位ALD超薄隧穿势垒综述｜PVD—ALD—STS真空互联",
+    "question": "如何在不破坏下电极的情况下原位生长约1 nm、无针孔且低缺陷的势垒？",
+    "workflow": [
+      "先看PVD—ALD—STS真空互联结构",
+      "再看成核与界面层",
+      "比较Al₂O₃/MgO/Al₂MgO₄",
+      "最后看MTJ/JJ证据边界；50–70分钟"
+    ],
+    "findings": [
+      "【综述】势垒电流对厚度指数敏感。",
+      "【综述】原位真空互联减少污染，但成核界面层仍可能主导。",
+      "【综述】ALD可实现共形和原子级厚度控制。",
+      "【边界】平台级成果不等同于量产MgO pMTJ。"
+    ],
+    "explanation": "与当前原子级制造最直接：它把真空互联、成核前处理、原位电子隧穿表征和JJ/MTJ器件结果放入同一工艺链。",
+    "whyItMatters": [
+      "与当前原子级制造最直接：它把真空互联、成核前处理、原位电子隧穿表征和JJ/MTJ器件结果放入同一工艺链。"
+    ],
+    "researchConnection": "把真空转移时间、成核延迟、界面氧含量、针孔率和隧穿谱纳入同一DOE。",
+    "limitationsDetailed": "综述汇总多种MIM/JJ/MTJ体系，不能把不同器件数字直接拼接。",
+    "terms": [
+      "来源与证据性质已标注",
+      "未把历史纪录当现代量产指标"
+    ],
+    "takeaway": "先看PVD—ALD—STS真空互联结构；再看成核与界面层；比较Al₂O₃/MgO/Al₂MgO₄；最后看MTJ/JJ证据边界；50–70分钟"
+  },
+  {
+    "id": "classic-moodera-room-temp-tmr-1995",
+    "oneSentence": "CoFe/Al₂O₃/Co或NiFe结在295、77和4.2 K分别得到11.8%、20%和24%磁阻；高于约0.1 V时TMR明显下降，奠定了室温MTJ用于低功耗传感和存储的实验基础。",
+    "background": "Moodera 1995经典｜室温11.8%隧穿磁阻与低温增强",
+    "question": "为什么Al₂O₃ MTJ能在室温产生可重复TMR，并随温度和偏压变化？",
+    "workflow": [
+      "先看三温点TMR",
+      "看>0.1 V偏压衰减",
+      "对照Julliere/Slonczewski",
+      "再联系现代MgO MTJ；25–35分钟"
+    ],
+    "findings": [
+      "【实测】295 K为11.8%。",
+      "【实测】77 K为20%。",
+      "【实测】4.2 K为24%。",
+      "【实测】>0.1 V偏压明显压低TMR。"
+    ],
+    "explanation": "它提供今天噪声、偏压和界面研究的历史基线：从“观察到室温TMR”进化到今天必须同时解释低温涨落、原子晶界和系统级读出。",
+    "whyItMatters": [
+      "它提供今天噪声、偏压和界面研究的历史基线：从“观察到室温TMR”进化到今天必须同时解释低温涨落、原子晶界和系统级读出。"
+    ],
+    "researchConnection": "用温度和偏压扫描区分热激发、界面散射与势垒非弹性通道。",
+    "limitationsDetailed": "Al₂O₃大面积早期结与现代纳米MgO pMTJ在相干隧穿和制造条件上不同。",
+    "terms": [
+      "来源与证据性质已标注",
+      "未把历史纪录当现代量产指标"
+    ],
+    "takeaway": "先看三温点TMR；看>0.1 V偏压衰减；对照Julliere/Slonczewski；再联系现代MgO MTJ；25–35分钟"
   }
 ]
