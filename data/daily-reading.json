@@ -1,56 +1,57 @@
 {
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "review": {
-    "id": "review-in-vacuo-ald-tunnel-barriers-5141078",
+    "id": "review-peale-next-gen-70663",
     "kind": "正式综述",
     "track": "E",
     "secondaryTracks": [
       "B",
       "D"
     ],
-    "title": "In vacuo atomic layer deposition and electron tunneling characterization of ultrathin dielectric films for metal/insulator/metal tunnel junctions",
-    "titleZh": "原位ALD超薄隧穿势垒综述｜PVD—ALD—STS真空互联",
-    "authors": "Judy Wu et al.",
-    "venue": "Journal of Vacuum Science & Technology A 38, 040802 (2020)",
-    "published": "2020-07-01",
-    "recommendedOn": "2026-09-28",
-    "doi": "10.1116/1.5141078",
-    "url": "https://pubs.aip.org/avs/jva/article/38/4/040802/246896/In-vacuo-atomic-layer-deposition-and-electron",
-    "backupUrl": "https://doi.org/10.1116/1.5141078",
-    "assistantSummary": "正式Review总结原位PVD—ALD—扫描隧道谱平台，用于Al₂O₃、MgO和Al₂MgO₄亚纳米至约1 nm势垒；核心难点是金属表面成核、原生界面氧化层和针孔，而不是单纯达到目标厚度。",
-    "whySelected": "与当前原子级制造最直接：它把真空互联、成核前处理、原位电子隧穿表征和JJ/MTJ器件结果放入同一工艺链。",
+    "title": "Recent Advances in Plasma-Enhanced Atomic Layer Etching for Next-Generation Nanofabrication",
+    "titleZh": "2026 PEALE正式综述｜磁性金属、低损伤各向异性与ALD—ALE集成",
+    "authors": "Shih-Nan Hsiao",
+    "venue": "Advanced Materials Interfaces, Early View e70663 (2026)",
+    "published": "2026-09-11",
+    "recommendedOn": "2026-09-29",
+    "doi": "10.1002/admi.70663",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.70663",
+    "backupUrl": "https://doi.org/10.1002/admi.70663",
+    "assistantSummary": "正式Review系统梳理2020年以来等向/各向异性PEALE、硬件、粗糙度演化和RIE+ALE/ALD+ALE集成；对磁性材料汇总CoFeB 167 ℃、0.15 nm/cycle及对MgO近无限选择比。",
+    "whySelected": "它把今天的CoFeB ALE单篇结果放回设备、反应自限、方向性、选择比和吞吐量的完整制造坐标。",
     "readingGuide": [
-      "先看PVD—ALD—STS真空互联结构",
-      "再看成核与界面层",
-      "比较Al₂O₃/MgO/Al₂MgO₄",
-      "最后看MTJ/JJ证据边界；50–70分钟"
+      "先看ALE窗口与四步循环",
+      "再看磁性金属表14",
+      "重点看RIE+ALE和ALD+ALE",
+      "最后看吞吐/残留/晶圆均匀性；55–75分钟"
     ],
-    "notNew": true
+    "notNew": false
   },
   "classics": [
     {
-      "id": "classic-moodera-room-temp-tmr-1995",
+      "id": "classic-julliere-1975",
       "kind": "经典文章",
       "track": "A",
       "secondaryTracks": [
-        "B"
+        "B",
+        "C"
       ],
-      "title": "Large Magnetoresistance at Room Temperature in Ferromagnetic Thin Film Tunnel Junctions",
-      "titleZh": "Moodera 1995经典｜室温11.8%隧穿磁阻与低温增强",
-      "authors": "J. S. Moodera et al.",
-      "venue": "Physical Review Letters 74, 3273–3276 (1995)",
-      "published": "1995-04-17",
-      "recommendedOn": "2026-09-28",
-      "doi": "10.1103/PhysRevLett.74.3273",
-      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.3273",
-      "backupUrl": "https://doi.org/10.1103/PhysRevLett.74.3273",
-      "assistantSummary": "CoFe/Al₂O₃/Co或NiFe结在295、77和4.2 K分别得到11.8%、20%和24%磁阻；高于约0.1 V时TMR明显下降，奠定了室温MTJ用于低功耗传感和存储的实验基础。",
-      "whySelected": "它提供今天噪声、偏压和界面研究的历史基线：从“观察到室温TMR”进化到今天必须同时解释低温涨落、原子晶界和系统级读出。",
+      "title": "Tunneling between ferromagnetic films",
+      "titleZh": "Jullière 1975经典｜4.2 K约14% TMR与双自旋通道模型",
+      "authors": "M. Jullière",
+      "venue": "Physics Letters A 54, 225–226 (1975)",
+      "published": "1975-09-08",
+      "recommendedOn": "2026-09-29",
+      "doi": "10.1016/0375-9601(75)90174-7",
+      "url": "https://www.sciencedirect.com/science/article/pii/0375960175901747",
+      "backupUrl": "https://doi.org/10.1016/0375-9601(75)90174-7",
+      "assistantSummary": "Fe/Ge-O/Co结在4.2 K、零偏附近观察到约14%电导变化，并用两电极自旋极化乘积解释TMR；高偏压下效应衰减。",
+      "whySelected": "今天的低温WER、MgO缺陷、侧壁旁路和ALE都可视为对Jullière理想双通道图景的材料、热与工艺修正。",
       "readingGuide": [
-        "先看三温点TMR",
-        "看>0.1 V偏压衰减",
-        "对照Julliere/Slonczewski",
-        "再联系现代MgO MTJ；25–35分钟"
+        "先看4.2 K原始曲线",
+        "理解P/AP双通道",
+        "核对偏压衰减",
+        "再比较MgO相干隧穿与缺陷；20–30分钟"
       ],
       "notNew": true
     }

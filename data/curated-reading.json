@@ -370,6 +370,13 @@
       "classicIds": [
         "classic-moodera-room-temp-tmr-1995"
       ]
+    },
+    {
+      "date": "2026-09-29",
+      "reviewId": "review-peale-next-gen-70663",
+      "classicIds": [
+        "classic-julliere-1975"
+      ]
     }
   ],
   "items": [
@@ -3347,6 +3354,60 @@
         "看>0.1 V偏压衰减",
         "对照Julliere/Slonczewski",
         "再联系现代MgO MTJ；25–35分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-peale-next-gen-70663",
+      "kind": "正式综述",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Recent Advances in Plasma-Enhanced Atomic Layer Etching for Next-Generation Nanofabrication",
+      "titleZh": "2026 PEALE正式综述｜磁性金属、低损伤各向异性与ALD—ALE集成",
+      "authors": "Shih-Nan Hsiao",
+      "venue": "Advanced Materials Interfaces, Early View e70663 (2026)",
+      "published": "2026-09-11",
+      "recommendedOn": "2026-09-29",
+      "doi": "10.1002/admi.70663",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.70663",
+      "backupUrl": "https://doi.org/10.1002/admi.70663",
+      "assistantSummary": "正式Review系统梳理2020年以来等向/各向异性PEALE、硬件、粗糙度演化和RIE+ALE/ALD+ALE集成；对磁性材料汇总CoFeB 167 ℃、0.15 nm/cycle及对MgO近无限选择比。",
+      "whySelected": "它把今天的CoFeB ALE单篇结果放回设备、反应自限、方向性、选择比和吞吐量的完整制造坐标。",
+      "readingGuide": [
+        "先看ALE窗口与四步循环",
+        "再看磁性金属表14",
+        "重点看RIE+ALE和ALD+ALE",
+        "最后看吞吐/残留/晶圆均匀性；55–75分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-julliere-1975",
+      "kind": "经典文章",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Tunneling between ferromagnetic films",
+      "titleZh": "Jullière 1975经典｜4.2 K约14% TMR与双自旋通道模型",
+      "authors": "M. Jullière",
+      "venue": "Physics Letters A 54, 225–226 (1975)",
+      "published": "1975-09-08",
+      "recommendedOn": "2026-09-29",
+      "doi": "10.1016/0375-9601(75)90174-7",
+      "url": "https://www.sciencedirect.com/science/article/pii/0375960175901747",
+      "backupUrl": "https://doi.org/10.1016/0375-9601(75)90174-7",
+      "assistantSummary": "Fe/Ge-O/Co结在4.2 K、零偏附近观察到约14%电导变化，并用两电极自旋极化乘积解释TMR；高偏压下效应衰减。",
+      "whySelected": "今天的低温WER、MgO缺陷、侧壁旁路和ALE都可视为对Jullière理想双通道图景的材料、热与工艺修正。",
+      "readingGuide": [
+        "先看4.2 K原始曲线",
+        "理解P/AP双通道",
+        "核对偏压衰减",
+        "再比较MgO相干隧穿与缺陷；20–30分钟"
       ],
       "notNew": true
     }

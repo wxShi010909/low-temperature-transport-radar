@@ -3929,5 +3929,64 @@
       "未把历史纪录当现代量产指标"
     ],
     "takeaway": "先看三温点TMR；看>0.1 V偏压衰减；对照Julliere/Slonczewski；再联系现代MgO MTJ；25–35分钟"
+  },
+  {
+    "id": "review-peale-next-gen-70663",
+    "oneSentence": "正式Review系统梳理2020年以来等向/各向异性PEALE、硬件、粗糙度演化和RIE+ALE/ALD+ALE集成；对磁性材料汇总CoFeB 167 ℃、0.15 nm/cycle及对MgO近无限选择比。",
+    "background": "2026 PEALE正式综述｜磁性金属、低损伤各向异性与ALD—ALE集成",
+    "question": "PEALE如何兼顾原子级精度、方向性、低损伤、选择比和制造吞吐？",
+    "workflow": [
+      "先看ALE窗口与四步循环",
+      "再看磁性金属表14",
+      "重点看RIE+ALE和ALD+ALE",
+      "最后看吞吐/残留/晶圆均匀性；55–75分钟"
+    ],
+    "findings": [
+      "【综述】ALE至少一个半反应必须自限。",
+      "【综述】CoFeB热ALE约167 ℃、0.15 nm/cycle。",
+      "【综述】对MgO可实现近无限选择比。",
+      "【综述】低离子能各向异性需要偏压/等离子源协同。",
+      "【边界】跨论文数字不是同一晶圆或同一设备的联合实测。"
+    ],
+    "explanation": "它把今天的CoFeB ALE单篇结果放回设备、反应自限、方向性、选择比和吞吐量的完整制造坐标。",
+    "whyItMatters": [
+      "它把今天的CoFeB ALE单篇结果放回设备、反应自限、方向性、选择比和吞吐量的完整制造坐标。"
+    ],
+    "researchConnection": "用同一片CoFeB/MgO见证片比较RIE、IBE、ALE和RIE+ALE，联测EPC、残留、粗糙度和FMR。",
+    "limitationsDetailed": "综述覆盖材料跨度大，工艺窗口、腔体和计量不可直接移植；吞吐、颗粒与300 mm均匀性仍是量产缺口。",
+    "terms": [
+      "综述汇总与原始实测分开",
+      "厂商/工艺推断不替代器件验证"
+    ],
+    "takeaway": "先看ALE窗口与四步循环；再看磁性金属表14；重点看RIE+ALE和ALD+ALE；最后看吞吐/残留/晶圆均匀性；55–75分钟"
+  },
+  {
+    "id": "classic-julliere-1975",
+    "oneSentence": "Fe/Ge-O/Co结在4.2 K、零偏附近观察到约14%电导变化，并用两电极自旋极化乘积解释TMR；高偏压下效应衰减。",
+    "background": "Jullière 1975经典｜4.2 K约14% TMR与双自旋通道模型",
+    "question": "两铁磁电极的自旋极化怎样决定平行/反平行构型的隧穿电导？",
+    "workflow": [
+      "先看4.2 K原始曲线",
+      "理解P/AP双通道",
+      "核对偏压衰减",
+      "再比较MgO相干隧穿与缺陷；20–30分钟"
+    ],
+    "findings": [
+      "【实测】Fe/Ge-O/Co在4.2 K零偏附近约14%变化。",
+      "【实测】TMR随偏压增加而减弱。",
+      "【模型】双电流通道由两电极有效自旋极化乘积决定。",
+      "【边界】模型不含MgO对称性过滤、缺陷散射和自热。"
+    ],
+    "explanation": "今天的低温WER、MgO缺陷、侧壁旁路和ALE都可视为对Jullière理想双通道图景的材料、热与工艺修正。",
+    "whyItMatters": [
+      "今天的低温WER、MgO缺陷、侧壁旁路和ALE都可视为对Jullière理想双通道图景的材料、热与工艺修正。"
+    ],
+    "researchConnection": "把实测TMR反演的有效极化与温度、偏压、晶界密度及侧壁损伤关联。",
+    "limitationsDetailed": "早期大面积Ge-O势垒、4.2 K结果不能直接代表现代CoFeB/MgO纳米pMTJ。",
+    "terms": [
+      "Jullière模型是基线而非完整量子输运",
+      "14%为历史器件实测"
+    ],
+    "takeaway": "先看4.2 K原始曲线；理解P/AP双通道；核对偏压衰减；再比较MgO相干隧穿与缺陷；20–30分钟"
   }
 ]
