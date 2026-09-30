@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-29T12:00:00+08:00",
-  "reportDate": "2026-09-29",
+  "updatedAt": "2026-09-30T12:00:00+08:00",
+  "reportDate": "2026-09-30",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -1040,6 +1040,25 @@
         "c-mgo-gb-defects-125002",
         "d-qd-ppms-migration-2026",
         "e-cofeb-ale-damping-170052"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "label": "详细日报：Heusler低温TMR—16 nm阵列—量化读出—SQUID平台—原子MgO插层",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-cofecral-mtj-1905-04070",
+        "b-16nm-16mb-sttmram-10454339",
+        "c-sttmram-quantizer-2410-05164",
+        "d-cryogenic-s700x-squid",
+        "e-mgo-insertion-mggao-0247660"
       ]
     }
   ],
@@ -11261,6 +11280,187 @@
       "backupUrl": "https://doi.org/10.1016/j.jmmm.2022.170052",
       "accessNote": "本轮已打开出版社摘要和作者公开摘要，核验11–35%阻尼降低、0.34/0.50 nm粗糙度及机制；工艺EPC由2026正式综述交叉核验。",
       "recommendedOn": "2026-09-29",
+      "featured": true
+    },
+    {
+      "id": "a-cofecral-mtj-1905-04070",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Magnetic tunnel junctions with a B2-ordered CoFeCrAl equiatomic Heusler alloy",
+      "titleZh": "CoFeCrAl/MgO低温隧穿｜300 K 87%、10 K 165% TMR",
+      "authors": "T. Tsuchiya et al.",
+      "venue": "Physical Review Materials 3, 084403 (2019); arXiv:1905.04070",
+      "published": "2019-08-05",
+      "timeTier": "正式发表/低温MTJ材料与界面",
+      "system": "MgO(100)/Cr(40)/CoFeCrAl(30)/Mg(0.4)/MgO(2)/CoFe(5)/IrMn(10)/Ta(3)/Ru(5) nm外延MTJ；结尺寸10×10至30×30 μm²。",
+      "conditions": "MBE基压2×10^-7 Pa；MgO基片700 °C闪蒸，Cr 700 °C退火1 h，CoFeCrAl原位退火400–800 °C；器件在5 kOe下250–500 °C退火。PPMS测10–300 K、磁场最高1 kOe；定量曲线示例为10×10 μm²。",
+      "methods": [
+        "MBE外延",
+        "TEM/XRD",
+        "XMCD",
+        "10–300 K磁输运",
+        "FP-SPRKKR+CPA"
+      ],
+      "summary": "【实测】最佳结TMR为300 K 87%、10 K 165%，CoFeCrAl饱和磁化约380 emu cm^-3；【实测】合金成分Co25.5Fe23.1Cr28.1Al23.3 at.%并呈B2有序；【作者解释】低温偏压依赖由相干隧穿叠加磁振子非弹性过程解释。",
+      "relevance": "把Heusler化学有序、Mg插层/MgO界面和低温TMR放到同一可制造堆栈，适合现有MBE/溅射—退火—PPMS链路复现。",
+      "limitation": "微米结且非CoFeB pMTJ；未给晶圆级均匀性、RA分布、WER、保持与耐久；B2并非理论预期的完全Y有序，165%不可外推到纳米MRAM。",
+      "industrialization": "最接近新电极材料筛选与势垒界面优化；距可制造器件仍缺纳米图形化、BEOL温度预算、片内CV、交换偏置稳定性及阵列统计。",
+      "whyRecommended": "先看TMR—温度/偏压，再看TEM、XMCD与有序度；45–60分钟。",
+      "score": 9.4,
+      "priority": "S",
+      "doi": "10.1103/PhysRevMaterials.3.084403",
+      "arxiv": "1905.04070",
+      "url": "https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.3.084403",
+      "backupUrl": "https://arxiv.org/abs/1905.04070",
+      "accessNote": "本轮已打开arXiv摘要及HTML全文，核验完整堆栈、制备/测量条件、87%/165% TMR、380 emu cm^-3和成分。",
+      "recommendedOn": "2026-09-30",
+      "featured": true
+    },
+    {
+      "id": "b-16nm-16mb-sttmram-10454339",
+      "track": "B",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "A 16nm 16Mb Embedded STT-MRAM with a 20ns Write Time, a 10^12 Write Endurance and Integrated Margin-Expansion Schemes",
+      "titleZh": "16 nm嵌入式STT-MRAM｜16 Mb、20 ns写入与10^12次耐久",
+      "authors": "Ku-Feng Lin et al.",
+      "venue": "2024 IEEE ISSCC, pp. 116–118",
+      "published": "2024-02-19",
+      "timeTier": "近2年正式发表/产业阵列",
+      "system": "16 nm逻辑平台上的16 Mb嵌入式STT-MRAM宏，集成读写裕量扩展方案；公开题录未披露完整MTJ膜层、单元面积和RA。",
+      "conditions": "公开标题与IEEE题录确认16 nm、16 Mb、20 ns和10^12次写耐久；可访问页面未公开测试温区、电压、良率样本量、保持时间和错误率置信区间，本期不补写。",
+      "methods": [
+        "16 nm eMRAM",
+        "16 Mb阵列",
+        "20 ns写入",
+        "耐久测试",
+        "裕量扩展电路"
+      ],
+      "summary": "【实测/公开题录】展示16 nm 16 Mb嵌入式STT-MRAM，写时间20 ns、写耐久10^12次，并集成裕量扩展方案；【未公开】公开题录不足以确认PVT角、ECC配置、写电流和逐bit分布。",
+      "relevance": "提供实验室单结必须对标的系统级门槛：速度、耐久和读写裕量必须同时成立，不能只报告峰值TMR。",
+      "limitation": "ISSCC公开题录信息有限；20 ns和10^12不能自动证明全阵列在所有PVT角的良率、10年保持或无ECC原始误码率。",
+      "industrialization": "已进入嵌入式阵列演示，最接近CMOS/BEOL集成；量产判断仍需晶圆级良率、长期保持、PVT/老化、测试成本、失效位图与客户资格数据。",
+      "whyRecommended": "先看宏架构和margin-expansion，再查测试条件及原始分布；30–45分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1109/ISSCC49657.2024.10454339",
+      "arxiv": "",
+      "url": "https://ieeexplore.ieee.org/document/10454339",
+      "backupUrl": "https://doi.org/10.1109/ISSCC49657.2024.10454339",
+      "accessNote": "本轮已打开IEEE直接题录并核验标题中的制程、容量、写时间、耐久和裕量扩展；其余未公开项明确留空。",
+      "recommendedOn": "2026-09-30",
+      "featured": true
+    },
+    {
+      "id": "c-sttmram-quantizer-2410-05164",
+      "track": "C",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Union Bound Analysis for STT-MRAM With Channel Quantization",
+      "titleZh": "STT-MRAM量化读通道｜q≥2时联合界逼近低WER仿真",
+      "authors": "Zhong Zhong, Kui Cai and Wenxue Song",
+      "venue": "arXiv:2410.05164 (2024)",
+      "published": "2024-10-07",
+      "timeTier": "可靠预印本/编码与读出理论",
+      "system": "45×90 nm面内MTJ及45 nm PTM外围模型；以二元非对称写通道串联高斯混合读通道，研究q-bit量化、BCJR/ML译码和(72,64)扩展Hamming码。",
+      "conditions": "模型取低/高阻均值约1/2 kΩ，码最小距离4、A(dmin)=8157，示例写错误概率P1=10^-5；差分进化种群10M、上限100代、F=0.8、CR=0.5，示例17代收敛。",
+      "methods": [
+        "BAC+高斯混合通道",
+        "q-bit量化",
+        "联合上界",
+        "BCJR/ML",
+        "差分进化阈值优化"
+      ],
+      "summary": "【理论/仿真】q≥2且WER低于10^-6时，联合界与仿真较接近；3 bit相对2 bit收益有限；【理论】联合界优化阈值优于互信息、最小通道错误率和成对概率界基准。",
+      "relevance": "把MTJ电阻分布、读ADC位数、ECC与目标WER连接起来，可用于评估低温分布收窄是否真的能换成更低功耗读出。",
+      "limitation": "纯模型与蒙特卡洛，没有硅后位图、RTN、温漂、邻近耦合、老化和阵列相关失效；1/2 kΩ参数不能视为用户器件实测。",
+      "industrialization": "最接近读通道/ECC协同设计；距产品验证仍缺实测分布拟合、PVT、软信息校准、译码面积/延迟/能耗和大样本尾部。",
+      "whyRecommended": "先看级联通道图和阈值算法，再看q=2/3的WER曲线；40–55分钟。",
+      "score": 9.1,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "2410.05164",
+      "url": "https://arxiv.org/abs/2410.05164",
+      "backupUrl": "https://arxiv.org/html/2410.05164",
+      "accessNote": "本轮已打开arXiv摘要与HTML全文，核验器件参数、码参数、优化设置及q-bit结论。",
+      "recommendedOn": "2026-09-30",
+      "featured": true
+    },
+    {
+      "id": "d-cryogenic-s700x-squid",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "S700X SQUID Magnetometer",
+      "titleZh": "Cryogenic S700X SQUID｜10^-11 A·m²灵敏度与He-3低于300 mK选件",
+      "authors": "Cryogenic Ltd",
+      "venue": "厂商正式技术资料",
+      "published": "2026-09-30核验",
+      "timeTier": "厂商技术资料/不作为科研证明",
+      "system": "二阶梯度线圈SQUID磁强计，含传统液氦或R-S700X零蒸发配置；可配He-3、样品旋转和1000 K高温炉。",
+      "conditions": "厂商标称输入噪声能量灵敏度10^-30 J/√Hz、磁矩分辨率10^-11 A m²；常规1.6–400 K，He-3低于300 mK至300 K以上，约0.9 cc He-3且300 mK附近最长约12 h。R型用1 W脉管和7 kW水冷压缩机。",
+      "methods": [
+        "SQUID二阶梯度计",
+        "零蒸发氦回收",
+        "He-3插杆",
+        "线性电机扫描",
+        "0.1°旋转"
+      ],
+      "summary": "【厂商标称】磁矩分辨率10^-11 A m²、输入噪声能量灵敏度10^-30 J/√Hz；样品行程20–25 mm、1–3 Hz；【厂商标称】He-3可低于300 mK并在约300 mK维持最长12 h。",
+      "relevance": "可作为超薄磁层、退火前后磁矩和低温各向异性的独立基线，与电输运互相校验。",
+      "limitation": "全部性能为厂商资料，未给特定样品托、扫场条件、背景扣除和跨实验室GR&R；页面同时出现约10 mG屏蔽区域与约100 μT背景表述，验收时须定义测量位置。",
+      "industrialization": "最接近材料/来料磁学计量平台；尚缺对现有探杆兼容、自动化API、维护成本、校准溯源、MTBF和用户样品验收数据。",
+      "whyRecommended": "先看低场屏蔽、He-3和样品运动规格，再制定标准样品验收；20–30分钟。",
+      "score": 8.7,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://www.cryogenic.co.uk/products/squid-magnetometers/s700x-squid-magnetometer",
+      "backupUrl": "https://www.cryogenic.co.uk/products/squid-magnetometers",
+      "accessNote": "本轮已打开Cryogenic Ltd官方产品页，逐项核验灵敏度、温区、He-3、行程、频率、压缩机和旋转指标；明确标注为厂商资料。",
+      "recommendedOn": "2026-09-30",
+      "featured": true
+    },
+    {
+      "id": "e-mgo-insertion-mggao-0247660",
+      "track": "E",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Enhanced tunnel magnetoresistance of Fe/MgGa2O4/Fe(001) magnetic tunnel junctions by interface-tuning with atomic-scale MgO insertion layers",
+      "titleZh": "0.3 nm MgO界面插层｜Fe/MgGaO/Fe室温151%、5 K 291% TMR",
+      "authors": "J. Sihombing et al.",
+      "venue": "Applied Physics Letters 126, 022407 (2025)",
+      "published": "2025-01-15",
+      "timeTier": "近2年正式发表/原子层界面工程",
+      "system": "Fe(001)/MgGa2O4势垒/Fe(001)外延MTJ，在势垒上下界面各插入0.3 nm MgO；总势垒厚2.3 nm，并与无插层及MgAl2O4参照比较。",
+      "conditions": "原子尺度插层后形成均匀岩盐结构Mg0.55Ga0.45O(001)，目标是抑制Ga向Fe扩散并保持晶格匹配；公开摘要未给完整底层、退火窗口、沉积速率和晶圆级统计。",
+      "methods": [
+        "外延生长",
+        "双界面0.3 nm MgO",
+        "结构/成分表征",
+        "5–300 K TMR",
+        "RA对照"
+      ],
+      "summary": "【实测】室温TMR 151%、RA 23 kΩ μm²；5 K TMR 291%、RA 26 kΩ μm²；【对照】无插层低温TMR约165%；【作者解释】MgO抑制Ga界面扩散并稳定均匀岩盐Mg0.55Ga0.45O。",
+      "relevance": "展示亚纳米插层把成分扩散、势垒晶相和隧穿性能联动，是可迁移到MgO/CoFeB和其他尖晶石势垒的原子界面DOE范式。",
+      "limitation": "高RA和Fe外延微结构离嵌入式MRAM仍远；0.3 nm为名义厚度，未证明全片连续性；缺纳米柱、写入、TDDB、热预算和片内CV。",
+      "industrialization": "最接近势垒/电极界面材料模块；障碍是23 kΩ μm²高RA、外延要求、插层连续性、厚度控制、退火兼容和纳米尺寸可靠性。",
+      "whyRecommended": "先看插层前后结构/成分，再看TMR—温度与RA权衡；40–55分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0247660",
+      "arxiv": "",
+      "url": "https://mdr.nims.go.jp/concern/publications/5d86p8862",
+      "backupUrl": "https://doi.org/10.1063/5.0247660",
+      "accessNote": "本轮已打开NIMS官方全文记录与AIP题录，核验0.3 nm双插层、2.3 nm势垒、151%/291% TMR、23/26 kΩ μm²及岩盐相。",
+      "recommendedOn": "2026-09-30",
       "featured": true
     }
   ]

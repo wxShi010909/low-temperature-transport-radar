@@ -1,57 +1,57 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "review": {
-    "id": "review-peale-next-gen-70663",
+    "id": "review-magnetoresistance-methods-00477-4",
     "kind": "正式综述",
-    "track": "E",
+    "track": "A",
     "secondaryTracks": [
       "B",
       "D"
     ],
-    "title": "Recent Advances in Plasma-Enhanced Atomic Layer Etching for Next-Generation Nanofabrication",
-    "titleZh": "2026 PEALE正式综述｜磁性金属、低损伤各向异性与ALD—ALE集成",
-    "authors": "Shih-Nan Hsiao",
-    "venue": "Advanced Materials Interfaces, Early View e70663 (2026)",
-    "published": "2026-09-11",
-    "recommendedOn": "2026-09-29",
-    "doi": "10.1002/admi.70663",
-    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.70663",
-    "backupUrl": "https://doi.org/10.1002/admi.70663",
-    "assistantSummary": "正式Review系统梳理2020年以来等向/各向异性PEALE、硬件、粗糙度演化和RIE+ALE/ALD+ALE集成；对磁性材料汇总CoFeB 167 ℃、0.15 nm/cycle及对MgO近无限选择比。",
-    "whySelected": "它把今天的CoFeB ALE单篇结果放回设备、反应自限、方向性、选择比和吞吐量的完整制造坐标。",
+    "title": "Magnetoresistance phenomena and measurement methodologies",
+    "titleZh": "2026 Nature Reviews Methods Primers｜磁阻机理、器件制备与伪差控制",
+    "authors": "C. Yi et al.",
+    "venue": "Nature Reviews Methods Primers 6 (2026)",
+    "published": "2026-03-24",
+    "recommendedOn": "2026-09-30",
+    "doi": "10.1038/s43586-026-00477-4",
+    "url": "https://www.nature.com/articles/s43586-026-00477-4",
+    "backupUrl": "https://doi.org/10.1038/s43586-026-00477-4",
+    "assistantSummary": "正式Primer从Drude/Boltzmann到量子线性响应，系统讨论薄膜/块材磁阻、器件制备、电极与几何，并重点处理电流喷射、Hall混入和寄生电容等伪差。",
+    "whySelected": "它给今天所有材料和设备条目提供统一测量学底座，尤其适合建立低温TMR、四端测量和背景扣除SOP。",
     "readingGuide": [
-      "先看ALE窗口与四步循环",
-      "再看磁性金属表14",
-      "重点看RIE+ALE和ALD+ALE",
-      "最后看吞吐/残留/晶圆均匀性；55–75分钟"
+      "先看图1典型MR平台",
+      "再看图2接触几何",
+      "重点看图3伪差控制",
+      "最后映射到MTJ与自动化验收；60–80分钟"
     ],
     "notNew": false
   },
   "classics": [
     {
-      "id": "classic-julliere-1975",
+      "id": "classic-negative-resistance-3122503",
       "kind": "经典文章",
-      "track": "A",
+      "track": "D",
       "secondaryTracks": [
-        "B",
-        "C"
+        "A",
+        "B"
       ],
-      "title": "Tunneling between ferromagnetic films",
-      "titleZh": "Jullière 1975经典｜4.2 K约14% TMR与双自旋通道模型",
-      "authors": "M. Jullière",
-      "venue": "Physics Letters A 54, 225–226 (1975)",
-      "published": "1975-09-08",
-      "recommendedOn": "2026-09-29",
-      "doi": "10.1016/0375-9601(75)90174-7",
-      "url": "https://www.sciencedirect.com/science/article/pii/0375960175901747",
-      "backupUrl": "https://doi.org/10.1016/0375-9601(75)90174-7",
-      "assistantSummary": "Fe/Ge-O/Co结在4.2 K、零偏附近观察到约14%电导变化，并用两电极自旋极化乘积解释TMR；高偏压下效应衰减。",
-      "whySelected": "今天的低温WER、MgO缺陷、侧壁旁路和ALE都可视为对Jullière理想双通道图景的材料、热与工艺修正。",
+      "title": "‘Negative resistance’ errors in four-point measurements of tunnel junctions and other crossed-wire devices",
+      "titleZh": "交叉线结四端负电阻伪差｜非均匀电流与有限元校正",
+      "authors": "J. M. Pomeroy and H. Grube",
+      "venue": "Journal of Applied Physics 105, 094503 (2009)",
+      "published": "2009-05-01",
+      "recommendedOn": "2026-09-30",
+      "doi": "10.1063/1.3122503",
+      "url": "https://www.nist.gov/publications/negative-resistance-errors-four-point-measurements-crossed-wire-devices",
+      "backupUrl": "https://doi.org/10.1063/1.3122503",
+      "assistantSummary": "实测与有限元证明，交叉线器件即使采用四端法，只要结电阻接近或低于电极电阻，非均匀电流仍会产生所谓负电阻伪差，并扭曲MR、I–V和变温输运。",
+      "whySelected": "它直接提醒MTJ工艺快速筛选不能把‘四端’当作无条件正确，必须测电极片阻、几何和非线性并做校正。",
       "readingGuide": [
-        "先看4.2 K原始曲线",
-        "理解P/AP双通道",
-        "核对偏压衰减",
-        "再比较MgO相干隧穿与缺陷；20–30分钟"
+        "先看电流拥挤示意",
+        "比较校正前后MR/I–V",
+        "核对非方形与异电阻率",
+        "把校正加入低温SOP；30–40分钟"
       ],
       "notNew": true
     }

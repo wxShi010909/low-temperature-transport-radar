@@ -377,6 +377,13 @@
       "classicIds": [
         "classic-julliere-1975"
       ]
+    },
+    {
+      "date": "2026-09-30",
+      "reviewId": "review-magnetoresistance-methods-00477-4",
+      "classicIds": [
+        "classic-negative-resistance-3122503"
+      ]
     }
   ],
   "items": [
@@ -3408,6 +3415,60 @@
         "理解P/AP双通道",
         "核对偏压衰减",
         "再比较MgO相干隧穿与缺陷；20–30分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-magnetoresistance-methods-00477-4",
+      "kind": "正式综述",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Magnetoresistance phenomena and measurement methodologies",
+      "titleZh": "2026 Nature Reviews Methods Primers｜磁阻机理、器件制备与伪差控制",
+      "authors": "C. Yi et al.",
+      "venue": "Nature Reviews Methods Primers 6 (2026)",
+      "published": "2026-03-24",
+      "recommendedOn": "2026-09-30",
+      "doi": "10.1038/s43586-026-00477-4",
+      "url": "https://www.nature.com/articles/s43586-026-00477-4",
+      "backupUrl": "https://doi.org/10.1038/s43586-026-00477-4",
+      "assistantSummary": "正式Primer从Drude/Boltzmann到量子线性响应，系统讨论薄膜/块材磁阻、器件制备、电极与几何，并重点处理电流喷射、Hall混入和寄生电容等伪差。",
+      "whySelected": "它给今天所有材料和设备条目提供统一测量学底座，尤其适合建立低温TMR、四端测量和背景扣除SOP。",
+      "readingGuide": [
+        "先看图1典型MR平台",
+        "再看图2接触几何",
+        "重点看图3伪差控制",
+        "最后映射到MTJ与自动化验收；60–80分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-negative-resistance-3122503",
+      "kind": "经典文章",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "‘Negative resistance’ errors in four-point measurements of tunnel junctions and other crossed-wire devices",
+      "titleZh": "交叉线结四端负电阻伪差｜非均匀电流与有限元校正",
+      "authors": "J. M. Pomeroy and H. Grube",
+      "venue": "Journal of Applied Physics 105, 094503 (2009)",
+      "published": "2009-05-01",
+      "recommendedOn": "2026-09-30",
+      "doi": "10.1063/1.3122503",
+      "url": "https://www.nist.gov/publications/negative-resistance-errors-four-point-measurements-crossed-wire-devices",
+      "backupUrl": "https://doi.org/10.1063/1.3122503",
+      "assistantSummary": "实测与有限元证明，交叉线器件即使采用四端法，只要结电阻接近或低于电极电阻，非均匀电流仍会产生所谓负电阻伪差，并扭曲MR、I–V和变温输运。",
+      "whySelected": "它直接提醒MTJ工艺快速筛选不能把‘四端’当作无条件正确，必须测电极片阻、几何和非线性并做校正。",
+      "readingGuide": [
+        "先看电流拥挤示意",
+        "比较校正前后MR/I–V",
+        "核对非方形与异电阻率",
+        "把校正加入低温SOP；30–40分钟"
       ],
       "notNew": true
     }
