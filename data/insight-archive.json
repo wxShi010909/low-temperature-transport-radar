@@ -9444,6 +9444,7 @@
     },
     {
       "id": "2026-09-30-order-cryo-tmr-doe",
+      "date": "2026-09-30",
       "type": "research",
       "typeZh": "研究机会",
       "trackLabel": "A/E · 有序度—界面—低温TMR",
@@ -9495,6 +9496,7 @@
     },
     {
       "id": "2026-09-30-mr-metrology-crosscheck",
+      "date": "2026-09-30",
       "type": "method",
       "typeZh": "设备与方法路线",
       "trackLabel": "D/A · 磁阻计量与磁矩交叉",
@@ -9548,6 +9550,7 @@
     },
     {
       "id": "2026-09-30-atomic-mgo-insertion-map",
+      "date": "2026-09-30",
       "type": "atomic",
       "typeZh": "原子与极端制造",
       "trackLabel": "E/B · 亚纳米MgO插层",

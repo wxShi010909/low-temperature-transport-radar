@@ -195,19 +195,19 @@ const curatedDetails = [
 
 const insights = [
   {
-    id: "2026-09-30-order-cryo-tmr-doe", type: "research", typeZh: "研究机会", trackLabel: "A/E · 有序度—界面—低温TMR",
+    id: "2026-09-30-order-cryo-tmr-doe", date, type: "research", typeZh: "研究机会", trackLabel: "A/E · 有序度—界面—低温TMR",
     title: "Heusler有序度与界面扩散解耦DOE", subtitle: "把退火收益拆成体相有序和界面化学两部分。", summary: "用同片温度梯度和Mg插层矩阵追踪B2有序、界面扩散与TMR。", status: "优先DOE",
     relatedPaperIds: [ids.A, ids.E], question: "TMR提升主要来自电极有序、界面阻挡还是势垒晶相？", rationale: "两篇实测都显示界面原子结构关键，但材料体系与RA差异很大。",
     workflow: ["成分标定", "退火温度梯度", "MgO插层矩阵", "结构/化学表征", "5–300 K输运"], equipment: ["MBE/溅射", "真空转移", "XRD/TEM/XPS", "PPMS"], measurements: ["有序参数", "界面扩散", "RA", "TMR(T,V)", "噪声"], metrics: ["片内CV", "TMR", "RA", "热预算", "缺陷密度"], evidenceBoundary: "跨材料比较只支持实验设计，不证明CoFeCrAl与MgGaO可直接集成。", firstSteps: ["先平面膜", "再微米结", "最后纳米柱"], researchConnection: "连接原子界面、低温输运和材料筛选。", takeaway: "让每一项TMR收益都对应一个可观测结构变量。",
   },
   {
-    id: "2026-09-30-mr-metrology-crosscheck", type: "method", typeZh: "设备与方法路线", trackLabel: "D/A · 磁阻计量与磁矩交叉",
+    id: "2026-09-30-mr-metrology-crosscheck", date, type: "method", typeZh: "设备与方法路线", trackLabel: "D/A · 磁阻计量与磁矩交叉",
     title: "SQUID—四端MR双链路验收", subtitle: "用标准磁矩、端子置换和有限元校正关闭伪差。", summary: "建立温度、磁场、接触几何和背景的可追溯误差预算。", status: "平台SOP",
     relatedPaperIds: [ids.D, review.id, classic.id], question: "低温MR变化中多少来自磁性，多少来自几何与仪器？", rationale: "SQUID背景与交叉线电流拥挤可分别伪造磁矩和电阻异常。",
     workflow: ["空托/标准样", "电极片阻", "端子置换", "场/流反转", "有限元校正", "GR&R"], equipment: ["S700X或现有SQUID", "PPMS/低噪声源表", "标准电阻", "Hall标准片"], measurements: ["噪声谱", "背景", "MR", "Hall混入", "磁矩"], metrics: ["偏差", "重复性", "再现性", "漂移", "校正残差"], evidenceBoundary: "厂商规格不是验收结果，有限元校正也需匹配真实几何。", firstSteps: ["先空载", "再标准件", "最后真实MTJ"], researchConnection: "服务低温输运、薄膜磁性和工艺反馈。", takeaway: "任何异常先通过独立磁学和端子对称性双重检验。",
   },
   {
-    id: "2026-09-30-atomic-mgo-insertion-map", type: "atomic", typeZh: "原子与极端制造", trackLabel: "E/B · 亚纳米MgO插层",
+    id: "2026-09-30-atomic-mgo-insertion-map", date, type: "atomic", typeZh: "原子与极端制造", trackLabel: "E/B · 亚纳米MgO插层",
     title: "0–0.6 nm MgO双界面插层地图", subtitle: "用0.15 nm步进寻找扩散阻挡、连续性和RA的共同窗口。", summary: "把名义厚度、实际覆盖率、Ga/B扩散与器件电性逐点关联。", status: "原子制造路线",
     relatedPaperIds: [ids.E, ids.A, ids.B], question: "最薄连续插层能否抑制扩散且不把RA推离读写窗口？", rationale: "0.3 nm带来高TMR但RA仍达23 kΩ μm²，必须做厚度—连续性—性能权衡。",
     workflow: ["QCM/RHEED标定", "0.15 nm步进", "原位封护", "STEM-EELS/XPS", "微米到纳米结"], equipment: ["MBE/ALD", "真空互联", "原位RHEED/XPS", "TEM", "CIPT/PPMS"], measurements: ["覆盖率", "界面扩散", "晶相", "RA/TMR", "TDDB"], metrics: ["厚度误差", "片内CV", "RA", "TMR", "击穿寿命"], evidenceBoundary: "本站路线是由MgGaO结果外推的待验证方案；不能假定对CoFeB/MgO同样增益。", firstSteps: ["见证片校准", "微米结筛选", "纳米柱可靠性"], researchConnection: "直接连接原子层控制、MTJ势垒和可制造性。", takeaway: "最优点不是最高TMR，而是连续、低扩散、可接受RA与可靠性的交集。",
