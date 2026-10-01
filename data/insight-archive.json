@@ -656,6 +656,18 @@
       "atomicIds": [
         "2026-09-30-atomic-mgo-insertion-map"
       ]
+    },
+    {
+      "date": "2026-10-01",
+      "opportunityIds": [
+        "2026-10-01-boron-barrier-transport"
+      ],
+      "methodIds": [
+        "2026-10-01-mpms-dual-mode"
+      ],
+      "atomicIds": [
+        "2026-10-01-mg-insertion-window"
+      ]
     }
   ],
   "items": [
@@ -9601,6 +9613,166 @@
       ],
       "researchConnection": "直接连接原子层控制、MTJ势垒和可制造性。",
       "takeaway": "最优点不是最高TMR，而是连续、低扩散、可接受RA与可靠性的交集。"
+    },
+    {
+      "id": "2026-10-01-boron-barrier-transport",
+      "date": "2026-10-01",
+      "type": "research",
+      "typeZh": "研究机会",
+      "trackLabel": "A/C/E · B扩散—势垒—输运",
+      "title": "B去向—MgO厚度—低温谱学三联DOE",
+      "subtitle": "把B扩散和非弹性隧穿放进同一批厚度/退火矩阵。",
+      "summary": "用结构化学证据解释TMR(T,V)而非只比较峰值。",
+      "status": "优先DOE",
+      "relatedPaperIds": [
+        "a-elastic-inelastic-064416",
+        "c-boron-kotoite-014114",
+        "review-mgo-mtj-174101"
+      ],
+      "question": "厚势垒的强温变有多少来自B诱导相变和界面残余？",
+      "rationale": "实验厚度效应和理论kotoite机制指向同一势垒缺陷链，但尚未在同片样品闭环。",
+      "workflow": [
+        "MgO厚度矩阵",
+        "Ta/W/Mo吸B层",
+        "退火温时矩阵",
+        "HAXPES/EELS",
+        "15–300 K dI/dV/RTN"
+      ],
+      "equipment": [
+        "多靶溅射/MBE",
+        "真空退火",
+        "XPS/TEM",
+        "PPMS",
+        "低噪声前放"
+      ],
+      "measurements": [
+        "B深度分布",
+        "晶相",
+        "RA/TMR",
+        "dI/dV",
+        "RTN/TDDB"
+      ],
+      "metrics": [
+        "厚度误差",
+        "B原子比",
+        "TMR温变倍数",
+        "缺陷谱",
+        "击穿寿命"
+      ],
+      "evidenceBoundary": "kotoite与210%来自理想理论；需由真实堆栈结构化学直接验证。",
+      "firstSteps": [
+        "先平面膜化学",
+        "再微米结谱学",
+        "最后纳米柱可靠性"
+      ],
+      "researchConnection": "连接退火扩散、低温输运和可靠性。",
+      "takeaway": "让每条输运异常都有对应的B分布与势垒相证据。"
+    },
+    {
+      "id": "2026-10-01-mpms-dual-mode",
+      "date": "2026-10-01",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/A · SQUID双模式计量",
+      "title": "MPMS 3 DC—VSM双模式GR&R",
+      "subtitle": "用同一样品比值识别居中、几何与高场背景误差。",
+      "summary": "把厂商灵敏度转成超薄磁层的现场验收矩阵。",
+      "status": "平台SOP",
+      "relatedPaperIds": [
+        "d-qd-mpms3",
+        "e-mg-insertion-7b11293"
+      ],
+      "question": "≤10^-8 emu规格在真实CoFeB见证片上能否重现？",
+      "rationale": "模式、场区、振幅和样品托都会改变有效噪声与系统误差。",
+      "workflow": [
+        "空托/标准样",
+        "DC与VSM比值",
+        "0.1–8 mm振幅",
+        "低/高场分段",
+        "跨日GR&R"
+      ],
+      "equipment": [
+        "MPMS 3",
+        "Pd标准样",
+        "超薄CoFeB见证片",
+        "自动化脚本"
+      ],
+      "measurements": [
+        "磁矩",
+        "背景",
+        "居中曲线",
+        "噪声谱",
+        "漂移"
+      ],
+      "metrics": [
+        "偏差",
+        "重复性",
+        "再现性",
+        "模式比例",
+        "测量时间"
+      ],
+      "evidenceBoundary": "厂商标称是验收目标，不是现有实验室结果。",
+      "firstSteps": [
+        "先标准样",
+        "再空托",
+        "最后真实薄膜"
+      ],
+      "researchConnection": "为PMA/VCMA和退火反馈提供独立磁学证据。",
+      "takeaway": "用双模式一致性而非单次最低噪声宣称验收平台。"
+    },
+    {
+      "id": "2026-10-01-mg-insertion-window",
+      "date": "2026-10-01",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 亚单层Mg界面",
+      "title": "0–0.4 nm Mg插层—氧剂量二维窗口",
+      "subtitle": "同时寻找覆盖连续性、低RA、高PMA与高VCMA交集。",
+      "summary": "把亚单层沉积从名义厚度升级为覆盖率和化学态闭环。",
+      "status": "原子制造路线",
+      "relatedPaperIds": [
+        "e-mg-insertion-7b11293",
+        "b-22nm-32mb-9062955",
+        "review-mgo-mtj-174101"
+      ],
+      "question": "0.2 nm最佳点能否在用户设备上稳定复现并支持无场器件？",
+      "rationale": "Mg插层联动多个指标，但名义0.2 nm易受沉积速率、岛状生长和氧剂量影响。",
+      "workflow": [
+        "QCM/RHEED标定",
+        "Mg 0–0.4 nm",
+        "氧剂量矩阵",
+        "原位XPS/封护",
+        "PMA/TMR/VCMA/TDDB"
+      ],
+      "equipment": [
+        "MBE/溅射",
+        "真空互联",
+        "原位XPS/RHEED",
+        "TEM/AFM",
+        "脉冲电测"
+      ],
+      "measurements": [
+        "覆盖率",
+        "氧化态",
+        "粗糙度/应力",
+        "RA/TMR",
+        "VCMA/可靠性"
+      ],
+      "metrics": [
+        "0.02 nm级重复性",
+        "片内CV",
+        "PMA",
+        "VCMA",
+        "WER/TDDB"
+      ],
+      "evidenceBoundary": "57.6% TMR和>100 fJ/Vm来自特定堆栈；本站二维路线为待验证推断。",
+      "firstSteps": [
+        "平面见证片",
+        "微米结",
+        "纳米无场开关"
+      ],
+      "researchConnection": "直接服务原子界面、VCMA与可制造pMTJ。",
+      "takeaway": "最优插层必须同时通过化学、磁性、电输运和可靠性四道门。"
     }
   ]
 }

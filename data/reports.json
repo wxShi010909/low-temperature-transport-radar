@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-30T12:00:00+08:00",
-  "reportDate": "2026-09-30",
+  "updatedAt": "2026-10-01T12:00:00+08:00",
+  "reportDate": "2026-10-01",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -1059,6 +1059,25 @@
         "c-sttmram-quantizer-2410-05164",
         "d-cryogenic-s700x-squid",
         "e-mgo-insertion-mggao-0247660"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "label": "详细日报：MgO低温通道—22 nm阵列—B扩散对称性—MPMS 3—Mg原子插层",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-elastic-inelastic-064416",
+        "b-22nm-32mb-9062955",
+        "c-boron-kotoite-014114",
+        "d-qd-mpms3",
+        "e-mg-insertion-7b11293"
       ]
     }
   ],
@@ -11461,6 +11480,189 @@
       "backupUrl": "https://doi.org/10.1063/5.0247660",
       "accessNote": "本轮已打开NIMS官方全文记录与AIP题录，核验0.3 nm双插层、2.3 nm势垒、151%/291% TMR、23/26 kΩ μm²及岩盐相。",
       "recommendedOn": "2026-09-30",
+      "featured": true
+    },
+    {
+      "id": "a-elastic-inelastic-064416",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Elastic and inelastic conductance in Co-Fe-B/MgO/Co-Fe-B magnetic tunnel junctions",
+      "titleZh": "MgO厚度放大低温TMR衰减｜4.0 nm势垒从15 K 293%降至300 K 21.9%",
+      "authors": "Ayaz A. Khan et al.",
+      "venue": "Physical Review B 82, 064416 (2010)",
+      "published": "2010-08-16",
+      "timeTier": "关键低温输运/偏压谱学",
+      "system": "Co-Fe-B/MgO/Co-Fe-B磁隧道结，MgO势垒厚度tB系统覆盖1.8–4.0 nm；比较平行/反平行态电导随温度与偏压的变化。",
+      "conditions": "温区15–300 K，系统扫描偏压和MgO厚度。公开摘要未披露完整底层/钉扎层、结面积、退火温时和RA绝对值，本期不补写。",
+      "methods": [
+        "15–300 K输运",
+        "偏压谱",
+        "MgO厚度序列",
+        "P/AP电导分解",
+        "弹性/非弹性通道拟合"
+      ],
+      "summary": "【实测】tB=4.0 nm时TMR由15 K的293%降至300 K的21.9%，衰减13.4倍；tB=1.8 nm仅衰减约1.6倍；【作者解释】热激发、自旋无关非弹性通道与界面/势垒缺陷共同削弱厚势垒的相干贡献。",
+      "relevance": "给MgO/CoFeB低温数据提供明确警告：TMR温变不能脱离势垒厚度、偏压和非弹性通道讨论，适合转成现有PPMS的厚度—温度—偏压三维DOE。",
+      "limitation": "器件较早且非现代纳米pMTJ；摘要未公开样本统计、WER、噪声、TDDB和晶圆级均匀性；弹性/非弹性分解属于模型解释。",
+      "industrialization": "最接近势垒厚度窗口与读偏压设计；仍缺低RA纳米结、BEOL退火、片内CV、读扰动、击穿寿命和阵列温度角验证。",
+      "whyRecommended": "先看TMR—温度随tB的分叉，再看P/AP偏压电导和非弹性拟合；40–55分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1103/PhysRevB.82.064416",
+      "arxiv": "",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.82.064416",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.82.064416",
+      "accessNote": "本轮已打开APS直接页面，核验1.8–4.0 nm厚度范围、15–300 K以及293%→21.9%、13.4倍与1.6倍对照。",
+      "recommendedOn": "2026-10-01",
+      "featured": true
+    },
+    {
+      "id": "b-22nm-32mb-9062955",
+      "track": "B",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "A 22nm 32Mb Embedded STT-MRAM with 10ns Read Speed, 1M Cycle Write Endurance, 10 Years Retention at 150°C and High Immunity to Magnetic Field Interference",
+      "titleZh": "22 nm 32 Mb嵌入式STT-MRAM｜10 ns读、150 °C十年保持与磁场抗扰",
+      "authors": "Yu-Der Chih et al.",
+      "venue": "2020 IEEE ISSCC, pp. 222–224",
+      "published": "2020-02-17",
+      "timeTier": "正式发表/产业阵列与可靠性",
+      "system": "22 nm逻辑工艺上的32 Mb嵌入式STT-MRAM宏，面向高温保持、快速读取和外磁场抗扰；公开题录未给完整MTJ膜层与RA。",
+      "conditions": "IEEE题录公开10 ns读取、100万次写耐久、150 °C下10年保持和高磁场抗扰。公开页面未披露逐bit原始分布、ECC配置、写脉宽/能耗及所有PVT条件。",
+      "methods": [
+        "22 nm eMRAM",
+        "32 Mb阵列",
+        "10 ns读取",
+        "150 °C保持",
+        "磁场抗扰"
+      ],
+      "summary": "【实测/公开题录】32 Mb宏实现10 ns读、10^6次写耐久、150 °C下10年保持并强调外磁场抗扰；【未公开】公开题录不足以判断无ECC RBER、全阵列良率、测试磁场幅值与方向。",
+      "relevance": "把单结的TMR/RA拉回产品约束：高温保持、读速度、耐久和磁场免疫必须共同满足，且彼此存在Δ、写电流和感测裕量权衡。",
+      "limitation": "ISSCC题录数字是宏级宣称；100万次耐久低于先进器件常见目标，不能据此推断所有应用合格；缺失效位图和晶圆/批次统计。",
+      "industrialization": "已处于CMOS嵌入式阵列演示；距量产判断仍需PVT、焊接回流、磁场标准、ECC开销、长期老化、良率和成本数据。",
+      "whyRecommended": "先看10 ns感测路径与磁免疫方案，再追150 °C保持推算和耐久分布；30–45分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1109/ISSCC19947.2020.9062955",
+      "arxiv": "",
+      "url": "https://ieeexplore.ieee.org/document/9062955",
+      "backupUrl": "https://doi.org/10.1109/ISSCC19947.2020.9062955",
+      "accessNote": "本轮已打开IEEE直接题录并核验22 nm、32 Mb、10 ns、10^6次、150 °C十年保持和磁场抗扰。",
+      "recommendedOn": "2026-10-01",
+      "featured": true
+    },
+    {
+      "id": "c-boron-kotoite-014114",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Boron diffusion induced symmetry reduction and scattering in CoFeB/MgO/CoFeB magnetic tunnel junctions",
+      "titleZh": "B扩散把MgO变成kotoite｜C4v→C2v使理论TMR降至210%",
+      "authors": "Zhaoqiang Bai et al.",
+      "venue": "Physical Review B 87, 014114 (2013)",
+      "published": "2013-01-23",
+      "timeTier": "关键第一性原理/退火与界面缺陷",
+      "system": "从CoFeB/MgO/CoFeB退火后的B扩散出发，比较理想MgO、Mg3B2O6（kotoite）势垒以及界面残余B对结构稳定性与自旋输运的影响。",
+      "conditions": "用第一性原理结构/声子与量子输运计算评估退火后相稳定和TMR；公开摘要未给全部超胞、k点、交换关联泛函和电极层数。",
+      "methods": [
+        "第一性原理",
+        "声子色散",
+        "kotoite稳定性",
+        "对称性分析",
+        "自旋输运"
+      ],
+      "summary": "【理论预测】Mg3B2O6声子稳定；CoFe/kotoite/CoFe的TMR约210%，比理想CoFe/MgO/CoFe预测低约2个数量级；【机制】势垒对称性由C4v降为C2v，散射并削弱Δ1类Bloch态；界面残余B会进一步降TMR。",
+      "relevance": "把退火中的B去向直接映射到势垒晶相、对称性过滤和TMR，可指导Ta/W/Mo吸B层、退火时间及原位界面化学表征。",
+      "limitation": "静态理想模型不等于真实非晶/多晶势垒；210%是理论值，不是器件实测；缺有限温扩散动力学、浓度连续变化和TDDB。",
+      "industrialization": "最接近退火扩散根因与材料筛选；仍缺真实堆栈STEM-EELS/HAXPES定量、扩散系数、晶圆统计及RA/TMR/击穿关联。",
+      "whyRecommended": "先看kotoite结构与声子，再看C4v/C2v输运对称性和界面B；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1103/PhysRevB.87.014114",
+      "arxiv": "",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.87.014114",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.87.014114",
+      "accessNote": "本轮已打开APS直接页面，核验Mg3B2O6稳定、210% TMR、低两个数量级、C4v→C2v与残余B结论。",
+      "recommendedOn": "2026-10-01",
+      "featured": true
+    },
+    {
+      "id": "d-qd-mpms3",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Magnetic Property Measurement System MPMS 3",
+      "titleZh": "Quantum Design MPMS 3｜≤10^-8 emu、±7 T、1.8–400 K与DC/VSM交叉校准",
+      "authors": "Quantum Design North America",
+      "venue": "厂商正式产品页与应用说明",
+      "published": "2026-10-01核验",
+      "timeTier": "厂商技术资料/不作为科研证明",
+      "system": "7 T SQUID磁强计/磁化率平台，支持SQUID-VSM、传统DC Scan和AC Susceptibility；可扩展He-3、ETO、旋转和高温炉。",
+      "conditions": "厂商标称1.8–400 K、±7 T、最大扫场700 Oe/s、300→1.8 K典型25 min；VSM低场灵敏度<1×10^-8 emu，高场<8×10^-8 emu，振幅0.1–8 mm。",
+      "methods": [
+        "SQUID-VSM",
+        "DC Scan",
+        "AC磁化率",
+        "QuickSwitch 7 T",
+        "MultiVu自动化"
+      ],
+      "summary": "【厂商标称】低场VSM灵敏度优于10^-8 emu、7 T高场优于8×10^-8 emu；传统DC Scan低/高场分别优于5×10^-8/6×10^-7 emu；【应用说明】双模式比对可得到与样品形状/径向偏移相关的校正因子。",
+      "relevance": "可用于超薄CoFeB自由层、退火吸B层和低温各向异性的独立磁学基线，DC/VSM双模式尤其适合检查样品安装和背景伪差。",
+      "limitation": "厂商规格不是用户现场数据；灵敏度依赖磁场、平均时间、样品托和居中；ETO不能替代专用低噪声输运链，需FAT/SAT实测。",
+      "industrialization": "最接近研发计量与工艺反馈平台；采购前仍缺标准样IQ/OQ/PQ、GR&R、脚本/API回归、维护成本、MTBF和探杆兼容矩阵。",
+      "whyRecommended": "先看低/高场灵敏度分段，再看DC/VSM校正应用说明和He-3/ETO选件边界；25–35分钟。",
+      "score": 8.9,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://qdusa.com/products/mpms3.html",
+      "backupUrl": "https://qdusa.com/siteDocs/appNotes/1500-031.pdf",
+      "accessNote": "本轮已打开Quantum Design官方产品页与应用说明，核验温区、磁场、扫场、冷却时间、两种DC模式灵敏度及自动化；明确标注厂商资料。",
+      "recommendedOn": "2026-10-01",
+      "featured": true
+    },
+    {
+      "id": "e-mg-insertion-7b11293",
+      "track": "E",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Voltage-Assisted Magnetic Switching in MgO/CoFeB-Based Magnetic Tunnel Junctions by Way of Interface Reconstruction",
+      "titleZh": "0.2 nm Mg原子级插层重构界面｜TMR 13.2%→57.6%、VCMA超100 fJ/Vm",
+      "authors": "Jungho Ko and Jongill Hong",
+      "venue": "ACS Applied Materials & Interfaces 9, 42296–42301 (2017)",
+      "published": "2017-11-21",
+      "timeTier": "关键原子界面工程/VCMA",
+      "system": "MgO/CoFeB垂直MTJ，在MgO与CoFeB之间插入0.2–0.4 nm Mg，以抑制过氧化、改善织构/粗糙度并释放界面应力。",
+      "conditions": "比较无插层和亚单层Mg插层；公开摘要给出0.2 nm最佳TMR数据与0.2–0.4 nm工艺窗口，但未公开完整堆栈、退火温时、RA和晶圆均匀性。",
+      "methods": [
+        "0.2–0.4 nm Mg插层",
+        "结构/粗糙度",
+        "PMA",
+        "TMR",
+        "VCMA开关"
+      ],
+      "summary": "【实测】垂直磁矩与PMA分别提高2.1和1.8倍；TMR由13.2%增至57.6%（4.4倍）；VCMA系数超过100 fJ/Vm、约为插层前6倍，并呈对电场近对称双极性；【实测】外磁场辅助下实现电压诱导翻转。",
+      "relevance": "直接展示亚单层金属插层如何同时改变氧化、织构、粗糙度、应力和VCMA，是MBE/溅射原子级界面DOE的高价值模板。",
+      "limitation": "仍需外磁场辅助且绝对TMR低于现代MRAM；名义0.2 nm可能不连续；缺RA、WER、保持、耐久、TDDB、纳米尺寸和300 mm统计。",
+      "industrialization": "最接近VCMA界面模块；障碍是亚单层覆盖率/厚度计量、氧剂量窗口、无场翻转、BEOL退火、图形化后可靠性和片内均匀性。",
+      "whyRecommended": "先看0/0.2/0.4 nm界面结构，再看TMR、PMA与VCMA三组联动；40–55分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1021/acsami.7b11293",
+      "arxiv": "",
+      "url": "https://pubs.acs.org/doi/10.1021/acsami.7b11293",
+      "backupUrl": "https://doi.org/10.1021/acsami.7b11293",
+      "accessNote": "本轮已打开ACS直接页面，核验0.2–0.4 nm、2.1/1.8倍、13.2%→57.6%、4.4倍、>100 fJ/Vm和6倍VCMA。",
+      "recommendedOn": "2026-10-01",
       "featured": true
     }
   ]

@@ -384,6 +384,13 @@
       "classicIds": [
         "classic-negative-resistance-3122503"
       ]
+    },
+    {
+      "date": "2026-10-01",
+      "reviewId": "review-mgo-mtj-174101",
+      "classicIds": [
+        "classic-miyazaki-tezuka-1995"
+      ]
     }
   ],
   "items": [
@@ -3469,6 +3476,59 @@
         "比较校正前后MR/I–V",
         "核对非方形与异电阻率",
         "把校正加入低温SOP；30–40分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-mgo-mtj-174101",
+      "kind": "正式综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "How we developed MgO-based magnetic tunnel junctions",
+      "titleZh": "2026正式综述｜MgO-MTJ从>1000%理论预言到CoFeB量产堆栈",
+      "authors": "Shinji Yuasa",
+      "venue": "Journal of Magnetism and Magnetic Materials 648, 174101 (2026)",
+      "published": "2026-06-15",
+      "recommendedOn": "2026-10-01",
+      "doi": "10.1016/j.jmmm.2026.174101",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304885326002921",
+      "backupUrl": "https://doi.org/10.1016/j.jmmm.2026.174101",
+      "assistantSummary": "开放获取正式综述回顾Al-O结、2001年Fe/MgO/Fe超过1000%的Δ1相干隧穿预言、2004年室温近200%的外延实证，以及CoFeB/MgO/CoFeB向HDD、STT-MRAM和传感器的产业迁移。",
+      "whySelected": "它把今天的低温厚度效应、B扩散、Mg插层和阵列指标串成一条材料—界面—产品主线。",
+      "readingGuide": [
+        "先看Al-O到MgO的性能断点",
+        "再看Δ1对称性过滤",
+        "跟踪外延Fe到非晶CoFeB转化",
+        "最后看HDD/MRAM/传感器产业化；55–75分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-miyazaki-tezuka-1995",
+      "kind": "经典文章",
+      "track": "A",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Giant magnetic tunneling effect in Fe/Al2O3/Fe junction",
+      "titleZh": "Miyazaki–Tezuka 1995经典｜Fe/Al2O3/Fe在4.2 K 30%、300 K 18%",
+      "authors": "T. Miyazaki and N. Tezuka",
+      "venue": "Journal of Magnetism and Magnetic Materials 139, L231–L234 (1995)",
+      "published": "1995-01-02",
+      "recommendedOn": "2026-10-01",
+      "doi": "10.1016/0304-8853(95)90001-2",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/0304885395900012",
+      "backupUrl": "https://doi.org/10.1016/0304-8853(95)90001-2",
+      "assistantSummary": "Fe/Al2O3/Fe结首次实测4.2 K 30%、300 K 18%的大TMR；室温电导满足G=96.2(1+0.09cosθ) Ω^-1，并在4.2–300 K追踪电阻与隧穿电流。",
+      "whySelected": "它提供从低温到室温TMR和角度余弦关系的原始基线，可与今天MgO厚度、对称性和界面工程逐层对照。",
+      "readingGuide": [
+        "先看4.2/300 K TMR",
+        "理解cosθ电导关系",
+        "查看温度依赖",
+        "再比较MgO Δ1过滤；20–30分钟"
       ],
       "notNew": true
     }
