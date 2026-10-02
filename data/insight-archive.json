@@ -668,6 +668,18 @@
       "atomicIds": [
         "2026-10-01-mg-insertion-window"
       ]
+    },
+    {
+      "date": "2026-10-02",
+      "opportunityIds": [
+        "2026-10-02-noise-to-failure"
+      ],
+      "methodIds": [
+        "2026-10-02-cfms-acceptance"
+      ],
+      "atomicIds": [
+        "2026-10-02-boron-sink-map"
+      ]
     }
   ],
   "items": [
@@ -9773,6 +9785,168 @@
       ],
       "researchConnection": "直接服务原子界面、VCMA与可制造pMTJ。",
       "takeaway": "最优插层必须同时通过化学、磁性、电输运和可靠性四道门。"
+    },
+    {
+      "id": "2026-10-02-noise-to-failure",
+      "date": "2026-10-02",
+      "type": "research",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/E · 噪声—缺陷—失效",
+      "title": "RTN—原子化学—TDDB同片闭环",
+      "subtitle": "用噪声先发现弱缺陷，再用结构化学和加速寿命确认。",
+      "summary": "把平均TMR之外的尾部信息变成工艺反馈。",
+      "status": "优先DOE",
+      "relatedPaperIds": [
+        "a-mtj-noise-224423",
+        "c-uvpp-transformer-9830351",
+        "e-atomic-chemistry-5b03627",
+        "classic-machlup-rtn-1954"
+      ],
+      "question": "单个RTN源能否预示后续MgO软击穿或读窗漂移？",
+      "rationale": "A给动态缺陷信号，E给原子位置，C给寿命外推；三者目前通常分属不同样品。",
+      "workflow": [
+        "同片平面/微米/纳米结构",
+        "10–300 K RTN与1/f",
+        "分段循环应力",
+        "失效前后STEM-EELS/XPS",
+        "UVPP＋留批验证"
+      ],
+      "equipment": [
+        "低噪声前放/频谱仪",
+        "PPMS/CFMS",
+        "脉冲源表",
+        "STEM-EELS/XPS",
+        "自动化数据库"
+      ],
+      "measurements": [
+        "RTN驻留时间",
+        "1/f归一化幅值",
+        "R_P/R_AP轨迹",
+        "B/O深度与键态",
+        "TDDB/失效位图"
+      ],
+      "metrics": [
+        "缺陷先兆提前量",
+        "击穿预测误差",
+        "跨批AUC",
+        "假放行率",
+        "片内CV"
+      ],
+      "evidenceBoundary": "RTN与击穿的因果关系尚未由入选文献直接证明；本路线是待验证的本站推断。",
+      "firstSteps": [
+        "先做重复噪声基线",
+        "再加入分段应力",
+        "最后做破坏性结构分析"
+      ],
+      "researchConnection": "直接服务图形化损伤、退火和势垒可靠性。",
+      "takeaway": "把噪声从漂亮谱线变成可验证的寿命先兆。"
+    },
+    {
+      "id": "2026-10-02-cfms-acceptance",
+      "date": "2026-10-02",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/A · CFMS现场验收",
+      "title": "CFMS温场—磁场—电噪声三轴FAT/SAT",
+      "subtitle": "用标准件和真实MTJ探杆验收1.6 K与高场下的可复现性。",
+      "summary": "不以最低温/最高场单点代替系统能力。",
+      "status": "平台SOP",
+      "relatedPaperIds": [
+        "d-cryogenic-cfms-9-18t",
+        "a-mtj-noise-224423"
+      ],
+      "question": "厂商9–18 T、1.6–325 K如何变成可追溯的实验室能力？",
+      "rationale": "低温噪声测量对温漂、振动、地环路、换样接触和扫场耦合极其敏感。",
+      "workflow": [
+        "标准温度计/霍尔片",
+        "空探杆噪声谱",
+        "顶装换样GR&R",
+        "扫场温漂矩阵",
+        "脚本掉线/断电恢复"
+      ],
+      "equipment": [
+        "CFMS",
+        "标准电阻/霍尔片",
+        "短路/开路线",
+        "低噪声锁相/前放",
+        "时间同步记录"
+      ],
+      "measurements": [
+        "温稳",
+        "场误差/均匀度",
+        "电压噪声谱",
+        "接触电阻",
+        "换样/降温吞吐"
+      ],
+      "metrics": [
+        "偏差",
+        "重复性",
+        "再现性",
+        "1/f拐点",
+        "恢复时间"
+      ],
+      "evidenceBoundary": "厂商页只给架构和标称范围，所有验收阈值需由合同与现场数据确认。",
+      "firstSteps": [
+        "先空系统",
+        "再标准样",
+        "最后真实MTJ"
+      ],
+      "researchConnection": "用于低噪声输运和批间工艺反馈。",
+      "takeaway": "用三轴矩阵验收整条测量链，而不是只验磁体。"
+    },
+    {
+      "id": "2026-10-02-boron-sink-map",
+      "date": "2026-10-02",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 吸B层原子设计",
+      "title": "Ta/W/Mo吸B层—退火—界面键合三维窗口",
+      "subtitle": "将B容纳能力与Fe(Co)-O界面形成同步优化。",
+      "summary": "从单张原子像升级为统计工艺地图。",
+      "status": "原子制造路线",
+      "relatedPaperIds": [
+        "e-atomic-chemistry-5b03627",
+        "b-14nm-auto-10631315",
+        "review-sot-material-design-00054-z"
+      ],
+      "question": "吸B层材料和厚度怎样兼顾B外扩、PMA、低RA与400 °C级兼容？",
+      "rationale": "E证明特定Ta堆栈中B进Ta间隙且CoFe/MgO定向键合，但尚未覆盖替代吸B层和晶圆统计。",
+      "workflow": [
+        "Ta/W/Mo厚度矩阵",
+        "350/375/400/425 °C退火",
+        "XPS/HAXPES深度",
+        "统计STEM-EELS",
+        "RA/TMR/PMA/TDDB"
+      ],
+      "equipment": [
+        "多靶溅射＋真空互联",
+        "快速/炉管退火",
+        "XPS/HAXPES",
+        "STEM-EELS",
+        "CIPT/图形化电测"
+      ],
+      "measurements": [
+        "B/O/Co/Fe深度",
+        "Fe(Co)-O键态",
+        "结晶/粗糙度",
+        "RA/TMR/PMA",
+        "噪声/TDDB"
+      ],
+      "metrics": [
+        "B捕获量",
+        "界面CV",
+        "400 °C保持率",
+        "片内均匀性",
+        "寿命尾部"
+      ],
+      "evidenceBoundary": "Ta间隙结论来自特定局部结构；替代材料优劣和400 °C窗口需重新实测。",
+      "firstSteps": [
+        "先平面膜高通量",
+        "再CIPT",
+        "最后纳米柱"
+      ],
+      "researchConnection": "直接对应BEOL退火、B扩散和可制造pMTJ。",
+      "takeaway": "吸B层的放行条件必须同时包含原子化学、电输运和寿命。"
     }
   ]
 }

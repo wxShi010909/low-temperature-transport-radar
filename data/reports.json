@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-01T12:00:00+08:00",
-  "reportDate": "2026-10-01",
+  "updatedAt": "2026-10-02T12:00:00+08:00",
+  "reportDate": "2026-10-02",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -1078,6 +1078,25 @@
         "c-boron-kotoite-014114",
         "d-qd-mpms3",
         "e-mg-insertion-7b11293"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "label": "详细日报：低温噪声—14 nm汽车eMRAM—寿命外推—CFMS—原子化学",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-mtj-noise-224423",
+        "b-14nm-auto-10631315",
+        "c-uvpp-transformer-9830351",
+        "d-cryogenic-cfms-9-18t",
+        "e-atomic-chemistry-5b03627"
       ]
     }
   ],
@@ -11663,6 +11682,188 @@
       "backupUrl": "https://doi.org/10.1021/acsami.7b11293",
       "accessNote": "本轮已打开ACS直接页面，核验0.2–0.4 nm、2.1/1.8倍、13.2%→57.6%、4.4倍、>100 fJ/Vm和6倍VCMA。",
       "recommendedOn": "2026-10-01",
+      "featured": true
+    },
+    {
+      "id": "a-mtj-noise-224423",
+      "track": "A",
+      "secondaryTracks": [
+        "B"
+      ],
+      "title": "Low-frequency and shot noises in CoFeB/MgO/CoFeB magnetic tunneling junctions",
+      "titleZh": "低温噪声给MgO隧穿做通道鉴别｜1/f、RTN与散粒噪声三证合一",
+      "authors": "Tomonori Arakawa et al.",
+      "venue": "Physical Review B 86, 224423 (2012)",
+      "published": "2012-12-28",
+      "timeTier": "关键低温噪声/界面输运",
+      "system": "自旋阀型CoFeB/MgO/CoFeB磁隧道结；在低温下围绕自由层磁滞回线比较P/AP态的低频1/f噪声、随机电报噪声（RTN）与散粒噪声。",
+      "conditions": "出版社摘要确认低温噪声测量和磁滞回线扫描；公开摘要未给完整膜层、结面积、绝对温度、偏压范围和带宽，因此本站不补写这些数值。",
+      "methods": [
+        "低温电输运",
+        "1/f噪声",
+        "RTN时域/频域",
+        "散粒噪声",
+        "P/AP磁态对照"
+      ],
+      "summary": "【实测】自由层磁滞附近1/f噪声增强，主要指向磁涨落；【实测】RTN在磁滞回线中对两种磁配置对称增强，但AP态RTN更强，显示自旋相关激活；【实测/作者解释】散粒噪声支持晶态MgO中的自旋相关相干隧穿。",
+      "relevance": "把低温平台从只测R-H/TMR升级为缺陷与磁涨落诊断：1/f看分布式涨落，RTN追单个/少数两态源，散粒噪声检验传输统计，适合反推退火、刻蚀和边缘损伤。",
+      "limitation": "摘要未公开温度、频段、Fano因子、结尺寸和样本数；磁涨落与陷阱电荷可能耦合，不能仅凭单一谱形锁定微观缺陷。",
+      "industrialization": "最接近失效分析和读噪声筛查；距量产需建立晶圆级噪声抽测、RTN尾部分布、RBER/读窗相关、测试时间与自动判据。",
+      "whyRecommended": "先看磁滞附近噪声地图，再对照P/AP态RTN，最后看散粒噪声与相干隧穿；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1103/PhysRevB.86.224423",
+      "arxiv": "",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.86.224423",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.86.224423",
+      "accessNote": "本轮已打开APS直接页面，核验低温、1/f、RTN、P/AP差异与散粒噪声结论；未公开定量条件明确留空。",
+      "recommendedOn": "2026-10-02",
+      "featured": true
+    },
+    {
+      "id": "b-14nm-auto-10631315",
+      "track": "B",
+      "secondaryTracks": [
+        "C"
+      ],
+      "title": "14nm FinFET Node Embedded MRAM Technology for Automotive Non-Volatile RAM Applications with Endurance Over 1E12-Cycles",
+      "titleZh": "14 nm汽车级eMRAM｜10^12次耐久、150 °C十年保持与18 Mb/mm²",
+      "authors": "Joosung Oh et al.",
+      "venue": "2024 IEEE Symposium on VLSI Technology and Circuits",
+      "published": "2024-06-16",
+      "timeTier": "近期正式发表/汽车级阵列",
+      "system": "14 nm FinFET节点嵌入式MRAM宏，使用SRAM接口，目标是汽车非易失RAM而非只替代低频eFlash。公开题录未披露完整pMTJ膜层和阵列容量。",
+      "conditions": "公开题录给出100 ns写入、10^12次耐久、150 °C十年保持、18 Mb/mm²；与28 nm nvRAM型eMRAM及SRAM/Flash型eMRAM比较。",
+      "methods": [
+        "14 nm FinFET eMRAM",
+        "汽车级高温保持",
+        "10^12循环",
+        "SRAM接口",
+        "宏密度比较"
+      ],
+      "summary": "【实测/公开题录】耐久超过10^12次、100 ns写入、150 °C十年保持、宏密度18 Mb/mm²；【对比】写速较Flash型eMRAM快24倍、面积较SRAM约省50%；相对28 nm方案，保持温度由89 °C提高到150 °C且维持同级耐久。",
+      "relevance": "把pMTJ材料DOE对应到汽车产品门槛：高温Δ、写入过驱、MgO寿命、感测裕量和宏密度必须共同优化，而不是只追室温TMR。",
+      "limitation": "题录未公开ECC、RBER/WER分布、焊接回流、磁场抗扰、失效位图、PVT与批次良率；10年保持属于加速外推而非十年实测。",
+      "industrialization": "已进入先进节点汽车级宏验证；仍缺AEC-Q100完整资格、量产良率、晶圆/批次统计、成本、EM/TDDB细节及现场故障率。",
+      "whyRecommended": "先读四个宏指标，再看与28 nm、SRAM和Flash型eMRAM的同口径对照；30–45分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.1109/VLSITechnologyandCir46783.2024.10631315",
+      "arxiv": "",
+      "url": "https://ieeexplore.ieee.org/document/10631315",
+      "backupUrl": "https://doi.org/10.1109/VLSITechnologyandCir46783.2024.10631315",
+      "accessNote": "本轮已核验IEEE直接题录的14 nm、10^12、100 ns、150 °C十年、18 Mb/mm²、24倍和约50%数据。",
+      "recommendedOn": "2026-10-02",
+      "featured": true
+    },
+    {
+      "id": "c-uvpp-transformer-9830351",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Accurate and Fast STT-MRAM Endurance Evaluation Using a Novel Metric for Asymmetric Bipolar Stress and Deep Learning",
+      "titleZh": "MTJ寿命外推｜UVPP统一双极应力＋Transformer把测试提速最高10^9倍",
+      "authors": "Zhiqiang Wei et al.",
+      "venue": "2022 IEEE Symposium on VLSI Technology and Circuits",
+      "published": "2022-06-12",
+      "timeTier": "可靠性建模/量产测试",
+      "system": "面向STT-MRAM MgO势垒TDDB与电阻演化的耐久评估框架；统一单极、对称双极和非对称双极应力，并用时间序列Transformer预测循环寿命。",
+      "conditions": "用1–10^6次已测电阻序列预测10^6–10^15次区间及击穿点；公开摘要未给训练/验证样本量、误差、芯片节点、温度、脉宽和外部盲测。",
+      "methods": [
+        "UVPP幂律",
+        "非对称双极应力",
+        "电阻时间序列",
+        "Transformer",
+        "TDDB/击穿外推"
+      ],
+      "summary": "【模型】UVPP用新应力度量统一三种电压极性历史；【实测输入＋预测】以1–10^6次序列外推10^6–10^15次和击穿点；【作者宣称】测试时间最高缩短10^9倍；【边界】公开摘要未给预测误差和跨批次泛化。",
+      "relevance": "非常适合把现有自动化电测升级成工艺反馈：保留每次脉冲极性/幅值/宽度与R_P/R_AP轨迹，再用物理幂律基线约束机器学习，避免纯黑箱寿命数字。",
+      "limitation": "10^9倍是相对加速声明，不等于10^15次真实验证；Transformer可能学习特定批次漂移，需留出晶圆、批次和工艺角做外推测试。",
+      "industrialization": "最接近量产可靠性筛选和测试成本压缩；仍缺校准不确定度、错误拒收/放行率、跨设备迁移、标准样与监管可追溯性。",
+      "whyRecommended": "先看UVPP应力定义，再看训练窗口—预测区间，最后找误差和外部验证；35–50分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1109/VLSITechnologyandCir46769.2022.9830351",
+      "arxiv": "",
+      "url": "https://ieeexplore.ieee.org/document/9830351",
+      "backupUrl": "https://doi.org/10.1109/VLSITechnologyandCir46769.2022.9830351",
+      "accessNote": "本轮已核验IEEE直接题录的UVPP、三类极性应力、1–10^6输入、10^6–10^15预测和最高10^9倍提速。",
+      "recommendedOn": "2026-10-02",
+      "featured": true
+    },
+    {
+      "id": "d-cryogenic-cfms-9-18t",
+      "track": "D",
+      "secondaryTracks": [
+        "A"
+      ],
+      "title": "Cryogen Free Magnet System 9–18 Tesla (CFMS)",
+      "titleZh": "Cryogenic Ltd CFMS｜9–18 T、1.6–325 K与顶装几分钟换样",
+      "authors": "Cryogenic Limited",
+      "venue": "厂商官方产品页与系统规格",
+      "published": "2026-10-02核验",
+      "timeTier": "厂商技术资料/不作为科研证明",
+      "system": "传导冷却高场超导磁体与气流式集成VTI的一体化无液氦系统，含脉管/冷头、压缩机、多通道温度监测、Lakeshore控制器和磁体电源。",
+      "conditions": "厂商标称磁场系列9–18 T、样品温区1.6–325 K；同一冷头冷却磁体和VTI，4 K冷凝氦后经针阀降至1.6 K；顶装气闸允许熟练操作员几分钟换样。",
+      "methods": [
+        "无液氦超导磁体",
+        "气流式VTI",
+        "顶装气闸",
+        "Cernox温控",
+        "传输/磁性选件集成"
+      ],
+      "summary": "【厂商标称】9–18 T、1.6–325 K；磁体基温低于4 K，VTI经液氦缓冲与针阀达到1.6 K；【厂商标称】样品顶装、熟练者数分钟换样；磁体被动防失超，整机交付前测试。",
+      "relevance": "可作为现有Oxford平台的互校/采购基准，重点不是极限参数，而是换样周转、真空/气路污染、磁场扫描时温稳和探杆电噪声的可复现验收。",
+      "limitation": "厂商页面没有给温稳、振动、场均匀度、扫场率、线缆热漏、运输后性能、软件API与MTBF；所有数字均需FAT/SAT复测。",
+      "industrialization": "最接近研发计量和失效分析基础设施；采购/升级前仍缺样品吞吐、自动化接口、维护成本、备件周期、跨平台GR&R与安全联锁验证。",
+      "whyRecommended": "先看冷却回路与1.6 K形成机制，再核对顶装气闸、控制器和选件接口；25–35分钟。",
+      "score": 8.8,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://www.cryogenic.co.uk/products/cryogen-free-magnet-system-9-18-tesla-cfms",
+      "backupUrl": "https://www.cryogenic.co.uk/sites/default/files/product_files/cryogenic_cfms_brochure_v5.0_may_2020_compressed_9.pdf",
+      "accessNote": "本轮已打开Cryogenic Ltd官方产品页，核验9–18 T、<4 K磁体、1.6–325 K VTI、针阀循环、顶装换样与被动失超保护；明确标注厂商资料。",
+      "recommendedOn": "2026-10-02",
+      "featured": true
+    },
+    {
+      "id": "e-atomic-chemistry-5b03627",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Atomic-Scale Structure and Local Chemistry of CoFeB–MgO Magnetic Tunnel Junctions",
+      "titleZh": "退火后CoFeB/MgO原子化学｜B进入Ta间隙、Fe(Co)-O键合但CoFe不进入MgO",
+      "authors": "Zhongchang Wang et al.",
+      "venue": "Nano Letters 16, 1530–1536 (2016)",
+      "published": "2016-02-23",
+      "timeTier": "关键原子级界面/扩散证据",
+      "system": "退火后的CoFeB–MgO MTJ原子层堆栈，联合原子分辨电子显微、谱学与第一性原理解析B扩散和CoFe/MgO界面键合。",
+      "conditions": "直接来源确认研究退火前后局部结构与化学；公开摘要未给完整堆栈、退火温时、MgO厚度、样本统计和器件TMR/RA，本站不推定。",
+      "methods": [
+        "原子分辨STEM",
+        "谱学/元素识别",
+        "HRTEM/衍射",
+        "第一性原理",
+        "界面键合与扩散"
+      ],
+      "summary": "【实测＋计算】退火后B从CoFeB外扩并进入Ta间隙位，而非进入MgO；CoFe与MgO晶粒形成外延取向关系，通过Fe(Co)-O键原子级结合；未观察到CoFe掺入MgO。",
+      "relevance": "这是为吸B层、退火窗口和界面氧化建立证据链的模板：成像回答原子在哪里，谱学回答是什么元素/键态，DFT回答哪种结构稳定，再与RA/TMR/噪声闭环。",
+      "limitation": "局部薄片视野不代表300 mm晶圆；摘要无扩散系数、浓度分布、结晶体积分数、器件电性和可靠性，且制样可能引入局部偏差。",
+      "industrialization": "最接近材料失效根因和退火模块开发；仍需统计STEM/EELS、晶圆级XPS/HAXPES、扩散动力学、TMR/RA/TDDB关联和可量产在线量测。",
+      "whyRecommended": "先看元素分布，再看Fe(Co)-O界面模型和DFT，最后核对哪些结论是局部观察；45–60分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1021/acs.nanolett.5b03627",
+      "arxiv": "",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.nanolett.5b03627",
+      "backupUrl": "https://doi.org/10.1021/acs.nanolett.5b03627",
+      "accessNote": "本轮已打开ACS直接来源，核验STEM/谱学/DFT、B→Ta间隙、Fe(Co)-O键与CoFe不进入MgO。",
+      "recommendedOn": "2026-10-02",
       "featured": true
     }
   ]

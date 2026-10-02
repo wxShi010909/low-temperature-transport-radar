@@ -1,56 +1,57 @@
 {
-  "date": "2026-10-01",
+  "date": "2026-10-02",
   "review": {
-    "id": "review-mgo-mtj-174101",
+    "id": "review-sot-material-design-00054-z",
     "kind": "正式综述",
-    "track": "B",
+    "track": "C",
     "secondaryTracks": [
-      "C",
+      "B",
       "E"
     ],
-    "title": "How we developed MgO-based magnetic tunnel junctions",
-    "titleZh": "2026正式综述｜MgO-MTJ从>1000%理论预言到CoFeB量产堆栈",
-    "authors": "Shinji Yuasa",
-    "venue": "Journal of Magnetism and Magnetic Materials 648, 174101 (2026)",
-    "published": "2026-06-15",
-    "recommendedOn": "2026-10-01",
-    "doi": "10.1016/j.jmmm.2026.174101",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0304885326002921",
-    "backupUrl": "https://doi.org/10.1016/j.jmmm.2026.174101",
-    "assistantSummary": "开放获取正式综述回顾Al-O结、2001年Fe/MgO/Fe超过1000%的Δ1相干隧穿预言、2004年室温近200%的外延实证，以及CoFeB/MgO/CoFeB向HDD、STT-MRAM和传感器的产业迁移。",
-    "whySelected": "它把今天的低温厚度效应、B扩散、Mg插层和阵列指标串成一条材料—界面—产品主线。",
+    "title": "Recent progress on controlling spin-orbit torques by materials design",
+    "titleZh": "2024正式综述｜用应变、界面与对称性工程控制SOT",
+    "authors": "Guiping Ji et al.",
+    "venue": "npj Spintronics 2, 56 (2024)",
+    "published": "2024-11-21",
+    "recommendedOn": "2026-10-02",
+    "doi": "10.1038/s44306-024-00054-z",
+    "url": "https://www.nature.com/articles/s44306-024-00054-z",
+    "backupUrl": "https://doi.org/10.1038/s44306-024-00054-z",
+    "assistantSummary": "开放获取正式综述把SOT材料工程归为应变调Spin Hall角、界面调自旋透明度/拓扑表面态、对称性工程实现垂直磁化无场确定性翻转；例示SrIrO3厚度10→15晶胞时SHA由0.2增至0.5，以及W(O)含氧12.1%附近的SOT效率峰值。",
+    "whySelected": "它把原子制造变量直接翻译为SOT效率、界面透明度和无场翻转，同时明确规模制造一致性仍是核心障碍。",
     "readingGuide": [
-      "先看Al-O到MgO的性能断点",
-      "再看Δ1对称性过滤",
-      "跟踪外延Fe到非晶CoFeB转化",
-      "最后看HDD/MRAM/传感器产业化；55–75分钟"
+      "先看图1三类材料工程",
+      "读SHA与界面透明度定义",
+      "看无场翻转三类对称性破缺",
+      "最后读可制造性局限；60–80分钟"
     ],
     "notNew": false
   },
   "classics": [
     {
-      "id": "classic-miyazaki-tezuka-1995",
+      "id": "classic-machlup-rtn-1954",
       "kind": "经典文章",
       "track": "A",
       "secondaryTracks": [
-        "B"
+        "C",
+        "D"
       ],
-      "title": "Giant magnetic tunneling effect in Fe/Al2O3/Fe junction",
-      "titleZh": "Miyazaki–Tezuka 1995经典｜Fe/Al2O3/Fe在4.2 K 30%、300 K 18%",
-      "authors": "T. Miyazaki and N. Tezuka",
-      "venue": "Journal of Magnetism and Magnetic Materials 139, L231–L234 (1995)",
-      "published": "1995-01-02",
-      "recommendedOn": "2026-10-01",
-      "doi": "10.1016/0304-8853(95)90001-2",
-      "url": "https://www.sciencedirect.com/science/article/abs/pii/0304885395900012",
-      "backupUrl": "https://doi.org/10.1016/0304-8853(95)90001-2",
-      "assistantSummary": "Fe/Al2O3/Fe结首次实测4.2 K 30%、300 K 18%的大TMR；室温电导满足G=96.2(1+0.09cosθ) Ω^-1，并在4.2–300 K追踪电阻与隧穿电流。",
-      "whySelected": "它提供从低温到室温TMR和角度余弦关系的原始基线，可与今天MgO厚度、对称性和界面工程逐层对照。",
+      "title": "Noise in Semiconductors: Spectrum of a Two-Parameter Random Signal",
+      "titleZh": "Machlup 1954经典｜非对称两态RTN的洛伦兹谱与速率相加",
+      "authors": "Stefan Machlup",
+      "venue": "Journal of Applied Physics 25, 341–343 (1954)",
+      "published": "1954-03-01",
+      "recommendedOn": "2026-10-02",
+      "doi": "10.1063/1.1721637",
+      "url": "https://pubs.aip.org/aip/jap/article-abstract/25/3/341/160580/Noise-in-Semiconductors-Spectrum-of-a-Two",
+      "backupUrl": "https://doi.org/10.1063/1.1721637",
+      "assistantSummary": "经典理论计算占据两个状态且平均寿命σ、τ可不相等的随机电报信号功率谱；谱形仍为洛伦兹型，有效时间常数由2[(1/σ)+(1/τ)]^-1给出，即两方向跃迁率相加。",
+      "whySelected": "它是把MTJ时域跳变转换为驻留时间、角频率和缺陷激活率的最小模型，可直接支撑今天A类RTN自动拟合。",
       "readingGuide": [
-        "先看4.2/300 K TMR",
-        "理解cosθ电导关系",
-        "查看温度依赖",
-        "再比较MgO Δ1过滤；20–30分钟"
+        "先画两态驻留时间",
+        "推导跃迁率相加",
+        "对应洛伦兹拐点",
+        "再映射MTJ的P/AP与缺陷态；20–30分钟"
       ],
       "notNew": true
     }
