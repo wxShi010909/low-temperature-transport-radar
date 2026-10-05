@@ -1,57 +1,57 @@
 {
-  "date": "2026-10-02",
+  "date": "2026-10-05",
   "review": {
-    "id": "review-sot-material-design-00054-z",
+    "id": "review-ald-primer-00435-6",
     "kind": "正式综述",
-    "track": "C",
+    "track": "E",
     "secondaryTracks": [
       "B",
-      "E"
+      "D"
     ],
-    "title": "Recent progress on controlling spin-orbit torques by materials design",
-    "titleZh": "2024正式综述｜用应变、界面与对称性工程控制SOT",
-    "authors": "Guiping Ji et al.",
-    "venue": "npj Spintronics 2, 56 (2024)",
-    "published": "2024-11-21",
-    "recommendedOn": "2026-10-02",
-    "doi": "10.1038/s44306-024-00054-z",
-    "url": "https://www.nature.com/articles/s44306-024-00054-z",
-    "backupUrl": "https://doi.org/10.1038/s44306-024-00054-z",
-    "assistantSummary": "开放获取正式综述把SOT材料工程归为应变调Spin Hall角、界面调自旋透明度/拓扑表面态、对称性工程实现垂直磁化无场确定性翻转；例示SrIrO3厚度10→15晶胞时SHA由0.2增至0.5，以及W(O)含氧12.1%附近的SOT效率峰值。",
-    "whySelected": "它把原子制造变量直接翻译为SOT效率、界面透明度和无场翻转，同时明确规模制造一致性仍是核心障碍。",
+    "title": "Atomic layer deposition",
+    "titleZh": "2025正式综述｜ALD从表面自限反应到大规模原子制造",
+    "authors": "Erwin Kessels, Anjana Devi, Jin-Seong Park, Mikko Ritala, Angel Yanguas-Gil, Claudia Wiemer et al.",
+    "venue": "Nature Reviews Methods Primers 5, 66 (2025)",
+    "published": "2025-10-16",
+    "recommendedOn": "2026-10-05",
+    "doi": "10.1038/s43586-025-00435-6",
+    "url": "https://www.nature.com/articles/s43586-025-00435-6",
+    "backupUrl": "https://doi.org/10.1038/s43586-025-00435-6",
+    "assistantSummary": "正式Primer系统梳理ALD前驱体、共反应物、表面自限反应、反应器、表征和典型结果，并专门讨论可重复性、技术指标、标准化、半导体高量产应用及局限；核心优势是原子级厚度控制与复杂三维表面的均匀共形覆盖。",
+    "whySelected": "对用户的原子级制造优先级最直接：它把单片结果扩展到反应饱和、批次重复、设备设计和高量产标准，同时可为MgO/界面层的ALD或PEALD路线建立审查清单。",
     "readingGuide": [
-      "先看图1三类材料工程",
-      "读SHA与界面透明度定义",
-      "看无场翻转三类对称性破缺",
-      "最后读可制造性局限；60–80分钟"
+      "先看图1表面自限循环",
+      "图2核对前驱体/共反应物",
+      "图3比较反应器",
+      "图5读半导体量产；70–90分钟"
     ],
     "notNew": false
   },
   "classics": [
     {
-      "id": "classic-machlup-rtn-1954",
+      "id": "classic-vcma-nmat3171",
       "kind": "经典文章",
-      "track": "A",
+      "track": "B",
       "secondaryTracks": [
         "C",
-        "D"
+        "E"
       ],
-      "title": "Noise in Semiconductors: Spectrum of a Two-Parameter Random Signal",
-      "titleZh": "Machlup 1954经典｜非对称两态RTN的洛伦兹谱与速率相加",
-      "authors": "Stefan Machlup",
-      "venue": "Journal of Applied Physics 25, 341–343 (1954)",
-      "published": "1954-03-01",
-      "recommendedOn": "2026-10-02",
-      "doi": "10.1063/1.1721637",
-      "url": "https://pubs.aip.org/aip/jap/article-abstract/25/3/341/160580/Noise-in-Semiconductors-Spectrum-of-a-Two",
-      "backupUrl": "https://doi.org/10.1063/1.1721637",
-      "assistantSummary": "经典理论计算占据两个状态且平均寿命σ、τ可不相等的随机电报信号功率谱；谱形仍为洛伦兹型，有效时间常数由2[(1/σ)+(1/τ)]^-1给出，即两方向跃迁率相加。",
-      "whySelected": "它是把MTJ时域跳变转换为驻留时间、角频率和缺陷激活率的最小模型，可直接支撑今天A类RTN自动拟合。",
+      "title": "Electric-field-assisted switching in magnetic tunnel junctions",
+      "titleZh": "VCMA经典｜CoFeB/MgO/CoFeB电场辅助翻转",
+      "authors": "Wei-Gang Wang, Mingen Li, Stephen Hageman, C. L. Chien",
+      "venue": "Nature Materials 11, 64–68 (2012)",
+      "published": "2011-11-13",
+      "recommendedOn": "2026-10-05",
+      "doi": "10.1038/nmat3171",
+      "url": "https://www.nature.com/articles/nmat3171",
+      "backupUrl": "https://doi.org/10.1038/nmat3171",
+      "assistantSummary": "经典实验证明在具有界面PMA的CoFeB/MgO/CoFeB中，可用电压脉冲调制矫顽力、磁态与TMR并辅助可逆翻转；论文以当时STT临界电流密度约10^6–10^7 A/cm²为能耗背景，强调以更小电流密度利用电场效应。",
+      "whySelected": "它奠定VCMA作为‘界面电场调各向异性’的器件路线，与今天的双MgO、Mg插层和低能写入形成清晰历史主线。",
       "readingGuide": [
-        "先画两态驻留时间",
-        "推导跃迁率相加",
-        "对应洛伦兹拐点",
-        "再映射MTJ的P/AP与缺陷态；20–30分钟"
+        "先看器件堆栈与PMA",
+        "再看电压对矫顽力/TMR的调制",
+        "区分电场与STT/热效应",
+        "最后核对脉冲和耐久边界；35–50分钟"
       ],
       "notNew": true
     }

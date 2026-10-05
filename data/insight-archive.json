@@ -680,6 +680,18 @@
       "atomicIds": [
         "2026-10-02-boron-sink-map"
       ]
+    },
+    {
+      "date": "2026-10-05",
+      "opportunityIds": [
+        "2026-10-05-electrothermal-wer"
+      ],
+      "methodIds": [
+        "2026-10-05-stfmr-fat"
+      ],
+      "atomicIds": [
+        "2026-10-05-dual-interface"
+      ]
     }
   ],
   "items": [
@@ -9947,6 +9959,168 @@
       ],
       "researchConnection": "直接对应BEOL退火、B扩散和可制造pMTJ。",
       "takeaway": "吸B层的放行条件必须同时包含原子化学、电输运和寿命。"
+    },
+    {
+      "id": "2026-10-05-electrothermal-wer",
+      "date": "2026-10-05",
+      "type": "research",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 结温—WER—TDDB",
+      "title": "真实结温驱动的写错率与寿命模型",
+      "subtitle": "把3ω温标嵌入SOT/STT脉冲测试。",
+      "summary": "将环境温度替换为纳秒脉冲下的真实结温。",
+      "status": "优先DOE",
+      "relatedPaperIds": [
+        "a-sot-3omega-selfheat-3701972",
+        "b-sot-mram-156tmr-3635232",
+        "c-mg-interface-cim-3692177"
+      ],
+      "question": "同一写入脉冲中，SOT/STT贡献、热辅助和MgO损伤各占多少？",
+      "rationale": "A证明温升可>150 K且时间常数约5 ns；B/C的能耗、WER与击穿解释若忽略结温会产生系统偏差。",
+      "workflow": [
+        "标定TCR与3ω",
+        "脉宽/幅值/基温矩阵",
+        "同步R-H/写入统计",
+        "热—磁联合拟合",
+        "分段TDDB/耐久"
+      ],
+      "equipment": [
+        "3ω/锁相链",
+        "脉冲源表",
+        "低温探针台或PPMS",
+        "高速示波器",
+        "热仿真"
+      ],
+      "measurements": [
+        "ΔT(t)",
+        "Ic/WER",
+        "R_P/R_AP",
+        "热弛豫",
+        "Vbd/耐久"
+      ],
+      "metrics": [
+        "温标不确定度",
+        "WER拟合误差",
+        "热辅助比例",
+        "TDDB加速因子",
+        "跨尺寸泛化"
+      ],
+      "evidenceBoundary": "温升与WER关联来自A；将其用于B/C器件的定量归因是本站提出的待验证路线。",
+      "firstSteps": [
+        "先做金属线标准结构",
+        "再做无磁对照",
+        "最后做完整MTJ"
+      ],
+      "researchConnection": "直接服务低功耗写入、低温输运与势垒可靠性。",
+      "takeaway": "每个写入能耗数字都应带真实结温。"
+    },
+    {
+      "id": "2026-10-05-stfmr-fat",
+      "date": "2026-10-05",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/A · 低温ST-FMR验收",
+      "title": "20/40 GHz低温ST-FMR去嵌与GR&R",
+      "subtitle": "把厂商规格转成可追溯的测量能力。",
+      "summary": "先验收RF链，再提取阻尼和SOT。",
+      "status": "平台SOP",
+      "relatedPaperIds": [
+        "d-multifields-fmr-stfmr",
+        "b-sot-mram-156tmr-3635232"
+      ],
+      "question": "1.4–400 K、18 T平台怎样在换探杆、换温度和换操作者后仍给出一致α与SOT？",
+      "rationale": "厂商给出频率和线损范围，但科研/工艺结论依赖温度相关S参数、相位、热电压和拟合模型。",
+      "workflow": [
+        "VNA直通/开路/短路",
+        "NiFe标准样",
+        "频率—功率—温度矩阵",
+        "角度对称性分解",
+        "跨平台GR&R"
+      ],
+      "equipment": [
+        "20/40 GHz探杆",
+        "VNA/微波源",
+        "锁相/偏置器",
+        "Oxford/QD/Cryogenic低温磁体",
+        "温度传感器"
+      ],
+      "measurements": [
+        "S11/S21",
+        "Hr/线宽",
+        "α/Meff",
+        "对称/反对称电压",
+        "噪声底"
+      ],
+      "metrics": [
+        "去嵌残差",
+        "α偏差",
+        "相位漂移",
+        "重复性/再现性",
+        "每样吞吐"
+      ],
+      "evidenceBoundary": "所有平台数值来自厂商资料，必须通过标准样FAT/SAT；不能当成科学性能证明。",
+      "firstSteps": [
+        "先室温RF校准",
+        "再低温标准样",
+        "最后真实SOT堆栈"
+      ],
+      "researchConnection": "服务SOT通道筛选、退火反馈和低温磁动力学。",
+      "takeaway": "软件拟合之前，先证明传输链。"
+    },
+    {
+      "id": "2026-10-05-dual-interface",
+      "date": "2026-10-05",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 双界面原子制造",
+      "title": "Mg插层×双MgO×退火三维工艺窗口",
+      "subtitle": "同时优化PMA、TMR、RA、Ic与Vbd。",
+      "summary": "把两篇界面工程结果合成可制造DOE。",
+      "status": "原子制造路线",
+      "relatedPaperIds": [
+        "c-mg-interface-cim-3692177",
+        "e-mgo-cofeb-mgo-174207",
+        "review-ald-primer-00435-6",
+        "classic-vcma-nmat3171"
+      ],
+      "question": "第二MgO界面与Mg插层的收益能否在同一pMTJ中叠加，而不牺牲TMR和可靠性？",
+      "rationale": "E给出1.8倍Ki和1.7 nm，C显示Mg插层的RA/TMR/Ic/Vbd权衡；ALD综述提供表面反应与均匀性框架。",
+      "workflow": [
+        "单/双MgO对照",
+        "Mg位置/厚度扫描",
+        "真空等待与去盖剂量",
+        "250–400 °C退火",
+        "平面→CIPT→纳米柱"
+      ],
+      "equipment": [
+        "多靶溅射/IBE",
+        "真空互联ALD/PEALD",
+        "XPS/STEM-EELS",
+        "VSM/FMR",
+        "CIPT与脉冲电测"
+      ],
+      "measurements": [
+        "Ki/Ms/死层",
+        "B/O/Mg深度",
+        "RA/TMR/Ic/Vbd",
+        "WER/耐久",
+        "片内CV"
+      ],
+      "metrics": [
+        "界面均匀性",
+        "PMA热预算",
+        "TMR损失",
+        "击穿裕量",
+        "跨晶圆良率"
+      ],
+      "evidenceBoundary": "两篇论文并未共同验证双MgO+Mg插层；组合收益是本站假设，可能因过氧化或势垒增厚相互抵消。",
+      "firstSteps": [
+        "先平面膜筛选",
+        "再做CIPT",
+        "最后纳米柱可靠性"
+      ],
+      "researchConnection": "直接对应MgO/CoFeB界面、退火、真空互联与BEOL。",
+      "takeaway": "用多目标Pareto而不是单指标冠军筛工艺。"
     }
   ]
 }

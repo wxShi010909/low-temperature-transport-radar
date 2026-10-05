@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-02T12:00:00+08:00",
-  "reportDate": "2026-10-02",
+  "updatedAt": "2026-10-05T12:00:00+08:00",
+  "reportDate": "2026-10-05",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -1097,6 +1097,25 @@
         "c-uvpp-transformer-9830351",
         "d-cryogenic-cfms-9-18t",
         "e-atomic-chemistry-5b03627"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "label": "详细日报：SOT自热—300 mm SOT-MRAM—Mg界面CIM—低温ST-FMR—双MgO",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-sot-3omega-selfheat-3701972",
+        "b-sot-mram-156tmr-3635232",
+        "c-mg-interface-cim-3692177",
+        "d-multifields-fmr-stfmr",
+        "e-mgo-cofeb-mgo-174207"
       ]
     }
   ],
@@ -11864,6 +11883,191 @@
       "backupUrl": "https://doi.org/10.1021/acs.nanolett.5b03627",
       "accessNote": "本轮已打开ACS直接来源，核验STEM/谱学/DFT、B→Ta间隙、Fe(Co)-O键与CoFe不进入MgO。",
       "recommendedOn": "2026-10-02",
+      "featured": true
+    },
+    {
+      "id": "a-sot-3omega-selfheat-3701972",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Direct Characterization of Self-Heating in SOT-MRAM Using the 3ω Method",
+      "titleZh": "3ω直接测SOT-MRAM自热｜温升超过150 K、约5 ns热弛豫",
+      "authors": "Guansong Li et al.",
+      "venue": "IEEE Electron Device Letters 47, 1595–1598 (2026)",
+      "published": "2026-06-15",
+      "timeTier": "近期正式发表/电热可靠性",
+      "system": "SOT-MRAM器件；作者用3ω电热测量直接提取写入通道自热，并改变底电极直径、SOT轨道宽度与MgO势垒厚度。公开摘要未披露完整磁性堆栈、各几何量的具体取值和样本数。",
+      "conditions": "公开摘要给出自热温升超过150 K，脉宽超过5 ns时对写电流和WER影响明显；热模拟给出约5 ns热弛豫时间。基础温度、脉冲幅值、绝对电流密度及3ω标定误差未在公开摘要中披露。",
+      "methods": [
+        "3ω电热测量",
+        "脉冲写入",
+        "几何DOE",
+        "电热模拟",
+        "WER关联"
+      ],
+      "summary": "【实测】器件自热温升可超过150 K；【实测】底电极直径、SOT轨道宽度和MgO厚度改变热响应；【实测/作者解释】脉宽>5 ns时自热显著影响写电流与WER；【模拟】热弛豫约5 ns。",
+      "relevance": "可把现有脉冲写入平台升级为写电流—结温—WER三变量闭环，避免将热辅助误判为SOT效率提升，并为低温/室温外推和MgO TDDB提供真实结温。",
+      "limitation": "公开摘要未给完整堆栈、几何数值、基温、脉冲电流、标定不确定度和器件统计；3ω稳态/准稳态标定到纳秒脉冲的映射仍需独立验证。",
+      "industrialization": "最接近写入窗口与热可靠性建模；距量产仍缺300 mm热参数分布、阵列邻近热串扰、PVT、封装热阻、循环后漂移和在线测试成本。",
+      "whyRecommended": "先看3ω测试结构与温标，再看几何依赖，最后核对>5 ns写入和约5 ns热弛豫；40–55分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.1109/LED.2026.3701972",
+      "arxiv": "",
+      "url": "https://ieeexplore.ieee.org/document/11563518/",
+      "backupUrl": "https://doi.org/10.1109/LED.2026.3701972",
+      "accessNote": "本轮已打开IEEE直接题录并核验3ω、>150 K、三类几何变量、>5 ns与约5 ns；摘要未公开条件均明确留空。",
+      "recommendedOn": "2026-10-05",
+      "featured": true
+    },
+    {
+      "id": "b-sot-mram-156tmr-3635232",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "High TMR Over 156% in Perpendicular SOT-MRAM Realized With Channel Engineering",
+      "titleZh": "300 mm垂直SOT-MRAM｜平均TMR 156%、0.9 pJ与>10^12次耐久",
+      "authors": "D. G. Zeng et al.",
+      "venue": "IEEE Electron Device Letters 47, 411–414 (2026)",
+      "published": "2025-11-20",
+      "timeTier": "近期正式发表/300 mm器件",
+      "system": "300 mm晶圆上的顶钉扎垂直SOT-pMTJ，采用新型SOT通道工程。公开摘要未披露通道成分、完整pMTJ膜层、结直径、图形化流程和阵列规模。",
+      "conditions": "公开题录给出室温和85 °C统计、0.9 pJ写能、>10^12次耐久与十年保持；写脉宽、保持加速条件、样本量和良率未公开。",
+      "methods": [
+        "300 mm集成",
+        "SOT通道工程",
+        "TMR统计",
+        "85 °C表征",
+        "耐久/保持"
+      ],
+      "summary": "【实测】最高TMR 168%、平均156%；【实测】TMR/σ(RP)在室温为29、85 °C为24；【实测】写能0.9 pJ、耐久>10^12次；【加速评估】报告十年保持，目标为超高速LLC。",
+      "relevance": "这是把通道材料、pMTJ界面与300 mm统计放在同一篇里的高优先级标杆；TMR/σ(RP)比单个冠军值更接近读窗和良率。",
+      "limitation": "摘要未披露通道材料、脉宽、开关电流、结尺寸、阵列容量、WER/RBER、保持温度/置信度和晶圆数；十年保持不是十年实测。",
+      "industrialization": "已接近300 mm工艺集成与缓存应用验证；仍缺跨批良率、CMOS/BEOL完整兼容、磁场抗扰、ECC、阵列级功耗/速度、封装后可靠性和成本。",
+      "whyRecommended": "先看300 mm结构与通道工程，再看TMR分布而非只看168%，最后核对0.9 pJ、耐久和保持边界；45–60分钟。",
+      "score": 9.9,
+      "priority": "S",
+      "doi": "10.1109/LED.2025.3635232",
+      "arxiv": "",
+      "url": "https://ieeexplore.ieee.org/document/11261853/",
+      "backupUrl": "https://doi.org/10.1109/LED.2025.3635232",
+      "accessNote": "本轮已打开IEEE直接题录，核验300 mm、168%/156%、29/24、0.9 pJ、>10^12与十年保持。",
+      "recommendedOn": "2026-10-05",
+      "featured": true
+    },
+    {
+      "id": "c-mg-interface-cim-3692177",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Interface-Engineered STT-MRAM for Device-to-Device Variation-Aware, Energy-Efficient, and Reliable Computing-in-Memory Arrays",
+      "titleZh": "Mg插层STT-MRAM协同设计｜30–180 nm统计映射到CIM节能36%",
+      "authors": "Zhou-Yu Wu et al.",
+      "venue": "IEEE Transactions on Electron Devices 73, 4102–4109 (2026)",
+      "published": "2026-05-20",
+      "timeTier": "近期正式发表/器件—阵列协同",
+      "system": "CoFeB/MgO垂直MTJ，比较无Mg插层、Mg位于上界面、Mg位于下界面三种结构；测试30–180 nm器件，每个条件20只，再把统计分布写入CIM阵列仿真。",
+      "conditions": "公开摘要明确三种界面、30–180 nm与每条件20只；Mg厚度、完整膜层、退火条件、读写脉冲、仿真网络/数据集和绝对能耗未公开。",
+      "methods": [
+        "Mg界面插层",
+        "尺寸缩放",
+        "器件统计",
+        "击穿测试",
+        "CIM协同仿真"
+      ],
+      "summary": "【实测】Mg插层提高RA、降低开关电流并提高击穿电压，但牺牲TMR；【实测】对30–180 nm、每条件20只建立器件差异；【仿真】将实测统计注入CIM；【预测】下界面Mg可在维持稳健推理准确率时最多节能36%。",
+      "relevance": "提供了材料—器件—阵列的可复制工作流：不能只优化TMR或Ic，必须把RA、击穿、电流分布与应用准确率共同纳入目标函数。",
+      "limitation": "36%是基于实测参数的阵列级仿真，不是大阵列硅上实测；20只/条件不足以刻画量产尾部，且Mg厚度、模型、数据集与准确率数值未在摘要中披露。",
+      "industrialization": "最接近界面模块与CIM设计技术协同；仍缺300 mm晶圆/批次分布、纳米尺寸尾部、真实阵列、电路PVT、ECC、保持/耐久耦合和成本。",
+      "whyRecommended": "先看三种Mg位置与30–180 nm统计，再看RA—TMR—Ic—Vbd权衡，最后把36%严格视为仿真结果；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1109/TED.2026.3692177",
+      "arxiv": "",
+      "url": "https://ieeexplore.ieee.org/document/11528186/",
+      "backupUrl": "https://doi.org/10.1109/TED.2026.3692177",
+      "accessNote": "本轮已打开IEEE直接题录，核验三种Mg界面、30–180 nm、20只/条件、器件权衡和最多36%阵列节能。",
+      "recommendedOn": "2026-10-05",
+      "featured": true
+    },
+    {
+      "id": "d-multifields-fmr-stfmr",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "MultiFields FMR & ST-FMR Measurement System",
+      "titleZh": "多场科技FMR/ST-FMR平台｜1.4–400 K、18 T与40 GHz兼容路线",
+      "authors": "MultiFields Tech",
+      "venue": "厂商官方技术资料",
+      "published": "2026-10-05核验",
+      "timeTier": "厂商技术资料/不作为科研证明",
+      "system": "面向FMR、ST-FMR、ISHE和spin pumping的20或40 GHz测量系统/探杆；可与多场ColdTUBE、Oxford TeslatronPT、Quantum Design PPMS及Cryogenic系统组合。",
+      "conditions": "厂商标称环境1.4–400 K、0–18 T；探杆外径≤25 mm、2个RF和6/8个DC通道；20/40 GHz版本需分别核对线损和功率。所有数值是厂商声明，未作为科研实证。",
+      "methods": [
+        "FMR",
+        "ST-FMR",
+        "ISHE/spin pumping",
+        "低温高场探杆",
+        "Kittel/线宽拟合"
+      ],
+      "summary": "【厂商标称】可测1 nm CoFeB，系统兼容1.4–400 K与0–18 T；【厂商标称】频率1–20或1–40 GHz、步进0.01 GHz；【厂商标称】20/40 GHz探杆在20 GHz插损约-6/-4 dB；【软件功能】拟合Hr、fr、线宽、α、γ、g、Meff与ISHE电压。",
+      "relevance": "适合把原位/退火后的薄膜筛选与器件SOT效率连接起来，但必须做RF去嵌、热漂、相位混合与跨平台互校，不能把软件输出的α或θ直接当材料常数。",
+      "limitation": "网页未给系统噪声底、场均匀度、温稳、相位校准、线损温度依赖、标准样误差、API和GR&R；‘1 nm CoFeB’是灵敏度声明，需FAT/SAT复测。",
+      "industrialization": "最接近研发量测与工艺监控平台；距生产放行仍缺标准样、校准追溯、自动化接口、吞吐、维护/备件、跨设备一致性和测量不确定度预算。",
+      "whyRecommended": "先核对探杆/主机兼容和RF损耗，再看拟合参数，最后按标准样—低温—真实MTJ制定FAT/SAT；25–35分钟。",
+      "score": 9.2,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://www.multifields.com/anm/measure/fmr/",
+      "backupUrl": "https://www.multifields.com/",
+      "accessNote": "本轮检索并打开厂商官方技术页；页面抓取一度超时，但官方索引已核验温区、磁场、频率、线损、通道和兼容系统，全部按厂商标称处理。",
+      "recommendedOn": "2026-10-05",
+      "featured": true
+    },
+    {
+      "id": "e-mgo-cofeb-mgo-174207",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "A high interfacial anisotropy of MgO/CoFeB/MgO structures with perpendicular magnetic anisotropy",
+      "titleZh": "双MgO界面工程｜Ki提高1.8倍、PMA延伸至1.7 nm CoFeB",
+      "authors": "H. Kobayashi, K. Onimura, Y. Wu, K. Kakushima",
+      "venue": "Journal of Magnetism and Magnetic Materials 652, 174207 (2026)",
+      "published": "2026-08-15",
+      "timeTier": "近期正式发表/原子界面工程",
+      "system": "从Ta/CoFeB/MgO结构去除Ta盖层，再沉积第二层MgO与W盖层，形成W/MgO/CoFeB/MgO双界面结构；研究退火对死层、Ms和PMA的作用。",
+      "conditions": "公开摘要给出Ta去除、第二MgO与W盖层流程、250 °C以上恢复趋势、1.8倍Ki和1.7 nm厚度上限；具体膜厚、去除工艺、退火时长/最高温度与晶圆统计未公开。",
+      "methods": [
+        "盖层去除",
+        "第二MgO沉积",
+        "双界面PMA",
+        "退火",
+        "磁性表征"
+      ],
+      "summary": "【实测】退火至250 °C以上后，死层导致的Ms损失得到恢复并超过初始值；【实测】双界面Ki提高1.8倍；【实测】PMA保持到1.7 nm CoFeB；【作者解释】双MgO界面提高热稳定性和缩放潜力。",
+      "relevance": "把‘再造一个MgO/CoFeB界面’转化为可执行的原子制造路线，直接连接盖层去除损伤、真空互联、第二界面氧化和退火恢复。",
+      "limitation": "摘要未给Ki绝对值、完整膜厚、去除选择性、界面粗糙度、氧/B深度、退火时间和样本统计；尚无完整MTJ的TMR、RA、WER、TDDB或阵列数据。",
+      "industrialization": "最接近自由层/PMA材料模块；距可制造器件仍缺真空集成可重复性、300 mm均匀性、400 °C BEOL、纳米图形化、完整MTJ电性、良率与可靠性。",
+      "whyRecommended": "先看Ta去除—第二MgO—W封盖流程，再看Ms恢复和1.8倍Ki，最后检查1.7 nm是否能转化为完整MTJ热稳定；40–55分钟。",
+      "score": 9.6,
+      "priority": "S",
+      "doi": "10.1016/j.jmmm.2026.174207",
+      "arxiv": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304885326003987",
+      "backupUrl": "https://doi.org/10.1016/j.jmmm.2026.174207",
+      "accessNote": "本轮已打开ScienceDirect直接来源并核验堆栈改造、>250 °C、1.8倍Ki与1.7 nm；未公开数值不补写。",
+      "recommendedOn": "2026-10-05",
       "featured": true
     }
   ]
