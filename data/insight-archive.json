@@ -692,6 +692,18 @@
       "atomicIds": [
         "2026-10-05-dual-interface"
       ]
+    },
+    {
+      "date": "2026-10-06",
+      "opportunityIds": [
+        "2026-10-06-wide-temp-mtj"
+      ],
+      "methodIds": [
+        "2026-10-06-cryom9-fat"
+      ],
+      "atomicIds": [
+        "2026-10-06-workfunction-anneal"
+      ]
     }
   ],
   "items": [
@@ -10121,6 +10133,167 @@
       ],
       "researchConnection": "直接对应MgO/CoFeB界面、退火、真空互联与BEOL。",
       "takeaway": "用多目标Pareto而不是单指标冠军筛工艺。"
+    },
+    {
+      "id": "2026-10-06-wide-temp-mtj",
+      "date": "2026-10-06",
+      "type": "research",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 宽温写窗",
+      "title": "4–400 K真实结温下的写窗—保持—WER统一图",
+      "subtitle": "材料温漂与脉冲自热放入同一统计模型。",
+      "summary": "用VSW/T和Δ/T约束宽温MTJ设计。",
+      "status": "优先DOE",
+      "relatedPaperIds": [
+        "a-mram-4k-400k-mg-mo-cfl-202509788",
+        "b-ptw-vcma-work-function-5c01956",
+        "c-sot-mram-7nm-codesign-3621279"
+      ],
+      "question": "宽温下材料参数、VCMA增益与阵列焦耳热如何共同决定WER？",
+      "rationale": "A给出宽温器件指标，B提供界面调控变量，C说明系统级焦耳热和寄生不能忽略。",
+      "workflow": [
+        "4/77/150/300/400 K校准",
+        "正负偏压与脉宽矩阵",
+        "提取VSW/Δ/WER",
+        "热—磁联合拟合",
+        "阵列角落条件回灌"
+      ],
+      "equipment": [
+        "宽温磁体",
+        "脉冲源表",
+        "高速示波器",
+        "低噪声前放",
+        "热仿真"
+      ],
+      "measurements": [
+        "VSW/T",
+        "Δ/T",
+        "TMR/RA",
+        "WER",
+        "真实结温"
+      ],
+      "metrics": [
+        "ppm级WER",
+        "温漂",
+        "模型残差",
+        "保持置信度",
+        "跨器件CV"
+      ],
+      "evidenceBoundary": "A的数值是论文实测/评估；与B/C组合后的统一图是本站待验证方案。",
+      "firstSteps": [
+        "先做无VCMA对照",
+        "再做Pt-W成分点",
+        "最后回灌阵列模型"
+      ],
+      "researchConnection": "直接服务宽温MRAM、低温失效和工艺反馈。",
+      "takeaway": "温度、偏压和热稳定必须一起测。"
+    },
+    {
+      "id": "2026-10-06-cryom9-fat",
+      "date": "2026-10-06",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/A · CryoM-9验收",
+      "title": "±9 T宽温平台的带载样FAT/SAT",
+      "subtitle": "把厂商页面指标变成可追溯能力。",
+      "summary": "按温度、磁场、旋转和脉冲四轴验收。",
+      "status": "平台SOP",
+      "relatedPaperIds": [
+        "d-physike-cryom9-case-180",
+        "a-mram-4k-400k-mg-mo-cfl-202509788"
+      ],
+      "question": "厂商标称1.5–300 K与<15 mK能否在真实MTJ脉冲布线下复现？",
+      "rationale": "安装案例只证明交付配置，宽温MRAM需要样品真实温度、噪声、漂移与跨天重复性。",
+      "workflow": [
+        "校准温度计",
+        "空杆/标准电阻",
+        "扫场与旋转映射",
+        "脉冲负载测试",
+        "三日GR&R"
+      ],
+      "equipment": [
+        "CryoM-9",
+        "标准温度计",
+        "标准电阻",
+        "加速度计",
+        "脉冲源表"
+      ],
+      "measurements": [
+        "样品温差",
+        "温漂",
+        "场滞后",
+        "旋转误差",
+        "电噪声"
+      ],
+      "metrics": [
+        "基温/降温时间",
+        "15 mK复现",
+        "ppm稳定性",
+        "GR&R",
+        "吞吐"
+      ],
+      "evidenceBoundary": "全部设备指标为厂商声明；通过验收前不得用于科研结论。",
+      "firstSteps": [
+        "先无样品校准",
+        "再标准样",
+        "最后MTJ"
+      ],
+      "researchConnection": "连接低温输运、设备升级与可靠性数据质量。",
+      "takeaway": "验收对象是样品环境，不是控制器读数。"
+    },
+    {
+      "id": "2026-10-06-workfunction-anneal",
+      "date": "2026-10-06",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 成分—退火闭环",
+      "title": "Pt-W功函数梯度×CoFeB厚度×退火三维窗口",
+      "subtitle": "从电子耗尽到B迁移和器件VCMA。",
+      "summary": "同片梯度缩短原子界面DOE。",
+      "status": "原子制造路线",
+      "relatedPaperIds": [
+        "b-ptw-vcma-work-function-5c01956",
+        "e-cofeb-subcrystallization-115280",
+        "review-vcmtj-ae3f41"
+      ],
+      "question": "功函数诱导电子耗尽能否在B迁移和亚晶化后仍保持VCMA增益？",
+      "rationale": "B展示Pt-W成分调VCMA，E表明厚度与退火会改变死层和相组成，综述提供机制边界。",
+      "workflow": [
+        "Pt-W连续成分",
+        "CoFeB楔形厚度",
+        "分区退火",
+        "UPS/XPS/MOKE/XRD",
+        "完整MTJ电测"
+      ],
+      "equipment": [
+        "多靶溅射",
+        "真空互联",
+        "UPS/XPS",
+        "MOKE/XRD",
+        "CIPT/脉冲台"
+      ],
+      "measurements": [
+        "功函数",
+        "Fe/B/O深度",
+        "死层/Hk",
+        "VCMA",
+        "TMR/RA/TDDB"
+      ],
+      "metrics": [
+        "片内均匀性",
+        "绝对VCMA",
+        "热预算",
+        "TMR损失",
+        "可靠性"
+      ],
+      "evidenceBoundary": "两篇论文未共同验证Pt-W与退火/B迁移耦合；该组合是本站假设。",
+      "firstSteps": [
+        "先平面膜",
+        "再CIPT",
+        "最后纳米柱"
+      ],
+      "researchConnection": "直接对应溅射、真空互联、界面成分和退火控制。",
+      "takeaway": "把电子结构增益放进热预算后再判断。"
     }
   ]
 }

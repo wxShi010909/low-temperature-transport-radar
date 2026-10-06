@@ -1,57 +1,57 @@
 {
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "review": {
-    "id": "review-ald-primer-00435-6",
+    "id": "review-vcmtj-ae3f41",
     "kind": "正式综述",
-    "track": "E",
+    "track": "B",
     "secondaryTracks": [
-      "B",
-      "D"
+      "C",
+      "E"
     ],
-    "title": "Atomic layer deposition",
-    "titleZh": "2025正式综述｜ALD从表面自限反应到大规模原子制造",
-    "authors": "Erwin Kessels, Anjana Devi, Jin-Seong Park, Mikko Ritala, Angel Yanguas-Gil, Claudia Wiemer et al.",
-    "venue": "Nature Reviews Methods Primers 5, 66 (2025)",
-    "published": "2025-10-16",
-    "recommendedOn": "2026-10-05",
-    "doi": "10.1038/s43586-025-00435-6",
-    "url": "https://www.nature.com/articles/s43586-025-00435-6",
-    "backupUrl": "https://doi.org/10.1038/s43586-025-00435-6",
-    "assistantSummary": "正式Primer系统梳理ALD前驱体、共反应物、表面自限反应、反应器、表征和典型结果，并专门讨论可重复性、技术指标、标准化、半导体高量产应用及局限；核心优势是原子级厚度控制与复杂三维表面的均匀共形覆盖。",
-    "whySelected": "对用户的原子级制造优先级最直接：它把单片结果扩展到反应饱和、批次重复、设备设计和高量产标准，同时可为MgO/界面层的ALD或PEALD路线建立审查清单。",
+    "title": "Material strategies for energy-efficient voltage-controlled magnetic tunnel junctions",
+    "titleZh": "2026正式综述｜节能电压控制MTJ的材料策略",
+    "authors": "Takayuki Nozaki et al.",
+    "venue": "Journal of Physics D: Applied Physics 59, 073002 (2026)",
+    "published": "2026-02-17",
+    "recommendedOn": "2026-10-06",
+    "doi": "10.1088/1361-6463/ae3f41",
+    "url": "https://iopscience.iop.org/article/10.1088/1361-6463/ae3f41",
+    "backupUrl": "https://doi.org/10.1088/1361-6463/ae3f41",
+    "assistantSummary": "这篇开放获取Topical Review从VCMA基本机制出发，比较外延与多晶MTJ的材料/界面策略，并把高VCMA、可靠写入和尺寸缩放放进同一框架。它是综述，不产生新的器件实测数据。",
+    "whySelected": "可用来解释今天Pt-W功函数工程、MgO/CoFeB界面和复合自由层为何有效，同时提醒材料系数必须转成写入窗口、波动和可靠性。",
     "readingGuide": [
-      "先看图1表面自限循环",
-      "图2核对前驱体/共反应物",
-      "图3比较反应器",
-      "图5读半导体量产；70–90分钟"
+      "先看图2的VCMA概念与MOKE例",
+      "再看外延/多晶材料策略",
+      "核对写入可靠性与缩放约束",
+      "最后建立自家材料—器件指标表；60–80分钟"
     ],
     "notNew": false
   },
   "classics": [
     {
-      "id": "classic-vcma-nmat3171",
+      "id": "classic-stoner-wohlfarth-1948",
       "kind": "经典文章",
-      "track": "B",
+      "track": "C",
       "secondaryTracks": [
-        "C",
-        "E"
+        "A",
+        "B"
       ],
-      "title": "Electric-field-assisted switching in magnetic tunnel junctions",
-      "titleZh": "VCMA经典｜CoFeB/MgO/CoFeB电场辅助翻转",
-      "authors": "Wei-Gang Wang, Mingen Li, Stephen Hageman, C. L. Chien",
-      "venue": "Nature Materials 11, 64–68 (2012)",
-      "published": "2011-11-13",
-      "recommendedOn": "2026-10-05",
-      "doi": "10.1038/nmat3171",
-      "url": "https://www.nature.com/articles/nmat3171",
-      "backupUrl": "https://doi.org/10.1038/nmat3171",
-      "assistantSummary": "经典实验证明在具有界面PMA的CoFeB/MgO/CoFeB中，可用电压脉冲调制矫顽力、磁态与TMR并辅助可逆翻转；论文以当时STT临界电流密度约10^6–10^7 A/cm²为能耗背景，强调以更小电流密度利用电场效应。",
-      "whySelected": "它奠定VCMA作为‘界面电场调各向异性’的器件路线，与今天的双MgO、Mg插层和低能写入形成清晰历史主线。",
+      "title": "A mechanism of magnetic hysteresis in heterogeneous alloys",
+      "titleZh": "Stoner–Wohlfarth经典｜单畴一致转动与磁滞边界",
+      "authors": "E. C. Stoner and E. P. Wohlfarth",
+      "venue": "Philosophical Transactions of the Royal Society A 240, 599–642 (1948)",
+      "published": "1948-05-04",
+      "recommendedOn": "2026-10-06",
+      "doi": "10.1098/rsta.1948.0007",
+      "url": "https://royalsocietypublishing.org/doi/10.1098/rsta.1948.0007",
+      "backupUrl": "https://doi.org/10.1098/rsta.1948.0007",
+      "assistantSummary": "经典模型把颗粒视为互不作用的单畴体并以一致转动解释磁滞，给出取向依赖的开关边界。它是理想化理论，不含MgO、STT/SOT、热激活、缺陷或纳米图形化损伤。",
+      "whySelected": "今日A与C都依赖热稳定和开关分布；先掌握一致转动的理想基线，才能识别真实pMTJ中的非一致翻转、边缘损伤和热激活偏差。",
       "readingGuide": [
-        "先看器件堆栈与PMA",
-        "再看电压对矫顽力/TMR的调制",
-        "区分电场与STT/热效应",
-        "最后核对脉冲和耐久边界；35–50分钟"
+        "先看模型假设",
+        "再看能量极值与开关边界",
+        "核对随机取向平均",
+        "最后列出现代MTJ不满足的假设；35–50分钟"
       ],
       "notNew": true
     }

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-05T12:00:00+08:00",
-  "reportDate": "2026-10-05",
+  "updatedAt": "2026-10-06T12:00:00+08:00",
+  "reportDate": "2026-10-06",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -1116,6 +1116,25 @@
         "c-mg-interface-cim-3692177",
         "d-multifields-fmr-stfmr",
         "e-mgo-cofeb-mgo-174207"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "label": "详细日报：宽温MRAM—功函数VCMA—7 nm协同设计—CryoM-9—CoFeB亚晶化",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-mram-4k-400k-mg-mo-cfl-202509788",
+        "b-ptw-vcma-work-function-5c01956",
+        "c-sot-mram-7nm-codesign-3621279",
+        "d-physike-cryom9-case-180",
+        "e-cofeb-subcrystallization-115280"
       ]
     }
   ],
@@ -12068,6 +12087,191 @@
       "backupUrl": "https://doi.org/10.1016/j.jmmm.2026.174207",
       "accessNote": "本轮已打开ScienceDirect直接来源并核验堆栈改造、>250 °C、1.8倍Ki与1.7 nm；未公开数值不补写。",
       "recommendedOn": "2026-10-05",
+      "featured": true
+    },
+    {
+      "id": "a-mram-4k-400k-mg-mo-cfl-202509788",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "High Perpendicular Anisotropy in Mo-Inserted Mg Composite Free Layer for Nonvolatile Magnetoresistive Random Access Memory in 4K-400K Universal Temperature Applications",
+      "titleZh": "4–400 K通用温区MRAM｜Mo插层Mg复合自由层压低VSW与Δ温漂",
+      "authors": "Ming-Chun Hong et al.",
+      "venue": "Small 22, e09788 (2026)",
+      "published": "2026-03-01",
+      "timeTier": "近期正式发表/宽温输运与可靠性",
+      "system": "以MgO/MgOx盖层、Mg间隔层和Mo插入CoFeB复合自由层构成宽温MRAM单元。公开全文页面确认4–400 K目标；公开摘要未给出所有层厚、结尺寸、阵列容量和晶圆统计。",
+      "conditions": "4–400 K；报告开关电压温度系数VSW/T约0.68 mV/K、热稳定因子温度系数Δ/T约0.1 K⁻¹，并在全温区评估10 ns写入、保持、WER与耐久。退火温度、脉冲幅值分布和统计样本数未在摘要中公开。",
+      "methods": [
+        "宽温电输运",
+        "PMA/热稳定提取",
+        "脉冲写入",
+        "WER/保持/耐久",
+        "复合自由层工程"
+      ],
+      "summary": "【实测/作者报告】VSW/T≈0.68 mV/K、Δ/T≈0.1 K⁻¹；【测试/外推】4–400 K范围内保持目标超过10年；【实测】10 ns写入、WER<1 ppm、耐久>10¹¹次；【作者解释】MgO/MgOx盖层和Mo插层Mg复合自由层共同降低温度敏感性。",
+      "relevance": "把低温输运直接落到MRAM写窗、保持与错误率，而非只测磁矩；适合做现有脉冲平台的温区校准标杆，并反推CoFeB/MgO界面与复合自由层工艺窗口。",
+      "limitation": "摘要未披露TMR、RA、结尺寸、完整层厚、样本量、置信区间、400 °C实际BEOL流程及阵列级数据；‘>10年’属于保持模型/加速评估，不是十年实测。",
+      "industrialization": "最接近宽温器件资格与汽车/航天存储单元；距可制造产品仍缺300 mm跨片/跨批良率、封装热循环、磁扰、ECC、阵列功耗和CMOS/BEOL整合。",
+      "whyRecommended": "先看复合自由层与MgO/MgOx盖层，再看VSW/T、Δ/T，最后核对WER/耐久的温度与统计定义；50–65分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1002/smll.202509788",
+      "arxiv": "",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/smll.202509788",
+      "backupUrl": "https://doi.org/10.1002/smll.202509788",
+      "accessNote": "本轮已打开Wiley直接全文页并以PubMed摘要交叉核验4–400 K、复合自由层与公开定量结果；未公开条件不补写。",
+      "recommendedOn": "2026-10-06",
+      "featured": true
+    },
+    {
+      "id": "b-ptw-vcma-work-function-5c01956",
+      "track": "B",
+      "secondaryTracks": [
+        "E",
+        "C"
+      ],
+      "title": "Large and Tunable Electron-Depletion-Based Voltage-Controlled Magnetic Anisotropy in the CoFeB/MgO System via Work-Function-Engineered PtxW1−x Underlayers",
+      "titleZh": "功函数工程VCMA｜PtₓW₁₋ₓ底层把CoFeB/MgO响应提高约8倍",
+      "authors": "Yu-Chia Chen et al.",
+      "venue": "ACS Nano 19, 15953–15962 (2025)",
+      "published": "2025-04-14",
+      "timeTier": "近2年正式发表/界面与成分控制",
+      "system": "CoFeB/MgO体系采用不同Pt浓度的PtₓW₁₋ₓ底层调功函数；补充信息列出W、Pt77W23、Pt的UPS功函数校准和W(3)/PtₓW₁₋ₓ(5)/MgO(2)/W(5) nm校准堆栈。完整磁性样品逐层厚度未在公开摘要中列全。",
+      "conditions": "通过HR-XPS Fe 2p₃/₂、2p₁/₂位移追踪电子耗尽，以栅压下AHE评估VCMA；另用HAADF-STEM/EDS和深度XPS检查结构/成分。公开摘要未给绝对VCMA系数、退火条件、偏压窗口或样本数。",
+      "methods": [
+        "Pt-W共溅射/成分扫描",
+        "UPS功函数",
+        "HR-XPS深度分析",
+        "HAADF-STEM/EDS",
+        "栅压AHE"
+      ],
+      "summary": "【实测】最高Pt浓度样品的VCMA响应约为纯W对照的8倍；【实测】Fe 2p结合能位移显示CoFeB电子耗尽；【作者解释】Pt浓度提高底层功函数并调控界面电荷；【实测】结构与成分由STEM/EDS和XPS辅助确认。",
+      "relevance": "把合金成分—功函数—界面电荷—VCMA串成可测工艺链，适合现有多靶溅射、XPS与电输运平台做连续梯度样片和原位反馈。",
+      "limitation": "约8倍是相对纯W而非绝对器件能耗；公开摘要未给绝对VCMA、TMR、RA、WER、耐久、晶圆均匀性和纳米结结果，且电荷耗尽与具体轨道杂化的因果仍依赖作者解释。",
+      "industrialization": "最接近VCMA材料筛选和底电极模块；距存储器仍缺完整pMTJ、亚纳米成分控制、400 °C热预算、300 mm均匀性、写入协议、TDDB与阵列验证。",
+      "whyRecommended": "先看Pt浓度—功函数标定，再看Fe 2p位移与VCMA趋势，最后审查约8倍是否能转化为写能和可靠性；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1021/acsnano.5c01956",
+      "arxiv": "",
+      "url": "https://pubs.acs.org/doi/10.1021/acsnano.5c01956",
+      "backupUrl": "https://doi.org/10.1021/acsnano.5c01956",
+      "accessNote": "本轮已打开ACS出版社直接题录/摘要与补充信息索引，核验约8倍、HR-XPS、UPS、STEM/EDS和栅压AHE；缺失数值明确留空。",
+      "recommendedOn": "2026-10-06",
+      "featured": true
+    },
+    {
+      "id": "c-sot-mram-7nm-codesign-3621279",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "title": "Comprehensive Device to System Co-Design for SOT-MRAM at the 7 nm Node",
+      "titleZh": "7 nm SOT-MRAM器件—系统协同｜14.8 Mb/mm²、16 Mb全链路模型",
+      "authors": "Piyush Kumar, Da Eun Shim, Azad Naeemi",
+      "venue": "IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 11, 139–147 (2025)",
+      "published": "2025-10-01",
+      "timeTier": "近期正式发表/理论与EDA协同",
+      "system": "三端SOT-MRAM：器件级微磁开关/WER模型接入ASAP7 PDK版图、寄生提取、阵列SPICE、控制器与1–16 Mb place-and-route系统。全部性能为建模/仿真，不是流片实测。",
+      "conditions": "7 nm ASAP7；容量1–16 Mb。公开稿表格给出16 Mb面积1.149 mm²、密度13.9 Mb/mm²、64 bit写/读能40.66/30.22 pJ、频率1059 MHz、读/写访问6.61/4.72 ns。",
+      "methods": [
+        "微磁WER",
+        "版图/寄生提取",
+        "阵列SPICE",
+        "内存控制器",
+        "系统place-and-route"
+      ],
+      "summary": "【仿真】峰值密度14.8 Mb/mm²、读带宽2.98 GB/s；【仿真】容量1→16 Mb使性能和读写带宽下降约33–38%；【仿真】256×128阵列读/写可低至2/2.4 ns；【仿真】SOT阵列写能可比STT低最多75%；【仿真】16 Mb写能中焦耳热占66%。",
+      "relevance": "给材料团队一个反向指标：自旋霍尔效率、轨道电阻、结尺寸和WER必须穿过互连、译码和阵列寄生后仍有系统收益。",
+      "limitation": "所有数字是模型预测；ASAP7不等于可制造SOT-MRAM PDK，缺真实材料分布、热串扰、工艺角、写驱动版图规则、硅上阵列、良率和封装数据。",
+      "industrialization": "最接近设计技术协同优化和架构筛选；距量产需可校准紧凑模型、代工设计规则、测试芯片、PVT/蒙卡、ECC、可靠性和软件工作负载验证。",
+      "whyRecommended": "先看器件参数如何进入阵列，再看16 Mb能耗分解，最后把14.8 Mb/mm²和75%严格标为仿真上限；55–70分钟。",
+      "score": 9.5,
+      "priority": "S",
+      "doi": "10.1109/JXCDC.2025.3621279",
+      "arxiv": "",
+      "url": "https://ieee-jxcdc.org/index.php/jxcdc/article/view/372",
+      "backupUrl": "https://doi.org/10.1109/JXCDC.2025.3621279",
+      "accessNote": "本轮已打开IEEE SSCS直接文章页及开放稿，核验方法链、容量扫描和公开表格数值；全部按理论/EDA预测标注。",
+      "recommendedOn": "2026-10-06",
+      "featured": true
+    },
+    {
+      "id": "d-physike-cryom9-case-180",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "CryoM-9 Dry Variable-Temperature Superconducting Magnet System Installation Case",
+      "titleZh": "北京飞斯科CryoM-9安装案例｜1.5–300 K、±9 T与<15 mK厂商指标",
+      "authors": "北京飞斯科",
+      "venue": "厂商官方技术资料/安装案例",
+      "published": "2026-04-08",
+      "timeTier": "厂商技术资料/不作为科研证明",
+      "system": "CryoM-9采用GM制冷机、冷头悬浮减振、顶部装卸、静态交换氦气、50 mm内径样品管，配置电学与马达旋转样品杆。",
+      "conditions": "厂商标称初始降温<18 h、1.5–300 K、±9 T、励磁<22 min、满量程温稳优于15 mK；未公开场均匀度、振动谱、温度传感器不确定度、布线热漏和载样条件。",
+      "methods": [
+        "闭循环GM制冷",
+        "静态交换气",
+        "四象限励磁",
+        "旋转电输运",
+        "温度稳定性验收"
+      ],
+      "summary": "【厂商标称】温区1.5–300 K、磁场±9 T；【厂商标称】初始降温<18 h、励磁<22 min；【厂商标称】满量程温稳优于15 mK；【配置】50 mm样品管和电控旋转样品杆；【边界】安装案例不是独立科研性能证明。",
+      "relevance": "可承接宽温MRAM、角分辨磁输运和低噪声失效分析，但应把指标转换成带载样、带线缆、带脉冲的FAT/SAT与重复性预算。",
+      "limitation": "没有第三方校准、不确定度、振动频谱、场均匀度、样品实际温差、基温冷量、API、跨批GR&R或MTJ脉冲兼容数据。",
+      "industrialization": "最接近研发验证设备采购与平台升级；距产线量测仍缺自动装片、吞吐、校准追溯、维护SLA、跨设备一致性、MES接口和量产成本。",
+      "whyRecommended": "先核对带载样温稳和振动，再验收磁场/旋转/布线，最后用标准电阻与MTJ做跨温GR&R；25–35分钟。",
+      "score": 8.9,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://www.physike.com/article/180",
+      "backupUrl": "https://www.physike.com/product/13",
+      "accessNote": "本轮已打开北京飞斯科官方安装案例和产品页，所有数值均标为厂商声明，不作为科研证明。",
+      "recommendedOn": "2026-10-06",
+      "featured": true
+    },
+    {
+      "id": "e-cofeb-subcrystallization-115280",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "CoFeB below crystallization temperature: Pivotal role of thickness and annealing temperature on the evolution of magnetic properties",
+      "titleZh": "CoFeB亚晶化温区｜厚度×退火决定B迁移、死层与各向异性",
+      "authors": "Vishal Tyagi et al.",
+      "venue": "Vacuum 249, 115280 (2026)",
+      "published": "2026-06-01",
+      "timeTier": "近期正式发表/退火与界面工艺",
+      "system": "在Si(001)上制备楔形CoFeB薄膜并加Al盖层；同步辐射XRR校准厚度，以MOKE和XRD追踪低于总体晶化温度时的磁性与相演化。",
+      "conditions": "研究变量为CoFeB厚度和退火温度；公开摘要未披露厚度范围、具体温度点/保温时间、溅射压力功率、Al厚度、样本数和误差。",
+      "methods": [
+        "楔形磁控溅射",
+        "同步辐射XRR",
+        "MOKE",
+        "XRD",
+        "退火DOE"
+      ],
+      "summary": "【实测】较薄CoFeB更早出现各向异性下降；【作者解释】B向界面迁移增大磁死层，MOKE厚度依赖支持该解释；【实测】晶化温度以下已出现晶化CoFe相与富B CoFe相；【实测】MOKE回线与XRD共同显示厚度—退火耦合。",
+      "relevance": "直接服务CoFeB退火窗口、B扩散和界面死层控制；楔形片可把一次沉积转成连续厚度DOE，再把磁性转折点反馈给MTJ堆栈。",
+      "limitation": "不是MgO完整MTJ；摘要没有厚度/温度绝对范围、各向异性和死层数值，也无TMR、RA、PMA、WER、片内均匀性或400 °C BEOL验证。",
+      "industrialization": "最接近自由层沉积/退火窗口和过程监控；距器件制造需在MgO/CoFeB实际堆栈、300 mm快速热处理、纳米图形化后复现并关联电性与可靠性。",
+      "whyRecommended": "先看楔形厚度标定，再看MOKE/XRD的相变对应，最后把B迁移假说交给XPS/SIMS/STEM-EELS验证；40–55分钟。",
+      "score": 9.4,
+      "priority": "S",
+      "doi": "10.1016/j.vacuum.2026.115280",
+      "arxiv": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0042207X26003213",
+      "backupUrl": "https://doi.org/10.1016/j.vacuum.2026.115280",
+      "accessNote": "本轮已打开ScienceDirect直接题录/摘要，核验样片、XRR/MOKE/XRD和两相解释；摘要未公开的工艺数值不补写。",
+      "recommendedOn": "2026-10-06",
       "featured": true
     }
   ]

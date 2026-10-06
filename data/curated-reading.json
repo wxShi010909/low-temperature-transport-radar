@@ -405,6 +405,13 @@
       "classicIds": [
         "classic-vcma-nmat3171"
       ]
+    },
+    {
+      "date": "2026-10-06",
+      "reviewId": "review-vcmtj-ae3f41",
+      "classicIds": [
+        "classic-stoner-wohlfarth-1948"
+      ]
     }
   ],
   "items": [
@@ -3651,6 +3658,60 @@
         "再看电压对矫顽力/TMR的调制",
         "区分电场与STT/热效应",
         "最后核对脉冲和耐久边界；35–50分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-vcmtj-ae3f41",
+      "kind": "正式综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Material strategies for energy-efficient voltage-controlled magnetic tunnel junctions",
+      "titleZh": "2026正式综述｜节能电压控制MTJ的材料策略",
+      "authors": "Takayuki Nozaki et al.",
+      "venue": "Journal of Physics D: Applied Physics 59, 073002 (2026)",
+      "published": "2026-02-17",
+      "recommendedOn": "2026-10-06",
+      "doi": "10.1088/1361-6463/ae3f41",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6463/ae3f41",
+      "backupUrl": "https://doi.org/10.1088/1361-6463/ae3f41",
+      "assistantSummary": "这篇开放获取Topical Review从VCMA基本机制出发，比较外延与多晶MTJ的材料/界面策略，并把高VCMA、可靠写入和尺寸缩放放进同一框架。它是综述，不产生新的器件实测数据。",
+      "whySelected": "可用来解释今天Pt-W功函数工程、MgO/CoFeB界面和复合自由层为何有效，同时提醒材料系数必须转成写入窗口、波动和可靠性。",
+      "readingGuide": [
+        "先看图2的VCMA概念与MOKE例",
+        "再看外延/多晶材料策略",
+        "核对写入可靠性与缩放约束",
+        "最后建立自家材料—器件指标表；60–80分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-stoner-wohlfarth-1948",
+      "kind": "经典文章",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "A mechanism of magnetic hysteresis in heterogeneous alloys",
+      "titleZh": "Stoner–Wohlfarth经典｜单畴一致转动与磁滞边界",
+      "authors": "E. C. Stoner and E. P. Wohlfarth",
+      "venue": "Philosophical Transactions of the Royal Society A 240, 599–642 (1948)",
+      "published": "1948-05-04",
+      "recommendedOn": "2026-10-06",
+      "doi": "10.1098/rsta.1948.0007",
+      "url": "https://royalsocietypublishing.org/doi/10.1098/rsta.1948.0007",
+      "backupUrl": "https://doi.org/10.1098/rsta.1948.0007",
+      "assistantSummary": "经典模型把颗粒视为互不作用的单畴体并以一致转动解释磁滞，给出取向依赖的开关边界。它是理想化理论，不含MgO、STT/SOT、热激活、缺陷或纳米图形化损伤。",
+      "whySelected": "今日A与C都依赖热稳定和开关分布；先掌握一致转动的理想基线，才能识别真实pMTJ中的非一致翻转、边缘损伤和热激活偏差。",
+      "readingGuide": [
+        "先看模型假设",
+        "再看能量极值与开关边界",
+        "核对随机取向平均",
+        "最后列出现代MTJ不满足的假设；35–50分钟"
       ],
       "notNew": true
     }
