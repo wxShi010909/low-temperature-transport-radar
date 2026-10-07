@@ -412,6 +412,13 @@
       "classicIds": [
         "classic-stoner-wohlfarth-1948"
       ]
+    },
+    {
+      "date": "2026-10-07",
+      "reviewId": "review-stt-mram-s1063739726600135",
+      "classicIds": [
+        "classic-slonczewski-1996-00062-5"
+      ]
     }
   ],
   "items": [
@@ -3712,6 +3719,60 @@
         "再看能量极值与开关边界",
         "核对随机取向平均",
         "最后列出现代MTJ不满足的假设；35–50分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-stt-mram-s1063739726600135",
+      "kind": "正式综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Current State of STT-MRAM Cell-Based MTJ with MgO Tunnel Barrier",
+      "titleZh": "2026正式综述｜MgO-MTJ型STT-MRAM现状与物理模型",
+      "authors": "K. K. Abgaryan et al.",
+      "venue": "Russian Microelectronics 55, 43–65 (2026)",
+      "published": "2026-05-26",
+      "recommendedOn": "2026-10-07",
+      "doi": "10.1134/S1063739726600135",
+      "url": "https://link.springer.com/article/10.1134/S1063739726600135",
+      "backupUrl": "https://doi.org/10.1134/S1063739726600135",
+      "assistantSummary": "正式综述围绕MgO-MTJ型STT-MRAM建立物理模型，梳理TMR、自由层临界开关电流、热稳定与电阻之间的权衡，并把DRAM、Flash、PCM背景与材料/缩放挑战连接起来；综述不提供新的器件实测。",
+      "whySelected": "适合作为本日A/B/C/E的统一坐标：低温、氧化、刻蚀和晶圆差异最终都必须落到R、TMR、Ic与Δ四个模型参数及其分布。",
+      "readingGuide": [
+        "先看MTJ/STT基础模型",
+        "再看R/TMR/Ic/Δ权衡",
+        "对照材料和缩放挑战",
+        "最后建立自家参数表；55–70分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-slonczewski-1996-00062-5",
+      "kind": "经典文章",
+      "track": "C",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Current-driven excitation of magnetic multilayers",
+      "titleZh": "Slonczewski 1996经典｜电流驱动自旋转移力矩",
+      "authors": "J. C. Slonczewski",
+      "venue": "Journal of Magnetism and Magnetic Materials 159, L1–L7 (1996)",
+      "published": "1996-06-01",
+      "recommendedOn": "2026-10-07",
+      "doi": "10.1016/0304-8853(96)00062-5",
+      "url": "https://www.sciencedirect.com/science/article/pii/0304885396000625",
+      "backupUrl": "https://doi.org/10.1016/0304-8853(96)00062-5",
+      "assistantSummary": "经典理论提出垂直流过磁性多层的自旋极化电流可转移角动量、激发进动或翻转磁化；原文指出在约1 nm磁层、横向尺度小于约10²–10³ nm时，该力矩可压过电流奥斯特场引起的拉莫尔响应。",
+      "whySelected": "它是STT-MRAM的力矩起点，也为今天区分STT、SOT、VCMA和热辅助提供最小物理基线。",
+      "readingGuide": [
+        "先看角动量转移图景",
+        "再看临界尺度",
+        "核对模型假设",
+        "最后映射现代MTJ缺陷与热噪声；30–40分钟"
       ],
       "notNew": true
     }

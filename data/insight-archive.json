@@ -704,6 +704,18 @@
       "atomicIds": [
         "2026-10-06-workfunction-anneal"
       ]
+    },
+    {
+      "date": "2026-10-07",
+      "opportunityIds": [
+        "2026-10-07-cryo-wafer-model"
+      ],
+      "methodIds": [
+        "2026-10-07-teslatron-fat"
+      ],
+      "atomicIds": [
+        "2026-10-07-etch-oxidation"
+      ]
     }
   ],
   "items": [
@@ -10294,6 +10306,167 @@
       ],
       "researchConnection": "直接对应溅射、真空互联、界面成分和退火控制。",
       "takeaway": "把电子结构增益放进热预算后再判断。"
+    },
+    {
+      "id": "2026-10-07-cryo-wafer-model",
+      "date": "2026-10-07",
+      "type": "research",
+      "typeZh": "研究机会",
+      "trackLabel": "A/B/C · 低温—晶圆协同",
+      "title": "低温VCMA参数回灌300 mm SOT-MRAM阵列",
+      "subtitle": "从ξ(T)到噪声、差异与系统校准。",
+      "summary": "把4–300 K器件物理连接到晶圆统计。",
+      "status": "优先DOE",
+      "relatedPaperIds": [
+        "a-cryogenic-vcma-3284503",
+        "b-wafer-sot-crossbar-aee6952",
+        "c-partial-oxidation-ae24d6"
+      ],
+      "question": "低温增强的VCMA能否抵消10%器件差异和阵列校准成本？",
+      "rationale": "A给出ξ(T)与确定性窗口，B给出300 mm噪声/差异，C提示氧化会引入偏压非对称。",
+      "workflow": [
+        "4/10/77/300 K参数提取",
+        "氧化/退火对照",
+        "脉冲概率矩阵",
+        "D2D/循环统计",
+        "交叉阵列模型回灌"
+      ],
+      "equipment": [
+        "低温磁体",
+        "脉冲源表",
+        "低噪声读出",
+        "CIPT/探针台",
+        "Python统计"
+      ],
+      "measurements": [
+        "ξ(T)",
+        "TMR(V)",
+        "WER",
+        "D2D",
+        "校准开销"
+      ],
+      "metrics": [
+        "确定性窗口",
+        "ppm WER",
+        "10%差异压缩",
+        "能耗",
+        "准确率"
+      ],
+      "evidenceBoundary": "三篇并未共同验证；跨温晶圆协同是本站提出的待验证路线。",
+      "firstSteps": [
+        "先单结温变",
+        "再片内阵列",
+        "最后模型"
+      ],
+      "researchConnection": "直接服务低温存储和产业化验证。",
+      "takeaway": "材料增益必须穿过分布和校准。"
+    },
+    {
+      "id": "2026-10-07-teslatron-fat",
+      "date": "2026-10-07",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/A · 开放低温平台",
+      "title": "TeslatronPT Plus低噪声自动化验收",
+      "subtitle": "Python、M81与磁体/VTI同步验证。",
+      "summary": "把厂商架构变成可追溯SOP。",
+      "status": "平台SOP",
+      "relatedPaperIds": [
+        "d-oxford-teslatronpt-plus",
+        "a-cryogenic-vcma-3284503"
+      ],
+      "question": "开放Python和6通道同步能否在脉冲MTJ下保持低噪声与温度真实性？",
+      "rationale": "页面规格不包含样品电子温度、脉冲串扰和跨日重复性。",
+      "workflow": [
+        "驱动/API版本锁定",
+        "标准电阻/Hall条",
+        "DC/AC同步",
+        "扫场/温变",
+        "MTJ脉冲GR&R"
+      ],
+      "equipment": [
+        "TeslatronPT Plus",
+        "M81-SSM",
+        "低噪声探杆",
+        "标准温度计",
+        "示波器"
+      ],
+      "measurements": [
+        "噪声谱",
+        "相位",
+        "样品温差",
+        "场滞后",
+        "触发抖动"
+      ],
+      "metrics": [
+        "GR&R",
+        "温标误差",
+        "噪声底",
+        "丢点率",
+        "吞吐"
+      ],
+      "evidenceBoundary": "所有硬件能力来自厂商资料，需FAT/SAT后方能作为科研证据。",
+      "firstSteps": [
+        "空载校准",
+        "标准样",
+        "真实MTJ"
+      ],
+      "researchConnection": "延续用户现有LabVIEW/Python自动化经验。",
+      "takeaway": "开放接口不等于已验证测量。"
+    },
+    {
+      "id": "2026-10-07-etch-oxidation",
+      "date": "2026-10-07",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B/C · 刻蚀—氧化闭环",
+      "title": "刻蚀停层×界面氧化×退火恢复三维窗口",
+      "subtitle": "把侧壁损伤与TMR(V)失真对应起来。",
+      "summary": "用偏压非对称定位原子界面损伤。",
+      "status": "原子制造路线",
+      "relatedPaperIds": [
+        "c-partial-oxidation-ae24d6",
+        "e-rie-damage-recovery-170296",
+        "review-stt-mram-s1063739726600135"
+      ],
+      "question": "CF/NH刻蚀造成的损伤能否用TMR偏压不对称和元素深度直接诊断？",
+      "rationale": "E给出工艺损伤趋势，C给出氧化输运指纹，综述提供R/TMR/Ic/Δ统一指标。",
+      "workflow": [
+        "未刻/CF/NH/IBE对照",
+        "过刻剂量扫描",
+        "分区退火",
+        "XPS/EELS/截面TEM",
+        "TMR(V)/TDDB"
+      ],
+      "equipment": [
+        "RIE/IBE",
+        "真空退火",
+        "XPS/TEM-EELS",
+        "CIPT",
+        "低噪声电测"
+      ],
+      "measurements": [
+        "选择比",
+        "侧壁化学",
+        "PMA/Ms",
+        "TMR非对称",
+        "短路/击穿"
+      ],
+      "metrics": [
+        "停层窗口",
+        "TMR恢复率",
+        "负TMR阈值",
+        "短路率",
+        "跨晶圆CV"
+      ],
+      "evidenceBoundary": "理论Fe/MgO/Fe与实验Ta/CoFeB/MgO/Ta不同；指纹映射是待验证假设。",
+      "firstSteps": [
+        "平面刻蚀片",
+        "纳米柱",
+        "晶圆统计"
+      ],
+      "researchConnection": "直接对应IBE/RIE、图形化损伤、界面氧化和可靠性。",
+      "takeaway": "用输运指纹反推刻蚀化学。"
     }
   ]
 }
