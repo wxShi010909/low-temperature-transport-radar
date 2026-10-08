@@ -419,6 +419,13 @@
       "classicIds": [
         "classic-slonczewski-1996-00062-5"
       ]
+    },
+    {
+      "date": "2026-10-08",
+      "reviewId": "review-stt-reliability-irps-10983522",
+      "classicIds": [
+        "classic-kanai-vcma-4753816"
+      ]
     }
   ],
   "items": [
@@ -3773,6 +3780,60 @@
         "再看临界尺度",
         "核对模型假设",
         "最后映射现代MTJ缺陷与热噪声；30–40分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-stt-reliability-irps-10983522",
+      "kind": "正式综述",
+      "track": "B",
+      "secondaryTracks": [
+        "C",
+        "E"
+      ],
+      "title": "Overview of Reliability in Scaling Embedded STT-MRAM",
+      "titleZh": "2025正式可靠性综述｜嵌入式STT-MRAM缩放中的保持、耐久与工艺波动",
+      "authors": "Hyunsung Jung and Yoon Jong Song",
+      "venue": "2025 IEEE International Reliability Physics Symposium (IRPS)",
+      "published": "2025-03-30",
+      "recommendedOn": "2026-10-08",
+      "doi": "10.1109/IRPS48204.2025.10983522",
+      "url": "https://ieeexplore.ieee.org/document/10983522",
+      "backupUrl": "https://doi.org/10.1109/IRPS48204.2025.10983522",
+      "assistantSummary": "正式IEEE可靠性综述聚焦嵌入式STT-MRAM缩放，系统梳理数据保持、写耐久、热稳定、外磁场/扰动和工艺变化的尺度依赖；它提供可靠性框架而非一套新的器件实测数据。",
+      "whySelected": "本日五条线最终都要落到可靠性：扭角/氧化/成分决定材料分布，VGSOT决定写入应力，平台决定测量真实性；综述可把这些结果归一到保持、耐久、扰动和PVT尾部。",
+      "readingGuide": [
+        "先看缩放后的保持与热稳定",
+        "再看写耐久和隧穿势垒",
+        "对照工艺/电路波动",
+        "最后建立可靠性验证矩阵；45–60分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-kanai-vcma-4753816",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C"
+      ],
+      "title": "Electric field-induced magnetization reversal in a perpendicular-anisotropy CoFeB-MgO magnetic tunnel junction",
+      "titleZh": "Kanai 2012经典｜CoFeB/MgO pMTJ电场诱导约180°磁化翻转",
+      "authors": "Shun Kanai et al.",
+      "venue": "Applied Physics Letters 101, 122403 (2012)",
+      "published": "2012-09-17",
+      "recommendedOn": "2026-10-08",
+      "doi": "10.1063/1.4753816",
+      "url": "https://doi.org/10.1063/1.4753816",
+      "backupUrl": "https://cir.nii.ac.jp/crid/1360283692075112064",
+      "assistantSummary": "经典实验在溅射CoFeB/MgO垂直MTJ中、静态外磁场辅助下实现电场诱导约180°磁化翻转，确立了以VCMA暂时改变能垒并触发翻转的器件路径。",
+      "whySelected": "它为本日VGSOT门控和低温/阵列VCMA建立最小实验基线，也提醒今天的76%节能与选择写入仍需区分门控降能垒、SOT驱动和外场依赖。",
+      "readingGuide": [
+        "先看器件与外场条件",
+        "再看电压触发的180°翻转",
+        "核对成功窗口与失效窗口",
+        "最后对照现代无场VGSOT；25–35分钟"
       ],
       "notNew": true
     }

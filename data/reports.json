@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-07T12:00:00+08:00",
-  "reportDate": "2026-10-07",
+  "updatedAt": "2026-10-08T12:00:00+08:00",
+  "reportDate": "2026-10-08",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -1154,6 +1154,25 @@
         "c-partial-oxidation-ae24d6",
         "d-oxford-teslatronpt-plus",
         "e-rie-damage-recovery-170296"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "label": "详细日报：原子极限AFMTJ—80 nm VGSOT阵列—CoMnFe理论—DynaCool/ETO—MgO原子迁移",
+      "total": 5,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1
+      },
+      "paperIds": [
+        "a-twisted-crsbr-afmtj-07818-x",
+        "b-vgsot-array-3565284",
+        "c-comnfe-mtj-pw88-4llt",
+        "d-qd-dynacool-eto-platform",
+        "e-oxygen-rich-mgo-intermixing-0199011"
       ]
     }
   ],
@@ -12476,6 +12495,191 @@
       "backupUrl": "https://doi.org/10.1016/j.jmmm.2022.170296",
       "accessNote": "本轮已打开ScienceDirect直接摘要/Highlights，核验堆栈、两种刻蚀、停层、损伤和晶圆统计边界。",
       "recommendedOn": "2026-10-07",
+      "featured": true
+    },
+    {
+      "id": "a-twisted-crsbr-afmtj-07818-x",
+      "track": "A",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Twist-assisted all-antiferromagnetic tunnel junction in the atomic limit",
+      "titleZh": "原子极限反铁磁隧道结｜2 K零场非易失TMR超过700%",
+      "authors": "Yuliang Chen et al.",
+      "venue": "Nature 632, 1045–1051 (2024)",
+      "published": "2024-08-28",
+      "timeTier": "近2年高质量/原子层MTJ",
+      "system": "石墨电极夹持两片CrSBr反铁磁双层，双层之间按约35°等角度扭转；整个CrSBr堆栈既是磁性层也是隧穿势垒，利用晶轴各向异性形成零场双稳态。",
+      "conditions": "代表性器件在2 K测量；正文公开35°器件采用±0.3 T、15 mV，另用±1.5 T和9 T辨认状态；10°、40°、55°与90°结构用于角度/层数对照。公开摘要报告零场非易失TMR超过700%，未给晶圆级样本数、良率或耐久。",
+      "methods": [
+        "低温垂直输运",
+        "扭角堆叠",
+        "角分辨扫场",
+        "I–V/TMR",
+        "DFT相干隧穿"
+      ],
+      "summary": "【实测】零场非易失TMR超过700%；【实测】35°扭角器件在2 K呈双稳隧穿电流；【实测】扭转界面的TMR随升温衰减弱于未扭转界面；【理论】平行动量相关衰减率与扭角模型解释角度依赖。",
+      "relevance": "它不是传统CoFeB/MgO量产堆栈，但把原子层配准、界面旋转、相干隧穿和低温读出放进同一实验，是评估原子制造误差如何变成TMR分布的高价值方法学样板。",
+      "limitation": "依赖机械剥离/转移、低温和二维反铁磁材料；面积、接触、扭角、封装与氧化稳定性均未达到CMOS晶圆流程。超过700%是实验器件结果，不能外推为室温MRAM性能。",
+      "industrialization": "最接近原子层界面工程与新型MTJ概念验证；距离可制造存储器仍缺室温写入、纳米图形化、晶圆级对准、封装、保持/耐久、WER和CMOS集成。",
+      "whyRecommended": "先看图1器件结构、图3的2 K零场回线，再看图4扭角模型和扩展数据温变；50–65分钟。",
+      "score": 9.4,
+      "priority": "S",
+      "doi": "10.1038/s41586-024-07818-x",
+      "arxiv": "",
+      "url": "https://www.nature.com/articles/s41586-024-07818-x",
+      "backupUrl": "https://doi.org/10.1038/s41586-024-07818-x",
+      "accessNote": "本轮已打开Nature正文，核验器件结构、2 K/偏压/磁场条件、>700%零场TMR与理论边界。",
+      "recommendedOn": "2026-10-08",
+      "featured": true
+    },
+    {
+      "id": "b-vgsot-array-3565284",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "C"
+      ],
+      "title": "Ultrafast Switching and Selective Data Writing Through Voltage-Gated Spin-Orbit Torque in Perpendicular Magnetic Tunnel Junction Arrays",
+      "titleZh": "80 nm VGSOT阵列｜0.3 ns动态过程、功耗降76%与WER低于6.7×10⁻⁵",
+      "authors": "Authors as listed by IEEE Transactions on Magnetics",
+      "venue": "IEEE Transactions on Magnetics 61, 4401005 (2025)",
+      "published": "2025-04-29",
+      "timeTier": "近期正式发表/阵列写入",
+      "system": "直径80 nm的W基垂直MTJ，多个MTJ共享W自旋霍尔写入条；对单结做纳秒SOT动态测量，再用栅压调节VCMA以选择性写入阵列。",
+      "conditions": "公开摘要给出0.3 ns incubation、0.3 ns switching；1 V栅压使SOT写功耗降低76%；选择性写入WER低于6.7×10⁻⁵。完整膜层、W条宽/长、阵列规模、温度、脉冲电流密度、样本数和尾部统计定义未在摘要公开。",
+      "methods": [
+        "W基pMTJ",
+        "纳秒SOT脉冲",
+        "VCMA门控",
+        "共享写线阵列",
+        "WER统计"
+      ],
+      "summary": "【实测】80 nm W基pMTJ保持纳秒脉冲可靠开关；【实测】incubation和switching时间均约0.3 ns；【实测】1 V门控使写功耗降低76%；【实测】阵列选择性写入WER低于6.7×10⁻⁵。",
+      "relevance": "把SOT高速、VCMA选通和共享写线阵列连起来，直接对应用户关注的读写、能耗、密度与器件集成，而非只报告材料级力矩。",
+      "limitation": "公开摘要未给晶圆直径、跨片/跨批分布、良率、保持、耐久、TDDB、半选扰动、门介质可靠性和完整外围电路；6.7×10⁻⁵尚不能代表产品级尾部误码。",
+      "industrialization": "最接近VGSOT阵列单元和选择写入模块；仍缺BEOL热预算、共享写线IR-drop、门控晶体管面积、阵列级ECC、10⁹级尾部统计与封装温度角。",
+      "whyRecommended": "先看动态开关图，再看1 V门控节能，最后看共享W条选择写入和WER统计；45–60分钟。",
+      "score": 9.8,
+      "priority": "S",
+      "doi": "10.1109/TMAG.2025.3565284",
+      "arxiv": "",
+      "url": "https://ieeexplore.ieee.org/document/10980142",
+      "backupUrl": "https://doi.org/10.1109/TMAG.2025.3565284",
+      "accessNote": "本轮已打开IEEE直接入口并用出版社题录核验尺寸、动态时间、功耗和WER；页面正文受脚本限制，未公开的数据不补写。",
+      "recommendedOn": "2026-10-08",
+      "featured": true
+    },
+    {
+      "id": "c-comnfe-mtj-pw88-4llt",
+      "track": "C",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "title": "Understanding of electronic structure and magnetism of body-centered cubic Co-Mn-Fe alloys for magnetic tunnel junctions",
+      "titleZh": "Co–Mn–Fe无序合金理论｜稳健Δ₁能带、Tc>1000 K与阻尼约10⁻⁴",
+      "authors": "Tufan Roy, Shunsuke Kubota, Masahito Tsujikawa, and Masafumi Shirai",
+      "venue": "Physical Review Materials 9, 114406 (2025)",
+      "published": "2025-11-12",
+      "timeTier": "近期正式发表/第一性原理",
+      "system": "面向MgO-MTJ电极的体心立方无序Co–Mn–Fe三元合金；扫描化学成分并计算电子结构、磁性、结构稳定性、平均场转变温度、Gilbert阻尼和四方畸变下PMA。",
+      "conditions": "出版社摘要公开Δ₁自旋极化能带在宽成分区间稳健、平均场Tc>1000 K、Gilbert阻尼约10⁻⁴及四方畸变下显著PMA；具体超胞/CPA方案、k点、成分网格、畸变量和界面终止需回全文核对。",
+      "methods": [
+        "第一性原理",
+        "无序合金",
+        "Δ₁能带",
+        "Gilbert阻尼",
+        "四方畸变PMA"
+      ],
+      "summary": "【理论】宽Co–Mn–Fe成分区间保留费米能级自旋极化Δ₁带；【平均场预测】铁磁转变温度高于1000 K；【理论】Gilbert阻尼约10⁻⁴；【理论】四方畸变可产生较大PMA。",
+      "relevance": "将MgO对称性过滤、低阻尼、热稳定和成分窗口放在同一筛选框架，可指导共溅射/组合材料库，而不是单点成分优化。",
+      "limitation": "所有器件性能为材料层预测；平均场Tc通常高估，体相无序模型不包含真实CoFeB/MgO界面、B扩散、粗糙、缺陷、退火晶化、RA/TMR与工艺分布。",
+      "industrialization": "最接近候选电极与成分窗口筛选；距可制造MTJ还需薄膜相稳定、MgO外延匹配、400 °C退火、阻尼/FMR、TMR/RA、WER和晶圆均匀性实测。",
+      "whyRecommended": "先看成分—Δ₁图，再看Tc和阻尼，最后核对四方畸变PMA及模型假设；40–55分钟。",
+      "score": 9.3,
+      "priority": "S",
+      "doi": "10.1103/pw88-4llt",
+      "arxiv": "",
+      "url": "https://journals.aps.org/prmaterials/abstract/10.1103/pw88-4llt",
+      "backupUrl": "https://doi.org/10.1103/pw88-4llt",
+      "accessNote": "本轮已打开APS出版社摘要，核验作者、日期、Δ₁、Tc、阻尼与PMA结论。",
+      "recommendedOn": "2026-10-08",
+      "featured": true
+    },
+    {
+      "id": "d-qd-dynacool-eto-platform",
+      "track": "D",
+      "secondaryTracks": [
+        "A",
+        "B"
+      ],
+      "title": "Quantum Design PPMS DynaCool Electrical Transport Platform",
+      "titleZh": "Quantum Design DynaCool/ETO｜1.8–400 K、最高14 T与10 μΩ–5 GΩ覆盖",
+      "authors": "Quantum Design North America",
+      "venue": "厂商正式产品页与PPMS Platform技术手册",
+      "published": "2024-01-01",
+      "timeTier": "厂商技术资料/不作为科研证明",
+      "system": "无液氦DynaCool低温强磁场平台，可配置ETO四探针AC、高阻两探针、DC电阻、van der Pauw/Hall、角度旋转、³He/ADR/稀释制冷和外部多功能探杆。",
+      "conditions": "厂商标称1.8–400 K、9/12/14 T；ETO四探针10 μΩ–10 MΩ，高阻两探针2 MΩ–5 GΩ；DC四探针10 μΩ–5 MΩ、2 nA–8 mA。DR最低50 mK、³He最低0.4 K。具体最低噪声受接线、接触和量程影响。",
+      "methods": [
+        "AC/DC四探针",
+        "高阻输运",
+        "Hall/van der Pauw",
+        "角分辨磁输运",
+        "MultiVu自动化"
+      ],
+      "summary": "【厂商标称】1.8–400 K、9/12/14 T；【厂商标称】ETO覆盖10 μΩ–10 MΩ四探针及2 MΩ–5 GΩ高阻两探针；【厂商标称】DC源电流2 nA–8 mA；【兼容性】可扩展至0.4 K ³He或50 mK DR。",
+      "relevance": "适合建立MTJ从高阻隧穿态到低阻金属引线的统一温变/扫场平台，并把用户既有LabVIEW/Python质量评分迁移到MultiVu序列与外部仪器。",
+      "limitation": "全部是厂商规格，不构成样品端科研证明；未公开用户接线下的噪声PSD、电子温度、脉冲带宽、磁场均匀性、跨机台GR&R、维护停机和成本。",
+      "industrialization": "最接近研发验证与失效分析平台；距生产测试仍缺自动探针/装片、MES、秒级吞吐、校准追溯、跨设备相关性和高压脉冲可靠性模块。",
+      "whyRecommended": "先看ETO量程与接线模式，再看低温插件兼容性，最后据标准电阻、短开路和MTJ样品制定FAT/SAT；25–35分钟。",
+      "score": 9,
+      "priority": "A",
+      "doi": "",
+      "arxiv": "",
+      "url": "https://qdusa.com/products/dynacool.html",
+      "backupUrl": "https://www.qdusa.com/siteDocs/productBrochures/1084-500.pdf",
+      "accessNote": "本轮已打开Quantum Design官方产品页，核验温区、磁场、ETO/DC量程、Hall和低温插件；全部按厂商标称处理。",
+      "recommendedOn": "2026-10-08",
+      "featured": true
+    },
+    {
+      "id": "e-oxygen-rich-mgo-intermixing-0199011",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "C"
+      ],
+      "title": "Intermixing of iron and cobalt with oxygen-rich magnesium oxide in CoFeB/MgO/CoFeB magnetic tunneling junctions",
+      "titleZh": "氧富MgO界面原子迁移｜Fe/Co进入势垒、PMA下降与漏电/TMR退化",
+      "authors": "Michael A. Gribelyuk et al.",
+      "venue": "Journal of Applied Physics 135, 125301 (2024)",
+      "published": "2024-03-26",
+      "timeTier": "近2年高相关/原子界面表征",
+      "system": "磁控溅射CoFeB/MgO/CoFeB模型MTJ，采用氧富、较厚MgO势垒放大界面化学信号；结合原子尺度STEM/EELS与第一性原理，比较沉积态和退火态。",
+      "conditions": "公开摘要确认对溅射结构做原子尺度谱学成像，并研究退火前后Fe价态；未公开可核验的MgO/CoFeB确切厚度、氧分压、退火温度时间、扩散长度、PMA/TMR绝对下降量，因此不补写。",
+      "methods": [
+        "磁控溅射",
+        "原子分辨STEM",
+        "EELS价态",
+        "退火对照",
+        "第一性原理缺陷"
+      ],
+      "summary": "【实测】Fe和Co从电极进入氧富MgO；【实测解释】沉积态势垒内Fe呈Fe²⁺/Fe³⁺或更高混合价，退火后趋向Fe²⁺；【理论】Fe经Mg空位扩散能量有利；【理论】Fe杂质降低界面PMA、增加漏电并降低TMR。",
+      "relevance": "把‘氧剂量—Mg空位—Fe/Co迁移—价态—PMA/漏电/TMR’串成可检验链，直接服务MgO沉积、退火和B/金属扩散控制。",
+      "limitation": "为增强EELS信号使用氧富厚势垒，不能直接等同量产约纳米级MgO；公开来源缺绝对扩散/PMA/TMR数据，理论预测需在实际器件上标定。",
+      "industrialization": "最接近势垒成分控制、退火窗口和失效根因分析；距工艺放行仍需标准厚度MTJ、跨晶圆EELS/XPS抽检、RA/TMR、TDDB、保持/耐久与批次统计。",
+      "whyRecommended": "先看原子分辨EELS与价态，再看Mg空位扩散计算，最后把PMA/漏电/TMR预测映射到自家退火DOE；45–60分钟。",
+      "score": 9.7,
+      "priority": "S",
+      "doi": "10.1063/5.0199011",
+      "arxiv": "",
+      "url": "https://doi.org/10.1063/5.0199011",
+      "backupUrl": "https://pubs.aip.org/aip/jap/article/135/12/125301/3278320/Intermixing-of-iron-and-cobalt-with-oxygen-rich",
+      "accessNote": "本轮已打开公开论文页面/摘要并核验STEM/EELS、价态、Mg空位扩散和器件性能预测；未公开定量数据明确留空。",
+      "recommendedOn": "2026-10-08",
       "featured": true
     }
   ]
