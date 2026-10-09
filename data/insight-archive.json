@@ -728,6 +728,18 @@
       "atomicIds": [
         "2026-10-08-mgo-vacancy-anneal"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "opportunityIds": [
+        "2026-10-09-saf-interface-window"
+      ],
+      "methodIds": [
+        "2026-10-09-cryogenic-vsm-grr"
+      ],
+      "atomicIds": [
+        "2026-10-09-atomic-cap-beol"
+      ]
     }
   ],
   "items": [
@@ -10640,6 +10652,168 @@
       ],
       "researchConnection": "直接对应MgO沉积、退火、扩散和可靠性。",
       "takeaway": "用原子价态与电学尾部共同定义放行。"
+    },
+    {
+      "id": "2026-10-09-saf-interface-window",
+      "date": "2026-10-09",
+      "type": "research",
+      "typeZh": "研究机会",
+      "trackLabel": "B/C/E · SAF—界面—WER闭环",
+      "title": "SAF自由层×0.43 nm插层×有限偏压TMR联合DOE",
+      "subtitle": "把1 ppm写入、400 °C界面与读出窗口放进同一片。",
+      "summary": "从材料参数到WER尾部的跨尺度验证。",
+      "status": "优先DOE",
+      "relatedPaperIds": [
+        "b-saf-free-sot-iedm-10873509",
+        "c-dmft-tmr-physrevb-035133",
+        "e-cofeb-insertion-pma-4c11029"
+      ],
+      "question": "SAF耦合和顶帽插层怎样共同影响400 °C后的PMA、偏压TMR和WER尾部？",
+      "rationale": "B给器件目标，C给有限偏压理论，E给原子界面变量。",
+      "workflow": [
+        "插层厚度矩阵",
+        "SAF耦合矩阵",
+        "400 °C退火",
+        "TMR(V,T)/FMR",
+        "WER尾部统计"
+      ],
+      "equipment": [
+        "磁控溅射/真空互联",
+        "RTA",
+        "VSM/FMR",
+        "脉冲源表",
+        "低温探针台"
+      ],
+      "measurements": [
+        "XPS/TEM",
+        "PMA/阻尼",
+        "TMR/RA",
+        "SAF耦合",
+        "WER/保持"
+      ],
+      "metrics": [
+        "工艺窗口",
+        "片内均匀性",
+        "1 ppm置信区间",
+        "半选扰动",
+        "模型残差"
+      ],
+      "evidenceBoundary": "三篇工作未在同一堆栈共同验证；联合DOE是本站提出的可检验路线。",
+      "firstSteps": [
+        "平面膜",
+        "单结",
+        "阵列"
+      ],
+      "researchConnection": "直连原子界面、MTJ器件和产业验证。",
+      "takeaway": "用同一热预算连接界面与误码。"
+    },
+    {
+      "id": "2026-10-09-cryogenic-vsm-grr",
+      "date": "2026-10-09",
+      "type": "method",
+      "typeZh": "设备与方法路线",
+      "trackLabel": "D/B · 低温磁性计量",
+      "title": "Cryogenic VSM薄膜/SAF低温GR&R验收",
+      "subtitle": "将厂商灵敏度变成样品端可追溯能力。",
+      "summary": "标准样—空杆—薄膜—完整堆栈四级验收。",
+      "status": "平台SOP",
+      "relatedPaperIds": [
+        "d-cryogenic-vsm-platform",
+        "b-saf-free-sot-iedm-10873509",
+        "e-cofeb-insertion-pma-4c11029"
+      ],
+      "question": "1.6–400 K下能否稳定分离超薄CoFeB、SAF耦合和夹具背景？",
+      "rationale": "厂商规格必须通过标准样与真实堆栈复现后才能用于工艺放行。",
+      "workflow": [
+        "Ni标准与空杆",
+        "振幅/积分时间矩阵",
+        "温变回线",
+        "扫场/持续场对照",
+        "换样GR&R"
+      ],
+      "equipment": [
+        "Cryogenic VSM",
+        "标准磁矩样",
+        "薄膜夹具",
+        "温标",
+        "自动脚本"
+      ],
+      "measurements": [
+        "磁矩噪声PSD",
+        "背景",
+        "PMA/Hc",
+        "SAF平台场",
+        "温漂"
+      ],
+      "metrics": [
+        "线性",
+        "重复性",
+        "再现性",
+        "检出限",
+        "丢点率"
+      ],
+      "evidenceBoundary": "10⁻⁶为厂商页面标称且单位需规格书确认，不能直接视作薄膜检出限。",
+      "firstSteps": [
+        "标准样",
+        "薄膜片",
+        "完整堆栈"
+      ],
+      "researchConnection": "服务退火、PMA与SAF工艺反馈。",
+      "takeaway": "先证明计量，再解释材料。"
+    },
+    {
+      "id": "2026-10-09-atomic-cap-beol",
+      "date": "2026-10-09",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 亚纳米插层—BEOL闭环",
+      "title": "0–0.8 nm CoFeB插层的原子层工艺窗口",
+      "subtitle": "厚度、连续性、扩散与400 °C可靠性共同放行。",
+      "summary": "把0.43 nm冠军点扩展为晶圆级工艺窗口。",
+      "status": "原子制造路线",
+      "relatedPaperIds": [
+        "e-cofeb-insertion-pma-4c11029",
+        "b-saf-free-sot-iedm-10873509",
+        "review-ald-ale-nbe-d4na00784k"
+      ],
+      "question": "0.43 nm插层是否有可制造的饱和窗口，而不是单点偶然最优？",
+      "rationale": "E给出单点结构证据，B给出BEOL/WER目标，综述给出原子层均匀性方法。",
+      "workflow": [
+        "0–0.8 nm楔形",
+        "原位XPS/椭偏",
+        "400 °C分段退火",
+        "TEM/EELS抽检",
+        "PMA/TMR/TDDB"
+      ],
+      "equipment": [
+        "真空互联溅射",
+        "ALD/QCM可选",
+        "原位XPS",
+        "RTA",
+        "CIPT/电测"
+      ],
+      "measurements": [
+        "厚度/连续性",
+        "Ta/O/B深度",
+        "PMA",
+        "RA/TMR",
+        "TDDB/保持"
+      ],
+      "metrics": [
+        "Å级重复性",
+        "片内3σ",
+        "扩散长度",
+        "窗口宽度",
+        "失效率"
+      ],
+      "evidenceBoundary": "原文未证明300 mm均匀性或完整器件可靠性；本站路线必须用多片多批验证。",
+      "firstSteps": [
+        "楔形片",
+        "完整MTJ",
+        "晶圆统计"
+      ],
+      "researchConnection": "对应原子层成分控制与BEOL兼容。",
+      "takeaway": "从最佳厚度升级到可制造窗口。"
     }
   ]
 }

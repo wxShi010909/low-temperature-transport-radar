@@ -426,6 +426,13 @@
       "classicIds": [
         "classic-kanai-vcma-4753816"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "reviewId": "review-ald-ale-nbe-d4na00784k",
+      "classicIds": [
+        "classic-anneal-tmr-prb81-144406"
+      ]
     }
   ],
   "items": [
@@ -3834,6 +3841,60 @@
         "再看电压触发的180°翻转",
         "核对成功窗口与失效窗口",
         "最后对照现代无场VGSOT；25–35分钟"
+      ],
+      "notNew": true
+    },
+    {
+      "id": "review-ald-ale-nbe-d4na00784k",
+      "kind": "正式综述",
+      "track": "E",
+      "secondaryTracks": [
+        "B",
+        "D"
+      ],
+      "title": "Advances in core technologies for semiconductor manufacturing: applications and challenges of atomic layer etching, neutral beam etching and atomic layer deposition",
+      "titleZh": "2025正式综述｜ALD、ALE与中性束刻蚀的原子级制造路线",
+      "authors": "Tzu-Yi Lee et al.",
+      "venue": "Nanoscale Advances 7, 2796–2817 (2025)",
+      "published": "2025-04-11",
+      "recommendedOn": "2026-10-09",
+      "doi": "10.1039/d4na00784k",
+      "url": "https://scholar.nycu.edu.tw/en/publications/advances-in-core-technologies-for-semiconductor-manufacturing-app/",
+      "backupUrl": "https://doi.org/10.1039/d4na00784k",
+      "assistantSummary": "正式同行评议综述比较ALD的共形沉积、ALE的逐层去除与中性束刻蚀的低损伤优势，覆盖均匀性、几何效应、缺陷、可靠性和先进器件制造；它不提供新的MTJ实测。",
+      "whySelected": "用户当前第一优先级是原子级制造。该综述可把今日0.43 nm插层、300 mm/400 °C器件和VSM计量放到‘原子层成膜—低损伤去除—设备验收—可靠性’统一流程中。",
+      "readingGuide": [
+        "先看ALD/ALE/NBE差异",
+        "再看均匀性与高深宽比",
+        "对照缺陷/损伤和可靠性",
+        "最后映射MTJ沉积刻蚀；55–70分钟"
+      ],
+      "notNew": false
+    },
+    {
+      "id": "classic-anneal-tmr-prb81-144406",
+      "kind": "经典文章",
+      "track": "B",
+      "secondaryTracks": [
+        "A",
+        "E"
+      ],
+      "title": "Understanding tunneling magnetoresistance during thermal annealing in MgO-based junctions with CoFeB electrodes",
+      "titleZh": "2010经典｜CoFeB/MgO退火中晶化—扩散竞争与三阶段TMR演化",
+      "authors": "W. G. Wang et al.",
+      "venue": "Physical Review B 81, 144406 (2010)",
+      "published": "2010-04-07",
+      "recommendedOn": "2026-10-09",
+      "doi": "10.1103/PhysRevB.81.144406",
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.81.144406",
+      "backupUrl": "https://doi.org/10.1103/PhysRevB.81.144406",
+      "assistantSummary": "经典实验系统研究CoFeB/MgO MTJ退火时界面晶化与元素扩散的竞争，发现TMR/平行态电导呈三个演化区间，并用Landauer隧穿图景建立经验模型和不同温度下的最佳退火时间。",
+      "whySelected": "它为今日0.43 nm插层的400 °C结果提供历史机理基线：退火并非越强越好，晶化带来的Δ₁相干隧穿与扩散破坏必须同时控制。",
+      "readingGuide": [
+        "先看退火时间—TMR曲线",
+        "再看平行态电导三阶段",
+        "对照晶化/扩散证据",
+        "最后建立RTA窗口；35–50分钟"
       ],
       "notNew": true
     }
