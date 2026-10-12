@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-09T12:00:00+08:00",
-  "reportDate": "2026-10-09",
+  "updatedAt": "2026-10-12T12:00:00+08:00",
+  "reportDate": "2026-10-12",
   "scope": "原子级制造、MTJ/MRAM、低温可靠性与设备平台精选；推荐日期统一为北京时间。",
   "history": [
     {
@@ -1193,6 +1193,19 @@
         "d-cryogenic-vsm-platform",
         "e-cofeb-insertion-pma-4c11029"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "label": "无新增但已完成核查：周末后正式来源、预印本与设备文档去重复核",
+      "total": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0
+      },
+      "paperIds": []
     }
   ],
   "papers": [
