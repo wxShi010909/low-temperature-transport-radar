@@ -920,6 +920,18 @@
       "atomicIds": [
         "2026-11-03-edge-damage-ised-doe"
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "opportunityIds": [
+        "2026-11-05-magnetic-immunity-qualification"
+      ],
+      "methodIds": [
+        "2026-11-05-cofeb-exafs-metrology"
+      ],
+      "atomicIds": [
+        "2026-11-05-dcfb-beol-diffusion-doe"
+      ]
     }
   ],
   "items": [
@@ -13244,6 +13256,156 @@
       ],
       "researchConnection": "连接IBE、真空互联、原位表征、MgO/CoFeB边缘化学、亚10 nm缩放与MRAM良率。",
       "takeaway": "亚10 nm工艺要同时控制侧壁化学供料和底界面粗糙度，不能只靠更精准的刻蚀终点。"
+    },
+    {
+      "id": "2026-11-05-magnetic-immunity-qualification",
+      "date": "2026-11-05",
+      "type": "opportunity",
+      "typeZh": "研究机会",
+      "trackLabel": "B/C · STT-MRAM外磁场方向—误码联合资格",
+      "title": "研究机会：外磁场方向—保持/读/写误码四指标联合资格",
+      "subtitle": "把磁场强度与极角、方位角引入DR、RDR、WER和RER测试矩阵，避免只用单一保持阈值宣称磁抗扰。",
+      "summary": "2024应用说明明确指出STT-MRAM装板后通常能抵御常见环境磁场，但芯片搬运阶段需防止过强磁场。2026年16 nm嵌入式STT-MRAM会议论文公开摘要又把300–3000 G、0–90°角度扫描与读写错误联系起来；由于IEEE全文在本轮未能直接打开，具体角度峰值不写入本站事实层。路线以已打开的arXiv应用说明为证据基线，并把2026会议结果仅列为待复核线索。",
+      "status": "磁抗扰与低误码资格DOE",
+      "relatedPaperIds": [],
+      "question": "同一pMTJ阵列在待机保持、读和P→AP/AP→P写入下，对外磁场强度、极角和方位角的最坏组合是否一致？",
+      "rationale": "单轴保持测试不能代表写入和读扰。磁场会改变有效能垒、零力矩停滞点和翻转路径，器件形貌非对称还会破坏理想圆对称，因此必须把方向当作独立可靠性变量。",
+      "workflow": [
+        "对同批pMTJ设置0、300、1000、2000、3000 G五档磁场",
+        "极角0–90°每15°扫描，并在关键极角补做方位角0–360°",
+        "分别执行保持、读扰、P→AP写入与AP→P写入压力",
+        "每个点记录≥10^6次写入并用置信区间外推低概率尾部",
+        "以macrospin/micromagnetic模拟解释角度峰值，但不以模拟替代实测"
+      ],
+      "equipment": [
+        "三轴矢量磁体或可旋转样品杆",
+        "脉冲源/示波器/低噪声读出",
+        "温控探针台或PPMS",
+        "阵列级自动化测试与误码计数",
+        "MuMax3或等效微磁模拟"
+      ],
+      "measurements": [
+        "保持失败率DR",
+        "读扰RDR与读错误RER",
+        "双向写入WER",
+        "磁滞/矫顽场/偏置场",
+        "温度—磁场—脉宽联合响应"
+      ],
+      "metrics": [
+        "0–3000 G与0–90°覆盖",
+        "P→AP/AP→P最坏角度",
+        "WER/RER/RDR/DR 95%置信上限",
+        "最坏角度随温度与脉宽漂移",
+        "封装前后磁抗扰差值"
+      ],
+      "evidenceBoundary": "已实开arXiv 2409.05584仅支持‘装板后多数常见环境足够、芯片搬运需谨慎’的应用层结论。300–3000 G和0–90°来自2026 IRPS论文公开元数据/检索摘要，IEEE全文本轮返回418，故不把任何特定峰值角度列为已验证结果。本站提出的四指标联合DOE属于工程推断；量产仍需大样本、ECC后失效率、封装屏蔽和跨批验证。",
+      "firstSteps": [
+        "先在室温做0/1000/3000 G×0/45/90°粗筛",
+        "对双向WER最坏点补做方位角扫描",
+        "复验封装前后与高低温角度漂移"
+      ],
+      "researchConnection": "直接连接pMTJ、STT-MRAM、矢量磁场低温输运、误码自动化、封装屏蔽和可靠性资格。",
+      "takeaway": "磁抗扰不能只报一个保持阈值；真正面向存储器资格的是模式×强度×方向×温度的最坏角落。"
+    },
+    {
+      "id": "2026-11-05-cofeb-exafs-metrology",
+      "date": "2026-11-05",
+      "type": "method",
+      "typeZh": "设备/方法路线",
+      "trackLabel": "D/E · 2 nm CoFeB厘米尺度EXAFS晶化计量",
+      "title": "设备/方法路线：2 nm CoFeB大面积EXAFS—TMR/退火闭环",
+      "subtitle": "把厘米尺度定量晶化度与晶圆级TMR、RA、PMA和退火窗口配对，建立可迁移的结构—器件工艺反馈。",
+      "summary": "NIST正式页面公开了一种EXAFS定量方法：在约1 cm²面积上评估2 nm超薄CoFeB的相对晶化度，比较MgO上不同金属/氧化物盖层及厚度；锆在所测元素中最能促进晶化，金属氧化物的促进能力并未显著弱于纯金属。该方法为传统局部TEM提供大面积统计补充，但尚不是整片300 mm inline量测。",
+      "status": "大面积结构计量—器件相关性平台",
+      "relatedPaperIds": [],
+      "question": "CoFeB相对晶化度能否成为退火、盖层与电极材料优化的可重复中间量，并预测TMR/RA/PMA而非只给出局部显微图？",
+      "rationale": "MTJ性能受CoFeB/MgO晶化和B扩散共同支配。TEM分辨率高但采样小；EXAFS可在厘米尺度给出相对晶化量，适合跨配方和跨批比较。",
+      "workflow": [
+        "制备MgO/CoFeB(2 nm)/cap测试矩阵",
+        "改变金属/金属氧化物盖层种类与厚度",
+        "设置未退火及多档RTA温度/时间",
+        "采集Fe/Co边EXAFS并用统一模型提取相对晶化度",
+        "同片或伴片测CIPT/TMR、RA、PMA并做相关性与批间复验"
+      ],
+      "equipment": [
+        "同步辐射或实验室XAS/EXAFS平台",
+        "磁控溅射与真空互联",
+        "RTA/炉管退火",
+        "CIPT、VSM/PMOKE",
+        "XRR/TEM/XPS用于厚度与化学交叉校准"
+      ],
+      "measurements": [
+        "相对晶化度与配位信息",
+        "2 nm层厚和界面粗糙度",
+        "TMR/RA片内分布",
+        "PMA/矫顽场/交换偏置",
+        "退火前后B与盖层元素扩散"
+      ],
+      "metrics": [
+        "约1 cm²采样面积（原文）",
+        "2 nm CoFeB（原文）",
+        "相对晶化度重复性与不确定度",
+        "晶化度—TMR/RA/PMA相关系数",
+        "跨批与跨工具再现性"
+      ],
+      "evidenceBoundary": "已实开NIST正式页面与DOI 10.1116/6.0004422，面积、厚度和Zr趋势均为作者公开结果。‘可预测晶圆级TMR/良率’尚未由原文证明，是本站建议的验证目标；EXAFS不是原位量测，也未公开300 mm吞吐、成本、GR&R或量产控制限。",
+      "firstSteps": [
+        "先复刻MgO/2 nm CoFeB/三种盖层伴片",
+        "统一退火前后EXAFS拟合模板",
+        "用CIPT/PMOKE验证晶化度是否优于单点TEM预测器件性能"
+      ],
+      "researchConnection": "连接磁控溅射、MgO/CoFeB、退火、B扩散、大面积结构计量与晶圆级良率反馈。",
+      "takeaway": "把CoFeB晶化从‘局部图像’升级为可量化中间量，是原子界面工艺走向跨批可制造性的关键一步。"
+    },
+    {
+      "id": "2026-11-05-dcfb-beol-diffusion-doe",
+      "date": "2026-11-05",
+      "type": "atomic",
+      "typeZh": "原子与极端制造",
+      "trackLabel": "E/B · 双CoFeB参考层扩散阻挡与400 °C BEOL",
+      "title": "原子制造路线：双CoFeB参考层—Pt/Fe扩散阻挡—400 °C BEOL DOE",
+      "subtitle": "把额外CoFeB层与两个CoFeB/W界面作为原子层结构变量，联合验证PMA、Pt–Fe互扩散、低RA和图形化后TMR。",
+      "summary": "2026年《Journal of Semiconductors》论文已公开全文：双CoFeB参考层和新增的两个CoFeB/W界面增强参考层PMA、改善上方Pt/Co多层晶化，并抑制Pt–Fe互扩散。含该结构的10 μm MTJ在400 °C退火后实现137% TMR；低RA堆栈公开到50 Ω·μm²，交换场约120 mT。结果证明薄膜/大尺寸器件热预算潜力，但不等同于亚100 nm阵列量产。",
+      "status": "400 °C兼容参考层原子堆栈DOE",
+      "relatedPaperIds": [],
+      "question": "双CoFeB/W界面带来的PMA增强与扩散阻挡能否在低RA、亚100 nm图形化和晶圆级退火下同时保留，而不引入额外粗糙度、耦合漂移或写入负担？",
+      "rationale": "SOT-MRAM顶钉扎参考层在400 °C容易出现PMA退化和Pt–Fe互扩散。DCFB以堆栈本身兼作扩散阻挡，减少额外材料体系，但增加了厚度和界面控制变量。",
+      "workflow": [
+        "对照SCFB与DCFB，扫描上下CoFeB及W厚度",
+        "设置350/375/400 °C和多档保温时间",
+        "用PMOKE/VSM、CIPT筛选PMA、交换场、TMR和RA",
+        "用TEM/EDS/SIMS解析Pt–Fe及B扩散",
+        "将最优堆栈图形化为10 μm、100 nm、50 nm多尺寸并做TMR/WER/保持"
+      ],
+      "equipment": [
+        "多靶磁控溅射与真空互联",
+        "亚埃级厚度控制/QCM/XRR",
+        "400 °C RTA",
+        "PMOKE/VSM、CIPT",
+        "TEM/EDS、SIMS及纳米器件电测"
+      ],
+      "measurements": [
+        "PMA与RKKY交换场",
+        "TMR/RA及退火漂移",
+        "Pt–Fe/B深度分布",
+        "Pt/Co晶化与界面粗糙度",
+        "尺寸依赖WER、保持、击穿与良率"
+      ],
+      "metrics": [
+        "137% TMR@400 °C（原文）",
+        "50 Ω·μm²低RA堆栈（原文）",
+        "约120 mT交换场（原文）",
+        "片内PMA/TMR 3σ",
+        "50 nm器件WER/保持/TDDB"
+      ],
+      "evidenceBoundary": "已实开期刊HTML与DOI 10.1088/1674-4926/26010048。137%来自400 °C退火后的DCFB MTJ，论文图示器件直径10 μm；50 Ω·μm²与约120 mT来自低RA薄膜堆栈。作者把机制归因于额外CoFeB/W界面、Pt/Co晶化改善及扩散阻挡；本站提出的亚100 nm、晶圆级和可靠性验证尚未完成。",
+      "firstSteps": [
+        "先做SCFB/DCFB×350/400 °C四组",
+        "把CoFeB/W厚度偏差设为±0.1 nm工艺容差",
+        "最优组下探50 Ω·μm²并在100/50 nm验证TMR与WER"
+      ],
+      "researchConnection": "直接连接磁控溅射、CoFeB/W/Pt/Co、MgO MTJ、400 °C BEOL、扩散分析、图形化与SOT-MRAM器件集成。",
+      "takeaway": "DCFB给出了简化的400 °C热预算解法，但必须通过低RA、纳米缩放和晶圆级良率三道关口才可称为可制造器件。"
     }
   ]
 }
